@@ -1,0 +1,916 @@
+TY  - JOUR
+TI  - Evaluation and Analysis of Large Language Models for Clinical Text Augmentation and Generation
+T2  - IEEE Access
+SP  - 48987
+EP  - 48996
+AU  - A. Latif
+AU  - J. Kim
+PY  - 2024
+KW  - Task analysis
+KW  - Chatbots
+KW  - Data models
+KW  - Data augmentation
+KW  - Training
+KW  - Diseases
+KW  - Cognition
+KW  - Large language models
+KW  - Text mining
+KW  - Data analysis
+KW  - Data integrity
+KW  - Clinical trials
+KW  - BART
+KW  - large language models
+KW  - T5
+KW  - text augmentation
+KW  - text mining
+DO  - 10.1109/ACCESS.2024.3384496
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 12
+VL  - 12
+JA  - IEEE Access
+Y1  - 2024
+AB  - A major challenge in deep learning (DL) model training is data scarcity. Data scarcity is commonly found in specific domains, such as clinical or low-resource languages, that are not vastly explored in AI research. In this paper, we investigate the generation capability of large language models such as Text-To-Text Transfer Transformer (T5) and Bidirectional and Auto-Regressive Transformers (BART) for Clinical Health-Aware Reasoning across Dimensions (CHARDAT) dataset by applying the ChatGPT augmentation technique. We employed ChatGPT to rephrase each instance of the training set into conceptually similar but semantically different samples and augmented them to the dataset. This study aims to investigate the utilization of large language models, ChatGPT in particular, for data augmentation to overcome the limited availability in the clinical domain. In addition to the ChatGPT augmentation, we applied other augmentation techniques, such as easy data augmentation (EDA) and an easier data augmentation (AEDA), to clinical data. ChatGPT comprehended the contextual significance of sentences within the dataset and successfully modified English terms but not clinical terms. The original CHARDAT datasets represent 52 health conditions across three clinical dimensions, i.e., Treatments, Risk Factors, and Preventions. We compared the outputs for different augmentation techniques and evaluated their relative performance. Additionally, we examined how these techniques perform with different pre-trained language models, assessing their sensitivity in various contexts. Despite the relatively small size of the CHARDAT dataset, our results demonstrated that augmentation methods like ChatGPT augmentation surpassed the efficiency of the previously employed back-translation augmentation. Specifically, our findings revealed that the BART model resulted in superior performance, achieving a rouge score of 52.35 for ROUGE-1, 41.59 for ROUGE-2, and 50.71 for ROUGE-L.
+ER  - 
+
+TY  - JOUR
+TI  - ICD-10 Neoplasm Location Using Text Classification Models in Spanish Electronic Health Records
+T2  - IEEE Journal of Biomedical and Health Informatics
+SP  - 3293
+EP  - 3306
+AU  - F. J. Moreno-Barea
+AU  - A. Pascual-Mellado
+AU  - H. Mesa
+AU  - B. Villaescusa-González
+AU  - E. Alba
+AU  - J. M. Jerez
+PY  - 2026
+KW  - Neoplasms
+KW  - Transformers
+KW  - Oncology
+KW  - Medical services
+KW  - Cancer
+KW  - Artificial intelligence
+KW  - Natural language processing
+KW  - Text categorization
+KW  - Information retrieval
+KW  - Encoding
+KW  - Natural language processing
+KW  - cancer classification
+KW  - large language models
+KW  - transformers
+KW  - deep learning
+KW  - ensemble learning
+KW  - multiclass classification
+KW  - electronic health records
+DO  - 10.1109/JBHI.2025.3618985
+JO  - IEEE Journal of Biomedical and Health Informatics
+IS  - 4
+SN  - 2168-2208
+VO  - 30
+VL  - 30
+JA  - IEEE Journal of Biomedical and Health Informatics
+Y1  - April 2026
+AB  - The majority of clinical information stored in Spanish healthcare systems is found as unstructured text in electronic health records (EHRs). The automatic extraction of valuable information contained in these documents is a critical task. Valuable information for oncology clinical analysis units and Real-World Evidence studies includes the location of the neoplasm presented by a patient. This location, included in the ICD-10 coding category, can be extracted from the texts by natural language processing (NLP). This study set out to explore the classification of medical documents in Spanish for the purpose of extracting the location of the patient’s primary neoplasm. A private corpus composed of 23,704 real clinical EHRs was utilised. The prediction problem was approached through a classification of 12 primary organ groupings and 29 specific locations. In order to achieve this, four NLP methodologies were developed: traditional machine learning (ML); ensemble ML; recurrent neural networks (RNN); and Transformers-based models. Our findings demonstrate that traditional ML models exhibit superior performance when compared to RNNs and Transformers. Models such as XGBoost and SVMs demonstrate remarkable efficacy, attaining an F1-score of 0.938 for the 12-class classification and an F1-score of 0.838 for the 29-class specific classification, respectively. The pre-trained RoBERTa-Base-Biomed model, which incorporates medical and clinical corpora in Spanish, demonstrates an F1-score of 0.808 for the 29-location problem. However, the Transformer model exhibits superior performance than the rest of the approaches when dealing with an external corpus, indicating a higher generalisation capacity.
+ER  - 
+
+TY  - JOUR
+TI  - Biomedical Knowledge Graphs and Large Language Models: A Critical Engineering Survey
+T2  - Artificial Intelligence Science and Engineering
+SP  - 181
+EP  - 222
+AU  - R. Das
+AU  - S. Ghosh
+AU  - U. B. Maulik
+AU  - S. Dasgupta
+AU  - S. Bandyopadhyay
+AU  - U. Maulik
+PY  - 2026
+KW  - Joining processes
+KW  - Large language models
+KW  - Modeling
+KW  - Ontologies
+KW  - Printing
+KW  - Timing
+KW  - Cognition
+KW  - Cognitive systems
+KW  - Context
+KW  - Knowledge graphs
+KW  - biomedical knowledge graph
+KW  - large language model
+KW  - graph retrieval-augmented generation
+KW  - agentic systems
+KW  - clinical artificial intelligence
+KW  - evaluation
+KW  - provenance
+DO  - 10.23919/AISE.2026.000011
+JO  - Artificial Intelligence Science and Engineering
+IS  - 3
+SN  - 2097-5104
+VO  - 2
+VL  - 2
+JA  - Artificial Intelligence Science and Engineering
+Y1  - September 2026
+AB  - Medical language models are fluent but hard to audit. Combined with language models, knowledge graphs offer structured, source-grounded facts. However, recent work often treats a knowledge graph as proof of grounding without verifying whether the system retrieved and used relevant subgraphs or produced clinically safe output. Our survey follows a small set of representative systems through their full lifecycle: graph construction and updating, indexing, retrieval, reasoning, verification, and post-deployment monitoring. We classify integration methods by where and how tightly graphs and models combine, distinguishing simple prompt-pasting from graph-aware encoders, and map the underlying ontologies, clinical datasets, and benchmarks supporting retrieval and tool-using agents. We find that graph benefits are highly conditional. Graphs help when they fill genuine knowledge gaps, entity linking succeeds, retrieval returns small relevant subgraphs, and evaluations use matched text-retrieval baselines. They help less and may hurt when coverage is thin, mappings fail, or retrieved context overpowers decisive evidence. We also examine practical failure modes, including weak citations, poor temporal handling, and closed-loop feedback, in which model proposals are written back into the graph and later retrieved as independent evidence.
+ER  - 
+
+TY  - JOUR
+TI  - Language Models for Hierarchical Classification of Radiology Reports With Attention Mechanisms, BERT, and GPT-4
+T2  - IEEE Access
+SP  - 69710
+EP  - 69727
+AU  - M. Olivato
+AU  - L. Putelli
+AU  - N. Arici
+AU  - A. Emilio Gerevini
+AU  - A. Lavelli
+AU  - I. Serina
+PY  - 2024
+KW  - Radiology
+KW  - Task analysis
+KW  - Computed tomography
+KW  - Biological system modeling
+KW  - Training
+KW  - Lung
+KW  - Data models
+KW  - Deep learning
+KW  - Large language models
+KW  - Attention mechanism
+KW  - BERT
+KW  - BioBIT
+KW  - deep learning
+KW  - GPT-4
+KW  - large language models
+KW  - natural language processing
+KW  - Italian language
+KW  - prompt engineering
+KW  - radiology reports
+KW  - Italian radiology reports
+KW  - text classification
+DO  - 10.1109/ACCESS.2024.3402066
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 12
+VL  - 12
+JA  - IEEE Access
+Y1  - 2024
+AB  - Radiology reports are a valuable source of textual information used to improve clinical care and support research. In recent years, deep learning techniques have been shown to be effective in classifying radiology reports. This article investigates the use of deep learning techniques with attention mechanisms to achieve better performance in the classification of radiology reports. We focus on various Natural Language Processing approaches, such as LSTM with Attention, BERT, and GPT-4, evaluated on a chest tomography report dataset regarding neoplastic diseases collected from an Italian hospital. In particular, we compare the results with a previous machine learning system, showing that models based on attention mechanisms can achieve higher performance. The Attention Mechanism allows us to identify the most relevant bits of text used by the model to make its predictions. We show that our model achieves state-of-the-art results on the hierarchical classification of radiology reports. Moreover, we evaluate the performance of GPT-4 on the classification of these reports in a zero-shot setup through prompt engineering, showing interesting results even with a small context and a non-English language. Our findings suggest that deep learning techniques with attention mechanisms may be successful in the classification of radiology reports even in non-English languages for which it is not possible to leverage on large text corpus.
+ER  - 
+
+TY  - JOUR
+TI  - A Review of Applying Large Language Models in Healthcare
+T2  - IEEE Access
+SP  - 6878
+EP  - 6892
+AU  - Q. Liu
+AU  - R. Yang
+AU  - Q. Gao
+AU  - T. Liang
+AU  - X. Wang
+AU  - S. Li
+AU  - B. Lei
+AU  - K. Gao
+PY  - 2025
+KW  - Medical services
+KW  - Large language models
+KW  - Training
+KW  - Transformers
+KW  - Medical diagnostic imaging
+KW  - Biological system modeling
+KW  - Bibliometrics
+KW  - Analytical models
+KW  - Mathematical models
+KW  - Market research
+KW  - Healthcare
+KW  - large language models
+KW  - literature bibliometric
+KW  - medical
+DO  - 10.1109/ACCESS.2024.3524588
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - In response to the growing demand for healthcare and the increasing importance people place on medical services, efficiently meeting these needs within the constraints of limited healthcare resources is of great social and economic benefit. Therefore, research into applying Large Language Models (LLMs) in the healthcare sector holds significant importance. This paper provides a review of the research progress on the application of LLMs in the healthcare field. First, the basic framework of LLMs is summarized, and the training process of LLMs in healthcare is systematically reviewed. Next, six specific application areas of LLMs in healthcare are reviewed: disease diagnosis and decision support, dissemination of medical knowledge, medical assistance, medical image analysis, biomedicine, and medical education. Then, several representative healthcare-specific LLMs are discussed, along with their performance analysis. Following this, the challenges faced by LLMs in healthcare are summarized, and relevant suggestions are provided. The future development trends of LLMs in healthcare are also explored. Finally, a bibliometric analysis is performed. Through the literature review, we found: 1) After pretraining, LLMs are widely adaptable to downstream tasks, significantly enhancing processing performance and efficiency; 2) LLMs in healthcare possess multiple capabilities and can handle multimodal data; 3) Bibliometric analysis shows that researchers are paying increasing attention to the application of LLMs in healthcare; 4) Further research is needed in optimizing, improving reliability, and expanding practical applications of large healthcare models.
+ER  - 
+
+TY  - JOUR
+TI  - Advancing Healthcare with Large Language Models: Techniques and Application
+T2  - IEEE/CAA Journal of Automatica Sinica
+SP  - 2371
+EP  - 2398
+AU  - Z. Hu
+AU  - Z. Peng
+AU  - Z. Bi
+AU  - Q. Shen
+AU  - Z. Liu
+AU  - J. Lou
+AU  - X. Luo
+PY  - 2025
+KW  - Measurement
+KW  - Analytical models
+KW  - Costs
+KW  - Reviews
+KW  - Large language models
+KW  - Retrieval augmented generation
+KW  - Medical services
+KW  - Benchmark testing
+KW  - Faces
+KW  - Application
+KW  - healthcare
+KW  - large language models (LLMs)
+KW  - medicine
+KW  - techniques
+DO  - 10.1109/JAS.2025.125540
+JO  - IEEE/CAA Journal of Automatica Sinica
+IS  - 12
+SN  - 2329-9274
+VO  - 12
+VL  - 12
+JA  - IEEE/CAA Journal of Automatica Sinica
+Y1  - December 2025
+AB  - As the costs of global healthcare systems continue to rise, large language models (LLMs) have emerged as a promising technology with vast potential and wide-ranging applications in the medical field. We provide a detailed overview of the lifecycle of medical LLMs, encompassing three key stages: get, refine, and use, aimed at assisting healthcare practitioners and patients in utilizing these models more effectively. We also summarize the currently widely used medical evaluation benchmarks, analyzing their advantages and limitations. Furthermore, we conduct a comparative analysis of specialized medical LLMs on benchmarks such as MedQA, PubMedQA, MMLU-MED, and MedM-CQA, revealing that methods like retrieval-augmented generation (RAG) enable smaller models to outperform larger ones by effectively integrating external medical knowledge. This review provides a reference for medical professionals to evaluate LLM capabilities and inspires the development of more effective benchmarking methods. Additionally, we showcase practical applications of medical LLMs in clinical, research, and educational settings, providing healthcare workers with valuable resources. Finally, we identify current challenges faced by medical LLMs and present outlooks for future technological advancements, aiming to inspire users to explore new ways to address existing issues. This review serves as an entry point for interested clinicians, helping them determine whether and how to integrate LLM technology into healthcare for the benefit of patients and practitioners.
+ER  - 
+
+TY  - JOUR
+TI  - Large Language Models for Clinical Text Cleansing Enhance Medical Concept Normalization
+T2  - IEEE Access
+SP  - 147981
+EP  - 147990
+AU  - A. Abdulnazar
+AU  - R. Roller
+AU  - S. Schulz
+AU  - M. Kreuzthaler
+PY  - 2024
+KW  - Chatbots
+KW  - Accuracy
+KW  - Medical services
+KW  - Large language models
+KW  - Unified modeling language
+KW  - Codes
+KW  - Biological system modeling
+KW  - Training
+KW  - Data integrity
+KW  - Text analysis
+KW  - Natural language processing
+KW  - Clinical diagnosis
+KW  - ChatGPT
+KW  - medical concept normalization
+KW  - retrieval augmented generation
+KW  - text cleansing
+DO  - 10.1109/ACCESS.2024.3472500
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 12
+VL  - 12
+JA  - IEEE Access
+Y1  - 2024
+AB  - Most clinical information is only available as free text. Large language models (LLMs) are increasingly applied to clinical data to streamline communication, enhance the accuracy of clinical documentation, and ultimately improve healthcare delivery. This study focuses on a corpus of anonymized clinical narratives in German. On the one hand it evaluates the use of ChatGPT for text cleansing, i.e., the automatic rephrasing of raw text into a more readable and standardized form, and on the other hand for retrieval-augmented generation (RAG). In both tasks, the final goal was medical concept normalization (MCN), i.e., the annotation of text segments with codes from a controlled vocabulary using natural language processing. We found that ChatGPT (GPT-4) significantly improves precision and recall compared to simple dictionary matching. For all scenarios, the importance of the underlying terminological basis was also demonstrated. Maximum F1 scores of 0.607, 0.735 and 0.754 (i.e, for top 1, 5 and 10 matches) were achieved through a pipeline including document cleansing, bi-encoder-based term matching based on a large domain dictionary linked to SNOMED CT, and finally re-ranking using RAG.
+ER  - 
+
+TY  - JOUR
+TI  - Predicting Tumor Type and Residual Status of Suprasellar Lesions Using Indian Discharge Summaries
+T2  - IEEE Access
+SP  - 134379
+EP  - 134410
+AU  - P. C. Nair
+AU  - D. Gupta
+AU  - B. I. Devi
+AU  - V. Kanjirangat
+AU  - P. Deepak
+PY  - 2024
+KW  - Lesions
+KW  - Transformers
+KW  - Encoding
+KW  - Biological system modeling
+KW  - Bidirectional control
+KW  - Adaptation models
+KW  - Visualization
+KW  - Brain cancer
+KW  - Tumors
+KW  - Large language models
+KW  - Zero-shot learning
+KW  - Brain tumor
+KW  - suprasellar lesions
+KW  - discharge summaries
+KW  - residual tumor
+KW  - fine-tuning
+KW  - large language model
+KW  - zero-shot classification
+KW  - word embedding
+KW  - BioBERT
+KW  - Flan-T5
+KW  - bloom
+DO  - 10.1109/ACCESS.2024.3460976
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 12
+VL  - 12
+JA  - IEEE Access
+Y1  - 2024
+AB  - A suprasellar lesion is an unusual mass in the suprasellar region in the brain. Some common suprasellar lesions include Pituitary Adenoma, Craniopharyngioma and Meningioma. Patients may present with significant visual and other symptoms like headache, and hormonal imbalances. The proposed study utilizes 553 discharge summaries of suprasellar patients admitted during 2013–2019 at NIMHANS hospitals, Bangalore. Classification of discharge summary was conducted using 11 different word embedding techniques, including word2vec, FastText, Glove, and transformer-based embeddings. Tumor type is predicted using advanced ML classifiers like AdaBoost, Random Forest, and XGBoost. The highest F-score of 0.91 was reported for XGBoost when implemented along with SMOTE based data balancing and PCA based feature reduction. To enhance the classification performance of the best performing model, ClinicalBioBERT, a pre-trained BERT model that demonstrated superior results, was finetuned with domain-specific clinical data and resulted in an improvement of the F-score to 0.93. Classification of presence/absence of residual tumor post surgery is also carried out using transformer models and achieved a macro F1-score of maximum 1, after handling the class imbalance using SMOTE. Different combinations of experiments with PCA and SMOTE were carried out in both classification problems. Two Large Language Models: FlanT5 and Bloom, are also investigated in this work for both classification problems Initially, the LLM is employed with a zero-shot classification pipeline, resulting in poor performance. Consequently, fine-tuning of the LLM models are attempted using the discharge summary text, resulting in performance improvements.
+ER  - 
+
+TY  - JOUR
+TI  - When Does Instruction Tuning Work in Biomedical NLP? A Structural, Task-Aware, and Safety–Critical Evaluation of Large Language Models
+T2  - IEEE Access
+SP  - 74190
+EP  - 74220
+AU  - A. Onan
+AU  - A. H. Nasution
+AU  - T. Celikten
+PY  - 2026
+KW  - Modeling
+KW  - Tuning
+KW  - Safety
+KW  - Labeling
+KW  - Large language models
+KW  - Rigidity
+KW  - Natural language processing
+KW  - Sensitivity
+KW  - Design methodology
+KW  - Measurement
+KW  - Biomedical NLP
+KW  - clinical NLP
+KW  - instruction design
+KW  - instruction tuning
+KW  - large language models
+KW  - safety analysis
+KW  - task granularity
+KW  - health system
+KW  - health service access
+DO  - 10.1109/ACCESS.2026.3693566
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 14
+VL  - 14
+JA  - IEEE Access
+Y1  - 2026
+AB  - Instruction tuning has emerged as an effective mechanism for adapting large language models (LLMs) to biomedical natural language processing (BioNLP), enabling improved task generalization with reduced reliance on extensive domain-specific pretraining. However, empirical evidence shows that its effectiveness varies substantially across biomedical tasks, and the factors governing these variations remain insufficiently understood. In particular, prior work often treats instruction tuning as a uniform adaptation strategy, without systematically examining the roles of task structure, instruction design, and robustness. In this work, we present a comprehensive, structure-aware and task-aware evaluation of instruction tuning for biomedical NLP. We organize biomedical tasks according to output granularity and rigidity, and analyze how instruction structures interact with token-, sentence-, and document-level tasks across multiple model families. To move beyond performance-centric evaluation, we introduce diagnostic measures that capture instruction sensitivity, format violations, and safety-related failure modes. Our results reveal a consistent relationship between output rigidity and instruction tuning gain: tasks with flexible output spaces benefit more from instruction tuning than schema-rigid tasks. We further show that instruction sensitivity varies with task granularity and instruction structure, while robustness and safety considerations expose trade-offs, and that robustness and safety considerations expose trade-offs that are not reflected in standard accuracy metrics alone. Based on these findings, we derive practical design guidelines for instruction construction, model selection, and evaluation in biomedical settings. This study reframes instruction tuning as a structured design problem rather than a one-size-fits-all approach.
+ER  - 
+
+TY  - JOUR
+TI  - The Effectiveness of Large Language Models in Transforming Unstructured Text to Standardized Formats
+T2  - IEEE Access
+SP  - 91808
+EP  - 91825
+AU  - W. Brach
+AU  - K. Košťál
+AU  - M. Ries
+PY  - 2025
+KW  - Measurement
+KW  - Accuracy
+KW  - Natural language processing
+KW  - Documentation
+KW  - Transforms
+KW  - Medical services
+KW  - Cognition
+KW  - Large language models
+KW  - Analytical models
+KW  - Training
+KW  - Large language models
+KW  - text generation
+KW  - natural language processing
+KW  - prompt engineering
+KW  - structured text
+KW  - few-shot learning
+DO  - 10.1109/ACCESS.2025.3573030
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - The exponential growth of unstructured text data presents a fundamental challenge in modern data management and information retrieval. While Large Language Models (LLMs) have shown remarkable capabilities in natural language processing, their potential to transform unstructured text into standardized, structured formats remains largely unexplored - a capability that could revolutionize data processing workflows across industries. This study breaks new ground by systematically evaluating LLMs’ ability to convert unstructured recipe text into the structured Cooklang format. Through comprehensive testing of four models (GPT-4o, GPT-4o-mini, Llama3.1:70bLlama3.3:70b, and Llama3.1:8b), an innovative evaluation approach is introduced that combines traditional metrics (WER, ROUGE-L, TER) with specialized metrics for semantic element identification. Our experiments reveal that GPT-4o with few-shot prompting achieves breakthrough performance (ROUGE-L: 0.8209, WER: 0.3509), demonstrating for the first time that LLMs can reliably transform domain-specific unstructured text into structured formats without extensive training. Although model performance generally scales with size, we uncover surprising potential in smaller models like Llama3.1:8b for optimization through targeted fine-tuning. These findings open new possibilities for automated structured data generation across various domains, from medical records to technical documentation, potentially transforming the way organizations process and utilize unstructured information. For further information, source code, and associated resources, please refer to the source code repository (https://github.com/fiit-ba/text-to-cooklang).
+ER  - 
+
+TY  - JOUR
+TI  - Towards Artificial Intelligence for Science: A Case Study of Using ChatGPT for Disease Causality Discovery from Biomedical Literature
+T2  - Big Data Mining and Analytics
+SP  - 554
+EP  - 562
+AU  - X. Li
+AU  - J. Du
+AU  - Y. Liu
+AU  - H. Yin
+AU  - H. Liu
+PY  - 2026
+KW  - Annotations
+KW  - Large language models
+KW  - Cause effect analysis
+KW  - Knowledge graphs
+KW  - Chatbots
+KW  - Prompt engineering
+KW  - Artificial intelligence
+KW  - Electronic medical records
+KW  - Diseases
+KW  - Testing
+KW  - artificial intelligence for science (AI4S)
+KW  - large language models (LLMs)
+KW  - ChatGPT
+KW  - disease causality discovery
+KW  - scientific research
+DO  - 10.26599/BDMA.2025.9020086
+JO  - Big Data Mining and Analytics
+IS  - 2
+SN  - 2097-406X
+VO  - 9
+VL  - 9
+JA  - Big Data Mining and Analytics
+Y1  - April 2026
+AB  - Generative artificial intelligence (GAI) has garnered considerable attention from the scientific community and driven a paradigm shift in scientific research, namely AI for science (AI4S). To evaluate the potential of GAI in biomedical research, this study explores the capability of using large language models (LLMs) to discover biomedical knowledge by conducting a case study to extract disease causalities from large-scale biomedical literature using ChatGPT. In particular, two groups of the most frequent causal knowledge in the biomedical domain are discussed in this study, especially the causalities among different diseases and chemically induced causations. Quantitatively, ChatGPT's responses are compared with biocurators' annotations in identifying causalities from a random sampling of PubMed citations. Guided by six predefined prompts of three mainstream paradigms, namely zero-shot, few-shot, and long chain-of-thought (CoT), ChatGPT's results are very close to human annotations in terms of a high degree of precision (94.73% for the disease-disease group and 92.47% for the chemical-disease group individually). These findings suggest that ChatGPT has the capacity to discover biomedical knowledge efficiently, as well as the capability to facilitate biomedical research. In the near future, more state-of-the-art LLMs, more real-world data, such as electronic medical records, and more biomedical tasks will be pursued for a series of holistic studies. Overall, this work supports the vision and development of AI4S, especially the knowledge discovery of biomedical research.
+ER  - 
+
+TY  - JOUR
+TI  - MindWellQA: A Semantically Enriched Evidence-Based QA System for Psychological Disorders
+T2  - IEEE Access
+SP  - 190003
+EP  - 190026
+AU  - D. Pawar
+AU  - S. Phansalkar
+PY  - 2025
+KW  - Accuracy
+KW  - Mental health
+KW  - Medical diagnostic imaging
+KW  - Semantics
+KW  - Psychology
+KW  - Prompt engineering
+KW  - Biological system modeling
+KW  - Depression
+KW  - Context modeling
+KW  - Predictive models
+KW  - Healthcare
+KW  - mental health
+KW  - question answering
+KW  - extractive summarization
+KW  - named entity recognition
+KW  - intent classification
+KW  - context generation
+KW  - large language models
+KW  - evidence based
+KW  - semantic enrichment
+KW  - psychological disorders
+KW  - depression
+DO  - 10.1109/ACCESS.2025.3627880
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - The increasing prevalence of psychological disorders highlights the urgent need for early diagnosis and intervention. While advanced humanoid Large Language Models (LLMs) offer potential for intelligent Question-Answering (QA) systems in this domain, existing generic LLMs lack specificity and fail to provide evidence-based responses. Additionally, the lack of context can lead to ambiguous and vague answers, which may result in inaccuracies or a lack of emotional sensitivity. To address these limitations, we present MindWellQA, an evidence-based, semantically enriched QA system designed to answer queries related to psychological disorders like Mood Disorder, Paranoid Personality Disorder, Anxiety Disorders and Psychotic Disorders including symptoms and treatments. This system integrates the latest scientific inventories, dictionaries, medicine, and therapy databases while leveraging intent classification, named entity recognition, and prompt engineering for enhanced response accuracy. MindWellQA is available in two variants Alpha and Beta based on the complexity of the LLM used in context generation. MindWellQA is built using a transfer learning approach with Parameter-Efficient Fine-Tuning (PEFT) and is trained on a dataset over 2,000 classified questions with different domains like symptoms, treatments and disorders. These questions are augmented with variations based on gender, age, and profession to ensure inclusivity and personalization. The system’s responses are evaluated using both quantitative and qualitative metrics, including word count, TF-IDF, and Rouge variants, ensuring high-quality outputs. Furthermore, MindWellQA undergoes rigorous validation by psychological experts and end-users from diverse demographics. The system demonstrates high accuracy, sensitivity, and user-friendliness, making it a promising tool for individuals seeking reliable psychological health information. As compared to most prevalent LLM/GPT models, an evidence-based approach enhances trust, usability, and accuracy, setting a higher standard for psychological disorder QA systems.
+ER  - 
+
+TY  - JOUR
+TI  - Medical Information Extraction With NLP-Powered QABots: A Real-World Scenario
+T2  - IEEE Journal of Biomedical and Health Informatics
+SP  - 6906
+EP  - 6917
+AU  - C. Crema
+AU  - F. Verde
+AU  - P. Tiraboschi
+AU  - C. Marra
+AU  - A. Arighi
+AU  - S. Fostinelli
+AU  - G. M. Giuffré
+AU  - V. P. D. Maschio
+AU  - F. L'Abbate
+AU  - F. Solca
+AU  - B. Poletti
+AU  - V. Silani
+AU  - E. Rotondo
+AU  - V. Borracci
+AU  - R. Vimercati
+AU  - V. Crepaldi
+AU  - E. Inguscio
+AU  - M. Filippi
+AU  - F. Caso
+AU  - A. M. Rosati
+AU  - D. Quaranta
+AU  - G. Binetti
+AU  - I. Pagnoni
+AU  - M. Morreale
+AU  - F. Burgio
+AU  - M. Stanzani-Maserati
+AU  - S. Capellari
+AU  - M. Pardini
+AU  - N. Girtler
+AU  - F. Piras
+AU  - F. Piras
+AU  - S. Lalli
+AU  - E. Perdixi
+AU  - G. Lombardi
+AU  - S. D. Tella
+AU  - A. Costa
+AU  - M. Capelli
+AU  - C. Fundarò
+AU  - M. Manera
+AU  - C. Muscio
+AU  - E. Pellencin
+AU  - R. Lodi
+AU  - F. Tagliavini
+AU  - A. Redolfi
+PY  - 2024
+KW  - Natural language processing
+KW  - Data mining
+KW  - Question answering (information retrieval)
+KW  - Text mining
+KW  - Bioinformatics
+KW  - Clinical neuroscience
+KW  - Relational databases
+KW  - Natural language processing
+KW  - question answering (information retrieval)
+KW  - text mining
+KW  - biomedical informatics
+KW  - clinical neuroscience
+DO  - 10.1109/JBHI.2024.3450118
+JO  - IEEE Journal of Biomedical and Health Informatics
+IS  - 11
+SN  - 2168-2208
+VO  - 28
+VL  - 28
+JA  - IEEE Journal of Biomedical and Health Informatics
+Y1  - Nov. 2024
+AB  - The advent of computerized medical recording systems in healthcare facilities has made data retrieval tasks easier, compared to manual recording. Nevertheless, the potential of the information contained within medical records remains largely untapped, mostly due to the time and effort required to extract data from unstructured documents. Natural Language Processing (NLP) represents a promising solution to this challenge, as it enables the use of automated text-mining tools for clinical practitioners. In this work, we present the architecture of the Virtual Dementia Institute (IVD), a consortium of sixteen Italian hospitals, using the NLP Extraction and Management Tool (NEMT), a (semi-) automated end-to-end pipeline that extracts relevant information from clinical documents and stores it in a centralized REDCap database. After defining a common Case Report Form (CRF) across the IVD hospitals, we implemented NEMT, the core of which is a Question Answering Bot (QABot) based on a modern NLP model. This QABot is fine-tuned on thousands of examples from IVD centers. Detailed descriptions of the process to define a common minimum dataset, Inter-Annotator Agreement calculated on clinical documents, and NEMT results are provided. The best QABot performance show an Exact Match score (EM) of 78.1%, a F1-score of 84.7%, a Lenient Accuracy (LAcc) of 0.834, and a Mean Reciprocal Rank (MRR) of 0.810. EM and F1 scores outperform the same metrics obtained with ChatGPTv3.5 (68.9% and 52.5%, respectively). With NEMT the IVD has been able to populate a database that will contain data from thousands of Italian patients, all screened with the same procedure. NEMT represents an efficient tool that paves the way for medical information extraction and exploitation for new research studies.
+ER  - 
+
+TY  - JOUR
+TI  - MedInsight Pro: An Explainable Hybrid NLP and LLM Fusion Framework for Radiology Report Interpretation
+T2  - IEEE Access
+SP  - 31450
+EP  - 31465
+AU  - S. Nandi
+AU  - K. Patil
+AU  - K. V. Datta
+AU  - M. Jaswanth Reddy
+PY  - 2026
+KW  - Natural language processing
+KW  - Radiology
+KW  - Pipelines
+KW  - Accuracy
+KW  - Visualization
+KW  - Cognition
+KW  - Syntactics
+KW  - Reproducibility of results
+KW  - Biomedical imaging
+KW  - X-ray imaging
+KW  - Clinical NLP
+KW  - radiology reports
+KW  - large language models
+KW  - hybrid AI
+KW  - explainable AI
+KW  - medical decision support
+KW  - negation detection
+KW  - CheXpert dataset
+DO  - 10.1109/ACCESS.2026.3665268
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 14
+VL  - 14
+JA  - IEEE Access
+Y1  - 2026
+AB  - Radiology reports are often unstructured, containing ambiguous phrases and negations that make automated interpretation difficult. This paper introduces MedInsight Pro, a hybrid clinical NLP (Natural Language Processing) framework that fuses deterministic parsing with LLM (Large Language Model) augmentation to extract meaningful insights from chest X-ray impressions. The system combines rule-based negation detection, dependency parsing, and lexicon-driven keyword matching with contextual expansion powered by Groq’s LLM. On an expanded CheXpert-derived cohort of 2 020 reports (1 020 real and 1 000 augmented samples), MedInsight Pro achieved an average macro F1-score of 89.7%, with overall precision of 91.8%, recall of 89.4%, and negation detection accuracy of 95.1%. These results surpass keyword-only, LLM-only, and CheXpert labeler baselines. Deployed via a Streamlit interface, the system also offers explainability through clause heatmaps, radar charts, robustness visualizations under synthetic domain shift, and a clinical Q&A interface. The findings highlight the practicality of hybrid NLP–LLM pipelines as scalable, transparent decision-support tools for radiologists in real-world clinical settings. The system demonstrates strong performance in structured label extraction and offers interpretability through visualization modules and an LLM-assisted reasoning layer.
+ER  - 
+
+TY  - JOUR
+TI  - Benchmarking Radiology Report Generation From Noisy Free-Texts
+T2  - IEEE Journal of Biomedical and Health Informatics
+SP  - 7549
+EP  - 7558
+AU  - Y. Yuan
+AU  - Y. Zheng
+AU  - L. Qu
+PY  - 2025
+KW  - Noise measurement
+KW  - Radiology
+KW  - Measurement
+KW  - Benchmark testing
+KW  - Large language models
+KW  - Biomedical imaging
+KW  - Bioinformatics
+KW  - Text processing
+KW  - Benchmark
+KW  - large language model (LLM)
+KW  - natural language processing
+KW  - radiology report generation
+DO  - 10.1109/JBHI.2025.3569428
+JO  - IEEE Journal of Biomedical and Health Informatics
+IS  - 10
+SN  - 2168-2208
+VO  - 29
+VL  - 29
+JA  - IEEE Journal of Biomedical and Health Informatics
+Y1  - Oct. 2025
+AB  - Automatic radiology report generation can enhance diagnostic efficiency and accuracy. However, clean open-source imaging scan-report pairs are limited in scale and variety. Moreover, the vast amount of radiological texts available online is often too noisy to be directly employed. To address this challenge, we introduce a novel task called Noisy Report Refinement (NRR), which generates radiology reports from noisy free-texts. To achieve this, we propose a report refinement pipeline that leverages large language models (LLMs) enhanced with guided self-critique and report selection strategies. To address the inability of existing radiology report generation metrics in measuring cleanliness, radiological usefulness, and factual correctness across various modalities of reports in NRR task, we introduce a new benchmark, NRRBench, for NRR evaluation. This benchmark includes two online-sourced datasets and four clinically explainable LLM-based metrics: two metrics evaluate the matching rate of radiology entities and modality-specific template attributes respectively, one metric assesses report cleanliness, and a combined metric evaluates overall NRR performance. Experiments demonstrate that guided self-critique and report selection strategies significantly improve the quality of refined reports. Additionally, our proposed metrics show a much higher correlation with noisy rate and error count of reports than radiology report generation metrics in evaluating NRR.
+ER  - 
+
+TY  - JOUR
+TI  - An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence
+T2  - IEEE Access
+SP  - 167390
+EP  - 167404
+AU  - Ç. U. Öğdü
+AU  - K. Arslanoğlu
+AU  - M. Karaköse
+PY  - 2025
+KW  - Accuracy
+KW  - Reliability
+KW  - Real-time systems
+KW  - Medical diagnostic imaging
+KW  - Large language models
+KW  - Data integration
+KW  - Protocols
+KW  - Heuristic algorithms
+KW  - Decision support systems
+KW  - Databases
+KW  - Clinical decision support system
+KW  - large language models
+KW  - multi-agent system
+DO  - 10.1109/ACCESS.2025.3613340
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - Increasing data complexity in clinical decision-making processes hinders physicians’ ability to make rapid and accurate decisions. This study proposes an innovative solution to this problem by designing a multi-layered, adaptive Clinical Decision Support System (CDSS) comprising interacting large language model (LLM) agents. The proposed system performs semantic-level information retrieval using a BioBERT-based vector database, enhances information retrieval by accessing up-to-date medical resources via the web, and restructures outputs by activating an adaptive optimization loop in low-confidence situations. Through the structuring of clinical texts, cross-validation of symptom analyses with literature and internet sources, and collaborative data fusion among agents, the system integrates multi-source data and produces consistent decisions. In experiments conducted on the MedQA, PubMedQA, and MedBullets datasets, the system achieved accuracies of 94%, 88%, and 84%, respectively, representing substantial improvements over state-of-the-art methods and demonstrating the significance of the proposed architecture for clinical decision-making reliability. This framework is not merely an information retrieval engine; it is a clinical intelligence partner designed to learn, actively contribute to the decision process, and focus on reliability. In contrast to current CDSS protocols, which frequently depend on static modules or single-agent models, our architecture tackles some of the shortcomings in timeliness, multi-source evidence fusion, and confidence calibration. This originality enables the system to be a next-generation clinical intelligence partner by enabling an unprecedented level of transparency, customizability, and adaptability in real-world decision-making processes.
+ER  - 
+
+TY  - JOUR
+TI  - EILEEN: A Multi-Modal Framework for Extracting Alcohol Consumption Patterns From Bilingual Clinical Notes
+T2  - IEEE Access
+SP  - 25741
+EP  - 25751
+AU  - H. K. Kim
+AU  - Y. Park
+AU  - Y. J. Kim
+AU  - S. Yi
+AU  - Y. Park
+AU  - S. So
+AU  - H. -J. Lee
+AU  - Y. S. Bae
+PY  - 2025
+KW  - Natural language processing
+KW  - Multilingual
+KW  - Accuracy
+KW  - Data mining
+KW  - Ontologies
+KW  - Hospitals
+KW  - Vectors
+KW  - Unified modeling language
+KW  - Transformers
+KW  - Feature extraction
+KW  - Clinical informatics
+KW  - alcohol information extraction
+KW  - natural language processing
+KW  - multimodal learning
+KW  - multilingual transformers
+DO  - 10.1109/ACCESS.2025.3538803
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - In this work, we introduce EILEEN (Efficient Inference for Language-based Extraction of EHR Notes), a novel multi-modal natural language processing (NLP) framework designed to extract various alcohol consumption patterns from unstructured clinical notes, particularly in bilingual and non-English contexts. Recent advances in NLP have significantly improved information extraction capability across various domains. However, identifying patterns of alcohol consumption in medical documents remains underexplored, with existing approaches heavily relying on traditional NLP methods such as bag-of-words models that require extensive text preprocessing. These methods are often limited to English-language clinical settings, where robust medical ontologies and NLP toolkits are available to support preprocessing tasks. Therefore, this limitation hinders their use in multilingual healthcare settings and in environments lacking robust NLP toolkits to facilitate preprocessing. Motivated by the need for a more generalizable and accurate approach, this paper investigates the impact of large language models (LLMs) in advancing alcohol consumption pattern extraction from clinical notes. By reducing the need for manual preprocessing and improving adaptability to multilingual clinical notes, this work aims to enable broader, more practical applications of NLP models in extracting alcohol consumption patterns from clinical notes. By fine-tuning multilingual language models along with additional data sources, EILEEN effectively analyzes unstructured electronic health records (EHR) without relying on traditional concept normalization or extensive text preprocessing resources. Furthermore, the multi-modal component of EILEEN enables it to integrate and leverage diverse types of alcohol-related information, such as various types and amounts of alcohol consumed by a patient, thereby improving its pattern extraction accuracy. Our experiments, conducted in two different medical institutions in Korea, demonstrate that EILEEN significantly outperforms existing NLP methods in accurately identifying clinically relevant alcohol consumption patterns. By providing accurate, detailed, and clinically useful alcohol consumption patterns from unstructured clinical notes, EILEEN empowers healthcare practitioners with actionable insights essential for informed clinical decision-making.
+ER  - 
+
+TY  - JOUR
+TI  - A Privacy-Aware Federated Framework With Self-Regulating Differential Privacy and Ontology-Based Lexical Substitution for Safe Clinical LLM Querying
+T2  - IEEE Access
+SP  - 114318
+EP  - 114335
+AU  - K. Bhuvaneswari
+AU  - M. Varalakshmi
+PY  - 2026
+KW  - Privacy
+KW  - Modeling
+KW  - Ontologies
+KW  - Large language models
+KW  - Federated learning
+KW  - Differential privacy
+KW  - Medical services
+KW  - Noise
+KW  - Retrieval augmented generation
+KW  - Aging
+KW  - Federated healthcare analytics
+KW  - heterogeneous privacy levels
+KW  - LLM-powered healthcare analytics
+KW  - ontology-based lexical substitution
+KW  - privacy-preserving LLMs
+KW  - self-regulating differential privacy
+DO  - 10.1109/ACCESS.2026.3710822
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 14
+VL  - 14
+JA  - IEEE Access
+Y1  - 2026
+AB  - LLM-powered healthcare analytics provides clinicians and government agencies with critical insights for effective public health management through intuitive natural language queries, thereby eliminating the need for dedicated IT support. Given the sensitive nature of medical records, our proposed framework is motivated by the requirement to incorporate strong privacy-preserving mechanisms to maintain the confidentiality of patient information. Our model achieves increased level of privacy and utility of healthcare data through five complementary mechanisms: 1) federated framework simulated across multiple healthcare sites to enable secure and scalable analysis of patient records; 2) Complementary NER and Regex based redaction of raw sensitive clinical data; 3) ontology-guided semantic abstraction; 4) access-controlled mechanisms; and 5) a novel two-stage self-regulating differential privacy with heterogeneous privacy budgets. Experimental results indicate that Gemini 3.1 Flash-Lite is the most effective language-model to implement our proposed system, outperforming both Claude Haiku 4.5 and GPT-4o models across a carefully curated set of four application-specific metrics namely numerical accuracy, intent accuracy, hallucination rate and task success rate. During the ablation analysis performed on three distinct datasets including a real-time hospital dataset, the observed progressive increase in consistency score, as components are added, underscores the significance of each mechanism and demonstrates that their combined integration is critical for achieving the maximum consistency score of 96%. Furthermore, scalability experiments conducted over a range of 1 to 10 federated sites indicate that the proposed system achieves a favourable balance between aggregation accuracy and computational efficiency, making it well-suited for large-scale deployments.
+ER  - 
+
+TY  - JOUR
+TI  - Advancing Multilingual Retrieval-Augmented Generation for Reliable Medication Counseling
+T2  - IEEE Access
+SP  - 215550
+EP  - 215564
+AU  - E. Bazzi Mohamed Salim
+AU  - T. Anass
+AU  - A. Ider Abdelouahed
+PY  - 2025
+KW  - Chatbots
+KW  - Multilingual
+KW  - Medical services
+KW  - Drugs
+KW  - Reliability
+KW  - Artificial intelligence
+KW  - Retrieval augmented generation
+KW  - Medical diagnostic imaging
+KW  - Employee welfare
+KW  - Safety
+KW  - Drug interactions
+KW  - AI in healthcare
+KW  - large language models
+KW  - medical chatbot
+KW  - medication information
+KW  - re-generated extraction
+DO  - 10.1109/ACCESS.2025.3646941
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - Recent advances in Large Language Models (LLMs) have opened opportunities for intelligent medical chatbots. However, most existing systems remain limited to English-language corpora and lack adaptation to regional drug repositories. This paper introduces a Retrieval-Augmented Generation (RAG) chatbot designed for medication counseling across Franco-Moroccan contexts. Our pipeline integrates 5,300 Moroccan and 8,300 French drugs into a unified knowledge base, indexed with SentenceTransformers and FAISS, and paired with state-of-the-art LLMs. Evaluation was conducted on a curated benchmark of 100 drug-related queries covering dosage, contraindications, and drug-drug interactions. Results show that our chatbot achieves a BERTScore F1 of 0.71. This corresponds to a +5% improvement in factuality, measured using automated faithfulness and groundedness metrics, compared to state-of-the-art baselines. Beyond numerical gains, the system demonstrates robustness in handling multilingual queries, contextual terminology, and region-specific prescriptions, addressing a gap in current healthcare AI. These results demonstrate the feasibility of deploying RAG-based systems in underrepresented linguistic and cultural settings, offering safer and more transparent medication information. This work advances the field of medical LLMs by combining semantic accuracy with contextual reliability, setting a precedent for multilingual and localized healthcare AI systems.
+ER  - 
+
+TY  - JOUR
+TI  - AI Veterinary Assistance: Enhancing Clinical Decision-Making in Animal Healthcare
+T2  - IEEE Access
+SP  - 119292
+EP  - 119304
+AU  - Y. -G. Jin
+AU  - G. Wu
+AU  - J. -W. Seo
+AU  - S. -J. Park
+AU  - S. -H. Hur
+AU  - D. Aliyeva
+AU  - J. -H. Park
+AU  - K. -M. Kim
+PY  - 2025
+KW  - Diseases
+KW  - Animals
+KW  - Medical diagnostic imaging
+KW  - Databases
+KW  - Decision making
+KW  - Medical services
+KW  - Accuracy
+KW  - Data mining
+KW  - Large language models
+KW  - Cognition
+KW  - Clinical decision-making assistance
+KW  - in-context learning
+KW  - large language model
+DO  - 10.1109/ACCESS.2025.3587787
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 13
+VL  - 13
+JA  - IEEE Access
+Y1  - 2025
+AB  - As the number of households raising companion animals increases, there is a corresponding increase in the demand for veterinary medical services. Furthermore, as companion animals age, the prevalence of chronic disease is increasing, leading companion animal owners to seek more help with long-term health management. However, the shortage of veterinarians and the growing complexity of the consultation process have led to a heavier workload for veterinarians, potentially hindering clinical decision-making efficiency. To address these challenges, we propose AI Veterinary Assistance (AVA), a framework leveraging a large language model. AVA automatically extracts symptoms from consultation records, predicts most probable disease using veterinarian certified disease-symptom database and recommend future consultation question. AVA achieved disease prediction accuracies of 91.4%, 93.4%, and 95.9% for Top-3, Top-5, and Top-10, respectively, along with a symptom extraction accuracy of 79.9% on a consultation records dataset constructed from a veterinarian-certified disease-symptom database. Furthermore, on a real-world dataset, AVA achieved disease prediction accuracies of 38.6%, 43.6%, and 51.5% for Top-3, Top-5, and Top-10, respectively. In both datasets, AVA outperformed baseline methods, demonstrating its effectiveness in supporting clinical decision-making. These results suggest that AVA can help reduce veterinarians’ workload while enhancing the efficiency and reliability of the consultation process.
+ER  - 
+
+TY  - JOUR
+TI  - Learning to Diagnose Privately: DP-Powered LLMs for Radiology Report Classification
+T2  - IEEE Access
+SP  - 53501
+EP  - 53512
+AU  - P. Bhattacharjee
+AU  - F. Tian
+AU  - G. D. Rubin
+AU  - J. Y. Lo
+AU  - N. Merchant
+AU  - H. A. Hanson
+AU  - J. Gounley
+AU  - R. Tandon
+PY  - 2026
+KW  - Digital audio broadcasting
+KW  - Broadcasting
+KW  - MIMICs
+KW  - Millimeter wave integrated circuits
+KW  - Monolithic integrated circuits
+KW  - LoRa
+KW  - Electronic mail
+KW  - Data communication
+KW  - Radio communication
+KW  - Communication systems
+KW  - Differential privacy
+KW  - large language models
+KW  - chest radiology reports
+KW  - multi-abnormality classification
+KW  - natural language processing
+DO  - 10.1109/ACCESS.2026.3679277
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 14
+VL  - 14
+JA  - IEEE Access
+Y1  - 2026
+AB  - Large Language Models (LLMs) are being widely adopted in different domains including education, healthcare, and finance. In healthcare domain, LLMs are used in disease diagnosis, abnormality classification, remedy suggestions etc. Multi-abnormality classification of radiology reports is essential in healthcare, medical decision-making, and drug discovery. LLMs are increasingly utilized for such tasks because of their remarkable Natural Language Processing (NLP) capabilities, which streamline medical report processing and reduce administrative burden. To enhance the predictive accuracy, LLMs are often fine-tuned on private, locally available datasets, such as medical reports. However, this practice raises significant privacy concerns, as LLMs are prone to memorizing training data, making them susceptible to data extraction attacks even through query-based access. Additionally, sharing fine-tuned models and weights poses adversarial risks, because they may inadvertently reveal sensitive information about the training data. Despite the growing application of LLMs to medical text classification, privacy-preserving fine-tuning for multi-abnormality classification remains underexplored. To bridge this gap, we propose a differentially private (DP) fine-tuning approach that preserves privacy while enabling multi-abnormality classification from text radiology reports through Low Rank Adaptation (LoRA). Our framework leverages DP optimization techniques to fine-tune LLMs on local patient data while mitigating data leakage risks. To our knowledge, this is the first study to incorporate DP fine-tuning of LLMs for multi-abnormality classification using text-based radiology reports. We used labels generated by a larger LLM to fine-tune a smaller LLM, accelerating inference while maintaining privacy constraints. We conducted extensive experiments on the MIMIC-CXR, and CT-RATE datasets to evaluate DP fine-tuning method across varying privacy regimes, analyzing the privacy-utility trade-off and demonstrating the efficacy of our approach. For instance, on the MIMIC-CXR dataset, our proposed DP-LoRA framework achieves weighted F1-scores of up to 0.89 under moderate privacy budgets ( $\epsilon = 10$ ), approaching the performance of non-private LoRA (0.90) and full fine-tuning (0.96). These results demonstrate that strong privacy protection can be achieved with only moderate performance degradation.
+ER  - 
+
+TY  - JOUR
+TI  - A Comprehensive Survey of Foundation Models in Medicine
+T2  - IEEE Reviews in Biomedical Engineering
+SP  - 283
+EP  - 304
+AU  - W. Khan
+AU  - S. Leem
+AU  - K. B. See
+AU  - J. K. Wong
+AU  - S. Zhang
+AU  - R. Fang
+PY  - 2026
+KW  - Frequency modulation
+KW  - Biomedical imaging
+KW  - Medical services
+KW  - Biological system modeling
+KW  - Surveys
+KW  - Computational modeling
+KW  - Data models
+KW  - Transformers
+KW  - Image segmentation
+KW  - Artificial intelligence
+KW  - Clinical large language models
+KW  - foundation models
+KW  - medical artificial intelligence
+KW  - medical image analysis
+KW  - omics and computational biology
+DO  - 10.1109/RBME.2025.3531360
+JO  - IEEE Reviews in Biomedical Engineering
+IS  - 
+SN  - 1941-1189
+VO  - 19
+VL  - 19
+JA  - IEEE Reviews in Biomedical Engineering
+Y1  - 2026
+AB  - Foundation models (FMs) are large-scale deep learning models trained on massive datasets, often using self-supervised learning techniques. These models serve as a versatile base for a wide range of downstream tasks, including those in medicine and healthcare. FMs have demonstrated remarkable success across multiple healthcare domains. However, existing surveys in this field do not comprehensively cover all areas where FMs have made significant strides. In this survey, we present a comprehensive review of FMs in medicine, focusing on their evolution, learning strategies, flagship models, applications, and associated challenges. We examine how prominent FMs, such as the BERT and GPT families, are transforming various aspects of healthcare, including clinical large language models, medical image analysis, and omics research. Additionally, we provide a detailed taxonomy of FM-enabled healthcare applications, spanning clinical natural language processing, medical computer vision, graph learning, and other biology- and omics-related tasks. Despite the transformative potential of FMs, they also pose unique challenges. This survey delves into these challenges and highlights open research questions and lessons learned to guide researchers and practitioners. Our goal is to provide valuable insights into the capabilities of FMs in health, facilitating responsible deployment and mitigating associated risks.
+ER  - 
+
+TY  - JOUR
+TI  - Vision-Language Models in Medical Applications: A Review
+T2  - IEEE Access
+SP  - 92070
+EP  - 92099
+AU  - S. Dasgupta
+AU  - P. Dave
+AU  - M. T. Alam
+AU  - K. Badal
+AU  - S. Zhang
+AU  - H. Moradi
+AU  - M. Siddula
+AU  - K. Roy
+PY  - 2026
+KW  - Modeling
+KW  - Training
+KW  - Reviews
+KW  - Vision language model
+KW  - Visualization
+KW  - Biomedical imaging
+KW  - Cognition
+KW  - Cognitive systems
+KW  - Architecture
+KW  - Computer architecture
+KW  - Vision language models
+KW  - healthcare AI
+KW  - multi-modal learning
+KW  - small language models
+DO  - 10.1109/ACCESS.2026.3704901
+JO  - IEEE Access
+IS  - 
+SN  - 2169-3536
+VO  - 14
+VL  - 14
+JA  - IEEE Access
+Y1  - 2026
+AB  - Artificial intelligence is entering a new era with the advent of Large Language Models (LLMs) and Vision-Language Models (VLMs). These models facilitate efficient learning involving varied modalities and tasks such as visual question answering and image captioning. The capability of such models to carry out self-supervised, semi-supervised, and weakly supervised learning methods to integrate computer vision with natural language processing makes them competent to deal with complex tasks such as disease classification and segmentation tasks in images, cross-modal information extraction, and automatic report writing. By means of pretraining on large volumes of data without annotations, such models can work with less labeled data and improve their capacity to generalize to downstream tasks. In the context of the healthcare industry, such models address critical challenges through the integration of data obtained from various medical imaging modalities with external text-based data such as radiology reports. These have led to novel tools that have been optimized to improve detection accuracy and diagnostic processes. This review paper aims to explore the recent advances in the field of medical VLMs spanning from 2021 to 2026. The primary roles include the identification of a taxonomy to classify such models, the analysis of critical data sets essential for the assessment of such models, and the current real-world implementation. This paper also aims to identify challenges and limitations in existing tools to increase their applicability. In addition, this also outlines future pathways to expand the reach and effectiveness of VLMs in medical applications.
+ER  - 
+
+
