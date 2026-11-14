@@ -50,7 +50,7 @@ A set of 10 known eligible studies (`data/validation_set.csv`) must all be retri
 **Procedures to contact authors**: One email for unclear or missing data; recorded as not reported after two weeks.
 
 **Selection procedure**
-De-duplication by script (normalised DOI, PMID, normalised title + year). Calibration on 50 random records (repeat if κ < 0.6). Two reviewers independently screen titles/abstracts (include if either says include/unsure) and full texts; disagreements resolved by discussion, then a third reviewer. Cohen's κ reported for both stages. An LLM assistant may provide suggestions with rationales but is not a reviewer.
+De-duplication by script (normalised DOI, PMID, normalised title + year). Title/abstract screening: an LLM (Claude Sonnet) screens every record with a fixed instruction set mirroring the eligibility criteria and exclusion codes, giving a decision (include/exclude/unsure), exclusion code, rationale, and verbatim evidence phrases. One human reviewer first screens a random sample of 50 records blind to the LLM output (agreement reported as Cohen's κ and LLM sensitivity), then verifies every LLM decision, confirming or overriding it; the human decision is final, and records marked include/unsure by either proceed to full text. The override rate is reported. Full-text screening procedure: to be specified before full-text screening begins (planned: two independent reviewers with a third for disagreements).
 
 **Software for selection**: Python scripts (version-controlled), Microsoft Excel screening forms.
 

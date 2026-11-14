@@ -75,9 +75,9 @@ The search combined three concept blocks — (A) LLMs, including generic terms a
 
 ### 2.4 Selection process  [#8]
 
-Records from all sources were merged and de-duplicated with a script (exact match on normalised DOI, PubMed ID, or normalised title with publication year within one year; near-identical titles were flagged for manual review). Two reviewers first calibrated on a random sample of 50 records; calibration was repeated if Cohen's κ was below 0.6. Both reviewers then independently screened all titles and abstracts; any record marked include or unsure by either reviewer proceeded to full-text assessment. Full texts were assessed independently by both reviewers against the eligibility criteria, and reasons for exclusion were recorded. Disagreements were resolved by discussion, and if necessary by a third reviewer. Agreement was quantified with Cohen's κ at both stages.
+Records from all sources were merged and de-duplicated with a script (exact match on normalised DOI, PubMed ID, or normalised title with publication year within one year; near-identical titles were flagged for manual review). Titles and abstracts were screened by a large language model (Claude Sonnet) using a fixed instruction set that operationalised the eligibility criteria and exclusion codes; for each record it returned a decision (include, exclude, or unsure), an exclusion code, a rationale, and verbatim evidence phrases from the title or abstract. To validate this step, one reviewer independently screened a random sample of 50 records blind to the model output (agreement: κ = {{KAPPA_AI_HUMAN}}; model sensitivity for records the reviewer judged include or unsure: {{AI_SENSITIVITY}}). The reviewer then verified every model decision, confirming or overriding it ({{N_OVERRIDES}} of {{N_SCREENED}} decisions overridden); the human decision was final, and any record marked include or unsure by either the model or the reviewer proceeded to full-text assessment. Full texts were assessed independently by both reviewers against the eligibility criteria, and reasons for exclusion were recorded. Disagreements were resolved by discussion, and if necessary by a third reviewer. Agreement was quantified with Cohen's κ at both stages.
 
-An LLM-based assistant was used to provide screening suggestions with rationales, which reviewers could consult; it did not act as a reviewer, and all decisions were made by humans. [#8 automation tools]
+Use of automation [#8]: the model, its instructions, and all per-record outputs are provided in Supplementary Appendix S5. Because the human reviewer verified rather than independently duplicated the model's screening, title/abstract screening was not fully independent dual screening; this is discussed as a limitation.
 
 ### 2.5 Data collection process  [#9]
 
@@ -171,7 +171,7 @@ The searches identified {{N_IDENTIFIED}} records ({{N_BY_SOURCE}}). After removi
 {{DISCUSSION_EVIDENCE_LIMITS}}
 
 ### 4.3 Limitations of the review process  [#23c]
-Limitations include restriction to English-language articles; reliance on title, abstract, and keyword fields, which may miss studies that mention open-weight models only in the full text; the rapid pace of preprint publication, which means relevant studies may have appeared after the search date; and the use of an adapted, unvalidated risk-of-bias tool. {{DISCUSSION_REVIEW_LIMITS}}
+Limitations include restriction to English-language articles; reliance on title, abstract, and keyword fields, which may miss studies that mention open-weight models only in the full text; the rapid pace of preprint publication, which means relevant studies may have appeared after the search date; the use of an adapted, unvalidated risk-of-bias tool; and title/abstract screening by a language model with single-reviewer verification rather than independent dual human screening, which may increase the risk of missed eligible studies despite blind validation on a random sample. {{DISCUSSION_REVIEW_LIMITS}}
 
 ### 4.4 Implications  [#23d]
 {{DISCUSSION_IMPLICATIONS}}
