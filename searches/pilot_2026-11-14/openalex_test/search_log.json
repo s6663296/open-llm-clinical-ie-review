@@ -1,0 +1,16 @@
+{
+  "seed_count": 1,
+  "matched_count": 1,
+  "unmatched": [],
+  "directions": {
+    "backward": {
+      "before_filter": 130,
+      "after_filter": 53
+    },
+    "forward": {
+      "before_filter": 14,
+      "after_filter": 14
+    }
+  },
+  "executed_at": "2026-11-14T11:56:03.333793+08:00"
+}

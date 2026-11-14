@@ -1,0 +1,47 @@
+{
+  "run_name": "pilot_pool_2026-11-14",
+  "sources": [
+    {
+      "db": "PubMed",
+      "format": "unified_csv",
+      "files": [
+        "searches/pilot_2026-11-14/pubmed/records.csv"
+      ]
+    },
+    {
+      "db": "arXiv",
+      "format": "unified_csv",
+      "files": [
+        "searches/pilot_2026-11-14/arxiv/records.csv"
+      ]
+    },
+    {
+      "db": "medRxiv",
+      "format": "unified_csv",
+      "files": [
+        "searches/pilot_2026-11-14/europepmc/medrxiv_records.csv"
+      ]
+    },
+    {
+      "db": "Scopus",
+      "format": "scopus_csv",
+      "files": [
+        "Scopus 2022-2026/export_8ab048b6-6daa-40a6-84d8-92c347f72cd6_2026-11-03T133021.723215148.csv"
+      ]
+    },
+    {
+      "db": "IEEE Xplore",
+      "format": "ieee_csv",
+      "files": [
+        "IEEE Xplore 2022-2026/export2026.11.03-08.51.21.csv"
+      ]
+    },
+    {
+      "db": "ACM",
+      "format": "bibtex",
+      "files": [
+        "ACM 2022-2026/acm.bib"
+      ]
+    }
+  ]
+}

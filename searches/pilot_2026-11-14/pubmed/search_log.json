@@ -1,0 +1,30 @@
+{
+  "database": "PubMed",
+  "query": "(\"large language model*\"[tiab] OR \"large-language model*\"[tiab] OR LLM[tiab] OR LLMs[tiab] OR \"foundation model*\"[tiab] OR \"generative pre-trained\"[tiab] OR \"open-source\"[tiab] OR \"open source\"[tiab] OR \"open-weight*\"[tiab] OR Llama[tiab] OR Llama2[tiab] OR Llama3[tiab] OR Mistral[tiab] OR Mixtral[tiab] OR Qwen*[tiab] OR Gemma[tiab] OR DeepSeek[tiab] OR \"Phi-3\"[tiab] OR \"Phi-4\"[tiab] OR Vicuna[tiab] OR Falcon[tiab] OR BioMistral[tiab] OR Meditron[tiab] OR MedAlpaca[tiab] OR \"PMC-LLaMA\"[tiab] OR \"Clinical Camel\"[tiab] OR \"Large Language Models\"[Mesh]) AND (\"clinical note*\"[tiab] OR \"clinical text*\"[tiab] OR \"clinical narrative*\"[tiab] OR \"clinical document*\"[tiab] OR \"clinical report*\"[tiab] OR \"medical record*\"[tiab] OR \"health record*\"[tiab] OR EHR[tiab] OR EHRs[tiab] OR EMR[tiab] OR EMRs[tiab] OR \"discharge summar*\"[tiab] OR \"discharge letter*\"[tiab] OR \"progress note*\"[tiab] OR \"operative note*\"[tiab] OR \"operative report*\"[tiab] OR \"radiology report*\"[tiab] OR \"pathology report*\"[tiab] OR \"Electronic Health Records\"[Mesh] OR \"Medical Records\"[Mesh]) AND (\"information extraction\"[tiab] OR \"named entity recognition\"[tiab] OR NER[tiab] OR \"relation extraction\"[tiab] OR \"relationship extraction\"[tiab] OR \"entity extraction\"[tiab] OR \"concept extraction\"[tiab] OR \"data extraction\"[tiab] OR \"data abstraction\"[tiab] OR \"chart abstraction\"[tiab] OR \"structured data\"[tiab] OR \"structured information\"[tiab] OR \"structured output*\"[tiab] OR \"text mining\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/12/31\"[dp])",
+  "query_file_original": "(\"large language model*\"[tiab] OR \"large-language model*\"[tiab] OR LLM[tiab] OR LLMs[tiab]\n OR \"foundation model*\"[tiab] OR \"generative pre-trained\"[tiab] OR \"open-source\"[tiab]\n OR \"open source\"[tiab] OR \"open-weight*\"[tiab] OR Llama[tiab] OR Llama2[tiab] OR Llama3[tiab]\n OR Mistral[tiab] OR Mixtral[tiab] OR Qwen*[tiab] OR Gemma[tiab] OR DeepSeek[tiab]\n OR \"Phi-3\"[tiab] OR \"Phi-4\"[tiab] OR Vicuna[tiab] OR Falcon[tiab] OR BioMistral[tiab]\n OR Meditron[tiab] OR MedAlpaca[tiab] OR \"PMC-LLaMA\"[tiab] OR \"Clinical Camel\"[tiab]\n OR \"Large Language Models\"[Mesh])\nAND\n(\"clinical note*\"[tiab] OR \"clinical text*\"[tiab] OR \"clinical narrative*\"[tiab]\n OR \"clinical document*\"[tiab] OR \"clinical report*\"[tiab] OR \"medical record*\"[tiab]\n OR \"health record*\"[tiab] OR EHR[tiab] OR EHRs[tiab] OR EMR[tiab] OR EMRs[tiab]\n OR \"discharge summar*\"[tiab] OR \"discharge letter*\"[tiab] OR \"progress note*\"[tiab]\n OR \"operative note*\"[tiab] OR \"operative report*\"[tiab] OR \"radiology report*\"[tiab]\n OR \"pathology report*\"[tiab] OR \"Electronic Health Records\"[Mesh] OR \"Medical Records\"[Mesh])\nAND\n(\"information extraction\"[tiab] OR \"named entity recognition\"[tiab] OR NER[tiab]\n OR \"relation extraction\"[tiab] OR \"relationship extraction\"[tiab] OR \"entity extraction\"[tiab]\n OR \"concept extraction\"[tiab] OR \"data extraction\"[tiab] OR \"data abstraction\"[tiab]\n OR \"chart abstraction\"[tiab] OR \"structured data\"[tiab] OR \"structured information\"[tiab]\n OR \"structured output*\"[tiab] OR \"text mining\"[tiab])\nAND (\"2022/01/01\"[dp] : \"2026/12/31\"[dp])\n",
+  "script_sha256": {
+    "common.py": "e6eb1323e89b90ce41fa1d4a9c8225b4ccb9818d1cf7d758ca17c1a0ec33e2a6",
+    "import_records.py": "21f666b7be29b0774e60a68e45ad9ad3d316e4f753a8311333cd2d8c3a5c800b",
+    "kappa.py": "f93d6075dc2e58bee38844f14138aaa6a0f30f6911d0903c383feb734feac354",
+    "make_screening_sheet.py": "55f88908f7109d86802d6ddccb344e495fddd523fc9f0e1b68232e9fc5def2f6",
+    "prisma_counts.py": "b65ba9fd65d0463b9949eb74af6acd099e55c1208f8d211c1d069e59832b41df",
+    "search_arxiv.py": "f9e9f322a9a41a3e600c0c2f6e56b004ae411ad3162a08f94024641541be32a6",
+    "search_common.py": "0664b4a69c662f3b2aaa8358257b0d6404f71add910fac8b58d8615c3886058e",
+    "search_europepmc.py": "bc50f4d9937280012f946bf905cf0d1f8f4352d2e53392f8e57c5b375c577c52",
+    "search_pubmed.py": "3bf01509b20a3a843c616b1b245a033f16891b4b65ffa514ed1e474423ca16b7"
+  },
+  "executed_at": "2026-11-14T11:50:17.652745+08:00",
+  "api_total": 637,
+  "downloaded": 637,
+  "script_version": "951cb30706d373f917adedaf27bb1da854bda0bd",
+  "parameters": {
+    "out": "searches\\pilot_2026-11-14\\pubmed",
+    "query_file": "D:\\open-llm-clinical-ie-review\\scripts\\queries\\pubmed.txt",
+    "max_records": 2000
+  },
+  "mesh_check": {
+    "term": "Large Language Models",
+    "exists": true,
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_counts": {
+    "PubMed": 242,
+    "Scopus": 10,
+    "IEEE Xplore": 23,
+    "ACM": 633
+  },
+  "total_raw": 908,
+  "duplicates_removed": 10,
+  "total_dedup": 898,
+  "possible_duplicate_pairs": 4,
+  "missing_abstract": 354,
+  "pubmed_missing_abstract": 0
+}

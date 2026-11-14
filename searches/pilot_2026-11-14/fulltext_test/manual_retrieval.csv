@@ -1,0 +1,7 @@
+﻿record_id,doi,title,doi_url
+V01,10.2196/89480,Extracting Cardiorespiratory Symptoms From Clinical Notes Using Open-Weight Large Language Models: Method Development and Validation Study,https://doi.org/10.2196/89480
+V02,10.1136/bmjhci-2025-101956,Open-source large language model-based on-premises pipeline for automated data extraction from unstructured electronic health records: a pilot study,https://doi.org/10.1136/bmjhci-2025-101956
+V03,10.1093/jamiaopen/ooaf092,"EchoLLM: extracting echocardiogram entities with light-weight, open-source large language models",https://doi.org/10.1093/jamiaopen/ooaf092
+V04,10.1200/cci-25-00002,Open-Source Hybrid Large Language Model Integrated System for Extraction of Breast Cancer Treatment Pathway From Free-Text Clinical Notes,https://doi.org/10.1200/cci-25-00002
+V06,10.1016/j.jbi.2024.104720,Extracting lung cancer staging descriptors from pathology reports: A generative language model approach,https://doi.org/10.1016/j.jbi.2024.104720
+V08,10.2196/95198,Leveraging Generative Large Language Models for Temporal Relation Extraction From French Clinical Narratives: Prompt-Chaining Approach,https://doi.org/10.2196/95198
