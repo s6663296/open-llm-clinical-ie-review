@@ -1,0 +1,21 @@
+("large language model*"[tiab] OR "large-language model*"[tiab] OR LLM[tiab] OR LLMs[tiab]
+ OR "foundation model*"[tiab] OR "generative pre-trained"[tiab] OR "open-source"[tiab]
+ OR "open source"[tiab] OR "open-weight*"[tiab] OR Llama[tiab] OR Llama2[tiab] OR Llama3[tiab]
+ OR Mistral[tiab] OR Mixtral[tiab] OR Qwen*[tiab] OR Gemma[tiab] OR DeepSeek[tiab]
+ OR "Phi-3"[tiab] OR "Phi-4"[tiab] OR Vicuna[tiab] OR Falcon[tiab] OR BioMistral[tiab]
+ OR Meditron[tiab] OR MedAlpaca[tiab] OR "PMC-LLaMA"[tiab] OR "Clinical Camel"[tiab]
+ OR "Large Language Models"[Mesh])
+AND
+("clinical note*"[tiab] OR "clinical text*"[tiab] OR "clinical narrative*"[tiab]
+ OR "clinical document*"[tiab] OR "clinical report*"[tiab] OR "medical record*"[tiab]
+ OR "health record*"[tiab] OR EHR[tiab] OR EHRs[tiab] OR EMR[tiab] OR EMRs[tiab]
+ OR "discharge summar*"[tiab] OR "discharge letter*"[tiab] OR "progress note*"[tiab]
+ OR "operative note*"[tiab] OR "operative report*"[tiab] OR "radiology report*"[tiab]
+ OR "pathology report*"[tiab] OR "Electronic Health Records"[Mesh] OR "Medical Records"[Mesh])
+AND
+("information extraction"[tiab] OR "named entity recognition"[tiab] OR NER[tiab]
+ OR "relation extraction"[tiab] OR "relationship extraction"[tiab] OR "entity extraction"[tiab]
+ OR "concept extraction"[tiab] OR "data extraction"[tiab] OR "data abstraction"[tiab]
+ OR "chart abstraction"[tiab] OR "structured data"[tiab] OR "structured information"[tiab]
+ OR "structured output*"[tiab] OR "text mining"[tiab])
+AND ("2022/01/01"[dp] : "2026/12/31"[dp])

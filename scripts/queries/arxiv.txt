@@ -1,0 +1,9 @@
+(abs:"large language model" OR abs:"large language models" OR abs:LLM OR abs:LLMs OR abs:Llama
+ OR abs:Mistral OR abs:Mixtral OR abs:Qwen OR abs:Gemma OR abs:DeepSeek OR abs:"open-weight"
+ OR abs:"open-source" OR abs:BioMistral OR abs:Meditron)
+AND (abs:"clinical notes" OR abs:"clinical note" OR abs:"clinical text" OR abs:"clinical narratives"
+ OR abs:"medical records" OR abs:"health records" OR abs:EHR OR abs:EHRs OR abs:"discharge summaries"
+ OR abs:"discharge summary" OR abs:"radiology reports" OR abs:"pathology reports" OR abs:"progress notes")
+AND (abs:"information extraction" OR abs:"named entity recognition" OR abs:"relation extraction"
+ OR abs:"entity extraction" OR abs:"concept extraction" OR abs:"data extraction" OR abs:"structured data")
+AND submittedDate:[202201010000 TO 202612312359]

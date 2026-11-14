@@ -1,0 +1,5 @@
+TITLE-ABS-KEY(
+("large language model*" OR "large-language model*" OR LLM OR LLMs OR "foundation model*" OR "generative pre-trained" OR "open-source" OR "open source" OR "open-weight*" OR Llama OR Llama2 OR Llama3 OR Mistral OR Mixtral OR Qwen* OR Gemma OR DeepSeek OR "Phi-3" OR "Phi-4" OR Vicuna OR Falcon OR BioMistral OR Meditron OR MedAlpaca OR "PMC-LLaMA" OR "Clinical Camel") AND
+("clinical note*" OR "clinical text*" OR "clinical narrative*" OR "clinical document*" OR "clinical report*" OR "medical record*" OR "health record*" OR EHR OR EHRs OR EMR OR EMRs OR "discharge summar*" OR "discharge letter*" OR "progress note*" OR "operative note*" OR "operative report*" OR "radiology report*" OR "pathology report*") AND
+("information extraction" OR "named entity recognition" OR NER OR "relation extraction" OR "relationship extraction" OR "entity extraction" OR "concept extraction" OR "data extraction" OR "data abstraction" OR "chart abstraction" OR "structured data" OR "structured information" OR "structured output*" OR "text mining")
+) AND PUBYEAR > 2021
