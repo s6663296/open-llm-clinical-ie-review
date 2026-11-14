@@ -1,3 +1,6 @@
 ﻿.venv/
 __pycache__/
 fulltext/*.pdf
+fulltext/*.xml
+fulltext/*_wrong_*.pdf
+fulltext_text/
