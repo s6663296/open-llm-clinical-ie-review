@@ -1,0 +1,99 @@
+R0276
+TITLE: Hierarchical prompting with reasoning large language models for immune checkpoint inhibitor-associated myocarditis evidence extraction pilot study.
+ABSTRACT: AIMS: Immunotherapy with immune checkpoint inhibitors (ICIs) is an effective treatment for many cancers, but it can induce immune-related adverse events (irAEs). Among those, myocarditis is a severe complication associated with high morbidity and mortality. To support the rapidly emerging research, labour-intensive manual data extraction is often needed. Recent studies adopted large language models (LLMs) to systematically process clinical notes and identify patients with irAEs. However, research gaps persist: (i) For ICI-associated myocarditis, the applicability and scalability of LLMs have not been systematically evaluated; (ii) most existing studies focused on patient-level irAE detection while omitting the clinical nuances; and (iii) cutting-edge LLM techniques have not been adopted. Our aim was to evaluate an LLM approach to extract ICI-associated myocarditis evidence, including inflammatory infiltrate, life-threatening arrhythmias, heart failure, and stroke, from clinical notes. METHODS AND RESULTS: We collected clinical notes of patients with ICI-associated myocarditis at a single centre to develop and evaluate LLM-based methods that convert free-text clinical notes into structured data with entities (e.g. diagnosis, treatment, and imaging) and attributes (e.g. date, assertion, and status). We systematically evaluated three techniques: LLM reasoning, context engineering, and hierarchical prompting against ground truth created by a cardio-oncologist. Our proposed sentence-based context engineering and hierarchical prompting method, with a reasoning LLM, is significantly more accurate than the research trainees (F1 score of 0.6332 vs. 0.4933, P < 0.001), faster (37 min vs. 72 h per 1000 notes), and more cost-effective ($2.04 USD per 1000 notes). CONCLUSION: We proposed an optimized method that integrates hierarchical prompting, context engineering, and a reasoning LLM for ICI-associated myocarditis evidence extraction to support physicians and researchers in rapid clinical data collection for research to make diagnostic and treatment inferences.
+
+R0277
+TITLE: High-Performance Prompting for LLM Extraction of Compression Fracture Findings from Radiology Reports.
+ABSTRACT: Extracting information from radiology reports can provide critical data to empower many radiology workflows. For spinal compression fractures, these data can facilitate evidence-based care for at-risk populations. Manual extraction from free-text reports is laborious, and error-prone. Large language models (LLMs) have shown promise; however, fine-tuning strategies to optimize performance in specific tasks can be resource intensive. A variety of prompting strategies have achieved similar results with fewer demands. Our study pioneers the use of Meta's Llama 3.1, together with prompt-based strategies, for automated extraction of compression fractures from free-text radiology reports, outputting structured data without model training. We tested performance on a time-based sample of CT exams covering the spine from 2/20/2024 to 2/22/2024 acquired across our healthcare enterprise (637 anonymized reports, age 18-102, 47% Female). Ground truth annotations were manually generated and compared against the performance of three models (Llama 3.1 70B, Llama 3.1 8B, and Vicuna 13B) with nine different prompting configurations for a total of 27 model/prompt experiments. The highest F1 score (0.91) was achieved by the 70B Llama 3.1 model when provided with a radiologist-written background, with similar results when the background was written by a separate LLM (0.86). The addition of few-shot examples to these prompts had variable impact on F1 measurements (0.89, 0.84 respectively). Comparable ROC-AUC and PR-AUC performance was observed. Our work demonstrated that an open-weights LLM excelled at extracting compression fractures findings from free-text radiology reports using prompt-based techniques without requiring extensive manually labeled examples for model training.
+
+R0278
+TITLE: HiRMD: A System for Mortality Prediction via LLM-Based High-Risk Information Extraction and Diagnosis.
+ABSTRACT: OBJECTIVE: To improve in-hospital mortality prediction from longitudinal electronic health records (EHRs) by extracting mortality-related high-risk clinical information and integrating heterogeneous clinical evidence. METHODS: We propose HiRMD, an LLM-augmented mortality prediction system that combines high-risk information extraction, structured medical diagnosis, and cross-attention-based risk prediction. HiRMD first refines patients' disease, medication, and procedure records to retain mortality-relevant clinical events. It then guides LLMs with predefined clinical criteria to generate structured diagnostic sequences reflecting high-risk disease progression and treatment status. For final prediction, longitudinal visit records are encoded by a Bi-GRU, while ICU severity scores and LLM-derived diagnostic outputs are used as clinical priors to guide temporal representation learning through multi-head cross-attention. RESULTS: Experiments on three public EHR datasets, including MIMIC-III, MIMIC-IV, and eICU, demonstrate the effectiveness of HiRMD compared with machine learning, deep learning, LLM-based, and ICU scoring baselines. HiRMD obtains the best AUROC and F1 scores on all three datasets. Additional analyses further support the effectiveness, stability, and clinical relevance of the proposed high-risk diagnostic representation. CONCLUSION: HiRMD effectively integrates LLM-based high-risk information extraction with longitudinal EHR modeling for accurate and interpretable in-hospital mortality prediction. SIGNIFICANCE: This study demonstrates the potential of LLM-guided diagnostic semantics to better identify high-risk patients, enhance prediction traceability, and support clinically meaningful decision-making in high-risk healthcare scenarios.
+
+R0279
+TITLE: HPDC '26: Proceedings of the 35th International Symposium on High-Performance Parallel and Distributed Computing
+ABSTRACT: HPDC is the premier conference at the intersection of high-performance and distributed computing, now in its 35th year.One of the distinctive qualities of HPDC is that it features a mix of ideas, ranging from applied research in the form of experience papers on operational deployments and applications, and more fundamental research in parallel and distributed techniques and systems. The ACM HPDC 2026 program is no exception and provides a great window into state of the art and the state of the practice in the high-performance computing field. Addressed topics include reliability, scalable computation, fairness and performance, and hybrid, cloud, and quantum systems.
+
+R0280
+TITLE: Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events
+ABSTRACT: This study evaluated a retrieval-augmented, multi-agent large language model (LLM)-driven, human-in-the-loop framework for detecting cutaneous immune-related adverse events (cirAEs) from clinical notes. Compared with unassisted manual review, the LLM-assisted workflow improved accuracy (F1 = 0.88 vs 0.77), inter-rater agreement measured by Cohen's kappa (kappa = 0.82 vs 0.50), and reduced average review time by approximately half. This framework pilots how LLMs can be applied to identify immune-related toxicities across organ systems and, more broadly, enable accurate, scalable, and transparent adverse event data extraction.
+
+R0281
+TITLE: Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry
+ABSTRACT: Objectives Searching SNOMED CT pits two retrieval technologies of opposite nature against each other. Deterministic lexical matching is precise and handles partial, out-of-order, as-typed input, but cannot cross a wording or language gap; learned semantic matching bridges para-phrase and language, but represents abbreviations and half-typed fragments poorly. Combining them naively lets the channel that is wrong for a given query degrade the one that is right, and the usual alternative, curating an additional local interface vocabulary, is labour-intensive to maintain. We ask whether the two paradigms can instead coexist in one retrieval flow over SNOMED CT’s own curated descriptions, and study the query interpretation, rank fusion and re-ranking that make this coexistence safe. Materials and Methods We built one open-source, reproducible implementation over the SNOMED CT International edition, combining order-independent multi-prefix lexical search, BioLORD-2023-M semantic embeddings, an optional cross-encoder re-ranker, and a local LLM for query normalization and entity extraction, with the two rankings fused by Reciprocal Rank Fusion and an optional hierarchy (descendant) filter. We measured search-only linking accuracy on 985 disease mentions from DisTEMIST (Spanish, zero-shot), ablating each optional component and each retrieval channel, and on 12,897 mentions from the SNOMED CT Entity Linking Challenge (English real-EHR discharge notes) under a field-scoped typeahead. Results On DisTEMIST the best and cheapest configuration, semantic search with re-ranking and no LLM pre-processing, placed the exact concept first for 57% of mentions (accuracy@1 = 0.57) and within the top-10 for 80% (recall@10 = 0.80). Channel ablation showed the two paradigms coexist without a trade-off: rank fusion followed by re-ranking keeps the on-task channel’s result and suppresses the off-task one. On the English real-EHR corpus a field-scoped typeahead reached the top-10 for 73% of mentions across all clinical domains (accuracy@1 0.52). Adding a contextual LLM re-ranker — a second implementation of the re-ranking step that reorders the retrieved candidates using the query’s context — raised accuracy@1 further, to 0.61 on DisTEMIST and 0.56 on the challenge. LLM query normalization, by contrast, slightly hurt clean, terminology-like input but rescued the messy shorthand of real EHR text, most of all when given the surrounding note context, so it is best applied selectively rather than to every query. Results are specific to the evaluated configuration, not an architecture-independent estimate. Conclusion Lexical precision and semantic flexibility can coexist over SNOMED CT’s maintained descriptions without trading one off against the other, secured by rank fusion and re-ranking rather than by choosing between the paradigms. This shifts maintenance from local phrase authoring toward governing and validating retrieval services rather than removing it, and may reduce additional local lexical curation where direct search is appropriate, while curated interface vocabularies retain a role in guided workflows.
+
+R0282
+TITLE: "I Wouldn't Really Use It as a Practice Tool": Understanding Medical Students’ Perspectives and Needs on LLM-Enhanced Clinical Skills Training
+ABSTRACT: Large Language Models (LLMs) are expected to enhance medical education through personalized clinical skills training. However, their practical application from the student user experience perspective remains underexplored. This gap is critical because without understanding students’ needs, LLM-based tools risk poor adoption and suboptimal learning outcomes. This study explores medical students’ challenges and expectations when using LLM-based clinical skills training through a two-phase investigation involving 14 medical students. We integrated five Type 2 Diabetes cases into a probe platform and conducted probe-based studies followed by co-design workshops. We identified challenges across three categories: dialogue content (lack of realism, insufficient knowledge depth differentiation); dialogue presentation (information overload, single modality limitations); and dialogue interaction (inadequate guidance and feedback). Co-design workshops revealed expectations for enhanced patient modeling, personalized content delivery, structured presentation frameworks, and collaborative features. These findings provide design considerations for developing more effective, user-centered LLM-based medical education systems.
+
+R0283
+TITLE: IC-BIS 2026: Proceedings of the 5th International Conference on Biomedical and Intelligent Systems
+ABSTRACT: 
+
+R0284
+TITLE: ICADS '26: Proceedings of the 2026 International Conference on Artificial Intelligence and Digital Services
+ABSTRACT: 
+
+R0285
+TITLE: ICAIDS '26: Proceedings of the 2nd International Conference on Artificial Intelligence, Digital Media Technology and Social Computing
+ABSTRACT: 
+
+R0286
+TITLE: ICBBE '26: Proceedings of the 2026 6th International Conference on Biomedicine and Bioinformatics Engineering
+ABSTRACT: 
+
+R0287
+TITLE: ICBBT '26: Proceedings of the 2026 18th International Conference on Bioinformatics and Biomedical Technology
+ABSTRACT: 
+
+R0288
+TITLE: ICCES '26: Proceedings of the 2026 2nd International Conference on Computing and Emerging Sciences
+ABSTRACT: The proceedings of ICCES '26 includes selected papers from the ACM - International Conference of Computing and Emerging Sciences (ICCES '26), held in Erbil, Iraq during February 4-5, 2026.
+
+R0289
+TITLE: ICCRD '26: Proceedings of the 2026 18th International Conference on Computer Research and Development
+ABSTRACT: 
+
+R0290
+TITLE: ICD-10 Neoplasm Location Using Text Classification Models in Spanish Electronic Health Records
+ABSTRACT: The majority of clinical information stored in Spanish healthcare systems is found as unstructured text in electronic health records (EHRs). The automatic extraction of valuable information contained in these documents is a critical task. Valuable information for oncology clinical analysis units and Real-World Evidence studies includes the location of the neoplasm presented by a patient. This location, included in the ICD-10 coding category, can be extracted from the texts by natural language processing (NLP). This study set out to explore the classification of medical documents in Spanish for the purpose of extracting the location of the patient’s primary neoplasm. A private corpus composed of 23,704 real clinical EHRs was utilised. The prediction problem was approached through a classification of 12 primary organ groupings and 29 specific locations. In order to achieve this, four NLP methodologies were developed: traditional machine learning (ML); ensemble ML; recurrent neural networks (RNN); and Transformers-based models. Our findings demonstrate that traditional ML models exhibit superior performance when compared to RNNs and Transformers. Models such as XGBoost and SVMs demonstrate remarkable efficacy, attaining an F1-score of 0.938 for the 12-class classification and an F1-score of 0.838 for the 29-class specific classification, respectively. The pre-trained RoBERTa-Base-Biomed model, which incorporates medical and clinical corpora in Spanish, demonstrates an F1-score of 0.808 for the 29-location problem. However, the Transformer model exhibits superior performance than the rest of the approaches when dealing with an external corpus, indicating a higher generalisation capacity.
+
+R0291
+TITLE: ICDIR '26: Proceedings of the 2nd International Conference on Digital Society, Information Science and Risk Management
+ABSTRACT: 
+
+R0292
+TITLE: ICICS '26: Proceedings of the 17th International Conference on Information and Communication Systems
+ABSTRACT: 
+
+R0293
+TITLE: ICICT 2026: Proceedings of the 2026 9th International Conference on Information and Computer Technologies
+ABSTRACT: 
+
+R0294
+TITLE: ICIIS '26: Proceedings of the 2026 3rd International Conference on Innovation Management and Information Systems
+ABSTRACT: 
+
+R0295
+TITLE: ICIIT '26: Proceedings of the 2026 11th International Conference on Intelligent Information Technology
+ABSTRACT: 
+
+R0296
+TITLE: ICMI Companion '26: Companion Publication of the 28th International Conference on Multimodal Interaction
+ABSTRACT: 
+
+R0297
+TITLE: ICMR '26: Proceedings of the 2026 International Conference on Multimedia Retrieval
+ABSTRACT: 
+
+R0298
+TITLE: ICSE '26: Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering
+ABSTRACT: 
+
+R0299
+TITLE: ICSE-NIER '26: Proceedings of the IEEE/ACM 48th International Conference on Software Engineering
+ABSTRACT: 
+
+R0300
+TITLE: ICSE-SEIP '26: Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice
+ABSTRACT: 

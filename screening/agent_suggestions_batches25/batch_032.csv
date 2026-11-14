@@ -1,0 +1,26 @@
+﻿record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0776,,,,"HumanSys '25: Proceedings of the 3rd International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems",exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0777,10.1145/3737459,,,HWREx: AI-enabled Hardware Weakness and Risk Exploration and Storytelling Framework with LLM-assisted Mitigation Suggestion,exclude,X5,研究處理硬體弱點與資安資料庫，並非臨床自由文本（X5）。,hardware vulnerabilities; National Vulnerability Database
+R0778,,,2509.19218v1,HyKid: An Open MRI Dataset with Expert-Annotated Multi-Structure and Choroid Plexus in Pediatric Hydrocephalus,unsure,,摘要提及從臨床放射報告抽取結構化資料，但未說明模型及該抽取任務的量化評估。,structured data was extracted from clinical radiology reports; Retrieval-Augmented Generation framework
+R0779,,,,IC-BIS '25: Proceedings of the 4th International Conference on Biomedical and Intelligent Systems,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0780,,,,ICAAI '25: Proceedings of the 2025 9th International Conference on Advances in Artificial Intelligence,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0781,,,,"icABCD '25: Proceedings of the 2025 International Conference on Artificial Intelligence, Big Data, Computing and Data Communication Systems",exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0782,,,,ICAIF '25: Proceedings of the 6th ACM International Conference on AI in Finance,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0783,,,,ICAISD '25: Proceedings of the 2025 International Conference on Artificial Intelligence and Sustainable Development,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0784,,,,ICAISM '25: Proceedings of the 2025 International Conference on Artificial Intelligence and Smart Manufacturing,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0785,,,,icARTi '25: Proceedings of the 2025 International Conference on Artificial Intelligence and its Applications,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0786,,,,"ICBAR '25: Proceedings of the 2025 5th International Conference on Big Data, Artificial Intelligence and Risk Management",exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0787,,,,ICBBE '25: Proceedings of the 2025 12th International Conference on Biomedical and Bioinformatics Engineering,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0788,,,,ICBDDM '25: Proceedings of the 2025 2nd International Conference on Big Data and Digital Management,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0789,,,,ICBDIE '25: Proceedings of the 2025 International Conference on Big Data and Informatization Education,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0790,,,,ICBRA '25: Proceedings of the 12th International Conference on Bioinformatics Research and Applications,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0791,,,,ICCBB '25: Proceedings of the 2025 9th International Conference on Computational Biology and Bioinformatics,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0792,,,,ICCMS '25: Proceedings of the 2025 17th International Conference on Computer Modeling and Simulation,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0793,,,,ICCSIT '25: Proceedings of the 2025 18th International Conference on Computer Science and Information Technology,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0794,,,,ICCSMT '25: Proceedings of the 2025 6th International Conference on Computer Science and Management Technology,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0795,,,,ICDA '25: Proceedings of the 2nd International Conference on Intelligent Computing and Data Analysis,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0796,,,,ICDSIC '25: Proceedings of the 2025 International Conference on Digital Society and Intelligent Computing,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0797,,,,ICEMBDA '25: Proceedings of the 2025 International Conference on Economic Management and Big Data Application,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0798,,,,ICFNDS '25: Proceedings of the 9th International Conference on Future Networks and Distributed Systems,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0799,,,,ICHEC '25: Proceedings of the 2025 International Conference on Human-Engaged Computing,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of
+R0800,,,,ICHIH '25: Proceedings of the 2025 4th International Conference on Health Big Data and Intelligent Healthcare,exclude,X1,標題顯示此紀錄為會議論文集（X1）。,Proceedings of

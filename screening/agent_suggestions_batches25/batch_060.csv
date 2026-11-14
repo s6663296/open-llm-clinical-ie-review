@@ -1,0 +1,8 @@
+﻿record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1476,10.1093/jamiaopen/ooac071,35936991,,ReviewR: a light-weight and extensible tool for manual review of clinical records.,exclude,X3,研究描述人工病歷審查與資料輸入的 R Shiny 工具，未使用生成式 LLM（X3）。,manual review of clinical records; R Shiny application; chart abstraction data entry
+R1477,,,,"SC '22: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis",exclude,X1,此紀錄是高效能運算會議論文集，而非單篇研究論文（X1）。,Proceedings of the International Conference on High Performance Computing; This volume
+R1478,,,,SenSys '22: Proceedings of the 20th ACM Conference on Embedded Networked Sensor Systems,exclude,X1,此紀錄是嵌入式網路感測系統會議論文集的介紹（X1）。,Proceedings of the 20th ACM Conference; Welcome to ACM SenSys 2022
+R1479,10.1136/bmjopen-2020-048397,35042703,,Simplified data science approach to extract social and behavioural determinants: a retrospective chart review.,exclude,X3,研究使用詞袋與雙詞組等傳統文字分類方法，未使用生成式 LLM（X3）。,clinical notes; bag of words and bigrams; text classification methods
+R1480,10.1145/3531146.3534642,,,What Does it Mean for a Language Model to Preserve Privacy?,exclude,X5,文章討論語言模型訓練資料的隱私問題，並非處理臨床自由文本（X5）。,Preserve Privacy; extract training data; differential privacy
+R1481,,,,WWW '22: Companion Proceedings of the Web Conference 2022,exclude,X1,標題顯示此紀錄為網路會議的論文集，摘要空白（X1）。,Companion Proceedings of the Web Conference 2022
+R1482,,35308929,,"Creation of a Mapped, Machine-Readable Taxonomy to Facilitate Extraction of Social Determinants of Health Data from Electronic Health Records.",exclude,X3,研究建立及映射社會健康決定因素分類架構，未使用生成式 LLM（X3）。,machine readable format; medical codes; Python dictionary or JSON format

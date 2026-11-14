@@ -1,0 +1,99 @@
+R0776
+TITLE: HumanSys '25: Proceedings of the 3rd International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems
+ABSTRACT: 
+
+R0777
+TITLE: HWREx: AI-enabled Hardware Weakness and Risk Exploration and Storytelling Framework with LLM-assisted Mitigation Suggestion
+ABSTRACT: The growing complexity of modern computing frameworks has led to an increase in cybersecurity vulnerabilities reported to the National Vulnerability Database (NVD). Extracting meaningful trends from this vast amount of unstructured data is challenging without proper tools and methodologies. Existing approaches lack a holistic strategy for vulnerability mitigation and prediction and effective knowledge extraction from the Common Weakness Enumeration (CWE), Common Vulnerability Exposure (CVE), and Common Attack Pattern Enumeration and Classification (CAPEC) databases. We introduce the AI-enabled Hardware Weakness and Risk Exploration and Storytelling Framework with LLM-assisted Mitigation Suggestion (HWREx), designed to address hardware vulnerabilities and IoT security. Our architecture features an Ontology-driven Storytelling capability that automates ontology updates to track vulnerability patterns and evolution over time, while offering mitigation strategies. It also clarifies the complex interrelations among CVEs, CWEs, and CAPECs through interactive visual knowledge graphs. Our framework achieved accuracy rates of 62% for CWE-CWE, 83% for CWE-CVE, and 77% for CWE-CAPEC linkage predictions. These graphs are instrumental for in-depth hardware weakness analysis and enable HWREx to deliver comprehensive assessments and actionable mitigation strategies. Additionally, HWREx utilizes Generative Pre-trained Transformers (GPT) to offer tailored mitigation suggestions.
+
+R0778
+TITLE: HyKid: An Open MRI Dataset with Expert-Annotated Multi-Structure and Choroid Plexus in Pediatric Hydrocephalus
+ABSTRACT: Evaluation of hydrocephalus in children is challenging, and the related research is limited by a lack of publicly available, expert-annotated datasets, particularly those with segmentation of the choroid plexus. To address this, we present HyKid, an open-source dataset from 48 pediatric patients with hydrocephalus. 3D MRIs were provided with 1mm isotropic resolution, which was reconstructed from routine low-resolution images using a slice-to-volume algorithm. Manually corrected segmentations of brain tissues, including white matter, grey matter, lateral ventricle, external CSF, and the choroid plexus, were provided by an experienced neurologist. Additionally, structured data was extracted from clinical radiology reports using a Retrieval-Augmented Generation framework. The strong correlation between choroid plexus volume and total CSF volume provided a potential biomarker for hydrocephalus evaluation, achieving excellent performance in a predictive model (AUC = 0.87). The proposed HyKid dataset provided a high-quality benchmark for neuroimaging algorithms development, and it revealed the choroid plexus-related features in hydrocephalus assessments. Our datasets are publicly available at https://www.synapse.org/Synapse:syn68544889.
+
+R0779
+TITLE: IC-BIS '25: Proceedings of the 4th International Conference on Biomedical and Intelligent Systems
+ABSTRACT: 
+
+R0780
+TITLE: ICAAI '25: Proceedings of the 2025 9th International Conference on Advances in Artificial Intelligence
+ABSTRACT: 
+
+R0781
+TITLE: icABCD '25: Proceedings of the 2025 International Conference on Artificial Intelligence, Big Data, Computing and Data Communication Systems
+ABSTRACT: 
+
+R0782
+TITLE: ICAIF '25: Proceedings of the 6th ACM International Conference on AI in Finance
+ABSTRACT: 
+
+R0783
+TITLE: ICAISD '25: Proceedings of the 2025 International Conference on Artificial Intelligence and Sustainable Development
+ABSTRACT: 
+
+R0784
+TITLE: ICAISM '25: Proceedings of the 2025 International Conference on Artificial Intelligence and Smart Manufacturing
+ABSTRACT: 
+
+R0785
+TITLE: icARTi '25: Proceedings of the 2025 International Conference on Artificial Intelligence and its Applications
+ABSTRACT: 
+
+R0786
+TITLE: ICBAR '25: Proceedings of the 2025 5th International Conference on Big Data, Artificial Intelligence and Risk Management
+ABSTRACT: 
+
+R0787
+TITLE: ICBBE '25: Proceedings of the 2025 12th International Conference on Biomedical and Bioinformatics Engineering
+ABSTRACT: 
+
+R0788
+TITLE: ICBDDM '25: Proceedings of the 2025 2nd International Conference on Big Data and Digital Management
+ABSTRACT: 
+
+R0789
+TITLE: ICBDIE '25: Proceedings of the 2025 International Conference on Big Data and Informatization Education
+ABSTRACT: 
+
+R0790
+TITLE: ICBRA '25: Proceedings of the 12th International Conference on Bioinformatics Research and Applications
+ABSTRACT: 
+
+R0791
+TITLE: ICCBB '25: Proceedings of the 2025 9th International Conference on Computational Biology and Bioinformatics
+ABSTRACT: 
+
+R0792
+TITLE: ICCMS '25: Proceedings of the 2025 17th International Conference on Computer Modeling and Simulation
+ABSTRACT: 
+
+R0793
+TITLE: ICCSIT '25: Proceedings of the 2025 18th International Conference on Computer Science and Information Technology
+ABSTRACT: 
+
+R0794
+TITLE: ICCSMT '25: Proceedings of the 2025 6th International Conference on Computer Science and Management Technology
+ABSTRACT: 
+
+R0795
+TITLE: ICDA '25: Proceedings of the 2nd International Conference on Intelligent Computing and Data Analysis
+ABSTRACT: 
+
+R0796
+TITLE: ICDSIC '25: Proceedings of the 2025 International Conference on Digital Society and Intelligent Computing
+ABSTRACT: 
+
+R0797
+TITLE: ICEMBDA '25: Proceedings of the 2025 International Conference on Economic Management and Big Data Application
+ABSTRACT: 
+
+R0798
+TITLE: ICFNDS '25: Proceedings of the 9th International Conference on Future Networks and Distributed Systems
+ABSTRACT: 
+
+R0799
+TITLE: ICHEC '25: Proceedings of the 2025 International Conference on Human-Engaged Computing
+ABSTRACT: 
+
+R0800
+TITLE: ICHIH '25: Proceedings of the 2025 4th International Conference on Health Big Data and Intelligent Healthcare
+ABSTRACT: 
