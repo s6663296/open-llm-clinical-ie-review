@@ -1,0 +1,553 @@
+﻿record_id,doi,pmid,arxiv_id,title
+R0005,10.1007/978-3-032-38059-3_4,,,ASTAR: Automated Induction of STAndardized Radiology Reporting Templates from Large-Scale Clinical Free-Text Corpora
+R0006,10.1007/978-3-032-33123-6_15,,,Fine-Tuning of Small LLMs for Medical Data Extraction
+R0010,10.1007/978-3-032-30710-1_8,,,Privacy-Preserving Generation of Synthetic Pathology Reports for Information Extraction
+R0011,10.1016/j.eswa.2026.134237,,,Standardizing longitudinal chest X-ray report evaluation via large language model annotation
+R0019,10.1109/icoici69824.2026.11724214,,,A Cloud-Native Multi-Agent LLM Framework for Clinical Knowledge Extraction from Heterogeneous Healthcare Data
+R0020,10.1038/s41598-026-55656-w,42248992,,A comparative study of large language models (ChatGPT/DeepSeek) in generating structured thyroid ultrasound reports.
+R0024,10.3233/shti260357,42175031,,A Federated Benchmark for Clinical Natural Language Processing (FedDRAGON).
+R0025,10.1186/s12911-026-03633-8,42723042,,A framework for extraction of clinical information from radiological mammography reports using large language models and retrieval augmented generation.
+R0026,10.1371/journal.pdig.0001791,42961995,,A framework for structuring Thai medical documents using systematized nomenclature of medicine clinical terms and large language models.
+R0029,10.1007/s41666-026-00232-0,42110658,,A Hybrid Language Framework for Ontology-Based Clinical Concept Extraction.
+R0030,10.1038/s41598-026-46229-y,41963402,,A hybrid large language model framework for structured data entry from code-switched persian clinical speech.
+R0033,,,2611.12709v1,A local language model layered with rule-based and neural detectors for clinical text de-identification: an open-source toolkit and evaluation
+R0034,10.1038/s41467-026-77067-1,42786185,,A machine-assisted framework for systematic error analysis in clinical concept extraction.
+R0035,10.1016/j.cviu.2025.104594,,,A modular augmented reality framework for real-time clinical data visualization and interaction
+R0037,10.1038/s44401-026-00114-y,42749862,,A multi-site benchmarking framework for scalable extraction of geriatric care constructs from electronic health records.
+R0038,,,2604.06028v1,A Multi-Stage Validation Framework for Trustworthy Large-scale Clinical Information Extraction using Large Language Models
+R0041,10.1109/ic3ecsbhi67834.2026.11469136,,,A Novel Approach to Multimodal Biomedical Data Integration via Hybrid Knowledge Graphs and Large Language Models
+R0044,10.3233/shti260303,42174977,,A Real-Time Clinical Text Information Extractor via LLM.
+R0046,10.64898/2026.01.24.26344477,41646828,,A retrieval-augmented generation large language model framework for accurate dementia identification from electronic health records.
+R0047,10.1177/2993091x261492372,,,A Scalable Method for Validated Data Extraction from Electronic Health Records with Large Language Models
+R0049,10.2196/95780,42686197,,"A Secure, Scalable Large Language Model-Based System (CIDER) for High-Throughput Clinical Data Extraction From Medical Reports: Retrospective Validation Study."
+R0050,10.2196/77409,41923446,,A Sentence Classification-Based Medical Status Extraction Pipeline for Electronic Health Records: Institutional Case Study.
+R0051,10.1016/j.jbi.2026.105034,41905520,2509.04753v1,"A study of large language models for patient information extraction: Model architecture, fine-tuning strategy, and multi-task instruction tuning."
+R0053,10.1007/978-981-92-2282-7_5,,,A Two-Stage Generative Framework for Sensitive Health Information Extraction and Temporal Normalization in Medical Records
+R0054,10.1016/j.xcrm.2026.102975,42580345,,A unified framework and benchmark for generalizable biomedical knowledge extraction and applications with large language models.
+R0055,10.1038/s41598-026-50745-2,42144441,,A workflow utilizing general-purpose large language models for efficient structuring and data mining of bone scintigraphy narratives.
+R0056,10.1109/iccsp68173.2026.11539113,,,ABHA's Personalised Clinical Intelligence Assistant
+R0057,10.1007/978-3-658-51100-5_17,,,Abstract: Leveraging Open-source Language Models for Clinical Information Extraction: A Study in Resource-constrained Healthcare Settings
+R0058,10.64898/2026.03.23.26349012,41929324,,Abstraction of Longitudinal Breast Oncology Records Using a Retrieval Pipeline with General-Purpose Large Language Models
+R0059,10.1016/j.esmorw.2026.100705,42021926,,Accelerating real-world data collection using large language models in rare neoplasms: a bone sarcoma example.
+R0060,10.1200/cci-26-00160,42691437,,Accuracy of Retrieval-Augmented Large Language Model-Generated Preconsult Summaries in Breast Surgical Oncology.
+R0062,10.1109/jiot.2025.3629943,,,Adaptive Chain-of-Thought Framework for Dynamic Reasoning in Adverse Drug Reaction Extraction and Standardization
+R0064,10.1007/s10278-026-01882-7,41814072,,Advanced Prompting Techniques Informed by Clinical Expertise Improve the Accuracy of LLM Data Extraction but Increase Non-Determinism.
+R0070,10.1109/icdh72779.2026.00055,,,Adverse Drug Event Prediction in Pharmacovigilance Using KG-Augmented LLM
+R0071,10.1093/jamiaopen/ooag016,41756715,,Agent-based large language model system for extracting structured data from breast cancer synoptic reports: a dual-validation study.
+R0073,10.64898/2026.06.02.26354727,,,Agentic Chart Review from Longitudinal Clinical Notes: a Lung Cancer Guideline Concordance Use Case
+R0074,10.1016/j.knosys.2026.116034,,,Agentic LLM for anonymizing healthcare data with contextual awareness
+R0077,10.1109/cai68641.2026.11536386,,,Agentic Symbolic Learning for Deterministic and Granular Clinical Data Normalization
+R0083,10.1007/978-3-032-05479-1_5,,,AI-Driven Multimodal TMJ Patient Modeling: From Unstructured Notes to Precision Treatment
+R0085,10.64898/2026.10.20.26365969,42996110,,AI-Empowered Multimodal Data Integration and Knowledge Discovery for Pharmacovigilance.
+R0092,10.1016/j.medj.2025.100895,41175879,,Application of generative artificial intelligence to utilize unstructured clinical data for acceleration of inflammatory bowel disease research.
+R0114,10.1186/s12911-026-03345-z,41606782,,Automated abstraction of clinical parameters of multiple myeloma from real-world clinical notes using large language models.
+R0117,10.1007/s10278-026-01932-0,41927819,,Automated Clinical Information Extraction from Diagnostic and Nondiagnostic Radiology Reports Using Modern Language Models.
+R0120,10.64898/2026.02.11.26346003,41757215,,Automated epilepsy and seizure type phenotyping with pre-trained language models.
+R0121,10.64898/2026.03.20.26348915,41929331,,Automated Extraction of Cancer Registry Data from Pathology Reports: Comparing LLM-Based and Ontology-Driven NLP Platforms.
+R0124,10.3233/shti260360,42175034,,Automated Information Extraction Pipeline for Constructing ED Knowledge Graphs from Korean Clinical Problem Lists.
+R0126,10.1007/s00330-026-12821-z,42613470,2606.07721v1,Automatic extraction of structured information from brain MRI reports using an open-weight large language model.
+R0128,10.1002/cyto.b.70051,42427213,,Automating clinical history extraction for flow cytometry panel selection using an EHR-integrated large language model.
+R0130,10.1093/jamia/ocag040,41974103,,Automating infection indicator extraction in home healthcare through instruction-tuned large language models.
+R0131,10.1016/j.urolonc.2026.05.029,42322812,,Automating standardization of prostate cancer biopsy and histopathology reports with privacy-preserving local large language models.
+R0132,10.1109/ijcnn69854.2026.11729940,,,AVDA: Generative Measurable Quantitative Information Extraction with Adaptive Vocabulary and LLM-Based Data Augmentation
+R0133,10.1167/tvst.15.4.17,41989226,,"Benchmarking GPT-5, LLaMA, and Mistral for Clinical Named Entity Recognition in Ophthalmology Progress Notes."
+R0134,10.1093/jamia/ocag101,42329045,,Benchmarking information extraction of physical activity from electronic health record with large language models: an natural language processing pipeline and comparative evaluation.
+R0135,10.1590/0102-311xen145025,42561294,,Benchmarking large language models for clinical data extraction from Portuguese medical notes in a university hospital; [Benchmarking de grandes modelos de linguagem para extração de dados clínicos de prontuários médicos em português brasileiro em um hospital universitário]; [Benchmarking de grandes modelos de lenguaje para extraer datos clínicos de historias clínicas en portugués brasileño en un hospital universitario]
+R0137,10.1016/j.jbi.2026.104982,41519189,,Beyond Fine-Tuning: Leveraging Domain-Aware In-Context learning with large language models for clinical named entity recognition.
+R0138,10.64898/2026.09.24.26363973,,,Beyond ICD Codes: Fine-Tuning LLMs for In-Hospital Cardiac Arrest Identification from EHR Notes
+R0139,,,2604.17214v1,Beyond the Basics: Leveraging Large Language Model for Fine-Grained Medical Entity Recognition
+R0141,10.1038/s41551-026-01719-2,42310130,,BRIDGE: benchmarking large language models for understanding real-world clinical practice texts.
+R0142,,,,Bridging LLM Reasoning and UMLS for Spanish Psychiatric Concept Normalization; [Integración del razonamiento de LLM y UMLS para la normalización de conceptos psiquiátricos en español]
+R0147,10.64898/2026.01.09.26343792,41542661,,Can Large Language Models Reduce the Cost of Extracting Data from Electronic Health Records for Research?
+R0148,10.3233/shti260162,42174838,,Can LLMs Turn French PET/CT Narrative Reports into Structured Knowledge?
+R0152,10.1007/978-981-95-7299-1_1,,,CausalMPT: Causal Multimodal Prompt Tuning for Healthcare MIE
+R0153,10.1016/j.ijmedinf.2026.106573,42364465,,Chain-of-verification prompting for NIH stroke scale extraction using small and frontier large language models.
+R0154,10.1136/bmjhci-2025-101948,42331507,,Characterising 'Watch and Wait' prescribing patterns in paediatric otitis media using large language models and pharmacy dispense data.
+R0156,10.1016/j.compbiomed.2026.111806,42322746,,CineScribe: LLM-based detection and mitigation of ambiguity in cine cardiac magnetic resonance reports.
+R0157,10.1136/bmjdh-2026-000027,42948623,,CLINES: Clinical LLM-based Information Extraction and Structuring Agent.
+R0159,10.3233/shti260999,42752481,,Clinical Code Mapping with LLM Tool Use: A Pilot for Automated Data Extraction of Medication and Diagnosis Information from Unstructured Clinical Notes.
+R0162,,,2601.01844v1,Clinical Knowledge Graph Construction and Evaluation with Multi-LLMs via Retrieval-Augmented Generation
+R0164,,,2604.16364v3,Clinical Note Bloat Reduction for Efficient LLM Use
+R0166,10.1038/s43856-026-01790-5,42463788,,Clinician expertise and prompt engineering enhance cancer information extraction in electronic health records by small language models.
+R0170,10.3233/shti260351,42175025,,Combining Anti-Hallucination Strategies for Reliable LLM-Based Clinical Information Extraction.
+R0171,10.64898/2026.07.12.26357886,,,Comparative analysis of discriminative and generative natural language processing pipelines for automated prostate magnetic resonance imaging reports
+R0172,10.1007/s00270-025-04287-1,41354880,,Comparative Evaluation of Proprietary and Open-Source Large Language Models for Systematic Multi-source Information Extraction in Interventional Oncology.
+R0173,10.2106/jbjs.25.01338,41875224,,Comparison of Large Language Models with Rules-Based Natural Language Processing Algorithms for Extracting Data from Operative Notes.
+R0174,10.1007/978-3-032-30813-9_68,,2603.00924v2,Conformal Prediction for Risk-Controlled Medical Entity Extraction Across Clinical Domains
+R0176,10.12138/j.issn.1671-9638.20263102,,,Construction and application of influenza knowledge graph based on outpatient medical records; [基于门诊病历的流行性感冒知识图谱构建与应用研究]
+R0177,10.7507/1007-4848.202512108,,,Construction and clinical application exploration of an artificial intelligence-based high-quality lung cancer surgery dataset; [基于人工智能的肺癌外科高质量数据集构建与临床应用]
+R0179,10.3233/shti260725,42175392,,Context-Free Grammar-Guided Generation of FHIR Resources Using Large Language Models.
+R0182,10.1016/j.yebeh.2026.111027,41946095,,Cost-effectiveness analysis of resective epilepsy surgery in drug-resistant patients: an artificial intelligence data modeling.
+R0186,10.1200/cci-26-00002,42574694,,Data Extraction From Oncology Imaging Reports by Large Language Models: A Comparative Accuracy Study.
+R0193,10.3390/app16041692,,,De-Identification of Electronic Health Records Using Deep Learning and Transformers
+R0197,,,2603.20435v2,Deep reflective reasoning in interdependence constrained structured data extraction from clinical notes for digital health
+R0201,10.1145/3841905.3842002,,,Design of a System for Structured Extraction and Auxiliary Diagnosis of Clinical Medical Records Based on Large Language Models
+R0202,10.64898/2026.01.22.26344604,,,Detecting Cardiac Amyloidosis in Italian Cardiology Reports: Structured Variable Extraction versus Direct Free-Text Analysis
+R0204,10.1093/jamiaopen/ooag037,,,Detecting stigmatizing language with large language models: mind the settings
+R0205,10.2196/87586,42227874,,Detection of Self-Harm in Electronic Mental Health Records Using Privacy-Preserving Local Language Models: Methodological Study.
+R0206,10.64898/2026.08.21.26361031,,,Developing an open-source framework for LLM evaluation of patients using EHR clinical documentation; performance of LLMs relative to medical professionals
+R0207,10.1200/cci-25-00133,41707099,,Development and Assessment of a Pipeline for Extracting Structured Data From Free-Text Medical Reports Using a Large Language Model.
+R0209,10.1038/s41598-026-73738-7,,,Development and validation of a pragmatic pipeline for clinical free-text annotation using locally deployed open-weight large language models
+R0211,10.1093/ehjdh/ztag124,42626630,,Development of an LLM pipeline exceeding physician-documented cardiovascular risk scores under routine clinical conditions.
+R0214,10.1136/bmjopen-2025-116133,42595369,,Diagnostic accuracy of electronic medical record retrieval methods and a large language model for identifying cardiovascular events: a multisite retrospective validation study in a medical system in the United States.
+R0217,,,2604.21421v1,Differentially Private De-identification of Dutch Clinical Notes: A Comparative Evaluation
+R0221,10.3390/diagnostics16111644,42279513,,Digital Registrar: A Schema-First Framework for Multi-Cancer Privacy-Preserving Pathology Abstraction via Local LLMs.
+R0223,10.2147/jmdh.s619855,42761637,,Distillation of a Locally Deployable 8B Language Model for Lung Histology Abstraction: A 33-Report Proof-of-Concept Study.
+R0224,10.64898/2026.07.05.26357334,,,"Distinguishing Social Isolation, Social Support, and Contextual False Positives in Clinical Notes Using Fine-Tuned Language Models: Multisite Validation Study"
+R0226,10.1038/s41598-026-62884-7,42581210,,Domain-specific versus general large language models: a review and empirical benchmark in real medical texts.
+R0229,,,2606.12569v3,eCREAM-MedCorpus A Large-Scale Corpus of Clinical Notes for Italian
+R0230,10.1016/j.ijmedinf.2025.106230,41435443,,Efficient medical NER with limited data: Enhancing LLM performance through annotation guidelines.
+R0231,10.34133/csbj.0064,42494785,,End-to-End Pipeline Integrating Local Small Language Models and Machine Learning for Data Extraction and Stroke Outcome Prediction in Emergency Department.
+R0232,10.1109/ichi69079.2026.00219,,,Enhanced Adverse-Event Detection and Drug-Event Relation Extraction from Clinical Notes
+R0234,,,,ENHANCING CLINICAL NAMED ENTITY RECOGNITION VIA FEW SHOT PROMPT TUNING OF LARGE LANGUAGE MODELS USING MIMIC III DATA
+R0237,10.1038/s44401-026-00083-2,42137735,,EPEE: towards efficient and effective foundation models in biomedicine.
+R0239,10.64898/2026.08.20.26360740,,,Evaluating Clinical Concept Extraction and Evidence-Bounded Terminology Linking: Multisite Model Comparison and Pilot Ablation Study
+R0240,10.2196/78681,42133937,,Evaluating Encoder and Decoder Models for Extended Clinical Concept Recognition in Japanese Clinical Texts: Comparative Study With Weighted Soft Matching.
+R0246,10.14569/ijacsa.2026.0170460,,,Evaluating Open-Source LLMs for Thai Clinical Information Extraction
+R0248,10.1007/s41666-026-00254-8,42964527,,Evaluating RAG Configurations for Clinical Information Extraction from EHR Notes: Aged Care Case Study.
+R0251,10.2196/90547,42361337,,Evaluation of Large Language Models for Structured Data Extraction From Interstitial Lung Disease Clinical Notes: Comparative Study.
+R0254,10.1109/ichi69079.2026.00032,,,Evolution of LLMs for Clinical Information Extraction: A Comparative Study of GPT and Llama Models
+R0256,10.3389/fdgth.2026.1836890,42495049,,Explainable multimodal AI and neuro-symbolic clinical decision support system for chronic eye disease management: a digital health implementation study.
+R0257,10.1007/s10916-026-02462-6,42753021,,"Exploratory Implementation and Feasibility Report of CLASS (Clinical LLM Abstraction & Structuring System), A Large Language Model Pipeline for Extracting Unstructured Data From Clinical Notes."
+R0258,,,,Exploring Synthetic Data Generation on Extremely Low-Resource Clinical Temporal Relation Extraction; [Exploración de la generación de datos sintéticos en la extracción de relaciones temporales clínicas con recursos extremadamente limitados]
+R0260,10.2196/86183,42308511,,Extracting and Classifying Drug Discontinuations From Estonian Electronic Health Records: Development and Validation Study
+R0261,,,2604.06208v1,Extracting Breast Cancer Phenotypes from Clinical Notes: Comparing LLMs with Classical Ontology Methods
+R0262,10.2196/89480,42206405,,Extracting Cardiorespiratory Symptoms From Clinical Notes Using Open-Weight Large Language Models: Method Development and Validation Study.
+R0263,10.1016/j.ijmedinf.2025.106116,40992205,,Extracting language information from clinical notes using large language models.
+R0264,10.2196/92413,42390385,,Extracting Medical Information From Unstructured Clinical Text Using Large Language Models to Enhance Health Care Interoperability: Proof-of-Concept Study.
+R0267,10.1177/20552076261431431,42116860,,Extracting structured clinical data from pediatric emergency records using LLMs: A multimodel retrospective study of children with medical complexity.
+R0270,10.1016/j.jbi.2026.105032,41911958,,Extraction of distant recurrence sites for breast cancer patients from free-text clinical notes using large language models.
+R0271,10.3233/shti260314,42174988,,Extraction of Endoscopic Markers from Clinical Notes in Italian Patients with Autoimmune Atrophic Gastritis Using Small Language Models.
+R0273,10.3791/69390,42008560,,Few-Shot and Zero-Shot Biomedical Named Entity Recognition: A Procedure for Enhancing BioBERT with Prompt-Based Learning and Large Language Models.
+R0274,10.1245/s10434-026-20775-1,42934448,,Flexible Large Language Models for Multi-variable Extraction in Sarcoma Pathology Notes: A Pilot Study.
+R0275,10.1186/s12874-026-02867-4,42129656,,From annotation to adaptation: extracting temporal relations in French clinical narratives.
+R0280,10.3233/shti260296,42174970,,From Report to Record: Prompt-Based Information Extraction from Gynecology Oncology Reports Using LLMs.
+R0292,10.2196/93328,42932872,,Generative Large Language Models for Psychiatric Concept Detection in Spanish-Language Electronic Health Records: Development and Evaluation Study.
+R0294,10.1016/j.xops.2026.101366,,,GLLaucoMed: A Secure Large Language Model–Powered Agentic Workflow for Automated Medication Extraction from Free-Text Glaucoma Clinical Notes
+R0297,10.64898/2026.08.26.26361443,,,"Half of alcohol, drug, and self-harm presentations cannot be identified in coded emergency department data: a diagnostic accuracy study of a large language model"
+R0298,,,2601.20674v1,Harnessing Large Language Models for Precision Querying and Retrieval-Augmented Knowledge Extraction in Clinical Data Science
+R0301,10.1093/ehjdh/ztag145,42787614,,Hierarchical prompting with reasoning large language models for immune checkpoint inhibitor-associated myocarditis evidence extraction pilot study.
+R0302,10.1007/s10278-025-01530-6,40379860,,High-Performance Prompting for LLM Extraction of Compression Fracture Findings from Radiology Reports.
+R0305,10.1109/dcas69364.2026.11545012,,,How Low Can Medical Llms Go? an Empirical Study of Low-Bit Quantization
+R0306,,,2607.20428v1,Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events
+R0307,10.3390/make8080248,,,"Human-Level Extraction of Modified Rankin Scale Scores from Real-World Neurosurgical Clinical Notes Using a Locally Deployed, Quantized Large Language Model"
+R0309,10.64898/2026.09.10.26362796,,,Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry
+R0310,10.1007/978-3-032-24724-7_54,,,Hybrid NLP-LLM Pharmacologic Information Extraction from Unstructured Clinical Notes
+R0314,10.64898/2026.02.10.26346025,,,Identifying Reasons for ACEI/ARB Non-Use in CKD Using Scalable Clinical NLP with Schema-Guided LLM Augmentation
+R0315,10.3233/shti260295,42174969,,Impact of LLM Scale and Quantization on Information Extraction from Clinical Text.
+R0316,10.1007/s10278-025-01659-4,40931247,,Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Pilot Study.
+R0317,10.1109/ichi69079.2026.00090,,,Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort
+R0318,10.1109/chase69719.2026.00072,,,Improving Clinical Note De-identification via Post-NER Verification and Candidate Expansion
+R0322,10.1093/jamia/ocaf213,41533750,,Information extraction from clinical notes: are we ready to switch to large language models?
+R0326,10.1016/j.ijmedinf.2025.106104,40925145,,Integrating rule-based NLP and large language models for statin information extraction from clinical notes.
+R0330,10.1109/cbms69103.2026.00240,,,Interpretable Hybrid Modeling for Breast Cancer Risk Stratification from Structured Radiology Reports
+R0334,10.1007/978-981-95-7299-1_16,,,KD4FIRE: A Knowledge Distillation Approach for Fine-Grained Medical Relation Extraction in Low-Resource Settings
+R0335,10.1007/s10489-026-07095-3,,,KDC-NER: A knowledge-guided data augmentation and large model fine-tuning framework for nested named entity recognition in traditional Chinese medicine electronic medical records
+R0336,,,,Key Coverage Matters: Semi-Structured Extraction of OCR Clinical Reports
+R0338,10.1007/978-3-032-05176-9_3,,,Knowledge-Aware Clinical Narrative Extraction Using Ontologies and Knowledge Graphs
+R0339,10.3233/shti260192,42174868,,Knowledge-Based Interpretation of Multi-Modal Clinical Findings: Evaluating a Local Agentic Bridge Between Worlds.
+R0341,10.2196/81708,43008269,,Labeling Clinical Notes With Large Language Models: Retrospective Benchmarking Study.
+R0342,10.1111/dar.70059,41158037,,Language Models for Standardising Clinical Notes and Information Extraction in Addiction Psychiatry-An Empirical Study.
+R0344,10.1177/20552076261496761,,,Large language model-assisted machine learning for postpartum urinary incontinence prediction: Model development and validation study
+R0345,10.1016/j.neunet.2026.109178,42214929,,Large language model augmented framework with domain-specific knowledge integration for medical named entity recognition.
+R0346,10.1109/icstem68144.2026.11735536,,,Large Language Model Augmented Grid Tagging for Discontinuous Named Entity Recognition
+R0348,10.1007/s00428-025-04337-6,41318702,,"Large language model-based approach for low-cost, rapid and accurate automated extraction of predictive biomarker testing results from Dutch pathology reports."
+R0351,10.1093/sleepadvances/zpag059,,,Large language model derived regular expressions for sleep phenotyping from electronic health record: a feasibility study
+R0352,10.1109/icsscna68616.2026.11546824,,,Large Language Model Driven Clinical Knowledge Graph Enhancing Medical Decision Accuracy
+R0354,10.1016/j.jvs.2025.10.044,41203087,,"Large language models accurately extract aortic information from abdominal imaging reports in a large, real-world database"
+R0355,10.1111/dar.70169,42135575,,Large Language Models Accurately Identify People Who Inject Drugs From Infectious Diseases Discharge Summaries in an Australian Hospital.
+R0358,10.1080/10903127.2026.2683523,42241217,,"Large Language Models Exhibit High Performance as Computable Phenotypes for Pediatric Asthma Exacerbation Detection in a Retrospective, Observational Study of Emergency Medical Services Encounters."
+R0359,10.3174/ajnr.a9251,41720514,2610.38009v1,Large Language Models for Accurate Medical Chart Abstraction: Enabling Scalable and Secure Artificial Intelligence Deployment in Stroke.
+R0360,10.1007/s10278-026-02311-5,42760457,,Large Language Models for Ankle Fracture Classification and Management Prediction from Routine Clinical Documentation: A Single-Center Exploratory Study.
+R0361,10.64898/2026.06.25.26356626,42428067,,"Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types."
+R0364,10.64898/2026.02.23.26346945,,,Large-Language Models for data extraction from written kidney biopsy reports
+R0365,10.3390/make8100328,,,Large Language Models for Information Extraction from Neurosurgical Clinical Notes: A Benchmark Against Human Auditors
+R0367,10.1093/ehjdh/ztaf127,41684376,,Large language models for structured cardiovascular data extraction: a foundation for scalable research and clinical applications.
+R0368,10.64898/2026.10.07.26364402,,,Large Language Models for Structured Information Extraction from German Histopathology Reports – Hepatocellular Carcinoma
+R0369,10.1002/lrh2.70086,42253468,,Large Language Models for Summarizing Advance Care Planning Information From Goals of Care Notes in the EHR.
+R0371,10.1038/s41598-026-52928-3,42168275,,Large language models for zero-shot procedure extraction in orthopedic surgery: a comparative evaluation.
+R0376,10.1007/s10278-025-01824-9,41565927,,Large Language Models in Radiologic Numerical Tasks: A Thorough Evaluation and Error Analysis.
+R0378,10.1200/cci-25-00388,42441924,,Large Language Models to Extract Cancer Staging Data From Clinical Documentation at Scale.
+R0379,10.64898/2026.08.20.26360921,,,Large-Scale Psychiatric Concept Extraction from Electronic Health Records: A Comparative Study of Encoder-Based Language Models
+R0380,10.1109/access.2026.3679277,42221863,2506.04450v5,Learning to Diagnose Privately: DP-Powered LLMs for Radiology Report Classification.
+R0382,10.2214/ajr.25.34076,42089520,,Leveraging Fine-Tuned Large Language Models for Interpretable Pancreatic Cystic Lesion Feature Extraction and Risk Categorization
+R0383,10.2196/95198,42814849,,Leveraging Generative Large Language Models for Temporal Relation Extraction From French Clinical Narratives: Prompt-Chaining Approach.
+R0384,10.1142/9789819824755_0015,41758143,,Leveraging Large Language Models for Adverse Drug Event Detection: A Comparative Study of Token and Span-Based Named Entity Recognition.
+R0385,10.3390/diagnostics16071083,41975795,,Leveraging Large Language Models for Automated Extraction of Abdominal Aortic Aneurysm Features from Radiology Reports.
+R0387,10.1109/melecon64486.2026.11418814,,,Leveraging Large Language Models for Digitization and Clinical Interpretation of Handwritten Psoriasis Reports
+R0388,10.1109/ichi69079.2026.00019,,,Leveraging Large Language Models for Extracting Social Determinants of Health in Real-World Clinical Notes
+R0389,10.21037/qims-2026-1-0198,42582585,,Leveraging large language models for information extraction from free-text liver MRI reports and assessment of clinical utility: a multicenter study.
+R0390,10.64898/2026.09.22.26360316,42818405,,Leveraging Large Language Models for Temporal PHI De-identification in Real-World Clinical Notes.
+R0392,10.5604/01.3001.0055.7302,42178846,,"Leveraging large language models to audit perioperative total laryngectomy care: anesthetic, nutritional, and complication profiles in a real‑world cohort."
+R0395,10.1016/j.jacep.2026.05.019,42360263,,Leveraging Large Language Models to Identify In-Hospital Cardiac Arrest.
+R0396,10.1016/j.xops.2025.100944,41244991,,Leveraging Large Language Models with Sequential Prompting to Extract Eye Examination Findings from Free-Text Ophthalmology Notes.
+R0397,10.1093/jamiaopen/ooaf182,41542317,,Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case.
+R0398,10.3389/fdgth.2026.1903755,42774337,,LLM and CQL computable phenotypes for myocarditis adverse event feature and outcome determinations using patient FHIR data: a feasibility study.
+R0399,10.1007/s00132-025-04754-0,41417114,,LLM-based extraction of clinical data: potentials and challenges; [LLM-gestützte Extraktion klinischer Daten: Potenziale und Herausforderungen]
+R0402,10.1007/978-981-95-2098-5_19,,,LLM-Based Structured Information Extraction for Urinary Incontinence from Multi-modal Clinical Data
+R0403,,,2604.16763v3,LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies
+R0404,10.1109/chase69719.2026.00064,,,LOGAR: A Local–Online Generate–Audit–Refine Framework for Mental Health De-identification
+R0405,10.64898/2026.03.30.26349388,,,Longitudinal information extraction from clinical notes in rare diseases: an efficient approach with small language models
+R0411,10.3390/app16126158,,,Med-LLaMA3: Advancing Medical Question-Answering Through Parameter-Efficient Fine-Tuning of Large Language Models
+R0412,10.1093/gerona/glag154,42267901,,MedADL: high-throughput information extraction of functional status from electronic health records to advance frailty assessment in older adults.
+R0415,10.1109/eeiss69782.2026.11584514,,,Medi-Agent: A Clinically Aligned Multimodal AI Agent for Cad-Assisted Diagnosis and Risk Stratification
+R0420,,,2605.20197v2,MedicalBench: Evaluating Large Language Models Toward Improved Medical Concept Extraction
+R0421,10.64898/2026.04.12.26350704,,,MedicalBench: Evaluating Large Language Models Towards Improved Medical Concept Extraction
+R0424,10.1109/access.2026.3665268,,,MedInsight Pro: An Explainable Hybrid NLP and LLM Fusion Framework for Radiology Report Interpretation
+R0429,10.1007/978-3-032-07502-4_3,,,Mind the Evaluation Gap: Large Language Models for Structured Data Extraction from Radiology Reports
+R0430,10.3233/shti260352,42175026,,MINE: An Interactive Platform for Expert-Guided Medical Information Extraction.
+R0431,,,2601.06193v1,MLB: A Scenario-Driven Benchmark for Evaluating Large Language Models in Clinical Applications
+R0434,10.1016/j.ins.2026.123663,,,MOMA: multi-expert framework with missing pattern awareness for rectal cancer neoadjuvant therapy
+R0438,10.2196/96347,42617111,,Multilingual Evidence-Based Question-Answering for Stroke Discharge Summaries: Study of Cross-Lingual Heterogeneity in Clinical Reports.
+R0439,10.1109/cmss69636.2026.11688780,,,Multimodal Electronic Health Record Extraction and IoT-Based Patient Monitoring using Artificial Intelligence
+R0448,10.1016/j.arth.2026.11.047,43020159,,New Large Language Models Outperform Older Models and Hallucinate Less in Operative Note Data Extraction.
+R0449,10.1016/j.annonc.2025.12.006,41407195,,Next-generation multicenter studies: using artificial intelligence to automatically process unstructured health records of patients with lung cancer across multiple institutions.
+R0450,10.3390/jcm15114092,,,Note-Level Phenotyping of Multiple-Sclerosis Notes by a Large Language Model Achieves near Human-Level Agreement
+R0452,10.64898/2026.06.29.26356890,42428105,,OHCA-EXTRACT: Evaluating the Accuracy of a Large Language Model Pipeline for Out-of-Hospital Cardiac Arrest Case Identification and Utstein Variable Extraction.
+R0454,10.3233/shti260996,42752478,,On-Premise Detection of a Guideline-Driven Oral Anticoagulation Shift in German Doctors' Letters Using Local Large Language Models.
+R0455,10.1016/j.mlwa.2026.100837,,,Oncology data extraction with large language models from real-world breast cancer electronic health records in Spanish
+R0456,10.64898/2026.03.05.26347717,,,OncoRAG: Graph-Based Retrieval Enabling Clinical Phenotyping from Oncology Notes Using Local Mid-Size Language Models
+R0457,10.1136/bmjhci-2025-101956,42225359,,Open-source large language model-based on-premises pipeline for automated data extraction from unstructured electronic health records: a pilot study.
+R0458,10.1016/j.jvsvi.2026.100531,,,Open-weight large language models for clinically actionable deep vein thrombosis extraction from venous duplex ultrasound reports
+R0460,10.1016/j.jbi.2026.105053,42114794,,Optimising clinical information extraction: a comparative study of retrieval-augmented generation techniques in clinical notes.
+R0462,10.2196/89957,42886042,,Optimizing Clinical Temporal Relation Extraction With Large Language Models: Comparative Analysis.
+R0468,,,2603.11597v1,Performance Evaluation of Open-Source Large Language Models for Assisting Pathology Report Writing in Japanese
+R0472,10.1145/3799682.3840974,,,PHASE: A Modular LLM Pipeline for On-Premise Phenotype Profile Extraction from Clinical Referral Reports
+R0473,10.1016/j.jhepr.2025.101715,41830877,,PHENO-RAG: An artificial intelligence tool for guideline-informed management decisions in hepatocellular carcinoma.
+R0474,10.1200/cci-25-00314,42284546,,Phenotyping Prostate Cancer in a National Health System Using Large Language Models
+R0477,10.1002/jmri.70336,42003050,,Pre-Imaging Clinical Factors Associated With Cardiac MR Image Quality Using Large Language Model-Enabled Data Extraction.
+R0481,10.1007/s10278-025-01618-z,40715863,,Privacy-Preserving Generation of Structured Lymphoma Progression Reports from Cross-sectional Imaging: A Comparative Analysis of Llama 3.3 and Llama 4.
+R0482,10.1038/s41698-026-01521-y,42251136,,Prognostic data extraction harnessing a privacy-preserving large language model: a clinician-AI collaborative retrospective evaluation in head and neck oncology.
+R0483,,,2606.19852v2,"Prompt, Plan, Extract: Zero-Shot Agentic LLMs Workflows for Lung Pathology Extraction from Clinical Narratives"
+R0490,,42317835,2603.16002v1,RadAnnotate: Large Language Models for Efficient and Reliable Radiology Report Annotation.
+R0494,10.1016/j.imu.2026.101755,,,RAVEN: An open-source assessment framework for automated entity extraction in structured radiology reporting
+R0498,10.2196/103912,42914107,,Reducing Annotation Costs Using Knowledge Distillation for Label‑Efficient Negation Detection in Radiology Reports: Multisite Internal Validation Study.
+R0499,10.64898/2026.05.28.26354362,,,Relationship Extraction for Adverse Drug Events in Clinical Notes Using Large Language Models
+R0500,10.1016/j.ebiom.2026.106516,42892212,,Relationship extraction for adverse drug events in clinical notes using large language models: a retrospective cross-sectional study.
+R0501,10.3233/shti260285,42174960,,Reliable Enough? Benchmarking LLMs for Clinical Concept Extraction
+R0503,10.64898/2026.04.03.26350117,41959783,,Reproducibility and Robustness of Large Language Models for Mobility Functional Status Extraction.
+R0504,10.1016/j.jbi.2026.105105,42822573,,Reproducible synthetic clinical letters for seizure frequency information extraction.
+R0513,10.1016/j.jclinepi.2025.112049,41232578,2506.11137v3,Scalable medication extraction and discontinuation identification from electronic health records using large language models.
+R0518,10.1109/ichi69079.2026.00021,,,Seizure Frequency Extraction and Normalization from EMU Reports based on Large Language Models and Ontology
+R0519,,,2605.04221v2,Self-Prompting Small Language Models for Privacy-Sensitive Clinical Information Extraction
+R0524,10.1093/jamiaopen/ooag139,42519595,,Sequential multi-site fine-tuning for incremental deployment of large language models for mobility functional status extraction.
+R0525,,,2609.07185v1,"SIFTING: A Novel LLM-Based Framework for Structured and Transparent Information Extraction from Clinical Free-Text Reports, with Application to Tumor Staging in Lung Cancer"
+R0526,10.2196/86453,42714033,,"""Small"" Large Language Models in the Hospital: Evaluation Study on Real-World Data in a Resource-Constrained Setting."
+R0528,10.1007/978-3-032-04981-0_56,,,SPEC-CXR: Advancing Clinical Safety Through Entity-Level Performance Evaluation of Chest X-ray Report Generation
+R0529,10.1016/j.cmpb.2026.109517,42341359,,SPELL: A scalable NLP method using regular expressions and large language models for clinical information extraction.
+R0533,10.1109/balkancom71095.2026.11605036,,,Structuring Clinical Heart Failure Data with Locally Deployed OpenSource LLMs
+R0534,10.1038/s41746-026-02473-0,41760885,2507.07421v1,SynthEHR-eviction: enhancing eviction SDoH detection with LLM-augmented synthetic EHR data.
+R0535,10.1093/jamia/ocag084,42315965,,Synthesized annotation guidelines are knowledge-lite boosters for clinical information extraction.
+R0536,10.2196/91313,42905884,,Synthetic Medical Document Generation Pipeline (MedDocSynth) for Optical Character Recognition: Development and Validation Study on Korean Clinical Documents.
+R0537,10.1109/ichi69079.2026.00110,,,Systematic Evaluation of Large Language Models for Post-Discharge Clinical Action Extraction
+R0541,10.1093/jamia/ocag051,41990328,,Targeted use of large language models for EHR-based computable phenotyping.
+R0548,10.1016/j.ibmed.2026.100428,,,The integration of large language models in clinical text analysis: A case study on dialysis vascular access descriptions
+R0549,10.2196/98580,42647073,,The Performance of Large Language Models in Extracting Intestinal Symptoms From Electronic Health Records: Retrospective Observational Study
+R0557,10.1038/s44401-026-00099-8,42328682,,TimeX: Phenotype Onset Extraction from Clinical Narratives.
+R0559,,,2601.22124v3,"Toward Federated Large Language Models in Medicine: A Parameter-Efficient Framework for Privacy-Preserving, Multi-Institutional Adaptation"
+R0560,10.1109/iscc70364.2026.11740109,,,Toward Semantic HL7 FHIR-Based Interoperability of Italian Clinical Documents Using AI and Domain Terminologies
+R0562,10.1007/978-3-658-51100-5_74,,2603.09638v2,Tracking Cancer Through Text: Longitudinal Extraction From Radiology Reports Using Open-Source Large Language Models
+R0567,10.2196/94454,42560822,,Two-Stage Extraction of Clinical Course Information From Psychiatric Discharge Summaries Using Fine-Tuned Large Language Models: Cross-Validation Study.
+R0568,10.1109/isbi61048.2026.11515760,,,Uncertainty-Aware Structured Data Extraction from Full CMR Reports via Distilled LLMS
+R0569,10.3390/a19030215,,,"Understanding Tradeoffs in Clinical Text Extraction: Prompting, Retrieval-Augmented Generation, and Supervised Learning on Electronic Health Records"
+R0573,10.1016/j.labinv.2025.104272,41412350,,Using Consensus-Based Reasoning and Large Language Models to Extract Structured Data From Surgical Pathology Reports.
+R0580,10.2196/86467,42574465,,Using Natural Language Processing to Identify Adverse Drug Events Characterized by Medication Replacement in Primary Care Electronic Medical Records: Algorithm and Validation Study.
+R0581,10.1109/ichi69079.2026.00022,,,Using reasoning LLMs to extract SDOH events from clinical notes
+R0583,10.1016/j.esmorw.2026.100718,42183150,,Validating large language model-assisted data extraction from clinical notes.
+R0586,10.1007/s13755-025-00400-3,41281609,,Vaner2: towards more general biomedical named entity recognition using multi-task large language model encoders.
+R0587,10.1201/9781003638926-9,,,Vision Language Model-Based Health Data Retrieval and Trend Analysis System for Chronic Diseases in Balochistan
+R0589,10.1109/access.2026.3693566,,,"When Does Instruction Tuning Work in Biomedical NLP? A Structural, Task-Aware, and Safety–Critical Evaluation of Large Language Models"
+R0590,,,2601.09053v2,Who Fails Where? LLM and Human Error Patterns in Endometriosis Ultrasound Report Extraction
+R0591,10.1097/cej.0000000000001015,41877537,,Whole-body magnetic resonance imaging for cancer screening in asymptomatic adults: a multicenter study.
+R0592,10.17161/kjm.vol19.25396,42921394,,Zero-Shot Extraction of Structured Clinical Data from Free-Text CT Reports Using Foundational Large Language Models.
+R0596,10.1371/journal.pone.0323535,40373001,,A comparative analysis of large language models versus traditional information extraction methods for real-world evidence of patient symptomatology in acute and post-acute sequelae of SARS-CoV-2.
+R0597,10.1093/jamiaopen/ooaf128,41245151,,A comparative performance analysis of regular expressions and a large language model-based approach to extract the BI-RADS score from radiological reports.
+R0598,10.1101/2025.06.01.25328636,,,A Comparative Performance Analysis of Regular Expressions and an LLM-Based Approach to Extract the BI-RADS Score from Radiological Reports
+R0600,10.1016/j.compbiomed.2025.111013,40886641,,A comprehensive evaluation of large language models for information extraction from unstructured electronic health records in residential aged care.
+R0605,10.1007/978-981-97-7966-6_10,,,A Hybrid Approach to the Recognition of Sensitive Health Information: LLM and Regular Expressions
+R0607,,,2506.11067v3,A Large Language Model Based Pipeline for Review of Systems Entity Recognition from Clinical Notes
+R0614,,,2508.15149v1,A Robust BERT-Based Deep Learning Model for Automated Cancer Type Extraction from Unstructured Pathology Reports
+R0615,10.1101/2025.02.25.25322898,,,A Scalable Method for Validated Data Extraction from Electronic Health Records with Large Language Models
+R0616,10.1038/s41698-025-01103-4,40962856,,"A software pipeline for medical information extraction with large language models, open source and suitable for oncology."
+R0620,10.1212/cpj.0000000000200542,40994811,,Accelerating Medical Record Data Abstraction and Analysis in Muscular Dystrophy: Large Language Models and International Classification of Diseases Codes.
+R0621,,,,ACCELERATING PATHOLOGY REPORT DIGITIZATION: A MULTI-ENGINE OCR AND LLM FRAMEWORK FOR HEALTHCARE APPLICATIONS
+R0624,10.1007/s41666-025-00190-z,40309133,,Adapting Generative Large Language Models for Information Extraction from Unstructured Electronic Health Records in Residential Aged Care: A Comparative Analysis of Training Approaches.
+R0629,10.1101/2025.11.25.25340989,,,Agent-Based Large Language Model System for Extracting Structured Data from Breast Cancer Synoptic Reports: A Dual-Validation Study
+R0630,,,2502.01691v1,Agent-Based Uncertainty Awareness Improves Automated Radiology Report Labeling with an Open-Source Large Language Model
+R0631,10.1109/picc67314.2025.11291255,,,Agentic AI for Severity Extraction in Clinical Notes: Enhancing Disease Diagnosis Beyond Rule-Based and Traditional ML Models
+R0638,10.1200/jco.2025.43.16_suppl.e23161,,,Aiding data retrieval in clinical trials with large language models: The APOLLO 11 Consortium in advanced lung cancer patients.
+R0642,10.1016/j.health.2024.100378,,,An automated information extraction model for unstructured discharge letters using large language models and GPT-4
+R0645,10.1038/s41598-025-21827-4,41168268,,An integrated approach for rare disease detection and classification in Spanish pediatric medical reports.
+R0646,10.1200/jco.2025.43.16_suppl.1571,,,Analysis of a large language model-based system versus manual review in clinical data abstraction and deduction from real-world medical records of patients with melanoma for clinical trial eligibility assessment
+R0649,10.1101/2025.03.07.25323569,,,Application of Generative Artificial Intelligence to Utilise Unstructured Clinical Data for Acceleration of Inflammatory Bowel Disease Research
+R0656,,,2512.04834v1,Are LLMs Truly Multilingual? Exploring Zero-Shot Multilingual Capability of LLMs for Information Retrieval: An Italian Healthcare Use Case
+R0658,10.1109/idap68205.2025.11222391,,,Aspect-Based Medical Record Classification Using Large Language Model Guided Knowledge Graph
+R0659,10.1016/j.compbiomed.2025.110609,40541074,,Assessing large language models for acute heart failure classification and information extraction from French clinical notes.
+R0668,10.1016/j.swevo.2025.101922,,,Automatic prompt design via particle swarm optimization driven LLM for efficient medical information extraction
+R0669,10.11925/infotech.2096-3467.2024.0791,,,Automatic Recognition of Chinese Electronic Medical Record Entities Based on LLMs; [基于大模型的中文电子病历实体自动识别研究]
+R0670,10.1007/s00330-024-11074-y,39390261,,Automatic structuring of radiology reports with on-premise open-source large language models.
+R0673,10.1109/tiptekno68206.2025.11270116,,,Autononym: Multimodal Anonymization of Health Data using Named Entity Recognition and Structured Medical Data Processing
+R0675,,,2511.15778v1,Balancing Natural Language Processing Accuracy and Normalisation in Extracting Medical Insights
+R0679,10.1101/2025.05.05.25326979,,,"Benchmarking transformer-based models for medical record deidentification: A single centre, multi-specialty evaluation"
+R0684,,,2504.19467v4,BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text
+R0686,10.1186/s13040-025-00463-8,40707949,,Can open source large language models be used for tumor documentation in Germany?-An evaluation on urological doctors' notes.
+R0687,10.2196/72005,,,Cancer Diagnosis Categorization in Electronic Health Records Using Large Language Models and BioBERT: Model Performance Evaluation Study
+R0688,10.1038/s41598-025-10709-4,40715326,2503.01194v1,"Cancer type, stage and prognosis assessment from pathology reports using LLMs."
+R0689,10.1016/j.jocmr.2025.101968,41241006,,Cardiac magnetic resonance imaging-large language model Meta AI: a finetuned large language model for identifying findings and associated attributes in cardiac magnetic resonance imaging reports.
+R0691,10.1109/ijcnn64981.2025.11228341,,,CARE: Contextual Residual and soft Encoding Relation Extraction for clinical medicine
+R0693,10.1016/j.jbi.2025.104900,40854447,,CeRTS: certainty retrieval token search in large language model clinical information extraction.
+R0695,10.1101/2025.10.01.25336815,41256136,,Characterizing Dementia Phenotypes from Unstructured EHR Notes with Generative AI and Interpretable Machine Learning.
+R0699,,,,ClinBench: A Standardized Multi-Domain Framework for Evaluating Large Language Models in Clinical Information Extraction
+R0700,10.64898/2025.12.01.25341355,,,CLINES: Clinical LLM-based Information Extraction and Structuring Agent
+R0701,10.1038/s41746-024-01377-1,39828800,,Clinical entity augmented retrieval for clinical information extraction.
+R0702,,,,Clinical Entity Recognition and Linking in Greek Discharge Letters using Multilingual-LLM-Based Multi-Stage System
+R0703,10.2196/72153,41343765,,Clinical Large Language Model Evaluation by Expert Review (CLEVER): Framework Development and Validation.
+R0704,10.1177/20552076251394622,41246210,,Clinical reasoning from real-world oncology reports using large language models.
+R0707,,,2512.22795v1,CNSight: Evaluation of Clinical Note Segmentation Tools
+R0708,10.1101/2025.10.16.25337917,41282683,,Combining Clinician Expertise with Prompt Engineering enhances Small Language Models Reliability for Cancer Entity Recognition in Electronic Health Records.
+R0710,10.1186/s44342-024-00036-x,39915888,,Comparative analysis of generative LLMs for labeling entities in clinical notes.
+R0711,10.3233/shti250944,40775962,,Comparative Analysis of NLP Models for Automatic LOINC Document Ontology Named Entity Recognition in Clinical Note Titles.
+R0714,10.1093/jamia/ocaf155,40966762,,Comparison of rule- and large language model-based phenotype extraction from clinical notes for neurofibromatosis type 1.
+R0715,10.1109/acdsa65407.2025.11165954,,,Compositional Knowledge Graph for Clinical Decision Support in Pediatric Allergy Diagnostics
+R0716,10.1038/s43856-025-00808-8,40164789,,Comprehensive testing of large language models for extraction of structured data in pathology.
+R0719,,,2506.11666v1,Converting Annotated Clinical Cases into Structured Case Report Forms
+R0724,10.1109/bhi67747.2025.11269565,,,Current Limitations of Automated Reflection Consolidation in LLMs for Clinical Note Extraction
+R0725,10.18653/v1/2025.acl-long.1329,,,Data-Constrained Synthesis of Training Data for De-Identification
+R0727,10.1186/s41747-025-00600-2,40536631,,Data extraction from free-text stroke CT reports using GPT-4o and Llama-3.3-70B: the impact of annotation guidelines.
+R0728,10.64898/2025.12.30.25343206,,,Data Extraction from Oncology Imaging Reports by Large Language Models: A Comparative Accuracy Study
+R0730,10.1109/stsiva66383.2025.11156825,,,De-Identification of Electronic Medical Records Using Large Language Models: A Case Study
+R0740,10.1038/s41746-025-01528-y,40025285,,Developing a named entity framework for thyroid cancer staging and risk level classification using large language models.
+R0743,10.1038/s41598-025-23461-6,41233415,,Development of a machine learning model for automatic data extraction from breast cancer pathology reports.
+R0746,10.1101/2025.11.11.25340002,,,Development of an LLM Pipeline Surpassing Physicians in Cardiovascular Risk Score Calculation
+R0747,10.1007/s00521-025-11600-z,,,Development of computationally feasible hospital-specific large language models using parameter-efficient and preference alignment techniques
+R0754,10.1109/aixset65682.2025.00027,,,Dynamic Programming Optimization of LLM Cascade Ordering for Extracting Sleep Parameters from Mean Sleep Latency Tests
+R0756,10.1093/jamiaopen/ooaf092,40809469,,"EchoLLM: extracting echocardiogram entities with light-weight, open-source large language models."
+R0757,10.1007/978-3-031-82389-3_15,,,Efficient Information Extraction from Medical Records
+R0759,10.1007/978-3-031-82007-6_20,,,EHRmonize: A Framework for Medical Concept Abstraction from Electronic Health Records using Large Language Models
+R0761,10.1109/access.2025.3538803,,,EILEEN: A Multi-Modal Framework for Extracting Alcohol Consumption Patterns from Bilingual Clinical Notes
+R0762,10.1007/978-3-031-95841-0_34,,,ELMTEX: Fine-Tuning LLMs for Structured Clinical Information Extraction. A Case Study on Clinical Reports
+R0763,10.1101/2025.04.22.25326217,40343037,,Employing Consensus-Based Reasoning with Locally Deployed LLMs for Enabling Structured Data Extraction from Surgical Pathology Reports.
+R0766,10.2196/68427,40279645,,Enhancing Bidirectional Encoder Representations From Transformers (BERT) With Frame Semantics to Extract Clinically Relevant Information From German Mammography Reports: Algorithm Development and Validation.
+R0767,10.1007/s41060-025-00752-9,,,Enhancing clinical information processing with ICRE: an intelligent chain-refinement extraction framework for precision data mining
+R0768,10.3390/electronics14183676,,,Enhancing Clinical Named Entity Recognition via Fine-Tuned BERT and Dictionary-Infused Retrieval-Augmented Generation
+R0769,,40502248,,Enhancing Cross-Domain Generalizability in Social Determinants of Health Extraction with Prompt-Tuning Large Language Models.
+R0773,10.1007/978-981-97-7966-6_7,,,Enhancing SHI Extraction and Time Normalization in Healthcare Records Using LLMs and Dual-Model Voting
+R0775,10.3233/shti251023,40776041,,Enhancing Vaccine Safety Surveillance: Extracting Vaccine Mentions from Emergency Department Triage Notes Using Fine-Tuned Large Language Models.
+R0779,10.1007/978-3-032-09569-5_21,,2503.21004v3,"Evaluating Large Language Models for Automated Clinical Abstraction in Pulmonary Embolism Registries: Performance Across Model Sizes, Versions, and Parameters"
+R0780,10.1016/j.jbi.2025.104844,40505790,,Evaluating large language models for information extraction from gastroscopy and colonoscopy reports through multi-strategy prompting.
+R0781,10.1007/978-3-031-87647-9_12,,,Evaluating Llama-3.1 for Adverse Drug Event Entity and Relationship Extraction Across Prompting Techniques
+R0783,10.1136/jnis-2024-022078,39095085,,Evaluating local open-source large language models for data extraction from unstructured reports on mechanical thrombectomy in patients with ischemic stroke.
+R0784,,,2511.10658v1,Evaluating Open-Weight Large Language Models for Structured Data Extraction from Narrative Medical Reports Across Multiple Use Cases and Languages
+R0785,10.1038/s41598-025-27593-7,41272207,,Evaluating the reliability of large language models for clinical data extraction in bladder cancer prognosis.
+R0786,10.1101/2024.09.19.24313992,39371151,,Evaluation of Care Quality for Atrial Fibrillation Across Non-Interoperable Electronic Health Record Data using a Retrieval-Augmented Generation-enabled Large Language Model.
+R0791,10.3233/shti250938,40775956,,Exploring Prompt-Based Large Language Model (LLM) Approach for Medication Error-Related Named Entity Recognition in Medical Incident Reports.
+R0792,10.1101/2025.08.02.25332570,,,Exploring the limits of LLMs in low-resource information extraction: Case study in brain MRI reports for Epilepsy
+R0796,10.1111/epi.18475,40637590,,Extracting epilepsy-related information from unstructured clinic letters using large language models.
+R0797,10.2196/70096,40373298,,Extracting Multifaceted Characteristics of Patients With Chronic Disease Comorbidity: Framework Development Using Large Language Models.
+R0798,,,2509.01885v1,Extracting OPQRST in Electronic Health Records using Large Language Models with Reasoning
+R0801,10.1101/2025.10.21.25338506,41282707,,"For clinical data extraction, QLoRA attains accuracy close to LoRA while requiring lower compute resources."
+R0804,10.1016/j.compbiomed.2025.110665,40554973,,From BERT to generative AI - Comparing encoder-only vs. large language models in a cohort of lung cancer patients for named entity recognition in unstructured medical reports.
+R0805,10.64898/2025.12.17.25342509,,,From free text to SOFA score: automated reconstruction of sepsis severity from unstructured clinical notes
+R0807,10.1109/cai64502.2025.00075,,,From Patient Consultations to Graphs: Leveraging LLMs for Patient Journey Knowledge Graph Construction
+R0810,10.2196/68558,41191926,,Generative Models and Sentence Transformers for the Recognition and Normalization of Continuous and Discontinuous Phenotype Mentions: Model Development and Evaluation.
+R0811,,,2501.18435v1,GENIE: Generative Note Information Extraction model for structuring EHR data
+R0814,10.3389/fpubh.2025.1717303,41561863,,Guardians of the data: NER and LLMs for effective medical record anonymization in Brazilian Portuguese.
+R0815,10.1109/bhi67747.2025.11269492,,,Hallucinations and Key Information Extraction in Medical Texts: A Comprehensive Assessment of Open-Source Large Language Models
+R0817,,,2512.19864v2,HARMON-E: Hierarchical Agentic Reasoning for Multimodal Oncology Notes to Extract Structured Data
+R0828,10.1038/s41598-025-28767-z,41286063,,Human level information extraction from clinical reports with finetuned language models.
+R0833,,40502234,,Identifying Opioid Overdose and Opioid Use Disorder and Related Information from Clinical Narratives Using Large Language Models.
+R0834,10.1101/2025.04.08.25325371,,,Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Case Study
+R0838,10.1016/j.radonc.2025.111052,40692078,,Improving mortality prediction after radiotherapy with large language model structuring of large-scale unstructured electronic health records.
+R0843,10.1109/isriti68345.2025.11393400,,,Information Extraction and Standardization from Scanned Medical Reports using Vision Language Models
+R0846,,,2506.16628v1,Initial Investigation of LLM-Assisted Development of Rule-Based Clinical NLP System
+R0847,10.1007/s41666-025-00210-y,41230242,,Instruction-Tuned Large Language Models for Clinical Data Extraction: Creating an Aortic Measurement Database from CT Radiology Reports.
+R0856,,,,Investigating General-Purpose Large Language Models for Patient Information Extraction: A Case Study on Real-World Cardiac MRI Reports
+R0857,10.1038/s41746-025-01686-z,40410408,,Iterative refinement and goal articulation to optimize large language models for clinical information extraction.
+R0861,10.2196/71176,40632815,,Language Models for Multilabel Document Classification of Surgical Concepts in Exploratory Laparotomy Operative Notes: Algorithm Development Study.
+R0862,10.3390/diagnostics15192474,41095693,,Large Language Model and Knowledge Graph-Driven AJCC Staging of Prostate Cancer Using Pathology Reports.
+R0864,10.2196/57275,39864093,,Large Language Model Approach for Zero-Shot Information Extraction and Clustering of Japanese Radiology Reports: Algorithm Development and Validation.
+R0867,10.1101/2025.07.15.25331413,,,Large Language Model-Based Entity Extraction Reliably Classifies Pancreatic Cysts and Reveals Predictors of Malignancy: A Cross-Sectional and Retrospective Cohort Study
+R0868,10.2196/65537,40146985,,Large Language Model–Driven Knowledge Graph Construction in Sepsis Care Using Multicenter Clinical Databases: Development and Usability Study
+R0870,10.2196/72256,40966546,,Large Language Model-Supported Identification of Intellectual Disabilities in Clinical Free-Text Summaries: Mixed Methods Study.
+R0871,10.2196/72984,40743494,,Large Language Model Symptom Identification From Clinical Text: Multicenter Study.
+R0873,10.1093/jamia/ocaf141,40977378,,Large language models accurately identify immunosuppression in intensive care unit patients.
+R0878,10.1136/bmjgast-2025-001896,40973184,,Large language models for extracting histopathologic diagnoses of colorectal cancer and dysplasia from electronic health records.
+R0879,10.1101/2024.11.27.24318083,40313292,,Large language models for extracting histopathologic diagnoses of colorectal cancer and dysplasia from electronic health records.
+R0880,10.1007/978-3-031-84312-9_8,,,Large Language Models for Identification of Medical Data in Unstructured Records
+R0882,10.1101/2025.08.19.25333995,,,Large Language Models for Zero-Shot Procedure Extraction in Orthopedic Surgery: A Comparative Evaluation
+R0885,10.1101/2025.01.16.25320564,39867358,,Large language models outperform traditional structured data-based approaches in identifying immunosuppressed patients.
+R0888,10.2196/68776,40608403,,Leveraging Large Language Models for Accurate Retrieval of Patient Information From Medical Reports: Systematic Evaluation Study.
+R0889,10.1038/s41598-024-68168-2,40064991,,Leveraging large language models for knowledge-free weak supervision in clinical natural language processing.
+R0891,10.1093/database/baad080,42110485,,Leveraging Large Language Models for Real-World Data Evidence: A Framework for Automated Treatment Extraction and Data Harmonization.
+R0892,10.1016/j.jpi.2025.100521,41340635,,Leveraging large language models for structured information extraction from pathology reports.
+R0896,10.1101/2025.10.16.25338028,,,Leveraging Large Language Models to Identify In-Hospital Cardiac Arrest
+R0898,10.1093/jamiaopen/ooaf109,41041625,,Leveraging open-source large language models for clinical information extraction in resource-constrained settings.
+R0899,10.1038/s41746-025-01592-4,40229513,,Leveraging pretrained language models for seizure frequency extraction from epilepsy evaluation reports.
+R0900,10.3233/shti250950,40775968,,Leveraging Retrieval Augmented Generation-Driven Large Language Models to Extract Dementia Agitation Symptoms and Triggers from Free-Text Nursing Notes.
+R0902,,,2507.11052v1,LLM-Augmented Symptom Analysis for Cardiovascular Disease Risk Prediction: A Clinical NLP
+R0903,10.1109/cme67420.2025.11239360,,,LLM-Augmented Symptom Analysis for Cardiovascular Disease Risk Prediction: A Clinical NLP Approach
+R0904,10.1016/j.acra.2025.07.041,40783343,,LLM-Based Extraction of Imaging Features from Radiology Reports: Automating Disease Activity Scoring in Crohn's Disease.
+R0906,10.1109/iri66576.2025.00037,,2505.08704v2,LLM-based Prompt Ensemble for Reliable Medical Entity Recognition from EHRs
+R0907,10.1109/bhi67747.2025.11269491,,,LLM-Driven Lab Result Extraction from Electronic Health Records
+R0909,10.1109/ocit66168.2025.11400383,,,LLMs for Pharmacovigilance
+R0910,10.3389/fpsyt.2025.1584719,40766924,,Local adaptation and validation of a transdiagnostic risk calculator for first episode psychosis using mental health patient records.
+R0911,,,2510.19346v1,Local Obfuscation by GLINER for Impartial Context Aware Lineage: Development and evaluation of PII Removal system
+R0913,10.1016/j.compbiomed.2025.110964,40865265,,Manual annotation of Robson criteria and obstetric entities: Inter-annotator agreement and initial NER models implementation.
+R0917,10.1038/s41746-025-01533-1,,,Medical foundation large language models for comprehensive text analysis and beyond
+R0924,10.1186/s12911-025-02994-w,40211241,,MISTIC: a novel approach for metastasis classification in Italian electronic health records using transformers.
+R0930,,,,"Multilingual Embedding and Prompt-Driven Approaches for Named Entity Recognition, Entity Linking, and Clinical Code Prediction in Greek Discharge Summaries"
+R0941,10.1007/s11517-024-03227-4,39485651,,NSSC: a neuro-symbolic AI system for enhancing accuracy of named entity recognition and linking from oncologic clinical notes.
+R0942,10.1200/cci-25-00002,40577660,,Open-Source Hybrid Large Language Model Integrated System for Extraction of Breast Cancer Treatment Pathway From Free-Text Clinical Notes.
+R0943,10.1148/ryai.240551,40072216,,Open-Weight Language Models and Retrieval-Augmented Generation for Automated Structured Data Extraction from Diagnostic Reports: Assessment of Approaches and Parameters.
+R0945,10.3389/fdgth.2025.1623922,41383383,,Optimized BERT-based NLP outperforms zero-shot methods for automated symptom detection in clinical practice.
+R0946,10.1101/2025.04.21.25326037,,,Optimized BERT-based NLP outperforms Zero-Shot Methods for Automated Symptom Detection in Clinical Practice
+R0949,10.1007/978-981-96-4298-4_1,,,Overview of the Evaluation Task for Syndrome Differentiation Thought in Traditional Chinese Medicine in CHIP 2024
+R0951,10.1109/cai64502.2025.00280,,,Pandora: an Ai Model for the Automatic Extraction of Clinical Unstructured Data and Clinical Risk Score Implementation
+R0960,10.3390/info16060446,,,Preprocessing of Physician Notes by LLMs Improves Clinical Concept Extraction Without Information Loss
+R0963,10.1101/2025.07.27.25332177,,,Privacy Protection for Chinese Electronic Medical Records Using Large Language Models: Effectiveness Evaluation and Application of LLM Models in Medical Data Tasks
+R0966,10.1101/2025.02.11.25322107,39990557,,Prompts to Table: Specification and Iterative Refinement for Clinical Information Extraction with Large Language Models.
+R0967,10.1038/s44401-025-00036-1,42527470,,Protecting medical privacy with pretrained language models: named entity recognition-based de-identification in Korean unstructured electronic medical records.
+R0972,10.1093/jamia/ocaf002,39798153,,RAMIE: retrieval-augmented multi-task information extraction with large language models on dietary supplements.
+R0974,,,2504.12326v3,Reconstructing Sepsis Trajectories from Clinical Case Reports using LLMs: the Textual Time Series Corpus for Sepsis
+R0975,,,2501.16077v1,RelCAT: Advancing Extraction of Clinical Inter-Entity Relationships from Unstructured Electronic Health Records
+R0982,10.1186/s12874-025-02470-z,39871166,,Scalable information extraction from free text electronic health records using large language models.
+R0984,10.1109/acdsa65407.2025.11166577,,2504.11793v3,Selective Attention Federated Learning: Improving Privacy and Efficiency for Clinical Text Classification
+R0989,10.1200/cci-25-00223,41325572,,SmokeBERT: A Bidirectional Encoder Representations From Transformers-Based Model for Quantitative Smoking History Extraction From Clinical Narratives to Improve Lung Cancer Screening.
+R0993,10.1093/jamiaopen/ooaf157,41321562,,Span-based annotation framework for LLM-based clinical named entity recognition: development and validation using Korean emergency department notes.
+R0995,10.1109/ictbig68706.2025.11323575,,,Specialized Large Language Models for Hindi Medical Natural Language Processing: A Clinical Entity in a Multi-Modal Framework Recognition and Semantic Understanding
+R0996,10.1101/2025.07.25.25332130,40778122,,SPELL-LLMs: A Scalable and Privacy-Compliant NLP Pipeline Using Locally Hosted Large Language Models for Clinical Information Extraction.
+R0999,10.3233/shti250984,40776002,,Structured LLM Augmentation for Clinical Information Extraction.
+R1000,10.1016/j.acra.2025.07.046,40780984,,Structured Report Generation for Breast Cancer Imaging Based on Large Language Modeling: A Comparative Analysis of GPT-4 and DeepSeek.
+R1001,10.3390/tomography11060069,40560015,,Structured Transformation of Unstructured Prostate MRI Reports Using Large Language Models.
+R1002,10.1101/2025.07.10.25331237,40791675,,SynthEHR-Eviction: Enhancing Eviction SDoH Detection with LLM-Augmented Synthetic EHR Data.
+R1003,10.1038/s41746-025-01681-4,40348936,,Synthetic data distillation enables the extraction of clinical information at scale.
+R1004,10.1038/s41746-025-01658-3,40702278,,Synthetic data trained open-source language models are feasible alternatives to proprietary models for radiology reporting.
+R1007,,,,Task as Context Prompting for Accurate Medical Symptom Coding Using Large Language Models
+R1014,10.2196/76773,40627819,,Toward Cross-Hospital Deployment of Natural Language Processing Systems: Model Development and Validation of Fine-Tuned Large Language Models for Disease Name Recognition in Japanese.
+R1015,10.1016/j.jceh.2025.102627,,,Toward Real-time Detection of Drug-induced Liver Injury Using Large Language Models: A Feasibility Study From Clinical Notes
+R1018,10.1016/j.eswa.2025.126585,,,Towards normalized clinical information extraction in Chinese radiology report with large language models
+R1019,10.1038/s41598-025-19282-2,41073416,2503.08323v1,Towards scalable and cross-lingual specialist language models for oncology.
+R1031,10.1093/jamiaopen/ooaf121,41281245,,Using large language models for temporal relation extraction from pediatric clinical reports.
+R1032,10.2196/64544,40194317,,Using Large Language Models to Automate Data Extraction From Surgical Pathology Reports: Retrospective Cohort Study.
+R1033,10.1371/journal.pdig.0000919,40700460,,Using large language models to extract information from pediatric clinical reports.
+R1035,10.2196/66279,40101227,,Using Synthetic Health Care Data to Leverage Large Language Models for Named Entity Recognition: Development and Validation Study.
+R1036,10.1093/jamia/ocaf048,40105654,,Utilizing large language models for detecting hospital-acquired conditions: an empirical study on pulmonary embolism.
+R1038,10.1109/bibm66473.2025.11356658,41859483,,Utilizing Large Language Models for Zero-Shot Medical Ontology Extension from Clinical Notes.
+R1040,10.1117/12.3048441,,,Variability of Large Language Model in Extracting Clinical Information from Unstructured Medical Records of Bladder Cancer Patients
+R1041,10.1038/s41746-025-01522-4,,,Weakly supervised language models for automated extraction of critical findings from radiology reports
+R1045,10.1016/j.artmed.2025.103165,40602231,,Zero- and few-shot Named Entity Recognition and Text Expansion in medication prescriptions using large language models.
+R1046,10.3233/shti251230,40776247,,Zero-Shot Clinical Data Extraction from Pathology Reports Using Llama 3.1.
+R1047,10.1109/mlcipr68329.2025.11407336,,,Zero-Shot Knowledge Graphs from Handwritten Notes with LLMs and OCR
+R1048,10.1186/s12886-025-04193-7,40597830,,Zero-shot LLM-based visual acuity extraction: a pilot study.
+R1051,10.1093/jamia/ocae146,38900207,,A comparative study of large language model-based zero-shot inference and task-specific supervised classification of breast cancer pathology reports.
+R1053,10.1053/j.gastro.2023.12.019,38151192,,A Comparison of a Large Language Model vs Manual Chart Review for the Extraction of Data Elements From the Electronic Health Record
+R1056,10.1111/head.14702,38525734,,A large language model-based generative natural language processing framework fine-tuned on clinical notes accurately extracts headache frequency from electronic health records.
+R1065,10.1101/2024.06.11.24307163,,,A tool for mapping medical narratives into medical ontologies in low resource settings: A case study for German
+R1066,10.1001/jamanetworkopen.2024.25953,39136951,,"Accuracy, Consistency, and Hallucination of Large Language Models When Analyzing Unstructured Clinical Notes in Electronic Medical Records"
+R1069,,41726531,,Addressing Generalizability in Clinical Named Entity Recognition: Federated Learning or Large Language Models?: A Case Study on Visual Acuity Extraction from US and UK Eye Institutes.
+R1074,10.2196/54580,38551633,,An Entity Extraction Pipeline for Medical Text Records Using Large Language Models: Analytical Study.
+R1075,10.1038/s41746-024-01126-4,,,An in-depth evaluation of federated learning on biomedical natural language processing for information extraction
+R1077,,,,Analysing zero-shot temporal relation extraction on clinical notes using temporal consistency
+R1078,10.1016/j.jbi.2024.104662,38880236,,Applying generative AI with retrieval augmented generation to summarize and extract key clinical information from electronic health records
+R1082,10.1109/ichi61247.2024.00039,40092287,,Assertion Detection in Clinical Natural Language Processing using Large Language Models.
+R1083,,,2401.17602v1,Assertion Detection Large Language Model In-context Learning LoRA Fine-tuning
+R1087,10.1109/ntci64025.2024.10776558,,,ATSCOT: Chain of Thought for Structuring Anesthesia Medical Records
+R1088,10.1101/2024.12.17.24318605,,,Automated abstraction of clinical parameters of multiple myeloma from real-world clinical notes using large language models
+R1089,10.1200/cci.23.00258,39167746,,Automated Extraction of Patient-Centered Outcomes After Breast Cancer Treatment: An Open-Source Large Language Model-Based Toolkit.
+R1094,,41726539,,Automating Adjudication of Cardiovascular Events Using Large Language Models.
+R1097,10.1145/3688868.3689200,,,BURExtract-Llama: An LLM for Clinical Concept Extraction in Breast Ultrasound Reports
+R1098,10.1093/jamia/ocae231,39225779,2409.03905v1,CACER: Clinical concept Annotations for Cancer Events and Relations.
+R1104,,40417525,,Clinical Information Extraction with Large Language Models: A Case Study on Organ Procurement.
+R1107,,,2403.05795v1,ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes
+R1111,10.1093/jamia/ocae069,38573195,,Collaborative and privacy-enhancing workflows on a clinical data warehouse: an example developing natural language processing pipelines to detect medical conditions.
+R1112,10.3390/bioengineering11100982,39451358,,Comparative Analysis of Large Language Models in Chinese Medical Named Entity Recognition.
+R1113,10.1109/bibe63649.2024.10820460,,,Comparative Study of Large Language Models for Lung-RADS Classification in Portuguese CT Reports
+R1116,10.1056/aidbp2300110,40255242,,CORAL: Expert-Curated Oncology Reports to Advance Language Model Inference.
+R1118,10.1192/bjp.2024.134,39497458,,Detection of suicidality from medical text using privacy-preserving large language models
+R1119,,41726535,,Developing Large Language Model-based Pipeline for Identification of Disease Diagnosis: A Case Study on Identifying Newly Diagnosed Multiple Myeloma and its Precursor Disease in Veterans Health Administration Electronic Health Records.
+R1132,,,2406.16341v2,EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records
+R1136,10.3233/shti240523,39176904,,Enhancing Clinical Data Extraction from Pathology Reports: A Comparative Analysis of Large Language Models.
+R1138,10.1109/bibm62325.2024.10822099,,,Enhancing Nested Named Entity Recognition in Chinese EMRs: A Collaborative Approach
+R1140,10.1016/j.patter.2023.100887,38264716,,Enhancing phenotype recognition in clinical notes using large language models: PhenoBCBERT and PhenoGPT.
+R1143,10.1093/ehjdh/ztae066,39563908,,Enhancing the interoperability and transparency of real-world data extraction in clinical research: evaluating the feasibility and impact of a ChatGLM implementation in Chinese hospital settings.
+R1144,10.18653/v1/2025.naacl-long.150,,2407.04629v2,Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework
+R1146,10.1371/journal.pdig.0000685,39661652,,Evaluating Large Language Models in extracting cognitive exam dates and scores.
+R1147,10.1101/2023.07.10.23292373,38405784,,Evaluating Large Language Models in Extracting Cognitive Exam Dates and Scores.
+R1149,,,,Evaluating LLMs for Temporal Entity Extraction from Pediatric Clinical Text in Rare Diseases Context
+R1155,10.3233/shti240557,39176938,,Exploring Offline Large Language Models for Clinical Information Extraction: A Study of Renal Histopathological Reports of Lupus Nephritis Patients.
+R1160,10.1016/j.jbi.2024.104720,39233209,,Extracting lung cancer staging descriptors from pathology reports: A generative language model approach.
+R1161,,,,Extracting Social Determinants of Health from Pediatric Patient Notes Using Large Language Models: Novel Corpus and Methods
+R1162,10.1093/jamia/ocae260,,2403.17199v1,Extracting Social Support and Social Isolation Information from Clinical Psychiatry Notes: Comparing a Rule-based NLP System and a Large Language Model
+R1164,10.1093/jamia/ocae177,39001795,,Extraction of sleep information from clinical notes of Alzheimer's disease patients using natural language processing.
+R1165,,41726483,,Facilitating Clinical Information Extraction with Synthetic Data and Ontology using Large Language Models.
+R1167,10.1056/aics2300301,40746832,,FHIR-GPT Enhances Health Interoperability with Large Language Models.
+R1170,10.1109/mcsi63438.2024.00032,,,Fine-tuning Specialized NER Model for Symptom Extraction from Slovenian Medical Texts
+R1171,,,,From Examples to Patterns: LLM-Generated Regular Expressions for Entity Extraction in Czech Clinical Texts
+R1173,,,2405.20585v1,GAMedX: Generative AI-based Medical Entity Data Extractor Using Large Language Models
+R1174,10.1093/jamiaopen/ooae075,39139700,,Generalizable clinical note section identification with large language models.
+R1175,10.1101/2024.02.18.24303014,,,Generalizable Clinical Note Section Identification with Large Language Models
+R1177,10.1093/jamia/ocae078,38630580,,Generative large language models are all-purpose text analytics engines: text-to-text learning is all your need.
+R1178,10.18653/v1/2024.bionlp-1.21,,,Get the Best out of 1B LLMs: Insights from Information Extraction on Clinical Documents
+R1181,10.1109/embc53108.2024.10782119,,,High Throughput Phenotyping of Physician Notes with Large Language and Hybrid NLP Models
+R1183,10.1101/2024.11.18.24317466,,,Human-level information extraction from clinical reports with fine-tuned language models
+R1187,,41726542,,Improving electronic health record processing of large language models via retrieval-augmented generation: A case study on dietary supplements.
+R1188,,,2403.12374v1,Improving Generalizability of Extracting Social Determinants of Health Using Large Language Models through Prompt-tuning
+R1190,10.3233/shti240507,39176835,,Improving the Quality of Unstructured Cancer Data Using Large Language Models: A German Oncological Case Study.
+R1191,,,2411.10020v4,Information Extraction from Clinical Notes: Are We Ready to Switch to Large Language Models?
+R1197,,,,LAILab at Chemotimelines 2024: Finetuning sequence-to-sequence language models for temporal relation extraction towards cancer patient undergoing chemotherapy treatment
+R1198,,,2409.10576v2,Language Models and Retrieval Augmented Generation for Automated Structured Data Extraction from Diagnostic Reports
+R1200,10.1117/12.3008751,,,Large Language Model-Assisted Information Extraction from Clinical Reports for Survival Prediction of Bladder Cancer Patients
+R1203,10.18653/v1/2024.bionlp-1.23,,,Large Language Models for Biomedical Knowledge Graph Construction: Information extraction from EMR notes
+R1207,10.1101/2024.05.21.24307726,38826441,,Large Language Models for Social Determinants of Health Information Extraction from Clinical Notes - A Generalizable Approach across Institutions.
+R1208,,40417588,2407.00731v2,Large Language Models Struggle in Token-Level Clinical Named Entity Recognition.
+R1209,10.1038/s41746-023-00970-0,38200151,,Large language models to identify social determinants of health in electronic health records.
+R1210,10.1002/2056-4538.70010,39545631,,Large multimodal model-based standardisation of pathology reports with confidence and its prognostic significance.
+R1213,10.1101/2023.09.27.559788,37808763,,"Leveraging GPT-4 for Identifying Cancer Phenotypes in Electronic Health Records: A Performance Comparison between GPT-4, GPT-3.5-turbo, Flan-T5 and spaCy's Rule-based & Machine Learning-based methods."
+R1214,10.1093/jamiaopen/ooae060,38962662,,"Leveraging GPT-4 for identifying cancer phenotypes in electronic health records: a performance comparison between GPT-4, GPT-3.5-turbo, Flan-T5, Llama-3-8B, and spaCy's rule-based and machine learning-based methods."
+R1217,,41726406,,Leveraging Large Language Models for Thyroid Nodule Information Extraction and Matching Across Medical Reports.
+R1218,10.3390/fi16080260,,,Leveraging Medical Knowledge Graphs and Large Language Models for Enhanced Mental Disorder Information Extraction
+R1219,10.1016/j.imu.2024.101519,,,"Leveraging mobile NER for real-time capture of symptoms, diagnoses, and treatments from clinical dialogues"
+R1221,,,,Lexicans at Chemotimelines 2024: Chemotimeline Chronicles - Leveraging Large Language Models (LLMs) for Temporal Relations Extraction in Oncological Electronic Health Records
+R1222,,,,LlamaMTS: Optimizing Metastasis Detection with Llama Instruction Tuning and BERT-Based Ensemble in Italian Clinical Reports
+R1223,10.1101/2024.09.02.24312917,39281753,,LLM-AIx: An open source pipeline for Information Extraction from unstructured medical text based on privacy preserving Large Language Models.
+R1224,,38827047,,Local Large Language Models for Complex Structured Tasks.
+R1225,10.1093/jamia/ocae085,38687616,,Local large language models for privacy-preserving accelerated review of historic echocardiogram reports
+R1229,10.1109/jbhi.2024.3450118,39190519,,Medical Information Extraction With NLP-Powered QABots: A Real-World Scenario
+R1230,10.1109/ickg63256.2024.00059,,,MedIE-Instruct: A Comprehensive Instruction Dataset for Medical Information Extraction
+R1241,10.1109/bhi62660.2024.10913931,,,OncoNLP: Cancer Comprehend Annotation - A Pipeline for Cancer Phenotype and Clinical Extraction
+R1242,10.1101/2024.11.06.24316817,,,Optimal strategies for adapting open-source large language models for clinical information extraction: a benchmarking study in the context of ulcerative colitis research
+R1243,10.1007/978-3-031-66538-7_30,,,OptimalMEE: Optimizing Large Language Models for Medical Event Extraction Through Fine-Tuning and Post-hoc Verification
+R1244,10.3233/shti240567,39176948,,Optimizing Data Extraction: Harnessing RAG and LLMs for German Medical Documents.
+R1245,,,,Overview of the 2024 Shared Task on Chemotherapy Treatment Timeline Extraction
+R1246,10.1148/ryai.230364,38717292,,Performance of an Open-Source Large Language Model in Extracting Information from Free-Text Radiology Reports.
+R1248,10.1109/is61756.2024.10705235,,,Phenotypes Extraction from Text: Analysis and Perspective in the LLM Era
+R1249,10.1109/access.2024.3460976,,,Predicting Tumor Type and Residual Status of Suprasellar Lesions Using Indian Discharge Summaries
+R1250,10.1038/s41746-024-01233-2,,,Privacy-preserving large language models for structured medical information retrieval
+R1254,10.1109/iscmi63661.2024.10851618,,,QLoRA-Based Fine-Tuning of LLMs on Multiple Medical Reasoning Tasks to Enhance their Comprehension of Clinical Notes
+R1261,10.1109/eiecs63941.2024.10800474,,,Research on the Entity Relationship Extraction Method of Large Model Chinese Electronic Medical Record With Low-Moment Features
+R1263,10.1200/cci-24-00218,39586035,,Rethinking Human Abstraction as the Gold Standard
+R1265,10.1101/2024.08.08.24311237,,,Scalable information extraction from free text electronic health records using large language models
+R1266,10.1101/2024.06.20.24308896,,,Scaling text de-identification using locally augmented ensembles
+R1269,,,2403.00868v3,SoftTiger: A Clinical Foundation Model for Healthcare Workflows
+R1270,10.1109/bigdata62323.2024.10825160,,2412.15256v1,Structured Extraction of Real World Medical Knowledge using LLMs for Summarization and Search
+R1273,10.1101/2024.09.27.24314517,,,Synthetic Data Distillation Enables the Extraction of Clinical Information at Scale
+R1283,10.1093/biomethods/bpae072,39464853,,Unpacking unstructured data: A pilot study on extracting insights from neuropathological reports of Parkinson's Disease patients using large language models.
+R1290,10.3346/jkms.2024.39.e291,39623965,,Using Large Language Models to Extract Core Injury Information From Emergency Department Notes.
+R1291,10.1007/978-981-97-2238-9_25,38983834,,Using Multimodal Data to Improve Precision of Inpatient Event Timelines.
+R1295,10.1186/s12911-024-02677-y,39363322,,Validation of large language models for detecting pathologic complete response in breast cancer using population-based pathology reports.
+R1301,10.3233/shti240861,39234726,,Zero-Shot LLMs for Named Entity Recognition: Targeting Cardiac Function Indicators in German Clinical Texts.
+R1309,10.1109/c358072.2023.10436295,,,Analysis of Pre-trained Language Models in Text Classification for Use in Spanish Medical Records Anonymization
+R1318,10.1101/2023.09.11.23295069,,,Collaborative and privacy-preserving workflows on a clinical data warehouse: an example developing natural language processing pipelines to detect medical conditions
+R1324,10.1101/2023.11.08.23298252,,,Development of a privacy preserving large language model for automated data extraction from thyroid cancer pathology reports
+R1327,,,2303.04360v2,Does Synthetic Data Generation of LLMs Help Clinical Text Mining?
+R1331,10.1186/s13073-022-01026-w,37986722,,Enhancing Phenotype Recognition in Clinical Notes Using Large Language Models: PhenoBCBERT and PhenoGPT.
+R1338,10.1101/2023.12.07.23299648,,,From Text to Tables: A Local Privacy Preserving Large Language Model for Structured Information Retrieval from Medical Documents
+R1347,,,2308.08660v1,Large Language Models for Granularized Barrett's Esophagus Diagnosis Classification
+R1349,10.1109/ichi57859.2023.00103,,,Leveraging Foundation Models for Clinical Text Analysis
+R1351,,,2312.02296v1,LLMs Accelerate Annotation for Medical Information Extraction
+R1352,,,2308.01727v1,Local Large Language Models for Complex Structured Medical Tasks
+R1357,10.1016/j.jbi.2023.104432,37356640,,Overview of the 2022 n2c2 shared task on contextualized medication event extraction in clinical notes.
+R1360,,,2301.11386v1,Task formulation for Extracting Social Determinants of Health from Clinical Narratives
+R1361,10.2214/ajr.23.29951,37703483,,The Role of Large Language Models in Radiology Reporting
+R1363,10.18653/v1/2023.findings-emnlp.474,38213944,,Two Directions for Clinical Data Generation with Large Language Models: Data-to-Label and Label-to-Data.
+R1376,10.1101/2022.03.29.22273078,,2204.09601v2,Extraction of Sleep Information from Clinical Notes of Patients with Alzheimer's Disease Using Natural Language Processing

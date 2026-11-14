@@ -33,7 +33,8 @@ def main():
             text = (by_id[rid]['title'] + ' ' + by_id[rid]['abstract']).casefold()
             if any(signal.casefold() not in text for signal in row['agent_signals'].split('; ') if signal):
                 raise ValueError(f'invalid signal: {rid}')
-            decisions[rid] = {**by_id[rid], **row}
+            ids = ('doi', 'pmid', 'arxiv_id')
+            decisions[rid] = {**by_id[rid], **{k: v for k, v in row.items() if k not in ids or v}}
     if len(decisions) != len(records):
         raise ValueError(f'incomplete: {len(decisions)} of {len(records)} records')
     output = [decisions[row['record_id']] for row in records]

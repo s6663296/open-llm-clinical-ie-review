@@ -7,16 +7,19 @@ Drafting rules (from AGENTS.md):
 - PRISMA 2020 item numbers are given in [#n] tags to support the checklist (`manuscript/prisma_checklist.md`).
 -->
 
+**Authors**: 【待填】
+**Registration**: OSF Registries, {{OSF_DOI}} [#24a]
+
 ---
 
 ## Abstract  [#2; PRISMA 2020 for Abstracts]
 
 **Background**: Clinical information is largely recorded as free text. Proprietary large language models (LLMs) can extract structured information from such text, but sending patient records to external servers raises privacy, cost, and reproducibility concerns. Open-weight LLMs can be deployed on-premises.
 **Objective**: To systematically review how open-weight LLMs are used for information extraction from clinical free text, and how well they perform.
-**Methods**: We searched PubMed, Scopus, IEEE Xplore, ACM Digital Library, arXiv, and medRxiv (via Europe PMC) on 14 November 2026 for studies published from 2022 onward. Eligible studies evaluated at least one open-weight LLM (≥1 billion parameters) on an information extraction task over real clinical free text with a quantitative reference-standard evaluation. A large language model screened records and assessed full texts, with every decision verified by a human reviewer. Risk of bias was assessed with a QUADAS-2–derived tool. Results were synthesised narratively following SWiM.
+**Methods**: We searched PubMed, Scopus, IEEE Xplore, ACM Digital Library, arXiv, and medRxiv (via Europe PMC) on {{SEARCH_DATE}} for studies published from 2022 onward. Eligible studies evaluated at least one open-weight LLM (≥1 billion parameters) on an information extraction task over real clinical free text with a quantitative reference-standard evaluation. Two reviewers independently screened records and assessed full texts. Risk of bias was assessed with a QUADAS-2–derived tool. Results were synthesised narratively following SWiM.
 **Results**: {{ABSTRACT_RESULTS}}
 **Conclusions**: {{ABSTRACT_CONCLUSIONS}}
-**Funding**: None.
+**Registration**: {{OSF_DOI}}. **Funding**: 【待填】
 
 ---
 
@@ -28,7 +31,7 @@ A large share of clinically relevant information — diagnoses, medications, tum
 
 Generative LLMs can perform extraction from instructions and a few examples, reducing annotation needs. However, the most widely studied models are proprietary and accessed through vendor APIs, which requires transmitting patient text outside the institution and exposes studies to undocumented model changes. Open-weight models (whose weights can be downloaded and run locally) address these concerns, and their capability has improved rapidly since 2023.
 
-Several reviews have examined LLMs for clinical information extraction. A scoping review of oncology data extraction (MEDLINE, searched June 2024) included 24 studies, 75% of which used BERT-type models and 25% ChatGPT [1]. A scoping review of generative-AI extraction from clinical notes and guidelines included 16 studies and found GPT-4 the best-performing model in 11 of them [2]. A systematic literature review of LLMs for clinical IE synthesised 85 studies across tasks, methods, and datasets [3]. A broader systematic review of generative LLMs applied to EHR data (searched to November 2024) included 196 studies, in which GPT-4 and ChatGPT were used in 60.2% and 57.7% respectively, and most addressed clinical decision support rather than extraction [4]. Domain-specific reviews of registry population [5] and uro-oncology data extraction [6] included 15 and 14 studies, respectively; the former identified only one study using a generative LLM. A narrative review contrasted open-source and proprietary LLMs for clinical and biomedical extraction across performance, reproducibility, cost, transparency, and governance, but did not report a systematic search [11]. None of these reviews systematically identified studies of open-weight models on real clinical text, separated them from proprietary models, or compared adaptation strategies such as parameter-efficient fine-tuning and quantisation that are specific to locally deployed models. Their searches also predate much of the 2025–2026 literature, in which open-weight model families (e.g., Llama 3, Qwen, Gemma) became widely used.
+Several reviews have examined LLMs for clinical information extraction. A scoping review of oncology data extraction (MEDLINE, searched June 2024) included 24 studies, 75% of which used BERT-type models and 25% ChatGPT [1]. A scoping review of generative-AI extraction from clinical notes and guidelines included 16 studies and found GPT-4 the best-performing model in 11 of them [2]. A systematic literature review of LLMs for clinical IE synthesised 85 studies across tasks, methods, and datasets [3]. A broader systematic review of generative LLMs applied to EHR data (searched to November 2024) included 196 studies, in which GPT-4 and ChatGPT were used in 60.2% and 57.7% respectively, and most addressed clinical decision support rather than extraction [4]. Domain-specific reviews of registry population [5] and uro-oncology data extraction [6] included 15 and 14 studies, respectively; the former identified only one study using a generative LLM. None of these reviews focused on open-weight models, separated them from proprietary models, or compared adaptation strategies such as parameter-efficient fine-tuning and quantisation that are specific to locally deployed models. Their searches also predate much of the 2025–2026 literature, in which open-weight model families (e.g., Llama 3, Qwen, Gemma) became widely used.
 <!-- Statements above are taken from the abstracts of the cited records in the initial search exports; verify against full texts before submission (prior-review list: `manuscript/prior_reviews.md`). -->
 
 ### 1.2 Objectives  [#4]
@@ -44,7 +47,7 @@ The primary question was: how are open-weight LLMs used for information extracti
 
 ## 2. Methods
 
-This review is reported according to PRISMA 2020 [7]. Deviations from the review protocol are reported in Section 2.12 [#24c].
+This review is reported according to PRISMA 2020 [7]. The protocol was registered on OSF Registries ({{OSF_DOI}}) before title/abstract screening began [#24a]; the protocol is available at {{OSF_URL}} [#24b]. Deviations from the protocol are reported in Section 2.12 [#24c].
 
 ### 2.1 Eligibility criteria  [#5]
 
@@ -64,21 +67,21 @@ For synthesis, studies (not reports) were the unit of analysis [#5]. Preprint an
 
 ### 2.2 Information sources  [#6]
 
-We searched PubMed/MEDLINE, Scopus, IEEE Xplore, ACM Digital Library, arXiv (via the arXiv API), and medRxiv (via Europe PMC). All sources were searched on 14 November 2026. We additionally performed one round each of backward (references) and forward (citing articles) citation searching for all included studies using the OpenAlex API on {{CITATION_SEARCH_DATE}}.
+We searched PubMed/MEDLINE, Scopus, IEEE Xplore, ACM Digital Library, arXiv (via the arXiv API), and medRxiv (via Europe PMC). All sources were searched on {{SEARCH_DATE}}. We additionally performed one round each of backward (references) and forward (citing articles) citation searching for all included studies using the OpenAlex API on {{CITATION_SEARCH_DATE}}.
 
 ### 2.3 Search strategy  [#7]
 
-The search combined three concept blocks — (A) LLMs, including generic terms and named model families; (B) clinical text types; and (C) information extraction — with AND, restricted to title, abstract, and keywords (All Metadata in IEEE Xplore) and to publication from 2022. Block A did not require the term "open-source" because many studies comparing proprietary and open-weight models describe them only as "LLMs"; open-weight status was assessed during screening. Full search strings for every source, as executed, are provided in Supplementary Appendix S1. The search strategy was validated by confirming retrieval of a set of 10 known eligible studies (Appendix S1). Searches were executed with version-controlled scripts where an API was available (PubMed E-utilities, arXiv API, Europe PMC REST API); queries, execution timestamps, and record counts were logged automatically.
+The search combined three concept blocks — (A) LLMs, including generic terms and named model families; (B) clinical text types; and (C) information extraction — with AND, restricted to title, abstract, and keywords (All Metadata in IEEE Xplore) and to publication from 2022. Block A did not require the term "open-source" because many studies comparing proprietary and open-weight models describe them only as "LLMs"; open-weight status was assessed during screening. Full search strings for every source, as executed, are provided in Supplementary Appendix S1. The search strategy was validated by confirming retrieval of a set of {{N_VALIDATION}} known eligible studies (Appendix S1). Searches were executed with version-controlled scripts where an API was available (PubMed E-utilities, arXiv API, Europe PMC REST API); queries, execution timestamps, and record counts were logged automatically.
 
 ### 2.4 Selection process  [#8]
 
-Records from all sources were merged and de-duplicated with a script (exact match on normalised DOI, PubMed ID, or normalised title with publication year within one year; near-identical titles were flagged for manual review). Titles and abstracts were screened by a large language model (Claude Sonnet) using a fixed instruction set that operationalised the eligibility criteria and exclusion codes; for each record it returned a decision (include, exclude, or unsure), an exclusion code, a rationale, and verbatim evidence phrases from the title or abstract. To validate this step, one reviewer independently screened a random sample of 50 records blind to the model output (agreement: κ = {{KAPPA_AI_HUMAN}}; model sensitivity for records the reviewer judged include or unsure: {{AI_SENSITIVITY}}). The reviewer then verified every model decision, confirming or overriding it ({{N_OVERRIDES}} of {{N_SCREENED}} decisions overridden); the human decision was final, and any record marked include or unsure by either the model or the reviewer proceeded to full-text assessment. Full texts were assessed by the same procedure: the model judged each full text against the eligibility criteria with an exclusion code, rationale, and page reference; the reviewer first assessed a random 20% sample (at least 20 reports) blind to the model output (κ = {{KAPPA_FT}}) and then verified every model decision. Reasons for exclusion were recorded for every excluded report. Because the review had a single author, there was no second reviewer or arbiter; the human decision was final, and uncertain cases were re-checked against the eligibility rules with the reasoning recorded.
+Records from all sources were merged and de-duplicated with a script (exact match on normalised DOI, PubMed ID, or normalised title with publication year within one year; near-identical titles were flagged for manual review). Two reviewers first calibrated on a random sample of 50 records; calibration was repeated if Cohen's κ was below 0.6. Both reviewers then independently screened all titles and abstracts; any record marked include or unsure by either reviewer proceeded to full-text assessment. Full texts were assessed independently by both reviewers against the eligibility criteria, and reasons for exclusion were recorded. Disagreements were resolved by discussion, and if necessary by a third reviewer. Agreement was quantified with Cohen's κ at both stages.
 
-Use of automation [#8]: the model, its instructions, and all per-record outputs are provided in Supplementary Appendix S5. Because the human reviewer verified rather than independently duplicated the model's decisions, screening at both stages was not independent dual screening; this is discussed as a limitation.
+An LLM-based assistant was used to provide screening suggestions with rationales, which reviewers could consult; it did not act as a reviewer, and all decisions were made by humans. [#8 automation tools]
 
 ### 2.5 Data collection process  [#9]
 
-Data were extracted into a piloted form (piloted on three studies). An LLM assistant pre-populated every field with its page, table, or figure location, and the reviewer verified each field against the source and corrected it where needed; the proportion of corrected fields is reported. When data were unclear, study authors were contacted once by email; data not received within two weeks were recorded as not reported.
+Data were extracted into a piloted form (piloted on three studies). One reviewer extracted data and a second reviewer verified every field against the source; each value was recorded with its page, table, or figure location. An LLM assistant pre-populated fields with source page references for human verification. When data were unclear, study authors were contacted once by email; data not received within two weeks were recorded as not reported.
 
 ### 2.6 Data items  [#10a, #10b]
 
@@ -88,7 +91,7 @@ Data were extracted into a piloted form (piloted on three studies). An LLM assis
 
 ### 2.7 Study risk of bias assessment  [#11]
 
-No risk-of-bias tool exists for evaluations of LLM-based information extraction. We adapted the four QUADAS-2 domains [8], informed by TRIPOD-LLM reporting items [10]: (1) data and sample (representativeness, single vs. multiple institutions, sample size); (2) reference standard (number and qualification of annotators, reported agreement, availability of guidelines); (3) model and evaluation flow (separation of test data from prompt development and fine-tuning data; risk of contamination when public datasets may be in pre-training corpora; reporting of only the best prompt); and (4) analysis (metric definitions, reporting of variability across runs or confidence intervals, fairness of comparisons). Each domain was rated low, high, or unclear risk; an LLM assistant proposed a rating with rationale and page references, and the reviewer verified each rating and made the final judgement. The signalling questions are given in Appendix S3.
+No risk-of-bias tool exists for evaluations of LLM-based information extraction. We adapted the four QUADAS-2 domains [8], informed by TRIPOD-LLM reporting items [10]: (1) data and sample (representativeness, single vs. multiple institutions, sample size); (2) reference standard (number and qualification of annotators, reported agreement, availability of guidelines); (3) model and evaluation flow (separation of test data from prompt development and fine-tuning data; risk of contamination when public datasets may be in pre-training corpora; reporting of only the best prompt); and (4) analysis (metric definitions, reporting of variability across runs or confidence intervals, fairness of comparisons). Each domain was rated low, high, or unclear risk by two reviewers independently, with disagreements resolved by discussion. The signalling questions are given in Appendix S3.
 
 ### 2.8 Effect measures  [#12]
 
@@ -109,7 +112,7 @@ We assessed selective reporting by comparing evaluations described in methods wi
 
 ### 2.12 Deviations from the protocol  [#24c]
 
-An exploratory search of PubMed, Scopus, IEEE Xplore, and ACM Digital Library was performed on 3 November 2026 with database-specific search strings before the protocol was finalised. Because the search terms and fields were inconsistent across databases, we harmonised the search strategy, added arXiv and medRxiv, and re-ran all searches; the exploratory search results were retained but not used as the formal results. The arXiv search was taken from a run earlier the same day with the identical query, because later re-runs were blocked by the arXiv API rate limit.
+An exploratory search of PubMed, Scopus, IEEE Xplore, and ACM Digital Library was performed on 3 November 2026 with database-specific search strings before the protocol was finalised. Because the search terms and fields were inconsistent across databases, we harmonised the search strategy, added arXiv and medRxiv, and re-ran all searches; the exploratory search results were retained but not used as the formal results. {{OTHER_DEVIATIONS}}
 
 ---
 
@@ -117,7 +120,7 @@ An exploratory search of PubMed, Scopus, IEEE Xplore, and ACM Digital Library wa
 
 ### 3.1 Study selection  [#16a, #16b]
 
-The searches identified 2132 records (PubMed 637, Scopus 970, IEEE Xplore 260, ACM Digital Library 11, arXiv 144, medRxiv 110). After removing 743 duplicates, {{N_SCREENED}} records were screened by title and abstract, of which {{N_EXCLUDED_TA}} were excluded. Of {{N_SOUGHT}} reports sought for retrieval, {{N_NOT_RETRIEVED}} could not be retrieved; {{N_ASSESSED}} were assessed in full text, and {{N_EXCLUDED_FT}} were excluded ({{FT_EXCLUSION_REASONS}}). Citation searching identified {{N_CITATION}} additional records, of which {{N_CITATION_INCLUDED}} were included. In total, {{N_STUDIES}} studies ({{N_REPORTS}} reports) were included (Figure 1). Agreement between the reviewer and the model on the blind samples was κ = {{KAPPA_AI_HUMAN}} at title/abstract screening and κ = {{KAPPA_FT}} at full-text assessment; the reviewer overrode {{N_OVERRIDES}} of {{N_SCREENED}} title/abstract decisions and {{N_OVERRIDES_FT}} of {{N_ASSESSED}} full-text decisions. Studies that appeared to meet the criteria but were excluded are listed with reasons in Appendix S2 [#16b].
+The searches identified {{N_IDENTIFIED}} records ({{N_BY_SOURCE}}). After removing {{N_DUPLICATES}} duplicates, {{N_SCREENED}} records were screened by title and abstract, of which {{N_EXCLUDED_TA}} were excluded. Of {{N_SOUGHT}} reports sought for retrieval, {{N_NOT_RETRIEVED}} could not be retrieved; {{N_ASSESSED}} were assessed in full text, and {{N_EXCLUDED_FT}} were excluded ({{FT_EXCLUSION_REASONS}}). Citation searching identified {{N_CITATION}} additional records, of which {{N_CITATION_INCLUDED}} were included. In total, {{N_STUDIES}} studies ({{N_REPORTS}} reports) were included (Figure 1). Inter-rater agreement was κ = {{KAPPA_TA}} at title/abstract screening and κ = {{KAPPA_FT}} at full-text assessment. Studies that appeared to meet the criteria but were excluded are listed with reasons in Appendix S2 [#16b].
 
 ### 3.2 Study characteristics  [#17]
 
@@ -168,7 +171,7 @@ The searches identified 2132 records (PubMed 637, Scopus 970, IEEE Xplore 260, A
 {{DISCUSSION_EVIDENCE_LIMITS}}
 
 ### 4.3 Limitations of the review process  [#23c]
-Limitations include restriction to English-language articles; reliance on title, abstract, and keyword fields, which may miss studies that mention open-weight models only in the full text; the rapid pace of preprint publication, which means relevant studies may have appeared after the search date; the use of an adapted, unvalidated risk-of-bias tool; and screening, data extraction, and risk-of-bias assessment by a language model with single-reviewer verification rather than independent dual human review, which may increase the risk of missed eligible studies despite blind validation on a random sample. {{DISCUSSION_REVIEW_LIMITS}}
+Limitations include restriction to English-language articles; reliance on title, abstract, and keyword fields, which may miss studies that mention open-weight models only in the full text; the rapid pace of preprint publication, which means relevant studies may have appeared after the search date; and the use of an adapted, unvalidated risk-of-bias tool. {{DISCUSSION_REVIEW_LIMITS}}
 
 ### 4.4 Implications  [#23d]
 {{DISCUSSION_IMPLICATIONS}}
@@ -177,10 +180,11 @@ Limitations include restriction to English-language articles; reliance on title,
 
 ## 5. Other information
 
+- **Registration and protocol** [#24a, #24b]: {{OSF_DOI}}; {{OSF_URL}}.
 - **Amendments** [#24c]: Section 2.12.
-- **Support** [#25]: No specific funding was received.
-- **Competing interests** [#26]: The author declares no competing interests.
-- **Availability of data, code, and other materials** [#27]: Search strings, search logs, screening records, the extraction form and data, and analysis scripts are provided in the supplementary materials.
+- **Support** [#25]: 【待填】
+- **Competing interests** [#26]: 【待填】
+- **Availability of data, code, and other materials** [#27]: Search strings, search logs, screening records, the extraction form and data, and analysis scripts are available at {{OSF_URL}}.
 
 ## References
 
@@ -194,5 +198,4 @@ Limitations include restriction to English-language articles; reliance on title,
 8. Whiting PF, Rutjes AWS, Westwood ME, et al. QUADAS-2: a revised tool for the quality assessment of diagnostic accuracy studies. Ann Intern Med. 2011;155(8):529-536. doi:10.7326/0003-4819-155-8-201110180-00009
 9. Campbell M, McKenzie JE, Sowden A, et al. Synthesis without meta-analysis (SWiM) in systematic reviews: reporting guideline. BMJ. 2020;368:l6890. doi:10.1136/bmj.l6890
 10. Gallifant J, Afshar M, Ameen S, et al. The TRIPOD-LLM reporting guideline for studies using large language models. Nat Med. 2025;31(1):60-69. doi:10.1038/s41591-024-03425-5
-11. Sugihara Y, Milosavljevic A, Jankovskaja S, Falk M. A review for navigating the trade-offs: evaluating open-source and proprietary large language models for clinical and biomedical information extraction. Front Digit Health. 2026;8:1778786. doi:10.3389/fdgth.2026.1778786
 <!-- Refs 1–6: details copied from the initial search export records (PubMed/ACM). Refs 7–10: title, journal, volume, pages and first author verified against Crossref on 2026-11-14 (co-author lists for ref 10 to be re-checked). Add further references only with verified DOIs. -->

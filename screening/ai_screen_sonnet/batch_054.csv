@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1326,,,,Digital ECMT Cancer Trial Matching Tool: an Open Source Research Application to Support Oncologists in the Identification of Precision Medicine Clinical Trials.,exclude,X5,以規則式與傳統 NLP 處理試驗登錄文本，非臨床文本且無 LLM（X5）,Trial records are sourced from ClinicalTrials.gov
+R1327,,,,Does Synthetic Data Generation of LLMs Help Clinical Text Mining?,unsure,,ChatGPT 生成合成資料微調本地模型做 NER／RE，本地模型與文本類型不明,fine-tuning a local model; named entity recognition and relation extraction
+R1328,,,,EHRSHOT: An EHR Benchmark for Few-Shot Evaluation of Foundation Models,exclude,X5,僅處理結構化 EHR 資料，模型為 141M（X5）,deidentified structured data
+R1329,,,,Electronic Health Record Systems for Enhanced Medical Care: A Survey,exclude,X1,EHR 系統文獻回顧（X1）,This literature review
+R1330,,,,Empirical evaluation of language modeling to ascertain cancer outcomes from clinical text reports.,exclude,X3,BERT 類與傳統模型，無 ≥1B LLM（X3）,DFCI-ImagingBERT
+R1331,,,,Enhancing Phenotype Recognition in Clinical Notes Using Large Language Models: PhenoBCBERT and PhenoGPT.,unsure,,PhenoGPT 基底模型與規模不明，臨床筆記表型辨識，需看全文,PhenoBCBERT and PhenoGPT; clinical notes
+R1332,,,,Evaluation of multiple data sources for predicting increased need for HIV prevention among cisgender women: understanding missed opportunities for Pre-exposure Prophylaxis (PrEP).,exclude,X3,質性訪談與病歷摘錄，未使用 LLM（X3）,semi-structured qualitative interviews
+R1333,,,,Exploratory electronic health record analysis with ehrapy,exclude,X3,探索式 EHR 分析 Python 框架，未用 LLM（X3）,modular open-source Python framework
+R1334,,,,Exploring the Value of Pre-trained Language Models for Clinical Named Entity Recognition,exclude,X3,僅比較 BERT 類與從頭訓練 Transformer（X3）,"BERT, BioBERT, and ClinicalBERT"
+R1335,,,,Extraction of Medication and Temporal Relation from Clinical Text using Neural Language Models,exclude,X3,使用 BiLSTM、CNN 與 BERT，無 ≥1B LLM（X3）,BiLSTM-CRF and CNN-BiLSTM
+R1336,,,,FAIRness through automation: development of an automated medical data integration infrastructure for FAIR health data in a maximum care university hospital.,exclude,X3,FAIR 資料整合基礎架構，未用 LLM 做抽取評估（X3）,automated framework for timely processing of clinical care data
+R1337,,,,"Fine-Tune it Like I'm Five: Supporting Medical Domain Experts in Training NER Models Using Cloud, LLM, and Auto Fine-Tuning",exclude,X6,NER 訓練管理系統，LLM 僅供微調建議，無量化抽取評估（X6）,context-aware fine-tuning recommendations using a Large Language Model
+R1338,,,,From Text to Tables: A Local Privacy Preserving Large Language Model for Structured Information Retrieval from Medical Documents,include,,本地 Llama 2 從 MIMIC-IV 病史抽取肝硬化特徵，報告敏感度特異度,local LLM “Llama 2”; 500 patient medical histories from the MIMIC IV dataset
+R1339,,,,Harnessing the Power of Large Language Models (LLMs) for Electronic Health Records (EHRs) Optimization.,exclude,X1,社論（X1）,This editorial discusses
+R1340,,,,Health system-scale language models are all-purpose prediction engines.,exclude,X6,NYUTron 預測再入院等，屬文件層級預測（X6）,30-day all-cause readmission prediction
+R1341,,,,Healthcare Data Summarization via Medical Entity Recognition and Generative AI,exclude,X6,以 NER 與生成式 AI 產生病史摘要，屬摘要且無量化評估（X6）,generate a summary of the entire clinical history
+R1342,,,,Hospital-wide natural language processing summarising the health data of 1 million patients.,exclude,X3,使用 CogStack／MedCAT，非 LLM（X3）,"CogStack, MedCAT"
+R1343,,,,Identifying Signs and Symptoms of Urinary Tract Infection from Emergency Department Clinical Notes Using Large Language Models,exclude,X3,僅用 SpaCy 與 Longformer，無 ≥1B LLM（X3）,SpaCy; Longformer
+R1344,,,,In the Name of Fairness: Assessing the Bias in Clinical Record De-identification,exclude,X3,去識別化偏誤評估使用現有系統，未提及 LLM，且使用臨床範本（X3）,100 manually curated clinical templates
+R1345,,,,Large language model-based information extraction from free-text radiology reports: a scoping review protocol.,exclude,X1,scoping review protocol（X1）,scoping review protocol
+R1346,,,,Large language model-based information extraction from free-text radiology reports: a scoping review protocol,exclude,X1,scoping review protocol（X1）,scoping review protocol
+R1347,,,,Large Language Models for Granularized Barrett's Esophagus Diagnosis Classification,unsure,,兩個臨床預訓練 LLM 分類 Barrett 食道病理診斷，模型未列名、是否 ≥1B 開源不明,two clinically pre-trained large language models; pathology reports
+R1348,,,,Large Language Models in Healthcare: A Review,exclude,X1,LLM 於醫療的回顧（X1）,Large Language Models in Healthcare: A Review
+R1349,,,,Leveraging Foundation Models for Clinical Text Analysis,unsure,,預訓練 transformer 微調抽取傳染病資訊，模型未列名且文本類型不明,pre-trained transformer model; free-text clinical data
+R1350,,,,Leveraging text data for causal inference using electronic health records,exclude,X6,利用文本於因果推論，非 LLM 抽取評估（X6）,unified framework for leveraging text data to support causal inference

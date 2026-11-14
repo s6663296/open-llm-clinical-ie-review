@@ -1,0 +1,14 @@
+R1214	Leveraging GPT-4 for identifying cancer phenotypes in electronic health records: a performance comparison between GPT-4, GPT-3.5-turbo, Flan-T5, Llama-3-8B, and spaCy's rule-based and machine learning-based methods.
+R1223	LLM-AIx: An open source pipeline for Information Extraction from unstructured medical text based on privacy preserving Large Language Models.
+R1243	OptimalMEE: Optimizing Large Language Models for Medical Event Extraction Through Fine-Tuning and Post-hoc Verification
+R1244	Optimizing Data Extraction: Harnessing RAG and LLMs for German Medical Documents.
+R1246	Performance of an Open-Source Large Language Model in Extracting Information from Free-Text Radiology Reports.
+R1248	Phenotypes Extraction from Text: Analysis and Perspective in the LLM Era
+R1250	Privacy-preserving large language models for structured medical information retrieval
+R1265	Scalable information extraction from free text electronic health records using large language models
+R1266	Scaling text de-identification using locally augmented ensembles
+R1269	SoftTiger: A Clinical Foundation Model for Healthcare Workflows
+R1270	Structured Extraction of Real World Medical Knowledge using LLMs for Summarization and Search
+R1273	Synthetic Data Distillation Enables the Extraction of Clinical Information at Scale
+R1283	Unpacking unstructured data: A pilot study on extracting insights from neuropathological reports of Parkinson's Disease patients using large language models.
+R1295	Validation of large language models for detecting pathologic complete response in breast cancer using population-based pathology reports.

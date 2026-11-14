@@ -1,0 +1,15 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1376,,,,Extraction of Sleep Information from Clinical Notes of Patients with Alzheimer's Disease Using Natural Language Processing,include,,微調 LLAMA2 從 UPMC 阿茲海默症患者臨床筆記抽取睡眠概念，與金標準比較,LLAMA2 with finetuning; clinical notes
+R1377,,,,GatorTron: A Large Language Model for Clinical Natural Language Processing,exclude,X3,GatorTron 為 BERT 架構，非生成式 LLM,using the BERT architecture
+R1378,,,,Graph-Text Multi-Modal Pre-training for Medical Representation Learning,exclude,X3,多模態表徵學習編碼器，未使用 LLM,MedGTX
+R1379,,,,Hospital-wide Natural Language Processing summarising the health data of 1 million patients,exclude,X3,使用 MedCAT 等 NER+L 工具,"CogStack, MedCAT"
+R1380,,,,Investigation of the Utility of Features in a Clinical De-identification Model: A Demonstration Using EHR Pathology Reports for Advanced NSCLC Patients.,exclude,X3,CRF 去識別化 NER 模型,conditional random field (CRF)
+R1381,,,,Large Language Models are Few-Shot Clinical Information Extractors,exclude,X4,僅用 InstructGPT／GPT-3,InstructGPT; GPT-3 systems
+R1382,,,,Multicenter Validation of Natural Language Processing Algorithms for the Detection of Common Data Elements in Operative Notes for Total Hip Arthroplasty: Algorithm Development and Validation.,exclude,X3,規則式 MedTagger-THA,rule-based system
+R1383,,,,Opioid2MME: Standardizing opioid prescriptions to morphine milligram equivalents from electronic health records.,exclude,X3,SQL 框架，未使用 LLM,SQL-based open-source framework
+R1384,,,,Practical Implementation and Challenges of Artificial Intelligence-Driven Electronic Health Record Evaluation: Protected Health Information.,exclude,X3,正規表達式＋FLAIR，未使用 LLM,FLAIR
+R1385,,,,Radiology Text Analysis System (RadText): Architecture and Evaluation.,exclude,X3,RadText 傳統 NLP 管線，未使用 LLM,RadText
+R1386,,,,ReviewR: a light-weight and extensible tool for manual review of clinical records.,exclude,X3,人工病歷審閱工具，未使用 LLM,manual review of clinical records
+R1387,,,,Semantic Network: A Brief Review of its Datasets,exclude,X1,語意網路資料集簡要回顧,A Brief Review
+R1388,,,,Simplified data science approach to extract social and behavioural determinants: a retrospective chart review.,exclude,X3,詞袋／bigram 傳統分類器,bag of words and bigrams
+R1389,,,,"Creation of a Mapped, Machine-Readable Taxonomy to Facilitate Extraction of Social Determinants of Health Data from Electronic Health Records.",exclude,X3,SDH 分類架構對照表，未使用 LLM,machine readable format

@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1126,,,,Distilling the knowledge from large-language model for health event prediction.,exclude,X6,健康事件預測，非資訊抽取,health event prediction
+R1127,,,,Distilling the Knowledge from Large-language Model for Health Event Prediction,exclude,X6,健康事件預測，非資訊抽取,health event prediction
+R1128,,,,"EACL 2024 - 18th Conference of the European Chapter of the Association for Computational Linguistics, Findings of EACL 2024",exclude,X1,研討會論文集導言,The proceedings contain 158 papers
+R1129,,,,Early diagnosis of HIV cases by means of text mining and machine learning models on clinical notes.,exclude,X3,所稱 LLM 為 RoBERTa 類模型，任務為病人分類,RoBERTaBio
+R1130,,,,Early prediction of sepsis using chatGPT-generated summaries and structured data,exclude,X4,使用 ChatGPT 摘要並預測敗血症,ChatGPT to summarize clinical notes
+R1131,,,,Efficient Standardization of Clinical Notes using Large Language Models,exclude,X6,病歷標準化改寫，非資訊抽取,"standardizing a corpus of 1,618 clinical notes"
+R1132,,,,EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records,unsure,,以 LLM 檢查病歷與結構化表格一致性，未列模型且任務是否屬抽取不明,CheckEHR; consistency between clinical notes and database tables
+R1133,,,,EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries,exclude,X6,出院摘要問答基準，屬 QA,EHRNoteQA; question answering
+R1134,,,,Emerging applications of NLP and large language models in gastroenterology and hepatology: a systematic review.,exclude,X1,系統性回顧,systematic review
+R1135,,,,Emerging Applications of NLP and Large Language Models in Gastroenterology and Hepatology: A Systematic Review,exclude,X1,系統性回顧,Systematic Review
+R1136,,,,Enhancing Clinical Data Extraction from Pathology Reports: A Comparative Analysis of Large Language Models.,include,,以 Llama 2 7B/13B/70B 從多中心病理報告抽取資訊，報告準確率,Llama 2 model; free-text pathology reports; accuracy
+R1137,,,,Enhancing Medication Recommendation with LLM Text Representation,exclude,X6,用藥推薦任務，非資訊抽取,medication recommendation
+R1138,,,,Enhancing Nested Named Entity Recognition in Chinese EMRs: A Collaborative Approach,unsure,,中文病歷巢狀 NER 借助 LLM，未列模型名稱（僅提 ChatGPT 建資料集）,nested named entity recognition; Chinese EMR; ChatGPT's capabilities
+R1139,,,,Enhancing Oncology Care with Federated Learning and Foundation Models,exclude,X3,transformer 編碼器模型，非生成式 LLM,transformer encoder based LLM
+R1140,,,,Enhancing phenotype recognition in clinical notes using large language models: PhenoBCBERT and PhenoGPT.,unsure,,PhenoGPT 從臨床病歷辨識表型，摘要未說明底層模型與參數量,PhenoGPT; clinical notes of genetic diseases
+R1141,,,,Enhancing Postmarketing Surveillance of Medical Products With Large Language Models.,exclude,X1,觀點／評論文章,OBSERVATIONS
+R1142,,,,Enhancing Representation in Medical Vision-Language Foundation Models Via Multi-Scale Information Extraction Techniques,exclude,X6,醫學視覺語言模型表徵學習，非文本資訊抽取,vision-language foundation models
+R1143,,,,Enhancing the interoperability and transparency of real-world data extraction in clinical research: evaluating the feasibility and impact of a ChatGLM implementation in Chinese hospital settings.,include,,以 ChatGLM 與 LLaMA 從醫院病歷自由文本抽取 eCRF 資料，報告準確率,ChatGLM; LLaMA; data extraction accuracy
+R1144,,,,Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework,unsure,,以開源 NER LLM 做臨床 NER，未列模型名稱無法確認參數量,open NER LLMs; clinical NER
+R1145,,,,Evaluating ChatGPT text mining of clinical records for companion animal obesity monitoring.,exclude,X4,僅使用 ChatGPT，且為獸醫病歷,ChatGPT
+R1146,,,,Evaluating Large Language Models in extracting cognitive exam dates and scores.,include,,ChatGPT 與 LlaMA-2 從臨床病歷抽取 MMSE／CDR 分數與日期，報告準確率,LlaMA-2; clinical notes; MMSE and CDR
+R1147,,,,Evaluating Large Language Models in Extracting Cognitive Exam Dates and Scores.,include,,同 R1146，LlaMA-2 抽取認知測驗分數與日期並報告效能,LlaMA-2; clinical notes; precision
+R1148,,,,Evaluating LLMs for Diagnosis Summarization,exclude,X6,診斷摘要生成任務,diagnosis summarization
+R1149,,,,Evaluating LLMs for Temporal Entity Extraction from Pediatric Clinical Text in Rare Diseases Context,include,,以 Vicuna 從小兒罕病 EHR 抽取時間實體並評估,Vicuna; temporal entity recognition
+R1150,,,,Evaluating the accuracy of a state-of-the-art large language model for prediction of admissions from the emergency room.,exclude,X4,僅使用 GPT-4 做入院預測,GPT-4

@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0651,,,,Applications of Large Language Model Reasoning in Feature Generation,exclude,X1,LLM 特徵生成方法綜述。,This paper provides a detailed overview
+R0652,,,,Applications of Large Language Models in Breast Cancer Diagnosis : A Comprehensive Review of Techniques and Outcomes,exclude,X1,系統性回顧。,This systematic review
+R0653,,,,Applications of Natural Language Processing in Otolaryngology: A Scoping Review,exclude,X1,範疇回顧。,A Scoping Review
+R0654,,,,Applying Large Language Models for Summarizing Electronic Health Records of Oncology Patients,exclude,X6,以 LLaMA 3 生成腫瘤病歷摘要，屬摘要生成。,Summarizing Electronic Health Records; LLaMA 3
+R0655,,,,Approximate Knowledge Graphs: Privacy-Preserving Healthcare Data Synthesis via LLM-Driven approximation,exclude,X6,以 LLM 與知識圖譜生成合成病歷資料，評估重點為隱私與預測，非抽取效能。,synthetic healthcare data; predicting tumor type
+R0656,,,,Are LLMs Truly Multilingual? Exploring Zero-Shot Multilingual Capability of LLMs for Information Retrieval: An Italian Healthcare Use Case,include,,評估開源多語 LLM 從義大利文 EHR 抽取共病，與人工標註及規則比較；具體指標需全文確認。,open-source multilingual LLMs; comorbidity extraction from EHR; manual annotations
+R0657,,,,Artificial Intelligence Healthcare Chatbot System using Deep Learning Amazon SageMaker with Deployment using Large Language Model,exclude,X6,醫療聊天機器人，屬對話／問答。,healthcare chatbot
+R0658,,,,Aspect-Based Medical Record Classification Using Large Language Model Guided Knowledge Graph,unsure,,病歷面向情感分類，NER 由 DeBERTa 完成，LLM 用於極性預測但未列名稱，文本來源與任務邊界不明。,Aspect-Based Sentiment Analysis; well-known large language models
+R0659,,,,Assessing large language models for acute heart failure classification and information extraction from French clinical notes.,include,,以 Qwen2-7B 從法國南特大學醫院病歷抽取急性心衰相關資訊，與 DrLongformer 比較 F1。,Qwen2-7B; French clinical notes; F1 score
+R0660,,,,Assessing the Accuracy of Open-Source Named Entity Recognition in Veterinary Oncology,exclude,X3,使用 BioEN NER 工具於獸醫紀錄，未使用 LLM。,Bio-EpidemiologyNER (BioEN)
+R0661,,,,Assessment and Integration of Large Language Models for Automated Electronic Health Record Documentation in Emergency Medical Services.,exclude,X5,文本為 EMS 訓練模擬的轉錄對話，非真實病患照護文本。,transcribed conversations from 40 EMS training simulations
+R0662,,,,Automated clinical data extraction from oncology trials using large language models.,exclude,X5,從臨床試驗報告與摘要抽取試驗結果，非病患照護文本。,Clinical Study Reports (CSRs) and abstracts
+R0663,,,,Automated extraction of functional biomarkers of verbal and ambulatory ability from multi-institutional clinical notes using large language models.,exclude,X4,僅使用 GPT-3.5 Turbo、GPT-4 Turbo、GPT-4 Omni。,"GPT-3.5 Turbo, GPT-4 Turbo, and GPT-4 Omni"
+R0664,,,,Automated Extraction of Key Entities from Non-English Mammography Reports Using Named Entity Recognition with Prompt Engineering.,exclude,X4,僅使用 Gemini 1.5 Pro。,Gemini 1.5 Pro
+R0665,,,,Automated Extraction Of Lung Cancer Diagnostic Indicators From Clinical Texts Using NLP And Machine Learning,exclude,X6,以 NLP 與機器學習做肺癌診斷預測模型，屬預測任務，亦未明確使用 LLM。,clinical predictive modeling; MIMICIV discharge notes
+R0666,,,,Automated generation of discharge summaries: leveraging large language models with clinical data.,exclude,X5,以 LLaMA3 從結構化資料生成出院摘要，輸入非自由文本且屬生成任務。,from structured clinical data; LLaMA3
+R0667,,,,Automated HIV Screening on Dutch Electronic Health Records with Large Language Models,exclude,X6,以 LLM 判定病人是否需進一步 HIV 篩檢，屬病人層級分類，模型未列名。,determine a patient's eligibility for further HIV testing
+R0668,,,,Automatic prompt design via particle swarm optimization driven LLM for efficient medical information extraction,unsure,,以 Alpaca-7B、GPT-J-6B 等做中文醫療 NER／關係／事件抽取，資料集（CMeEE、CMeIE、CHIP-CDEE）是否為真實病歷文本需確認。,"Alpaca-7B, GPT-J-6B; CMeEE, CMeIE, CHIP-CDEE"
+R0669,,,,Automatic Recognition of Chinese Electronic Medical Record Entities Based on LLMs; [基于大模型的中文电子病历实体自动识别研究],unsure,,以 LoRA 微調 LLaMA3-8B 於 CCKS2019 中文電子病歷 NER，報告 F1；但可能為中文期刊論文，語言需確認。,LLaMA3-8B; CCKS2019 Chinese EMR dataset; F1 score
+R0670,,,,Automatic structuring of radiology reports with on-premise open-source large language models.,include,,以本地 Llama-2-70B-chat 將 MIMIC-CXR 與德國醫院胸部 X 光報告結構化，報告 MCC 與 F1。,Llama-2-70B-chat; narrative chest radiograph (CXR) reports; F1 score
+R0671,,,,Automatic Summarization of Life-Critical Situations by Generative AI,exclude,X6,微調模型摘要 ICU 病程紀錄，以 Rouge-L 評估，屬摘要生成。,summarizing patients’ cases; Rouge-L F1
+R0672,,,,Autonomous LLMs for Healthcare Diagnoses,exclude,X6,糖尿病共病診斷，屬診斷預測，且無明確量化評估。,improving diagnostic accuracy
+R0673,,,,Autononym: Multimodal Anonymization of Health Data using Named Entity Recognition and Structured Medical Data Processing,unsure,,多模態匿名化平台，文本部分用 few-shot NER 模型，未說明是否為 LLM，量化評估不明確。,few-shot Named Entity Recognition model; high accuracy in data anonymization
+R0674,,,,BALANCE: A Fairness-Aware Framework for Privacy-Preserving Synthetic Clinical Text Generation,exclude,X6,合成臨床文本生成框架，非資訊抽取。,Synthetic Clinical Text Generation
+R0675,,,,Balancing Natural Language Processing Accuracy and Normalisation in Extracting Medical Insights,unsure,,比較規則式與 LLM 從波蘭兒童復健醫院病歷抽取人口學、發現與藥物，但未列模型名稱。,Large Language Models (LLMs) for information extraction; Voivodeship Rehabilitation Hospital for Children

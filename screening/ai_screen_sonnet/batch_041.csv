@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1001,,,,Structured Transformation of Unstructured Prostate MRI Reports Using Large Language Models.,include,,五個開源 LLM（Llama3.3、Phi4、Gemma-2、Qwen2.5 等）對真實前列腺 MRI 報告抽取特徵並報效能,Llama3.3; free-text MRI reports; open-weight large language models
+R1002,,,,SynthEHR-Eviction: Enhancing Eviction SDoH Detection with LLM-Augmented Synthetic EHR Data.,unsure,,Qwen2.5、LLaMA3 微調抽取驅逐 SDoH 並報 Macro-F1，但訓練資料為合成病歷，驗證文本是否真實需看全文,"Fine-tuned LLMs (e.g., Qwen2.5, LLaMA3); human validated data"
+R1003,,,,Synthetic data distillation enables the extraction of clinical information at scale.,unsure,,Llama 3.1／3.2 蒸餾後在 i2b2 2018 試驗資格資料評估，任務為對準則問答，是否屬抽取需看全文,i2b2 2018 Clinical Trial Eligibility Challenge; 8B-parameter model
+R1004,,,,Synthetic data trained open-source language models are feasible alternatives to proprietary models for radiology reporting.,include,,合成資料微調多個開源 LLM（Mistral-7B、Llama-3-8B 等），於 MIMIC-III 真實口述報告測試結構化轉換,Mistral-7B; MIMIC-III patient dataset; free text to structured data conversation
+R1005,,,,Systematic comparison of GPT models for the analysis of pathology reports in a low-resource language: A case study for Turkish.,exclude,X4,僅使用 GPT 系列閉源模型,GPT-3.5 Turbo
+R1006,,,,TanaGPT: How Can I Help You? A Pilot Testing of a Genai Assistant in a Healthcare Workflow.,exclude,X6,生成式助理使用性試驗，非抽取且無效能指標,generative AI assistant; UMUX-Lite survey
+R1007,,,,Task as Context Prompting for Accurate Medical Symptom Coding Using Large Language Models,unsure,,Llama2-chat、Jackalope-7b 等做症狀抽取與 MedDRA 連結，但文本為 VAERS 疫苗通報，是否屬臨床文本需判斷,"Llama2-chat, Jackalope-7b; Vaccine Adverse Event Reporting System (VAERS) reports"
+R1008,,,,Task-Aware Reduction for Scalable LLM-Database Systems,exclude,X5,討論 LLM 資料庫系統的日誌／遙測文字縮減，非臨床文本,"logs, telemetry, and monitoring streams"
+R1009,,,,Testing and Evaluation of Generative Large Language Models in Electronic Health Record Applications: A Systematic Review.,exclude,X1,系統性回顧,systematic review
+R1010,,,,Testing and Evaluation of Health Care Applications of Large Language Models: A Systematic Review,exclude,X1,系統性回顧,A systematic search of PubMed and Web of Science
+R1011,,,,Text Mining: Named Entity Recognition,exclude,X1,NER 概述性章節，無原始量化評估,NER is a crucial component
+R1012,,,,The Effectiveness of Large Language Models in Transforming Unstructured Text to Standardized Formats,exclude,X5,對象為食譜文字轉 Cooklang，非臨床文本,unstructured recipe text
+R1013,,,,The Transformative Potential of Large Language Models in Mining Electronic Health Records Data: Content Analysis.,exclude,X4,僅使用 GPT-3.5 與 GPT-4 閉源模型,gpt-3.5-turbo-1106
+R1014,,,,Toward Cross-Hospital Deployment of Natural Language Processing Systems: Model Development and Validation of Fine-Tuned Large Language Models for Disease Name Recognition in Japanese.,unsure,,日文臨床筆記疾病名稱辨識，微調 LLM 未列模型，且進展紀錄為醫師撰寫之語料，需看全文,disease name recognition in Japanese clinical notes; progress notes
+R1015,,,,Toward Real-time Detection of Drug-induced Liver Injury Using Large Language Models: A Feasibility Study From Clinical Notes,unsure,,LLM 從臨床筆記抽取藥物並報 F1，但未列模型是否開源,extract medication lists from clinical text; real-world cases
+R1016,,,,Towards a Scalable Open Data Platform in Public Health: Evolving the INCUCAI Case for Organ Donation,exclude,X3,開放資料平台與 REST API，未使用 LLM,REST API
+R1017,,,,Towards Interoperability: A Patient-Oriented FHIR-Based Health Information Application Ecosystem,exclude,X3,FHIR 互通性系統，未使用 LLM,HL7 FHIR
+R1018,,,,Towards normalized clinical information extraction in Chinese radiology report with large language models,include,,以 Qwen1.5、Baichuan2、LLaMA3 指令微調做中文放射報告標準化抽取並報 F1,"Qwen1.5, Baichuan2 and LLaMA3; Chinese radiology reports"
+R1019,,,,Towards scalable and cross-lingual specialist language models for oncology.,unsure,,腫瘤學輕量模型之 NER、關係抽取並有評估，但未列模型與參數量，需看全文,named entity recognition; multiple lightweight architectures; University Hospital Zurich (USZ)
+R1020,,,,Transformation of free-text radiology reports into structured data; [Umwandlung freitextlicher radiologischer Befundtexte in strukturierte Daten],exclude,X1,德文敘述性回顧文章,This article examines current research
+R1021,,,,"Transformer-Based Language Models: A Technical Survey of Architectures, Applications, and Critical Challenges",exclude,X1,文獻調查（survey）,This survey examines current research
+R1022,,,,Transformers and large language models are efficient feature extractors for electronic health record studies.,exclude,X4,LLM 僅用 GPT-4 與微調 GPT-3.5，其餘為 BERT 與傳統方法,zero-shot OpenAI GPT4 model; fine-tuned GPT3.5 model
+R1023,,,,Transformers as CFG Learners: A Formal Framework for Structured Data,exclude,X5,Transformer 文法理論研究，非臨床文本,JSON parsing
+R1024,,,,Transforming breast cancer diagnosis and treatment with large language Models: A comprehensive survey,exclude,X1,乳癌 LLM 回顧,This review systematically reviews
+R1025,,,,"Transforming oncology clinical trial matching through multi-agent AI and an oncology-specific knowledge graph: A prospective evaluation in 3,800 patients",unsure,,多代理 LLM 平台含資料抽取與試驗配對，真實病患，但未列模型，抽取僅為部分功能,"Specialized LLMs (data extraction, eligibility, trial matching); Data Extraction: 157,367 pages"

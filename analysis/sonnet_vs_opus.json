@@ -1,0 +1,49 @@
+{
+  "n": 1389,
+  "three_category": {
+    "n": 1389,
+    "observed_agreement": 0.9236861051115911,
+    "kappa": 0.865967894343003,
+    "labels": [
+      "include",
+      "exclude",
+      "unsure"
+    ],
+    "confusion_matrix": [
+      [
+        250,
+        0,
+        14
+      ],
+      [
+        0,
+        782,
+        16
+      ],
+      [
+        22,
+        54,
+        251
+      ]
+    ]
+  },
+  "binary": {
+    "n": 1389,
+    "observed_agreement": 0.9496040316774658,
+    "kappa": 0.8960518297572083,
+    "labels": [
+      "pass",
+      "exclude"
+    ],
+    "confusion_matrix": [
+      [
+        537,
+        54
+      ],
+      [
+        16,
+        782
+      ]
+    ]
+  }
+}

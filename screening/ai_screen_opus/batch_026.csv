@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0626,,,,Advances in the application of generative artificial intelligence in glaucoma research; [生成式人工智能在青光眼领域的研究进展],exclude,X1,敘述性回顧（青光眼生成式 AI）。,This article reviews
+R0627,,,,Advancing Healthcare with Large Language Models: Techniques and Application,exclude,X1,回顧文章。,This review provides a reference
+R0628,,,,Advancing Multilingual Retrieval-Augmented Generation for Reliable Medication Counseling,exclude,X6,用藥諮詢 RAG 聊天機器人，屬問答任務。,medication counseling; drug-related queries
+R0629,,,,Agent-Based Large Language Model System for Extracting Structured Data from Breast Cancer Synoptic Reports: A Dual-Validation Study,include,,比較含 llama3.3-70b、phi4-14b、gemma3-27b 等模型從真實乳癌病理報告抽取 229 個欄位，報告準確率。,"llama3.3-70b, phi4-14b; real-world ground truth; pathology reports"
+R0630,,,,Agent-Based Uncertainty Awareness Improves Automated Radiology Report Labeling with an Open-Source Large Language Model,include,,以 Llama 3.1 8B 從希伯來文放射報告抽取 15 項病理發現，報告 F1 與 Kappa。,Llama 3.1 (Llama 3-8b-instruct); Hebrew radiology reports; F1 score
+R0631,,,,Agentic AI for Severity Extraction in Clinical Notes: Enhancing Disease Diagnosis Beyond Rule-Based and Traditional ML Models,include,,以 Granite 與 Llama 從 MTSamples 臨床文本抽取症狀嚴重度，與生醫 NER 模型比較；MTSamples 真實性與指標需全文確認。,Granite and Llama models; MTSamples dataset; severity extraction
+R0632,,,,AI driven cardiovascular risk prediction using NLP and Large Language Models for personalized medicine in athletes,exclude,X3,所稱 LLM 為 RoBERTa 類模型結合隨機森林做心血管風險預測。,RoBERTa-based LLM
+R0633,,,,AI-Driven Privacy-Preserving Medical File Processing Using Large Language Models,exclude,X4,僅使用 GPT-4 做病歷摘要。,using GPT-4
+R0634,,,,AI in Healthcare: Large Language Models (LLMS) in Clinical Workflows,exclude,X1,綜論性文章，非原始抽取研究。,This comprehensive paper investigates
+R0635,,,,AI-Powered NLP Systems for Differential Diagnosis: Improving COPD Exacerbation Detection,exclude,X6,COPD 惡化鑑別診斷分類，以傳統分類器為主，屬文件／病人層級診斷預測。,differential diagnosis; random forest
+R0636,,,,AI Streamlines Prostate Pathology Data Extraction.,exclude,X1,社論。,In this editorial
+R0637,,,,AI Veterinary Assistance: Enhancing Clinical Decision-Making in Animal Healthcare,exclude,X5,獸醫問診紀錄，非人類病患臨床文本。,veterinary; consultation records
+R0638,,,,Aiding data retrieval in clinical trials with large language models: The APOLLO 11 Consortium in advanced lung cancer patients.,unsure,,以 Llama 3.1 8B 從肺癌病歷抽取吸菸、組織型、PD-L1、分期等變數並報告準確率；格式疑似僅會議摘要，需確認。,Llama 3.1 8B; feature extraction; feature-specific accuracies
+R0639,,,,AMICO: A Semantic and Multimodal Framework for AI-Assisted Clinical Reporting,exclude,X6,主要評估微調 LLM 於義大利文醫病對話摘要，屬摘要生成。,medical dialogue summarization
+R0640,,,,An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence,exclude,X6,臨床決策支援，以 MedQA 等問答資料集評估。,"MedQA, PubMedQA, and MedBullets"
+R0641,,,,An Artificial Joint Material Database Based on Dynamic Heterogeneous Data Architecture,exclude,X5,從科學文獻抽取材料資料，非臨床文本。,from scientific literature
+R0642,,,,An automated information extraction model for unstructured discharge letters using large language models and GPT-4,include,,從德國出院信抽取診斷、藥物、過敏，除 GPT-4 外亦測試開源 LLM 並報告準確率。,open-source LLMs; discharge letters; accuracy
+R0643,,,,An Ensemble Classification Approach in A Multi-Layered Large Language Model Framework for Disease Prediction,exclude,X5,阿拉伯文社群媒體健康貼文，非臨床文本。,social media and online health platforms
+R0644,,,,An innovative X-RAG technique combined with GPT-4o for summarizing medical information from EHR and EMR to assist doctors in clinical decision-making effectively and efficiently.,exclude,X4,僅使用 GPT-4o。,GPT-4o
+R0645,,,,An integrated approach for rare disease detection and classification in Spanish pediatric medical reports.,unsure,,西班牙兒科病歷罕見疾病偵測與分類，提及生成式模型但未列名稱。,Spanish Pediatric Medical Reports; discriminative and generative models
+R0646,,,,Analysis of a large language model-based system versus manual review in clinical data abstraction and deduction from real-world medical records of patients with melanoma for clinical trial eligibility assessment,unsure,,使用醫療專用 Synapsis LLM 從黑色素瘤病歷回答收案條件問題，模型是否開源不明，且疑為會議摘要。,Synapsis LLM; medically-specialized LLM
+R0647,,,,Anonymization of general practitioners‘ electronic medical records in two research datasets; [Anonymisierung von Feldinhalten in hausärztlichen Behandlungsdaten - Exemplarische Untersuchung an zwei Forschungsdatensätzen],exclude,X3,以文本探勘與 ARX 軟體做匿名化，未使用 LLM。,ARX open source software
+R0648,,,,AoUPRS: A cost-effective and versatile PRS calculator for the All of Us Program,exclude,X3,基因組多基因風險分數計算工具，未使用 LLM。,polygenic risk scores (PRS)
+R0649,,,,Application of Generative Artificial Intelligence to Utilise Unstructured Clinical Data for Acceleration of Inflammatory Bowel Disease Research,include,,以 Llama 3.3-70B 與微調 Llama 3.1 8B 從 IBD 組織與影像報告抽取發現與部位，報告 F1。,Llama 3.3-70B; histology and radiology reports; F1
+R0650,,,,Applications of Federated Large Language Model for Adverse Drug Reactions Prediction: Scoping Review,exclude,X1,範疇回顧。,Scoping Review

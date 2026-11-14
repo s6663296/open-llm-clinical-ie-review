@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1351,,,,LLMs Accelerate Annotation for Medical Information Extraction,unsure,,LLM 輔助臨床筆記標註以做醫療資訊抽取，未說明模型,Large Language Models (LLMs) with human expertise; medical information extraction task
+R1352,,,,Local Large Language Models for Complex Structured Medical Tasks,unsure,,本地 LLaMA 微調從病理報告產生 condition codes，屬抽取或自動編碼需全文確認,"LLaMA, BERT and LongFormer; extracting structured condition codes from pathology reports"
+R1353,,,,Making the Most Out of the Limited Context Length: Predictive Power Varies with Clinical Note Type and Note Section,exclude,X6,MIMIC-III 筆記段落對預測任務的預測力分析,predictive power
+R1354,,,,Named Entity Recognition in Electronic Medical Records Based on Bidirectional Long Short-Term Memory-Conditional Random Field,exclude,X3,僅用 BiLSTM-CRF,BiLSTM; Conditional Random Field (CRF)
+R1355,,,,NLPADADE: Leveraging Natural Language Processing for Automated Detection of Adverse Drug Effects,exclude,X3,以開源 NLP 元件訓練的 ADE 抽取模型，未使用 LLM,open-source NLP component system
+R1356,,,,"Overview of MedProcNER Task on Medical Procedure Detection and Entity Linking at BioASQ 2023 Automatic detection, normalization and indexing of clinical procedures in clinical texts shared task: resources, methods and evaluation",exclude,X3,共同任務參賽多為 RoBERTa 等 BERT 類模型,"RoBERTA, BioMBERT, ALBERT, Longformers or SapBERT"
+R1357,,,,Overview of the 2022 n2c2 shared task on contextualized medication event extraction in clinical notes.,unsure,,n2c2 用藥事件抽取任務總覽，transformer 模型多為 token classification，是否含生成式開源 LLM 不明,transformer-based large language models; 2022 National NLP Clinical Challenges
+R1358,,,,Potential of ChatGPT and GPT-4 for Data Mining of Free-Text CT Reports on Lung Cancer.,exclude,X4,僅用 ChatGPT 與 GPT-4,ChatGPT and GPT-4
+R1359,,,,Predicting seizure recurrence after an initial seizure-like episode from routine clinical notes using large language models: a retrospective cohort study.,exclude,X6,以臨床筆記預測癲癇復發,Predicting seizure recurrence
+R1360,,,,Task formulation for Extracting Social Determinants of Health from Clinical Narratives,unsure,,n2c2 SDOH 抽取系統之一使用 LLM，未說明模型,large language model (LLM) to extract complete structured outputs; social determinants of health
+R1361,,,,The Role of Large Language Models in Radiology Reporting,unsure,,無摘要，僅標題無法判斷研究類型,The Role of Large Language Models in Radiology Reporting
+R1362,,,,The shaky foundations of large language models and foundation models for electronic health records.,exclude,X1,敘述性回顧,narrative review
+R1363,,,,Two Directions for Clinical Data Generation with Large Language Models: Data-to-Label and Label-to-Data.,unsure,,LLM 生成／標註資料以偵測 EHR 中 AD 徵狀，LLM 模型與其本身表現評估不明,detecting Alzheimer's Disease (AD)related signs and symptoms; data-to-label
+R1364,,,,Using Artificial Intelligence To Label Free-Text Operative And Ultrasound Reports For Grading Pediatric Appendicitis,exclude,X4,僅用 ChatGPT-4,ChatGPT-4
+R1365,,,,Using the natural language processing system MedNER-J to analyze pharmaceutical care records,exclude,X3,使用 MedNER-J（非 LLM 的 NER 系統）,MedNER-J
+R1366,,,,A large language model for electronic health records.,exclude,X3,GatorTron 為 BERT 架構編碼器，非生成式 LLM,GatorTron
+R1367,,,,A Natural Language Processing Tool Offering Data Extraction for COVID-19 Related Information (DECOVRI).,exclude,X3,DECOVRI 工具介紹，未使用 LLM,DECOVRI
+R1368,,,,"A replicable, open-source, data integration method to support national practice-based research & quality improvement systems.",exclude,X3,SQL 與文字探勘資料整合，未使用 LLM,structured query language
+R1369,,,,A survey of data element perspective: Application of artificial intelligence in health big data,exclude,X1,綜述文章,we review and discuss
+R1370,,,,AHD2FHIR: A Tool for Mapping of Natural Language Annotations to Fast Healthcare Interoperability Resources - A Technical Case Report.,exclude,X3,Averbis 與 FHIR 介接工具，未使用 LLM,Averbis Health Discovery (AHD)
+R1371,,,,Analyzing the Performance of Information Extraction System for Annotation of Patient Discharge Summary,exclude,X3,比較 MedTagger、cTAKES 等傳統工具,"MedTagger, GATE, cTAKES, NCBO Annotator and CLAMP"
+R1372,,,,Development and validation of MedDRA Tagger: a tool for extraction and structuring medical information from clinical notes.,exclude,X3,spaCy 與弱監督標註工具，未使用 LLM,spaCy
+R1373,,,,Development and validation of MicrobEx: an open-source package for microbiology culture concept extraction.,exclude,X3,規則式 NLP 套件,rule-based natural language processing algorithm
+R1374,,,,Electronic health records: Three decades of bibliometric research productivity analysis and some insights,exclude,X1,書目計量分析，非原始臨床 NLP 研究,bibliometric
+R1375,,,,Extracting clinical named entity for pituitary adenomas from Chinese electronic medical records.,exclude,X3,僅用 CRF、BiLSTM-CRF、BERT-BiLSTM-CRF,BERT-BiLSTM-CRF

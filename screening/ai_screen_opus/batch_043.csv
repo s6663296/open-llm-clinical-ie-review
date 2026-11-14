@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1051,,,,A comparative study of large language model-based zero-shot inference and task-specific supervised classification of breast cancer pathology reports.,include,,使用開源 Starling、ClinicalCamel 與 GPT-4 對真實乳癌病理報告做零樣本欄位分類（明確記載欄位），報告 macro F1,Starling; ClinicalCamel; breast cancer pathology reports; macro F1-score
+R1052,,,,A comparative study of zero-shot inference with large language models and supervised modeling in breast cancer pathology classification.,exclude,X4,僅使用 GPT-4 與 GPT-3.5 等閉源模型,GPT-4 model and the GPT-3.5 model
+R1053,,,,A Comparison of a Large Language Model vs Manual Chart Review for the Extraction of Data Elements From the Electronic Health Record,unsure,,無摘要，標題為 LLM 與人工病歷審閱抽取資料元素比較，無法判斷模型與發表類型,Extraction of Data Elements; Manual Chart Review
+R1054,,,,A critical assessment of using ChatGPT for extracting structured data from clinical notes.,exclude,X4,僅使用 ChatGPT-3.5（閉源）,ChatGPT-3.5 (gpt-3.5-turbo-16k)
+R1055,,,,A Deep Dive into GPT-4’s Data Mining Capabilities for Free-Text Spine Radiology Reports,exclude,X4,僅評估 GPT-4,GPT-4’s performance
+R1056,,,,A large language model-based generative natural language processing framework fine-tuned on clinical notes accurately extracts headache frequency from electronic health records.,unsure,,以 GPT-2 抽取頭痛頻率，摘要未說明 GPT-2 版本參數量是否 ≥ 1B,GPT-2 generative model; extract headache frequency
+R1057,,,,A LLMs-Assisted Framework for Parkinson's Disease Assessment Based on PPMI Dataset,exclude,X5,文本為病患自述資料，且以 BERT 預測量表項目,patient self-report texts; MDS-UPDRS item
+R1058,,,,A Multi-Task Transformer Model for Fine-grained Labelling of Chest X-Ray Reports,exclude,X3,使用自訓 transformer 分段與分類模型，未使用生成式 LLM,transformer-based model; 37 radiological abnormalities
+R1059,,,,A new in-hospital mortality prediction nomogram for intensive care unit patients with acute pancreatitis,exclude,X3,以 LASSO／邏輯迴歸建立死亡預測模型，無 LLM,nomogram; LASSO
+R1060,,,,A Real-Time Medical Report Analysis and AI-Powered Diagnosis: A Cloud-Based Solution for Improved Patient Care,exclude,X6,LLM 用於摘要生成與診斷建議，非資訊抽取,generate concise summaries; suggest potential diagnoses
+R1061,,,,A scoping review of large language model based approaches for information extraction from radiology reports.,exclude,X1,範圍性回顧,scoping review
+R1062,,,,A scoping review of using Large Language Models (LLMs) to investigate Electronic Health Records (EHRs),exclude,X1,範圍性回顧,scoping review
+R1063,,,,A taxonomy for advancing systematic error analysis in multi-site electronic health record-based clinical concept extraction.,exclude,X3,建立錯誤分類法，涉及符號式與統計式模型，未使用 LLM,error taxonomy; symbolic and statistical machine learning
+R1064,,,,A Tertiary Study on Open-Source Software Research,exclude,X1,軟體工程三級文獻研究，與主題無關,tertiary study
+R1065,,,,A tool for mapping medical narratives into medical ontologies in low resource settings: A case study for German,unsure,,以合成資料訓練德文腫瘤病歷 NER，摘要未列模型亦未說明是否以真實文本評估,full-synthetic datasets; clinical narratives in oncology
+R1066,,,,"Accuracy, Consistency, and Hallucination of Large Language Models When Analyzing Unstructured Clinical Notes in Electronic Medical Records",unsure,,無摘要，標題為 LLM 分析非結構化病歷，無法判斷模型與任務,Unstructured Clinical Notes
+R1067,,,,ACR: A Benchmark for Automatic Cohort Retrieval,exclude,X6,病患族群檢索任務，非資訊抽取,Automatic Cohort Retrieval
+R1068,,,,Adapting Deep Learning Transformer Model for Depression-Specific Named Entity Recognition: A Transfer Learning Approach,exclude,X3,使用 BERT 結合 MedDRA 字典，無生成式 LLM,BERT-based model
+R1069,,,,Addressing Generalizability in Clinical Named Entity Recognition: Federated Learning or Large Language Models?: A Case Study on Visual Acuity Extraction from US and UK Eye Institutes.,include,,以 Llama-3-70B、Mixtral-8x7B 從真實眼科病歷抽取視力（NER）並與 BERT／FL 比較,Llama-3-70B; Mixtral-8x7B; ophthalmology notes; Visual Acuity (VA) extraction
+R1070,,,,Advancing radiology reporting with large language models: Is GPT-4 the LI-RADS game changer or just a wild card?,exclude,X4,無摘要，標題僅指向 GPT-4，可能為評論,Is GPT-4 the LI-RADS game changer
+R1071,,,,Advancing rheumatology with natural language processing: insights and prospects from a systematic review.,exclude,X1,系統性回顧,systematic review
+R1072,,,,AI Applications in Medical Reporting and Diagnosis,exclude,X4,使用 GPT-4o（閉源）與 BioGPT（非 LLM），任務為腫瘤分類,GPT-4o and BioGPT
+R1073,,,,Algorithmic Identification of Treatment-Emergent Adverse Events From Clinical Notes Using Large Language Models: A Pilot Study in Inflammatory Bowel Disease.,exclude,X3,使用 UCSF-BERT 等 BERT 類模型,UCSF-BERT
+R1074,,,,An Entity Extraction Pipeline for Medical Text Records Using Large Language Models: Analytical Study.,include,,以 Qwen-14B-Chat、Baichuan2-13B-Chat 從真實入院紀錄抽取特徵，報告準確率與精確率,Qwen-14B-Chat; Baichuan2-13B-Chat; patient admission records; accuracy and precision
+R1075,,,,An in-depth evaluation of federated learning on biomedical natural language processing for information extraction,unsure,,聯邦學習用於生醫 IE，LLM few-shot 為比較，未列模型且語料是否含臨床文本不明,pre-trained LLMs with few-shot prompting; biomedical NLP tasks

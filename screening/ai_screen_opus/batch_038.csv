@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0926,,,,Multi-Cloud Data Engineering for Scalable GenAI-Driven Medical Insurance Analytics,exclude,X5,醫療保險資料之多雲端分析架構，非臨床自由文本抽取。,medical insurance data; fraud detection
+R0927,,,,Multi-Label Clinical Text Eligibility Classification and Summarization System,exclude,X4,臨床試驗收案條件分類與摘要，LLM 僅用 GPT-3（閉源），且主要為摘要／分類。,GPT-3; eligibility classification and summarization
+R0928,,,,Multi-layered data framework for enhancing postoperative outcomes and anaesthesia management through natural language processing.,exclude,X4,LLM 僅使用 GPT-3（閉源）做特徵抽取，主目標為術後結果預測。,Generative Pre-trained Transformer 3 (GPT-3)
+R0929,,,,Multi-Omics clustering by integrating clinical features from large language model,exclude,X3,病理報告臨床特徵以 BERT 類模型抽取，用於多體學分群。,using a BERT-based model
+R0930,,,,"Multilingual Embedding and Prompt-Driven Approaches for Named Entity Recognition, Entity Linking, and Clinical Code Prediction in Greek Discharge Summaries",unsure,,以 Qwen2.5-32B（含 LoRA）對希臘語心臟科出院摘要做 NER 與實體連結，但摘要未報告效能指標。,Qwen2.5-32B-Instruct; Greek cardiology discharge letters; Named Entity Recognition (NER)
+R0931,,,,Multimodal Embedding Framework with Few-Shot Learning for Disease Prediction From Multimodal EHRs,exclude,X6,多模態 EHR 少樣本疾病預測，屬預測任務。,few-shot disease prediction
+R0932,,,,Multimodal Fusion of EHR in Structures and Semantics: Integrating Clinical Records and Notes with Hypergraph and LLM.,exclude,X6,整合結構與文本 EHR 之表徵學習用於下游預測。,downstream prediction
+R0933,,,,Multimodal Graph Convolutional Networks for Patient Survival Analysis,exclude,X6,多模態病患存活分析，屬預測任務。,Patient Survival Analysis
+R0934,,,,Named Entity Recognition Approaches for Multihop Reasoning based Clinical Question Answering Systems,exclude,X5,從使用者查詢句辨識 MIMIC 資料表名稱以支援問答，輸入非臨床自由文本。,MIMIC-specific table name extraction; clinical question answering systems
+R0935,,,,Named Entity Recognition in Online Medical Consultation Using Deep Learning,exclude,X3,線上醫療諮詢社群文本 NER，使用深度學習模型而非 LLM。,online medical consultation; fusion context mechanism
+R0936,,,,Natural Language Processing in Gastroenterology: Current Applications and Future Directions,exclude,X1,無摘要之綜述性文章。,[No abstract available]
+R0937,,,,Natural language processing techniques applied to the electronic health record in clinical research and practice - an introduction to methodologies.,exclude,X1,NLP 方法教育性介紹文章，非原始研究。,educational article
+R0938,,,,Natural Language Processing to Extract Head and Neck Cancer Data From Unstructured Electronic Health Records.,exclude,X3,使用 CogStack 概念抽取工具，未使用 LLM。,CogStack; SNOMED-CT concepts
+R0939,,,,NLP-Driven Image Label Extraction from Radiology Reports: A Review,exclude,X1,標題為回顧文章。,A Review
+R0940,,,,NLP for Analyzing Electronic Health Records and Clinical Notes in Cancer Research: A Review,exclude,X1,文獻回顧。,This review examines
+R0941,,,,NSSC: a neuro-symbolic AI system for enhancing accuracy of named entity recognition and linking from oncologic clinical notes.,unsure,,神經符號系統結合 LLM 從乳癌臨床紀錄做 NER 與實體連結，但未列 LLM 名稱，無法確認開源。,combining large language models (LLMs) with symbolic reasoning; named entity recognition (NER); clinical notes from breast cancer patients
+R0942,,,,Open-Source Hybrid Large Language Model Integrated System for Extraction of Breast Cancer Treatment Pathway From Free-Text Clinical Notes.,unsure,,微調 LLM 從乳癌臨床紀錄抽取治療時序並報告 AUROC，但未列模型名稱與參數量。,fine-tuned large language model; extract longitudinal treatment timelines; Open-Source Hybrid Large Language Model
+R0943,,,,Open-Weight Language Models and Retrieval-Augmented Generation for Automated Structured Data Extraction from Diagnostic Reports: Assessment of Approaches and Parameters.,include,,開放權重 LM（最佳為醫療微調 Llama 3）結合 RAG 從放射與病理報告抽取 BT-RADS 與 IDH 狀態，報告準確率。,open-weight language models; medical fine-tuned Llama 3; pathology reports
+R0944,,,,"OpenMed NER: Open-Source, Domain-Adapted State-of-the-Art Transformers for Biomedical NER Across 12 Public Datasets",exclude,X3,使用 DeBERTa-v3、PubMedBERT 等 BERT 類模型做 NER。,"DeBERTa-v3, PubMedBERT, and BioELECTRA backbones"
+R0945,,,,Optimized BERT-based NLP outperforms zero-shot methods for automated symptom detection in clinical practice.,include,,零樣本 Mistral 對德語急診病史做症狀 NER，與 BERT 比較並報告 F1。,GLiNER and Mistral; German ED anamnesis texts; F1 score
+R0946,,,,Optimized BERT-based NLP outperforms Zero-Shot Methods for Automated Symptom Detection in Clinical Practice,include,,同前一筆之預印本：Mistral 零樣本於德語急診文本症狀 NER，報告 F1。,GLiNER and Mistral; German ED anamnesis texts; F1 score
+R0947,,,,Optimizing Chart Review Efficiency in Pressure Injury Evaluation Using ChatGPT.,exclude,X4,僅使用 Azure OpenAI 之 ChatGPT（閉源）抽取病歷變項。,Azure OpenAI service; ChatGPT
+R0948,,,,Optimizing Entity Recognition in Psychiatric Treatment Data with Large Language Models.,exclude,X5,使用 PsyTAR 病患自述訊息，非臨床病歷文本。,PsyTAR dataset of self-reported messages
+R0949,,,,Overview of the Evaluation Task for Syndrome Differentiation Thought in Traditional Chinese Medicine in CHIP 2024,unsure,,CHIP 2024 中醫辨證評測任務概述，含 300 份病歷之臨床資訊抽取子任務，但未說明參賽模型與是否報告抽取指標。,300 TCM medical records; clinical information extraction
+R0950,,,,Overview of the Lymphoma Information Extraction and Automatic Coding Evaluation Task in CHIP 2024,exclude,X6,淋巴瘤 ICD-10／ICD-O-3 自動編碼評測任務。,generating tumor registry codes based on ICD-10 and ICD-O-3

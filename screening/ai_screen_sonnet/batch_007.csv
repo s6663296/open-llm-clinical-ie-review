@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0151,,,,Causal inference with real-world data in health care research: a scoping review protocol and study within a review protocol.,exclude,X1,標題為 scoping review protocol，屬 protocol 類型（X1）,scoping review protocol
+R0152,,,,CausalMPT: Causal Multimodal Prompt Tuning for Healthcare MIE,unsure,,多模態 LLM（MLLM）提示微調於多模態資訊抽取，未列模型且含非臨床文本資料，需看全文,multimodal large language models; four benchmark datasets
+R0153,,,,Chain-of-verification prompting for NIH stroke scale extraction using small and frontier large language models.,include,,LLaMA 3.2 3B、Gemma 3 4B 等開源模型於 312 篇出院摘要抽取 NIHSS，有準確度／MAE,LLaMA 3.2 3B; 312 discharge summaries
+R0154,,,,Characterising 'Watch and Wait' prescribing patterns in paediatric otitis media using large language models and pharmacy dispense data.,unsure,,LLM 讀臨床筆記分類處方類型，未列模型、摘要未報抽取效能指標，需看全文,An LLM reviewed clinician notes
+R0155,,,,CIFRCE: Clinical Information-Aware Flexible Radiology Report Comparison and Evaluation,unsure,,LLM 將放射報告轉為實體關係群組用於報告評估，未列模型，主任務為報告評估而非抽取,transform free-text reports into structured entity-relation groups
+R0156,,,,CineScribe: LLM-based detection and mitigation of ambiguity in cine cardiac magnetic resonance reports.,unsure,,輕量 LLM 將 cineCMR 報告結構化（macro-F1 0.92），未說明參數量與是否開源,lightweight large language model (LLM); macro-F1 of 0.92
+R0157,,,,CLINES: Clinical LLM-based Information Extraction and Structuring Agent.,unsure,,CLINES 於 MIMIC-III 等筆記抽取並報 F1，但摘要稱開源與閉源模型皆可替換，未明確使用哪些模型,open and closed models can be substituted; deidentified MIMIC-III
+R0158,,,,Clinical and epidemiological characteristics of herpes zoster at a tertiary care center compared to population-based data: a ten-year retrospective cohort study,exclude,X3,以人工病歷審閱為主，未使用 LLM（X3）,manual chart review
+R0159,,,,Clinical Code Mapping with LLM Tool Use: A Pilot for Automated Data Extraction of Medication and Diagnosis Information from Unstructured Clinical Notes.,include,,三個 open-weight LLM 於 35 份德文去識別臨床筆記抽取藥物與診斷，報 F1,three open-weight LLMs; 35 German doctor's notes
+R0160,,,,Clinical document metadata extraction: A scoping review.,exclude,X1,摘要自述為 scoping review（X1）,scoping review; PRISMA-ScR
+R0161,,,,Clinical evaluation of a large language model based intelligent pre-consultation system in traditional Chinese medicine: A tertiary hospital study,exclude,X6,評估 LLM 預問診系統使用度與醫師觀感，非資訊抽取效能評估（X6）,pre-consultation system
+R0162,,,,Clinical Knowledge Graph Construction and Evaluation with Multi-LLMs via Retrieval-Augmented Generation,unsure,,多 LLM 從臨床敘事建構知識圖譜（含實體關係抽取），未列模型，且無標準答案評估，需看全文,"multi-agent prompting; entity, attribute, and relation extraction"
+R0163,,,,Clinical named entity recognition in the Portuguese language: a benchmark of modern BERT models and LLMs,exclude,X4,LLM 僅用 GPT-5 與 Gemini-2.5 閉源模型（X4）,GPT-5 and Gemini-2.5
+R0164,,,,Clinical Note Bloat Reduction for Efficient LLM Use,unsure,,筆記去冗餘前處理，以未列名 zero-shot LLM 評估 20 項抽取任務，核心為前處理，需看全文,zero-shot LLMs; 20 information extraction tasks
+R0165,,,,Clinical Text De-Identification Beyond PHI Detection: A Scoping Review,exclude,X1,摘要自述為 scoping review（X1）,scoping review; PRISMA-ScR-informed
+R0166,,,,Clinician expertise and prompt engineering enhance cancer information extraction in electronic health records by small language models.,include,,開源小型語言模型（LLaMA 3.1 8B 等）於義大利文 EHR 抽取肺癌變項，評估準確度,four open-source small language models; LLaMA 3.1 8B
+R0167,,,,ClinixAI – A Rag-Powered Medical Assistant with Verified Clinical Insights,exclude,X6,RAG 醫療助理與決策建議，非資訊抽取（X6）,Retrieval-Augmented Generation
+R0168,,,,ClinPreAI: An Agentic AI System for Early Postpartum Depression Risk Prediction from Multimodal EHR Data.,exclude,X6,產後憂鬱風險預測，屬預測任務（X6）,risk prediction
+R0169,,,,CMFR: A Clinical Multimodal Foundation Reasoning Framework for Context-Aware Diagnostic Intelligence,exclude,X6,多模態診斷預測框架，非文本欄位抽取（X6）,diagnostic intelligence
+R0170,,,,Combining Anti-Hallucination Strategies for Reliable LLM-Based Clinical Information Extraction.,unsure,,LLM 概念抽取的抗幻覺框架，摘要未列模型亦無量化評估，需看全文,medical concept extraction; smaller models
+R0171,,,,Comparative analysis of discriminative and generative natural language processing pipelines for automated prostate magnetic resonance imaging reports,include,,自架 Llama 3、Qwen3、Gemma3 於 VA 放射報告抽取 PI-RADS，報準確度,"Llama 3, Qwen3, and Gemma3; 44,511 mpMRI reports"
+R0172,,,,Comparative Evaluation of Proprietary and Open-Source Large Language Models for Systematic Multi-source Information Extraction in Interventional Oncology.,include,,Llama 3.1 70B／405B 與閉源模型比較，自 TACE 報告抽取變項，報準確度,Llama 3.1 70B; 556 anonymized longitudinal TACE-related reports
+R0173,,,,Comparison of Large Language Models with Rules-Based Natural Language Processing Algorithms for Extracting Data from Operative Notes.,unsure,,LLM 管線自手術紀錄抽取三項資料並報準確度，但未列模型，無法判斷是否開源,extract registry data; large language models (LLMs)
+R0174,,,,Conformal Prediction for Risk-Controlled Medical Entity Extraction Across Clinical Domains,include,,Llama-4-Maverick（與 GPT-4.1）於 MIMIC-CXR 報告實體抽取，報 entity F1,Llama-4-Maverick; MIMIC-CXR reports
+R0175,,,,Constructing a corpus of hematologic pathology notes for the fine-tuning of BERT models for named entity recognition,exclude,X3,僅微調 BERT 模型做 NER，未使用 LLM（X3）,fine-tuning of BERT models

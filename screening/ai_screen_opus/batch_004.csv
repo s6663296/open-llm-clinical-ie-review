@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0076,,,,Agentic Medical RAG: A Reasoning Framework for Automated Clinical Documentation,exclude,X5,以結構化 OMOP 合成資料生成 SOAP 病歷，資料為合成且任務為病歷生成。,"10,000 patient synthetic dataset; SOAP"
+R0077,,,,Agentic Symbolic Learning for Deterministic and Granular Clinical Data Normalization,unsure,,BERT 抽取腫瘤 TNM 與分子標記後由 LLM 代理驗證與標準化，LLM 未列名且摘要未報告量化結果。,Self-Correcting Agentic Graph; Cancer TNM stages and molecular markers
+R0078,,,,AI-assisted automated abstraction for enhanced patient insights in gastrointestinal cancers.,exclude,X1,ASCO 會議摘要，且未列 LLM。,843Background
+R0079,,,,AI-Assisted Clinical Data Abstraction From Electronic Health Records: Retrospective Concordance Study.,exclude,X4,使用 HIPAA 合規之 GPT 系統從臨床筆記抽取疼痛分數，屬閉源模型。,generative pretrained transformer–based AI system
+R0080,,,,Ai-Augmented Clinical Handoff Systems: Integrating Large Language Models With Electronic Health Records For Safer Care Transitions,exclude,X6,LLM 生成交班紀錄，屬文本生成。,clinical summary generation; handoff notes
+R0081,,,,AI-Based Medical Decision Support: Exploring the Data Gap.,exclude,X1,評論性文章，非原始研究。,Exploring the Data Gap
+R0082,,,,AI-Driven Approaches for Adverse Event Detection: A Systematic Review of Current Evidence,exclude,X1,系統性回顧，非原始研究。,A Systematic Review
+R0083,,,,AI-Driven Multimodal TMJ Patient Modeling: From Unstructured Notes to Precision Treatment,include,,微調 DeepSeek-R1 與 BART 從 TMJ 病歷抽取 56 項臨床指標，報告準確率、精確率與召回率。,DeepSeek-R1; 500 TM DJD patient records; extract 56 clinical indicators; clinical field extraction accuracy
+R0084,,,,AI-Driven Prior Authorization Utilizing Large Language Models and Rule-Based Workflow Coordination for Clinical Efficiency,exclude,X6,事前授權決策以 ML 分類器處理 LLM 嵌入，屬分類／決策任務。,prior authorization; Gradient Boosting
+R0085,,,,AI-Empowered Multimodal Data Integration and Knowledge Discovery for Pharmacovigilance.,unsure,,藥物警戒知識整合框架，以 LLM 抽取含 EHR 在內多來源資訊並報告臨床 ADE 關係抽取，模型未列名。,LLM)-based information extraction; clinical ADE relation extraction
+R0086,,,,AIGC-driven virtual patients for diabetes: a systematic review,exclude,X1,系統性回顧，非原始研究。,a systematic review
+R0087,,,,American Society of Anesthesiologists Physical Status Classification: Hybrid Machine Learning-Large Language Model Ensemble Retrospective Validation Study.,exclude,X4,只用閉源 GPT-4o 判讀 ASA-PS 分級（亦屬分類推論）。,Generative Pretrained Transformer-4o [GPT-4o]
+R0088,,,,"An Electronic Health Record-Integrated, Large Language Model-Powered Tool to Triage Surgical Patients.",exclude,X6,LLM 判定手術病人是否適合共同照護，屬分流決策。,triage recommendations
+R0089,,,,An Enhanced Pretrained Language Model for Biomedical Domain: Fine-Tuning BERT for Electronic Health Records,exclude,X3,微調 BERT 模型，未使用 ≥1B LLM。,Fine-Tuning BERT
+R0090,,,,An Ensemble-Based Approach to Validating AI-Generated Clinical Discharge Summaries,exclude,X6,AI 生成出院摘要的驗證框架，屬摘要生成評估。,AI-generated discharge summaries
+R0091,,,,An Investigation of Prompt Engineering and Fine-Tuning Using Quantized Low Rank Adaptation for Medical Calculator Implementation on MedCalc-Bench,exclude,X6,以 Qwen3-4B 計算臨床評分（MedCalc-Bench），需超出文本的規則推論。,MedCalc-Bench; medical score calculation
+R0092,,,,Application of generative artificial intelligence to utilize unstructured clinical data for acceleration of inflammatory bowel disease research.,include,,以 Llama 3.3 與微調 Llama 3.1 8B 從 IBD 病理與影像報告抽取發現與部位，報告 F1。,Llama 3.3; free-text histology and radiology reports; F1 scores
+R0093,,,,Application of Language Models for the Analysis of Adverse Drug Events in Pharmaceutical Research and Development: Scoping Review.,exclude,X1,範疇回顧，非原始研究。,Scoping Review
+R0094,,,,Application of large language models in early screening of Alzheimer’s disease: a scoping review,exclude,X1,範疇回顧，非原始研究。,a scoping review
+R0095,,,,Applications of Large Language Models in Radiation Oncology: From Workflow Automation to Clinical Intelligence,exclude,X1,綜述文章，非原始研究。,This review summarizes
+R0096,,,,"Applications of Machine Learning, Natural Language Processing, and Generative Artificial Intelligence in Dermatology Education and Research: A Scoping Review.",exclude,X1,範疇回顧，非原始研究。,A Scoping Review
+R0097,,,,Applying artificial intelligence to automate clinical data extraction from veterinary electronic health records: A practical guidance and comparative scoping review.,exclude,X1,範疇回顧（獸醫病歷），非原始研究。,comparative scoping review
+R0098,,,,Applying natural language processing and large language models to clinical notes for phenotyping and diagnosing rare diseases: a systematic review,exclude,X1,系統性回顧，非原始研究。,a systematic review
+R0099,,,,Architectural Interoperability of EHR: A Review Incorporating Ontology-Based Approaches,exclude,X1,綜述文章，非原始研究。,A Review Incorporating Ontology-Based Approaches
+R0100,,,,ArogyaGPT: An AI-Based Healthcare Chatbot for Safe Medical Guidance,exclude,X1,醫療聊天機器人綜述與框架構想，非抽取研究。,This survey explores

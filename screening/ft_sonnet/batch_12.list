@@ -1,0 +1,14 @@
+R0798	Extracting OPQRST in Electronic Health Records using Large Language Models with Reasoning
+R0801	For clinical data extraction, QLoRA attains accuracy close to LoRA while requiring lower compute resources.
+R0805	From free text to SOFA score: automated reconstruction of sepsis severity from unstructured clinical notes
+R0811	GENIE: Generative Note Information Extraction model for structuring EHR data
+R0814	Guardians of the data: NER and LLMs for effective medical record anonymization in Brazilian Portuguese.
+R0815	Hallucinations and Key Information Extraction in Medical Texts: A Comprehensive Assessment of Open-Source Large Language Models
+R0817	HARMON-E: Hierarchical Agentic Reasoning for Multimodal Oncology Notes to Extract Structured Data
+R0828	Human level information extraction from clinical reports with finetuned language models.
+R0834	Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Case Study
+R0838	Improving mortality prediction after radiotherapy with large language model structuring of large-scale unstructured electronic health records.
+R0846	Initial Investigation of LLM-Assisted Development of Rule-Based Clinical NLP System
+R0847	Instruction-Tuned Large Language Models for Clinical Data Extraction: Creating an Aortic Measurement Database from CT Radiology Reports.
+R0857	Iterative refinement and goal articulation to optimize large language models for clinical information extraction.
+R0861	Language Models for Multilabel Document Classification of Surgical Concepts in Exploratory Laparotomy Operative Notes: Algorithm Development Study.

@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1151,,,,Evaluating the performance of Generative Pre-trained Transformer-4 (GPT-4) in standardizing radiology reports.,exclude,X4,僅 GPT-4 生成標準化報告,GPT-4
+R1152,,,,Evaluating the Performance of Large Language Models for Named Entity Recognition in Ophthalmology Clinical Free-Text Notes.,exclude,X4,LLM 僅 ChatGPT、PaLM 2、Gemini 等閉源模型,"ChatGPT-3.5, ChatGPT-4, PaLM 2, and Gemini"
+R1153,,,,Evaluation and Analysis of Large Language Models for Clinical Text Augmentation and Generation,exclude,X4,LLM 僅 ChatGPT 做資料擴增，T5／BART 為小型模型且為生成任務,ChatGPT augmentation
+R1154,,,,Exploring AI-driven approaches for unstructured document analysis and future horizons,exclude,X1,系統性文獻回顧,systematic literature review
+R1155,,,,Exploring Offline Large Language Models for Clinical Information Extraction: A Study of Renal Histopathological Reports of Lupus Nephritis Patients.,include,,以 BioMistral、Llama 2、Mistral 從腎臟病理報告零樣本抽取，報告 F1,BioMistral-DARE-7B; Mistral-7B-instruct-v0.2; renal histopathology report information extraction; F1-score
+R1156,,,,Exploring the Feasibility of GPT-4 as a Data Extraction Tool for Renal Surgery Operative Notes.,exclude,X4,僅使用 GPT-4,GPT-4
+R1157,,,,Extracting adverse drug events from clinical Notes: A systematic review of approaches used.,exclude,X1,系統性回顧,systematic review
+R1158,,,,Extracting Critical Information from Unstructured Clinicians' Notes Data to Identify Dementia Severity Using a Rule-Based Approach: Feasibility Study.,exclude,X3,規則式方法,rule-based matching
+R1159,,,,Extracting Health Evidence Information from Biomedical Literature using Large Language Models,exclude,X4,僅使用 GPT 系列，且為生醫文獻,GPT 4 and GPT 4 Turbo Preview; biomedical literature
+R1160,,,,Extracting lung cancer staging descriptors from pathology reports: A generative language model approach.,include,,微調 Mistral-7B 從肺癌病理報告抽取分期描述子，報告完全匹配率,Mistral-7B; surgical pathology reports; exact match ratio
+R1161,,,,Extracting Social Determinants of Health from Pediatric Patient Notes Using Large Language Models: Novel Corpus and Methods,unsure,,兒科病歷 SDoH 抽取，微調 LLM 未列模型名稱，另用 GPT-4,fine-tuning LLM-based extractors; GPT-4; PedSHAC
+R1162,,,,Extracting Social Support and Social Isolation Information from Clinical Psychiatry Notes: Comparing a Rule-based NLP System and a Large Language Model,include,,以 FLAN-T5-XL（約 3B、開放權重）從精神科病歷抽取社會支持／孤立，報告 F 分數,FLAN-T5-XL; Psychiatric encounter notes; macro-averaged f-scores
+R1163,,,,Extracting structured information from unstructured histopathology reports using generative pre-trained transformer 4 (GPT-4).,exclude,X4,僅使用 GPT-4,GPT-4
+R1164,,,,Extraction of sleep information from clinical notes of Alzheimer's disease patients using natural language processing.,include,,LLAMA2 微調從 AD 病人臨床病歷抽取睡眠資訊，報告 PPV／F1,LLAMA2 with finetuning; clinical notes; positive predictive value (PPV)
+R1165,,,,Facilitating Clinical Information Extraction with Synthetic Data and Ontology using Large Language Models.,include,,微調 LLaMA-3-8B 做臨床 NER，於 MIMIC-III、i2b2 等真實資料評估,LLaMA-3-8B; MIMIC-III; clinical named entity recognition
+R1166,,,,FedFSA: Hybrid and federated framework for functional status ascertainment across institutions.,exclude,X3,規則式加 BERT 架構,BERT model
+R1167,,,,FHIR-GPT Enhances Health Interoperability with Large Language Models.,unsure,,FHIR-GPT 從臨床文本抽取用藥資訊，摘要未說明底層模型,FHIR-GPT; medication statements
+R1168,,,,Filling the gaps: leveraging large language models for temporal harmonization of clinical text across multiple medical visits for clinical prediction.,exclude,X6,LLM 生成時間間隔資訊供預測模型使用,clinical prediction
+R1169,,,,Fine-tuning coreference resolution for different styles of clinical narratives.,exclude,X3,共指消解神經模型，未使用 LLM,Coreference resolution (CR)
+R1170,,,,Fine-tuning Specialized NER Model for Symptom Extraction from Slovenian Medical Texts,unsure,,斯洛維尼亞文症狀抽取，所用專門 NER 模型類型未說明，且以翻譯資料訓練,specialized model designed for symptom extraction; Slovenian
+R1171,,,,From Examples to Patterns: LLM-Generated Regular Expressions for Entity Extraction in Czech Clinical Texts,unsure,,以 LLM 生成正則式抽取捷克臨床實體，未列模型名稱,automate regex generation; Czech clinical notes
+R1172,,,,"From Pixels to Paragraphs: Extraction of Text from Medical Reports using LLMs, Systematic Literature Review",exclude,X1,系統性文獻回顧,Systematic Literature Review
+R1173,,,,GAMedX: Generative AI-based Medical Entity Data Extractor Using Large Language Models,unsure,,使用開源 LLM 做醫療 NER，但未列模型且評估資料是否為真實病歷不明,open-source LLMs for NER; medical narratives
+R1174,,,,Generalizable clinical note section identification with large language models.,unsure,,開源 Tulu2-70b 等做病歷段落辨識，段落辨識是否屬資訊抽取需判斷,Tulu2-70b; section identification
+R1175,,,,Generalizable Clinical Note Section Identification with Large Language Models,unsure,,同 R1174，段落辨識任務邊界模糊,Tulu2-70b; section identification

@@ -1,0 +1,15 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1376,,,,Extraction of Sleep Information from Clinical Notes of Patients with Alzheimer's Disease Using Natural Language Processing,include,,LLaMA2 微調於 AD 臨床筆記抽取睡眠概念並報告 PPV／F1，符合各條件,LLAMA2 with finetuning; clinical notes; sleep-related concepts
+R1377,,,,GatorTron: A Large Language Model for Clinical Natural Language Processing,exclude,X3,GatorTron 為 BERT 架構編碼器，非生成式 LLM（X3）,using the BERT architecture
+R1378,,,,Graph-Text Multi-Modal Pre-training for Medical Representation Learning,exclude,X3,MedGTX 為多模態表徵預訓練模型，非 LLM（X3）,MedGTX
+R1379,,,,Hospital-wide Natural Language Processing summarising the health data of 1 million patients,exclude,X3,使用 CogStack、MedCAT NER+L，未用 LLM（X3）,"CogStack, MedCAT"
+R1380,,,,Investigation of the Utility of Features in a Clinical De-identification Model: A Demonstration Using EHR Pathology Reports for Advanced NSCLC Patients.,exclude,X3,以 CRF 做去識別化 NER，未用 LLM（X3）,conditional random field (CRF) based clinical de-identification NER model
+R1381,,,,Large Language Models are Few-Shot Clinical Information Extractors,exclude,X4,只評估 InstructGPT／GPT-3，閉源（X4）,InstructGPT; GPT-3 systems
+R1382,,,,Multicenter Validation of Natural Language Processing Algorithms for the Detection of Common Data Elements in Operative Notes for Total Hip Arthroplasty: Algorithm Development and Validation.,exclude,X3,MedTagger-THA 為規則式系統（X3）,rule-based system
+R1383,,,,Opioid2MME: Standardizing opioid prescriptions to morphine milligram equivalents from electronic health records.,exclude,X3,Opioid2MME 為 SQL 框架，未用 LLM（X3）,SQL-based open-source framework
+R1384,,,,Practical Implementation and Challenges of Artificial Intelligence-Driven Electronic Health Record Evaluation: Protected Health Information.,exclude,X3,使用正則式與 FLAIR，未用 ≥1B LLM 且無量化評估（X3）,regular expressions with a natural language processing framework called FLAIR
+R1385,,,,Radiology Text Analysis System (RadText): Architecture and Evaluation.,exclude,X3,RadText 為混合式文字分析管線，未用 LLM（X3）,hybrid text processing schema
+R1386,,,,ReviewR: a light-weight and extensible tool for manual review of clinical records.,exclude,X3,ReviewR 為人工審查工具，非 LLM 抽取（X3）,open-source R Shiny application
+R1387,,,,Semantic Network: A Brief Review of its Datasets,exclude,X1,摘要自述為簡短回顧語意網路資料集（X1）,briefly discusses the major semantic network datasets
+R1388,,,,Simplified data science approach to extract social and behavioural determinants: a retrospective chart review.,exclude,X3,使用傳統文字分類（bag of words）模型，未用 LLM（X3）,bag of words and bigrams
+R1389,,,,"Creation of a Mapped, Machine-Readable Taxonomy to Facilitate Extraction of Social Determinants of Health Data from Electronic Health Records.",exclude,X3,建立 SDH 分類法，未用 LLM（X3）,machine readable format

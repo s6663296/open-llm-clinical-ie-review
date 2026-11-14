@@ -135,12 +135,14 @@ def main():
     args = p.parse_args()
     out_dir = Path(args.out_dir)
     blind, verify = out_dir / 'step1_blind50.xlsx', out_dir / 'step2_verify.xlsx'
-    for f in (blind, verify):
-        if f.exists() and not args.force:
-            sys.exit(f'{f} exists; use --force to overwrite (it may contain human input)')
+    if verify.exists() and not args.force:
+        sys.exit(f'{verify} exists; use --force to overwrite (it may contain human input)')
     records = read_csv(args.records)
-    cal = calibration_ids(args.calibration_from)
-    print(f'{blind}: {build_blind(records, cal, blind, args.calibration_from)} records (no LLM output)')
+    if blind.exists():
+        print(f'{blind}: kept as is (never overwritten; it may contain blind human input)')
+    else:
+        cal = calibration_ids(args.calibration_from)
+        print(f'{blind}: {build_blind(records, cal, blind, args.calibration_from)} records (no LLM output)')
     print(f'{verify}: {build_verify(records, read_csv(args.ai), verify, args.calibration_from)} records')
 
 

@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1076,,,,An open-source framework for end-to-end analysis of electronic health record data.,exclude,X3,EHR 分析框架，未使用 LLM,ehrapy
+R1077,,,,Analysing zero-shot temporal relation extraction on clinical notes using temporal consistency,include,,以 Mixtral、Llama 2、Gemma 等對臨床病歷做零樣本時間關係抽取，報告 F1,"Mixtral, Llama 2, Gemma; temporal relation extraction; clinical notes; F1 score"
+R1078,,,,Applying generative AI with retrieval augmented generation to summarize and extract key clinical information from electronic health records,include,,以 Llama 2 13B 從安養機構 EHR 抽取營養不良風險因子，與金標準比較報告準確率,Llama 2 13B; extract key information about malnutrition risk factors; accuracy of 90%
+R1079,,,,Applying Generative Language Models to Generate Synthetic Medical Records: ChaVinci; [應用生成式語言模型生成擬真之醫療病歷文本:ChaVinci],exclude,X4,以 ChatGPT／DaVinci 生成合成病歷供 ASR 使用,ChatGPT and DaVinci
+R1080,,,,Are my Answers Medically Accurate? Answers Reliability Regarding Questions over Healthcare Knowledge Graphs,exclude,X6,病歷知識圖譜問答聊天機器人，非資訊抽取,question-answering chatbot
+R1081,,,,Artificial Intelligence-Powered Large Language Transformer Models for Opioid Abuse and Social Determinants of Health Detection for the Underserved Population,exclude,X3,使用 BERT 類方法偵測鴉片類使用障礙,(BERT)-based NLP method
+R1082,,,,Assertion Detection in Clinical Natural Language Processing using Large Language Models.,unsure,,以醫療預訓練 LLM 加 LoRA 做 i2b2 assertion 偵測，摘要未列模型名稱,assertion detection; Low-Rank Adaptation (LoRA); i2b2 2010 assertion dataset
+R1083,,,,Assertion Detection Large Language Model In-context Learning LoRA Fine-tuning,unsure,,同 R1082 內容，assertion 偵測，未列模型名稱無法判斷是否開源,assertion detection; i2b2 2010 assertion dataset
+R1084,,,,Assessing equitable use of large language models for clinical decision support in real-world settings: fine-tuning and internal-external validation using electronic health records from South Asia,exclude,X4,生成式 LLM 僅 ChatGPT，其餘 GatorTron、BioMegatron 為編碼器模型,"ChatGPT, GatorTron, BioMegatron"
+R1085,,,,Assessing Real-World Data From Electronic Health Records for Health Technology Assessment: The SUITABILITY Checklist: A Good Practices Report of an ISPOR Task Force,exclude,X1,ISPOR 良好實務報告，非原始研究,Good Practices report
+R1086,,,,"AssistMED project: Transforming cardiology cohort characterisation from electronic health records through natural language processing - Algorithm design, preliminary results, and field prospects.",exclude,X3,NLP 工具未使用 LLM，LLM 僅於討論提及,NLP tool
+R1087,,,,ATSCOT: Chain of Thought for Structuring Anesthesia Medical Records,unsure,,以 CoT 提示 LLM 結構化麻醉病歷並評估抽取準確度，未列模型名稱,Large Language Models (LLMs); anesthesia medical records; accuracy of information extraction
+R1088,,,,Automated abstraction of clinical parameters of multiple myeloma from real-world clinical notes using large language models,include,,以 Llama 為基礎的流程從真實病歷抽取 12 個多發性骨髓瘤欄位，報告 F1,Llama-based; 12 MM-specific data fields; Average F 1
+R1089,,,,Automated Extraction of Patient-Centered Outcomes After Breast Cancer Treatment: An Open-Source Large Language Model-Based Toolkit.,include,,以 PMC-LLaMA 等微調抽取乳癌病患中心結果，多機構臨床病歷,PMC-LLaMA; clinic notes; extract the five different categories of PCO
+R1090,,,,Automated Information Extraction from Unstructured Hematopathology Reports to Support Response Assessment in Myeloproliferative Neoplasms.,exclude,X3,使用 Leo 框架（規則式 NLP），無 LLM,open-source NLP framework called Leo
+R1091,,,,Automatic detection of contextual laterality in Mammography Reports using Large Language Models,exclude,X4,僅使用 OpenAI GPT 模型,three GPT models accessible via OpenAI’s API
+R1092,,,,Automatic Medical Knowledge Graph Construction,exclude,X1,博士論文計畫摘要，無結果,PhD thesis
+R1093,,,,Automatic quantitative stroke severity assessment based on Chinese clinical named entity recognition with domain-adaptive pre-trained large language model.,exclude,X3,CliRoberta 為 RoBERTa 類模型，非生成式 LLM,CliRoberta
+R1094,,,,Automating Adjudication of Cardiovascular Events Using Large Language Models.,unsure,,few-shot LLM 從臨床試驗文件抽取證據，摘要只點名 GPT-4，抽取模型不明,few-shot LLM extracts structured evidence; GPT-4 ToT
+R1095,,,,Beyond Tokens: Fair Evaluation of French Large Language Models for Clinical Named Entity Recognition.,exclude,X4,僅評估 ChatGPT（另為 BERT），且使用合成報告,ChatGPT's ability to perform NER; synthetic French oncological reports
+R1096,,,,"BioNLP 2024 - 23rd Meeting of the ACL Special Interest Group on Biomedical Natural Language Processing, Proceedings of the Workshop and Shared Tasks",exclude,X1,研討會論文集導言,The proceedings contain 79 papers
+R1097,,,,BURExtract-Llama: An LLM for Clinical Concept Extraction in Breast Ultrasound Reports,include,,微調 Llama3-8B 從乳房超音波報告抽取臨床概念，報告 F1,Llama3-8B; Breast Ultrasound Reports; average F1 score
+R1098,,,,CACER: Clinical concept Annotations for Cancer Events and Relations.,include,,Llama3 等於腫瘤科病歷做事件與關係抽取，報告 F1,Llama3; oncology notes; relation extraction
+R1099,,,,"CALD-pseudo 2024 - Workshop on Computational Approaches to Language Data Pseudonymization, Proceedings of the Workshop",exclude,X1,研討會論文集導言,The proceedings contain 10 papers
+R1100,,,,ChatGPT-4 extraction of heart failure symptoms and signs from electronic health records.,exclude,X4,僅使用 ChatGPT-4,ChatGPT-4

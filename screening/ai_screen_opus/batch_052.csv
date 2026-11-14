@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1276,,,,"Text mining for disease surveillance in veterinary clinical data: part two, training computers to identify features in clinical text",exclude,X1,獸醫文本探勘方法的綜述性文章,we evaluate the range of machine-learning tools; veterinary clinical narratives
+R1277,,,,The long but necessary road to responsible use of large language models in healthcare research.,exclude,X1,評論文章,responsible use of large language models
+R1278,,,,The Transformative Potential of Large Language Models in Mining Electronic Health Records Data,exclude,X4,僅用 GPT-3.5／GPT-4,gpt-3.5-turbo-1106 and gpt-4-1106-preview
+R1279,,,,Toward Relieving Clinician Burden by Automatically Generating Progress Notes using Interim Hospital Data.,exclude,X6,由結構化資料生成病程紀錄，屬病歷生成,automate progress note generation
+R1280,,,,Transforming free-text radiology reports into structured reports using ChatGPT: A study on thyroid ultrasonography.,exclude,X4,僅用 ChatGPT-3.5／4.0,ChatGPT-3.5 and ChatGPT-4.0
+R1281,,,,Understanding Student Sentiment on Mental Health Support in Colleges Using Large Language Models,exclude,X5,學生問卷情感分析，非臨床文本,Student Voice Survey data
+R1282,,,,Unlocking the Potential of Free Text in Electronic Health Records with Large Language Models (LLM): Enhancing Patient Safety and Consultation Interactions.,exclude,X1,觀點文章，提出採用 LLM 的方向，無實證評估,This paper outlines approaches
+R1283,,,,Unpacking unstructured data: A pilot study on extracting insights from neuropathological reports of Parkinson's Disease patients using large language models.,unsure,,LLM 從神經病理報告抽取資訊，但未說明模型與量化指標,neuropathological reports; potential of LLMs
+R1284,,,,Use of Generative AI to Identify Helmet Status Among Patients With Micromobility-Related Injuries From Unstructured Clinical Notes.,exclude,X4,僅用 ChatGPT-4,ChatGPT-4 (OpenAI)
+R1285,,,,Use of Natural Language Processing to Infer Sites of Metastatic Disease From Radiology Reports at Scale.,exclude,X3,僅用 RadBERT、BioBERT、GatorTron 等 BERT 類編碼器,"RadBERT, BioBERT, GatorTron-base, and GatorTron-medium"
+R1286,,,,Using Artificial Intelligence to Label Free-Text Operative and Ultrasound Reports for Grading Pediatric Appendicitis.,exclude,X4,僅用 ChatGPT-4,ChatGPT-4
+R1287,,,,Using GPT-4 for LI-RADS feature extraction and categorization with multilingual free-text reports.,exclude,X4,僅用 GPT-4,Generative Pre-trained Transformer (GPT)-4
+R1288,,,,Using Large Language Models to Abstract Complex Social Determinants of Health From Original and Deidentified Medical Notes: Development and Validation Study.,exclude,X4,僅用 GPT-3.5／GPT-4,GPT-3.5 and GPT-4
+R1289,,,,Using Large Language Models to Annotate Complex Cases of Social Determinants of Health in Longitudinal Clinical Records.,exclude,X4,僅用 GPT-3.5／GPT-4,GPT-3.5 and GPT-4
+R1290,,,,Using Large Language Models to Extract Core Injury Information From Emergency Department Notes.,include,,微調 Llama-2 從急診筆記抽取傷害資訊，以登錄資料為標準,fine-tuned a single generalizable Llama-2 model; Emergency Department (ED) clinical notes
+R1291,,,,Using Multimodal Data to Improve Precision of Inpatient Event Timelines.,include,,出院摘要事件時間定位，Llama-2 為比較模型並報 F1,Llama-2 encoder-decoder models; discharge summaries
+R1292,,,,Using the Natural Language Processing System Medical Named Entity Recognition-Japanese to Analyze Pharmaceutical Care Records: Natural Language Processing Analysis.,exclude,X3,使用 MedNER-J（非 LLM 的 NER 系統）,Medical Named Entity Recognition-Japanese (MedNER-J)
+R1293,,,,Utilizing large language models in breast cancer management: systematic review.,exclude,X1,系統性回顧,systematic review
+R1294,,,,Validation of a Zero-shot Learning Natural Language Processing Tool to Facilitate Data Abstraction for Urologic Research.,exclude,X4,僅用 GPT-3.5,GPT-3.5 model from OpenAI
+R1295,,,,Validation of large language models for detecting pathologic complete response in breast cancer using population-based pathology reports.,unsure,,以開源 transformer 與 GPT-2 從病理報告判斷 pCR，模型是否 ≥1B 需確認,open-source LLMs; Generative Pre-trained Transformer-2 (GPT-2); pathology reports
+R1296,,,,Year 2023 in Biomedical Natural Language Processing: a Tribute to Large Language Models and Generative AI.,exclude,X1,年度文獻綜述,This synopsis
+R1297,,,,Zero- and Few-shot Named Entity Recognition and Text Expansion in Medication Prescriptions using ChatGPT,exclude,X4,僅用 ChatGPT 3.5,ChatGPT 3.5
+R1298,,,,Zero-Shot ATC Coding with Large Language Models for Clinical Assessments,exclude,X6,ATC 自動編碼任務,ATC coding
+R1299,,,,Zero-shot information extraction from radiological reports using ChatGPT.,exclude,X4,僅用 ChatGPT,ChatGPT
+R1300,,,,Zero-shot learning to extract assessment criteria and medical services from the preventive healthcare guidelines using large language models.,exclude,X5,抽取對象為預防保健指引，非病歷文本,preventive healthcare guidelines

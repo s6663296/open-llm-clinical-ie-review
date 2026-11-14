@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1201,,,,Large Language Model Augmented Clinical Trial Screening,exclude,X4,僅使用 GPT-3.5 與 GPT-4,GPT-3.5 and GPT-4
+R1202,,,,Large Language Models as a Rapid and Objective Tool for Pathology Report Data Extraction.,exclude,X4,僅使用 ChatGPT 與 Google Bard,ChatGPT and Google Bard
+R1203,,,,Large Language Models for Biomedical Knowledge Graph Construction: Information extraction from EMR notes,unsure,,評估 12 個 LLM 從 EMR 病歷抽取知識圖譜實體關係，未列模型名稱,12 LLMs; electronic medical record notes; precision and recall
+R1204,,,,Large Language Models for Clinical Text Cleansing Enhance Medical Concept Normalization,exclude,X4,僅使用 ChatGPT（GPT-4），任務為概念正規化,ChatGPT (GPT-4)
+R1205,,,,Large Language Models for Efficient Medical Information Extraction.,exclude,X4,僅使用 ChatGPT,ChatGPT
+R1206,,,,"Large Language Models for Healthcare: Applications, Models, Datasets, and Challenges",exclude,X1,綜論性文章,"Applications, Models, Datasets, and Challenges"
+R1207,,,,Large Language Models for Social Determinants of Health Information Extraction from Clinical Notes - A Generalizable Approach across Institutions.,include,,指令微調 LLaMA 從四機構臨床病歷抽取 SDoH 因子與值，報告 F1,LLaMA; clinical notes; micro-averaged F1
+R1208,,,,Large Language Models Struggle in Token-Level Clinical Named Entity Recognition.,unsure,,比較閉源與本地開源 LLM 做 token 層級臨床 NER，未列模型且文本來源不明,local open-source LLMs; token-level clinical NER
+R1209,,,,Large language models to identify social determinants of health in electronic health records.,include,,微調 Flan-T5 XL／XXL 從 EHR 敘述文本抽取 SDoH，報告 macro-F1,Flan-T5 XL; Flan-T5 XXL; macro-F1
+R1210,,,,Large multimodal model-based standardisation of pathology reports with confidence and its prognostic significance.,unsure,,大型多模態模型從病理報告抽取欄位，未列模型名稱無法判斷是否開源,large multimodal model; pathology reports; accuracy and kappa
+R1211,,,,LCD Benchmark: Long Clinical Document Benchmark on Mortality Prediction for Language Models.,exclude,X6,死亡預測文件分類基準,Mortality Prediction
+R1212,,,,Leveraging Generative Pre-Trained Transformer Models for Standardizing Nursing Data,exclude,X4,僅使用 GPT-3.5／GPT-4 做術語對應,GPT -3.5 and GPT -4
+R1213,,,,"Leveraging GPT-4 for Identifying Cancer Phenotypes in Electronic Health Records: A Performance Comparison between GPT-4, GPT-3.5-turbo, Flan-T5 and spaCy's Rule-based & Machine Learning-based methods.",include,,Flan-T5-xl／xxl（開放權重）與 GPT 從 NSCLC 病歷抽取分期、治療等表型，報告 F1,Flan-T5-xl; Flan-T5-xxl; micro-F1
+R1214,,,,"Leveraging GPT-4 for identifying cancer phenotypes in electronic health records: a performance comparison between GPT-4, GPT-3.5-turbo, Flan-T5, Llama-3-8B, and spaCy's rule-based and machine learning-based methods.",include,,Flan-T5、Llama-3-8B 等從臨床病歷抽取癌症表型，報告 F1,Llama-3-8B; clinical notes; micro-F1
+R1215,,,,Leveraging Large Language Models for Medical Information Extraction and Query Generation,exclude,X6,臨床試驗檢索的查詢生成，非資訊抽取,query generation
+R1216,,,,Leveraging large language models for medical text classification: a hospital readmission prediction case,exclude,X3,BERT 類模型做再入院預測,SciBERT
+R1217,,,,Leveraging Large Language Models for Thyroid Nodule Information Extraction and Matching Across Medical Reports.,include,,以 Llama-3.3 70B、QwQ-32B 從超音波與病理報告抽取甲狀腺結節特徵,Llama-3.3 70B; QwQ-32B; extraction accuracy
+R1218,,,,Leveraging Medical Knowledge Graphs and Large Language Models for Enhanced Mental Disorder Information Extraction,unsure,,LLM 結合知識圖譜做心理健康資訊抽取，未列模型且資料來源不明,mental health data; large language models (LLMs)
+R1219,,,,"Leveraging mobile NER for real-time capture of symptoms, diagnoses, and treatments from clinical dialogues",unsure,,以 FLAN-T5 從醫病對話抽取症狀，模型規模不明且文本為對話而非病歷,FLAN-T5; doctor–patient conversations
+R1220,,,,Leveraging Prompt-Learning for Structured Information Extraction from Crohn's Disease Radiology Reports in a Low-Resource Language,exclude,X3,SMP-BERT 為 BERT 類模型,SMP-BERT
+R1221,,,,Lexicans at Chemotimelines 2024: Chemotimeline Chronicles - Leveraging Large Language Models (LLMs) for Temporal Relations Extraction in Oncological Electronic Health Records,include,,以 Llama 2 與 Mistral 7B 零樣本從腫瘤 EHR 病歷抽取化療時間關係,Llama 2 and Mistral 7B; EHR notes
+R1222,,,,LlamaMTS: Optimizing Metastasis Detection with Llama Instruction Tuning and BERT-Based Ensemble in Italian Clinical Reports,include,,指令微調 Llama 判定義大利文病歷中轉移有無（文本明確記載），並與 BERT 比較,LlamaMTS; Italian Clinical Reports; metastasis
+R1223,,,,LLM-AIx: An open source pipeline for Information Extraction from unstructured medical text based on privacy preserving Large Language Models.,unsure,,LLM-AIx 方法 protocol，示範於 TCGA 病理報告抽 TNM，模型未列且量化評估不明,LLM-AIx; TNM stage extraction
+R1224,,,,Local Large Language Models for Complex Structured Tasks.,unsure,,微調 LLaMA 從病理報告產生 condition codes，可能屬自動編碼,LLaMA; condition codes
+R1225,,,,Local large language models for privacy-preserving accelerated review of historic echocardiogram reports,unsure,,LLaMA-2 70B 以問答形式從超音波心臟報告取得資訊，屬 QA 或抽取需判斷,LLaMA-2 70B; echocardiogram reports

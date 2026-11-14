@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1176,,,,Generating Synthetic Healthcare Dialogues in Emergency Medicine Using Large Language Models.,exclude,X6,以 Zephyr-7b 生成合成急診對話，任務為對話生成而非抽取（X6）,initial dialogue generation; synthetic medical dialogues
+R1177,,,,Generative large language models are all-purpose text analytics engines: text-to-text learning is all your need.,unsure,,GatorTronGPT（20B）用於概念／關係抽取，但權重是否公開不明，需看全文,concept extraction
+R1178,,,,Get the Best out of 1B LLMs: Insights from Information Extraction on Clinical Documents,include,,1B 開源模型做臨床實體與關係抽取，附 F1 比較,1B parameter models; clinical entity detection and relation extraction
+R1179,,,,GPT-4 in a Cancer Center - Institute-Wide Deployment Challenges and Lessons Learned.,exclude,X6,GPT-4 機構部署個案報告，非抽取研究且無量化評估（X6）,In this case study
+R1180,,,,HELMET: A Hybrid Machine Learning Framework for Real-Time Prediction of Edema Trajectory in Large Middle Cerebral Artery Stroke.,exclude,X6,整合文本與結構化資料預測水腫軌跡，屬風險預測（X6）,predicting the severity of midline structure displacement
+R1181,,,,High Throughput Phenotyping of Physician Notes with Large Language and Hybrid NLP Models,unsure,,LLM 用於醫師筆記表型抽取，未列模型，無法判斷是否開源,large language model; physician notes
+R1182,,,,HSE NLP Team at MEDIQA-CORR 2024 Task: In-Prompt Ensemble with Entities and Knowledge Graph for Medical Error Correction,exclude,X6,MEDIQA-CORR 醫療錯誤偵測與修正，非抽取（X6）,medical error detection and correction
+R1183,,,,Human-level information extraction from clinical reports with fine-tuned language models,include,,開源 LLM（Llama-3.1 8B LoRA）從報告抽取結構化欄位，報告 exact match accuracy,open-source large language models; LoRa-finetuned Llama-3.1 8B
+R1184,,,,Identifying signs and symptoms of urinary tract infection from emergency department clinical notes using large language models.,exclude,X3,僅用 SpaCy 與 Clinical Longformer，未達 1B 參數的 LLM（X3）,Clinical Longformer; convolutional neural network-based model (SpaCy)
+R1185,,,,"Identifying social determinants of health from clinical narratives: A study of performance, documentation ratio, and potential bias.",unsure,,比較 7 個 transformer（含 GatorTron）抽取 SDoH，規模與是否屬 ≥1B 開源 LLM 不明,7 transformer-based large language models; GatorTron
+R1186,,,,Identifying Symptoms of Delirium from Clinical Narratives Using Natural Language Processing.,unsure,,比較 BERT 類與 GatorTron 抽取譫妄症狀，GatorTron 規模不明，需看全文,GatorTron; extract delirium symptoms from clinical notes
+R1187,,,,Improving electronic health record processing of large language models via retrieval-augmented generation: A case study on dietary supplements.,include,,以 Llama-3 等搭配 RAG 於 EHR 做膳食補充劑實體與三元組抽取,Llama-3; entity recognition
+R1188,,,,Improving Generalizability of Extracting Social Determinants of Health Using Large Language Models through Prompt-tuning,unsure,,GatorTronGPT 提示調校抽取 SDoH（n2c2 2022），權重是否公開不明,GatorTronGPT; 2022 n2c2 challenge
+R1189,,,,Improving large language models for clinical named entity recognition via prompt engineering.,exclude,X4,僅評估 GPT-3.5 與 GPT-4，無開源 LLM（X4）,GPT-3.5 and GPT-4
+R1190,,,,Improving the Quality of Unstructured Cancer Data Using Large Language Models: A German Oncological Case Study.,unsure,,LLM 將腫瘤報告轉為結構化格式，未列模型與評估指標,transforming unstructured medical reports into the structured format
+R1191,,,,Information Extraction from Clinical Notes: Are We Ready to Switch to Large Language Models?,include,,LLaMA-2/3 指令微調對臨床筆記做 NER 與關係抽取並與 BERT 比較,instruction-tuned LLaMA-2 and LLaMA-3; Named Entity Recognition (NER)
+R1192,,,,Information extraction from medical case reports using OpenAI InstructGPT.,exclude,X4,僅用 InstructGPT（閉源），且文本為文獻病例報告（X4）,InstructGPT
+R1193,,,,Instruction-guided deidentification with synthetic test cases for Norwegian clinical text,exclude,X4,僅用 GPT-4，且資料為合成挪威文本（X4）,GPT-4 language model
+R1194,,,,Integrated Perspectives on Clinical Decision Support: A Comparative Analysis of Knowledge Management Approaches.,exclude,X1,知識管理方法比較分析，屬回顧／評論（X1）,We analyze five approaches to knowledge management
+R1195,,,,Investigating the clinical reasoning abilities of large language model GPT-4: an analysis of postoperative complications from renal surgeries,exclude,X4,僅用 GPT-4 評估術後併發症（X4）,GPT-4
+R1196,,,,KG-Infused LLM for Virtual Health Assistant: Accelerated Inference and Enhanced Performance,exclude,X6,知識圖譜增強的醫療問答，非抽取（X6）,"BioASQ, MedicationQA, and ExpertQA datasets"
+R1197,,,,LAILab at Chemotimelines 2024: Finetuning sequence-to-sequence language models for temporal relation extraction towards cancer patient undergoing chemotherapy treatment,unsure,,Flan-T5 微調抽取化療時間線，Flan-T5 規模未說明,Flan-T5; extracting chemotimelines from EHR notes
+R1198,,,,Language Models and Retrieval Augmented Generation for Automated Structured Data Extraction from Diagnostic Reports,include,,開源權重 LM 搭配 RAG 從放射與病理報告抽取結構化資料，報告準確率,open-weights large language models; extracting structured clinical information
+R1199,,,,"Language Models for Hierarchical Classification of Radiology Reports With Attention Mechanisms, BERT, and GPT-4",exclude,X4,僅用 LSTM、BERT 與 GPT-4（閉源），無開源 LLM（X4）,"LSTM with Attention, BERT, and GPT-4"
+R1200,,,,Large Language Model-Assisted Information Extraction from Clinical Reports for Survival Prediction of Bladder Cancer Patients,include,,Vicuna 與 Dolly 從臨床報告抽取描述項，與人工比較準確率,Vicuna and Dolly; extract clinical descriptors from reports

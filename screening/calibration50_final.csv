@@ -1,0 +1,51 @@
+﻿record_id,title,agent_decision,agent_code,sonnet_decision,sonnet_code,final_decision,final_code,source
+R0051,"A study of large language models for patient information extraction: Model architecture, fine-tuning strategy, and multi-task instruction tuning.",include,,include,,include,,兩個 AI 一致，作者採用
+R0055,A workflow utilizing general-purpose large language models for efficient structuring and data mining of bone scintigraphy narratives.,include,,include,,include,,兩個 AI 一致，作者採用
+R0132,AVDA: Generative Measurable Quantitative Information Extraction with Adaptive Vocabulary and LLM-Based Data Augmentation,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0152,CausalMPT: Causal Multimodal Prompt Tuning for Healthcare MIE,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0256,Explainable multimodal AI and neuro-symbolic clinical decision support system for chronic eye disease management: a digital health implementation study.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0265,Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models.,exclude,X5,exclude,X4,exclude,X5,兩個 AI 一致，作者採用
+R0289,"Generative AI in preanesthetic consultations: Effects on efficiency, documentation workload, quality, and physician-patient interaction: A simulation trial.",exclude,X6,exclude,X5,exclude,X6,兩個 AI 一致，作者採用
+R0307,"Human-Level Extraction of Modified Rankin Scale Scores from Real-World Neurosurgical Clinical Notes Using a Locally Deployed, Quantized Large Language Model",include,,include,,include,,兩個 AI 一致，作者採用
+R0315,Impact of LLM Scale and Quantization on Information Extraction from Clinical Text.,unsure,,include,,unsure,,作者裁定分歧
+R0364,Large-Language Models for data extraction from written kidney biopsy reports,include,,include,,include,,兩個 AI 一致，作者採用
+R0376,Large Language Models in Radiologic Numerical Tasks: A Thorough Evaluation and Error Analysis.,include,,include,,include,,兩個 AI 一致，作者採用
+R0378,Large Language Models to Extract Cancer Staging Data From Clinical Documentation at Scale.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0396,Leveraging Large Language Models with Sequential Prompting to Extract Eye Examination Findings from Free-Text Ophthalmology Notes.,unsure,,include,,include,,作者裁定分歧
+R0433,Modernization of a Historical Prostate Cancer Registry using Artificial Intelligence: A Tale of Two Large Language Models.,unsure,,exclude,X4,exclude,X4,作者裁定分歧
+R0450,Note-Level Phenotyping of Multiple-Sclerosis Notes by a Large Language Model Achieves near Human-Level Agreement,exclude,X4,unsure,,unsure,,作者裁定分歧
+R0452,OHCA-EXTRACT: Evaluating the Accuracy of a Large Language Model Pipeline for Out-of-Hospital Cardiac Arrest Case Identification and Utstein Variable Extraction.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0485,Protocol-constrained AI enhances tacrolimus dosing accuracy in kidney transplant care.,exclude,X4,exclude,X4,exclude,X4,兩個 AI 一致，作者採用
+R0490,RadAnnotate: Large Language Models for Efficient and Reliable Radiology Report Annotation.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0494,RAVEN: An open-source assessment framework for automated entity extraction in structured radiology reporting,include,,include,,include,,兩個 AI 一致，作者採用
+R0556,"Thesis Proposal: Stability-Aware, Evidence-Grounded Knowledge Graph for Substance Use Disorders and Social Determinants of Health",exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R0597,A comparative performance analysis of regular expressions and a large language model-based approach to extract the BI-RADS score from radiological reports.,unsure,,include,,include,,作者裁定分歧
+R0732,Demystifying Mental Health Reports Through an LLM-based Approach,exclude,X6,exclude,X6,exclude,X6,兩個 AI 一致，作者採用
+R0753,"Dynamic few-shot prompting for clinical note section classification using lightweight, open-source large language models.",exclude,X6,unsure,,exclude,X6,作者裁定分歧
+R0777,Erratum: EHRchitect: An open-source software tool for medical event sequences data extraction from Electronic Health Records - CORRIGENDUM.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R0809,Generative-AI-Based Approaches for Information Extraction from Clinical Notes: A Scoping Review.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R0814,Guardians of the data: NER and LLMs for effective medical record anonymization in Brazilian Portuguese.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R0860,Knowledge Graph-Enhanced Deep Learning Model (H-SYSTEM) for Hypertensive Intracerebral Hemorrhage: Model Development and Validation.,exclude,X6,exclude,X3,exclude,X6,兩個 AI 一致，作者採用
+R0862,Large Language Model and Knowledge Graph-Driven AJCC Staging of Prostate Cancer Using Pathology Reports.,exclude,X4,include,,include,,作者裁定分歧
+R0881,Large Language Models for Sentiment Analysis in Healthcare: A Systematic Review Protocol,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R0897,Leveraging large language models to mimic domain expert labeling in unstructured text-based electronic healthcare records in non-english languages.,unsure,,exclude,X4,exclude,X4,作者裁定分歧
+R0933,Multimodal Graph Convolutional Networks for Patient Survival Analysis,exclude,X6,exclude,X6,exclude,X6,兩個 AI 一致，作者採用
+R0937,Natural language processing techniques applied to the electronic health record in clinical research and practice - an introduction to methodologies.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R0985,Semantic Similarity in Radiology Reports via LLMs and NER,unsure,,exclude,X6,exclude,X6,作者裁定分歧
+R0992,Software Application Profile: T-Rx: A toolbox for reproducible processing of prescriptions (Rx) stored in electronic health record databases,exclude,X3,exclude,X3,exclude,X3,兩個 AI 一致，作者採用
+R1019,Towards scalable and cross-lingual specialist language models for oncology.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R1036,Utilizing large language models for detecting hospital-acquired conditions: an empirical study on pulmonary embolism.,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R1071,Advancing rheumatology with natural language processing: insights and prospects from a systematic review.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R1107,ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes,unsure,,include,,include,,作者裁定分歧
+R1134,Emerging applications of NLP and large language models in gastroenterology and hepatology: a systematic review.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R1155,Exploring Offline Large Language Models for Clinical Information Extraction: A Study of Renal Histopathological Reports of Lupus Nephritis Patients.,include,,include,,include,,兩個 AI 一致，作者採用
+R1158,Extracting Critical Information from Unstructured Clinicians' Notes Data to Identify Dementia Severity Using a Rule-Based Approach: Feasibility Study.,exclude,X3,exclude,X3,exclude,X3,兩個 AI 一致，作者採用
+R1203,Large Language Models for Biomedical Knowledge Graph Construction: Information extraction from EMR notes,unsure,,unsure,,unsure,,兩個 AI 一致，作者採用
+R1250,Privacy-preserving large language models for structured medical information retrieval,include,,include,,include,,兩個 AI 一致，作者採用
+R1257,Re-SciBERT: An Entity-Enriched Language Model to Enhance Biomedical Relation Extraction,exclude,X3,exclude,X3,exclude,X3,兩個 AI 一致，作者採用
+R1290,Using Large Language Models to Extract Core Injury Information From Emergency Department Notes.,include,,include,,include,,兩個 AI 一致，作者採用
+R1300,Zero-shot learning to extract assessment criteria and medical services from the preventive healthcare guidelines using large language models.,exclude,X5,exclude,X5,exclude,X5,兩個 AI 一致，作者採用
+R1312,Automated HL7v2 LRI informatics framework for streamlining genomics-EHR data integration.,exclude,X3,exclude,X3,exclude,X3,兩個 AI 一致，作者採用
+R1315,Challenges of Integrating LLMs Like ChatGPT with Enterprise Software and Solving it with Object Messaging and Intelligent Objects as a New Software Design Paradigm,exclude,X1,exclude,X5,exclude,X1,兩個 AI 一致，作者採用
+R1339,Harnessing the Power of Large Language Models (LLMs) for Electronic Health Records (EHRs) Optimization.,exclude,X1,exclude,X1,exclude,X1,兩個 AI 一致，作者採用
+R1341,Healthcare Data Summarization via Medical Entity Recognition and Generative AI,unsure,,exclude,X6,exclude,X6,作者裁定分歧

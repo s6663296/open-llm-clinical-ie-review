@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1251,,,,Private Synthetic Data Generation for Mixed Type Datasets,exclude,X5,合成資料生成，資料為 Yelp 評論與藥物副作用資料集,Yelp reviews and drug side-effects datasets
+R1252,,,,Prompt-Guided Generation of Structured Chest X-Ray Report Using a Pre-trained LLM,exclude,X6,由胸部 X 光影像生成結構化報告，屬報告生成,Medical report generation
+R1253,,,,Proximal Causal Inference With Text Data,exclude,X6,以開源 LLM 零樣本預測做因果推論代理變數，非資訊抽取,proximal causal inference; zero-shot prediction
+R1254,,,,QLoRA-Based Fine-Tuning of LLMs on Multiple Medical Reasoning Tasks to Enhance their Comprehension of Clinical Notes,include,,以 QLoRA 微調 Mistral、Llama 於臨床筆記多任務（含 NER、關係抽取）並量化評估,"Mistral-2 (7B), Llama-3 (8B), and Llama-2 (13B); Relation Extraction; Named Entity Recognition"
+R1255,,,,RadLink: Linking Clinical Entities from Radiology Reports,exclude,X3,放射報告實體正規化基準，以形態與語意比對方法，未使用 LLM,morphological and semantic matching approaches
+R1256,,,,"RASLAN 2024 - 18th Workshop on Recent Advances in Slavonic Natural Language Processing, Proceedings",exclude,X1,研討會論文集目錄,The proceedings contain 15 papers
+R1257,,,,Re-SciBERT: An Entity-Enriched Language Model to Enhance Biomedical Relation Extraction,exclude,X3,僅用 SciBERT 改良模型,modified SciBERT architecture
+R1258,,,,Representation Learning of Structured Data for Medical Foundation Models,exclude,X5,處理結構化醫療代碼的基礎模型,structured medical codes
+R1259,,,,Research on Intelligent Diagnosis Integrating Disease Subgraph and Large Language Model,exclude,X6,以 LLM 與知識圖譜做疾病預測／診斷,intelligent diagnosis; disease prediction
+R1260,,,,Research on real-world knowledge mining and knowledge graph completion (IV): construction of a real-world data annotation platform and exploration of automatic extraction method based on pre-trained language models; [面向真实世界的知识挖掘与知识图谱补全 研究（四）：真实世界数据标注平台搭建及 基于预训练语言模型的自动化抽取方法探索],exclude,X4,LLM 僅用 GPT-3.5，其餘為 BERT／RoBERTa,RAG combined with GPT-3.5; BERT and RoBERTa models
+R1261,,,,Research on the Entity Relationship Extraction Method of Large Model Chinese Electronic Medical Record With Low-Moment Features,include,,ChatGLM2-6B 以 QLoRA 微調做中文電子病歷實體關係抽取（量化指標需全文確認）,ChatGLM2-6B; Chinese electronic medical record entity relationship extraction
+R1262,,,,Reshaping free-text radiology notes into structured reports with generative question answering transformers.,exclude,X4,主模型為 IT5（220M，非 LLM），LLM 僅比較 GPT-3.5,"IT5, 220 M; GPT-3.5"
+R1263,,,,Rethinking Human Abstraction as the Gold Standard,unsure,,無摘要，僅標題無法判斷研究類型,Rethinking Human Abstraction as the Gold Standard
+R1264,,,,Retrieval Augmented Generation Enabled Generative Pre-Trained Transformer 4 (GPT-4) Performance for Clinical Trial Screening.,exclude,X4,僅用 GPT-4 做臨床試驗篩選,GPT-4
+R1265,,,,Scalable information extraction from free text electronic health records using large language models,include,,八個開源 LLM 從 MGB 臨床筆記抽取 SDoH，與人工標註比較,eight advanced open-source LLMs; social determinants of health (SDoH)
+R1266,,,,Scaling text de-identification using locally augmented ensembles,unsure,,去識別化（PHI 偵測）比較 ensemble 與 LLM 提示法，LLM 未說明是否開源,LLM based prompt engineering solutions; 2014 i2b2
+R1267,,,,Semantic grounding of LLMs using knowledge graphs for query reformulation in medical information retrieval,exclude,X6,醫療文件檢索的查詢改寫，非資訊抽取,query refinement in medical document retrieval
+R1268,,,,"SEPLN-P 2024 - Poster Proceedings of the 40th Annual Conference of the Spanish Association for Natural Language Processing 2024, co-located with the 40th International Conference of the Spanish Society for Natural Language Processing, SEPLN 2024",exclude,X1,研討會海報論文集目錄,The proceedings contain 17 papers
+R1269,,,,SoftTiger: A Clinical Foundation Model for Healthcare Workflows,unsure,,開源 13B／70B 臨床 LLM 將筆記結構化，但評估為盲測成對比較，是否有參考標準需確認,structuring clinical notes into clinical data; blind pairwise evaluation; 13 billion and 70 billion parameters
+R1270,,,,Structured Extraction of Real World Medical Knowledge using LLMs for Summarization and Search,unsure,,以 LLM 從門診 EHR 抽取實體建知識圖譜，模型與評估方式未明,LLM-based entity extraction; ambulatory care EHR
+R1271,,,,Structuring medication signeturs as a language regression task: comparison of zero- and few-shot GPT with fine-tuned models.,exclude,X4,LLM 僅用 GPT-3.5／GPT-4，其餘為 BERT,"GPT-3.5 and GPT-4; ClinicalBERT, BlueBERT"
+R1272,,,,Summarizing Clinical Notes using LLMs for ICU Bounceback and Length-of-Stay Prediction,exclude,X6,以 LLM 摘要臨床筆記做 ICU 再入院與住院天數預測,Summarizing Clinical Notes; Length-of-Stay Prediction
+R1273,,,,Synthetic Data Distillation Enables the Extraction of Clinical Information at Scale,include,,以 Llama-3.1 蒸餾微調，於 i2b2 2018 與真實臨床筆記評估抽取,Llama-3.1-8B-Instruct; i2b2 2018 Clinical Trial Eligibility Challenge
+R1274,,,,"TAXN: Translate Align Extract Normalize, a Multilingual Extraction Tool for Clinical Texts.",exclude,X5,評估語料為 70 篇法文文章，非病歷文本,corpus of 70 articles in French
+R1275,,,,TCGA-Reports: A machine-readable pathology report resource for benchmarking text-based AI models.,exclude,X6,病理報告資料集，示範為癌別文件分類,cancer-type classification

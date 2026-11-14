@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0301,,,,Hierarchical prompting with reasoning large language models for immune checkpoint inhibitor-associated myocarditis evidence extraction pilot study.,unsure,,推理型 LLM 自臨床筆記抽取實體與屬性並報 F1，但未列模型，無法判斷是否開源,reasoning LLM; F1 score of 0.6332
+R0302,,,,High-Performance Prompting for LLM Extraction of Compression Fracture Findings from Radiology Reports.,include,,Llama 3.1 70B／8B、Vicuna 13B 於放射報告抽取壓縮性骨折，報 F1,Llama 3.1 70B; 637 anonymized reports
+R0303,,,,HiRMD: A System for Mortality Prediction via LLM-Based High-Risk Information Extraction and Diagnosis.,exclude,X6,LLM 輔助的院內死亡率預測，屬預測任務（X6）,mortality prediction
+R0304,,,,How large language models can be used for teamwork and communication in healthcare settings: A scoping review,exclude,X1,摘要自述為 scoping review（X1）,scoping review; PRISMA-ScR
+R0305,,,,How Low Can Medical Llms Go? an Empirical Study of Low-Bit Quantization,unsure,,醫療 LLM 低位元量化於醫療 NLP 基準，任務含 QA、摘要，是否含臨床文本抽取不明,low-bit quantization; medical natural language processing (NLP) benchmarks
+R0306,,,,Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events,unsure,,RAG 多代理 LLM 自臨床筆記偵測皮膚 irAE 並報 F1，未列模型，需看全文,clinical notes; F1 = 0.88
+R0307,,,,"Human-Level Extraction of Modified Rankin Scale Scores from Real-World Neurosurgical Clinical Notes Using a Locally Deployed, Quantized Large Language Model",include,,Qwen3-32B 4-bit 本地部署，自神經外科臨床信函抽取 mRS，與參考標準比較 QWK,Qwen3-32B; 103 authentic clinical letters
+R0308,,,,Hybrid AI for Clinical Prediction: Combining LLM-Derived Features with ML for Explainable Diabetes Risk Assessment,exclude,X4,LLM 僅用專有 Gemini，且為結構化資料之預測（X4）,proprietary LLM was used
+R0309,,,,Hybrid lexical-semantic retrieval over SNOMED CT: combining two retrieval paradigms to facilitate clinical data entry,unsure,,SNOMED CT 檢索與連結系統，僅以未列名本地 LLM 做正規化與實體抽取，任務偏編碼，需看全文,local LLM for query normalization and entity extraction
+R0310,,,,Hybrid NLP-LLM Pharmacologic Information Extraction from Unstructured Clinical Notes,include,,Llama 3.3 於 500 份 MIMIC-IV 紀錄精煉藥物抽取，報 precision／recall／F1,Llama 3.3; 500 de-identified MIMIC-IV patient records
+R0311,,,,ICD-10 Neoplasm Location Using Text Classification Models in Spanish Electronic Health Records,exclude,X3,僅用傳統 ML、RNN 與 RoBERTa 類 Transformer，未用 LLM（X3）,traditional machine learning (ML); RoBERTa-Base-Biomed
+R0312,,,,Identifying Pregnancies in Population-Based Data Sources: Development and Application of the ConcePTION Pregnancy Algorithm.,exclude,X3,以規則與隨機森林演算法辨識妊娠，未用 LLM（X3）,random forest model
+R0313,,,,Identifying pregnancies in routinely collected health data: a scoping review of methods.,exclude,X1,摘要自述為 scoping review（X1）,scoping review; PRISMA-ScR
+R0314,,,,Identifying Reasons for ACEI/ARB Non-Use in CKD Using Scalable Clinical NLP with Schema-Guided LLM Augmentation,unsure,,LLM 僅用於生成合成訓練資料，下游模型未明，是否使用 LLM 抽取需看全文,"schema-guided large language model prompting; 1,025 manually annotated notes"
+R0315,,,,Impact of LLM Scale and Quantization on Information Extraction from Clinical Text.,include,,Qwen3 與 DeepSeek-R1（0.6B–70B）量化模型於 105 份神經外科病歷分類 mRS，評估誤差,Qwen3 and DeepSeek-R1; 105 neurosurgery patient notes
+R0316,,,,Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Pilot Study.,include,,五個單 GPU 開源 LLM 自乳房攝影報告抽取 CDE，報準確度與 micro-F1,five different open-source LLMs; micro-F1
+R0317,,,,Implicit Framing in Obstetric Counseling Notes: A Grounded LLM Pipeline on a VBAC-Eligible Cohort,unsure,,零樣本 LLM 對產科筆記做框架分類與納入條件抽取，未列模型，主要為分析性研究，需看全文,"zero-shot LLM framework; 2,024 obstetric history and physical narratives"
+R0318,,,,Improving Clinical Note De-identification via Post-NER Verification and Candidate Expansion,unsure,,去識別化（PHI 抽取）框架，驗證迴圈是否使用 LLM 及其模型未說明,i2b2 2014 benchmark; entity-level F1
+R0319,,,,Improving Health Literacy through Lay Summarization of Radiological Reports: An Evaluation of BioNER and Retrieval-Augmented Generation,exclude,X6,病歷放射報告白話摘要生成，屬摘要任務（X6）,lay-summary generation
+R0320,,,,Improving Trauma Triage Accuracy with Large Language Models: A Comparison to Human Expert Decisions.,exclude,X6,創傷分流（預測／決策）任務，非資訊抽取（X6）,trauma triage
+R0321,,,,"Influence of structured output constraints on GPT-5-Thinking, Gemini 2.5 Pro, and open-weight LLMs for radiology protocol selection.",unsure,,開源模型（Qwen3、gpt-oss、medgemma）於放射檢查申請單的模態、部位等分類，任務介於抽取與推論，需看全文,medgemma-27b-it; 100 RRFs
+R0322,,,,Information extraction from clinical notes: are we ready to switch to large language models?,include,,指令微調 LLaMA-2／3 於臨床筆記 NER 與 RE，與 BERT 比較報 F1,LLaMA-3-70B; 1588 clinical notes
+R0323,,,,Integrating Fine-Tuning and Retrieval-Augmented Generation for Healthcare AI Systems: A Scoping Review,exclude,X1,摘要自述為 scoping review（X1）,scoping review
+R0324,,,,Integrating Generative AI into Nomograms for Breast Cancer Nodal Risk Predictions,exclude,X4,僅用 OpenAI 閉源模型（o1、GPT-4o）（X4）,OpenAI’s large language models
+R0325,,,,Integrating GPT-4o Into Data Mining in Neurosurgery: Feasibility and Proof-of-Concept Study.,exclude,X4,僅用 GPT-4o 閉源模型（X4）,GPT-4o

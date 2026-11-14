@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0176,,,,Construction and application of influenza knowledge graph based on outpatient medical records; [基于门诊病历的流行性感冒知识图谱构建与应用研究],unsure,,比較 2 個 LLM 與深度學習模型於門診病歷實體抽取，但未列 LLM 名稱，無法判斷是否開源。,2 large language models; outpatient medical records; entity extraction
+R0177,,,,Construction and clinical application exploration of an artificial intelligence-based high-quality lung cancer surgery dataset; [基于人工智能的肺癌外科高质量数据集构建与临床应用],unsure,,以未具名 LLM 抽取肺癌手術病歷與影像報告的結構化資料，未明確報告抽取效能指標，需全文確認。,unstructured clinical narratives; imaging reports; Large language model (LLM)
+R0178,,,,Context-Aware AI System for Health Report Interpretation Using Large Language Models,exclude,X6,主要任務是將醫療報告簡化解釋給病患（摘要／生成），非資訊抽取研究。,simplified and easy to understand explanations; summarized descriptions
+R0179,,,,Context-Free Grammar-Guided Generation of FHIR Resources Using Large Language Models.,unsure,,以 CFG 引導 LLM 生成 FHIR 資源，模型與輸入文本來源（是否真實病歷）不明，評估為格式有效性。,Generation of FHIR Resources; 17 test cases
+R0180,,,,Converting unstructured cardiac catheterization and echocardiography reports into structured data using transformer-based language models.,exclude,X3,只使用 BioClinicalBERT 與 BART-Large-CNN，均非 ≥1B 的 LLM。,BioclinicalBERT and BART-Large-CNN
+R0181,,,,COPE: Chain-of-Thought Prediction Engine for open-source large language model-based stroke outcome prediction from clinical notes.,exclude,X6,以 LLaMA-3-8B 預測中風後 90 天 mRS 結局，屬超出文本的預測任務。,predicting 90-day functional outcomes; LLaMA-3-8B
+R0182,,,,Cost-effectiveness analysis of resective epilepsy surgery in drug-resistant patients: an artificial intelligence data modeling.,include,,以 Mistral 24B 從癲癇手術病歷抽取手術結果，與前瞻資料庫比較並報告準確率。,Mistral 24B; retrieved from the EHR; 91.2% accuracy
+R0183,,,,CUI-Curate: A Framework for Automated Clinical Concept Selection from the Unified Medical Language System.,exclude,X4,只使用 GPT-5 自 UMLS 產生概念集，閉源且非臨床文本。,GPT-5
+R0184,,,,Custom Transformer-Based Domain-Specific Language Model for Public Health Education,exclude,X6,醫療 LLM 開發藍圖，非資訊抽取任務且無實際量化結果。,"blueprint for 'Medi GPT,'"
+R0185,,,,Data augmentation strategies in transfer learning for large language models for enhancing clinical text analysis,exclude,X5,處理對象為臨床研究文章，非病患照護文本。,clinical research articles
+R0186,,,,Data Extraction From Oncology Imaging Reports by Large Language Models: A Comparative Accuracy Study.,include,,五個本地 LLM（llama3.3:70b、qwen3:32b 等）自德文影像報告抽取轉移狀態與治療反應，報告準確率。,llama3.3:70b; German radiology reports; metastasis status
+R0187,,,,Data governance framework for the implementation of automated healthcare-associated infection surveillance using large language models: Privacy-by-design with open-source de-identification pipeline.,exclude,X7,LLM 院內感染監測的治理框架，基準測試仍在進行中，無量化評估結果。,Final LLM benchmarking and surveillance-performance evaluation remain ongoing
+R0188,,,,Data mining in pediatric radiology in the era of artificial intelligence.,exclude,X1,兒科放射資料探勘的回顧文章。,This review
+R0189,,,,"Data Science Education for Residents, Researchers, and Students in Psychiatry and Psychology: Program Development and Evaluation Study.",exclude,X3,NLP 教育工作坊，使用標準 NLP 技術，未使用 LLM，且非抽取效能研究。,virtual workshop; standard NLP techniques
+R0190,,,,DataCastle: A Pragmatic Approach for Research and Real-World Data Management.,exclude,X3,研究資料管理平台，未使用 LLM。,modular open-source platform
+R0191,,,,Dataset-Aware Prompting for Requirements-to-Code Traceability Link Recovery,exclude,X5,軟體工程需求與程式碼追溯，非臨床文本。,Requirements-to-Code Traceability
+R0192,,,,Dataset of anonymized clinical events and notes from obstetric electronic health records for NLP.,exclude,X3,西班牙文產科病歷資料集描述論文，未使用 LLM 進行抽取評估。,Spanish-language dataset
+R0193,,,,De-Identification of Electronic Health Records Using Deep Learning and Transformers,unsure,,土耳其病歷去識別化（PHI 偵測）比較六個微調的 transformer「LLM」，未列模型名稱，可能為 BERT 類，需確認。,six fine-tuned pre-trained LLMs; PHI detection
+R0194,,,,Deep Learning-Driven Adverse Drug Reaction Surveillance Using Online Health Data,exclude,X1,ADR 偵測深度學習方法的概述性回顧，資料來源為社群媒體等。,social media-based ADR detection
+R0195,,,,Deep Learning for Early Prediction of Adverse Events in Intensive Care Units Using Electronic Health Records: A Methodological Review,exclude,X1,ICU 不良事件預測的方法學回顧。,Methodological Review
+R0196,,,,Deep Learning in Medical Speech to Text: Methods and Challenges,exclude,X1,醫療語音轉文字的系統性回顧。,A systematic review of 31 studies
+R0197,,,,Deep reflective reasoning in interdependence constrained structured data extraction from clinical notes for digital health,unsure,,LLM agent 自病理文本抽取結構化變數並報告 F1，但未列模型名稱，無法判斷是否開源。,Structured Data Extraction from Clinical Notes; Large Language Model (LLM)-based extraction pipelines
+R0198,,,,Dense Retrieval for Electronic Health Record With Knowledge Injection and Synthetic Data.,exclude,X6,病歷密集檢索模型，屬檢索任務，非資訊抽取。,dense retrieval models specifically tailored for EHR retrieval
+R0199,,,,"Deployment and Evaluation of an EHR-integrated, Large Language Model-Powered Tool to Triage Surgical Patients",exclude,X6,LLM 判斷手術病患是否適合共同照護（分診分類），屬文件層級分類。,triage tool; categorized patients as appropriate
+R0200,,,,Deriving wisdom from data: The value and continued rationale for structured data in the era of artificial intelligence-driven oncology care.,exclude,X1,結構化資料價值的觀點文章。,This article outlines a strategy

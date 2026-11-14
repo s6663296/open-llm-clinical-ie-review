@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0601,,,,A computational approach to predicting principal discharge diagnoses for enhanced morbidity surveillance,exclude,X4,唯一生成式 LLM 為 GPT-3.5 Turbo（另用 BERT），且任務為出院主診斷預測／編碼。,GPT-3.5 Turbo; predicting specific discharge diagnoses
+R0602,,,,A Context Adaptive Instruction Tuning Framework for Diverse Clinical NLP Tasks,exclude,X6,指令微調用於醫療問答、診斷與臨床推理，非資訊抽取。,"Medical Question Answering, Clinical Diagnosis, and Clinical Reasoning"
+R0603,,,,A Data-Driven Approach to Predicting and Visualizing Disease Progression in Hospitalized Patients,exclude,X6,從病歷預測疾病嚴重度軌跡，屬預測任務。,predict disease severity
+R0604,,,,A foundation systematic review of natural language processing applied to gastroenterology & hepatology,exclude,X1,系統性回顧。,systematic review
+R0605,,,,A Hybrid Approach to the Recognition of Sensitive Health Information: LLM and Regular Expressions,unsure,,以 Pythia 結合正規表達式辨識澳洲病歷中的敏感健康資訊，但 Pythia 參數量不明，量化結果描述不足。,Pythia language model; Sensitive Health Information (SHI)
+R0606,,,,A Knowledge-Driven Approach for Enhancing Chronic Condition Accessibility with Large Language Models and Semantic Search,exclude,X6,慢性病衛教聊天機器人，屬問答任務。,specialized chatbot; answer most medical queries
+R0607,,,,A Large Language Model Based Pipeline for Review of Systems Entity Recognition from Clinical Notes,include,,以 llama3.1:8b、gemma3:27b 等四個開源 LLM 從一般內科病歷抽取 ROS 實體與否定狀態，報告 F1。,4 open-source LLM models; Review of Systems (ROS) entities; F1 score
+R0608,,,,A Large Language Model to Detect Negated Expressions in Radiology Reports.,exclude,X3,僅比較 medspaCy 與 CAN-BERT，未使用 LLM。,medspaCy; CAN-BERT
+R0609,,,,A Multi-layered Large Language Model Framework for Disease Prediction,exclude,X5,阿拉伯文社群媒體／線上健康平台貼文，非臨床文本。,social media and online health platforms
+R0610,,,,A Multi-Task Knowledge Extraction Method for Traditional Chinese Medicine Ancient Books Integrating Chain-of-Thought; [融合思维链的中医药古籍多任务知识抽取方法研究],exclude,X5,中醫古籍知識抽取，非病患照護文本（且可能為中文論文）。,Traditional Chinese Medicine Ancient Books; Shang Han Lun
+R0611,,,,A Multimodal Pipeline for Clinical Data Extraction: Applying Vision-Language Models to Scans of Transfusion Reaction Reports.,exclude,X5,從掃描表單勾選框抽取資料，屬結構化表單而非自由文本。,checkbox data from scanned documents
+R0612,,,,A Review of Applying Large Language Models in Healthcare,exclude,X1,回顧文章。,A Review of Applying Large Language Models in Healthcare
+R0613,,,,"A Review of Large Language Models in Medical Education, Clinical Decision Support, and Healthcare Administration.",exclude,X1,文獻回顧。,comprehensive literature review
+R0614,,,,A Robust BERT-Based Deep Learning Model for Automated Cancer Type Extraction from Unstructured Pathology Reports,include,,從病理報告抽取癌症類型，以 Mistral 7B 作為比較對象並報告 exact match。,Mistral 7B; Cancer Type Extraction from Unstructured Pathology Reports; exact match
+R0615,,,,A Scalable Method for Validated Data Extraction from Electronic Health Records with Large Language Models,unsure,,LLM 從腫瘤病歷做 NER／關係抽取並報告 F1，但未列模型名稱。,schema-based named entity recognition and relation extraction; F1
+R0616,,,,"A software pipeline for medical information extraction with large language models, open source and suitable for oncology.",unsure,,本地隱私保護 LLM 抽取工具流程（protocol 型論文），於 TCGA 病理報告示範 TNM 抽取，模型與量化評估不明。,privacy-preserving LLMs; 100 pathology reports; TNM stage extraction
+R0617,,,,A Survey on AI-Driven Techniques for Automated Medical Diagnosis and Consultation System,exclude,X1,綜述文章。,This survey
+R0618,,,,A Survey on Current Trends and Recent Advances in Text Anonymization,exclude,X1,綜述文章。,This survey
+R0619,,,,Abbreviation Identification and Disambiguation in Real-World Clinical Narratives,exclude,X4,僅使用 GPT 模型做縮寫辨識與展開。,GPT model
+R0620,,,,Accelerating Medical Record Data Abstraction and Analysis in Muscular Dystrophy: Large Language Models and International Classification of Diseases Codes.,include,,以五個 LLM（最佳為 Llama 3-8b）從肌肉失養症病歷抽取四項特徵，與人工標註比較 F1。,Llama 3-8b; F1 scores; clinic notes
+R0621,,,,ACCELERATING PATHOLOGY REPORT DIGITIZATION: A MULTI-ENGINE OCR AND LLM FRAMEWORK FOR HEALTHCARE APPLICATIONS,unsure,,OCR 加 LLM 對病理報告做 NER 與關係抽取，未列模型名稱亦未報告量化結果。,Large Language Models (LLMs) for named entity recognition; pathology reports
+R0622,,,,Accuracy of Large Language Models to Identify Stroke Subtypes Within Unstructured Electronic Health Record Data.,exclude,X4,僅使用 GPT-4o。,GPT-4o
+R0623,,,,Active learning for extracting rare adverse events from electronic health records: A study in pediatric cardiology,exclude,X3,使用正規表達式與深度學習文本分類器，未使用 LLM。,deep learning text classifier
+R0624,,,,Adapting Generative Large Language Models for Information Extraction from Unstructured Electronic Health Records in Residential Aged Care: A Comparative Analysis of Training Approaches.,include,,以 Llama 3.1-8B 於澳洲長照護理紀錄做 NER，比較 zero/few-shot、PEFT、RAG，報告 F1。,Llama 3.1-8B; named entity recognition (NER) to nursing notes; F1 score
+R0625,,,,Advancements in Automated Methods for Research Data Extraction and Integration from Electronic Health Records,exclude,X1,回顧文章。,This review systematically explores

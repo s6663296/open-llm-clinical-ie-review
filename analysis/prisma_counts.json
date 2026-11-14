@@ -8,8 +8,8 @@
     "ACM": 11
   },
   "duplicates_removed": 743,
-  "screened": null,
-  "title_abstract_excluded": null,
+  "screened": 1389,
+  "title_abstract_excluded": 837,
   "full_text_not_retrieved": null,
   "full_text_assessed": null,
   "full_text_excluded_by_code": null,

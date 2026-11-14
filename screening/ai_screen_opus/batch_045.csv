@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1101,,,,Classification performance and reproducibility of GPT-4 omni for information extraction from veterinary electronic health records.,exclude,X4,僅使用 GPT-4o 與 GPT-3.5 Turbo，且為獸醫病歷,GPT-4 omni (GPT-4o) and GPT-3.5 Turbo
+R1102,,,,CLEF 2024 - Working Notes of the Conference and Labs of the Evaluation Forum,exclude,X1,研討會論文集導言,The proceedings contain 339 papers
+R1103,,,,Clinical concept annotation with contextual word embedding in active transfer learning environment.,exclude,X3,所稱 LLM 為 ClinicalBERT 等 BERT 類模型,"ClinicalBERT, DistilBERT, and SCIBERT"
+R1104,,,,Clinical Information Extraction with Large Language Models: A Case Study on Organ Procurement.,unsure,,以 LLM 從器官捐贈病歷抽取數值資料並報告準確率，未列模型名稱,extract numeric data from clinical text; hand-annotated set of 298 notes
+R1105,,,,Clinical Text Datasets for Medical Artificial Intelligence and Large Language Models - A Systematic Review.,exclude,X1,系統性回顧,systematic review
+R1106,,,,ClinicalGraph: An Applied Approach in Clinical EHR Knowledge Graph Generation for Optimized Clinical Decision Support System,exclude,X7,建構知識圖譜，僅報告節點與關係數量，無效能評估,knowledge graph; 999 entity nodes
+R1107,,,,ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes,include,,ClinicalMamba 與 clinical Llama 於縱向臨床病歷做 few-shot 資訊抽取比較,clinical Llama; longitudinal clinical notes information extraction
+R1108,,,,"ClinicalNLP 2024 - 6th Workshop on Clinical Natural Language Processing, Proceedings of the Workshop",exclude,X1,研討會論文集導言,The proceedings contain 67 papers
+R1109,,,,ClinicRealm: Re-evaluating Large Language Models with Conventional Machine Learning for Non-Generative Clinical Prediction Tasks,exclude,X6,臨床預測任務，非資訊抽取,Non-Generative Clinical Prediction Tasks
+R1110,,,,ClinLinker: Medical Entity Linking of Clinical Concept Mentions in Spanish,exclude,X3,使用 SapBERT bi-encoder／cross-encoder 做實體連結,SapBERT-based bi-encoder
+R1111,,,,Collaborative and privacy-enhancing workflows on a clinical data warehouse: an example developing natural language processing pipelines to detect medical conditions.,unsure,,以臨床預訓練語言模型做法文病歷實體限定，摘要未說明是否為生成式 ≥ 1B 模型,large language model pre-trained on millions of clinical notes; French clinical notes
+R1112,,,,Comparative Analysis of Large Language Models in Chinese Medical Named Entity Recognition.,include,,以 ChatGLM2-6B 等於真實中文電子病歷做 NER 並微調，報告效能,ChatGLM2-6B; real-world Chinese electronic medical record (EMR) dataset; Chinese BNER
+R1113,,,,Comparative Study of Large Language Models for Lung-RADS Classification in Portuguese CT Reports,include,,以 Llama-3 70B 等從葡萄牙文 CT 報告抽取肺結節特徵，報告 F1,Llama-3 70B; Portuguese CT Reports; F1-score
+R1114,,,,Constructing adverse event timelines for patients receiving CAR-T therapy using large language models,exclude,X4,僅使用 GPT-4,GPT-4 LLM
+R1115,,,,Construction of a knowledge graph of acupuncture famous doctors' medical cases based on information extraction from large language model,exclude,X7,建構針灸醫案知識圖譜，結果僅為節點關係數量，無效能評估,knowledge graph; 577 nodes
+R1116,,,,CORAL: Expert-Curated Oncology Reports to Advance Language Model Inference.,include,,FLAN-UL2（開放權重 20B）與 GPT 對真實腫瘤病歷做零樣本抽取，報告 EM F1,FLAN-UL2; progress notes; exact-match (EM) F1
+R1117,,,,Cross-Institutional Dental EHR Entity Extraction via Generative AI and Synthetic Notes,exclude,X4,僅以 GPT-4 生成合成資料，抽取模型為 RoBERTa,GPT-4 to generate synthetic notes; RoBERTa
+R1118,,,,Detection of suicidality from medical text using privacy-preserving large language models,include,,以 Llama-2 從精神科入院紀錄抽取自殺狀態，報告準確率與 F1,Llama-2; admission notes; F1 score
+R1119,,,,Developing Large Language Model-based Pipeline for Identification of Disease Diagnosis: A Case Study on Identifying Newly Diagnosed Multiple Myeloma and its Precursor Disease in Veterans Health Administration Electronic Health Records.,unsure,,Llama-3-8B 從 VHA 病歷辨識 MGUS／MM 診斷，屬病人層級表型判定，任務邊界模糊,Llama-3-8B; Identification of Disease Diagnosis
+R1120,,,,Development and validation of a novel AI framework using NLP with LLM integration for relevant clinical data extraction through automated chart review.,exclude,X4,LLM 部分僅使用 GPT4-Turbo,GPT4-Turbo
+R1121,,,,Development and validation of an open-source pipeline for automatic population of case report forms from electronic health records: a pediatric multi-center prospective study.,exclude,X3,從結構化 EHR 擷取檢驗與用藥值，未使用 LLM,open-source computational pipeline
+R1122,,,,Development of a Natural Language Processing (NLP) model to automatically extract clinical data from electronic health records: results from an Italian comprehensive stroke center.,exclude,X3,使用義大利文 BERT 模型,Bidirectional Encoder Representations from Transformers (BERT) model
+R1123,,,,DiagnoCare: A Diagnostic Analysis System for Electronic Medical Records Combining Medical Knowledge Graph and Large Language Model,exclude,X6,提供檢查建議、診斷分析與疾病預警，非資訊抽取,"diagnostic analyses, and disease warnings"
+R1124,,,,Diagnostic Prediction based on Medical Notes using Machine Learning,exclude,X3,傳統機器學習方法,Logistic Regression
+R1125,,,,Distilling Large Language Models for Efficient Clinical Information Extraction,exclude,X4,教師模型為 Gemini 與 OpenAI 模型，學生為 BERT,Gemini and OpenAI models

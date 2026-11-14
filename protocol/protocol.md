@@ -1,7 +1,7 @@
 # Protocol：開源 LLM 用於臨床病歷資訊抽取 — 系統性回顧
 
 > 依 **PRISMA-P 2015** 架構撰寫（Moher et al., Syst Rev 2015;4:1）。
-> 狀態：**v0.3（2026-11-14）定稿**，不註冊。
+> 狀態：**草案 v0.3（2026-11-14）**。本回顧為課堂報告，**不註冊**、不投稿。
 > 標記 `【提議】` 的段落是起草時代為擬定、使用者尚未確認的內容；標記 `【待填】` 的是只有使用者能提供的資訊。
 
 ---
@@ -13,20 +13,24 @@ Open-source large language models for information extraction from clinical free 
 （開源大型語言模型用於臨床自由文本資訊抽取：系統性回顧 protocol）
 
 ### 1.2 註冊（#2）
-- 不註冊（2026-11-14 使用者決定）；論文中不報告註冊資訊。
+- 未事先註冊（課堂報告，2026-11-14 決定）。報告中如實說明。
 
 ### 1.3 作者與貢獻（#3a、#3b）
-- 單一作者，論文不具名（2026-11-14 使用者決定）。
-- 貢獻（CRediT）：唯一作者負責 Conceptualization、Methodology、Investigation（檢索、篩選、萃取、偏倚評估）、Data curation、Formal analysis、Writing – original draft、Writing – review & editing。
-- AI 工具：檢索執行、去重腳本、篩選／萃取／偏倚評估的預判由 AI 助理（Claude）協助；所有納入／排除與萃取的最終判斷由作者做出（見 3.5）。
+| 作者 | Email |
+|---|---|
+| 王閎立 | hw453176@gmail.com |
+| 羅泓勛 | s6663296@gmail.com |
+| 顏丞瑋 | 無 |
+
+- 貢獻（CRediT）：`【待填：構思、檢索、篩選者 1、篩選者 2、仲裁者、萃取、分析、撰寫】`
 
 ### 1.4 修訂（#4）
-本 protocol 註冊後若有任何修改，記錄於本檔第 8 節「修訂紀錄」與 `ROADMAP.md` 決策紀錄，並於論文中依 PRISMA 2020 #24c 報告。
+本 protocol 若有任何修改，記錄於本檔第 8 節「修訂紀錄」與 `ROADMAP.md` 決策紀錄，並於報告中說明。
 
 ### 1.5 經費與利益衝突（#5a–c）
-- 經費來源：無。本研究未接受任何特定經費補助。
-- 贊助者角色：不適用。
-- 利益衝突：作者聲明無利益衝突。
+- 經費來源：`【待填，若無請寫「無」】`
+- 贊助者角色：`【待填】`
+- 利益衝突：`【待填】`
 
 ---
 
@@ -35,23 +39,7 @@ Open-source large language models for information extraction from clinical free 
 ### 2.1 研究背景（#6）
 臨床資訊大量存在於自由文本（病歷、出院摘要、影像與病理報告），把這些內容轉成結構化資料是臨床研究、品質監測與決策支援的前提。大型語言模型（LLM）在資訊抽取上展現出不需大量標註即可運作的能力，但商用閉源模型（如 GPT-4）需要把病歷送到外部伺服器，涉及隱私法規、成本與可重現性問題。開源／開放權重模型可在院內部署，是解決這些問題的主要選項。
 
-既有回顧與本回顧的差異（與 `manuscript/manuscript.md` 1.1 引言使用同一組文獻）：
-- 腫瘤學資訊抽取的 scoping review 納入 24 篇，75% 用 BERT 類模型、25% 用 ChatGPT [1]；臨床病歷生成式 AI 抽取的 scoping review 納入 16 篇，11 篇中 GPT-4 表現最好 [2]。
-- 臨床資訊抽取 LLM 的系統性文獻回顧整理 85 篇研究的任務、方法與資料集，但不限開放權重模型，也未以模型是否開源為分析軸 [3]。
-- 生成式 LLM 用於 EHR 的系統性回顧（檢索至 2024-11）納入 196 篇，GPT-4 與 ChatGPT 分別占 60.2%、57.7%，多數是臨床決策支援而非抽取 [4]。
-- 臨床登錄資料庫 [5] 與泌尿腫瘤 [6] 的領域回顧各納入 15、14 篇，前者只有 1 篇用生成式 LLM。
-- Sugihara 等人從效能、可重現性、成本、透明度、治理五個面向比較開源與閉源 LLM 在臨床與生醫資訊抽取的取捨 [7]；摘要未描述系統性檢索與篩選流程，範圍也包含生醫文獻、不限臨床文本。
-
-因此目前缺少一篇**以系統性方法、只聚焦開放權重 LLM、只看真實臨床自由文本**的資訊抽取回顧，也缺少對適配策略（prompting、LoRA、微調、量化、RAG）、研究內開源與閉源效能差距、本地部署與可重現性的系統彙整。既有回顧的檢索也大多早於 2025–2026 年 Llama 3、Qwen、Gemma 等開放權重模型普及的時期。
-
-參考文獻（[1]–[6] 同論文草稿；[7] 於 2026-11-14 由 Agent 以 Crossref／Europe PMC 核對書目。所有描述只依據摘要，`【待作者讀全文核實】`）：
-1. Chen D, Alnassar SA, Avison KE, Huang RS, Raman S. Large language model applications for health information extraction in oncology: scoping review. JMIR Cancer. 2025;11:e65984. doi:10.2196/65984
-2. Abdellaoui C, Redjdal A, Seroussi B. Generative-AI-based approaches for information extraction from clinical notes: a scoping review. Stud Health Technol Inform. 2025;328:193-197. doi:10.3233/SHTI250700
-3. Rodrigues T, Teixeira Lopes C. Harnessing large language models for clinical information extraction: a systematic literature review. ACM Trans Comput Healthcare. 2025;6(4):47. doi:10.1145/3744660
-4. Du X, Zhou Z, Wang Y, et al. Testing and evaluation of generative large language models in electronic health record applications: a systematic review. J Am Med Inform Assoc. 2026;33(3):743-753. doi:10.1093/jamia/ocaf233
-5. Liu L, Blake V, Barman M, et al. Using natural language processing to extract information from clinical text in electronic medical records for populating clinical registries: a systematic review. J Am Med Inform Assoc. 2026;33(2):484-499. doi:10.1093/jamia/ocaf176
-6. Greß J, Otto G, Sommer S, et al. Artificial intelligence applications for automated data extraction and secondary use of clinical information in uro-oncology: a systematic review. Eur Urol Open Sci. 2026;86:68-78. doi:10.1016/j.euros.2026.02.006
-7. Sugihara Y, Milosavljevic A, Jankovskaja S, Falk M. A review for navigating the trade-offs: evaluating open-source and proprietary large language models for clinical and biomedical information extraction. Front Digit Health. 2026;8:1778786. doi:10.3389/fdgth.2026.1778786
+`【待填：補上 2–3 篇既有回顧並說明本回顧與它們的差異 — 例如既有回顧未聚焦開源模型、未涵蓋 2024 年後的模型世代、或未系統比較 prompting 與微調。請由使用者提供實際文獻，Agent 不代為引用未經核實的文獻。】`
 
 ### 2.2 目的（#7）
 主要問題：開源／開放權重 LLM 在臨床自由文本資訊抽取任務上的使用方式與效能為何？
@@ -115,7 +103,7 @@ PICO：
 | arXiv | 資訊領域預印本 | arxiv.org（建議用 API，可重跑） |
 | medRxiv | 醫學預印本 | 經 Europe PMC 檢索（medRxiv 原生介面不支援巢狀布林） |
 
-補充來源：以 OpenAlex API 對所有納入文章做**後向**（參考文獻）與**前向**（被引用）引用追蹤，各執行一輪；以腳本執行（`scripts/`），記錄執行日期與筆數。追蹤到的紀錄與資料庫紀錄去重後，依 3.5 相同流程篩選，並在 PRISMA 流程圖「其他方法」欄位報告。
+補充來源：以 OpenAlex API 對所有納入文章做**後向**（參考文獻）與**前向**（被引用）引用追蹤，各執行一輪；以腳本執行（`scripts/`），記錄執行日期與筆數。追蹤到的紀錄與資料庫紀錄去重後，依相同標準兩人獨立篩選，並在 PRISMA 流程圖「其他方法」欄位報告。
 
 所有資料庫在**同一天**完成正式檢索，檢索日記錄於 `ROADMAP.md`「PRISMA 數字」。
 
@@ -223,8 +211,6 @@ AND submittedDate:[202201010000 TO 202612312359]
 - arXiv：144 筆；Europe PMC 預印本：147 筆，其中 medRxiv 110 筆。
 - Scopus、IEEE Xplore、ACM 需由使用者在網頁介面執行（檢索字串見 `scripts/queries/`）。
 
-**正式檢索結果（2026-11-14，`searches/formal_2026-11-14/`）**：六來源合計 2,132 筆，去重後 1,389 筆；驗證集 10/10 全部檢出（含只在 ACM 的 V05，見 `searches/formal_2026-11-14/validation_check.csv`）。IEEE 以單一 Command Search 執行，未拆分區塊 A。
-
 ### 3.5 研究紀錄管理（#11a–c）
 
 **資料管理（#11a）**
@@ -236,16 +222,16 @@ AND submittedDate:[202201010000 TO 202612312359]
 
 **篩選流程（#11b）**
 1. **AI 篩選**（2026-11-14 修訂）：標題／摘要階段由 LLM（Claude Sonnet，固定的判斷指引與排除代碼，逐筆閱讀標題與摘要）對全部紀錄給出 include／exclude／unsure、排除代碼、理由與摘要中逐字擷取的依據片語。
-2. **盲測驗證**：一位人工篩選者先在不看 AI 判斷的情況下，獨立判斷隨機 50 筆（校準樣本），計算人工與 AI 的 Cohen's κ 與 AI 的敏感度（以人工 include／unsure 為準）。
+2. **校準樣本**（2026-11-14 修訂）：隨機 50 筆由第二個 AI（Claude Agent）獨立初判，計算兩個 AI 之間的 Cohen's κ；分歧由作者裁定，作者並核對全部 50 筆。原規劃的人工盲測未執行。
 3. **人工複核**：同一位人工篩選者逐筆複核全部紀錄的 AI 判斷，確認或修正；人工決定為最終決定。人工或 AI 任一標 include 或 unsure 即進入全文篩選。報告人工修正 AI 判斷的比例。
-4. **全文篩選**（2026-11-14 修訂，比照標題／摘要階段）：LLM 讀全文依 3.1–3.2 給出 include／exclude、排除代碼、理由與原文頁碼；作者先在不看 AI 判斷的情況下獨立判斷隨機 20%（至少 20 篇）全文作為盲測樣本，再逐篇複核全部 AI 判斷。每篇排除文章記錄排除代碼。
-5. **一致性**：分別計算兩階段盲測樣本的人工–AI Cohen's κ、AI 敏感度，以及人工修正 AI 判斷的比例。
-6. **分歧與不確定**：本研究只有一位作者，無第二位篩選者與仲裁者；人工與 AI 不一致時以人工判斷為準，難以判斷者回到全文與 3.1–3.2 的判斷規則再審一次並記錄理由。
-7. 最終決定由人做；AI 使用的模型、指引、盲測一致性與人工修正率於論文方法與結果段揭露，並於限制段說明本研究為單一人工審查者＋AI，並非獨立雙人審查。
+3. **全文篩選**：兩人獨立依 3.1–3.2 判斷，排除者給代碼。
+4. **分歧**：先討論；無共識時由第三位仲裁者（`【待填】`）決定。
+5. **一致性**：分別計算兩階段的 Cohen's κ。
+6. 最終決定由人做；AI 篩選的模型、指引、盲測一致性與人工修正率於論文方法與結果段揭露，並於限制段說明人工複核並非獨立雙人篩選。全文篩選階段的作法另行決定（見 ROADMAP 待決事項）。
 
 **資料萃取流程（#11c）**
 - 使用預先設計的萃取表（`extraction/extraction.xlsx`），先以 3 篇試萃取並修訂欄位。
-- LLM 依萃取表預先萃取，每個數值附原文頁碼或表格編號；作者逐欄對照原文核對、修正（2026-11-14 修訂：原為「一人萃取、第二人核對」，因只有一位作者而修改）。記錄作者修正的欄位比例。
+- 一人萃取、第二人逐欄核對；每個數值記錄原文頁碼或表格編號。
 - 資料不清楚時，以 email 聯絡原作者一次，兩週未回覆則記為「未報告」。
 
 ### 3.6 萃取欄位（#12）
@@ -278,7 +264,7 @@ AND submittedDate:[202201010000 TO 202612312359]
 | 3. 模型與評估流程 | 測試集是否與 prompt 開發／微調資料分離；是否有資料洩漏風險（公開資料集可能已在預訓練語料中）；是否只報告最佳 prompt |
 | 4. 分析 | 指標定義是否清楚；是否報告變異（多次執行、信賴區間）；比較是否公平（同一資料、同一評估方式） |
 
-每個領域判為低／高／不明風險。LLM 先預評並附理由與原文頁碼，作者逐篇逐領域複核並做最終判斷（2026-11-14 修訂：原為兩人獨立評估，因只有一位作者而修改）。
+每個領域判為低／高／不明風險，兩人獨立評估，分歧以討論解決。
 
 ### 3.9 資料綜合（#15a–d）
 - **預設做敘述性綜合**，依 SWiM（Synthesis Without Meta-analysis）報告。研究間在資料集、任務、指標上的異質性預期很高，不做跨研究的統合分析（pooling）。
@@ -300,12 +286,12 @@ GRADE 是為介入效果設計的，不完全適用於本回顧的方法學問�
 
 | 階段 | 預計完成 |
 |---|---|
-| Protocol 定稿 | 2026-11-14（已完成） |
-| 檢索式試跑、驗證、正式檢索 | 2026-11-14（已完成） |
-| 去重與標題／摘要篩選 | 去重已完成（2026-11-14）；篩選 2026-12（預估） |
-| 全文篩選與引用追蹤 | 2027-01（預估） |
-| 萃取與品質評估 | 2027-02 至 2027-03（預估） |
-| 分析與撰寫 | 2027-04 至 2027-05（預估） |
+| Protocol 定稿 | `【待填】` |
+| 檢索式試跑、驗證、正式檢索 | `【待填】` |
+| 去重與標題／摘要篩選 | `【待填】` |
+| 全文篩選 | `【待填】` |
+| 萃取與品質評估 | `【待填】` |
+| 分析與撰寫 | `【待填】` |
 
 ---
 
@@ -314,7 +300,7 @@ GRADE 是為介入效果設計的，不完全適用於本回顧的方法學問�
 本研究只使用已發表文獻，不涉及病患資料，不需倫理審查。
 
 ## 6. 傳播
-結果將投稿至同儕審查期刊。完整檢索式、篩選紀錄、萃取表與分析腳本將列於論文附錄／補充資料。
+結果以課堂簡報發表，不投稿。
 
 ## 7. 已確認的提議事項（2026-11-14）
 
@@ -334,5 +320,5 @@ GRADE 是為介入效果設計的，不完全適用於本回顧的方法學問�
 | 2026-11-14 | 2.2、3.1、3.2、3.3、3.8 | 確認子問題、≥ 1B 門檻、排除僅合成文本、X6 範圍與判斷規則、改編 QUADAS-2、以 OpenAlex 做前向／後向引用追蹤。 | 註冊前定案。 |
 | 2026-11-14 | 3.3、3.4 | 正式檢索於 OSF 註冊前完成（六來源同日 2026-11-14）；arXiv 採同日稍早、檢索式相同之執行結果（後續重跑遭 API 限流）。 | 使用者決定當日執行；註冊仍於篩選開始前完成。 |
 | 2026-11-14 | 3.5 | 標題／摘要篩選由「兩位人工獨立篩選」改為「LLM 篩選＋一位人工複核全部紀錄」，並以 50 筆盲測樣本計算人工與 AI 一致性。 | 使用者決定（人力限制）；於 OSF 註冊前修訂。 |
-| 2026-11-14 | 1.3、1.5、3.3、3.5、3.8、4 | 確定為單一作者、無經費、無利益衝突。全文篩選、萃取核對、偏倚評估與引用追蹤篩選皆由「兩人獨立」改為「LLM 預判＋作者逐筆複核」；全文篩選另以隨機 20%（至少 20 篇）盲測計算人工–AI κ；刪除仲裁者。填入預估時程。 | 使用者決定（只有一位作者）；於 OSF 註冊前修訂。 |
-| 2026-11-14 | 1.2、1.3、4、6 | 不註冊 OSF；作者不具名；論文不報告註冊資訊。 | 使用者決定。 |
+| 2026-11-14 | 1.2、3.6、6 | 改為課堂報告：不註冊、不投稿；萃取限模型、任務、效能等部分欄位；不做偏倚風險與確信度評估。 | 使用者決定。 |
+| 2026-11-14 | 3.5 | 校準樣本由「人工盲測、計算人工 vs AI κ 與敏感度」改為「第二個 AI 初判、計算兩個 AI 間 κ，作者核對」。 | 使用者決定；50 筆實際由 Agent 初判，如實報告。 |

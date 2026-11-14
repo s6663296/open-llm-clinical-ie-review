@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0426,,,,"MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",exclude,X3,僅使用約 0.6B 參數的小型語言模型，低於 1B 門檻；輸入為口述。,Small Language Model (SLM) in the 0.6B-parameter range; radiologist dictation
+R0427,,,,"MedSummarize: OCR-Based Extraction, Anonymization, and RAG-Driven Simplification of Clinical Documents",exclude,X6,主要為文件摘要與簡化，NER 由 SciSpaCy 完成，LLM 用於摘要生成。,SciSpaCy; clinician summary; patient summary
+R0428,,,,Mind the data: Evaluating data quality sensitivity in medical LLMs,exclude,X5,評估結構化資料異常對診斷的影響，非臨床自由文本抽取。,structured data anomalies; diagnostic tasks
+R0429,,,,Mind the Evaluation Gap: Large Language Models for Structured Data Extraction from Radiology Reports,include,,評估 0.5B–72B 開源權重 LLM 從放射科醫師驗證的胸部 X 光報告抽取結構化標籤，比較微調與 ICL。,open-weight general and medical LLMs; chest X-ray (CXR) reports; fine-tuning
+R0430,,,,MINE: An Interactive Platform for Expert-Guided Medical Information Extraction.,unsure,,整合 LLM 的病歷抽取平台，報告 F 值，但未列 LLM 名稱。,LLM-based methods; smoking status; F-scores above 95%
+R0431,,,,MLB: A Scenario-Driven Benchmark for Evaluating Large Language Models in Clinical Applications,unsure,,中文臨床 LLM 基準，含 Kimi-K2 等開源模型與病歷資訊抽取子任務，但文本來源與抽取任務細節需全文確認。,Kimi-K2-Instruct; Medical Record Understanding; information extraction
+R0432,,,,"Modern generative large language models in epilepsy care: a scoping review of current applications, challenges, and future directions.",exclude,X1,範疇回顧。,scoping review
+R0433,,,,Modernization of a Historical Prostate Cancer Registry using Artificial Intelligence: A Tale of Two Large Language Models.,exclude,X4,只使用 Google Gemini 閉源模型。,Google Gemini Flash
+R0434,,,,MOMA: multi-expert framework with missing pattern awareness for rectal cancer neoadjuvant therapy,unsure,,LLM 用於結構化多模態病歷再做療效預測，未列模型且未見抽取效能評估。,structure multimodal medical records; predicting neoadjuvant therapy response
+R0435,,,,Multi-modal graph-aware pre-training for disease classification and cross-modal retrieval in chest radiology,exclude,X5,LLM 將疾病標籤轉為描述用於影像預訓練，非臨床自由文本抽取。,sparse disease labels; vision-language pre-training
+R0436,,,,"Multi-objective Decision-making Method for Crop Diseases and Pests Based on Multi-source Data Fusion of ""Point - Surface - Spatiotemporal"" Framework; [基于""点-面-时空""多源数据融合的作物病虫害多目标决策方法]",exclude,X5,作物病蟲害的植物電子病歷，非人類臨床文本。,plant electronic medical records; crop disease
+R0437,,,,Multilingual Evaluation of a Large Language Model-Based Primary Care Chatbot.,exclude,X4,只使用 GPT-4o 聊天機器人，且為合成病例對話。,GPT-4o; chatbot
+R0438,,,,Multilingual Evidence-Based Question-Answering for Stroke Discharge Summaries: Study of Cross-Lingual Heterogeneity in Clinical Reports.,unsure,,多語中風出院摘要的證據抽取與表單填寫，生成式模型未列名稱與參數量。,stroke discharge summaries; generative language models; Evidence Extraction
+R0439,,,,Multimodal Electronic Health Record Extraction and IoT-Based Patient Monitoring using Artificial Intelligence,unsure,,OCR 與生醫 NER 管線，LLM 僅用於驗證且未列名，僅 10 份病歷。,LLM-based validation; biomedical NER; 10 anonymized medical records
+R0440,,,,Multimodal large language models in brain tumor imaging: clinical applications and future perspectives; [Multimodale Large-Language-Modelle in der Hirntumorbildgebung: klinische Anwendungen und zukünftige Perspektiven],exclude,X1,回顧文章。,This review
+R0441,,,,Named Entity Recognition for Healthcare: A Comparative Survey,exclude,X1,綜述（survey）。,Comparative Survey
+R0442,,,,Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review.,exclude,X1,範疇回顧。,Scoping Review
+R0443,,,,Natural Language Processing in Healthcare: From Unstructured Data to Clinical Intelligence,exclude,X1,回顧文章。,This review
+R0444,,,,Natural Language Processing of Clinical Notes for Cancer Research and Patient Care Prior to Widespread Adoption of Generative AI: Scoping Review.,exclude,X1,範疇回顧。,Scoping Review
+R0445,,,,"Natural Language Understanding, Large Language Models and Application to Genetic Diseases and Healthcare",exclude,X1,書籍章節綜述。,this chapter
+R0446,,,,NERFlow: A Workflow-Based Subsystem of FIT4NER for LLM-Assisted Medical Named Entity Recognition,exclude,X5,量化評估使用 CRAFT 生醫文獻語料，非臨床文本。,CRAFT corpus
+R0447,,,,Neuro-Symbolic AI: Combining Neural and Symbolic AI for UK Syndromic Surveillance,exclude,X5,獸醫臨床敘述，非人類病患照護文本。,veterinary clinical narratives
+R0448,,,,New Large Language Models Outperform Older Models and Hallucinate Less in Operative Note Data Extraction.,unsure,,以兩個本地部署 LLM 從真實髖關節手術紀錄抽取變項並報告準確率，但未列模型名稱。,two locally hosted LLMs; operative notes; accuracy
+R0449,,,,Next-generation multicenter studies: using artificial intelligence to automatically process unstructured health records of patients with lung cancer across multiple institutions.,unsure,,以微調 LLM 從多中心真實病歷抽取 31 個變項並報告錯誤率與 F1，但未列模型名稱。,fine-tuned LLM; unstructured HRs; F1-score
+R0450,,,,Note-Level Phenotyping of Multiple-Sclerosis Notes by a Large Language Model Achieves near Human-Level Agreement,include,,比較 GPT-5.2 與 Llama-3.1 8B 從真實 MS 病歷判讀 17 類表型存在與否，報告 F1。,Llama-3.1 8B; neurology progress notes; macro-F1

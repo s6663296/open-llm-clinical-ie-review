@@ -1,0 +1,60 @@
+{
+  "n": 50,
+  "reference": "step1_blind50 decision (include/unsure = pass)",
+  "three_category": {
+    "n": 50,
+    "observed_agreement": 0.78,
+    "kappa": 0.6575342465753424,
+    "labels": [
+      "include",
+      "exclude",
+      "unsure"
+    ],
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        1,
+        20,
+        2
+      ],
+      [
+        4,
+        4,
+        10
+      ]
+    ]
+  },
+  "binary_pass_vs_exclude": {
+    "n": 50,
+    "observed_agreement": 0.86,
+    "kappa": 0.7191011235955056,
+    "labels": [
+      "pass",
+      "exclude"
+    ],
+    "confusion_matrix": [
+      [
+        23,
+        4
+      ],
+      [
+        3,
+        20
+      ]
+    ]
+  },
+  "ai_vs_human": {
+    "tp": 23,
+    "fn": 4,
+    "tn": 20,
+    "fp": 3,
+    "sensitivity": 0.8518518518518519,
+    "specificity": 0.8695652173913043
+  },
+  "disagreements": 11,
+  "gate_conflicts": 7
+}

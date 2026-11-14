@@ -1,0 +1,12 @@
+﻿record_id,title,human,human_code,human_note,ai,ai_code,ai_reason,gate_conflict
+R0315,Impact of LLM Scale and Quantization on Information Extraction from Clinical Text.,unsure,,Qwen3／DeepSeek 系列範圍含 0.6B；未分列達 1B 模型結果。,include,,Qwen3 與 DeepSeek-R1（0.6B–70B）量化模型於 105 份神經外科病歷分類 mRS，評估誤差,no
+R0396,Leveraging Large Language Models with Sequential Prompting to Extract Eye Examination Findings from Free-Text Ophthalmology Notes.,unsure,,本地 LLM 抽取眼科病歷發現；摘要未能確認開放模型與效能細節。,include,,以 Mistral Nemo 12B、Llama 3.1 8B/70B 從眼科自由文本筆記做 NER 並報告 F1,no
+R0433,Modernization of a Historical Prostate Cancer Registry using Artificial Intelligence: A Tale of Two Large Language Models.,unsure,,真實病理與 MRI 報告抽取，但摘要未列模型及量化結果。,exclude,X4,只使用 Google Gemini Flash 系列，為閉源模型,yes
+R0450,Note-Level Phenotyping of Multiple-Sclerosis Notes by a Large Language Model Achieves near Human-Level Agreement,exclude,X4,摘要指出主評估模型為閉源 GPT-5.2。,unsure,,主要評估 GPT-5.2，Llama-3.1 8B 為本地開源比較對象，任務為筆記層級（17 類）表型判斷，是否屬抽取需確認,yes
+R0597,A comparative performance analysis of regular expressions and a large language model-based approach to extract the BI-RADS score from radiological reports.,unsure,,BI-RADS 報告抽取比較，但摘要未明確列出開放 LLM 型號。,include,,以 Rombos-LLM-V2.6-Qwen-14b 從放射科報告抽取 BI-RADS 分數並與 199 筆人工標註比較準確率。,no
+R0753,"Dynamic few-shot prompting for clinical note section classification using lightweight, open-source large language models.",exclude,X6,任務為病歷章節分類，非欄位資訊抽取。,unsure,,以七個輕量開源 LLM 對臨床筆記段落做動態 few-shot 分類並報告 F1；段落標籤分類是否算資訊抽取需人工判斷。,yes
+R0862,Large Language Model and Knowledge Graph-Driven AJCC Staging of Prostate Cancer Using Pathology Reports.,exclude,X4,只提 GPT-4.1 從病理報告抽取。,include,,本地開源 Mistral-Small-3.2-24B 對前列腺病理報告抽取 16 個參數，報告準確率與 F1,yes
+R0897,Leveraging large language models to mimic domain expert labeling in unstructured text-based electronic healthcare records in non-english languages.,unsure,,非英語 EHR 分類研究，模型與任務是否為合格欄位抽取不清。,exclude,X4,只使用 GPT-3 text-davinci-003，為閉源模型（X4）。,yes
+R0985,Semantic Similarity in Radiology Reports via LLMs and NER,unsure,,初稿與定稿語意差異研究，抽取任務及模型／評估資訊不足。,exclude,X6,任務為比較初稿與終稿放射報告的語意相似度評分，非資訊抽取（X6）。,yes
+R1107,ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes,unsure,,ClinicalMamba 有 2.8B 版本，但摘要未充分說明抽取評估及權重公開情況。,include,,ClinicalMamba（2.8B 參數）於縱向臨床筆記的資訊抽取任務以少樣本評估並優於 GPT-4,no
+R1341,Healthcare Data Summarization via Medical Entity Recognition and Generative AI,unsure,,涉及 EHR 實體辨識與摘要，但模型及抽取評估結果不明。,exclude,X6,以 NER 與生成式 AI 產生病史摘要，屬摘要且無量化評估（X6）,yes

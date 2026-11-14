@@ -41,8 +41,8 @@
 | 23b | Discussion：證據的限制 | 4.2 | 🔄 |
 | 23c | Discussion：回顧過程的限制 | 4.3 | 🔄 |
 | 23d | Discussion：對實務、政策、研究的意涵 | 4.4 | 🔄 |
-| 24a | Registration：註冊名稱與編號 | 不報告（使用者決定） | — |
-| 24b | Protocol 取得處 | 不報告（使用者決定） | — |
+| 24a | Registration：註冊名稱與編號 | 5、2 | 🔄 |
+| 24b | Protocol 取得處 | 5 | 🔄 |
 | 24c | 與 protocol 的差異 | 2.12 | 🔄 |
 | 25 | Support：經費與贊助者角色 | 5 | 🔄 |
 | 26 | Competing interests | 5 | 🔄 |

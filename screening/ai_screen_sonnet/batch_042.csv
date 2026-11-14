@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1026,,,,TriMedPrompt: A unified prompting framework for realistic and layout-conformant clinical progress note synthesis.,exclude,X6,合成進展紀錄生成，屬病歷生成,synthetic progress notes
+R1027,,,,Understanding Uncertainty in Large Language Model Predictions of Early Death in Critically Ill Patients: A Conformal Prediction Approach.,exclude,X4,僅使用閉源 GPT-4o，且為死亡預測,GPT-4o
+R1028,,,,Use of a Novel Natural Language Processing Utility to Extract Structured Data From Free-Text Medical Notes.,exclude,X3,NoteLP 為規則式 NLP 工具，未使用 LLM,Rule-based NLP utilities such as NoteLP
+R1029,,,,Using Generative AI to Extract Structured Information from Free Text Pathology Reports.,exclude,X4,僅使用 ChatGPT 閉源模型,ChatGPT Large Language Model
+R1030,,,,Using large language models for enhanced fraud analysis and detection in blockchain based health insurance claims.,exclude,X6,健保詐欺偵測與區塊鏈，非資訊抽取,fraud detection
+R1031,,,,Using large language models for temporal relation extraction from pediatric clinical reports.,include,,Mistral 22B 等 LLM few-shot 從真實法文兒科報告抽取時序關係並報 F1,Mistral 22B; temporal relation extraction; 25 clinical reports
+R1032,,,,Using Large Language Models to Automate Data Extraction From Surgical Pathology Reports: Retrospective Cohort Study.,include,,本地開源 FastChat-T5 3B 從 84 份真實甲狀腺病理報告抽取組織學與分期資訊並報一致率,FastChat-T5 3B-parameter LLM; surgical pathology reports
+R1033,,,,Using large language models to extract information from pediatric clinical reports.,include,,九個商業與開源 LLM 從兒科臨床報告抽取結構化資料並報準確率,both commercial and open-source LLMs; Nine different LLMs; pediatric clinical reports
+R1034,,,,Using LLMs for Multilingual Clinical Entity Linking to ICD-10,exclude,X4,實體連結至 ICD-10 僅用 GPT-4.1 閉源模型,GPT-4.1
+R1035,,,,Using Synthetic Health Care Data to Leverage Large Language Models for Named Entity Recognition: Development and Validation Study.,unsure,,愛沙尼亞語病歷 NER，用 GPT-3.5／GPT-4 與未列名之本地 LLM，需確認本地模型是否開源且 ≥1B,a local LLM; real-world medical data
+R1036,,,,Utilizing large language models for detecting hospital-acquired conditions: an empirical study on pulmonary embolism.,unsure,,四個開源 LLM（Llama3、Mistral-7B、Gemma、Phi-3）於真實病歷偵測肺栓塞不良事件，任務偏病人層級偵測，邊界需看全文,"Four open-source LLMs (Llama3, Mistral-7B, Gemma, and Phi-3); discharge information extraction"
+R1037,,,,Utilizing large language models for gastroenterology research: a conceptual framework.,exclude,X6,腸胃科 LLM 概念性框架，非資訊抽取評估,conceptual framework; Hepatitis C treatment
+R1038,,,,Utilizing Large Language Models for Zero-Shot Medical Ontology Extension from Clinical Notes.,unsure,,零樣本框架自臨床筆記抽取醫療實體，未列模型也未見量化指標，需看全文,extract medical entities from clinical notes; zero-shot framework
+R1039,,,,Utilizing Universal Information Extraction based on Generative Large Language Model to mine online reviews for navigating online health consultation,exclude,X5,對象為社群平台線上評論,online reviews
+R1040,,,,Variability of Large Language Model in Extracting Clinical Information from Unstructured Medical Records of Bladder Cancer Patients,unsure,,Dolly、Vicuna、Llama-2 13B 自 EMR 抽取膀胱癌變數，主要指標為重複抽取一致性，是否對照參考標準需看全文,"Dolly-v2-12b, Vicuna-v1.3-13b, Llama-v2.0-13b; Fleiss' Kappa"
+R1041,,,,Weakly supervised language models for automated extraction of critical findings from radiology reports,unsure,,弱監督微調模型於放射報告抽取關鍵發現並對專家標註評估，但未列基礎模型,"weakly supervised fine-tuning approach; MIMIC-III, n = 123"
+R1042,,,,WellGuide: Bridging AI and Medicine with Biomedical LLMs for Enhanced Health Support,exclude,X6,健康支援聊天機器人，非資訊抽取,chatbot
+R1043,,,,What is the patient re-identification risk from using de-identified clinical free text data for health research?,exclude,X1,去識別化再識別風險之回顧討論,comprehensive review and discussion
+R1044,,,,ZebraMap: A Multimodal Rare Disease Knowledge Map with Automated Data Aggregation & LLM-Enriched Information Extraction Pipeline.,exclude,X5,文本為 PubMed 病例報告文獻而非病患照護紀錄,PubMed case reports
+R1045,,,,Zero- and few-shot Named Entity Recognition and Text Expansion in medication prescriptions using large language models.,include,,處方藥物陳述 NER，ChatGPT3.5 為主並測試 DeepSeekV3 等，報 F1，開源模型為次要比較,DeepSeekV3; discharge summaries; Named Entity Recognition (NER)
+R1046,,,,Zero-Shot Clinical Data Extraction from Pathology Reports Using Llama 3.1.,include,,Llama 3.1 70B 零樣本自病理報告抽取並報準確率,Llama 3.1 model with 70 billion parameters; free-text pathology reports
+R1047,,,,Zero-Shot Knowledge Graphs from Handwritten Notes with LLMs and OCR,unsure,,手寫筆記 OCR 加 LLM 建知識圖譜，未列模型且是否為臨床文本不明,handwritten documents such as medical records; Optical Character Recognition (OCR)
+R1048,,,,Zero-shot LLM-based visual acuity extraction: a pilot study.,include,,本地 LLaMA-3 70B 零樣本自眼科門診筆記抽取視力與眼壓並報準確率,70 billion parameter LLaMA-3 model; unstructured ophthalmology clinic notes
+R1049,,,,"22nd Annual Workshop of the Australasian Language Technology Association, ALTA 2024",exclude,X1,論文集導言／目錄，屬論文集紀錄,The proceedings contain 21 papers
+R1050,,,,A Benchmark Evaluation of Clinical Named Entity Recognition in French,exclude,X3,評估 CamemBERT 等遮罩語言模型，非 LLM,Masked Language Models (MLMs); CamemBERT-bio and DrBERT

@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0326,,,,Integrating rule-based NLP and large language models for statin information extraction from clinical notes.,unsure,,混合規則＋LLM 自臨床筆記抽取 statin 障礙並報 F1，LLM 未列名，需看全文,"LLM-based multi-category classifier; 197,761 notes"
+R0327,,,,Intelligent Medical Agent: Automatic Extraction and Structuring of Clinical Data from Voice,exclude,X7,語音轉錄工作流程，僅稱初步結果、無量化抽取效能（X7）,Preliminary results
+R0328,,,,Intelligent Medical Report Summarization and Risk Detection System Using NLP and Large Language Models,exclude,X6,以摘要生成與風險偵測為主的系統，非抽取效能評估（X6）,Report Summarization and Risk Detection
+R0329,,,,IntelliGraph: A Knowledge Graph-Based Retrieval System for Unstructured Document Intelligence,exclude,X4,LLM 僅用 Google Gemini，且為履歷等非臨床文件（X4）,Google's Gemini LLM
+R0330,,,,Interpretable Hybrid Modeling for Breast Cancer Risk Stratification from Structured Radiology Reports,unsure,,LoRA 微調 LLM 將西班牙文放射報告結構化並報 micro-F1，未列模型與參數量,Low-Rank Adaptation (LoRA); micro-F1 values greater than 0.98
+R0331,,,,Introduction to Concepts in Artificial Intelligence and Machine Learning for Pharmacoepidemiologists: Large Language Models.,exclude,X1,LLM 概念介紹性文章，無原始研究（X1）,Introduction to Concepts
+R0332,,,,Invited Commentary on Comparative Evaluation of Proprietary and Open-Source Large Language Models for Systematic Multi-source Information Extraction in Interventional Oncology,exclude,X1,評論文章且無摘要（X1）,Invited Commentary
+R0333,,,,Is it feasible to assess clinical remission in asthma via a customized data extraction approach from a real-world clinical electronic medical records database in Japan? A retrospective real-world study.,unsure,,以未列名 LLM 自 EMR 抽取惡化資料，主體為真實世界研究，未報抽取效能，需看全文,extracted using a large language model
+R0334,,,,KD4FIRE: A Knowledge Distillation Approach for Fine-Grained Medical Relation Extraction in Low-Resource Settings,unsure,,知識蒸餾做醫療關係抽取，未列學生／教師模型與資料來源，需看全文,medical relation extraction (MRE); knowledge distillation (KD) framework
+R0335,,,,KDC-NER: A knowledge-guided data augmentation and large model fine-tuning framework for nested named entity recognition in traditional Chinese medicine electronic medical records,unsure,,TCM 電子病歷巢狀 NER，大模型微調報 F1，未列模型是否開源,large language models; 80.57% F1
+R0336,,,,Key Coverage Matters: Semi-Structured Extraction of OCR Clinical Reports,unsure,,OCR 臨床報告鍵值抽取，LoRA Qwen3 僅為補充比較，主模型為 BERT 類，需看全文,LoRA-adapted Qwen3 models; 849-report development set
+R0337,,,,Knowledge-Augmented Large Language Model for Multimodal Electronic Health Record-Based Risk Prediction: Development and Validation Study.,exclude,X6,住院再入院與死亡預測，屬預測任務（X6）,30-day readmission
+R0338,,,,Knowledge-Aware Clinical Narrative Extraction Using Ontologies and Knowledge Graphs,unsure,,LLM 自葡萄牙文 AML 病歷抽取並建知識圖譜，未列模型，量化評估不明,based on large language models (LLMs); Portuguese clinical texts
+R0339,,,,Knowledge-Based Interpretation of Multi-Modal Clinical Findings: Evaluating a Local Agentic Bridge Between Worlds.,unsure,,GPT-OSS 等模型自多模態輸入抽取參數呼叫 CDS 模組，任務偏工具呼叫，需看全文,GPT-OSS; unstructured multi-modal inputs
+R0340,,,,Knowledge Graphs vs. SQL over Structured EHR Data,exclude,X6,對 Synthea 合成資料的結構化 EHR 問答（X6）,Clinical question answering; Synthea cohort
+R0341,,,,Labeling Clinical Notes With Large Language Models: Retrospective Benchmarking Study.,include,,42 個 Llama／Qwen 開源權重 LLM 自 380 份臨床筆記標註 29 種共病，報 F1,42 open-weights LLMs; 380 clinical notes
+R0342,,,,Language Models for Standardising Clinical Notes and Information Extraction in Addiction Psychiatry-An Empirical Study.,include,,微調 LLAMA-3.2-3b 自成癮精神科筆記抽取物質使用資訊，報 F1,fine-tuned LLAMA-3.2-3b; Mean F1 0.99
+R0343,,,,"Language models in pharmacovigilance: Applications, promises and limits.",exclude,X1,摘要自述為文獻回顧性敘述（X1）,A PubMed® search was conducted
+R0344,,,,Large language model-assisted machine learning for postpartum urinary incontinence prediction: Model development and validation study,unsure,,LLM 自非結構化 EMR 抽取資訊（準確度 98.9%）供預測模型使用，未列模型，主任務為預測,extract clinical information from unstructured EMRs; 98.9% overall accuracy
+R0345,,,,Large language model augmented framework with domain-specific knowledge integration for medical named entity recognition.,unsure,,醫療 LLM 輔助 NER，資料集混合百科、EHR、QA，未列模型，需看全文,A medical LLM and a task-adaptive recognizer; three benchmark datasets
+R0346,,,,Large Language Model Augmented Grid Tagging for Discontinuous Named Entity Recognition,unsure,,以 LLM 嵌入做不連續 NER，原型結果、模型未列，是否為生成式 LLM 不明,contextual LLM embeddings; CADEC and ShARe-compatible
+R0347,,,,Large language model-augmented offline reinforcement learning framework for sepsis management in critical care.,exclude,X6,敗血症強化學習決策，屬預測／決策任務（X6）,sepsis management
+R0348,,,,"Large language model-based approach for low-cost, rapid and accurate automated extraction of predictive biomarker testing results from Dutch pathology reports.",unsure,,LLM 模型自荷蘭病理報告抽取 EGFR／KRAS 並報 F1，未列模型，需看全文,pathology reports; (micro) F1 scores
+R0349,,,,Large language model-based uncertainty-adjusted label extraction for artificial intelligence model development in upper extremity radiography,exclude,X4,僅用 GPT-4o 閉源模型（X4）,GPT-4o
+R0350,,,,Large Language Model Data Abstraction Demonstrates Accuracy and Reliability for NSQIP.,exclude,X4,僅用 ChatGPT 4.1 閉源模型（X4）,ChatGPT 4.1

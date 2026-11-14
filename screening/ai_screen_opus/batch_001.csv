@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R0001,,,,"22nd International Conference on Intelligent Computing, ICIC 2026",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 287 papers
+R0002,,,,"24th International Conference on Artificial Intelligence in Medicine, AIME 2026",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 133 papers
+R0003,,,,"4th Pan-African Artificial Intelligence and Smart Systems Conference, PAAISS 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 36 papers
+R0004,,,,Applications of transformer-based pretrained language models for analyzing nursing records in adult care: A scoping review.,exclude,X1,範疇回顧（scoping review），非原始研究。,A scoping review
+R0005,,,,ASTAR: Automated Induction of STAndardized Radiology Reporting Templates from Large-Scale Clinical Free-Text Corpora,unsure,,以 LLM 自放射報告歸納結構化報告模板，任務偏模板建構而非抽取，且未列模型，需全文確認。,template construction; fetal brain MRI reports
+R0006,,,,Fine-Tuning of Small LLMs for Medical Data Extraction,include,,以 LoRA 微調開源 Gemma 2B 從保加利亞病歷抽取糖尿病病程，報告準確率。,Gemma 2B; free-text anamnesis; structured information extraction; 96.33%
+R0007,,,,LLM-Based Applications for Healthcare: A Systematic Mapping Study,exclude,X1,系統性 mapping study，非原始研究。,A Systematic Mapping Study
+R0008,,,,LLM-UMLS-PICO: A Large Language Model-Based PICO Extraction Method with UMLS Semantic Validation,exclude,X5,PICO 抽取對象為 Cochrane 文獻摘要，非臨床病歷。,Cochrane dataset; PICO Extraction
+R0009,,,,NoHarm Care: An Intelligent System for Clinical Text Annotation Using Transformer Models,exclude,X3,僅用 17M–150M 參數的 Ettin 編碼器做 NER，未使用 ≥1B LLM。,Ettin encoders ranging from 17 M to 150 M parameters
+R0010,,,,Privacy-Preserving Generation of Synthetic Pathology Reports for Information Extraction,unsure,,以合成病理報告訓練抽取模型，摘要未說明模型與是否在真實報告上評估，需全文確認。,synthetic pathology reports; three LLMs; 0.79 accuracy
+R0011,,,,Standardizing longitudinal chest X-ray report evaluation via large language model annotation,include,,以 Qwen2.5-32B 等 LLM 從 MIMIC-CXR 報告抽取疾病進展資訊，報告 F1。,Qwen2.5-32B; MIMIC-CXR; disease progression information extraction; F1 scores
+R0012,,,,"11th China Health Information Processing Conference, CHIP 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 37 papers
+R0013,,,,"19th Conference of the European Chapter of the Association for Computational Linguistics, Findings of EACL 2026",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 354 papers
+R0014,,,,"1st International Workshop on Emerging LLM/LMM Applications in Medical Imaging, ELAMI 2025, Held in Conjunction with the 28th International conference on Medical Image Computing and Computer Assisted Intervention, MICCAI 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 14 papers
+R0015,,,,"24th EPIA Conference on Artificial Intelligence, EPIA 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 76 papers
+R0016,,,,"2nd International Workshop on Deidentification of Medical Record Notes, IW-DMRN 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 9 papers
+R0017,,,,"35th Brazilian Conference on Intelligent Systems, BRACIS 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 109 papers
+R0018,,,,"7th International Conference on Computational Intelligence in Communications and Business Analytics, CICBA 2025",exclude,X1,會議論文集導言／目錄，非單篇研究。,The proceedings contain 33 papers
+R0019,,,,A Cloud-Native Multi-Agent LLM Framework for Clinical Knowledge Extraction from Heterogeneous Healthcare Data,unsure,,多代理 LLM 自臨床筆記等資料抽取知識並報告 F1，但未列模型、資料來源不明，需全文確認。,multi-agent large language model; clinical notes; F1-score 93.1%
+R0020,,,,A comparative study of large language models (ChatGPT/DeepSeek) in generating structured thyroid ultrasound reports.,unsure,,以 ChatGPT-4o 與開源 DeepSeek-R1 將甲狀腺超音波報告轉為結構化，但評估重點為 C-TIRADS 分類與處置建議，是否屬抽取需全文判斷。,DeepSeek-R1; structured thyroid ultrasound reports; nodule classification
+R0021,,,,A Comprehensive Survey of Foundation Models in Medicine,exclude,X1,綜述文章，非原始研究。,A Comprehensive Survey
+R0022,,,,A Comprehensive Survey on Clinical Text Summarization using Natural Language Processing and Large Language Models,exclude,X1,綜述文章，主題為臨床文本摘要。,A Comprehensive Survey
+R0023,,,,A deep learning model integrating structured data and clinical text for predicting atrial fibrillation recurrence.,exclude,X6,LLM 僅作文本特徵編碼以預測心房顫動復發，屬預測任務。,predicting atrial fibrillation recurrence; text feature extraction
+R0024,,,,A Federated Benchmark for Clinical Natural Language Processing (FedDRAGON).,unsure,,荷蘭臨床報告 12 項抽取任務的聯邦學習基準，未說明所用模型是否為 ≥1B 開源 LLM。,12 information extraction tasks; pre-trained LLMs
+R0025,,,,A framework for extraction of clinical information from radiological mammography reports using large language models and retrieval augmented generation.,include,,西班牙乳房攝影報告 NER／關係抽取，除 GPT 外亦評估本地開源權重模型，報告 F1。,Local open-weight models; mammography reports; joint named entity and relation extraction

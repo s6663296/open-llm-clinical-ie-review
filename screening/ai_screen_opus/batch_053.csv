@@ -1,0 +1,26 @@
+record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1301,,,,Zero-Shot LLMs for Named Entity Recognition: Targeting Cardiac Function Indicators in German Clinical Texts.,include,,Llama 3、Gemma、Mistral、Mixtral 零樣本從德文心臟 MRI 報告抽取指標,"Llama 3, Gemma, Mistral, and Mixtral; cardiac magnetic resonance imaging (MRI) reports"
+R1302,,,,A certified de-identification system for all clinical text documents for information extraction at scale.,exclude,X3,Philter 去識別化系統，未使用 LLM,Philter
+R1303,,,,A comparison of large language model versus manual chart review for extraction of data elements from the electronic health record.,exclude,X4,僅用 gpt-35-turbo,gpt-35-turbo
+R1304,,,,A comprehensive review of machine learning algorithms and their application in geriatric medicine: present and future,exclude,X1,綜述文章,This review provides
+R1305,,,,A Multidatabase ExTRaction PipEline (METRE) for facile cross validation in critical care research.,exclude,X5,結構化 EHR 資料擷取管線,structured data frames
+R1306,,,,"Accelerated evidence synthesis in orthopaedics—the roles of natural language processing, expert annotation and large language models",exclude,X5,無摘要；標題指向文獻證據綜合，非病歷文本,Accelerated evidence synthesis
+R1307,,,,Algorithmic identification of treatment-emergent adverse events from clinical notes using large language models: a pilot study in inflammatory bowel disease.,exclude,X3,僅用 UCSF BERT 等 BERT 類模型,UCSF BERT
+R1308,,,,An Introduction to Natural Language Processing Techniques and Framework for Clinical Implementation in Radiation Oncology,exclude,X1,技術介紹與綜述,we review the major technical innovations
+R1309,,,,Analysis of Pre-trained Language Models in Text Classification for Use in Spanish Medical Records Anonymization,unsure,,Hugging Face 預訓練模型做西班牙文 PHI 辨識，模型類型未說明,pre-trained models available in the Hugging Face model hub; MEDDOCAN corpus
+R1310,,,,Applicability of Models Trained on Generated Clinical German Datasets on Out-domain Data,exclude,X3,評估以合成資料訓練的 NER 模型，LLM 僅用於生成訓練資料,Named Entity Recognition (NER) models
+R1311,,,,Applications of Large Language Models (LLMs) in Breast Cancer Care,exclude,X1,系統性回顧,systematically review the literature
+R1312,,,,Automated HL7v2 LRI informatics framework for streamlining genomics-EHR data integration.,exclude,X3,基因報告轉 HL7 的轉換工具，未使用 LLM,HL7v2 converter
+R1313,,,,Benchmark Pathology Report Text Corpus with Cancer Type Classification.,exclude,X6,病理報告癌別文件分類,cancer-type classification
+R1314,,,,Case Study: Natural Language Processing (NLP) with Open Data for Drug Repositioning in Glioblastoma Therapy,exclude,X5,以公開資料做藥物再定位，非病歷文本,drug repositioning
+R1315,,,,Challenges of Integrating LLMs Like ChatGPT with Enterprise Software and Solving it with Object Messaging and Intelligent Objects as a New Software Design Paradigm,exclude,X5,企業軟體整合 LLM，非臨床文本,enterprise software
+R1316,,,,ChatGPT for phenotypes extraction: one model to rule them all?,exclude,X4,評估 ChatGPT 與現有方法,evaluation of ChatGPT
+R1317,,,,"ChatGPT one year on: who is using it, how and why?",exclude,X1,新聞專題,Seven scientists reveal
+R1318,,,,Collaborative and privacy-preserving workflows on a clinical data warehouse: an example developing natural language processing pipelines to detect medical conditions,unsure,,法文病歷疾病偵測使用臨床預訓練語言模型，是否為 ≥1B 生成式 LLM 不明,large language model pre-trained on millions of clinical notes; clinical notes written in French
+R1319,,,,Contextualized medication information extraction using Transformer-based deep learning architectures.,exclude,X3,僅用 GatorTron 等 BERT 類 transformer,GatorTron
+R1320,,,,Creating an Annotated Health Record Dataset in a Limited-Resource Environment,exclude,X3,病歷標註資料集建置流程，未使用 LLM,rule-based methods
+R1321,,,,Decoding radiology reports: Potential application of OpenAI ChatGPT to enhance patient understanding of diagnostic reports,exclude,X4,僅用 ChatGPT 簡化報告,ChatGPT
+R1322,,,,DeID-GPT: Zero-shot Medical Text De-Identification by GPT-4,exclude,X4,僅用 GPT-4／ChatGPT,GPT-4
+R1323,,,,Developing and Testing Software for Extracting COVID-19–Related Information from Clinical Notes in Electronic Health Records,exclude,X3,使用字典、CRF、BiLSTM，未使用 LLM,conditional random fields and bidirectional long short-term memory
+R1324,,,,Development of a privacy preserving large language model for automated data extraction from thyroid cancer pathology reports,include,,開源 FastChat-T5 3B 從甲狀腺癌病理報告抽取分期資訊，與審閱者比較一致率,FastChat-T5 3B-parameter LLM; thyroid cancer surgical pathology reports
+R1325,,,,Diagnosing psychiatric disorders from history of present illness using a large-scale linguistic model,exclude,X3,僅用 UTH-BERT 做診斷預測,UTH-BERT
