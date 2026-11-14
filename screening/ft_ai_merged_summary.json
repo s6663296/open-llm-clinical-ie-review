@@ -1,0 +1,26 @@
+{
+  "to_full_text": 552,
+  "not_retrieved": 275,
+  "assessed": 277,
+  "ai_decision": {
+    "exclude": 102,
+    "not_retrieved": 275,
+    "include": 173,
+    "disagree": 2
+  },
+  "exclude_codes": {
+    "X4": 29,
+    "X6": 17,
+    "X1": 1,
+    "X3": 14,
+    "X5": 10,
+    "X8": 29,
+    "X7": 2
+  },
+  "opus_reviewed": 75,
+  "opus_agrees_exclude": 73,
+  "code_diff": 6,
+  "same_study_pairs": 33,
+  "same_study_conflicts": 2,
+  "to_adjudicate": 11
+}

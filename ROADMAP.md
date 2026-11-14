@@ -7,14 +7,15 @@
 
 ## 📍 目前位置
 
-- **階段**：C1 完成 → C2 全文篩選（2026-11-14）
-- **步驟**：C2 全文篩選（Sonnet 判全部＋Opus 複查排除；無法取得者記為 not retrieved）
+- **階段**：C2 完成 → D1 資料萃取（2026-11-14）
+- **步驟**：D1 部分欄位萃取（模型、任務、效能），由 Codex 預填、Agent 審查、作者核對
 - **專案性質（2026-11-14 改）**：課堂報告，產出為**簡報**、不投稿、不註冊 OSF；深度為「篩選完成＋部分欄位萃取（模型、任務、效能）」
 - **進行中**：Sonnet 重篩全部 1,389 筆已完成（56/56 批，合併為 `screening/ai_screen_sonnet.csv`：include 264／unsure 327／exclude 798，`screening/ai_screen_sonnet_summary.json`）；複核表 `screening/step2_verify.xlsx` 已產生（依 AI include → unsure → exclude 排序）。50 筆校準樣本為 Agent 初判（`screening/step1_blind50.xlsx`：include 9／unsure 18／exclude 23），使用者已看過並採用，改以「兩個 AI 一致性＋人工核對」報告；與 Sonnet 的 11 筆分歧已由使用者裁定（`screening/step1_blind50_disagreements.xlsx`；9/11 與 Sonnet 相同）；50 筆最終判斷 `screening/calibration50_final.csv`：include 13／unsure 12／exclude 25。判斷指引存於 `scripts/agent_screening/screening_prompt.md`（前 39 批原始指引未存檔，此檔依 protocol 3.1–3.2 重建，需於論文揭露）
 - **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；83 組疑似重複的判讀建議 `data/formal_2026-11-14/possible_duplicates_review.csv`（只有 EHRchitect 2 組需人工確認）；AI 建議 include／unsure 的 626 筆已先下載 OA 全文 298 篇（`fulltext/`，PDF 不進 git；取不到的 328 篇在 `fulltext/manual_retrieval.csv`，篩選後只對進全文階段者用機構權限逐篇取得）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
 - **C1 完成（2026-11-14）**：雙 AI（Sonnet、Opus）獨立篩選 1,389 筆，二元 κ = 0.90；一致排除 759、一致進全文 511、分歧 69 筆由使用者裁定（53 排除／16 進全文）、校準 50 筆由使用者決定。最終排除 837、進全文 **552**（include 249／unsure 303）。結果 `screening/title_abstract_final.xlsx`／`.csv`，進全文清單 `screening/to_full_text.csv`；`screening/step2_verify.xlsx` 已被雙 AI 流程取代，不使用
-- **C2 進行中**：下載 552 篇 OA 全文（`scripts/fetch_fulltext.py`，log `fulltext/fetch_log_c2.csv`）→ 擷取重點段落 → Sonnet 判全部、Opus 複查 Sonnet 的排除 → 使用者裁定分歧
-- **下一步（需要使用者）**：等 Agent 產出全文篩選分歧表後裁定
+- **C2 AI 篩選（2026-11-14）**：277 篇取得全文（`fulltext_text/`，`scripts/pdf_to_text.py --condensed`；R0861、R1214、R1331 原下載檔為錯誤文件，改以 `scripts/pmc_xml_to_text.py` 取 Europe PMC 全文；R0891 無正確 OA 版，記為未取得）。Sonnet 判全部 277 篇（`screening/ft_sonnet/`），Opus 獨立複查 Sonnet 排除的 75 篇（`screening/ft_opus/`，73 篇同意排除）。同一研究多版本 33 組依 protocol 3.5 以同儕審查版為主、預印本給 X8（已因 X1–X7 排除者保留原代碼）。合併：`scripts/agent_screening/merge_ft.py` → `screening/ft_ai_merged.csv`（AI：include 173／exclude 102／分歧 2；`screening/ft_ai_merged_summary.json`）
+- **C2 完成（2026-11-14）**：分歧 11 列由使用者授權 Agent 裁定（`screening/step4_ft_disagreements.xlsx` my_* 欄，理由逐列記錄）；`scripts/agent_screening/finalize_ft.py` → `screening/full_text.xlsx`／`.csv`。全文評估 277：納入 **174**、排除 103（X4 28、X8 27、X6 21、X3 13、X5 10、X7 3、X1 1）；未取得 275。PRISMA 數字 `analysis/prisma_counts.json`、流程圖 `figures/prisma_flow.*` 已更新
+- **下一步**：Agent 寫 D1 brief 交 Codex 預填 174 篇萃取（每批 ≤ 25 篇＋驗證腳本），Agent 審查後交作者核對
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -31,7 +32,7 @@
 | B1 | 資料庫檢索 | ✅ | `<資料庫> 2022-2026/`、`搜尋條件.docx` |
 | B2 | 匯入與去重 | ✅ | `data/records_dedup.csv` |
 | C1 | 標題／摘要篩選 | ✅ | `screening/title_abstract_final.xlsx` |
-| C2 | 全文篩選 | ⬜ | `screening/full_text.xlsx` |
+| C2 | 全文篩選 | ✅ | `screening/full_text.xlsx` |
 | D1 | 資料萃取（部分欄位：模型、任務、效能） | ⬜ | `extraction/extraction.xlsx` |
 | D2 | 偏倚風險／品質評估 | ⏸ 課堂版不做 | `extraction/risk_of_bias.xlsx` |
 | E1 | 綜合分析與圖表 | 🔄 | `analysis/`、`figures/` |
@@ -171,10 +172,10 @@
 | 移除重複 | 743（自動）；疑似重複 83 組皆判定非重複（81 組為同一研究不同版本，連結處理；EHRchitect 2 組為原文＋勘誤），篩選筆數維持 1,389 |
 | 標題／摘要篩選 | 1,389 |
 | 標題／摘要排除 | 837（X1 209、X2 4、X3 143、X4 166、X5 104、X6 191、X7 20）；進全文 552 |
-| 全文取得失敗 | 274（無 OA 版本 169；出版商拒絕自動下載 403／404 105；依決定不以機構權限補取）；取得 278（`fulltext/fetch_log_c2.csv`） |
-| 全文評估 | 278（進行中） |
-| 全文排除（依原因） | |
-| 最終納入 | |
+| 全文取得失敗 | 275（無 OA 版本 169；出版商拒絕自動下載 403／404 105；OA 檔為錯誤論文且無正確 OA 版 1〔R0891〕；依決定不以機構權限補取）（`screening/ft_ai_merged.csv`） |
+| 全文評估 | 277 |
+| 全文排除（依原因） | 103：X4 28、X8 27、X6 21、X3 13、X5 10、X7 3、X1 1（`screening/full_text.xlsx`） |
+| 最終納入 | 174 篇報告＝174 篇研究（同一研究的其他版本已以 X8 排除） |
 | Cohen's κ（C1／C2） | C1 全部 1,389 筆，Sonnet vs Opus：二元 0.90、三類 0.87（`analysis/sonnet_vs_opus.json`）；分歧 69 筆作者裁定。校準 50 筆，**兩個 AI 篩選者**（Agent 初判 vs Sonnet）：三類 0.66、二元 0.72（`analysis/blind50_agent_vs_sonnet.json`）；非人工盲測，不報告人工 κ／AI 敏感度 |
 
 ---
@@ -194,7 +195,7 @@
 - [x] 偏倚風險工具 → 改編 QUADAS-2
 - [x] 是否做前向引用追蹤？→ 做，前向＋後向皆用 OpenAlex API
 - [x] 標題／摘要篩選方式 → LLM 篩選＋一位人工複核（2026-11-14）
-- [ ] 前向／後向引用追蹤：課堂版是否仍要做？（原決定要做）
+- [x] 前向／後向引用追蹤：課堂版是否仍要做？→ 2026-11-14 暫不做（保留日後補做）
 - [x] 全文篩選方式 → 2026-11-14 定案：AI 讀重點段落；Sonnet 判全部、Opus 複查排除，分歧由作者裁定（protocol 3.5）
 - [x] 檢索式驗證集 → Agent 挑選 10 篇，使用者 2026-11-14 確認（`data/validation_set.csv`）
 
@@ -235,3 +236,7 @@
 - 2026-11-14｜C1｜使用者裁定 69 筆雙 AI 分歧（53 排除、16 進全文；44 筆未填代碼者經使用者確認採排除方 AI 之代碼）；C1 完成：排除 837、進全文 552｜使用者決定
 - 2026-11-14｜C2｜全文篩選：AI 只讀重點段落（摘要、方法、結果）；Sonnet 判全部，Opus 獨立複查 Sonnet 判排除者，分歧由使用者裁定；誤納入者於萃取階段再檢出。指引 `scripts/agent_screening/fulltext_prompt.md`｜使用者決定（降低 AI 用量與人工時間）
 - 2026-11-14｜C2｜開放取用以外無法取得的全文，不以機構權限補取，記為 PRISMA「Reports not retrieved」｜使用者決定（課堂報告、人力限制）
+- 2026-11-14｜B1、C2｜前向／後向引用追蹤暫不做，日後視需要補做｜使用者決定（課堂版、尚不確定是否需要）。屬與原決定之差異，簡報方法段註明「未做引用追蹤」
+- 2026-11-14｜C2｜使用者決定 C2 依原流程完成（Sonnet 判全部、Opus 複查排除、作者裁定分歧）；D1 萃取改由 Codex 預填、Agent 審查、作者核對｜節省 Claude 用量
+- 2026-11-14｜C2｜Agent 處理：OA 下載檔為錯誤文件者（附錄、他篇論文、舊版預印本）改取 Europe PMC 正式版全文（R0861、R1214、R1331），取不到者記為未取得（R0891）；同一 PDF 對應兩筆紀錄的 33 組依 protocol 3.5 處理｜依既有規則執行，非方法變更；簡報可說明全文來源
+- 2026-11-14｜C2｜使用者授權 Agent 裁定全文篩選分歧 11 列（2 篇雙 AI 分歧、2 組同一全文判斷相反、6 篇排除代碼不同）：R1363 納入，其餘排除（章節辨識、住院層級 IHCA 判定屬 X6；代碼不同者取確定成立且順序在前的代碼）；C2 完成：納入 174、排除 103、未取得 275｜使用者決定授權。簡報須說明分歧由 Agent 裁定、非作者逐筆裁定

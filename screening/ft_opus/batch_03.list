@@ -1,0 +1,13 @@
+R0642	An automated information extraction model for unstructured discharge letters using large language models and GPT-4
+R0687	Cancer Diagnosis Categorization in Electronic Health Records Using Large Language Models and BioBERT: Model Performance Evaluation Study
+R0695	Characterizing Dementia Phenotypes from Unstructured EHR Notes with Generative AI and Interpretable Machine Learning.
+R0707	CNSight: Evaluation of Clinical Note Segmentation Tools
+R0710	Comparative analysis of generative LLMs for labeling entities in clinical notes.
+R0719	Converting Annotated Clinical Cases into Structured Case Report Forms
+R0725	Data-Constrained Synthesis of Training Data for De-Identification
+R0759	EHRmonize: A Framework for Medical Concept Abstraction from Electronic Health Records using Large Language Models
+R0762	ELMTEX: Fine-Tuning LLMs for Structured Clinical Information Extraction. A Case Study on Clinical Reports
+R0786	Evaluation of Care Quality for Atrial Fibrillation Across Non-Interoperable Electronic Health Record Data using a Retrieval-Augmented Generation-enabled Large Language Model.
+R0801	For clinical data extraction, QLoRA attains accuracy close to LoRA while requiring lower compute resources.
+R0805	From free text to SOFA score: automated reconstruction of sepsis severity from unstructured clinical notes
+R0814	Guardians of the data: NER and LLMs for effective medical record anonymization in Brazilian Portuguese.
