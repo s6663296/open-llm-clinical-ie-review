@@ -9,8 +9,8 @@
 
 - **階段**：B 完成 → C. 篩選（2026-11-14）
 - **步驟**：A3 OSF 註冊（待使用者）＋ C1 標題／摘要篩選（待兩位篩選者）
-- **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
-- **下一步（需要使用者）**：① 填 protocol 1.3、1.5（作者、第二篩選者、仲裁者、經費、利益衝突）→ ② 以 `protocol/osf_registration.md` 在 OSF 註冊（**須在篩選開始前**）→ ③ 人工確認 `data/formal_2026-11-14/possible_duplicates.csv` 的 83 組疑似重複 → ④ 兩位篩選者各自複製 `screening/title_abstract.xlsx`，先做 50 筆校準（`scripts/kappa.py --subset calibration`），κ ≥ 0.6 後篩完全部 → 交回後由 Agent 合併、算 κ、產生全文篩選表並下載 OA 全文
+- **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；83 組疑似重複的判讀建議 `data/formal_2026-11-14/possible_duplicates_review.csv`（只有 EHRchitect 2 組需人工確認）；AI 建議 include／unsure 的 626 筆已先下載 OA 全文 298 篇（`fulltext/`，PDF 不進 git；取不到的 328 篇在 `fulltext/manual_retrieval.csv`，篩選後只對進全文階段者用機構權限逐篇取得）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
+- **下一步（需要使用者）**：① 填 protocol 1.3、1.5（作者、第二篩選者、仲裁者、經費、利益衝突）→ ② 以 `protocol/osf_registration.md` 在 OSF 註冊（**須在篩選開始前**）→ ③ 在 `data/formal_2026-11-14/possible_duplicates_review.csv` 確認疑似重複（只需看 EHRchitect 2 組） → ④ 兩位篩選者各自複製 `screening/title_abstract.xlsx`，先做 50 筆校準（`scripts/kappa.py --subset calibration`），κ ≥ 0.6 後篩完全部 → 交回後由 Agent 合併、算 κ、產生全文篩選表並下載 OA 全文
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -217,3 +217,4 @@
 - 2026-11-14｜B1｜六個來源於 2026-11-14 完成正式檢索（OSF 註冊之前；註冊仍在標題／摘要篩選開始前完成）｜使用者決定由 Agent 當日以 Chrome 代跑網頁資料庫。與 ROADMAP 原規劃「先註冊再檢索」順序不同，需於 #24c 與註冊表說明
 - 2026-11-14｜B1｜arXiv 正式結果採用同日 11:50 的執行結果（與正式檢索式逐字相同、完整下載 144/144）｜同日稍後重跑遭 arXiv API 429 限流
 - 2026-11-14｜B1｜IEEE 以單一 77 詞 Command Search 執行未拆分；ACM 使用 Full-Text Collection；Scopus 匯出欄名為中文，以 `scripts/scopus_header_en.py` 依欄位位置轉回英文欄名｜介面實際行為，見各 search_log.json
+- 2026-11-14｜C2｜全文取得：開放取用 PDF 先以腳本下載；機構訂閱 PDF 於人工篩選後，只對進入全文階段者以使用者機構登入逐篇低速取得｜避免批量下載違反出版商授權
