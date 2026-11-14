@@ -8,7 +8,7 @@
 - 每個數值欄位都有對應的 `*_src` 欄，填原文位置：`p5`、`Table 3`、`Fig 2`、`Suppl Table S4`。沒有出處的值不得填入。
 - 未報告 → `NR`；不適用 → `NA`；不清楚 → `unclear` 並在 `note` 說明。不可推估。
 - 數值一律以 0–1 小數記錄（論文寫 87.3% → 0.873），`metric_scale_original` 記原始刻度。
-- 一人萃取（`extractor`）、第二人逐欄核對（`verifier`），核對後 `verified=yes`。Agent 預填時 `extractor=agent`，必須經人核對。
+- Agent 預先萃取（`extractor=agent`），作者逐欄對照原文核對（`verifier`），核對後 `verified=yes`；作者修正過的欄位要記錄（2026-11-14：單一作者，不設第二位核對者）。
 
 ## `studies` 工作表（一列一研究）
 
