@@ -1,0 +1,1522 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/cQz0enXJQN3qDfGY4S4MnE133Rk</id>
+  <title>arXiv Query: search_query=(abs:"large language model" OR abs:"large language models" OR abs:LLM OR abs:LLMs OR abs:Llama OR abs:Mistral OR abs:Mixtral OR abs:Qwen OR abs:Gemma OR abs:DeepSeek OR abs:"open-weight" OR abs:"open-source" OR abs:BioMistral OR abs:Meditron) AND (abs:"clinical notes" OR abs:"clinical note" OR abs:"clinical text" OR abs:"clinical narratives" OR abs:"medical records" OR abs:"health records" OR abs:EHR OR abs:EHRs OR abs:"discharge summaries" OR abs:"discharge summary" OR abs:"radiology reports" OR abs:"pathology reports" OR abs:"progress notes") AND (abs:"information extraction" OR abs:"named entity recognition" OR abs:"relation extraction" OR abs:"entity extraction" OR abs:"concept extraction" OR abs:"data extraction" OR abs:"structured data") AND submittedDate:"202201010000 TO 202612312359"&amp;id_list=&amp;start=100&amp;max_results=100</title>
+  <updated>2026-11-14T03:47:52Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22large+language+model%22+OR+(abs:%22large+language+models%22+OR+(abs:LLM+OR+(abs:LLMs+OR+(abs:Llama+OR+(abs:Mistral+OR+(abs:Mixtral+OR+(abs:Qwen+OR+(abs:Gemma+OR+(abs:DeepSeek+OR+(abs:%22open-weight%22+OR+(abs:%22open-source%22+OR+(abs:BioMistral+OR+abs:Meditron)))))))))))))+AND+((abs:%22clinical+notes%22+OR+(abs:%22clinical+note%22+OR+(abs:%22clinical+text%22+OR+(abs:%22clinical+narratives%22+OR+(abs:%22medical+records%22+OR+(abs:%22health+records%22+OR+(abs:EHR+OR+(abs:EHRs+OR+(abs:%22discharge+summaries%22+OR+(abs:%22discharge+summary%22+OR+(abs:%22radiology+reports%22+OR+(abs:%22pathology+reports%22+OR+abs:%22progress+notes%22))))))))))))+AND+((abs:%22information+extraction%22+OR+(abs:%22named+entity+recognition%22+OR+(abs:%22relation+extraction%22+OR+(abs:%22entity+extraction%22+OR+(abs:%22concept+extraction%22+OR+(abs:%22data+extraction%22+OR+abs:%22structured+data%22))))))+AND+submittedDate:%22202201010000+TO+202612312359%22))&amp;start=100&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>144</opensearch:totalResults>
+  <opensearch:startIndex>100</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21004v3</id>
+    <title>Evaluating Large Language Models for Automated Clinical Abstraction in Pulmonary Embolism Registries: Performance Across Model Sizes, Versions, and Parameters</title>
+    <updated>2025-08-11T23:09:56Z</updated>
+    <link href="https://arxiv.org/abs/2503.21004v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.21004v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pulmonary embolism (PE) registries accelerate practice-improving research but depend on resource-intensive manual abstraction of radiology reports. We evaluated whether openly available large-language models (LLMs) can automate concept extraction from computed-tomography PE (CTPE) reports without sacrificing data quality. Four Llama-3 (L3) variants (3.0 8 B, 3.1 8 B, 3.1 70 B, 3.3 70 B) and two reviewer models Phi-4 (P4) 14 B and Gemma-3 27 B (G3) were tested on 250 dual-annotated CTPE reports each from MIMIC-IV and Duke University. Outcomes were accuracy, positive predictive value (PPV), and negative predictive value (NPV) versus a human gold standard across model sizes, temperature settings, and shot counts. Mean accuracy across all concepts increased with scale: 0.83 (L3-0 8 B), 0.91 (L3-1 8 B), and 0.96 for both 70 B variants; P4 14 B achieved 0.98; G3 matched. Accuracy differed by &lt; 0.03 between datasets, underscoring external robustness. In dual-model concordance analysis (L3 70 B + P4 14 B), PE-presence PPV was &gt;= 0.95 and NPV &gt;= 0.98, while location, thrombus burden, right-heart strain, and image-quality artifacts each maintained PPV &gt;= 0.90 and NPV &gt;= 0.95. Fewer than 4% of individual concept annotations were discordant, and complete agreement was observed in more than 75% of reports. G3 performed comparably. LLMs therefore offer a scalable, accurate solution for PE registry abstraction, and a dual-model review workflow can further safeguard data quality with minimal human oversight.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-26T21:38:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mahmoud Alwakeel</name>
+    </author>
+    <author>
+      <name>Emory Buck</name>
+    </author>
+    <author>
+      <name>Jonathan G. Martin</name>
+    </author>
+    <author>
+      <name>Imran Aslam</name>
+    </author>
+    <author>
+      <name>Sudarshan Rajagopal</name>
+    </author>
+    <author>
+      <name>Jian Pei</name>
+    </author>
+    <author>
+      <name>Mihai V. Podgoreanu</name>
+    </author>
+    <author>
+      <name>Christopher J. Lindsell</name>
+    </author>
+    <author>
+      <name>An-Kwok Ian Wong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.17602v1</id>
+    <title>Assertion Detection Large Language Model In-context Learning LoRA Fine-tuning</title>
+    <updated>2024-01-31T05:11:00Z</updated>
+    <link href="https://arxiv.org/abs/2401.17602v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.17602v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this study, we aim to address the task of assertion detection when extracting medical concepts from clinical notes, a key process in clinical natural language processing (NLP). Assertion detection in clinical NLP usually involves identifying assertion types for medical concepts in the clinical text, namely certainty (whether the medical concept is positive, negated, possible, or hypothetical), temporality (whether the medical concept is for present or the past history), and experiencer (whether the medical concept is described for the patient or a family member). These assertion types are essential for healthcare professionals to quickly and clearly understand the context of medical conditions from unstructured clinical texts, directly influencing the quality and outcomes of patient care. Although widely used, traditional methods, particularly rule-based NLP systems and machine learning or deep learning models, demand intensive manual efforts to create patterns and tend to overlook less common assertion types, leading to an incomplete understanding of the context. To address this challenge, our research introduces a novel methodology that utilizes Large Language Models (LLMs) pre-trained on a vast array of medical data for assertion detection. We enhanced the current method with advanced reasoning techniques, including Tree of Thought (ToT), Chain of Thought (CoT), and Self-Consistency (SC), and refine it further with Low-Rank Adaptation (LoRA) fine-tuning. We first evaluated the model on the i2b2 2010 assertion dataset. Our method achieved a micro-averaged F-1 of 0.89, with 0.11 improvements over the previous works. To further assess the generalizability of our approach, we extended our evaluation to a local dataset that focused on sleep concept extraction. Our approach achieved an F-1 of 0.74, which is 0.31 higher than the previous method.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-31T05:11:00Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yuelyu Ji</name>
+    </author>
+    <author>
+      <name>Zeshui Yu</name>
+    </author>
+    <author>
+      <name>Yanshan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.05795v1</id>
+    <title>ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes</title>
+    <updated>2024-03-09T04:58:25Z</updated>
+    <link href="https://arxiv.org/abs/2403.05795v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.05795v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The advancement of natural language processing (NLP) systems in healthcare hinges on language model ability to interpret the intricate information contained within clinical notes. This process often requires integrating information from various time points in a patient's medical history. However, most earlier clinical language models were pretrained with a context length limited to roughly one clinical document. In this study, We introduce ClinicalMamba, a specialized version of the Mamba language model, pretrained on a vast corpus of longitudinal clinical notes to address the unique linguistic characteristics and information processing needs of the medical domain. ClinicalMamba, with 130 million and 2.8 billion parameters, demonstrates a superior performance in modeling clinical language across extended text lengths compared to Mamba and clinical Llama. With few-shot learning, ClinicalMamba achieves notable benchmarks in speed and accuracy, outperforming existing clinical language models and general domain large models like GPT-4 in longitudinal clinical notes information extraction tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-09T04:58:25Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhichao Yang</name>
+    </author>
+    <author>
+      <name>Avijit Mitra</name>
+    </author>
+    <author>
+      <name>Sunjae Kwon</name>
+    </author>
+    <author>
+      <name>Hong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.03905v1</id>
+    <title>CACER: Clinical Concept Annotations for Cancer Events and Relations</title>
+    <updated>2024-09-05T20:42:35Z</updated>
+    <link href="https://arxiv.org/abs/2409.03905v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.03905v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinical notes contain unstructured representations of patient histories, including the relationships between medical problems and prescription drugs. To investigate the relationship between cancer drugs and their associated symptom burden, we extract structured, semantic representations of medical problem and drug information from the clinical narratives of oncology notes. We present Clinical Concept Annotations for Cancer Events and Relations (CACER), a novel corpus with fine-grained annotations for over 48,000 medical problems and drug events and 10,000 drug-problem and problem-problem relations. Leveraging CACER, we develop and evaluate transformer-based information extraction (IE) models such as BERT, Flan-T5, Llama3, and GPT-4 using fine-tuning and in-context learning (ICL). In event extraction, the fine-tuned BERT and Llama3 models achieved the highest performance at 88.2-88.0 F1, which is comparable to the inter-annotator agreement (IAA) of 88.4 F1. In relation extraction, the fine-tuned BERT, Flan-T5, and Llama3 achieved the highest performance at 61.8-65.3 F1. GPT-4 with ICL achieved the worst performance across both tasks. The fine-tuned models significantly outperformed GPT-4 in ICL, highlighting the importance of annotated training data and model optimization. Furthermore, the BERT models performed similarly to Llama3. For our task, LLMs offer no performance advantage over the smaller BERT models. The results emphasize the need for annotated training data to optimize models. Multiple fine-tuned transformer models achieved performance comparable to IAA for several extraction tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-05T20:42:35Z</published>
+    <arxiv:comment>This is a pre-copy-editing, author-produced PDF of an article accepted for publication in JAMIA following peer review. The definitive publisher-authenticated version is available online at https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/ocae231/7748302</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Journal of the American Medical Informatics Association (2024): ocae231</arxiv:journal_ref>
+    <author>
+      <name>Yujuan Fu</name>
+    </author>
+    <author>
+      <name>Giridhar Kaushik Ramachandran</name>
+    </author>
+    <author>
+      <name>Ahmad Halwani</name>
+    </author>
+    <author>
+      <name>Bridget T. McInnes</name>
+    </author>
+    <author>
+      <name>Fei Xia</name>
+    </author>
+    <author>
+      <name>Kevin Lybarger</name>
+    </author>
+    <author>
+      <name>Meliha Yetisgen</name>
+    </author>
+    <author>
+      <name>Özlem Uzuner</name>
+    </author>
+    <arxiv:doi>10.1093/jamia/ocae231</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1093/jamia/ocae231" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.12374v1</id>
+    <title>Improving Generalizability of Extracting Social Determinants of Health Using Large Language Models through Prompt-tuning</title>
+    <updated>2024-03-19T02:34:33Z</updated>
+    <link href="https://arxiv.org/abs/2403.12374v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.12374v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The progress in natural language processing (NLP) using large language models (LLMs) has greatly improved patient information extraction from clinical narratives. However, most methods based on the fine-tuning strategy have limited transfer learning ability for cross-domain applications. This study proposed a novel approach that employs a soft prompt-based learning architecture, which introduces trainable prompts to guide LLMs toward desired outputs. We examined two types of LLM architectures, including encoder-only GatorTron and decoder-only GatorTronGPT, and evaluated their performance for the extraction of social determinants of health (SDoH) using a cross-institution dataset from the 2022 n2c2 challenge and a cross-disease dataset from the University of Florida (UF) Health. The results show that decoder-only LLMs with prompt tuning achieved better performance in cross-domain applications. GatorTronGPT achieved the best F1 scores for both datasets, outperforming traditional fine-tuned GatorTron by 8.9% and 21.8% in a cross-institution setting, and 5.5% and 14.5% in a cross-disease setting.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-19T02:34:33Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Cheng Peng</name>
+    </author>
+    <author>
+      <name>Zehao Yu</name>
+    </author>
+    <author>
+      <name>Kaleb E Smith</name>
+    </author>
+    <author>
+      <name>Wei-Hsuan Lo-Ciganic</name>
+    </author>
+    <author>
+      <name>Jiang Bian</name>
+    </author>
+    <author>
+      <name>Yonghui Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.01869v1</id>
+    <title>MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance</title>
+    <updated>2024-08-03T22:14:13Z</updated>
+    <link href="https://arxiv.org/abs/2408.01869v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.01869v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the era of Large Language Models (LLMs), given their remarkable text understanding and generation abilities, there is an unprecedented opportunity to develop new, LLM-based methods for trustworthy medical knowledge synthesis, extraction and summarization. This paper focuses on the problem of Pharmacovigilance (PhV), where the significance and challenges lie in identifying Adverse Drug Events (ADEs) from diverse text sources, such as medical literature, clinical notes, and drug labels. Unfortunately, this task is hindered by factors including variations in the terminologies of drugs and outcomes, and ADE descriptions often being buried in large amounts of narrative text. We present MALADE, the first effective collaborative multi-agent system powered by LLM with Retrieval Augmented Generation for ADE extraction from drug label data. This technique involves augmenting a query to an LLM with relevant information extracted from text resources, and instructing the LLM to compose a response consistent with the augmented data. MALADE is a general LLM-agnostic architecture, and its unique capabilities are: (1) leveraging a variety of external sources, such as medical literature, drug labels, and FDA tools (e.g., OpenFDA drug information API), (2) extracting drug-outcome association in a structured format along with the strength of the association, and (3) providing explanations for established associations. Instantiated with GPT-4 Turbo or GPT-4o, and FDA drug label data, MALADE demonstrates its efficacy with an Area Under ROC Curve of 0.90 against the OMOP Ground Truth table of ADEs. Our implementation leverages the Langroid multi-agent LLM framework and can be found at https://github.com/jihyechoi77/malade.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-03T22:14:13Z</published>
+    <arxiv:comment>Paper published at Machine Learning for Healthcare 2024 (MLHC'24)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jihye Choi</name>
+    </author>
+    <author>
+      <name>Nils Palumbo</name>
+    </author>
+    <author>
+      <name>Prasad Chalasani</name>
+    </author>
+    <author>
+      <name>Matthew M. Engelhard</name>
+    </author>
+    <author>
+      <name>Somesh Jha</name>
+    </author>
+    <author>
+      <name>Anivarya Kumar</name>
+    </author>
+    <author>
+      <name>David Page</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.09601v2</id>
+    <title>Extraction of Sleep Information from Clinical Notes of Patients with Alzheimer's Disease Using Natural Language Processing</title>
+    <updated>2024-03-15T17:59:17Z</updated>
+    <link href="https://arxiv.org/abs/2204.09601v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.09601v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alzheimer's Disease (AD) is the most common form of dementia in the United States. Sleep is one of the lifestyle-related factors that has been shown critical for optimal cognitive function in old age. However, there is a lack of research studying the association between sleep and AD incidence. A major bottleneck for conducting such research is that the traditional way to acquire sleep information is time-consuming, inefficient, non-scalable, and limited to patients' subjective experience. A gold standard dataset is created from manual annotation of 570 randomly sampled clinical note documents from the adSLEEP, a corpus of 192,000 de-identified clinical notes of 7,266 AD patients retrieved from the University of Pittsburgh Medical Center (UPMC). We developed a rule-based Natural Language Processing (NLP) algorithm, machine learning models, and Large Language Model(LLM)-based NLP algorithms to automate the extraction of sleep-related concepts, including snoring, napping, sleep problem, bad sleep quality, daytime sleepiness, night wakings, and sleep duration, from the gold standard dataset. Rule-based NLP algorithm achieved the best performance of F1 across all sleep-related concepts. In terms of Positive Predictive Value (PPV), rule-based NLP algorithm achieved 1.00 for daytime sleepiness and sleep duration, machine learning models: 0.95 and for napping, 0.86 for bad sleep quality and 0.90 for snoring; and LLAMA2 with finetuning achieved PPV of 0.93 for Night Wakings, 0.89 for sleep problem, and 1.00 for sleep duration. The results show that the rule-based NLP algorithm consistently achieved the best performance for all sleep concepts. This study focused on the clinical notes of patients with AD, but could be extended to general sleep information extraction for other diseases.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-08T21:20:19Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sonish Sivarajkumar</name>
+    </author>
+    <author>
+      <name>Thomas Yu CHow Tam</name>
+    </author>
+    <author>
+      <name>Haneef Ahamed Mohammad</name>
+    </author>
+    <author>
+      <name>Samual Viggiano</name>
+    </author>
+    <author>
+      <name>David Oniani</name>
+    </author>
+    <author>
+      <name>Shyam Visweswaran</name>
+    </author>
+    <author>
+      <name>Yanshan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.00009v1</id>
+    <title>Unlocking Electronic Health Records: A Hybrid Graph RAG Approach to Safe Clinical AI for Patient QA</title>
+    <updated>2025-11-27T16:08:22Z</updated>
+    <link href="https://arxiv.org/abs/2602.00009v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.00009v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Electronic health record (EHR) systems present clinicians with vast repositories of clinical information, creating a significant cognitive burden where critical details are easily overlooked. While Large Language Models (LLMs) offer transformative potential for data processing, they face significant limitations in clinical settings, particularly regarding context grounding and hallucinations. Current solutions typically isolate retrieval methods focusing either on structured data (SQL/Cypher) or unstructured semantic search but fail to integrate both simultaneously. This work presents MediGRAF (Medical Graph Retrieval Augmented Framework), a novel hybrid Graph RAG system that bridges this gap. By uniquely combining Neo4j Text2Cypher capabilities for structured relationship traversal with vector embeddings for unstructured narrative retrieval, MediGRAF enables natural language querying of the complete patient journey. Using 10 patients from the MIMIC-IV dataset (generating 5,973 nodes and 5,963 relationships), we generated enough nodes and data for patient level question answering (QA), and we evaluated this architecture across varying query complexities. The system demonstrated 100\% recall for factual queries which means all relevant information was retrieved and in the output, while complex inference tasks achieved a mean expert quality score of 4.25/5 with zero safety violations. These results demonstrate that hybrid graph-grounding significantly advances clinical information retrieval, offering a safer, more comprehensive alternative to standard LLM deployments.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-27T16:08:22Z</published>
+    <arxiv:comment>26 pages, 5 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Frontiers in Digital Health, vol. 8, 2026</arxiv:journal_ref>
+    <author>
+      <name>Samuel Thio</name>
+    </author>
+    <author>
+      <name>Matthew Lewis</name>
+    </author>
+    <author>
+      <name>Spiros Denaxas</name>
+    </author>
+    <author>
+      <name>Richard JB Dobson</name>
+    </author>
+    <arxiv:doi>10.3389/fdgth.2026.1780700</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3389/fdgth.2026.1780700" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.38009v1</id>
+    <title>Large Language Models for Accurate Medical Chart Abstraction: Enabling Scalable and Secure Artificial Intelligence Deployment in Stroke</title>
+    <updated>2026-10-27T22:00:24Z</updated>
+    <link href="https://arxiv.org/abs/2610.38009v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.38009v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical chart abstraction transforms unstructured clinical narratives into structured variables for research and quality monitoring. We evaluated a prompting-based large language model (LLM) framework for extracting eight clinical variables from 2,416 neurointerventional acute stroke intervention reports across three hospitals. Twenty-two instruction-tuned open-source LLMs were evaluated across architectures, model sizes, and biomedical adaptations using Quick Response and Chain-of-Thought (CoT) prompting. Non-expert staff annotations served as the cross-model reference standard. Evaluation was restricted to report-variable pairs with a valid LLaMA3.3-70B CoT prediction and a corresponding reference label. Performance measures included extraction accuracy, inference latency, and agreement with expert adjudication. Twenty discordant cases per variable underwent review by two senior physicians and four medical students. LLaMA3.3-70B achieved the highest overall accuracy (94.8%). CoT improved performance on inference-dependent variables such as site of occlusion, while Quick Response was optimal for directly stated procedural fields. Expert adjudication showed that AI predictions were more closely aligned with expert interpretations than non-expert annotations for most variables, with intracranial angioplasty remaining a challenge. Locally deployed LLMs can support scalable clinical information extraction and retrospective stroke registry curation, with expert oversight for ambiguous cases.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T22:00:24Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhusi Zhong</name>
+    </author>
+    <author>
+      <name>Carl M. Porto</name>
+    </author>
+    <author>
+      <name>David Hong</name>
+    </author>
+    <author>
+      <name>Miranda Gonzales</name>
+    </author>
+    <author>
+      <name>Revyn Kim</name>
+    </author>
+    <author>
+      <name>Gnaneswari Karayi</name>
+    </author>
+    <author>
+      <name>Lulu Bi</name>
+    </author>
+    <author>
+      <name>Joshua R. Feler</name>
+    </author>
+    <author>
+      <name>Elias Shaaya</name>
+    </author>
+    <author>
+      <name>Scott Collins</name>
+    </author>
+    <author>
+      <name>Liqi Shu</name>
+    </author>
+    <author>
+      <name>Grayson Baird</name>
+    </author>
+    <author>
+      <name>Mahesh Jayaraman</name>
+    </author>
+    <author>
+      <name>Shadi Yaghi</name>
+    </author>
+    <author>
+      <name>Zhicheng Jiao</name>
+    </author>
+    <author>
+      <name>Dylan N. Wolman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.01682v2</id>
+    <title>Leveraging Prompt-Learning for Structured Information Extraction from Crohn's Disease Radiology Reports in a Low-Resource Language</title>
+    <updated>2024-05-22T09:36:25Z</updated>
+    <link href="https://arxiv.org/abs/2405.01682v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.01682v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automatic conversion of free-text radiology reports into structured data using Natural Language Processing (NLP) techniques is crucial for analyzing diseases on a large scale. While effective for tasks in widely spoken languages like English, generative large language models (LLMs) typically underperform with less common languages and can pose potential risks to patient privacy. Fine-tuning local NLP models is hindered by the skewed nature of real-world medical datasets, where rare findings represent a significant data imbalance. We introduce SMP-BERT, a novel prompt learning method that leverages the structured nature of reports to overcome these challenges. In our studies involving a substantial collection of Crohn's disease radiology reports in Hebrew (over 8,000 patients and 10,000 reports), SMP-BERT greatly surpassed traditional fine-tuning methods in performance, notably in detecting infrequent conditions (AUC: 0.99 vs 0.94, F1: 0.84 vs 0.34). SMP-BERT empowers more accurate AI diagnostics available for low-resource languages.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-02T19:11:54Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Liam Hazan</name>
+    </author>
+    <author>
+      <name>Gili Focht</name>
+    </author>
+    <author>
+      <name>Naama Gavrielov</name>
+    </author>
+    <author>
+      <name>Roi Reichart</name>
+    </author>
+    <author>
+      <name>Talar Hagopian</name>
+    </author>
+    <author>
+      <name>Mary-Louise C. Greer</name>
+    </author>
+    <author>
+      <name>Ruth Cytter Kuint</name>
+    </author>
+    <author>
+      <name>Dan Turner</name>
+    </author>
+    <author>
+      <name>Moti Freiman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.04907v1</id>
+    <title>Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation</title>
+    <updated>2026-07-06T10:36:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.04907v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.04907v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying Large Language Models (LLMs) in high-stakes clinical settings remains limited by structural hallucinations, weak deterministic reasoning over tabular patient data, and omissions in vector retrieval. This paper presents the architecture and validation of Medi-Gemma, a Clinical Decision Support System (CDSS) for wound pathology triage and workflow automation. The platform introduces a decoupled framework that separates clinical perception from data orchestration while preserving traceable reasoning. Medi-Gemma uses a multi-stage pipeline coordinated by a centralized ClinicalOrchestrator. Data requests are handled without generative inference by a DataManager that cleans unstructured Electronic Medical Record (EMR) files through type coercion. Natural language queries are processed by a hierarchical IntentRouter, which routes requests to deterministic analytics paths executed by a PandasQueryEngine or to patient-specific reasoning managed by a ClinicalRAGEngine using a CPU-optimized vector store. A key contribution is the Ground Truth Injection Module, which intercepts patient-specific queries, extracts numeric identification tokens, queries the structured dataframe via Pandas, retrieves the latest validated clinical state, and embeds this snapshot as an overriding context block in the LLM prompt before generation. Safety compliance is enforced by a deterministic ProtocolManager that maps clinical terminology to fixed evidence-based risk pathways, while a SafetyVerifier phrase filter prevents output rule violations. Validation shows that this architecture eliminates semantic context drift, prevents database compilation crashes, and improves factual adherence to backend clinical repositories. These results support Medi-Gemma as a safer pattern for LLM-based clinical decision support where structured data fidelity, retrieval grounding, and deterministic safeguards are essential.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-06T10:36:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mohammed Saim Ahmed Quadri</name>
+    </author>
+    <author>
+      <name>Yunzhe Xue</name>
+    </author>
+    <author>
+      <name>Justin W. Ady</name>
+    </author>
+    <author>
+      <name>Usman Roshan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.01844v1</id>
+    <title>Clinical Knowledge Graph Construction and Evaluation with Multi-LLMs via Retrieval-Augmented Generation</title>
+    <updated>2026-01-05T07:16:29Z</updated>
+    <link href="https://arxiv.org/abs/2601.01844v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.01844v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) offer new opportunities for constructing knowledge graphs (KGs) from unstructured clinical narratives. However, existing approaches often rely on structured inputs and lack robust validation of factual accuracy and semantic consistency, limitations that are especially problematic in oncology. We introduce an end-to-end framework for clinical KG construction and evaluation directly from free text using multi-agent prompting and a schema-constrained Retrieval-Augmented Generation (KG-RAG) strategy. Our pipeline integrates (1) prompt-driven entity, attribute, and relation extraction; (2) entropy-based uncertainty scoring; (3) ontology-aligned RDF/OWL schema generation; and (4) multi-LLM consensus validation for hallucination detection and semantic refinement. Beyond static graph construction, the framework supports continuous refinement and self-supervised evaluation, enabling iterative improvement of graph quality. Applied to two oncology cohorts (PDAC and BRCA), our method produces interpretable, SPARQL-compatible, and clinically grounded knowledge graphs without relying on gold-standard annotations. Experimental results demonstrate consistent gains in precision, relevance, and ontology compliance over baseline methods.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-05T07:16:29Z</published>
+    <arxiv:comment>13 pages, 5 tables, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Udiptaman Das</name>
+    </author>
+    <author>
+      <name>Krishnasai B. Atmakuri</name>
+    </author>
+    <author>
+      <name>Duy Ho</name>
+    </author>
+    <author>
+      <name>Chi Lee</name>
+    </author>
+    <author>
+      <name>Yugyung Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.07681v1</id>
+    <title>MORE-CLEAR: Multimodal Offline Reinforcement learning for Clinical notes Leveraged Enhanced State Representation</title>
+    <updated>2025-08-11T06:58:33Z</updated>
+    <link href="https://arxiv.org/abs/2508.07681v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.07681v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sepsis, a life-threatening inflammatory response to infection, causes organ dysfunction, making early detection and optimal management critical. Previous reinforcement learning (RL) approaches to sepsis management rely primarily on structured data, such as lab results or vital signs, and on a dearth of a comprehensive understanding of the patient's condition. In this work, we propose a Multimodal Offline REinforcement learning for Clinical notes Leveraged Enhanced stAte Representation (MORE-CLEAR) framework for sepsis control in intensive care units. MORE-CLEAR employs pre-trained large-scale language models (LLMs) to facilitate the extraction of rich semantic representations from clinical notes, preserving clinical context and improving patient state representation. Gated fusion and cross-modal attention allow dynamic weight adjustment in the context of time and the effective integration of multimodal data. Extensive cross-validation using two public (MIMIC-III and MIMIC-IV) and one private dataset demonstrates that MORE-CLEAR significantly improves estimated survival rate and policy performance compared to single-modal RL approaches. To our knowledge, this is the first to leverage LLM capabilities within a multimodal offline RL for better state representation in medical applications. This approach can potentially expedite the treatment and management of sepsis by enabling reinforcement learning models to propose enhanced actions based on a more comprehensive understanding of patient conditions.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T06:58:33Z</published>
+    <arxiv:comment>18 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yooseok Lim</name>
+    </author>
+    <author>
+      <name>ByoungJun Jeon</name>
+    </author>
+    <author>
+      <name>Seong-A Park</name>
+    </author>
+    <author>
+      <name>Jisoo Lee</name>
+    </author>
+    <author>
+      <name>Sae Won Choi</name>
+    </author>
+    <author>
+      <name>Chang Wook Jeong</name>
+    </author>
+    <author>
+      <name>Ho-Geol Ryu</name>
+    </author>
+    <author>
+      <name>Hongyeol Lee</name>
+    </author>
+    <author>
+      <name>Hyun-Lim Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.09053v2</id>
+    <title>Who Fails Where? LLM and Human Error Patterns in Endometriosis Ultrasound Report Extraction</title>
+    <updated>2026-01-26T04:51:51Z</updated>
+    <link href="https://arxiv.org/abs/2601.09053v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.09053v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this study, we evaluate a locally-deployed large-language model (LLM) to convert unstructured endometriosis transvaginal ultrasound (eTVUS) scan reports into structured data for imaging informatics workflows. Across 49 eTVUS reports, we compared three LLMs (7B/8B and a 20B-parameter model) against expert human extraction. The 20B model achieved a mean accuracy of 86.02%, substantially outperforming smaller models and confirming the importance of scale in handling complex clinical text. Crucially, we identified a highly complementary error profile: the LLM excelled at syntactic consistency (e.g., date/numeric formatting) where humans faltered, while human experts provided superior semantic and contextual interpretation. We also found that the LLM's semantic errors were fundamental limitations that could not be mitigated by simple prompt engineering. These findings strongly support a human-in-the-loop (HITL) workflow in which the on-premise LLM serves as a collaborative tool, not a full replacement. It automates routine structuring and flags potential human errors, enabling imaging specialists to focus on high-level semantic validation. We discuss implications for structured reporting and interactive AI systems in clinical practice.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-14T00:46:51Z</published>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Haiyi Li</name>
+    </author>
+    <author>
+      <name>Yutong Li</name>
+    </author>
+    <author>
+      <name>Yiheng Chi</name>
+    </author>
+    <author>
+      <name>Alison Deslandes</name>
+    </author>
+    <author>
+      <name>Mathew Leonardi</name>
+    </author>
+    <author>
+      <name>Shay Freger</name>
+    </author>
+    <author>
+      <name>Yuan Zhang</name>
+    </author>
+    <author>
+      <name>Jodie Avery</name>
+    </author>
+    <author>
+      <name>M. Louise Hull</name>
+    </author>
+    <author>
+      <name>Hsiang-Ting Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.18782v1</id>
+    <title>RedactionBench</title>
+    <updated>2026-06-17T07:51:56Z</updated>
+    <link href="https://arxiv.org/abs/2606.18782v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.18782v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models are increasingly applied to sensitive domains that require redaction of personally identifiable information (PII). While redacting PII is a data cleaning prerequisite, existing benchmarks conflate extraction mechanics with privacy semantics. A public phone number is not equivalent to a phone number in a medical record. Whether information constitutes a violation depends heavily on who holds it, why, and in what context, fundamentally differentiating redaction from simple entity recognition. Grounded in contextual integrity, we introduce RedactionBench, a manually annotated benchmark comprising 200 diverse documents across 11 domains, mostly seeded from real-world sources. We also introduce R-Score, a novel character-level metric that treats semantically similar redactions equally and nullifies shallow formatting choices, such as varying masking styles for phone numbers. Evaluations across Named Entity Recognition models, entity extraction Small Language Models, and frontier models equipped with agentic tools demonstrate that contextual redaction remains an unsolved problem. A human evaluation with over 80 users on RedactionBench reveals a stark dichotomy in privacy perceptions. Annotators show consensus with target labels for mandatory redactions (89.4 percent) and safe text preservations (94.1 percent), but fail to agree on contextual redactions (47.7 percent). This variance demonstrates the subjective nature of contextual privacy and motivates R-Score, which decouples contextual ambiguity from strict precision. We compare 35 models across families and report their performance in redacting PII. Finally, we release RedactionBench to establish a baseline for future privacy-preserving systems, hoping to inspire efficient model design and standardized evaluations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-17T07:51:56Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sean Brynjólfsson</name>
+    </author>
+    <author>
+      <name>Shashvat Jayakrishnan</name>
+    </author>
+    <author>
+      <name>Esha Sali</name>
+    </author>
+    <author>
+      <name>Diptanshu Purwar</name>
+    </author>
+    <author>
+      <name>Madhav Aggarwal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.13115v1</id>
+    <title>Multi-Label Clinical Text Eligibility Classification and Summarization System</title>
+    <updated>2025-10-15T03:21:43Z</updated>
+    <link href="https://arxiv.org/abs/2510.13115v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.13115v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinical trials are central to medical progress because they help improve understanding of human health and the healthcare system. They play a key role in discovering new ways to detect, prevent, or treat diseases, and it is essential that clinical trials include participants with appropriate and diverse medical backgrounds. In this paper, we propose a system that leverages Natural Language Processing (NLP) and Large Language Models (LLMs) to automate multi-label clinical text eligibility classification and summarization. The system combines feature extraction methods such as word embeddings (Word2Vec) and named entity recognition to identify relevant medical concepts, along with traditional vectorization techniques such as count vectorization and TF-IDF (Term Frequency-Inverse Document Frequency). We further explore weighted TF-IDF word embeddings that integrate both count-based and embedding-based strengths to capture term importance effectively. Multi-label classification using Random Forest and SVM models is applied to categorize documents based on eligibility criteria. Summarization techniques including TextRank, Luhn, and GPT-3 are evaluated to concisely summarize eligibility requirements. Evaluation with ROUGE scores demonstrates the effectiveness of the proposed methods. This system shows potential for automating clinical trial eligibility assessment using data-driven approaches, thereby improving research efficiency.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-15T03:21:43Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Surya Tejaswi Yerramsetty</name>
+    </author>
+    <author>
+      <name>Almas Fathimah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.13402v1</id>
+    <title>A Multidatabase ExTRaction PipEline (METRE) for Facile Cross Validation in Critical Care Research</title>
+    <updated>2023-02-26T20:34:45Z</updated>
+    <link href="https://arxiv.org/abs/2302.13402v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.13402v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transforming raw EHR data into machine learning model-ready inputs requires considerable effort. One widely used EHR database is Medical Information Mart for Intensive Care (MIMIC). Prior work on MIMIC-III cannot query the updated and improved MIMIC-IV version. Besides, the need to use multicenter datasets further highlights the challenge of EHR data extraction. Therefore, we developed an extraction pipeline that works on both MIMIC-IV and eICU Collaborative Research Database and allows for model cross validation using these 2 databases. Under the default choices, the pipeline extracted 38766 and 126448 ICU records for MIMIC-IV and eICU, respectively. Using the extracted time-dependent variables, we compared the Area Under the Curve (AUC) performance with prior works on clinically relevant tasks such as in-hospital mortality prediction. METRE achieved comparable performance with AUC 0.723- 0.888 across all tasks. Additionally, when we evaluated the model directly on MIMIC-IV data using a model trained on eICU, we observed that the AUC change can be as small as +0.019 or -0.015. Our open-source pipeline transforms MIMIC-IV and eICU into structured data frames and allows researchers to perform model training and testing using data collected from different institutions, which is of critical importance for model deployment under clinical contexts.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-26T20:34:45Z</published>
+    <arxiv:primary_category term="cs.DB"/>
+    <arxiv:journal_ref>Journal of Biomedical Informatics,Volume 141, May 2023, 104356</arxiv:journal_ref>
+    <author>
+      <name>Wei Liao</name>
+    </author>
+    <author>
+      <name>Joel Voldman</name>
+    </author>
+    <arxiv:doi>10.1016/j.jbi.2023.104356</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.jbi.2023.104356" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.14780v2</id>
+    <title>ACR: A Benchmark for Automatic Cohort Retrieval</title>
+    <updated>2024-07-01T19:05:00Z</updated>
+    <link href="https://arxiv.org/abs/2406.14780v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.14780v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Identifying patient cohorts is fundamental to numerous healthcare tasks, including clinical trial recruitment and retrospective studies. Current cohort retrieval methods in healthcare organizations rely on automated queries of structured data combined with manual curation, which are time-consuming, labor-intensive, and often yield low-quality results. Recent advancements in large language models (LLMs) and information retrieval (IR) offer promising avenues to revolutionize these systems. Major challenges include managing extensive eligibility criteria and handling the longitudinal nature of unstructured Electronic Medical Records (EMRs) while ensuring that the solution remains cost-effective for real-world application. This paper introduces a new task, Automatic Cohort Retrieval (ACR), and evaluates the performance of LLMs and commercial, domain-specific neuro-symbolic approaches. We provide a benchmark task, a query dataset, an EMR dataset, and an evaluation framework. Our findings underscore the necessity for efficient, high-quality ACR systems capable of longitudinal reasoning across extensive patient databases.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-20T23:04:06Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dung Ngoc Thai</name>
+    </author>
+    <author>
+      <name>Victor Ardulov</name>
+    </author>
+    <author>
+      <name>Jose Ulises Mena</name>
+    </author>
+    <author>
+      <name>Simran Tiwari</name>
+    </author>
+    <author>
+      <name>Gleb Erofeev</name>
+    </author>
+    <author>
+      <name>Ramy Eskander</name>
+    </author>
+    <author>
+      <name>Karim Tarabishy</name>
+    </author>
+    <author>
+      <name>Ravi B Parikh</name>
+    </author>
+    <author>
+      <name>Wael Salloum</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.08660v1</id>
+    <title>Large Language Models for Granularized Barrett's Esophagus Diagnosis Classification</title>
+    <updated>2023-08-16T20:17:46Z</updated>
+    <link href="https://arxiv.org/abs/2308.08660v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.08660v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diagnostic codes for Barrett's esophagus (BE), a precursor to esophageal cancer, lack granularity and precision for many research or clinical use cases. Laborious manual chart review is required to extract key diagnostic phenotypes from BE pathology reports. We developed a generalizable transformer-based method to automate data extraction. Using pathology reports from Columbia University Irving Medical Center with gastroenterologist-annotated targets, we performed binary dysplasia classification as well as granularized multi-class BE-related diagnosis classification. We utilized two clinically pre-trained large language models, with best model performance comparable to a highly tailored rule-based system developed using the same data. Binary dysplasia extraction achieves 0.964 F1-score, while the multi-class model achieves 0.911 F1-score. Our method is generalizable and faster to implement as compared to a tailored rule-based approach.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-16T20:17:46Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jenna Kefeli</name>
+    </author>
+    <author>
+      <name>Ali Soroush</name>
+    </author>
+    <author>
+      <name>Courtney J. Diamond</name>
+    </author>
+    <author>
+      <name>Haley M. Zylberberg</name>
+    </author>
+    <author>
+      <name>Benjamin May</name>
+    </author>
+    <author>
+      <name>Julian A. Abrams</name>
+    </author>
+    <author>
+      <name>Chunhua Weng</name>
+    </author>
+    <author>
+      <name>Nicholas Tatonetti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.17234v1</id>
+    <title>Deployment and Evaluation of an EHR-integrated, Large Language Model-Powered Tool to Triage Surgical Patients</title>
+    <updated>2026-03-18T00:36:58Z</updated>
+    <link href="https://arxiv.org/abs/2603.17234v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.17234v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Surgical co-management (SCM) is an evidence-based model in which hospitalists jointly manage medically complex perioperative patients alongside surgical teams. Despite its clinical and financial value, SCM is limited by the need to manually identify eligible patients. To determine whether SCM triage can be automated, we conducted a prospective, unblinded study at Stanford Health Care in which an LLM-based, electronic health record (EHR)-integrated triage tool (SCM Navigator) provided SCM recommendations followed by physician review.
+  Using pre-operative documentation, structured data, and clinical criteria for perioperative morbidity, SCM Navigator categorized patients as appropriate, not appropriate, or possibly appropriate for SCM. Faculty indicated their clinical judgment and provided free-text feedback when they disagreed. Sensitivity, specificity, positive predictive value, and negative predictive value were measured using physician determinations as a reference. Free-text reasons were thematically categorized, and manual chart review was conducted on all false-negative cases and 30 randomly selected cases from the largest false-positive category. Since deployment, 6,193 cases have been triaged, of which 1,582 (23%) were recommended for hospitalist consultation. SCM Navigator displayed high sensitivity (0.94, 95% CI 0.91-0.96) and moderate specificity (0.74, 95% CI 0.71-0.77). Post-hoc chart review suggested most discrepancies reflect modifiable gaps in clinical criteria, institutional workflow, or physician practice variability rather than LLM misclassification, which accounted for 2 of 19 (11%) false-negative cases. These findings demonstrate that an LLM-powered, EHR-integrated, human-in-the-loop AI system can accurately and safely triage surgical patients for SCM, and that AI-enabled screening tools can augment and potentially automate time-intensive clinical workflows.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T00:36:58Z</published>
+    <arxiv:comment>35 pages, 4 figures, 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Jane Wang</name>
+    </author>
+    <author>
+      <name>Timothy Keyes</name>
+    </author>
+    <author>
+      <name>April S Liang</name>
+    </author>
+    <author>
+      <name>Stephen P Ma</name>
+    </author>
+    <author>
+      <name>Jason Shen</name>
+    </author>
+    <author>
+      <name>Jerry Liu</name>
+    </author>
+    <author>
+      <name>Nerissa Ambers</name>
+    </author>
+    <author>
+      <name>Abby Pandya</name>
+    </author>
+    <author>
+      <name>Rita Pandya</name>
+    </author>
+    <author>
+      <name>Jason Hom</name>
+    </author>
+    <author>
+      <name>Natasha Steele</name>
+    </author>
+    <author>
+      <name>Jonathan H Chen</name>
+    </author>
+    <author>
+      <name>Kevin Schulman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.16326v1</id>
+    <title>HARE: an entity and relation centric evaluation framework for histopathology reports</title>
+    <updated>2025-09-19T18:12:19Z</updated>
+    <link href="https://arxiv.org/abs/2509.16326v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.16326v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical domain automated text generation is an active area of research and development; however, evaluating the clinical quality of generated reports remains a challenge, especially in instances where domain-specific metrics are lacking, e.g. histopathology. We propose HARE (Histopathology Automated Report Evaluation), a novel entity and relation centric framework, composed of a benchmark dataset, a named entity recognition (NER) model, a relation extraction (RE) model, and a novel metric, which prioritizes clinically relevant content by aligning critical histopathology entities and relations between reference and generated reports. To develop the HARE benchmark, we annotated 813 de-identified clinical diagnostic histopathology reports and 652 histopathology reports from The Cancer Genome Atlas (TCGA) with domain-specific entities and relations. We fine-tuned GatorTronS, a domain-adapted language model to develop HARE-NER and HARE-RE which achieved the highest overall F1-score (0.915) among the tested models. The proposed HARE metric outperformed traditional metrics including ROUGE and Meteor, as well as radiology metrics such as RadGraph-XL, with the highest correlation and the best regression to expert evaluations (higher than the second best method, GREEN, a large language model based radiology report evaluator, by Pearson $r = 0.168$, Spearman $ρ= 0.161$, Kendall $τ= 0.123$, $R^2 = 0.176$, $RMSE = 0.018$). We release HARE, datasets, and the models at https://github.com/knowlab/HARE to foster advancements in histopathology report generation, providing a robust framework for improving the quality of reports.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-19T18:12:19Z</published>
+    <arxiv:comment>Accepted to EMNLP2025 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yunsoo Kim</name>
+    </author>
+    <author>
+      <name>Michal W. S. Ong</name>
+    </author>
+    <author>
+      <name>Alex Shavick</name>
+    </author>
+    <author>
+      <name>Honghan Wu</name>
+    </author>
+    <author>
+      <name>Adam P. Levine</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.21050v3</id>
+    <title>Cross-Institutional Dental EHR Entity Extraction via Generative AI and Synthetic Notes</title>
+    <updated>2025-06-02T18:52:22Z</updated>
+    <link href="https://arxiv.org/abs/2407.21050v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.21050v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This research addresses the issue of missing structured data in dental records by extracting diagnostic information from unstructured text. The updated periodontology classification system's complexity has increased incomplete or missing structured diagnoses. To tackle this, we use advanced AI and NLP methods, leveraging GPT-4 to generate synthetic notes for fine-tuning a RoBERTa model. This significantly enhances the model's ability to understand medical and dental language. We evaluated the model using 120 randomly selected clinical notes from two datasets, demonstrating its improved diagnostic extraction accuracy. The results showed high accuracy in diagnosing periodontal status, stage, and grade, with Site 1 scoring 0.99 and Site 2 scoring 0.98. In the subtype category, Site 2 achieved perfect scores, outperforming Site 1. This method enhances extraction accuracy and broadens its use across dental contexts. The study underscores AI and NLP's transformative impact on healthcare delivery and management. Integrating AI and NLP technologies enhances documentation and simplifies administrative tasks by precisely extracting complex clinical information. This approach effectively addresses challenges in dental diagnostics. Using synthetic training data from LLMs optimizes the training process, improving accuracy and efficiency in identifying periodontal diagnoses from clinical notes. This innovative method holds promise for broader healthcare applications, potentially improving patient care quality.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-23T04:05:48Z</published>
+    <arxiv:comment>11 pages, 2 tables, 3 figures, under review</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yao-Shun Chuang</name>
+    </author>
+    <author>
+      <name>Chun-Teh Lee</name>
+    </author>
+    <author>
+      <name>Oluwabunmi Tokede</name>
+    </author>
+    <author>
+      <name>Guo-Hao Lin</name>
+    </author>
+    <author>
+      <name>Ryan Brandon</name>
+    </author>
+    <author>
+      <name>Trung Duong Tran</name>
+    </author>
+    <author>
+      <name>Xiaoqian Jiang</name>
+    </author>
+    <author>
+      <name>Muhammad F. Walji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.02650v2</id>
+    <title>The Effectiveness of Large Language Models in Transforming Unstructured Text to Standardized Formats</title>
+    <updated>2025-05-05T12:25:44Z</updated>
+    <link href="https://arxiv.org/abs/2503.02650v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.02650v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The exponential growth of unstructured text data presents a fundamental challenge in modern data management and information retrieval. While Large Language Models (LLMs) have shown remarkable capabilities in natural language processing, their potential to transform unstructured text into standardized, structured formats remains largely unexplored - a capability that could revolutionize data processing workflows across industries. This study breaks new ground by systematically evaluating LLMs' ability to convert unstructured recipe text into the structured Cooklang format. Through comprehensive testing of four models (GPT-4o, GPT-4o-mini, Llama3.1:70b, and Llama3.1:8b), an innovative evaluation approach is introduced that combines traditional metrics (WER, ROUGE-L, TER) with specialized metrics for semantic element identification. Our experiments reveal that GPT-4o with few-shot prompting achieves breakthrough performance (ROUGE-L: 0.9722, WER: 0.0730), demonstrating for the first time that LLMs can reliably transform domain-specific unstructured text into structured formats without extensive training. Although model performance generally scales with size, we uncover surprising potential in smaller models like Llama3.1:8b for optimization through targeted fine-tuning. These findings open new possibilities for automated structured data generation across various domains, from medical records to technical documentation, potentially transforming the way organizations process and utilize unstructured information.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-04T14:14:28Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>William Brach</name>
+    </author>
+    <author>
+      <name>Kristián Košťál</name>
+    </author>
+    <author>
+      <name>Michal Ries</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.11032v3</id>
+    <title>DeID-GPT: Zero-shot Medical Text De-Identification by GPT-4</title>
+    <updated>2025-11-28T21:17:07Z</updated>
+    <link href="https://arxiv.org/abs/2303.11032v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.11032v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The digitization of healthcare has facilitated the sharing and re-using of medical data but has also raised concerns about confidentiality and privacy. HIPAA (Health Insurance Portability and Accountability Act) mandates removing re-identifying information before the dissemination of medical records. Thus, effective and efficient solutions for de-identifying medical data, especially those in free-text forms, are highly needed. While various computer-assisted de-identification methods, including both rule-based and learning-based, have been developed and used in prior practice, such solutions still lack generalizability or need to be fine-tuned according to different scenarios, significantly imposing restrictions in wider use. The advancement of large language models (LLM), such as ChatGPT and GPT-4, have shown great potential in processing text data in the medical domain with zero-shot in-context learning, especially in the task of privacy protection, as these models can identify confidential information by their powerful named entity recognition (NER) capability. In this work, we developed a novel GPT4-enabled de-identification framework (``DeID-GPT") to automatically identify and remove the identifying information. Compared to existing commonly used medical text data de-identification methods, our developed DeID-GPT showed the highest accuracy and remarkable reliability in masking private information from the unstructured medical text while preserving the original structure and meaning of the text. This study is one of the earliest to utilize ChatGPT and GPT-4 for medical text data processing and de-identification, which provides insights for further research and solution development on the use of LLMs such as ChatGPT/GPT-4 in healthcare. Codes and benchmarking data information are available at https://github.com/yhydhx/ChatGPT-API.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-20T11:34:37Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhengliang Liu</name>
+    </author>
+    <author>
+      <name>Yue Huang</name>
+    </author>
+    <author>
+      <name>Xiaowei Yu</name>
+    </author>
+    <author>
+      <name>Lu Zhang</name>
+    </author>
+    <author>
+      <name>Zihao Wu</name>
+    </author>
+    <author>
+      <name>Chao Cao</name>
+    </author>
+    <author>
+      <name>Haixing Dai</name>
+    </author>
+    <author>
+      <name>Lin Zhao</name>
+    </author>
+    <author>
+      <name>Yiwei Li</name>
+    </author>
+    <author>
+      <name>Peng Shu</name>
+    </author>
+    <author>
+      <name>Fang Zeng</name>
+    </author>
+    <author>
+      <name>Lichao Sun</name>
+    </author>
+    <author>
+      <name>Wei Liu</name>
+    </author>
+    <author>
+      <name>Dinggang Shen</name>
+    </author>
+    <author>
+      <name>Quanzheng Li</name>
+    </author>
+    <author>
+      <name>Tianming Liu</name>
+    </author>
+    <author>
+      <name>Dajiang Zhu</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.17607v1</id>
+    <title>Robustness of Structured Data Extraction from Perspectively Distorted Documents</title>
+    <updated>2025-11-18T07:54:21Z</updated>
+    <link href="https://arxiv.org/abs/2511.17607v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.17607v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optical Character Recognition (OCR) for data extraction from documents is essential to intelligent informatics, such as digitizing medical records and recognizing road signs. Multi-modal Large Language Models (LLMs) can solve this task and have shown remarkable performance. Recently, it has been noticed that the accuracy of data extraction by multi-modal LLMs can be affected when in-plane rotations are present in the documents. However, real-world document images are usually not only in-plane rotated but also perspectively distorted. This study investigates the impacts of such perturbations on the data extraction accuracy for the state-of-the-art model, Gemini-1.5-pro. Because perspective distortions have a high degree of freedom, designing experiments in the same manner as single-parametric rotations is difficult. We observed typical distortions of document images and showed that most of them approximately follow an isosceles-trapezoidal transformation, which allows us to evaluate distortions with a small number of parameters. We were able to reduce the number of independent parameters from eight to two, i.e. rotation angle and distortion ratio. Then, specific entities were extracted from synthetically generated sample documents with varying these parameters. As the performance of LLMs, we evaluated not only a character-recognition accuracy but also a structure-recognition accuracy. Whereas the former represents the classical indicators for optical character recognition, the latter is related to the correctness of reading order. In particular, the structure-recognition accuracy was found to be significantly degraded by document distortion. In addition, we found that this accuracy can be improved by a simple rotational correction. This insight will contribute to the practical use of multi-modal LLMs for OCR tasks.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-18T07:54:21Z</published>
+    <arxiv:comment>8 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <arxiv:journal_ref>2025 10th International Conference on Intelligent Informatics and Biomedical Sciences (ICIIBMS), Okinawa, Japan, 2025, pp. 1-8</arxiv:journal_ref>
+    <author>
+      <name>Hyakka Nakada</name>
+    </author>
+    <author>
+      <name>Yoshiyasu Tanaka</name>
+    </author>
+    <arxiv:doi>10.1109/ICIIBMS66230.2025.11316782</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICIIBMS66230.2025.11316782" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.11386v1</id>
+    <title>Task formulation for Extracting Social Determinants of Health from Clinical Narratives</title>
+    <updated>2023-01-26T20:00:54Z</updated>
+    <link href="https://arxiv.org/abs/2301.11386v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.11386v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Objective: The 2022 n2c2 NLP Challenge posed identification of social determinants of health (SDOH) in clinical narratives. We present three systems that we developed for the Challenge and discuss the distinctive task formulation used in each of the three systems. Materials and Methods: The first system identifies target pieces of information independently using machine learning classifiers. The second system uses a large language model (LLM) to extract complete structured outputs per document. The third system extracts candidate phrases using machine learning and identifies target relations with hand-crafted rules. Results: The three systems achieved F1 scores of 0.884, 0.831, and 0.663 in the Subtask A of the Challenge, which are ranked third, seventh, and eighth among the 15 participating teams. The review of the extraction results from our systems reveals characteristics of each approach and those of the SODH extraction task. Discussion: Phrases and relations annotated in the task is unique and diverse, not conforming to the conventional event extraction task. These annotations are difficult to model with limited training data. The system that extracts information independently, ignoring the annotated relations, achieves the highest F1 score. Meanwhile, LLM with its versatile capability achieves the high F1 score, while respecting the annotated relations. The rule-based system tackling relation extraction obtains the low F1 score, while it is the most explainable approach. Conclusion: The F1 scores of the three systems vary in this challenge setting, but each approach has advantages and disadvantages in a practical application. The selection of the approach depends not only on the F1 score but also on the requirements in the application.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-26T20:00:54Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Manabu Torii</name>
+    </author>
+    <author>
+      <name>Ian M. Finn</name>
+    </author>
+    <author>
+      <name>Son Doan</name>
+    </author>
+    <author>
+      <name>Paul Wang</name>
+    </author>
+    <author>
+      <name>Elly W. Yang</name>
+    </author>
+    <author>
+      <name>Daniel S. Zisook</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.26913v1</id>
+    <title>MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring</title>
+    <updated>2026-10-17T06:13:06Z</updated>
+    <link href="https://arxiv.org/abs/2610.26913v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.26913v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The adoption of Large Language Models for radiology report structuring has been largely dominated by either proprietary cloud-based models or large open models requiring high-end GPUs for deployment, which is a critical bottleneck for clinical adoption in radiology workflows that demand data privacy and offline operation. To address this, we present MedPAO-Assist, an edge-deployable agentic framework that generates structured radiology reports directly from radiologist dictation and voice commands, requiring only $\approx3.3$ GB peak RAM and achieving an average end-to-end latency of $\approx31$ seconds on a standard laptop CPU through an asynchronous, multi-threaded execution pipeline. The system currently supports four major imaging modalities -- Chest X-ray, Chest CT, Abdomen CT, and Brain MRI. To our knowledge, it is among the earliest agentic systems to run its entire pipeline with a Small Language Model (SLM) in the 0.6B-parameter range. This multi-agent architecture, built around an Extract-Ground-Generate paradigm, performs concept extraction, SNOMED-CT grounding, and structured report generation, followed by a speech-driven human-in-the-loop correction phase, together forming a fully "no-touch" reporting workflow that requires no keyboard input, external API calls, or internet connectivity. We evaluate each pipeline stage individually -- concept extraction, ontology grounding, and concept categorization and report hardware profiling results demonstrating the system's feasibility for real-time, CPU-only clinical deployment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-17T06:13:06Z</published>
+    <arxiv:comment>The paper has been accepted at MICCAI Workshop Agentic AI for Medicine, 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shrish Shrinath Vaidya</name>
+    </author>
+    <author>
+      <name>Minmini Selvam</name>
+    </author>
+    <author>
+      <name>Ganapathy Krishnamurthi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.13351v1</id>
+    <title>Representation Learning of Structured Data for Medical Foundation Models</title>
+    <updated>2024-10-17T09:02:28Z</updated>
+    <link href="https://arxiv.org/abs/2410.13351v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.13351v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have demonstrated remarkable performance across various domains, including healthcare. However, their ability to effectively represent structured non-textual data, such as the alphanumeric medical codes used in records like ICD-10 or SNOMED-CT, is limited and has been particularly exposed in recent research. This paper examines the challenges LLMs face in processing medical codes due to the shortcomings of current tokenization methods. As a result, we introduce the UniStruct architecture to design a multimodal medical foundation model of unstructured text and structured data, which addresses these challenges by adapting subword tokenization techniques specifically for the structured medical codes. Our approach is validated through model pre-training on both an extensive internal medical database and a public repository of structured medical records. Trained on over 1 billion tokens on the internal medical database, the proposed model achieves up to a 23% improvement in evaluation metrics, with around 2% gain attributed to our proposed tokenization. Additionally, when evaluated on the EHRSHOT public benchmark with a 1/1000 fraction of the pre-training data, the UniStruct model improves performance on over 42% of the downstream tasks. Our approach not only enhances the representation and generalization capabilities of patient-centric models but also bridges a critical gap in representation learning models' ability to handle complex structured medical data, alongside unstructured text.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-17T09:02:28Z</published>
+    <arxiv:comment>NeurIPS 2024 Workshop on Unifying Representations in Neural Models (UniReps 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Vijay Prakash Dwivedi</name>
+    </author>
+    <author>
+      <name>Viktor Schlegel</name>
+    </author>
+    <author>
+      <name>Andy T. Liu</name>
+    </author>
+    <author>
+      <name>Thanh-Tung Nguyen</name>
+    </author>
+    <author>
+      <name>Abhinav Ramesh Kashyap</name>
+    </author>
+    <author>
+      <name>Jeng Wei</name>
+    </author>
+    <author>
+      <name>Wei-Hsian Yin</name>
+    </author>
+    <author>
+      <name>Stefan Winkler</name>
+    </author>
+    <author>
+      <name>Robby T. Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.09709v1</id>
+    <title>Social Determinants of Health Prediction for ICD-9 Code with Reasoning Models</title>
+    <updated>2025-12-14T17:15:17Z</updated>
+    <link href="https://arxiv.org/abs/2601.09709v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.09709v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Social Determinants of Health correlate with patient outcomes but are rarely captured in structured data. Recent attention has been given to automatically extracting these markers from clinical text to supplement diagnostic systems with knowledge of patients' social circumstances. Large language models demonstrate strong performance in identifying Social Determinants of Health labels from sentences. However, prediction in large admissions or longitudinal notes is challenging given long distance dependencies. In this paper, we explore hospital admission multi-label Social Determinants of Health ICD-9 code classification on the MIMIC-III dataset using reasoning models and traditional large language models. We exploit existing ICD-9 codes for prediction on admissions, which achieved an 89% F1. Our contributions include our findings, missing SDoH codes in 139 admissions, and code to reproduce the results.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-14T17:15:17Z</published>
+    <arxiv:comment>Published as part of Machine Learning for Health (ML4H) 2025 Findings Track</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Sharim Khan</name>
+    </author>
+    <author>
+      <name>Paul Landes</name>
+    </author>
+    <author>
+      <name>Adam Cross</name>
+    </author>
+    <author>
+      <name>Jimeng Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.06193v1</id>
+    <title>MLB: A Scenario-Driven Benchmark for Evaluating Large Language Models in Clinical Applications</title>
+    <updated>2026-01-08T02:41:42Z</updated>
+    <link href="https://arxiv.org/abs/2601.06193v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.06193v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The proliferation of Large Language Models (LLMs) presents transformative potential for healthcare, yet practical deployment is hindered by the absence of frameworks that assess real-world clinical utility. Existing benchmarks test static knowledge, failing to capture the dynamic, application-oriented capabilities required in clinical practice. To bridge this gap, we introduce a Medical LLM Benchmark MLB, a comprehensive benchmark evaluating LLMs on both foundational knowledge and scenario-based reasoning. MLB is structured around five core dimensions: Medical Knowledge (MedKQA), Safety and Ethics (MedSE), Medical Record Understanding (MedRU), Smart Services (SmartServ), and Smart Healthcare (SmartCare). The benchmark integrates 22 datasets (17 newly curated) from diverse Chinese clinical sources, covering 64 clinical specialties. Its design features a rigorous curation pipeline involving 300 licensed physicians. Besides, we provide a scalable evaluation methodology, centered on a specialized judge model trained via Supervised Fine-Tuning (SFT) on expert annotations. Our comprehensive evaluation of 10 leading models reveals a critical translational gap: while the top-ranked model, Kimi-K2-Instruct (77.3% accuracy overall), excels in structured tasks like information extraction (87.8% accuracy in MedRU), performance plummets in patient-facing scenarios (61.3% in SmartServ). Moreover, the exceptional safety score (90.6% in MedSE) of the much smaller Baichuan-M2-32B highlights that targeted training is equally critical. Our specialized judge model, trained via SFT on a 19k expert-annotated medical dataset, achieves 92.1% accuracy, an F1-score of 94.37%, and a Cohen's Kappa of 81.3% for human-AI consistency, validating a reproducible and expert-aligned evaluation protocol. MLB thus provides a rigorous framework to guide the development of clinically viable LLMs.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-08T02:41:42Z</published>
+    <arxiv:comment>11 pages, 4 figures, 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Qing He</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Dongsheng Bi</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jianrong Lu</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+      <arxiv:affiliation>Zhejiang University, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Minghui Yang</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zixiao Chen</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jiacheng Lu</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jing Chen</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nannan Du</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Xiao Cu</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sijing Wu</name>
+      <arxiv:affiliation>Health Information Center of Zhejiang Province, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peng Xiang</name>
+      <arxiv:affiliation>Department of AI and IT, The Second Affiliated Hospital, School of Medicine, Zhejiang University, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yinyin Hu</name>
+      <arxiv:affiliation>Health Information Center of Zhejiang Province, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yi Guo</name>
+      <arxiv:affiliation>Health Information Center of Zhejiang Province, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chunpu Li</name>
+      <arxiv:affiliation>Health Information Center of Zhejiang Province, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shaoyang Li</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zhuo Dong</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ming Jiang</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shuai Guo</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Liyun Feng</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jin Peng</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jian Wang</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jinjie Gu</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Junwei Liu</name>
+      <arxiv:affiliation>Ant Group, Hangzhou, China</arxiv:affiliation>
+      <arxiv:affiliation>School of Software and Microelectronics, Peking University, Beijing, China</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.09599v1</id>
+    <title>Radiology Text Analysis System (RadText): Architecture and Evaluation</title>
+    <updated>2022-03-19T17:16:12Z</updated>
+    <link href="https://arxiv.org/abs/2204.09599v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.09599v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Analyzing radiology reports is a time-consuming and error-prone task, which raises the need for an efficient automated radiology report analysis system to alleviate the workloads of radiologists and encourage precise diagnosis. In this work, we present RadText, an open-source radiology text analysis system developed by Python. RadText offers an easy-to-use text analysis pipeline, including de-identification, section segmentation, sentence split and word tokenization, named entity recognition, parsing, and negation detection. RadText features a flexible modular design, provides a hybrid text processing schema, and supports raw text processing and local processing, which enables better usability and improved data privacy. RadText adopts BioC as the unified interface, and also standardizes the input / output into a structured representation compatible with Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM). This allows for a more systematic approach to observational research across multiple, disparate data sources. We evaluated RadText on the MIMIC-CXR dataset, with five new disease labels we annotated for this work. RadText demonstrates highly accurate classification performances, with an average precision of, a recall of 0.94, and an F-1 score of 0.92. We have made our code, documentation, examples, and the test set available at https://github.com/bionlplab/radtext .</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-19T17:16:12Z</published>
+    <arxiv:comment>9 pages, 2 figures, Accepted by 2022 IEEE 10th International Conference on Healthcare Informatics (ICHI)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Song Wang</name>
+    </author>
+    <author>
+      <name>Mingquan Lin</name>
+    </author>
+    <author>
+      <name>Ying Ding</name>
+    </author>
+    <author>
+      <name>George Shih</name>
+    </author>
+    <author>
+      <name>Zhiyong Lu</name>
+    </author>
+    <author>
+      <name>Yifan Peng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.06687v3</id>
+    <title>Proximal Causal Inference With Text Data</title>
+    <updated>2024-10-29T15:12:52Z</updated>
+    <link href="https://arxiv.org/abs/2401.06687v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.06687v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent text-based causal methods attempt to mitigate confounding bias by estimating proxies of confounding variables that are partially or imperfectly measured from unstructured text data. These approaches, however, assume analysts have supervised labels of the confounders given text for a subset of instances, a constraint that is sometimes infeasible due to data privacy or annotation costs. In this work, we address settings in which an important confounding variable is completely unobserved. We propose a new causal inference method that uses two instances of pre-treatment text data, infers two proxies using two zero-shot models on the separate instances, and applies these proxies in the proximal g-formula. We prove, under certain assumptions about the instances of text and accuracy of the zero-shot predictions, that our method of inferring text-based proxies satisfies identification conditions of the proximal g-formula while other seemingly reasonable proposals do not. To address untestable assumptions associated with our method and the proximal g-formula, we further propose an odds ratio falsification heuristic that flags when to proceed with downstream effect estimation using the inferred proxies. We evaluate our method in synthetic and semi-synthetic settings -- the latter with real-world clinical notes from MIMIC-III and open large language models for zero-shot prediction -- and find that our method produces estimates with low bias. We believe that this text-based design of proxies allows for the use of proximal causal inference in a wider range of scenarios, particularly those for which obtaining suitable proxies from structured data is difficult.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-12T16:51:02Z</published>
+    <arxiv:comment>35 pages; Accepted at NeurIPS 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jacob M. Chen</name>
+    </author>
+    <author>
+      <name>Rohit Bhattacharya</name>
+    </author>
+    <author>
+      <name>Katherine A. Keith</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26560v1</id>
+    <title>Reliable Extraction of Clinical Follow-Up Instructions: A Hybrid Neural-Symbolic Pipeline</title>
+    <updated>2026-05-26T05:14:33Z</updated>
+    <link href="https://arxiv.org/abs/2605.26560v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26560v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Objective. Outpatient notes carry follow-up instructions pairing actions with future times ("MRI brain in two weeks"). Extracting (action, date) pairs supports scheduling and audit, but generative extractors miss the date because linking and arithmetic are implicit in decoding. We test a hybrid neural-symbolic pipeline against direct generation. Methods. We define TestSpecification and TimeSpecification entities and a ScheduledFor relation. BioBERT feeds BIO tagging and a biaffine linker; entities are canonicalized via a 28-action ontology and times normalized to day offsets deterministically. We evaluate on a 2,000-note synthetic outpatient corpus with action-disjoint splits (18 train, 6 OOV-test) against zero-shot GPT-4o-mini and LoRA-fine-tuned LLaMA-3 8B with note-level bootstrap 95% CIs. Results. On 259-note seen and OOV splits the hybrid pipeline achieves Test-Time Pair F1 of 0.997 and 0.986 with 0.00-day MAE. Baselines reach high action F1 (LLaMA-3 0.992; GPT-4o-mini 0.963 seen) but Pair F1 stays at 0.51-0.57 (LLaMA-3) and 0.53 (GPT-4o-mini), CIs non-overlapping with the hybrid. Conclusion. Separating learned entity extraction from deterministic date arithmetic outperforms generation on this benchmark, generalizes to held-out actions, and exposes failure modes. Transfer to real EHR notes is the next validation; a first-pass realism check is in Limitations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T05:14:33Z</published>
+    <arxiv:comment>17 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Michal Laufer</name>
+    </author>
+    <author>
+      <name>Yehudit Aperstein</name>
+    </author>
+    <author>
+      <name>Alexander Apartsin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.05880v1</id>
+    <title>Harrison.Rad 1.5 Technical Report: A radiology foundation model that can draft reports from images, priors and clinical context</title>
+    <updated>2026-07-07T06:23:08Z</updated>
+    <link href="https://arxiv.org/abs/2607.05880v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.05880v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Imaging demand is growing faster than the radiology workforce can expand, and reporting backlogs cannot be resolved through training and recruitment alone. The most direct opportunity is reducing the time and effort radiologists spend producing reports, a task that requires interpreting images, integrating clinical history and prior studies, and drafting structured findings. We present Harrison.Rad 1.5 (HR1.5), a radiology-specific multimodal large language model that accepts interleaved text and visual inputs and generates structured and unstructured text across plain-film radiology, spanning computed radiography, chest, musculoskeletal, abdominal, spine, and pelvic x-rays, and mammography. HR1.5 is trained through a three-stage pipeline: domain adaptation of a base language model on radiology reports, contrastive vision-encoder training with curriculum-based hard negatives on ~6 million image-report instances, and visual-question-answering fine-tuning on multi-turn conversations. We evaluate it with a Findings-Diagnosis scoring framework that extends RadGraph-XL entity extraction with ontology-based synonym matching and polarity-contradiction detection, benchmarked on RadBench, a simulated FRCR 2B Short Case examination scored against Angoff-method thresholds, ReXGradient, and internal multi-modality datasets. HR1.5 is the only system evaluated to meet the simulated FRCR passing standard and achieves the highest accuracy on closed-format clinical questions, across anatomical regions, on internal multi-body-part and mammography reporting, and on the primary clinically-aligned score for public chest reporting. We further examine explainability and model behaviour, including question-sensitive Grad-CAM heatmaps, attention analysis, and confidence estimation, to support responsible future evaluation toward clinical use, and a framework for clinically grounded assessment of report quality.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-07T06:23:08Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Suneeta Mall</name>
+    </author>
+    <author>
+      <name>Vladimir Nekrasov</name>
+    </author>
+    <author>
+      <name>Ashnil Kumar</name>
+    </author>
+    <author>
+      <name>Sajith Karunasena</name>
+    </author>
+    <author>
+      <name>Aiden Nibali</name>
+    </author>
+    <author>
+      <name>Alix Bird</name>
+    </author>
+    <author>
+      <name>Mateo Diaz Shine</name>
+    </author>
+    <author>
+      <name>Jarrel Seah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.25359v1</id>
+    <title>The Structured Output Benchmark: A Multi-Source Benchmark for Evaluating Structured Output Quality in Large Language Models</title>
+    <updated>2026-04-28T08:27:01Z</updated>
+    <link href="https://arxiv.org/abs/2604.25359v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.25359v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models are increasingly being deployed to extract structured data from unstructured and semi-structured sources: parsing invoices, medical records, and converting PDF documents to database entries. Yet existing benchmarks for structured output generation either focus on schema compliance alone, or evaluate value correctness within a single source domain. We introduce SOB (The Structured Output Benchmark), a multi-source benchmark spanning three source modalities: native text, images, and audio conversations. All models receive a text-normalized representation of their context regardless of source modality; this deliberate design isolates structured-output capability from raw vision or speech-processing quality, ensuring a fair, source-agnostic comparison. Our benchmark comprises 5,000 text evaluation records derived from multi-hop QA drawn from a 25,091-record full corpus, 209 image records from OCR-processed PDFs across seven document types including multi-column layouts, dense tables, scanned historical documents, small-print text, and mathematical typesetting, and 115 audio records from the AMI corpus. Each record pairs a natural-language question with a JSON schema that the model must follow and a ground-truth answer verified against the source context. We evaluate 21 frontier and open-weight models across three source domains and seven metrics. Our results reveal a consistent pattern: models achieve near-perfect schema compliance, yet the best Value Accuracy, measured by exact leaf-value match, reaches only 83.0% on text, 67.2% on images, and 23.7% on audio, where longer context makes extraction substantially harder. We release the dataset, evaluation pipeline, and all related code.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-28T08:27:01Z</published>
+    <arxiv:comment>19 pages, 4 figures, 11 tables, submitted to NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Abhinav Kumar Singh</name>
+    </author>
+    <author>
+      <name>Harsha Vardhan Khurdula</name>
+    </author>
+    <author>
+      <name>Yoeven D Khemlani</name>
+    </author>
+    <author>
+      <name>Vineet Agarwal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.29965v1</id>
+    <title>Review Before Trust: Source-Grounded Integrity Gates for AI-Assisted Personal Health Records</title>
+    <updated>2026-08-30T18:51:43Z</updated>
+    <link href="https://arxiv.org/abs/2608.29965v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.29965v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models can convert medical documents into structured data, but plausible output may still be unsupported by the source. Persisting such output in a longitudinal health record, a record that accumulates patient information over time, therefore creates an integrity risk: unverified data may influence later summaries, trends, or preventive-care computations. We introduce an evidence-gated trust-promotion model that keeps generated data provisional until a deterministic monitor verifies it against the source document. The monitor admits a candidate for a specified downstream use only when the source contains a unique supporting quotation, the relevant fields occur within the same laboratory row, and the required provenance is preserved. The generator cannot approve its own output, missing or ambiguous evidence causes refusal, and refused candidates remain available for human review rather than being silently discarded. We implement the model in Medical DataCloud, a personal health-record application, and evaluate it through automated tests and a replay of saved extraction outputs. All 22 conformance and mutation tests pass. The replay covers nine historical laboratory PDF reports containing 102 manually labelled rows. The reports produce 97 numeric candidates: schema validation accepts all 97, an earlier packet-level evidence check accepts 94, and the hardened quotation- and row-level policy admits 72 while retaining 25 for review. The study evaluates system integrity rather than clinical correctness or clinical safety. The results demonstrate the technical feasibility of an enforceable boundary that prevents generated claims from authorizing their own reuse in a longitudinal health record.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-30T18:51:43Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Nora Girda</name>
+    </author>
+    <author>
+      <name>Adrian Groza</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.16077v1</id>
+    <title>RelCAT: Advancing Extraction of Clinical Inter-Entity Relationships from Unstructured Electronic Health Records</title>
+    <updated>2025-01-27T14:26:47Z</updated>
+    <link href="https://arxiv.org/abs/2501.16077v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.16077v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study introduces RelCAT (Relation Concept Annotation Toolkit), an interactive tool, library, and workflow designed to classify relations between entities extracted from clinical narratives. Building upon the CogStack MedCAT framework, RelCAT addresses the challenge of capturing complete clinical relations dispersed within text. The toolkit implements state-of-the-art machine learning models such as BERT and Llama along with proven evaluation and training methods. We demonstrate a dataset annotation tool (built within MedCATTrainer), model training, and evaluate our methodology on both openly available gold-standard and real-world UK National Health Service (NHS) hospital clinical datasets. We perform extensive experimentation and a comparative analysis of the various publicly available models with varied approaches selected for model fine-tuning. Finally, we achieve macro F1-scores of 0.977 on the gold-standard n2c2, surpassing the previous state-of-the-art performance, and achieve performance of &gt;=0.93 F1 on our NHS gathered datasets.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-27T14:26:47Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shubham Agarwal</name>
+    </author>
+    <author>
+      <name>Vlad Dinu</name>
+    </author>
+    <author>
+      <name>Thomas Searle</name>
+    </author>
+    <author>
+      <name>Mart Ratas</name>
+    </author>
+    <author>
+      <name>Anthony Shek</name>
+    </author>
+    <author>
+      <name>Dan F. Stein</name>
+    </author>
+    <author>
+      <name>James Teo</name>
+    </author>
+    <author>
+      <name>Richard Dobson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.03000v2</id>
+    <title>SODA: A Natural Language Processing Package to Extract Social Determinants of Health for Cancer Studies</title>
+    <updated>2023-05-18T18:39:20Z</updated>
+    <link href="https://arxiv.org/abs/2212.03000v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.03000v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Objective: We aim to develop an open-source natural language processing (NLP) package, SODA (i.e., SOcial DeterminAnts), with pre-trained transformer models to extract social determinants of health (SDoH) for cancer patients, examine the generalizability of SODA to a new disease domain (i.e., opioid use), and evaluate the extraction rate of SDoH using cancer populations.
+  Methods: We identified SDoH categories and attributes and developed an SDoH corpus using clinical notes from a general cancer cohort. We compared four transformer-based NLP models to extract SDoH, examined the generalizability of NLP models to a cohort of patients prescribed with opioids, and explored customization strategies to improve performance. We applied the best NLP model to extract 19 categories of SDoH from the breast (n=7,971), lung (n=11,804), and colorectal cancer (n=6,240) cohorts.
+  Results and Conclusion: We developed a corpus of 629 cancer patients notes with annotations of 13,193 SDoH concepts/attributes from 19 categories of SDoH. The Bidirectional Encoder Representations from Transformers (BERT) model achieved the best strict/lenient F1 scores of 0.9216 and 0.9441 for SDoH concept extraction, 0.9617 and 0.9626 for linking attributes to SDoH concepts. Fine-tuning the NLP models using new annotations from opioid use patients improved the strict/lenient F1 scores from 0.8172/0.8502 to 0.8312/0.8679. The extraction rates among 19 categories of SDoH varied greatly, where 10 SDoH could be extracted from &gt;70% of cancer patients, but 9 SDoH had a low extraction rate (&lt;70% of cancer patients). The SODA package with pre-trained transformer models is publicly available at https://github.com/uf-hobiinformatics-lab/SDoH_SODA.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-06T14:23:38Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Journal of Biomedical Informatics, April 2024, 104642</arxiv:journal_ref>
+    <author>
+      <name>Zehao Yu</name>
+    </author>
+    <author>
+      <name>Xi Yang</name>
+    </author>
+    <author>
+      <name>Chong Dang</name>
+    </author>
+    <author>
+      <name>Prakash Adekkanattu</name>
+    </author>
+    <author>
+      <name>Braja Gopal Patra</name>
+    </author>
+    <author>
+      <name>Yifan Peng</name>
+    </author>
+    <author>
+      <name>Jyotishman Pathak</name>
+    </author>
+    <author>
+      <name>Debbie L. Wilson</name>
+    </author>
+    <author>
+      <name>Ching-Yuan Chang</name>
+    </author>
+    <author>
+      <name>Wei-Hsuan Lo-Ciganic</name>
+    </author>
+    <author>
+      <name>Thomas J. George</name>
+    </author>
+    <author>
+      <name>William R. Hogan</name>
+    </author>
+    <author>
+      <name>Yi Guo</name>
+    </author>
+    <author>
+      <name>Jiang Bian</name>
+    </author>
+    <author>
+      <name>Yonghui Wu</name>
+    </author>
+    <arxiv:doi>10.1016/j.jbi.2024.104642</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.jbi.2024.104642" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.06208v1</id>
+    <title>Extracting Breast Cancer Phenotypes from Clinical Notes: Comparing LLMs with Classical Ontology Methods</title>
+    <updated>2026-03-16T05:09:20Z</updated>
+    <link href="https://arxiv.org/abs/2604.06208v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.06208v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A significant amount of data held in Oncology Electronic Medical Records (EMRs) is contained in unstructured provider notes -- including but not limited to the chemotherapy (or cancer treatment) outcome, different biomarkers, the tumor's location, sizes, and growth patterns of a patient. The clinical studies show that the majority of oncologists are comfortable providing these valuable insights in their notes in a natural language rather than the relevant structured fields of an EMR. The major contribution of this research is to report an LLM-based framework to process provider notes and extract valuable medical knowledge and phenotype mentioned above, with a focus on the domain of oncology. In this paper, we focus on extracting phenotypes related to breast cancer using our LLM framework, and then compare its performance with earlier works that used knowledge-driven annotation system, paired with the NCIt Ontology Annotator. The results of the study show that an LLM-based information extraction framework can be easily adapted to extract phenotypes with an accuracy that is comparable to the classical ontology-based methods. However, once trained, they could be easily fine-tuned to cater for other cancer types and diseases.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T05:09:20Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Abdullah Bin Faiz</name>
+    </author>
+    <author>
+      <name>Arbaz Khan Shehzad</name>
+    </author>
+    <author>
+      <name>Asad Afzal</name>
+    </author>
+    <author>
+      <name>Momin Tariq</name>
+    </author>
+    <author>
+      <name>Muhammad Siddiqi</name>
+    </author>
+    <author>
+      <name>Muhammad Usamah Shahid</name>
+    </author>
+    <author>
+      <name>Maryam Noor Awan</name>
+    </author>
+    <author>
+      <name>Muddassar Farooq</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.16002v1</id>
+    <title>RadAnnotate: Large Language Models for Efficient and Reliable Radiology Report Annotation</title>
+    <updated>2026-03-16T23:23:23Z</updated>
+    <link href="https://arxiv.org/abs/2603.16002v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.16002v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Radiology report annotation is essential for clinical NLP, yet manual labeling is slow and costly. We present RadAnnotate, an LLM-based framework that studies retrieval-augmented synthetic reports and confidence-based selective automation to reduce expert effort for labeling in RadGraph. We study RadGraph-style entity labeling (graph nodes) and leave relation extraction (edges) to future work. First, we train entity-specific classifiers on gold-standard reports and characterize their strengths and failure modes across anatomy and observation categories, with uncertain observations hardest to learn. Second, we generate RAG-guided synthetic reports and show that synthetic-only models remain within 1-2 F1 points of gold-trained models, and that synthetic augmentation is especially helpful for uncertain observations in a low-resource setting, improving F1 from 0.61 to 0.70. Finally, by learning entity-specific confidence thresholds, RadAnnotate can automatically annotate 55-90% of reports at 0.86-0.92 entity match score while routing low-confidence cases for expert review.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T23:23:23Z</published>
+    <arxiv:comment>10 pages, 3 figures. Accepted at AMIA Amplify Informatics Summit 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Saisha Pradeep Shetty</name>
+    </author>
+    <author>
+      <name>Roger Eric Goldman</name>
+    </author>
+    <author>
+      <name>Vladimir Filkov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.19218v1</id>
+    <title>HyKid: An Open MRI Dataset with Expert-Annotated Multi-Structure and Choroid Plexus in Pediatric Hydrocephalus</title>
+    <updated>2025-09-23T16:42:16Z</updated>
+    <link href="https://arxiv.org/abs/2509.19218v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.19218v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluation of hydrocephalus in children is challenging, and the related research is limited by a lack of publicly available, expert-annotated datasets, particularly those with segmentation of the choroid plexus. To address this, we present HyKid, an open-source dataset from 48 pediatric patients with hydrocephalus. 3D MRIs were provided with 1mm isotropic resolution, which was reconstructed from routine low-resolution images using a slice-to-volume algorithm. Manually corrected segmentations of brain tissues, including white matter, grey matter, lateral ventricle, external CSF, and the choroid plexus, were provided by an experienced neurologist. Additionally, structured data was extracted from clinical radiology reports using a Retrieval-Augmented Generation framework. The strong correlation between choroid plexus volume and total CSF volume provided a potential biomarker for hydrocephalus evaluation, achieving excellent performance in a predictive model (AUC = 0.87). The proposed HyKid dataset provided a high-quality benchmark for neuroimaging algorithms development, and it revealed the choroid plexus-related features in hydrocephalus assessments. Our datasets are publicly available at https://www.synapse.org/Synapse:syn68544889.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-23T16:42:16Z</published>
+    <arxiv:comment>10 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yunzhi Xu</name>
+    </author>
+    <author>
+      <name>Yushuang Ding</name>
+    </author>
+    <author>
+      <name>Hu Sun</name>
+    </author>
+    <author>
+      <name>Hongxi Zhang</name>
+    </author>
+    <author>
+      <name>Li Zhao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.18531v1</id>
+    <title>Enhancing Hepatopathy Clinical Trial Efficiency: A Secure, Large Language Model-Powered Pre-Screening Pipeline</title>
+    <updated>2025-02-25T02:06:39Z</updated>
+    <link href="https://arxiv.org/abs/2502.18531v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.18531v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Recruitment for cohorts involving complex liver diseases, such as hepatocellular carcinoma and liver cirrhosis, often requires interpreting semantically complex criteria. Traditional manual screening methods are time-consuming and prone to errors. While AI-powered pre-screening offers potential solutions, challenges remain regarding accuracy, efficiency, and data privacy. Methods: We developed a novel patient pre-screening pipeline that leverages clinical expertise to guide the precise, safe, and efficient application of large language models. The pipeline breaks down complex criteria into a series of composite questions and then employs two strategies to perform semantic question-answering through electronic health records - (1) Pathway A, Anthropomorphized Experts' Chain of Thought strategy, and (2) Pathway B, Preset Stances within an Agent Collaboration strategy, particularly in managing complex clinical reasoning scenarios. The pipeline is evaluated on three key metrics-precision, time consumption, and counterfactual inference - at both the question and criterion levels. Results: Our pipeline achieved high precision (0.921, in criteria level) and efficiency (0.44s per task). Pathway B excelled in complex reasoning, while Pathway A was effective in precise data extraction with faster processing times. Both pathways achieved comparable precision. The pipeline showed promising results in hepatocellular carcinoma (0.878) and cirrhosis trials (0.843). Conclusions: This data-secure and time-efficient pipeline shows high precision in hepatopathy trials, providing promising solutions for streamlining clinical trial workflows. Its efficiency and adaptability make it suitable for improving patient recruitment. And its capability to function in resource-constrained environments further enhances its utility in clinical settings.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-25T02:06:39Z</published>
+    <arxiv:comment>30 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiongbin Gui</name>
+    </author>
+    <author>
+      <name>Hanlin Lv</name>
+    </author>
+    <author>
+      <name>Xiao Wang</name>
+    </author>
+    <author>
+      <name>Longting Lv</name>
+    </author>
+    <author>
+      <name>Yi Xiao</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <arxiv:doi>10.1186/s13040-025-00458-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1186/s13040-025-00458-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.03085v2</id>
+    <title>Solving the Needle-in-a-Haystack Problem in Mammography Vision-Language Model with Differentiable Subset Sampling</title>
+    <updated>2026-09-14T13:27:23Z</updated>
+    <link href="https://arxiv.org/abs/2609.03085v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.03085v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There is growing interest in adopting CLIP-style vision--language model (VLM) pretraining for mammography. However, models that directly employ the standard CLIP architecture and training objective exhibit limited zero-shot performance in clinically important tasks such as cancer, finding-type, and BI-RADS predictions. We argue that this underwhelming performance is due to neglecting two characteristics of mammography data: (1) its high-res nature, and (2) homogeneity of radiology reports, largely driven by a predominance of negative/benign findings on examinations. We propose TopKSigLIP, a VLM designed to address these two limitations through a novel architecture and learning objectives. Instead of downscaling high-res mammography images to satisfy GPU memory constraints, TopKSigLIP introduces TopK-Patch module that learns to sample a sparse set of high-res patches likely to contain lesions, sidestepping the resolution--batch size tradeoff of VLM training. The sampled patch locations additionally serve as a built-in localization tool. To address report homogeneity, we replace the contrastive loss, which falsely repels semantically similar pairs, with a Sup-sigmoid loss. Sup-sigmoid loss extends the sigmoid loss from SigLIP with soft labels derived from structured data. TopKSigLIP outperforms existing open-source mammography and general medical VLMs on both internal and external benchmarks on density assessment, BI-RADS classification, finding subtyping, and cancer prediction under zero-shot evaluation. TopKSigLIP remains competitive under linear probing despite using a significantly smaller vision encoder and smaller training batches than baselines. The TopK-Patch module additionally achieves superior lesion localization over post-hoc Grad-CAM. Code and weights are made public:https://github.com/Youngseok0001/TopKSigLIP.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-02T18:59:00Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Young Seok Jeon</name>
+    </author>
+    <author>
+      <name>Beatrice Brown-Mulry</name>
+    </author>
+    <author>
+      <name>Rohan Satya Isaac</name>
+    </author>
+    <author>
+      <name>Anjana Dissanayaka</name>
+    </author>
+    <author>
+      <name>Theo Dapamede</name>
+    </author>
+    <author>
+      <name>Mohammadreza Chavoshi</name>
+    </author>
+    <author>
+      <name>Judy Gichoya</name>
+    </author>
+    <author>
+      <name>Hari Trivedi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20494v1</id>
+    <title>PARHAF, a human-authored corpus of clinical reports for fictitious patients in French</title>
+    <updated>2026-03-20T20:48:13Z</updated>
+    <link href="https://arxiv.org/abs/2603.20494v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20494v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of clinical natural language processing (NLP) systems is severely hampered by the sensitive nature of medical records, which restricts data sharing under stringent privacy regulations, particularly in France and the broader European Union. To address this gap, we introduce PARHAF, a large open-source corpus of clinical documents in French. PARHAF comprises expert-authored clinical reports describing realistic yet entirely fictitious patient cases, making it anonymous and freely shareable by design. The corpus was developed using a structured protocol that combined clinician expertise with epidemiological guidance from the French National Health Data System (SNDS), ensuring broad clinical coverage. A total of 104 medical residents across 18 specialties authored and peer-reviewed the reports following predefined clinical scenarios and document templates.
+  The corpus contains 7394 clinical reports covering 5009 patient cases across a wide range of medical and surgical specialties. It includes a general-purpose component designed to approximate real-world hospitalization distributions, and four specialized subsets that support information-extraction use cases in oncology, infectious diseases, and diagnostic coding. Documents are released under a CC-BY open license, with a portion temporarily embargoed to enable future benchmarking under controlled conditions.
+  PARHAF provides a valuable resource for training and evaluating French clinical language models in a fully privacy-preserving setting, and establishes a replicable methodology for building shareable synthetic clinical corpora in other languages and health systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-20T20:48:13Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xavier Tannier</name>
+    </author>
+    <author>
+      <name>Salam Abbara</name>
+    </author>
+    <author>
+      <name>Rémi Flicoteaux</name>
+    </author>
+    <author>
+      <name>Youness Khalil</name>
+    </author>
+    <author>
+      <name>Aurélie Névéol</name>
+    </author>
+    <author>
+      <name>Pierre Zweigenbaum</name>
+    </author>
+    <author>
+      <name>Emmanuel Bacry</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,24 @@
+{
+  "database_counts": {
+    "PubMed": 637,
+    "arXiv": 144,
+    "medRxiv": 110,
+    "Scopus": 970,
+    "IEEE Xplore": 260,
+    "ACM": 11
+  },
+  "duplicates_removed": 743,
+  "screened": null,
+  "title_abstract_excluded": null,
+  "full_text_not_retrieved": null,
+  "full_text_assessed": null,
+  "full_text_excluded_by_code": null,
+  "included": null,
+  "citation_identified": null,
+  "citation_screened": null,
+  "citation_excluded": null,
+  "citation_not_retrieved": null,
+  "citation_assessed": null,
+  "citation_excluded_by_code": null,
+  "citation_included": null
+}

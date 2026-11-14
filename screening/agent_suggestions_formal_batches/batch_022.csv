@@ -1,0 +1,6 @@
+﻿record_id,doi,pmid,arxiv_id,title,agent_suggestion,agent_code,agent_reason,agent_signals
+R1361,10.2214/ajr.23.29951,37703483,,The Role of Large Language Models in Radiology Reporting,unsure,,無摘要，標題僅示 LLM 與放射科報告撰寫，無法判斷。,Large Language Models in Radiology Reporting
+R1369,10.3389/fnins.2022.1031732,,,A survey of data element perspective: Application of artificial intelligence in health big data,exclude,X1,摘要明確為健康大數據機器學習的回顧（X1）。,we review and discuss the application of machine learning (ML) methods in health big data
+R1371,10.1109/iatmsi56455.2022.10119418,,,Analyzing the Performance of Information Extraction System for Annotation of Patient Discharge Summary,exclude,X3,只比較 MedTagger、cTAKES、CLAMP 等傳統工具，無 LLM（X3）。,"MedTagger, GATE, cTAKES, NCBO Annotator and CLAMP; 108 discharge summaries"
+R1374,10.1016/j.imu.2022.100872,,,Electronic health records: Three decades of bibliometric research productivity analysis and some insights,exclude,X1,為電子病歷文獻的書目計量分析，非原始研究（X1）。,"bibliometric techniques; 15,075 papers"
+R1387,10.1007/978-3-031-14627-5_21,,,Semantic Network: A Brief Review of its Datasets,exclude,X1,標題與摘要為語意網路資料集的簡短回顧（X1）。,A Brief Review of its Datasets

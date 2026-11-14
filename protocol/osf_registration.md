@@ -17,7 +17,7 @@ A systematic review of studies that evaluate open-weight (publicly downloadable)
 **Type of review**: Systematic review (methodological / technology evaluation)
 
 **Review stage at registration**
-Exploratory database searches (PubMed, Scopus, IEEE Xplore, ACM DL) were run on 3 November 2026 with non-harmonised search strings, and pilot searches of PubMed, arXiv, and Europe PMC with the final harmonised strategy were run on 14 November 2026 to validate the strategy. Formal searches with the harmonised strategy, de-duplication, screening, data extraction, and synthesis have not started.
+Exploratory database searches (PubMed, Scopus, IEEE Xplore, ACM DL) were run on 3 November 2026 with non-harmonised search strings. Formal searches of all six sources with the final harmonised strategy were completed on 14 November 2026 (2,132 records; 1,389 after automated de-duplication), and all 10 validation studies were retrieved. An LLM assistant produced advisory title/abstract suggestions on these records. Human title/abstract screening, full-text screening, data extraction, and synthesis have not started.
 
 **Start date**: 2026-11-03　**Planned end date**: 【待填】
 
@@ -45,7 +45,7 @@ PubMed/MEDLINE, Scopus, IEEE Xplore, ACM Digital Library, arXiv (API), medRxiv (
 Three concept blocks (LLM terms including named open-weight model families; clinical text types; information extraction terms) combined with AND, in title/abstract/keywords (IEEE: All Metadata), from 2022. Full strings for each source are attached (protocol Section 3.4; `scripts/queries/`).
 
 **Search validation procedure**
-A set of 10 known eligible studies (`data/validation_set.csv`) must all be retrieved by the searches of the databases that index them. Pilot (14 Nov 2026): the PubMed strategy retrieved all 9 PubMed-indexed validation studies and all 242 records of the exploratory PubMed search.
+A set of 10 known eligible studies (`data/validation_set.csv`) must all be retrieved by the searches of the databases that index them. Formal search (14 Nov 2026): all 10 validation studies were retrieved; the formal results also contain all records of the exploratory PubMed (242), Scopus (10), and IEEE (23) searches.
 
 **Procedures to contact authors**: One email for unclear or missing data; recorded as not reported after two weeks.
 
@@ -76,6 +76,6 @@ Narrative synthesis following SWiM; no pooling expected. Grouping by task, text 
 **Certainty of evidence**: Adapted GRADE or justified non-applicability, decided before synthesis.
 
 **Deviations already known at registration**
-Exploratory searches (3 Nov 2026) used non-harmonised strings and are not used as formal results.
+Exploratory searches (3 Nov 2026) used non-harmonised strings and are not used as formal results. Formal searches were completed on 14 November 2026, before this registration; screening begins after registration. The arXiv search used a run earlier the same day with the identical query because later re-runs were rate-limited by the arXiv API.
 
 **Conflicts of interest / Funding**: 【待填】

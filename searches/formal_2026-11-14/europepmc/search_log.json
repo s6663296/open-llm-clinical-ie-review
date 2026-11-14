@@ -1,0 +1,41 @@
+{
+  "database": "Europe PMC",
+  "query": "(TITLE_ABS:\"large language model\" OR TITLE_ABS:\"large language models\" OR TITLE_ABS:\"large-language model\" OR TITLE_ABS:\"large-language models\" OR TITLE_ABS:LLM OR TITLE_ABS:LLMs OR TITLE_ABS:\"foundation model\" OR TITLE_ABS:\"foundation models\" OR TITLE_ABS:\"generative pre-trained\" OR TITLE_ABS:\"open-source\" OR TITLE_ABS:\"open source\" OR TITLE_ABS:\"open-weight\" OR TITLE_ABS:\"open-weights\" OR TITLE_ABS:Llama OR TITLE_ABS:Llama2 OR TITLE_ABS:Llama3 OR TITLE_ABS:Mistral OR TITLE_ABS:Mixtral OR TITLE_ABS:Qwen* OR TITLE_ABS:Gemma OR TITLE_ABS:DeepSeek OR TITLE_ABS:\"Phi-3\" OR TITLE_ABS:\"Phi-4\" OR TITLE_ABS:Vicuna OR TITLE_ABS:Falcon OR TITLE_ABS:BioMistral OR TITLE_ABS:Meditron OR TITLE_ABS:MedAlpaca OR TITLE_ABS:\"PMC-LLaMA\" OR TITLE_ABS:\"Clinical Camel\") AND (TITLE_ABS:\"clinical note\" OR TITLE_ABS:\"clinical notes\" OR TITLE_ABS:\"clinical text\" OR TITLE_ABS:\"clinical texts\" OR TITLE_ABS:\"clinical narrative\" OR TITLE_ABS:\"clinical narratives\" OR TITLE_ABS:\"clinical document\" OR TITLE_ABS:\"clinical documents\" OR TITLE_ABS:\"clinical report\" OR TITLE_ABS:\"clinical reports\" OR TITLE_ABS:\"medical record\" OR TITLE_ABS:\"medical records\" OR TITLE_ABS:\"health record\" OR TITLE_ABS:\"health records\" OR TITLE_ABS:EHR OR TITLE_ABS:EHRs OR TITLE_ABS:EMR OR TITLE_ABS:EMRs OR TITLE_ABS:\"discharge summary\" OR TITLE_ABS:\"discharge summaries\" OR TITLE_ABS:\"discharge letter\" OR TITLE_ABS:\"discharge letters\" OR TITLE_ABS:\"progress note\" OR TITLE_ABS:\"progress notes\" OR TITLE_ABS:\"operative note\" OR TITLE_ABS:\"operative notes\" OR TITLE_ABS:\"operative report\" OR TITLE_ABS:\"operative reports\" OR TITLE_ABS:\"radiology report\" OR TITLE_ABS:\"radiology reports\" OR TITLE_ABS:\"pathology report\" OR TITLE_ABS:\"pathology reports\") AND (TITLE_ABS:\"information extraction\" OR TITLE_ABS:\"named entity recognition\" OR TITLE_ABS:NER OR TITLE_ABS:\"relation extraction\" OR TITLE_ABS:\"relationship extraction\" OR TITLE_ABS:\"entity extraction\" OR TITLE_ABS:\"concept extraction\" OR TITLE_ABS:\"data extraction\" OR TITLE_ABS:\"data abstraction\" OR TITLE_ABS:\"chart abstraction\" OR TITLE_ABS:\"structured data\" OR TITLE_ABS:\"structured information\" OR TITLE_ABS:\"structured output\" OR TITLE_ABS:\"structured outputs\" OR TITLE_ABS:\"text mining\") AND SRC:PPR AND PUB_YEAR:[2022 TO 2026]",
+  "query_file_original": "# TITLE_ABS searches title and abstract. Phrase truncation is expanded to singular/plural; discharge summar* becomes summary/summaries. Qwen* remains a single-token wildcard.\n(TITLE_ABS:\"large language model\" OR TITLE_ABS:\"large language models\" OR TITLE_ABS:\"large-language model\" OR TITLE_ABS:\"large-language models\" OR TITLE_ABS:LLM OR TITLE_ABS:LLMs OR TITLE_ABS:\"foundation model\" OR TITLE_ABS:\"foundation models\" OR TITLE_ABS:\"generative pre-trained\" OR TITLE_ABS:\"open-source\" OR TITLE_ABS:\"open source\" OR TITLE_ABS:\"open-weight\" OR TITLE_ABS:\"open-weights\" OR TITLE_ABS:Llama OR TITLE_ABS:Llama2 OR TITLE_ABS:Llama3 OR TITLE_ABS:Mistral OR TITLE_ABS:Mixtral OR TITLE_ABS:Qwen* OR TITLE_ABS:Gemma OR TITLE_ABS:DeepSeek OR TITLE_ABS:\"Phi-3\" OR TITLE_ABS:\"Phi-4\" OR TITLE_ABS:Vicuna OR TITLE_ABS:Falcon OR TITLE_ABS:BioMistral OR TITLE_ABS:Meditron OR TITLE_ABS:MedAlpaca OR TITLE_ABS:\"PMC-LLaMA\" OR TITLE_ABS:\"Clinical Camel\")\nAND\n(TITLE_ABS:\"clinical note\" OR TITLE_ABS:\"clinical notes\" OR TITLE_ABS:\"clinical text\" OR TITLE_ABS:\"clinical texts\" OR TITLE_ABS:\"clinical narrative\" OR TITLE_ABS:\"clinical narratives\" OR TITLE_ABS:\"clinical document\" OR TITLE_ABS:\"clinical documents\" OR TITLE_ABS:\"clinical report\" OR TITLE_ABS:\"clinical reports\" OR TITLE_ABS:\"medical record\" OR TITLE_ABS:\"medical records\" OR TITLE_ABS:\"health record\" OR TITLE_ABS:\"health records\" OR TITLE_ABS:EHR OR TITLE_ABS:EHRs OR TITLE_ABS:EMR OR TITLE_ABS:EMRs OR TITLE_ABS:\"discharge summary\" OR TITLE_ABS:\"discharge summaries\" OR TITLE_ABS:\"discharge letter\" OR TITLE_ABS:\"discharge letters\" OR TITLE_ABS:\"progress note\" OR TITLE_ABS:\"progress notes\" OR TITLE_ABS:\"operative note\" OR TITLE_ABS:\"operative notes\" OR TITLE_ABS:\"operative report\" OR TITLE_ABS:\"operative reports\" OR TITLE_ABS:\"radiology report\" OR TITLE_ABS:\"radiology reports\" OR TITLE_ABS:\"pathology report\" OR TITLE_ABS:\"pathology reports\")\nAND\n(TITLE_ABS:\"information extraction\" OR TITLE_ABS:\"named entity recognition\" OR TITLE_ABS:NER OR TITLE_ABS:\"relation extraction\" OR TITLE_ABS:\"relationship extraction\" OR TITLE_ABS:\"entity extraction\" OR TITLE_ABS:\"concept extraction\" OR TITLE_ABS:\"data extraction\" OR TITLE_ABS:\"data abstraction\" OR TITLE_ABS:\"chart abstraction\" OR TITLE_ABS:\"structured data\" OR TITLE_ABS:\"structured information\" OR TITLE_ABS:\"structured output\" OR TITLE_ABS:\"structured outputs\" OR TITLE_ABS:\"text mining\")\nAND SRC:PPR AND PUB_YEAR:[2022 TO 2026]\n",
+  "script_sha256": {
+    "analyze.py": "d91544f483c22cfde0628f8c58b87049f366c163bf6f4e3330ccbb43325b17e6",
+    "build_queries.py": "afd6a8c4a2f3ad7d1c356150e698465c47adc540b55c5f6422d2504e8530026b",
+    "check_validation.py": "fa613bc4c6acb638627700c18b894bbb6ed29e80190fa94076b2d4cfb333d3d6",
+    "citation_search.py": "06aa2ea244d7c770d430f350b4b6562ce576235144c9a4adcfb6196e4720190b",
+    "common.py": "c0ea56bb8e49b5174f348f6975cec068a4663ba6169cbcf308a7cbc8a4f00681",
+    "dedup_against.py": "684e69b44155a9af6dc3b3caba08123b10469ec89f9c34b380ebbbf7b95245c4",
+    "fetch_fulltext.py": "f53cd810b1bb2151d19e3de7f96bb71a436c69491e8587ab01f87145bc962207",
+    "fill_manuscript.py": "1d7db18080a62b7233f4095e91d85a453370ad13a50e1f8c20a89c43aa0c9521",
+    "form_common.py": "74c2e656be2ac0ffbefffed66ba62d8ef09c5b971ba8dc13238d3e7fc44be753",
+    "import_records.py": "916f2fb8fd16914e799b7fe17dfc2ec0e21bd7b2378b1fc8347d92040b48b18d",
+    "kappa.py": "f93d6075dc2e58bee38844f14138aaa6a0f30f6911d0903c383feb734feac354",
+    "make_extraction_form.py": "a736fed80ea59fbac442fe26970ca75b5c80fb77ff6bb705bebae6585f83e5e9",
+    "make_rob_form.py": "7c78a753f37fc4599499adfc9b1209de498f29e8270cca9db9d4f6a5be683456",
+    "make_screening_sheet.py": "c4a99ec34af63456a70571df9191eb7e61d15ba9413dfa09cbcd5a0b1c2c6e77",
+    "prisma_counts.py": "413d0f821dc955093e319b435bed05354709fd0d102b26b7f576859b4ea40d17",
+    "prisma_flow.py": "cc00f428dd9a73eacca2285b07b84d05a11536498d93b17af0a175ad6f647442",
+    "record_matching.py": "ba894f492830e06e6c495b032fd36a5a049ec5895640dd6243924406db651c14",
+    "rob_summary.py": "982a6dfac8d571c90c2e9d066f1c34b6f2debd6b492b646662285b80f8e80448",
+    "search_arxiv.py": "f9e9f322a9a41a3e600c0c2f6e56b004ae411ad3162a08f94024641541be32a6",
+    "search_common.py": "0664b4a69c662f3b2aaa8358257b0d6404f71add910fac8b58d8615c3886058e",
+    "search_europepmc.py": "bc50f4d9937280012f946bf905cf0d1f8f4352d2e53392f8e57c5b375c577c52",
+    "search_pubmed.py": "3bf01509b20a3a843c616b1b245a033f16891b4b65ffa514ed1e474423ca16b7"
+  },
+  "executed_at": "2026-11-14T12:42:08.399767+08:00",
+  "api_total": 147,
+  "downloaded": 147,
+  "script_version": "f2d2e22248c8e190ce537bff7dbab4cc5513e27f",
+  "parameters": {
+    "out": "searches/formal_2026-11-14/europepmc",
+    "query_file": "D:\\open-llm-clinical-ie-review\\scripts\\queries\\europepmc.txt",
+    "max_records": null
+  },
+  "medrxiv_before": 147,
+  "medrxiv_after": 110,
+  "medrxiv_rule": "publisher or journal metadata contains medRxiv and DOI prefix 10.1101/ or 10.64898/"
+}

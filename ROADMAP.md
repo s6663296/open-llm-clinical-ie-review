@@ -7,10 +7,10 @@
 
 ## 📍 目前位置
 
-- **階段**：A. 規劃收尾 → B. 檢索（2026-11-14）
-- **步驟**：A3 Protocol 定稿與註冊；B1 正式檢索準備
-- **已完成**：protocol v0.2 所有方法學決定已定案；OSF 註冊表草稿 `protocol/osf_registration.md`；PubMed／arXiv／Europe PMC 檢索腳本與試跑（`searches/pilot_2026-11-14/`）；Scopus／IEEE／ACM 檢索字串（`scripts/queries/`）；正式檢索日操作手冊 `searches/RUNBOOK_formal_search.md`；驗證集候選 `data/validation_set.csv`；B2 去重、C1 篩選表、κ、PRISMA 數字與流程圖、萃取／RoB 表、OpenAlex 引用追蹤、全文 OA 下載、分析圖表、稿件填值等腳本（`scripts/`，32 個測試通過）；萃取 codebook 與 RoB 工具（`extraction/*.md`）；稿件 Methods、引言、參考文獻草稿（`manuscript/manuscript.md`）；試跑紀錄池 1,482 筆的 Agent 篩選建議（`screening/agent_suggestions_pilot_pool.csv`，include 157／unsure 309／exclude 1,016；僅供參考，非篩選決定）
-- **下一步（需要使用者）**：① 確認驗證集 10 篇 → ② 填 protocol 1.3、1.5（作者、篩選者、仲裁者、經費、利益衝突）→ ③ OSF 註冊 → ④ 同一天：跑 `scripts/search_*.py`，並在網頁介面貼上 `scripts/queries/` 的 Scopus／IEEE／ACM 字串並匯出 → ⑤ B2 去重 → C1 兩人篩選
+- **階段**：B 完成 → C. 篩選（2026-11-14）
+- **步驟**：A3 OSF 註冊（待使用者）＋ C1 標題／摘要篩選（待兩位篩選者）
+- **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
+- **下一步（需要使用者）**：① 填 protocol 1.3、1.5（作者、第二篩選者、仲裁者、經費、利益衝突）→ ② 以 `protocol/osf_registration.md` 在 OSF 註冊（**須在篩選開始前**）→ ③ 人工確認 `data/formal_2026-11-14/possible_duplicates.csv` 的 83 組疑似重複 → ④ 兩位篩選者各自複製 `screening/title_abstract.xlsx`，先做 50 筆校準（`scripts/kappa.py --subset calibration`），κ ≥ 0.6 後篩完全部 → 交回後由 Agent 合併、算 κ、產生全文篩選表並下載 OA 全文
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -24,9 +24,9 @@
 | A1 | 研究問題（PICO） | ✅ | 本檔「研究定義」；子問題草案在 `protocol/protocol.md` 2.2 |
 | A2 | 納入／排除條件 | ✅ | 本檔「研究定義」；判斷規則與排除代碼在 `protocol/protocol.md` 3.1–3.2 |
 | A3 | Protocol 與註冊 | 🔄 | `protocol/protocol.md` |
-| B1 | 資料庫檢索 | 🔄 | `<資料庫> 2022-2026/`、`搜尋條件.docx` |
-| B2 | 匯入與去重 | ⬜ | `data/records_dedup.csv` |
-| C1 | 標題／摘要篩選 | ⬜ | `screening/title_abstract.xlsx` |
+| B1 | 資料庫檢索 | ✅ | `<資料庫> 2022-2026/`、`搜尋條件.docx` |
+| B2 | 匯入與去重 | 🔄 | `data/records_dedup.csv` |
+| C1 | 標題／摘要篩選 | 🔄 | `screening/title_abstract.xlsx` |
 | C2 | 全文篩選 | ⬜ | `screening/full_text.xlsx` |
 | D1 | 資料萃取 | ⬜ | `extraction/extraction.xlsx` |
 | D2 | 偏倚風險／品質評估 | ⬜ | `extraction/risk_of_bias.xlsx` |
@@ -80,11 +80,11 @@
 - 完成條件：每個資料庫的檢索式、日期、欄位、限制、筆數都記錄在下方「PRISMA 數字」。
 - Agent 協助：檢查檢索式一致性、改寫成各資料庫語法、核對匯出檔筆數。
 - 已知問題（2026-11-13 決定統一檢索式並重跑，新檢索式見 `protocol/protocol.md` 3.4；重跑後勾掉以下各項）：
-  - [ ] IEEE 檢索式多了 `LLM`、`Gemma`、`DeepSeek`、`open-source`、`discharge summaries`、`radiology reports`、`pathology reports`，其他三個資料庫沒有
+  - [x] IEEE 檢索式多了 `LLM`、`Gemma`、`DeepSeek`、`open-source`、`discharge summaries`、`radiology reports`、`pathology reports`，其他三個資料庫沒有
   - [x] PubMed 缺 `LLM`、`Gemma`、`Phi`、`DeepSeek`、`open-weight`、`open-source`，未用 MeSH → 新檢索式已補齊並加入 MeSH（試跑 637 筆）
-  - [ ] Scopus 只有 10 筆，偏少；確認是否用 `TITLE-ABS-KEY()`、匯出是否完整
-  - [ ] ACM 633 筆，確認檢索欄位（全文 or 摘要）→ 初次結果大量離題（安全、法律、VR…），幾乎確定是全文檢索；正式檢索改用 Title／Abstract／Keyword
-  - [ ] `arXiv 2022-2026/` 資料夾為空，尚未匯出 → 改以 `scripts/search_arxiv.py` 執行（試跑 144 筆）
+  - [x] Scopus 只有 10 筆，偏少；確認是否用 `TITLE-ABS-KEY()`、匯出是否完整
+  - [x] ACM 633 筆，確認檢索欄位（全文 or 摘要）→ 初次結果大量離題（安全、法律、VR…），幾乎確定是全文檢索；正式檢索改用 Title／Abstract／Keyword
+  - [x] `arXiv 2022-2026/` 資料夾為空，尚未匯出 → 改以 `scripts/search_arxiv.py` 執行（試跑 144 筆）
 
 **B2 匯入與去重**
 - 完成條件：`data/records_dedup.csv` 產生；去重前後筆數寫入「PRISMA 數字」。
@@ -146,13 +146,26 @@
 
 初次檢索去重（`data/initial_2026-11-03/summary.json`）：908 → 移除 10 → 898；另有 4 組疑似重複（3 組為預印本 vs. 正式版，依規則不自動合併）。
 
+**正式檢索（2026-11-14，protocol 3.4 統一檢索式；各來源 `searches/formal_2026-11-14/<db>/search_log.json`）**
+
+| 資料庫 | 檢索日期 | 檢索欄位 | 限制 | 筆數 | 來源檔 |
+|---|---|---|---|---|---|
+| PubMed | 2026-11-14 | [tiab] + MeSH | 2022/01/01–2026/12/31 [dp] | 637 | `searches/formal_2026-11-14/pubmed/records.csv` |
+| arXiv | 2026-11-14 | abs | submittedDate 2022–2026 | 144 | `searches/formal_2026-11-14/arxiv/records.csv`（同日 11:50 執行；12:40 後重跑遭 429 限流） |
+| medRxiv（Europe PMC） | 2026-11-14 | TITLE_ABS | SRC:PPR, 2022–2026 | 110（預印本共 147） | `searches/formal_2026-11-14/europepmc/medrxiv_records.csv` |
+| Scopus | 2026-11-14 | TITLE-ABS-KEY | PUBYEAR > 2021 | 970 | `searches/formal_2026-11-14/scopus/scopus_export_2026-11-14.csv` |
+| IEEE Xplore | 2026-11-14 | All Metadata | 2022–2026 | 260 | `searches/formal_2026-11-14/ieee/export2026.11.13-23.45.39.csv` |
+| ACM DL（Full-Text Collection） | 2026-11-14 | Title／Abstract／Keyword | 2022–2026 | 11 | `searches/formal_2026-11-14/acm/acm.bib` |
+
+去重（`data/formal_2026-11-14/summary.json`）：2,132 → 移除 743 → **1,389**；疑似重複 83 組待人工確認。驗證集 10/10 檢出（`searches/formal_2026-11-14/validation_check.csv`）。正式結果涵蓋初次檢索的 IEEE 23/23、Scopus 10/10、PubMed 242/242。
+
 > 上表為 2026-11-03 初次檢索。依 2026-11-13 決定，正式檢索將以 `protocol/protocol.md` 3.4 的統一檢索式重跑，屆時另列新表。
 
 | 階段 | 筆數 |
 |---|---|
-| 去重前合計 | 908（不含 arXiv） |
-| 移除重複 | |
-| 標題／摘要篩選 | |
+| 去重前合計 | 2,132（正式檢索 2026-11-14；初次檢索為 908） |
+| 移除重複 | 743（自動）；疑似重複 83 組待人工確認 |
+| 標題／摘要篩選 | 1,389（待兩人篩選） |
 | 標題／摘要排除 | |
 | 全文取得失敗 | |
 | 全文評估 | |
@@ -201,3 +214,6 @@
 - 2026-11-14｜B1｜檢索式驗證集由使用者授權 Agent 從初次檢索紀錄挑選候選，使用者確認｜—
 - 2026-11-14｜B1｜使用者確認驗證集 10 篇｜—
 - 2026-11-14｜B1｜正式檢索由 Agent 執行：API 來源用腳本，Scopus／IEEE／ACM 由 Agent 以 Claude in Chrome 操作使用者瀏覽器｜使用者決定
+- 2026-11-14｜B1｜六個來源於 2026-11-14 完成正式檢索（OSF 註冊之前；註冊仍在標題／摘要篩選開始前完成）｜使用者決定由 Agent 當日以 Chrome 代跑網頁資料庫。與 ROADMAP 原規劃「先註冊再檢索」順序不同，需於 #24c 與註冊表說明
+- 2026-11-14｜B1｜arXiv 正式結果採用同日 11:50 的執行結果（與正式檢索式逐字相同、完整下載 144/144）｜同日稍後重跑遭 arXiv API 429 限流
+- 2026-11-14｜B1｜IEEE 以單一 77 詞 Command Search 執行未拆分；ACM 使用 Full-Text Collection；Scopus 匯出欄名為中文，以 `scripts/scopus_header_en.py` 依欄位位置轉回英文欄名｜介面實際行為，見各 search_log.json

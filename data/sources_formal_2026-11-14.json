@@ -1,0 +1,11 @@
+{
+  "run_name": "formal_2026-11-14",
+  "sources": [
+    {"db": "PubMed", "format": "unified_csv", "files": ["searches/formal_2026-11-14/pubmed/records.csv"]},
+    {"db": "arXiv", "format": "unified_csv", "files": ["searches/formal_2026-11-14/arxiv/records.csv"]},
+    {"db": "medRxiv", "format": "unified_csv", "files": ["searches/formal_2026-11-14/europepmc/medrxiv_records.csv"]},
+    {"db": "Scopus", "format": "scopus_csv", "files": ["searches/formal_2026-11-14/scopus/scopus_export_2026-11-14_en.csv"]},
+    {"db": "IEEE Xplore", "format": "ieee_csv", "files": ["searches/formal_2026-11-14/ieee/export2026.11.13-23.45.39.csv"]},
+    {"db": "ACM", "format": "bibtex", "files": ["searches/formal_2026-11-14/acm/acm.bib"]}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "database": "Scopus",
+  "interface": "Advanced document search (via Claude in Chrome; user's institutional login)",
+  "query": "TITLE-ABS-KEY( (\"large language model*\" OR \"large-language model*\" OR LLM OR LLMs OR \"foundation model*\" OR \"generative pre-trained\" OR \"open-source\" OR \"open source\" OR \"open-weight*\" OR Llama OR Llama2 OR Llama3 OR Mistral OR Mixtral OR Qwen* OR Gemma OR DeepSeek OR \"Phi-3\" OR \"Phi-4\" OR Vicuna OR Falcon OR BioMistral OR Meditron OR MedAlpaca OR \"PMC-LLaMA\" OR \"Clinical Camel\") AND (\"clinical note*\" OR \"clinical text*\" OR \"clinical narrative*\" OR \"clinical document*\" OR \"clinical report*\" OR \"medical record*\" OR \"health record*\" OR EHR OR EHRs OR EMR OR EMRs OR \"discharge summar*\" OR \"discharge letter*\" OR \"progress note*\" OR \"operative note*\" OR \"operative report*\" OR \"radiology report*\" OR \"pathology report*\") AND (\"information extraction\" OR \"named entity recognition\" OR NER OR \"relation extraction\" OR \"relationship extraction\" OR \"entity extraction\" OR \"concept extraction\" OR \"data extraction\" OR \"data abstraction\" OR \"chart abstraction\" OR \"structured data\" OR \"structured information\" OR \"structured output*\" OR \"text mining\") ) AND PUBYEAR > 2021",
+  "executed_at": "2026-11-14T12:49+08:00",
+  "filters": "PUBYEAR > 2021 (in query); no other limits",
+  "n_results": 970,
+  "exported_files": [
+    "scopus_export_2026-11-14.csv (original, Chinese headers)",
+    "scopus_export_2026-11-14_en.csv (English headers by position via scripts/scopus_header_en.py)"
+  ],
+  "export_fields": "Citation + Bibliographic + Abstract & keywords; 'truncate for Excel' OFF; documents 1-970",
+  "notes": "Results include publication-year 2027 records (articles in press); kept and assessed against I5 at screening. Original download name: 'scopus_export_Nov 14-2026_8b8fb605-341d-4ceb-82e3-1d7fd54fc673.csv'."
+}
