@@ -16,6 +16,7 @@
 - **C2 AI 篩選（2026-11-14）**：277 篇取得全文（`fulltext_text/`，`scripts/pdf_to_text.py --condensed`；R0861、R1214、R1331 原下載檔為錯誤文件，改以 `scripts/pmc_xml_to_text.py` 取 Europe PMC 全文；R0891 無正確 OA 版，記為未取得）。Sonnet 判全部 277 篇（`screening/ft_sonnet/`），Opus 獨立複查 Sonnet 排除的 75 篇（`screening/ft_opus/`，73 篇同意排除）。同一研究多版本 33 組依 protocol 3.5 以同儕審查版為主、預印本給 X8（已因 X1–X7 排除者保留原代碼）。合併：`scripts/agent_screening/merge_ft.py` → `screening/ft_ai_merged.csv`（AI：include 173／exclude 102／分歧 2；`screening/ft_ai_merged_summary.json`）
 - **C2 完成（2026-11-14）**：分歧 11 列由使用者授權 Agent 裁定（`screening/step4_ft_disagreements.xlsx` my_* 欄，理由逐列記錄）；`scripts/agent_screening/finalize_ft.py` → `screening/full_text.xlsx`／`.csv`。全文評估 277：納入 **174**、排除 103（X4 28、X8 27、X6 21、X3 13、X5 10、X7 3、X1 1）；未取得 275。PRISMA 數字 `analysis/prisma_counts.json`、流程圖 `figures/prisma_flow.*` 已更新
 - **下一步**：Agent 寫 D1 brief 交 Codex 預填 174 篇萃取（每批 ≤ 25 篇＋驗證腳本），Agent 審查後交作者核對
+- **A3 狀態**：課堂版 protocol v0.5 已整理方法、經費與利益衝突資訊及三篇背景文獻；作者分工為使用者要求的隨機提議，實際貢獻待完成後確認。未事先註冊。
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -28,7 +29,7 @@
 |---|---|---|---|
 | A1 | 研究問題（PICO） | ✅ | 本檔「研究定義」；子問題草案在 `protocol/protocol.md` 2.2 |
 | A2 | 納入／排除條件 | ✅ | 本檔「研究定義」；判斷規則與排除代碼在 `protocol/protocol.md` 3.1–3.2 |
-| A3 | Protocol（不註冊） | 🔄 | `protocol/protocol.md` |
+| A3 | Protocol（不註冊） | ✅ 課堂版完成；實際作者貢獻待結案確認 | `protocol/protocol.md` |
 | B1 | 資料庫檢索 | ✅ | `<資料庫> 2022-2026/`、`搜尋條件.docx` |
 | B2 | 匯入與去重 | ✅ | `data/records_dedup.csv` |
 | C1 | 標題／摘要篩選 | ✅ | `screening/title_abstract_final.xlsx` |
@@ -240,3 +241,4 @@
 - 2026-11-14｜C2｜使用者決定 C2 依原流程完成（Sonnet 判全部、Opus 複查排除、作者裁定分歧）；D1 萃取改由 Codex 預填、Agent 審查、作者核對｜節省 Claude 用量
 - 2026-11-14｜C2｜Agent 處理：OA 下載檔為錯誤文件者（附錄、他篇論文、舊版預印本）改取 Europe PMC 正式版全文（R0861、R1214、R1331），取不到者記為未取得（R0891）；同一 PDF 對應兩筆紀錄的 33 組依 protocol 3.5 處理｜依既有規則執行，非方法變更；簡報可說明全文來源
 - 2026-11-14｜C2｜使用者授權 Agent 裁定全文篩選分歧 11 列（2 篇雙 AI 分歧、2 組同一全文判斷相反、6 篇排除代碼不同）：R1363 納入，其餘排除（章節辨識、住院層級 IHCA 判定屬 X6；代碼不同者取確定成立且順序在前的代碼）；C2 完成：納入 174、排除 103、未取得 275｜使用者決定授權。簡報須說明分歧由 Agent 裁定、非作者逐筆裁定
+- 2026-11-14｜A3｜使用者確認無專案經費、無贊助、無需揭露的利益衝突；採用三篇已查證的既有回顧，並要求隨機分配作者工作｜課堂報告；隨機分配僅為提議，實際貢獻於結案時確認。
