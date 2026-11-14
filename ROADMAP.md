@@ -8,10 +8,10 @@
 ## 📍 目前位置
 
 - **階段**：B 完成 → C. 篩選（2026-11-14）
-- **步驟**：A3 OSF 註冊（待使用者）＋ C1 標題／摘要篩選（LLM 篩選＋人工複核）
+- **步驟**：C1 標題／摘要篩選（LLM 篩選＋人工複核）
 - **進行中**：Sonnet 以統一規則重篩全部 1,389 筆（`screening/ai_screen_sonnet/`），已完成 39/56 批；其餘 17 批（7、13、14、19–21、28、33–35、41、42、48、49、54–56）因額度中斷，待重跑
-- **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；83 組疑似重複的判讀建議 `data/formal_2026-11-14/possible_duplicates_review.csv`（只有 EHRchitect 2 組需人工確認）；AI 建議 include／unsure 的 626 筆已先下載 OA 全文 298 篇（`fulltext/`，PDF 不進 git；取不到的 328 篇在 `fulltext/manual_retrieval.csv`，篩選後只對進全文階段者用機構權限逐篇取得）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
-- **下一步（需要使用者）**：① 填 protocol 1.3、1.5 → ② OSF 註冊（篩選開始前）→ ③ 確認 EHRchitect 2 組疑似重複 → ④ 先做 50 筆盲測 `screening/step1_blind50.xlsx`（不看 AI）→ ⑤ AI 重篩完成後，Agent 產生 `screening/step2_verify.xlsx`（`scripts/make_verification_sheets.py`），逐筆 agree／override
+- **已完成**：protocol v0.3（單一作者、無經費、無利衝；全文篩選／萃取／偏倚評估改為 AI 預判＋作者複核；2.1 既有回顧與時程已填；不註冊、不具名）、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；83 組疑似重複的判讀建議 `data/formal_2026-11-14/possible_duplicates_review.csv`（只有 EHRchitect 2 組需人工確認）；AI 建議 include／unsure 的 626 筆已先下載 OA 全文 298 篇（`fulltext/`，PDF 不進 git；取不到的 328 篇在 `fulltext/manual_retrieval.csv`，篩選後只對進全文階段者用機構權限逐篇取得）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
+- **下一步（需要使用者）**：① 讀全文核實 protocol 2.1 的 7 篇既有回顧 → ② 確認 EHRchitect 2 組疑似重複 → ③ 先做 50 筆盲測 `screening/step1_blind50.xlsx`（不看 AI）→ ④ AI 重篩完成後，Agent 產生 `screening/step2_verify.xlsx`（`scripts/make_verification_sheets.py`），逐筆 agree／override
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -24,7 +24,7 @@
 |---|---|---|---|
 | A1 | 研究問題（PICO） | ✅ | 本檔「研究定義」；子問題草案在 `protocol/protocol.md` 2.2 |
 | A2 | 納入／排除條件 | ✅ | 本檔「研究定義」；判斷規則與排除代碼在 `protocol/protocol.md` 3.1–3.2 |
-| A3 | Protocol 與註冊 | 🔄 | `protocol/protocol.md` |
+| A3 | Protocol 與註冊 | ✅ | `protocol/protocol.md` |
 | B1 | 資料庫檢索 | ✅ | `<資料庫> 2022-2026/`、`搜尋條件.docx` |
 | B2 | 匯入與去重 | 🔄 | `data/records_dedup.csv` |
 | C1 | 標題／摘要篩選 | 🔄 | `screening/title_abstract.xlsx` |
@@ -183,7 +183,7 @@
 - [x] 是否納入 arXiv／medRxiv 預印本？→ 納入，做敏感度分析
 - [x] 語言限制 → 論文限英文，病歷語言不限
 - [x] 篩選人數 → 兩人獨立
-- [x] 是否註冊 OSF？→ 註冊於 OSF Registries
+- [x] 是否註冊 OSF？→ 原定註冊；2026-11-14 改為不註冊，論文不報告
 - [x] 子問題 RQ1–RQ4 是否採用？→ 全部採用
 - [x] LLM 參數量門檻是否設 ≥ 1B？→ 設 ≥ 1B
 - [x] 只用合成病歷的研究是否排除？→ 排除
@@ -191,7 +191,7 @@
 - [x] 偏倚風險工具 → 改編 QUADAS-2
 - [x] 是否做前向引用追蹤？→ 做，前向＋後向皆用 OpenAlex API
 - [x] 標題／摘要篩選方式 → LLM 篩選＋一位人工複核（2026-11-14）
-- [ ] 全文篩選方式：兩人獨立（需第二位篩選者與仲裁者）或比照標題摘要階段？（protocol 3.5）
+- [x] 全文篩選方式 → 只有一位作者，比照標題摘要階段（AI 預判＋作者逐篇複核＋20% 盲測）；萃取核對與偏倚評估同樣改為 AI 預判＋作者複核
 - [x] 檢索式驗證集 → Agent 挑選 10 篇，使用者 2026-11-14 確認（`data/validation_set.csv`）
 
 ---
@@ -221,3 +221,7 @@
 - 2026-11-14｜B1｜IEEE 以單一 77 詞 Command Search 執行未拆分；ACM 使用 Full-Text Collection；Scopus 匯出欄名為中文，以 `scripts/scopus_header_en.py` 依欄位位置轉回英文欄名｜介面實際行為，見各 search_log.json
 - 2026-11-14｜C2｜全文取得：開放取用 PDF 先以腳本下載；機構訂閱 PDF 於人工篩選後，只對進入全文階段者以使用者機構登入逐篇低速取得｜避免批量下載違反出版商授權
 - 2026-11-14｜C1｜標題／摘要篩選改為 LLM（Claude Sonnet）篩選全部紀錄，一位人工逐筆複核；另以 50 筆盲測樣本計算人工與 AI 的 κ 與敏感度；人工修正率入結果｜使用者決定（人力限制）。屬 protocol 修訂（OSF 註冊前），於 #8、#23c、#24c 揭露
+- 2026-11-14｜A3｜確定為單一作者、無經費、無利益衝突｜使用者決定
+- 2026-11-14｜C2、D1、D2｜全文篩選、萃取核對、偏倚評估、引用追蹤篩選皆由「兩人獨立」改為「LLM 預判＋作者逐筆複核」；全文篩選另以隨機 20%（至少 20 篇）盲測計算人工–AI κ；不設仲裁者｜使用者決定（只有一位作者）。屬 protocol 修訂（OSF 註冊前），於 #8、#9、#11、#24c 與限制段揭露
+- 2026-11-14｜A3｜protocol 2.1 既有回顧採論文草稿的 6 篇，再加 Agent 搜到的 Sugihara 等人（2026）共 7 篇，書目以 Crossref 核對；待作者讀全文核實｜使用者授權 Agent 搜尋候選
+- 2026-11-14｜A3、F2｜不註冊 OSF；論文不具名；論文中不提及註冊、練習用途與註冊前 AI 預篩；刪除 OSF 註冊表草稿；PRISMA #24a、#24b 不報告｜使用者決定（練習用論文）
