@@ -1,0 +1,38 @@
+record_id,title_match,first_author,year,country,note_language,text_type,clinical_domain,datasets,task_types,extraction_targets,open_models,medical_domain_model,closed_comparators,other_comparators,strategies,deployment,n_documents_test,note,evidence
+R0261,yes,Faiz,2026,NR,NR,progress note; other,oncology,in-house,field extraction,"breast cancer phenotypes, biomarkers, grade, stage, TNM, tumour",Mistral v0.2 7B; LLaMA 3 8B,no,none,ontology annotator,few-shot; RAG,local,150,Ontology comparator excludes failed calls.,"study, we used and evaluated two well-known open-source LLMs for annotations:
+MistralAI’s Mistral v0.2 and Meta’s LLaMA 3 8B. Due to security and (p.4) | We created a sample of 150 randomly selected notes which comprises admission
+and progress notes drawn from randomly selected oncology practices to (p.7)"
+R0292,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Full text title is Large Language Models for Psychiatric Phenotype Extraction from Electronic Health Records; it differs from the listed title.,
+R0294,yes,Solages,2026,USA,NR,progress note,ophthalmology,Bascom Palmer Ophthalmic Repository,field extraction,current and proposed changes to topical and oral medications,DeepSeek-V3.2; Qwen3.6-35B-A3B,no,Claude Opus 4.6; GPT-5.2; Grok 4.1,none,few-shot; CoT,private cloud,NR,Abstract and table disagree on Qwen topical change F1.,"Five LLMs (Claude Opus 4.6, DeepSeek-V3.2, GPT 5.2, 53 
+Grok 4.1, and Qwen3.6-35B-A3B) were accessed via Microsoft Azure AI Foundry within 54 
+a (p.2) | We evaluated four 165 
+medication-related extraction tasks – current topical medications (CTM), proposed 166 
+changes to topical medications (Δ TM), (p.8)"
+R0307,yes,Bornet,2026,Switzerland,French,other,neurology,in-house,field extraction,modified Rankin Scale score,Qwen3-32B,no,none,none,zero-shot; quantization; constrained decoding,local,103,"Score inferred from narrative; possible document-level classification, review eligibility.","To comply with data
+privacy constraints, an open-source reasoning LLM (Qwen3-32B) with 4-bit quantization
+was deployed entirely on-premises. The LLM (p.2) | The LLM extracted mRS scores using a zero-shot
+approach with custom logits processors to enforce strict JSON formatting. Performance
+was compared to (p.2)"
+R0315,yes,Bornet,2026,Switzerland,NR,clinical note (mixed),neurology,in-house,other,modified Rankin Scale score,Qwen3 32B; DeepSeek-R1 distilled 32B; DeepSeek-R1 distilled 70B; Qwen3 other sizes NR,no,none,none,quantization; constrained decoding,local,105,"Score rarely stated; inferred classification, review eligibility.","The task of the model was to classify the mRS score given a clinical narrative. Since the 
+score is rarely explicitly stated, this requires reasoning (p.3) | We evaluated five Qwen3 models (0.6B to 32B parameters) and two distilled DeepSeek-
+R1 models (32B and 70B), selected for their reasoning (p.4)"
+R0316,yes,Dennstädt,2026,Switzerland,German,radiology report,oncology,in-house,field extraction,"mammography elements including history, breast composition, BI-RADS and findings",Rombos-LLM-V2.6-Qwen-14b; SOLAR Pro Preview Instruct 22.1B; Phi-4 14.7B; Li-14B-v0.4; Lamarck 14B v0.7,no,none,none,few-shot; CoT,local,61,Published online 2025; journal volume 2026.,"Five different open-source LLMs deployable on a single GPU were used for data extraction using 
+the general-classifier Python package. Extractions (p.1) | Rombos-LLM-V2.6-Qwen-14b (Rombos) is a fine-tuned 
+version of Alibaba’s Qwen2.5-14B model for precise 
+instruction following [40]. The Qwen series (p.4)"
+R0317,yes,Karacan,2026,NR,NR,other,obstetrics,in-house,field extraction,"incision types, contraindications, previous delivery modes",Llama 3.1 8B Instruct; Llama 3.3 70B Instruct,no,none,none,zero-shot; few-shot,NR,631,Eligibility extraction assessed via hallucination; downstream framing is classification.,"We evaluated both prompts using two instruction-tuned
+Llama models: Llama 3.1 8B Instruct and Llama 3.3 70B
+Instruct. For each patient, the full H&P (p.4) | Both configurations require a machine-readable JSON output
+schema with three fields: incision types, contraindications,
+and previous delivery modes. (p.4)"
+R0322,yes,Hu,2025,NR,NR,clinical note (mixed),general,UT Physicians; MTSamples; MIMIC-III; i2b2 2010,NER; RE,"problems, tests, medications, treatments and modifiers",LLaMA-2-7B; LLaMA-2-13B; LLaMA-2-70B; LLaMA-3-8B; LLaMA-3-70B,no,none,BERT,LoRA; instruction tuning,NR,175,Real and synthetic notes; UTP selected for results.,"We investigated two fundamental clinical IE tasks: Named Entity Recognition (NER) and Relation Extraction (RE).
+Using 1,588 clinical notes from four (p.1) | We instruction-tuned LLaMA-2 and LLaMA-3 for both
+tasks, comparing their performance, generalizability, computational resources, and throughput to (p.1)"
+R0359,yes,Zhong,NR,USA,NR,radiology report; other,neurology,in-house,field extraction,"stenting, angioplasty, IV tPA, occlusion site, NIHSS, TICI",LLaMA3.3-70B; LLaMA3.2-3B; Qwen2.5-72B; Qwen2.5-3B; Qwen3-30B; Qwen3-8B; Qwen-Q 32B; Gemma3-4B; Gemma3-12B; Gemma3-27B; MedGemma3-4B; MedGemma3-27B; Mistral-Small3.1-24B; Phi-4-14B; Phi-4 Mini:8B; HuatuoGPT-o1-8B; HuatuoGPT-o1-7B; OpenBio-LLaMA3-8B; additional models NR,yes,none,none,CoT; quantization,local,2416,22 models reported; model-derived surrogate determines evaluable pairs; some fields inferred.,"Twenty-two instruction-tuned open-source LLMs (LLaMA, Qwen, Gemma, etc) were evaluated across architectures,
+sizes, and biomedical adaptations using (p.2) | 2,416 free-text neurointerventional procedure
+reports across three hospitals.
+Twenty-two state-of-the-art, instruction-tuned LLMs spanning diverse (p.1)"
+R0361,yes,Fuchs,2026,NR,NR,clinical note (mixed); pathology report,oncology,in-house,field extraction,"primary site, laterality, grade, stage, regional nodes and dates",GPT-OSS-20b; GPT-OSS-120b; Llama-3.1-8B Instruct; Gemma 12b,no,Claude Sonnet 4.5,none,zero-shot,NR,NR,5939 patients and 1688432 reports overall.,"We used five language models: GPT-OSS 20b and 120b [8], LLAMA 3.1 8B 
+196 Instruct [9], Gemma 12b [28], and Claude Sonnet 4.5. We selected these to (p.10) | use LLMs to abstract from clinical 
+41 reports eight registry variables for 5,939 patients with seven different cancer types. We 
+42 use a zero-shot (p.2)"

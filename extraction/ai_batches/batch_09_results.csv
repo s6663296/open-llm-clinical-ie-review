@@ -1,0 +1,26 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0568,CMR fields,in-house,CMR-EXTR (Llama-3.2-1B),open LLM,1,LoRA,accuracy,NA,0.9965,field,yes,no,p.4,CMR-EXTR (ours) 99.65% 89.55% 15 5 20 0 40,
+R0581,SDOH events,SHAC,Llama-3.1-8B,open LLM,8,few-shot,F1,micro,0.591,entity,yes,no,p.7,"an overall micro-F1 of 0.591, as shown in Supplementary Table I. We observed two key failure modes:",Includes span and value arguments.
+R0581,SDOH events,SHAC,o4-mini,closed LLM,NR,few-shot,F1,micro,0.866,entity,no,yes,p.7,Our method (o4-mini) 0.902 0.833 0.866,
+R0590,endometriosis fields,Sugo,gpt-oss:20b,open LLM,20,other,accuracy,NA,0.8602,field,yes,no,p.3,gpt-oss:20b 86.02 6.87,
+R0592,acute PE,in-house,Llama 3.1 8B,open LLM,8,zero-shot,F1,NR,0.970,document,yes,no,p.4,Llama 3.1 8B 95.6 97.3 98.4 96.2 97.0 91.1 74.5 86.6 85.2 88.8,
+R0592,bilateral PE,in-house,Llama 3.3 70B,open LLM,70,CoT,F1,NR,0.938,document,yes,no,p.4,Llama 3.3 70B 99.0 82.2 83.0 90.0 90.3 98.0 90.4 89.9 93.9 93.8,
+R0592,large PE,in-house,Llama 3.3 70B,open LLM,70,CoT,F1,NR,0.724,document,yes,no,p.4,Llama 3.3 70B 80.2 82.9 64.9 82.1 71.8 79.1 84.4 66.7 82.9 72.4,
+R0592,acute PE,in-house,ChatGPT-4o,closed LLM,NR,zero-shot,F1,NR,0.963,document,no,yes,p.4,ChatGPT-4o 93.8 98.1 98.9 95.3 96.3 92.4 98.4 99.0 94.5 95.6,
+R0592,bilateral PE,in-house,ChatGPT-4o,closed LLM,NR,CoT,F1,NR,0.936,document,no,yes,p.4,ChatGPT-4o 98.0 88.6 88.3 93.0 92.9 97.0 90.9 90.4 93.8 93.6,
+R0592,large PE,in-house,ChatGPT-4o,closed LLM,NR,CoT,F1,NR,0.741,document,no,yes,p.4,ChatGPT-4o 82.9 82.2 64.9 82.4 72.8 84.0 83.1 66.2 83.3 74.1,
+R0592,acute PE,in-house,Regex,rule-based,NR,other,F1,NR,0.758,document,no,yes,p.4,Rule-based NLP 78.0 49.9 73.8 68.0 75.8,
+R0592,bilateral PE,in-house,Regex,rule-based,NR,other,F1,NR,0.667,document,no,yes,p.4,Rule-based NLP 81.7 44.4 56.3 61.8 66.7,
+R0592,large PE,in-house,Regex,rule-based,NR,other,F1,NR,0.566,document,no,yes,p.4,Rule-based NLP 63.1 76.3 51.3 72.6 56.6,
+R0596,positive symptoms,UMN PASC,LLaMA2-13B,open LLM,13,other,F1,macro,0.66,document,yes,no,p.1,"detection, compared to 0.66 for LLaMA2-13B and 0.62 for LLaMA3-8B. For the N3C",Output-layer fine-tuning; abstract aggregate.
+R0596,positive symptoms,UMN PASC,BioMedICUS,rule-based,NR,other,F1,macro,0.70,document,no,yes,p.1,"set, BioMedICUS achieved a macro-averaged F1-score of 0.70 for positive mention",
+R0597,BI-RADS,in-house,Rombos-LLM-V2.6-Qwen-14b,open LLM,14.8,other,accuracy,NA,0.8769,field,yes,no,p.4,398 89.20% 87.69% 0.56,Both breast sides.
+R0597,BI-RADS,in-house,Regex,rule-based,NR,other,accuracy,NA,0.892,field,no,yes,p.4,398 89.20% 87.69% 0.56,Both breast sides.
+R0607,ROS entities,MTSamples,Gemma-3-27B,open LLM,27,few-shot,F1,NR,0.906,entity,yes,no,p.4,gemma3:27b 0.906 0.894 0.856 0.864 0.860 0.818,Exact match with attribution.
+R0607,negation detection,MTSamples,Gemma-3-27B,open LLM,27,few-shot,F1,NR,0.894,entity,yes,no,p.4,gemma3:27b 0.906 0.894 0.856 0.864 0.860 0.818,Exact match with attribution.
+R0607,body system,MTSamples,Gemma-3-27B,open LLM,27,few-shot,F1,NR,0.856,entity,yes,no,p.4,gemma3:27b 0.906 0.894 0.856 0.864 0.860 0.818,Exact match with attribution.
+R0614,cancer subtype,MoST,Mistral-7B,open LLM,7,other,F1,macro,0.39,field,yes,no,p.4,Mistral-7B 14.7% 0.39 0.77,
+R0614,cancer subtype,MoST,fine-tuned RoBERTa,BERT-type,NR,other,F1,macro,0.85,field,no,yes,p.4,Fine-tuned Roberta 80.61% 0.85 0.98,
+R0616,T stage,TCGA,Llama-3.1-70B,open LLM,70,other,F1,NR,0.6,field,yes,no,Table 5 (p.4),F1 0.6 0.86 0.74 0.95 0.86,After alternative OCR; table columns aligned with stage header.
+R0616,N stage,TCGA,Llama-3.1-70B,open LLM,70,other,F1,NR,0.86,field,yes,no,Table 5 (p.4),F1 0.6 0.86 0.74 0.95 0.86,After alternative OCR; table columns aligned with stage header.
+R0616,M stage,TCGA,Llama-3.1-70B,open LLM,70,other,F1,NR,0.74,field,yes,no,Table 5 (p.4),F1 0.6 0.86 0.74 0.95 0.86,After alternative OCR; table columns aligned with stage header.

@@ -1,0 +1,62 @@
+﻿field,value,count,percent
+year,2022,1,0.57
+year,2023,6,3.45
+year,2024,27,15.52
+year,2025,65,37.36
+year,2026,75,43.1
+country,Australia,7,4.02
+country,Canada,2,1.15
+country,Chile,1,0.57
+country,China,7,4.02
+country,France,5,2.87
+country,Germany,14,8.05
+country,India,1,0.57
+country,Israel,1,0.57
+country,Italy,4,2.3
+country,NR,22,12.64
+country,Netherlands,6,3.45
+country,Norway,1,0.57
+country,Poland,1,0.57
+country,Portugal,1,0.57
+country,South Korea,2,1.15
+country,Spain,2,1.15
+country,Switzerland,7,4.02
+country,Taiwan,2,1.15
+country,Thailand,2,1.15
+country,UK,1,0.57
+country,USA,61,35.06
+country,United Kingdom,4,2.3
+country,United States,21,12.07
+pub_type,conference,19,10.92
+pub_type,journal,105,60.34
+pub_type,preprint,50,28.74
+text_type,clinical note (mixed),85,48.85
+text_type,discharge summary,30,17.24
+text_type,operative note,5,2.87
+text_type,other,23,13.22
+text_type,pathology report,27,15.52
+text_type,progress note,13,7.47
+text_type,radiology report,43,24.71
+note_language,Chinese,6,3.45
+note_language,Czech,1,0.57
+note_language,Dutch,5,2.87
+note_language,English,72,41.38
+note_language,French,9,5.17
+note_language,German,15,8.62
+note_language,Hebrew,1,0.57
+note_language,Italian,4,2.3
+note_language,Japanese,1,0.57
+note_language,Korean,2,1.15
+note_language,NR,62,35.63
+note_language,Norwegian,1,0.57
+note_language,Polish,1,0.57
+note_language,Portuguese,2,1.15
+note_language,Russian,1,0.57
+note_language,Spanish,6,3.45
+note_language,Thai,2,1.15
+task_types,NER,59,33.91
+task_types,RE,22,12.64
+task_types,attribute,23,13.22
+task_types,field extraction,100,57.47
+task_types,other,42,24.14
+dataset_public,NR,174,100.0

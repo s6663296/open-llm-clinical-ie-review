@@ -1,0 +1,16 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0261,phenotypes,in-house,LLaMA 3 8B,open LLM,8,RAG,F1,NR,0.9129,field,yes,no,Table 2 (p.8),LLaMA 3 8B 86.13% 87.90% 94.95% 91.29%,
+R0261,phenotypes,in-house,Ontology,rule-based,NR,other,F1,NR,0.9119,field,no,yes,Table 2 (p.8),Ontology 85.04% 100.00% 83.80% 91.19%,27 failed calls excluded
+R0294,current topical medication,in-house,DeepSeek-V3.2,open LLM,NR,few-shot,F1,NR,0.971,field,yes,no,Table 1 (p.27),F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),"Binary presence, DeepSeek column"
+R0294,current topical medication,in-house,Claude Opus 4.6,closed LLM,NR,few-shot,F1,NR,0.985,field,no,yes,Table 1 (p.27),F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),Binary presence
+R0307,grouped mRS score,in-house,Qwen3-32B,open LLM,32,zero-shot,F1,macro,0.93,document,yes,no,Table 3 (p.9),Model 0.92 [0.86–0.97] 0.93 [0.88–0.97] 0.92 [0.86–0.97],Three grouped categories; inferred classification
+R0315,grouped mRS score,in-house,Qwen3-32B-Q3_K_XL,open LLM,32,other,accuracy,NA,0.962,document,yes,no,p.5,"achieved a classification accuracy of 96.2%, i.e., out of 105 total samples, it produced",Ten-inference majority vote; inferred classification
+R0316,mammography fields,in-house,Rombos-LLM-V2.6-Qwen-14b,open LLM,14.8,other,accuracy,NA,0.853,field,yes,no,p.7,reached overall accuracies of 85.3% [95% CI 82.5–88.0%],Adapted prompt; F1 only in supplemental material
+R0317,VBAC eligibility evidence,in-house,Llama 3.3 70B Instruct,open LLM,70,zero-shot,other,NA,NR,field,yes,no,p.6,,Hallucination variants reported as zero in words; numeric result unavailable in text. F1 not reported; lower hallucination better.
+R0322,NER,UTP,LLaMA-3-70B,open LLM,70,LoRA,F1,NR,0.932,entity,yes,no,Table 2 (p.6),LLaMA-3-70B 0.932 0.876 0.855 0.872,Exact match; tied with LLaMA-2-13B
+R0322,NER,UTP,BERT,BERT-type,NR,full FT,F1,NR,0.921,entity,no,yes,Table 2 (p.6),BERT 0.921 0.833 0.810 0.798,
+R0322,RE,UTP,LLaMA-3-70B,open LLM,70,LoRA,F1,NR,0.937,relation,yes,no,Table 2 (p.6),LLaMA-3-70B 0.937 0.795 0.858 0.744,
+R0322,RE,UTP,BERT,BERT-type,NR,full FT,F1,NR,0.898,relation,no,yes,Table 2 (p.6),BERT 0.898 0.670 0.808 0.703,
+R0359,stroke variables,in-house,LLaMA3.3-70B,open LLM,70,other,accuracy,NA,0.948,field,yes,no,p.2,RESULTS: LLaMA3.3-70B achieved the highest overall accuracy (94.8%). CoT prompting improved performance on,Overall; strategy not specified for this value; model-derived surrogate selection
+R0361,laterality,in-house,GPT-OSS-120b,open LLM,120,zero-shot,F1,NR,0.879,field,yes,no,Appendix B (p.28),GPT-OSS-120b 86.6 68.8 87.9 89.7 86.6 96.2,
+R0361,laterality,in-house,Claude Sonnet 4.5,closed LLM,NR,zero-shot,F1,NR,0.875,field,no,yes,Appendix B (p.28),86.6 68.6 87.5 89.1 86.6 95.9,

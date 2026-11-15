@@ -1,0 +1,4 @@
+﻿scenario,category,n,median,min,max,better,worse,equal
+exclude_preprint,closed LLM,55,-0.020000000000000018,-0.536,0.414,15,36,4
+exclude_preprint,BERT-type,42,0.026050000000000018,-0.746,0.73,23,13,6
+exclude_preprint,rule-based,23,0.07199999999999995,-0.1329999999999999,0.52,15,6,2

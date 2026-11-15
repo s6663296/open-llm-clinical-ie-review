@@ -1,0 +1,22 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0217,PII de-identification,Dutch ADE,MedGemma 27B,open LLM,27,zero-shot,F1,macro,0.591672,entity,yes,no,Table 2 (p.10),MedGemma 0.591672 495 399 384,
+R0217,PII de-identification,Dutch ADE,GPT-4o,closed LLM,NR,zero-shot,F1,macro,0.205839,entity,no,yes,Table 2 (p.10),GPT-4o 0.205839 569 4848 310,
+R0223,histology abstraction,TMUH,Med42-8B,open LLM,8,other,F1,macro,0.92,field,yes,no,Table 3 (p.9),Med42-8B (student) 90.91% [75.67–98.08%] 0.92 0.86 1 13.97 s,Instruction distillation; 33 reports.
+R0223,histology abstraction,TMUH,Gemini 2.0 Flash,closed LLM,NR,other,F1,macro,0.88,field,no,yes,Table 3 (p.9),"Gemini flash 2.0 (teacher) 90.91% [75.67%, 98.08%] 0.88 0.86 0 2.05 s",
+R0226,clinical NER,in-house,Llama 3.2 3B Instruct,open LLM,3,other,F1,micro,0.123,entity,yes,no,Table 4 (p.35),"Llama3.2 3B 
+Instruct
+149 63 0.206
+[0.136-
+0.333] 0.087
+[0.037-
+0.203] 0.123",Quantized; relaxed matching.
+R0226,clinical NER,in-house,MediAlbertina-1.5B,BERT-type,1.5,other,F1,micro,0.430,entity,no,yes,p.36,"domain-adapted encoder baseline (MediAlbertina-1.5B) achieved a micro-F1 of 0.430, whereas all tested ",
+R0229,CRF filling,eCREAM SGB development,MedGemma-27B,open LLM,27,zero-shot,F1,macro,0.702,field,yes,no,Table 4 (p.10),Group Gemma 0.672 0.947 0.964 0.947 MedGemma 0.702 0.971 0.977 0.971,Development set.
+R0229,CRF filling,eCREAM SGB development,MostCommon,other,NR,other,F1,macro,0.404,field,no,yes,Table 4 (p.10),MostCommon 0.404 0.978 0.967 0.978,Most-common baseline; development set.
+R0239,clinical concept extraction,in-house,MedGemma,open LLM,NR,other,F1,micro,0.55,entity,yes,no,p.9,"based matching, MedGemma had the highest observed automated-system F1 at 0.55, followed by 301",Embedding matching; checkpoint size not specified.
+R0239,clinical concept extraction,in-house,SciBERT,BERT-type,NR,other,F1,micro,0.43,entity,no,yes,p.9,"Gemma at 0.53, sci_md and SciBERT at 0.43 each, and Llama 3.3 at 0.32. No inferential comparisons 302",Embedding matching.
+R0246,clinical field extraction,in-house,Mistral 7B,open LLM,7,few-shot,F1,NR,0.922,entity,yes,no,Table III (p.4),Mistral 7B 7B 94.8% 91.9 92.9 92.2 #1,Token overlap scoring.
+R0248,frailty index,aged care notes,Llama-3.1-8B-Instruct,open LLM,8,RAG,F1,NR,0.9708,entity,yes,no,p.1,a top-k value of five. This configuration achieved F1 scores of 97.08% for frailty,"LangChain, BAAI/bge-m3, three-shot, top-k 5."
+R0248,malnutrition risk factors,aged care notes,Llama-3.1-8B-Instruct,open LLM,8,RAG,F1,NR,0.9714,entity,yes,no,p.1,"index extraction, 97.14% for malnutrition risk factor extraction, and 90.52% for","LangChain, BAAI/bge-m3, three-shot, top-k 5."
+R0248,agitation in dementia,aged care notes,Llama-3.1-8B-Instruct,open LLM,8,RAG,F1,NR,0.9052,entity,yes,no,p.1,"index extraction, 97.14% for malnutrition risk factor extraction, and 90.52% for","LangChain, BAAI/bge-m3, three-shot, top-k 5."
+R0256,structured clinical entity extraction,single-patient AMD dataset,DeepSeek-R1 7B + neuro-symbolic pipeline,open LLM,7,RAG,F1,micro,0.98,entity,yes,no,p.15,"0.97, and F1-score of 0.98 within the feasibility dataset.","Single patient, 24 documents; pipeline-level result."
