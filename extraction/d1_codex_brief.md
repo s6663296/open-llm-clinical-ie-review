@@ -1,6 +1,6 @@
 # D1 萃取指引（交給 Codex 預填用）
 
-本檔是 Codex 預填 D1 資料萃取的完整指示，也是 `extraction/extraction.xlsx` 的欄位定義（merge 時會放進 `codebook` 工作表）。
+本檔是 Codex 預填 D1 資料萃取的完整指示，也是 `extraction/extraction_scope62.xlsx` 的欄位定義（merge 時會放進 `codebook` 工作表）。
 欄位與允許值的程式版本在 `scripts/extraction/fields.py`，兩者如有不一致，以 `fields.py` 為準，並回報。
 
 ## 背景

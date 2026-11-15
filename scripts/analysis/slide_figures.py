@@ -1,6 +1,6 @@
 """E1: build the slide figures and headline numbers from the extraction workbook.
 
-Input : extraction/extraction.xlsx (sheets studies, results; built by scripts/extraction/merge.py)
+Input : extraction/extraction_scope62.xlsx (sheets studies, results; built by scripts/extraction/merge.py)
         extraction/scope_restriction.csv (classroom scope; author_decision overrides the rule below)
 Output: figures/slides/*.png  (1664 px wide, slide background, Traditional Chinese labels)
         analysis/slide_numbers.json (every number shown on the slides, with the study set used)
@@ -116,7 +116,7 @@ def pairs(results, ids):
 
 
 def main():
-    wb = load_workbook(ROOT / 'extraction/extraction.xlsx', read_only=True)
+    wb = load_workbook(ROOT / 'extraction/extraction_scope62.xlsx', read_only=True)
     studies_all, results_all = sheet(wb, 'studies'), sheet(wb, 'results')
     studies, provisional = final_set(studies_all, results_all)
     ids = {s['study_id'] for s in studies}

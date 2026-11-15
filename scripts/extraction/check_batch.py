@@ -37,6 +37,11 @@ def squash(s):
     return re.sub(r'\s+', '', re.sub(r'-\s*\n\s*', '', s)).casefold()
 
 
+def spaced(s):
+    """Collapse whitespace to single spaces (keeps number boundaries in tables)."""
+    return re.sub(r'\s+', ' ', re.sub(r'-\s*\n\s*', '', s)).casefold()
+
+
 def has_number(hay, num):
     """num occurs in hay as a whole number (not part of a longer number)."""
     return re.search(r'(?<![\d.])' + re.escape(num) + r'(?![\d]|\.\d)', hay) is not None
@@ -69,6 +74,7 @@ def check(lst, studies_csv, results_csv, text_dir):
     expected = [l.split('\t')[:2] for l in Path(lst).read_text(encoding='utf-8').splitlines() if l.strip()]
     sid2rid = dict(expected)
     studies = read(studies_csv, STUDY_FIELDS, errs, 'studies')
+    notes = {s["study_id"]: s.get("note", "") for s in studies}
     results = read(results_csv, RESULT_FIELDS, errs, 'results')
     if errs:
         return errs, warns
@@ -161,7 +167,7 @@ def check(lst, studies_csv, results_csv, text_dir):
         needle = squash(r['value_reported'].rstrip('%'))
         if len(ctx) < 25:
             errs.append(f'{where}: value_context must be a verbatim snippet (>= 25 chars) containing the number')
-        elif not has_number(squash(ctx), needle):
+        elif not has_number(spaced(ctx), needle):
             errs.append(f'{where}: value_context does not contain value_reported {r["value_reported"]!r}')
         elif nums and not any(squash(ctx) in squash(pg.get(n, '')) for n in nums):
             errs.append(f'{where}: value_context not found verbatim on cited page(s) {nums}: {ctx[:60]!r}')
@@ -169,6 +175,9 @@ def check(lst, studies_csv, results_csv, text_dir):
     for sid, rid in expected:
         rows = by_sid.get(sid, [])
         if not any(r['model_class'] == 'open LLM' for r in rows):
+            if 'QUERY' in notes.get(sid, ''):
+                warns.append(f'{sid}: no open-LLM result row (QUERY in studies.note; reviewer to decide)')
+                continue
             errs.append(f'{sid}: no open-LLM result row (explain in studies.note and flag for reviewer if truly none)')
         groups = defaultdict(list)
         for r in rows:

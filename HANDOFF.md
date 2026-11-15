@@ -19,8 +19,8 @@ PRISMA 2020 系統性回顧：開源（權重可下載、≥1B）LLM 用於臨�
 | D1 編號分批 | 174 篇 | `scripts/extraction/make_batches.py [--scope …]` | `extraction/study_ids.csv`（S001–S174）、`extraction/batches/*.list` |
 | 課堂版範圍 | 174 篇 | `scripts/extraction/restrict_scope.py` | `extraction/scope_restriction.csv`（keep／check／exclude＋author_decision） |
 | D1 萃取 | 指引 `extraction/d1_codex_brief.md` | Codex（見 §4）＋`scripts/extraction/check_batch.py` | `extraction/codex/batch_NN_{studies,results}.csv` |
-| D1 合併 | 各批 CSV | `scripts/extraction/merge.py` | `extraction/extraction.xlsx`（含審查欄）、`extraction/extraction_summary.json` |
-| E1 圖表 | `extraction.xlsx`、`scope_restriction.csv` | `scripts/analysis/slide_figures.py` | `figures/slides/*.png`、`analysis/slide_numbers.json` |
+| D1 合併 | 各批 CSV | `scripts/extraction/merge.py` | `extraction/extraction_scope62.xlsx`（含審查欄）、`extraction/extraction_scope62_summary.json` |
+| E1 圖表 | `extraction_scope62.xlsx`、`scope_restriction.csv` | `scripts/analysis/slide_figures.py` | `figures/slides/*.png`、`analysis/slide_numbers.json` |
 | F2 簡報 | 上面全部 | 手動（Slides artifact） | `slides/project/`、artifact 見 ROADMAP |
 
 欄位與允許值的單一來源：`scripts/extraction/fields.py`。

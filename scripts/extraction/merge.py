@@ -1,12 +1,12 @@
-"""Merge checked Codex batches into extraction/extraction.xlsx for agent review and author verification.
+"""Merge checked Codex batches into extraction/extraction_scope62.xlsx for agent review and author verification.
 
 Reads extraction/codex/batch_NN_{studies,results}.csv (only batches that pass check_batch.py),
 writes sheets studies / results / codebook plus review columns:
   agent_review (ok / fix / query), agent_note, verified (yes / corrected / no), verifier_note.
-Review columns already in an existing extraction.xlsx are carried over by study_id / result_id,
+Review columns already in an existing extraction_scope62.xlsx are carried over by study_id / result_id,
 so rerunning after new batches never erases the author's work. Agent review from
 extraction/review/agent_review.csv fills review cells that are still empty.
-Also writes extraction/extraction_summary.json (counts only).
+Also writes extraction/extraction_scope62_summary.json (counts only).
 
 Usage: .venv/bin/python scripts/extraction/merge.py
 """
@@ -26,7 +26,7 @@ from check_batch import check  # noqa: E402
 from fields import RESULT_FIELDS, STUDY_FIELDS  # noqa: E402
 
 REVIEW = ['agent_review', 'agent_note', 'verified', 'verifier_note']
-OUT = ROOT / 'extraction/extraction.xlsx'
+OUT = ROOT / 'extraction/extraction_scope62.xlsx'
 
 
 def old_review(sheet, key):
@@ -102,7 +102,7 @@ def main():
     wb.save(OUT)
     summary = dict(batches_merged=used, batches_skipped=skipped, studies=len(studies), results=len(results),
                    open_llm_results=sum(r['model_class'] == 'open LLM' for r in results))
-    (ROOT / 'extraction/extraction_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+    (ROOT / 'extraction/extraction_scope62_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps(summary, ensure_ascii=False))
 
 

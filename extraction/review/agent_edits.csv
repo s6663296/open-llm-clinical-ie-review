@@ -7,3 +7,58 @@ date,batch,target,action,reason
 2026-11-14,01,S005.deployment,changed 'public API' -> 'private cloud',p.10: GPT-4o run in Azure OpenAI environment; no public API stated
 2026-11-14,01,S005.deployment_src,changed 'p.3' -> 'p.10',deployment evidence on p.10
 2026-11-14,01,S002.comparators_src,changed 'p.8; p.11; p.12' -> 'p.11; p.12',revert: p.8 added without verification
+2026-11-15,11,S156-R01.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R02.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R03.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R04.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R05.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R06.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R07.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R08.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R09.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R10.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R11.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R12.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R13.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R14.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R15.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R16.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R17.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R18.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R19.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S156-R20.value_context/value_src,'p.6 Table 1' -> 'p.6 Table 1'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R04.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R05.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R06.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R07.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R08.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R09.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R10.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R11.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R15.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R16.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R17.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R18.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R19.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,11,S159-R20.value_context/value_src,'p.10 Table 2' -> 'p.10 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,12,S161-R05.value_context/value_src,'p.6 Table 2' -> 'p.6 Table 2'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,12,S167-R02.value_context/value_src,'p.9' -> 'p.3'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,12,S167-R03.value_context/value_src,'p.9' -> 'p.3'; context replaced with verbatim source line,Codex snippet not verbatim on cited page; repaired by fix_context.py (value unchanged)
+2026-11-15,12,S163-R02.value_context,changed 'Gold data only 0.69' -> 'Flan-T5 XL 3B/9.5 M\nGold data only 0.69 (0.57–0.78) 0.00 0.53',"context made verbatim (Adverse SDoH table, Flan-T5 XL row, p.3)"
+2026-11-15,12,S167-R01.value_context,changed 'presence of headache in the clinical context (F1 score: 98.0' -> 'presence of headache in the clinical context (F1 score: 98.0 [95%',context made verbatim (p.3 line)
+2026-11-15,12,S167-R01.value_src,changed 'p.9' -> 'p.3',"value appears on p.3, not p.9"
+2026-11-15,11,S159-R04.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R05.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R06.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R07.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R08.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R09.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R10.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R11.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R15.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R16.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R17.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R18.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R19.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,11,S159-R20.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
+2026-11-15,02,S022.note,"changed 'text: preprint version; direct closed-LLM comparisons are reported, but exact scores are only plotted in Figure 3 and are not transcribed from figures (p.12–14)' -> 'text: preprint version; QUERY: direct closed-LLM comparisons are reported, but exact scores are only plotted in Figure 3 and are not transcribed from figures (p.12–14)'",flag figure-only results as QUERY for author decision
