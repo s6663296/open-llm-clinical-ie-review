@@ -1,0 +1,15 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0405,serum creatinine triplet,in-house,Qwen3-8B-Instruct,open LLM,8,zero-shot,F1,NR,0.936,document,yes,no,p.8,"from 0.520 (Llama-3.2-3B, zero-shot + rules, FR) to 0.936 (Qwen3-8B, zero-shot + rules, EN).",Results conflict with abstract and discussion.
+R0405,serum creatinine triplet,in-house,regex,rule-based,NR,other,F1,NR,0.387,document,no,yes,p.8,score of 0.387. This confirms that while rule-based extraction,
+R0431,clinical entity and relation extraction,MLB MedRU,DeepSeekR1-0528-671B,open LLM,671,zero-shot,F1,micro,NR,entity,yes,no,NR,,Extraction-specific best and score unavailable; model selection provisional.
+R0449,genomic alterations,LUCC-Lung,Mistral-24B / lucc-ai-1,open LLM,24,other,F1,micro,0.96,field,yes,no,p.17,score for genomic alterations was 0.96 for AI versus 0.86 for manual,Abstract reports 0.97; patient-level aggregation.
+R0456,oncology feature extraction,TNBC,Phi-3-medium-instruct,open LLM,14,RAG,F1,macro,0.83,field,yes,no,p.2,Test Hybrid 44 0.81 ± 0.07 0.89 ± 0.05 0.83 ± 0.06 0.87 ± 0.04,"Hybrid F1 0.83, development-refined configuration."
+R0481,nodal involvement,in-house,Llama-4-Scout-17B-16E-Instruct,open LLM,17,CoT,accuracy,NA,0.99,field,yes,no,p.4,Instruct had an average accuracy of 0.99,F1 in supplementary table only; 17B active parameters.
+R0482,prognostic variables,in-house,Llama-3.3-70B,open LLM,70.6,zero-shot,F1,NR,0.986,field,yes,no,p.13,Llama 3.3 (Clin. Eval.) 70.6B Reference 131K 0.979 0.973 0.999 0.986 0.001,Aggregate includes inference fields; reference derived from model outputs.
+R0483,pathology field extraction,UF Health IDR,GPT-OSS-20B,open LLM,20,zero-shot,F1,micro,0.893,field,yes,no,p.6,"GPT-OSS-20B model emerged as the top-performing generative LLM (Micro-F1: 
+0.893",
+R0483,pathology field extraction,UF Health IDR,GatorTron345M NER-RE,BERT-type,0.345,full FT,F1,micro,0.960,field,no,yes,p.6,NER_RE (Baseline) 0.960 0.944 0.977 637 38 15,
+R0490,entity annotation,RadGraph,Qwen2.5-7B,open LLM,7,QLoRA,F1,NR,0.8747,entity,yes,no,p.6,Aggregate 4750 - 0.9117 0.8439 0.8747,Four entity-specific models; presence-conditioned.
+R0490,entity annotation,RadGraph,DyGIE++,other,NR,other,F1,NR,0.890,entity,no,yes,p.6,categories. It achieved F1 = 0.890 (vs. 0.8747 for our gold-trained models),
+R0503,mobility function,in-house,MedGemma-27B,open LLM,27,other,F1,NR,NR,document,yes,no,NR,,F1 and best model cannot be recovered from graphs; selection provisional.
+R0504,"seizure frequency, pragmatic",Real(300),MedGemma-4B-it,open LLM,4,CoT,F1,micro,0.86,field,yes,no,p.12,"MedGemma-4B CoT(15000) 0.79 [0.75, 0.82] 0.86 [0.82, 0.89]",Synthetic training; real held-out letters; pragmatic grouping.

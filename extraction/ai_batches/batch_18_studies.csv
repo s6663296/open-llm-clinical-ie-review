@@ -1,0 +1,17 @@
+record_id,title_match,first_author,year,country,note_language,text_type,clinical_domain,datasets,task_types,extraction_targets,open_models,medical_domain_model,closed_comparators,other_comparators,strategies,deployment,n_documents_test,note,evidence
+R1331,yes,NR,2023,USA,NR,progress note,rare diseases,CHOP; BiolarkGSC+; ID-68,NER; field extraction,phenotype mentions and HPO identifiers,GPT-J-6B; Falcon-7B; LLaMA-7B; LLaMA 2 (size NR),no,GPT-3; GPT-3.5,PhenoBCBERT; PhenoTagger; PhenoBERT; rule-based tools,few-shot; QLoRA; quantization,local,28,First author is not identified in the provided XML text; 28 BiolarkGSC+ validation instances; ID-68 is an additional validation dataset.,"For the open-source models, we utilized GPT-J-6B, Falcon-7B, and LLaMA-7B as the initial models. (p.1) | Our in-house dataset consists of clinical notes of rare disease patients seen at CHOP. (p.1)"
+R1360,yes,Torii,NR,NR,NR,clinical note (mixed),general,2022 n2c2 Track 2 SHAC; MIMIC-III,NER; RE; attribute; field extraction,"social determinants of health triggers, arguments and relations",GPT-J (size NR),no,none,Bio_Discharge_Summary_BERT; BioBERT; CRF and rules,few-shot; full FT,local,373,"The paper describes a toy few-shot demonstration; actual challenge extraction used fine-tuning. Year, affiliation and GPT-J parameter count not specified in supplied text.","The second system uses a large language model (LLM) to 
+extract complete structured outputs per document. (p.1) | Thus, for the actual extraction task we fine-tuned GPT-J using the entirety of the gold .ann files 
+provided. (p.8)"
+R1363,yes,Li,2023,NR,NR,discharge summary; clinical note (mixed),neurology,MIMIC-III; VHA gold; silver; bronze,other,Alzheimer disease signs and symptom categories in sentences,Llama 65B,no,GPT-4,BERT; RoBERTa; ClinicalBERT ensemble,CoT; ensemble,NR,NR,"Llama annotates MIMIC-III silver data; GPT-4 generates bronze data. Downstream F1 is for BERT ensemble, not directly for Llama. 100 silver samples were checked; number of documents in gold test not reported.","we adopt the Llama 65B (Touvron et al.,
+2023) due to its performances, availability, costs
+and privacy concerns. (p.4) | We performed experiments of binary classifica-
+tion (whether the sentence is related to AD signs
+and symptoms or not) and multi-class classifica-
+tion (assign one category from the nine pre-defined
+categories of AD signs and symptoms to an input
+sentence) (p.2)"
+R1376,yes,Sivarajkumar,NR,USA,NR,clinical note (mixed),neurology,adSLEEP; UPMC,field extraction; other,"snoring, napping, sleep problems, sleep quality, daytime sleepiness, night wakings, sleep duration",LLaMA 2 (size NR),no,none,nlp4sleep rule-based; decision tree; logistic regression; KNN; SVM,CoT; LoRA; instruction tuning,NR,NR,Test size inconsistent: p.11 states 120 for rule-based and ML; Table 3 reports 220 for several concepts and 150 or 115 for others; LLM test size unclear. Year and model size not given.,"We further extended our computational methodologies for sleep information extraction by incorporating 
+LLMs with a focus on LLAMA237, leveraging both Chain-of-Thought(CoT) prompting and Supervised 
+Fine-Tuning(SFT) approaches. (p.10) | Then a judge aggregated the concept 
+annotations in a clinical note to a document-level label. (p.7)"

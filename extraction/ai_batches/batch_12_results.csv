@@ -1,0 +1,19 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0811,NER,MIMIC-III,GENIE (Llama-3.1-8B-Instruct),open LLM,8,full FT,F1,NR,0.837,entity,yes,no,Table 1 (p.15),GENIE 0.837 0.867 0.934 0.820 0.812 0.912,
+R0811,NER,MIMIC-III,cTAKES,rule-based,NR,other,F1,NR,0.182,entity,no,yes,Table 1 (p.15),cTAKES 0.182 - - - - 0.748,
+R0828,breast fields,breast,Llama-3.1-8B-Instruct,open LLM,8,LoRA,accuracy,NA,0.915,document,yes,no,Table 4 (p.21),"Overall exact match 91.5 [87.8, 94.2]",
+R0828,kidney fields,kidney,Llama-3.1-8B-Instruct,open LLM,8,LoRA,accuracy,NA,0.875,document,yes,no,Table 4 (p.21),"Overall exact match 87.5 [77.8, 94.4]",
+R0828,prostate fields,prostate,Llama-3.1-8B-Instruct,open LLM,8,LoRA,accuracy,NA,0.915,document,yes,no,Table 3 (p.20),"91.5 
+[86.2, 
+95.4]",MDS is another task
+R0838,clinical features,in-house,LLaMA-3-70B,open LLM,70,few-shot,accuracy,NA,0.875,field,yes,no,p.9,"87.5% (95% CI, 83.6–91.1) for LLaMA-3-70B, whereas Med-LLaMA achieved only 35.8%",Mean across seven features
+R0846,SSI snippets,in-house,Deepseek R1 distilled Qwen 32B,open LLM,32,CoT,F1,NR,0.18,NR,yes,no,Table 1 (p.3),Deepseek 0.10 0.98 0.18,
+R0857,pathology extraction,in-house,Qwen2.5 72B Instruct,open LLM,72,CoT,accuracy,NA,0.781,field,yes,no,p.6,"GPT-4o, 78.1% for Qwen2.5, and 70.1% for Llama 3.3.",Exact match on 152-report gold standard
+R0857,pathology extraction,in-house,GPT-4o,closed LLM,NR,CoT,accuracy,NA,0.841,field,no,yes,p.6,Instruct49 to the ﬁnal gold-standard. Exact match accuracies were 84.1% for,
+R0861,operative concept classification,in-house,Llama 3.3,open LLM,NR,few-shot,F1,micro,0.88,document,yes,no,p.1,Llama 3.3 was the overall best-performing model (micro F1-score 0.88,Five-fold cross-validation
+R0861,operative concept classification,in-house,Clinical-Longformer,BERT-type,NR,full FT,F1,micro,0.73,document,no,yes,p.1,Clinical-Longformer (micro F1-score 0.73,
+R0871,respiratory symptoms,in-house,Llama 2 70B Chat; Mixtral 8x7B Instruct,open LLM,NR,zero-shot,F1,micro,NR,document,yes,no,NR,,Best open model and value in unavailable supplementary tables
+R0871,respiratory symptoms,in-house,GPT-4 turbo,closed LLM,NR,zero-shot,F1,micro,0.918,document,no,yes,p.3,"GPT-4 accuracy was the highest, F1=91.8%","Abstract says 91.4%, requiring review"
+R0878,dysplasia,MVP IBD,Gemma-2-9B-It-SPPO,open LLM,9,zero-shot,F1,NR,0.969,document,yes,no,Table 1 (p.7),Dysplasia MVP 0.262 0.957 (0.92–0.99) 0.993 (0.96–1.00) 0.985 0.981 0.985 0.969 0.983 0.958 0.920,
+R0878,HGD/CRC,MVP IBD,Gemma-2-9B-It-SPPO,open LLM,9,zero-shot,F1,NR,0.937,document,yes,no,Table 1 (p.7),HGD/CRC MVP 0.176 0.921 (0.84–0.99) 0.990 (0.96–1.00) 0.983 0.953 0.983 0.937 0.968 0.924 0.947,
+R0878,invasive CRC,MVP IBD,Gemma-2-9B-It-SPPO,open LLM,9,zero-shot,F1,NR,0.98,document,yes,no,Table 1 (p.7),CRC MVP 0.257 0.962 (0.92–0.99) 1.000 (0.98–1.00) 0.986 1.000 0.987 0.980 0.993 0.974 0.889,

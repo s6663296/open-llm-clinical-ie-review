@@ -1,0 +1,9 @@
+﻿field,value,count,percent
+code_available,NR,174,100.0
+prompts_available,NR,174,100.0
+weights_available,NR,174,100.0
+data_available,NR,174,100.0
+deployment,NR,67,38.51
+deployment,local,94,54.02
+deployment,private cloud,10,5.75
+deployment,public API,3,1.72

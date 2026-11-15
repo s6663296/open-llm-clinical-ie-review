@@ -1,0 +1,117 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0701,chest radiograph findings,CheXpert,Mixtral-8x7B-Instruct-v0.1,open LLM,NR,RAG,F1,NR,0.98,field,yes,no,p.3,"Average 0.98 0.91 0.97 0.93 0.96 0.98 0.98–0.91 0.94
+Stanford MOUD
+Depression 0.86 0.87 0.97 0.61 0.88 0.93 0.97–0.61 0.91
+Alcohol dependence 0.85 0.81 0.91 0.69 0.74 0.75 0.91–0.69 0.91a
+Substance use disorder 0.89 0.88 0.91 0.71 0.84 0.94",Average five variables; tied with Flan-T5.
+R0701,chest radiograph findings,CheXpert,GPT-4,closed LLM,NR,RAG,F1,NR,0.97,field,no,yes,p.3,"Average 0.98 0.91 0.97 0.93 0.96 0.98 0.98–0.91 0.94
+Stanford MOUD
+Depression 0.86 0.87 0.97 0.61 0.88 0.93 0.97–0.61 0.91
+Alcohol dependence 0.85 0.81 0.91 0.69 0.74 0.75 0.91–0.69 0.91a
+Substance use disorder 0.89 0.88 0.91 0.71 0.84 0.94",
+R0701,chest radiograph findings,CheXpert,Bio+ClinicalBERT,BERT-type,NR,full FT,F1,NR,0.94,field,no,yes,p.3,"Average 0.98 0.91 0.97 0.93 0.96 0.98 0.98–0.91 0.94
+Stanford MOUD
+Depression 0.86 0.87 0.97 0.61 0.88 0.93 0.97–0.61 0.91
+Alcohol dependence 0.85 0.81 0.91 0.69 0.74 0.75 0.91–0.69 0.91a
+Substance use disorder 0.89 0.88 0.91 0.71 0.84 0.94",
+R0727,stroke CT findings,dataset A,Llama-3.3-70B,open LLM,70,few-shot,precision,NA,0.86,field,yes,no,p.6,"Similarly, the precision of Llama-
+3.3 (temperature = 0) rose from 0.78 to 0.86 (p < 0.001)
+in dataset A and from 0.87 to 0.94 in dataset B
+(p = 0.001). In contrast, recall rates largely remained
+stable, with values ranging from 0.98 to 0.99 in all",Body microaveraged precision; figure F1 not legible as text.
+R0727,stroke CT findings,dataset A,GPT-4o,closed LLM,NR,few-shot,precision,NA,0.95,field,no,yes,p.6,"using a temperature of 0, GPT-4o’s precision increases
+from 0.86 to 0.95 in dataset A (p < 0.001) and from 0.86
+to 0.93 in dataset B, although the difference was not
+signiﬁcant (p = 0.390). Similarly, the precision of Llama-
+3.3 (temperature = 0)",Body microaveraged precision with guideline.
+R0743,breast pathology fields,in-house,Mistral-Nemo-Instruct-2407,open LLM,12.2,zero-shot,F1,NR,0.884,field,yes,no,p.5,"Mistral N/A
+Answerable 0.630 0.831
+Unanswerable 0.954 0.954
+Overall 0.814 0.884
+Table 1 . Test set results from seven candidate models. Three BERT-based models (ClinicalBERT, 
+BioMedRoBERTa, PubMedBERT) were evaluated with and without additional",Overall mean F1.
+R0743,breast pathology fields,in-house,PubMedBERT-SQuAD,BERT-type,NR,full FT,F1,NR,0.977,field,no,yes,p.5,"PubMedBERT
+Ye s
+Answerable 0.958 0.964
+Unanswerable 0.992 0.992
+Overall 0.974 0.977
+No
+Answerable 0.943 0.950
+Unanswerable 0.996 0.996
+Overall 0.968 0.972
+Mistral N/A
+Answerable 0.630 0.831
+Unanswerable 0.954 0.954
+Overall 0.814 0.884
+Table 1 . Test",Overall mean F1.
+R0775,vaccine presence,SynSurv,Llama 3.2 3B,open LLM,3,QLoRA,F1,NR,0.97,field,yes,no,p.3,"Llama 3B Fine-tuned  225 18 13 3 0.99 0.95 0.97 
+Rules-based 219 18 19 6 0.99 0.93 0.95 
+ 
+The fine-tuned models significantly reduced false negatives compared to the prompted 
+model, achieving higher recall and precision with more true positives.",Tied with fine-tuned 1B; presence rather than name.
+R0775,vaccine presence,SynSurv,Rules-based,rule-based,NR,other,F1,NR,0.95,field,no,yes,p.3,"Rules-based 219 18 19 6 0.99 0.93 0.95 
+ 
+The fine-tuned models significantly reduced false negatives compared to the prompted 
+model, achieving higher recall and precision with more true positives. While the fine-
+tuned 1B model produced more false",
+R0775,vaccine names,SynSurv,Llama 3.2 3B,open LLM,3,QLoRA,accuracy,NA,0.865,field,yes,no,p.4,"3B fine-tuned 92 15 86% 224 35 86.5% 
+ 
+When the models’ responses exactly matched the supplied label, less post-
+processing was required to normalize responses. The 3B model achieved 86.5% 
+(224/259) exact matching compared to the 1B model's 79.9%",
+R0779,CTPE concept extraction,MIMIC-IV; Duke,Phi-4 14B,open LLM,14,other,accuracy,NA,0.98,field,yes,no,p.3,"Mean accuracy rose with model size—0.83 for L3-0 8 B, 0.91 for L3-1 8 B, 
+0.96 for both 70 B variants, 0.94 for G3 27B and 0.98 for P4 14 B—with a dataset 
+gap < 0.03 between MIMIC-IV and DUHS. The largest gains appeared in relatively 
+infrequent",Mean across concepts; shot setting NR; conflicting Gemma result in abstract.
+R0784,liver tumour fields,Erasmus MC,Gemma 3 27B,open LLM,27,few-shot,other,NA,0.95,field,yes,no,p.9,"Gemma 3 performed best in liver tumours (0.95 [0.94–0.96]). When averaged across use cases,
+performance remained closely grouped, with mean macro-average scores of 0.81 [0.72–0.90] for
+Llama-4 Maverick, 0.80 [0.73–0.88] for Mistral Small, 0.79",Macro-average of heterogeneous per-variable metrics; not F1.
+R0785,bladder cancer fields,in-house,Llama-2.0-13B,open LLM,13,zero-shot,accuracy,NA,0.93,field,yes,no,p.5,"Accuracy comparisons mirrored consistency trends, with GPT-4o achieving 
+138 the highest accuracy (>96%), followed by GPT-4 Turbo, Llama-2.0-13b, and 
+139 Llama-3.3-70b (~93%). Dolly-v2-12b and Vicuna-v1.3-13b recorded 
+140 significantly lower",Average across fields; tied with Llama-3.3.
+R0785,bladder cancer fields,in-house,GPT-4o,closed LLM,NR,zero-shot,accuracy,NA,0.96,field,no,yes,p.6,"Model 
+effect
+22 Nov, 2024 Snippet reports Original sequence GPT-4o
+AVG 0.9
+9
+Excelle
+nt
+0.96±0.00
+0.77±0.0
+03 0.98 0.82±0.00 8 0.87±0.00 2
+P 0.9
+8
+Excelle
+nt
+0.96±0.00
+N 0.9
+8
+Excelle
+nt
+0.97±0.01
+LVI 1.0
+0
+Excelle
+nt
+0.96±0.00
+Timepoint 1:
+22 Nov,",Average across three fields and 10 runs.
+R0792,fine NER,in-house,Llama-3.1-8B,open LLM,8,LoRA,F1,NR,0.386,entity,yes,no,p.9,"F1 0.152 (±0.010) 0.110 (±0.009) 0.133 (±0.024) 0.140 (±0.041) 0.386 (±0.048)
+Precision 0.459 (±0.026) 0.077 (±0.007) 0.125 (±0.023) 0.115 (±0.038) 0.340 (±0.041)
+Recall 0.094 (±0.006) 0.205 (±0.011) 0.144 (±0.026) 0.172 (±0.047) 0.448",Mean over 5 runs; fine-grained.
+R0792,fine NER,in-house,dictionary,rule-based,NR,other,F1,NR,0.152,entity,no,yes,p.9,"F1 0.152 (±0.010) 0.110 (±0.009) 0.133 (±0.024) 0.140 (±0.041) 0.386 (±0.048)
+Precision 0.459 (±0.026) 0.077 (±0.007) 0.125 (±0.023) 0.115 (±0.038) 0.340 (±0.041)
+Recall 0.094 (±0.006) 0.205 (±0.011) 0.144 (±0.026) 0.172 (±0.047) 0.448",
+R0792,relation extraction,in-house,Llama-3-8B-Instruct,open LLM,8,few-shot,F1,NR,0.222,relation,yes,no,p.9,"F1 0.000 (±0.000) 0.047 (±0.005) 0.222 (±0.019) 0.143 (±0.018) 0.195 (±0.029)
+Precision 0.000 (±0.000) 0.052 (±0.006) 0.207 (±0.018) 0.126 (±0.016) 0.127 (±0.020)
+Recall 0.000 (±0.000) 0.049 (±0.005) 0.240 (±0.021) 0.165 (±0.021) 0.423",Strict evaluation.
+R0792,relation extraction,in-house,off-the-shelf pipeline,other,NR,other,F1,NR,0.047,relation,no,yes,p.9,"F1 0.000 (±0.000) 0.047 (±0.005) 0.222 (±0.019) 0.143 (±0.018) 0.195 (±0.029)
+Precision 0.000 (±0.000) 0.052 (±0.006) 0.207 (±0.018) 0.126 (±0.016) 0.127 (±0.020)
+Recall 0.000 (±0.000) 0.049 (±0.005) 0.240 (±0.021) 0.165 (±0.021) 0.423","CueNB, NegEx and Stanza pipeline."
+R0798,OPQRST onset,in-house,Llama-2-13B-chat,open LLM,13,CoT,F1,NR,0.944,entity,yes,no,p.7,"Onset 0.424 0.578 0.618 0.488 0.303 0.944
+Provocation 0.18 0.247 0.16 0.762 0.752 0.836
+Palliation 0.182 0.143 0.47 0.695 0.85 0.941
+Quality 0.235 0.400 0.351 0.163 0.603 0.673
+Region 0.464 0.302 0.351 0.346 0.667 0.736
+Radiation 0.295 0.517 0.152",PromptLLM semantic evaluation; onset only.

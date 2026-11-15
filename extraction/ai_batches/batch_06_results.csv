@@ -1,0 +1,21 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0364,kidney biopsy fields,in-house,Llama3 70B,open LLM,70,other,accuracy,NA,0.933,field,yes,no,p.2,"Results: Llama3 70B achieved the highest overall accuracy (93.3% strict,",Strict match.
+R0367,main culprit vessel,in-house ICA,Phi-4,open LLM,NR,other,F1,macro,0.715,field,yes,no,p.5,PE (Phi-4) 0.522 (0.467–0.580) 0.510 (0.449–0.579) 0.715 (0.671–0.757),Selected test-table open model; other models in cross-validation figure.
+R0367,main culprit vessel,in-house ICA,GPT-4o,closed LLM,NR,full FT,F1,macro,0.937,field,no,yes,p.5,FT (GPT-4o) 0.870 (0.830–0.907) 0.830 (0.774–0.888) 0.937 (0.914–0.958),
+R0368,morphological features,in-house HCC,Gemma 4 31B,open LLM,31,other,F1,macro,0.993,field,yes,no,p.11,"Gemma 4 (31B, Q4_K_M) achieved an overall average macro F1-score of 0.993 for morphological 234",Average across features.
+R0368,IHC markers,in-house HCC,Gemma 4 31B,open LLM,31,other,F1,macro,0.997,field,yes,no,p.11,"tumor features and 0.997 for immunohistochemical (IHC) markers. Notably, Gemma 4 reached 235",Average across markers.
+R0371,procedure classes,in-house,NR,open LLM,NR,zero-shot,F1,macro,NR,field,yes,no,NR,,Best open model and numeric score not readable from figure; supplement unavailable.
+R0371,procedure classes,in-house,GPT-o4-mini,closed LLM,NR,zero-shot,F1,macro,0.624,field,no,yes,p.2,"of 0.986, a macro-averaged F1-score of 0.624, and a macro-averaged Matthews Correlation Coefficient of 0.637.",
+R0376,minimum T-score,DEXA,DeepSeek R1 Distilled Llama 3.1 8B,open LLM,8,CoT,accuracy,NA,0.987,field,yes,no,p.4,"values (accuracy = 98.7% (96.4–99.6), 98.7% (96.4–99.6),",Tied with Llama 3.1 8B.
+R0376,minimum T-score,DEXA,o1-mini,closed LLM,NR,CoT,accuracy,NA,0.993,field,no,yes,p.4,OpenAI o1-mini 99.3% (97.3–99.9) 99.3% (97.3–99.9) 99.0% (96.9–99.7) 99.2% (96.9–99.9) 97.3% (94.6–98.8) 98.0% (95.4–99.2)*,
+R0379,psychiatric concepts,CSJDM,Mistral-small,open LLM,24,full FT,F1,macro,0.86,entity,yes,no,p.19,"significantly outperformed BETO-Baseline in F1 and recall (macro-F1=0.86 vs. 0.81,",109 concepts.
+R0379,psychiatric concepts,CSJDM,BETO +WL,BERT-type,0.11,full FT,F1,macro,0.83,entity,no,yes,p.19,"(macro-F1=0.83 vs. 0.86; PFDR=0.13); However, recall remained significantly lower",109 concepts; extra weak labels.
+R0379,psychiatric concepts,CSJDM,tNLP,rule-based,NR,other,F1,macro,0.85,entity,no,yes,p.19,"F1=0.88 vs. macro-F1=0.85; PFDR<.001) and recall (mean recall=0.86 vs. 0.82; PFDR<.001),",88 concepts; different subset.
+R0382,PCL features,in-house,DeepSeek NR,open LLM,NR,QLoRA,accuracy,NA,0.98,field,yes,no,p.2,为 97%（95% CI：97%～98%）、98%（95% CI：97%～98%）和 97%（95% CI：,"Translated abstract; model order Llama, DeepSeek, GPT-4o."
+R0382,PCL features,in-house,GPT-4o,closed LLM,NR,CoT,accuracy,NA,0.97,field,no,yes,p.2,为 97%（95% CI：97%～98%）、98%（95% CI：97%～98%）和 97%（95% CI：,Translated abstract; CoT setting.
+R0390,temporal PHI,in-house,LLaMA-3.3-70B,open LLM,70,few-shot,F1,micro,0.848,entity,yes,no,p.5,few-shot 0.879 / 0.884 0.820 / 0.869 0.848 / 0.866 0.930 / 0.928 0.868 / 0.913 0.898 / 0.909,Exact span match.
+R0390,temporal PHI,in-house,GPT-4o,closed LLM,NR,few-shot,F1,micro,0.867,entity,no,yes,p.5,few-shot 0.909 / 0.909 0.828 / 0.875 0.867 / 0.881 0.955 / 0.952 0.870 / 0.915 0.910 / 0.922,Exact span match.
+R0398,myocarditis features,in-house FHIR,Llama3.3 70B Instruct,open LLM,70,other,F1,NR,0.85,field,yes,no,p.6,LLM Test (n = 600) 0.78 (0.73–0.83) 0.85 (0.81–0.88),600 questions; 25 patients.
+R0398,myocarditis features,in-house FHIR,simple CQL,rule-based,NR,other,F1,NR,0.33,field,no,yes,p.6,Simple CQL Test (n = 300) 0.36 (0.31–0.41) 0.33 (0.27–0.39),Only symptoms and biomarkers; different subset.
+R0403,core covariates,MIMIC-IV-Note,Qwen3-14B,open LLM,14,LoRA,F1,NR,0.478,field,yes,no,p.12,Core mean 55.6% 0.448 72.7% 0.478,"Mean across core covariates; 640 held-out, consensus reference."
+R0403,core covariates,MIMIC-IV-Note,GPT-4o-mini,closed LLM,NR,zero-shot,F1,NR,0.448,field,no,yes,p.12,Core mean 55.6% 0.448 72.7% 0.478,"Evaluated on 3200 summaries, different sample from Qwen."

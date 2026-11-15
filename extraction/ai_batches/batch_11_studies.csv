@@ -1,0 +1,31 @@
+record_id,title_match,first_author,year,country,note_language,text_type,clinical_domain,datasets,task_types,extraction_targets,open_models,medical_domain_model,closed_comparators,other_comparators,strategies,deployment,n_documents_test,note,evidence
+R0701,yes,Lopez,2025,USA,NR,clinical note (mixed); radiology report,general,Stanford MOUD; CheXpert,NER; field extraction,clinical entities and chest radiograph findings,Med42 70B; Mixtral-8x7B-Instruct-v0.1; Llama-3 70B; Flan-T5-XXL; Flan-UL2,yes,GPT-4,Bio+ClinicalBERT; regular expressions,zero-shot; few-shot; RAG,private cloud,NR,Includes presence/absence labeling.,"We introduce CLinical Entity Augmented Retrieval (CLEAR), a RAG pipeline that retrieves information
+using entities. We compared CLEAR to embedding RAG and full-note approaches for extracting 18
+variables using six LLMs across 20,000 clinical notes. (p.1)"
+R0727,yes,Wihl,2025,Germany,German,radiology report,neurology,in-house,field extraction,ten stroke CT imaging findings,Llama-3.3-70B,no,GPT-4o,none,few-shot; quantization,local,300,Dataset A 200 and B 100; abstract and body conflict on dataset B precision.,"Methods The performance of GPT-4o and Llama-3.3-70B in extracting ten imaging ﬁndings from stroke CT reports
+was assessed in two datasets from a single academic stroke center. Dataset A (n = 200) was a stratiﬁed cohort
+including various pathological (p.1)"
+R0743,yes,Kwok,2025,Canada,NR,pathology report,oncology,in-house,field extraction,32 breast cancer clinicopathological fields,Mistral-Nemo-Instruct-2407 12.2B,no,none,ClinicalBERT; PubMedBERT; BioMedRoBERTa; rule-based,zero-shot; full FT,NR,NR,Prior rule-based accuracy is not directly comparable to F1.,"models; ClinicalBERT, PubMedBERT, BioMedRoBERTa and Mistral-Nemo LLM to automate data 
+extraction of 1,795 breast cancer pathology reports obtained from the Providence Health Services 
+Authority in British Columbia. We also explore the effect of (p.1)"
+R0769,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Text title differs from listed title: Improving Generalizability of Extracting Social Determinants of Health Using Large Language Models through Prompt-tuning; identity cannot be established from text.,
+R0775,yes,Khademi,NR,Australia,NR,other,general,SynSurv,field extraction,vaccine names in emergency triage notes,Llama 3.2 1B; Llama 3.2 3B,no,none,rule-based,QLoRA; quantization,NR,259,Presence F1 and vaccine-name accuracy differ.,"Abstract. This study evaluates fine-tuned Llama 3.2 models for extracting vaccine-
+related information from emergency department triage notes to support near real-
+time vaccine safety surveillance. Prompt engineering was used to initially create a (p.1)"
+R0779,yes,Alwakeel,NR,USA,NR,radiology report,pulmonology,MIMIC-IV; Duke University Health System,field extraction,"pulmonary embolism presence, location, burden, right-heart strain, image quality",Llama 3.0 8B; Llama 3.1 8B; Llama 3.1 70B; Llama 3.3 70B; Phi-4 14B; Gemma-3 27B,no,none,none,zero-shot; few-shot; ensemble,local,500,Abstract says Gemma matched 0.98; body reports 0.94.,"can automate concept extraction from computed-tomography PE (CTPE) reports 
+without sacrificing data quality. Four Llama-3 (L3) variants (3.0 8 B, 3.1 8 B, 3.1 
+70 B, 3.3 70 B) and two reviewer models Phi -4 (P4) 14 B and 
+Gemma‑3 27 B (G3) were (p.1)"
+R0784,yes,Spaanderman,2025,Netherlands,Dutch; English; Czech,pathology report; radiology report,oncology; neurology,Erasmus MC; Leeds Teaching Hospitals; Masaryk Memorial Cancer Institute,field extraction,"tumour characteristics, histopathology and imaging markers",DeepSeek R1 0528 685B; Llama-4-Maverick 402B; Qwen3 235B-A22B; Llama-4-Scout 109B; Qwen2.5-72B-Instruct; Llama-3.3-Nemotron 49B; Gemma-3 27B; Mistral-Small-3.1 24B; DeepSeek-R1-0528-Qwen3 8B; Gemma-3 4B; Qwen3 1.7B; DeepSeek-R1-Distill-Qwen 1.5B; Llama3-Med42-70B; Llama3-OpenBioLLM-70B; MedGemma 27B,yes,none,none,zero-shot; few-shot; CoT; ensemble,local,NR,Six use cases; mixed metric macro-average is not F1.,"Methods: Weretrospectivelyevaluated15open-weightLLMsforstructuredinformationextraction
+from pathology and radiology reports across six use cases at three institutes in the Netherlands,
+United Kingdom, and Czech Republic, covering colorectal liver (p.1)"
+R0785,yes,Sun,2025,NR,NR,pathology report; operative note,oncology,in-house,field extraction,"pathological T stage, node stage and lymphovascular invasion",Dolly-v2-12B; Vicuna-v1.3-13B; Llama-2.0-13B; Llama-3.3-70B,no,GPT-4 Turbo; GPT-4o,none,zero-shot,local,163,Ten repeated runs.,"We selected six LLMs to evaluate their performance in clinical information 
+467 extraction: Dolly-v2-12b 23, Vicuna-v1.3-13b 24, Llama-2.0-13b 25, Llama-3.3-
+468 70b 26, GPT-4 Turbo 27, and GPT-4o 28. These models were chosen for their 
+469 diverse (p.21)"
+R0792,yes,Truong,2025,Australia,NR,radiology report,neurology,in-house,NER; RE,"brain MRI findings, locations, hedging and relations",Llama-3-8B-Instruct; Llama-3.1-8B,no,none,dictionary; SciSpacy; CueNB; NegEx; Stanza OpenIE,few-shot; LoRA,local,NR,"101 reports per methods; 5-fold cross-validation, 20/80 train/test.","Fine-tuning We perform parameter-efficient fine-tuning using LoRa33 to fine-tune a LLama 3.1 8B
+model with MRI data converted into Alpaca instruction-tuning format.34 Fine-tuning details are in
+Appendix E. The models are evaluated following a 5-fold (p.8)"
+R0798,yes,Luo,2025,NR,NR,clinical note (mixed),general,in-house,NER,"onset, provocation, palliation, quality, region, radiation, severity",Llama-2-13B-chat,no,none,none,few-shot; CoT,NR,85,Preprint posted 2025 despite template copyright 2024; automatic LLM-based evaluation.,"All our experiments were performed using the Llama-2-13B-chat model. We used one 80GB
+A100 for loading the model and carrying out inference. We used the Hugging Face Accelerate
+library for the deployment. With regards to the experiment settings, the (p.6)"
