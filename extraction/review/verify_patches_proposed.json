@@ -1,0 +1,176 @@
+[
+  {
+    "batch": "02",
+    "kind": "results",
+    "id": "S019-R02",
+    "set": {
+      "model": "gemini-2.5-flash",
+      "value_reported": "31.8",
+      "value": "0.318",
+      "value_context": "gemini-2.5-flash Proprietary General 40.5 68.3 31.8 49.4 85.7 9.3 16.7 30.2 32.8"
+    },
+    "reason": "p.56 Table S4，EE 欄 gemini-2.5-flash 為 31.8，高於 gpt-4o 的 29.1。"
+  },
+  {
+    "batch": "09",
+    "kind": "results",
+    "id": "S121-R02",
+    "set": {
+      "model": "Gemma 2",
+      "model_family": "Gemma",
+      "params_b": "NR",
+      "value_reported": "0.286",
+      "value": "0.286",
+      "value_src": "p.24 Table 2",
+      "value_context": "Gemma 2 N 0.800 0.167 1.000 0.286"
+    },
+    "reason": "p.24 Table 2，Gemma 2 名稱類別 F1 0.286 高於 LLaMa 3 的 0.137。"
+  },
+  {
+    "batch": "09",
+    "kind": "results",
+    "id": "S126-R01",
+    "set": {
+      "dataset": "i2b2/VA 2010"
+    },
+    "reason": "p.2 Dataset Description：資料集為 2010 i2b2/VA；p.5 Table IV：比較模型與提示策略的結果。"
+  },
+  {
+    "batch": "09",
+    "kind": "results",
+    "id": "S126-R02",
+    "set": {
+      "dataset": "i2b2/VA 2010"
+    },
+    "reason": "p.2 Dataset Description：資料集為 2010 i2b2/VA；p.5 Table IV：比較模型與提示策略的結果。"
+  },
+  {
+    "batch": "09",
+    "kind": "results",
+    "id": "S126-R03",
+    "set": {
+      "dataset": "i2b2/VA 2010",
+      "value_reported": "0.94",
+      "value": "0.94",
+      "strategy_detail": "Few-shot 1; annotated clinical document",
+      "value_context": "Few-shot 1 0.92 0.97 0.94"
+    },
+    "reason": "p.2 Dataset Description：資料集為 2010 i2b2/VA；p.5 Table V：比較模型與提示策略的結果。"
+  },
+  {
+    "batch": "09",
+    "kind": "results",
+    "id": "S126-R04",
+    "set": {
+      "dataset": "i2b2/VA 2010"
+    },
+    "reason": "p.2 Dataset Description：資料集為 2010 i2b2/VA；p.5 Table V：比較模型與提示策略的結果。"
+  },
+  {
+    "batch": "10",
+    "kind": "results",
+    "id": "S151-R01",
+    "set": {
+      "value_src": "p.11 Table 3",
+      "value_context": "Overall – 22,009 88.3 88.8 83.9 88.2 61.7"
+    },
+    "reason": "p.11 Table 3 明確指出 Llama 3 8B 的 overall F1 為 88.2；p.2 摘要只給跨模型範圍。"
+  },
+  {
+    "batch": "05",
+    "kind": "results",
+    "id": "S055-R01",
+    "set": {
+      "is_best_open": "yes"
+    },
+    "reason": "p.4 Table 2：Llama 3.1 8b 與 DeepSeek R1 Distilled Llama 3.1 8b 的 T-score accuracy 均為 98.7%，依規則並列標記。"
+  },
+  {
+    "batch": "07",
+    "kind": "results",
+    "id": "S101-R03",
+    "set": {
+      "is_best_open": "yes"
+    },
+    "reason": "p.3 Table 1：CheXpert 平均 Flan-T5 與 Mixtral 的 F1 並列 0.98。"
+  },
+  {
+    "batch": "07",
+    "kind": "results",
+    "id": "S101-R04",
+    "set": {
+      "value_src": "p.3 Table 1",
+      "value_context": "Average 0.98 0.91 0.97 0.93 0.96 0.98 0.98–0.91 0.94"
+    },
+    "reason": "p.3 Table 1：CheXpert 平均 GPT-4 F1 0.97；原 context 的 CLEAR 比較屬 Stanford MOUD。"
+  },
+  {
+    "batch": "06",
+    "kind": "results",
+    "id": "S075-R09",
+    "set": {
+      "is_best_open": "yes"
+    },
+    "reason": "p.3 Table 1：PMC 二元分類的 Qwen2.5-7B 與 LLaMA-3.1-8B micro F1 均為 0.891，並列最佳。"
+  },
+  {
+    "batch": "04",
+    "kind": "results",
+    "id": "S052-R10",
+    "set": {
+      "value_reported": "0.97",
+      "value": "0.97",
+      "value_context": "FT (GPT-4o) 0.987* (0.973–0.997) 0.970* (0.926–0.998) 0.97* (0.931–0.997)",
+      "strategy_detail": "fine-tuning; Azure OpenAI"
+    },
+    "reason": "p.5 Table 2：Treatment strategy 的同類模型最佳 F1 與提示或微調條件，並修正原文證據。"
+  },
+  {
+    "batch": "04",
+    "kind": "results",
+    "id": "S052-R14",
+    "set": {
+      "value_reported": "0.897",
+      "value": "0.897",
+      "value_context": "PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993)",
+      "strategy_detail": "prompt engineering; Azure OpenAI"
+    },
+    "reason": "p.6 Table 3：Mitral Reg. grade 的同類模型最佳 F1 與提示或微調條件，並修正原文證據。"
+  },
+  {
+    "batch": "04",
+    "kind": "results",
+    "id": "S052-R20",
+    "set": {
+      "value_reported": "0.977",
+      "value": "0.977",
+      "value_context": "PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00)",
+      "strategy_detail": "prompt engineering; Azure OpenAI"
+    },
+    "reason": "p.6 Table 3：Tricuspid Sten. grade 的同類模型最佳 F1 與提示或微調條件，並修正原文證據。"
+  },
+  {
+    "batch": "04",
+    "kind": "results",
+    "id": "S052-R22",
+    "set": {
+      "value_reported": "0.905",
+      "value": "0.905",
+      "value_context": "FT (GPT-4o) 0.963 (0.943–0.983) 0.978 (0.947–0.994) 0.905 (0.841–0.955)",
+      "strategy_detail": "fine-tuning; Azure OpenAI"
+    },
+    "reason": "p.6 Table 3：Tricuspid Reg. grade 的同類模型最佳 F1 與提示或微調條件，並修正原文證據。"
+  },
+  {
+    "batch": "04",
+    "kind": "results",
+    "id": "S052-R24",
+    "set": {
+      "value_reported": "0.990",
+      "value": "0.99",
+      "value_context": "PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00)",
+      "strategy_detail": "prompt engineering; Azure OpenAI"
+    },
+    "reason": "p.6 Table 3：Pulmonary Sten. grade 的同類模型最佳 F1 與提示或微調條件，並修正原文證據。"
+  }
+]

@@ -7,3 +7,8 @@ fulltext_text/
 fulltext_text_ft/
 fulltext_text_full/
 extraction/codex/logs/
+
+# academic PPTX build
+slides/pptx/node_modules/
+slides/pptx/qa/
+slides/pptx/~$*

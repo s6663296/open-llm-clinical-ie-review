@@ -117,9 +117,7 @@ FT (Intfloat) 0.953* (0.930–0.977) 0.895* (0.825–0.955) 0.8",,codex
 S052-R09,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.847,0-1,0.847,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.940 (0.910–0.967) 0.835 (0.748–0.917) 0.847* (0.762–0.919)
 PE (GPT-4o) 0.977* (0.957–0.993) 0.915* (0.841–0.976) 0.930* (0.868–0.977)
 Graft (manual) 0.987 0.940 0.957",,codex
-S052-R10,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.970,0-1,0.970,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.987* (0.973–0.997) 0.970* (0.926–0.998) 0.97* (0.931–0.997)
-PE (Phi-4) 0.940 (0.910–0.967) 0.835 (0.748–0.917) 0.847* (0.762–0.919)
-PE (GPT-4o) 0.977* (0.957–0.993) 0",,codex
+S052-R10,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning; Azure OpenAI,NA,F1,micro,0.97,0-1,0.97,document,NR,no,yes,p.5 Table 2,FT (GPT-4o) 0.987* (0.973–0.997) 0.970* (0.926–0.998) 0.97* (0.931–0.997),,codex
 S052-R11,S052,Graft,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.947,0-1,0.947,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.993* (0.983–1.00) 0.924* (0.864–0.974) 0.947* (0.905–0.981)
 PE (GPT-4o) 0.993* (0.983–1.00) 0.996* (0.990–1.00) 0.986* (0.965–1.00)
 Four LLM models and training method",,codex
@@ -129,9 +127,7 @@ PE (GPT-4o) 0.993* (0.983–1.00) 0.9",,codex
 S052-R13,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.707,0-1,0.707,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.893 (0.860–0.927) 0.783 (0.688–0.869) 0.707 (0.532–0.853)
 PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993)
 Aortic Sten. grade (manual) 1.00 1.",,codex
-S052-R14,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.896,0-1,0.896,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.990* (0.977–1.00) 0.963* (0.900–1.00) 0.896* (0.738–1.00)
-PE (Phi-4) 0.893 (0.860–0.927) 0.783 (0.688–0.869) 0.707 (0.532–0.853)
-PE (GPT-4o) 0.980 (0.963–0.993) 0.946",,codex
+S052-R14,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.897,0-1,0.897,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993),,codex
 S052-R15,S052,Aortic Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.516,0-1,0.516,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.866 (0.823–0.903) 0.791 (0.721–0.850) 0.516 (0.377–0.665)
 PE (GPT-4o) 0.990* (0.977–1.00) 0.856* (0.753–1.00) 0.836* (0.712–1.00)
 Aortic Reg. grade (manual) 0.993 0.98",,codex
@@ -147,21 +143,15 @@ PE (GPT-4o) 0.973 (0.953–0.990) 0.",,codex
 S052-R19,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.185,0-1,0.185,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.838 (0.793–0.877) 0.435 (0.415–0.454) 0.185 (0.177–0.229)
 PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00)
 Tricuspid Reg.grade (manual) 0.993 0.",,codex
-S052-R20,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.831,0-1,0.831,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.967 (0.947–0.987) 0.983 (0.972–0.993) 0.831 (0.727–0.925)
-PE (Phi-4) 0.838 (0.793–0.877) 0.435 (0.415–0.454) 0.185 (0.177–0.229)
-PE (GPT-4o) 0.997* (0.990–1.00) 0.998",,codex
+S052-R20,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.977,0-1,0.977,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00),,codex
 S052-R21,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.491,0-1,0.491,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.853 (0.81–0.893) 0.797 (0.702–0.878) 0.491 (0.360–0.657)
 PE (GPT-4o) 0.980* (0.963–0.993) 0.961 (0.912–0.997) 0.901* (0.701–0.985)
 Pulmonary Sten. grade (manual) 0.997",,codex
-S052-R22,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.901,0-1,0.901,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.980* (0.963–0.993) 0.961 (0.912–0.997) 0.901* (0.701–0.985)
-Pulmonary Sten. grade (manual) 0.997 0.998 0.991
-FT (Intfloat) 0.987* (0.973–0.997) 0.950* (0.896–0.998) 0",,codex
+S052-R22,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning; Azure OpenAI,NA,F1,micro,0.905,0-1,0.905,document,NR,no,yes,p.6 Table 3,FT (GPT-4o) 0.963 (0.943–0.983) 0.978 (0.947–0.994) 0.905 (0.841–0.955),,codex
 S052-R23,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.260,0-1,0.260,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.834 (0.790–0.877) 0.508 (0.459–0.568) 0.260 (0.191–0.384)
 PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00)
 Pulmonary Reg. grade (manual) 0.997 0",,codex
-S052-R24,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.990,0-1,0.990,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.993* (0.976–1.00)
-Mitral Sten. Grade (manual) 1.00 1.00 1.00
-FT (Intfloat) 0.969 (0.950–0.987) 0.555 (0.495–0.667) 0.578 (0.48",,codex
+S052-R24,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.990,0-1,0.99,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00),,codex
 S052-R25,S052,Pulmonary Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.427,0-1,0.427,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.816 (0.770–0.860) 0.740 (0.684–0.800) 0.427 (0.349–0.507)
 PE (GPT-4o) 0.993* (0.983–1.00) 0.950* (0.831–1.00) 0.964* (0.876–1.00)
 Four LLM models and training methods",,codex

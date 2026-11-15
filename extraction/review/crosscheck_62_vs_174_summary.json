@@ -1,0 +1,16 @@
+{
+  "total": 62,
+  "status": {
+    "agree": 33,
+    "differ_value": 15,
+    "differ_model": 5,
+    "differ_closed": 3,
+    "missing_174": 1,
+    "missing_62": 5
+  },
+  "priority": {
+    "1": 25,
+    "2": 13,
+    "3": 24
+  }
+}

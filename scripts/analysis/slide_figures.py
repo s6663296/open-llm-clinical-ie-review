@@ -39,7 +39,7 @@ FAMILY_ORDER = ['Llama', 'Qwen', 'Mistral', 'Gemma', 'DeepSeek', 'Phi', 'other']
 FT = {'LoRA', 'QLoRA', 'full FT'}
 
 plt.rcParams.update({
-    'font.family': ['PingFang TC', 'Heiti TC', 'Arial Unicode MS', 'sans-serif'],
+    'font.family': ['PingFang TC', 'Microsoft JhengHei', 'Heiti TC', 'Arial Unicode MS', 'sans-serif'],
     'font.size': 20, 'axes.edgecolor': GRID, 'axes.labelcolor': SOFT, 'xtick.color': SOFT,
     'ytick.color': INK, 'axes.facecolor': BG, 'figure.facecolor': BG, 'savefig.facecolor': BG,
 })
@@ -257,11 +257,19 @@ def main():
 
     gaps = [p['gap'] for p in P]
     scope_rows = list(csv.DictReader(open(ROOT / 'extraction/scope_restriction.csv', encoding='utf-8-sig')))
-    r1 = sum(r['peer_reviewed'] == 'no' for r in scope_rows)
+    decided = all(r.get('author_decision') for r in scope_rows)
+    if decided:  # count exclusion reasons from decision_reason (R1 / R2 / other)
+        excl = [r.get('decision_reason', '') for r in scope_rows if r['author_decision'] == 'exclude']
+        r1 = sum(x.startswith('R1') for x in excl)
+        r2 = sum(x.startswith('R2') for x in excl)
+        other = len(excl) - r1 - r2
+    else:
+        r1 = sum(r['peer_reviewed'] == 'no' for r in scope_rows)
+        r2, other = len(scope_rows) - r1 - n, 0
     numbers = dict(
         provisional_scope_rows=provisional,
         scope_total=len(scope_rows), scope_excluded_r1_preprint=r1,
-        scope_excluded_r2_no_closed=len(scope_rows) - r1 - n,
+        scope_excluded_r2_no_closed=r2, scope_excluded_other=other,
         n_studies=n, study_ids=sorted(ids),
         n_distinct_open_models=len({r['model'].lower() for r in open_rows}),
         pct_non_english=round(100 * sum(any(l != 'English' for l in split(s['note_language'])) for s in studies) / n) if n else None,
@@ -281,8 +289,18 @@ def main():
         n_studies_open_comparable_or_better=sum(d['gap_median'] <= TIE for d in SP) if P else 0,
         n_studies_closed_ahead=sum(d['gap_median'] > TIE for d in SP) if P else 0,
         median_study_gap=round(median(d['gap_median'] for d in SP), 3) if P else None,
-        study_level=SP if P else [],
-        comparisons=P,
+        study_level=[dict(d, label=author[d['study_id']]) for d in SP] if P else [],
+        comparisons=[dict(p, label=author[p['study_id']]) for p in P],
+        # Added 2026-11-15 for the academic PPTX (native charts): counts behind the PNG figures above.
+        text_types=dict(Counter(x for s in studies for x in set(split(s['text_type']))).most_common()),
+        task_types=dict(Counter(x for s in studies for x in set(split(s['task_types']))).most_common()),
+        params_bins={l: bc[l] for l in labs}, n_params_reported=len(sizes),
+        n_medical_model_studies=sum(s['medical_domain_model'] == 'yes' for s in studies),
+        n_prompting_comparisons=len(groups['開源：提示（zero/few-shot、CoT、RAG）']) if P else 0,
+        gap_hist=[{'lo': round(edges[i], 2), 'hi': round(edges[i + 1], 2),
+                   'n': sum(edges[i] <= g < edges[i + 1] for g in gaps)} for i in range(len(edges) - 1)] if P else [],
+        unpaired=[dict(study_id=s['study_id'], label=author[s['study_id']]) for s in studies
+                  if s['study_id'] not in {p['study_id'] for p in P}],
     )
     (ROOT / 'analysis/slide_numbers.json').write_text(json.dumps(numbers, ensure_ascii=False, indent=1), encoding='utf-8')
     print(json.dumps({k: v for k, v in numbers.items() if k not in ('comparisons', 'study_ids')}, ensure_ascii=False))
