@@ -1,23 +1,26 @@
 {
- "provisional_scope_rows": 62,
+ "provisional_scope_rows": 0,
  "scope_total": 174,
  "scope_excluded_r1_preprint": 51,
- "scope_excluded_r2_no_closed": 85,
- "n_studies": 38,
+ "scope_excluded_r2_no_closed": 81,
+ "scope_excluded_other": 3,
+ "n_studies": 39,
  "study_ids": [
+  "S001",
   "S002",
   "S003",
   "S005",
   "S010",
   "S014",
   "S019",
+  "S022",
   "S025",
   "S026",
+  "S030",
   "S033",
   "S043",
   "S052",
   "S055",
-  "S057",
   "S071",
   "S075",
   "S077",
@@ -34,7 +37,6 @@
   "S123",
   "S125",
   "S126",
-  "S135",
   "S141",
   "S145",
   "S150",
@@ -42,324 +44,329 @@
   "S152",
   "S157",
   "S159",
-  "S170"
+  "S164"
  ],
- "n_distinct_open_models": 70,
- "pct_non_english": 16,
- "pct_finetune": 32,
- "pct_medical_model": 24,
- "pct_local": 13,
+ "n_distinct_open_models": 71,
+ "pct_non_english": 15,
+ "pct_finetune": 26,
+ "pct_medical_model": 26,
+ "pct_local": 15,
  "years": {
   "2024": 6,
-  "2025": 14,
-  "2026": 18
+  "2025": 13,
+  "2026": 19,
+  "2027": 1
  },
  "model_family": {
-  "Llama": 26,
-  "other": 10,
-  "DeepSeek": 7,
-  "Qwen": 6,
+  "Llama": 23,
+  "other": 11,
+  "Qwen": 7,
+  "Gemma": 6,
+  "DeepSeek": 5,
   "Mistral": 4,
-  "Gemma": 4,
   "Phi": 2
  },
  "strategies": {
-  "zero-shot": 20,
-  "few-shot": 16,
+  "zero-shot": 23,
+  "few-shot": 17,
   "other": 6,
-  "LoRA": 6,
   "CoT": 6,
+  "LoRA": 5,
   "RAG": 4,
   "full FT": 4,
   "instruction tuning": 3,
   "quantization": 2,
-  "QLoRA": 2,
-  "ensemble": 2
+  "ensemble": 2,
+  "QLoRA": 1
  },
  "deployment": {
-  "mixed": 11,
+  "local": 6,
+  "mixed": 12,
   "private cloud": 2,
-  "local": 5,
-  "NR": 13,
-  "public API": 7
+  "NR": 11,
+  "public API": 8
  },
  "language": {
-  "English": 22,
+  "English": 23,
   "Spanish": 3,
   "German": 2,
   "Thai": 1,
+  "French": 1,
   "Portuguese": 1,
+  "Russian": 1,
   "Chinese": 1,
   "Norwegian": 1,
-  "French": 1,
-  "Russian": 1,
   "Japanese": 1,
   "Dutch": 1
  },
- "n_comparisons": 88,
+ "n_comparisons": 83,
  "tie_threshold": 0.02,
- "n_open_comparable_or_better": 36,
- "n_closed_ahead": 52,
- "median_gap": 0.036,
+ "n_open_comparable_or_better": 33,
+ "n_closed_ahead": 50,
+ "median_gap": 0.045,
  "median_gap_prompting": 0.059,
- "median_gap_finetuned": 0.012,
- "n_finetuned_comparisons": 19,
- "n_pair_studies": 36,
- "n_studies_open_comparable_or_better": 18,
+ "median_gap_finetuned": 0.016,
+ "n_finetuned_comparisons": 16,
+ "n_pair_studies": 32,
+ "n_studies_open_comparable_or_better": 14,
  "n_studies_closed_ahead": 18,
- "median_study_gap": 0.022,
+ "median_study_gap": 0.024,
  "study_level": [
   {
    "study_id": "S014",
    "n": 3,
    "open_median": 0.975,
    "closed_median": 0.685,
-   "gap_median": -0.29
+   "gap_median": -0.29,
+   "label": "Mittman 2026"
   },
   {
    "study_id": "S151",
    "n": 1,
    "open_median": 0.882,
    "closed_median": 0.617,
-   "gap_median": -0.265
-  },
-  {
-   "study_id": "S170",
-   "n": 1,
-   "open_median": 0.72,
-   "closed_median": 0.671,
-   "gap_median": -0.049
+   "gap_median": -0.265,
+   "label": "Fu 2024"
   },
   {
    "study_id": "S033",
    "n": 1,
    "open_median": 0.92,
    "closed_median": 0.88,
-   "gap_median": -0.04
+   "gap_median": -0.04,
+   "label": "Wiyanti 2026"
   },
   {
    "study_id": "S145",
    "n": 1,
    "open_median": 0.62,
    "closed_median": 0.58,
-   "gap_median": -0.04
+   "gap_median": -0.04,
+   "label": "Wu 2025"
   },
   {
    "study_id": "S112",
    "n": 1,
    "open_median": 0.9,
    "closed_median": 0.861,
-   "gap_median": -0.039
-  },
-  {
-   "study_id": "S102",
-   "n": 1,
-   "open_median": 0.94,
-   "closed_median": 0.93,
-   "gap_median": -0.01
+   "gap_median": -0.039,
+   "label": "Liu 2025"
   },
   {
    "study_id": "S101",
    "n": 1,
    "open_median": 0.98,
    "closed_median": 0.97,
-   "gap_median": -0.01
+   "gap_median": -0.01,
+   "label": "Lopez 2025"
   },
   {
    "study_id": "S085",
    "n": 3,
    "open_median": 0.938,
    "closed_median": 0.936,
-   "gap_median": -0.002
+   "gap_median": -0.002,
+   "label": "Gupta 2026"
   },
   {
    "study_id": "S026",
    "n": 2,
    "open_median": 0.6655,
    "closed_median": 0.6639999999999999,
-   "gap_median": -0.0015
+   "gap_median": -0.0015,
+   "label": "Shrestha 2026"
   },
   {
    "study_id": "S150",
    "n": 1,
    "open_median": 0.846,
    "closed_median": 0.847,
-   "gap_median": 0.001
+   "gap_median": 0.001,
+   "label": "Chen 2024"
   },
   {
    "study_id": "S071",
    "n": 8,
    "open_median": 0.8775,
    "closed_median": 0.8785000000000001,
-   "gap_median": 0.007
-  },
-  {
-   "study_id": "S019",
-   "n": 2,
-   "open_median": 0.384,
-   "closed_median": 0.39249999999999996,
-   "gap_median": 0.0085
+   "gap_median": 0.007,
+   "label": "Shao 2026"
   },
   {
    "study_id": "S075",
    "n": 6,
    "open_median": 0.9015,
    "closed_median": 0.8805000000000001,
-   "gap_median": 0.0095
-  },
-  {
-   "study_id": "S057",
-   "n": 2,
-   "open_median": 0.96,
-   "closed_median": 0.97,
-   "gap_median": 0.01
+   "gap_median": 0.0095,
+   "label": "Yao 2026"
   },
   {
    "study_id": "S123",
    "n": 1,
    "open_median": 0.9470000000000001,
    "closed_median": 0.961,
-   "gap_median": 0.014
+   "gap_median": 0.014,
+   "label": "Balasubramanian 2025"
   },
   {
    "study_id": "S055",
    "n": 3,
    "open_median": 0.977,
    "closed_median": 0.997,
-   "gap_median": 0.02
+   "gap_median": 0.02,
+   "label": "Nowroozi 2026"
   },
   {
    "study_id": "S141",
    "n": 1,
    "open_median": 0.95,
    "closed_median": 0.97,
-   "gap_median": 0.02
+   "gap_median": 0.02,
+   "label": "Pandita 2025"
+  },
+  {
+   "study_id": "S019",
+   "n": 2,
+   "open_median": 0.384,
+   "closed_median": 0.406,
+   "gap_median": 0.022,
+   "label": "Wu 2026"
   },
   {
    "study_id": "S043",
    "n": 4,
    "open_median": 0.917,
    "closed_median": 0.9405,
-   "gap_median": 0.0235
+   "gap_median": 0.0235,
+   "label": "Solages 2026"
   },
   {
    "study_id": "S100",
    "n": 2,
    "open_median": 0.905,
    "closed_median": 0.9299999999999999,
-   "gap_median": 0.025
+   "gap_median": 0.025,
+   "label": "Saluja 2025"
   },
   {
    "study_id": "S108",
    "n": 1,
    "open_median": 0.93,
    "closed_median": 0.96,
-   "gap_median": 0.03
+   "gap_median": 0.03,
+   "label": "Sun 2025"
   },
   {
    "study_id": "S125",
    "n": 2,
    "open_median": 0.82955,
    "closed_median": 0.88815,
-   "gap_median": 0.0586
+   "gap_median": 0.0586,
+   "label": "Abeysinghe 2025"
   },
   {
    "study_id": "S005",
    "n": 1,
    "open_median": 0.81,
    "closed_median": 0.87,
-   "gap_median": 0.06
+   "gap_median": 0.06,
+   "label": "Fu 2026"
+  },
+  {
+   "study_id": "S126",
+   "n": 2,
+   "open_median": 0.73,
+   "closed_median": 0.8,
+   "gap_median": 0.07,
+   "label": "Islam 2025"
   },
   {
    "study_id": "S025",
    "n": 1,
    "open_median": 0.798,
    "closed_median": 0.87,
-   "gap_median": 0.072
-  },
-  {
-   "study_id": "S126",
-   "n": 2,
-   "open_median": 0.7250000000000001,
-   "closed_median": 0.8,
-   "gap_median": 0.075
+   "gap_median": 0.072,
+   "label": "Can 2026"
   },
   {
    "study_id": "S121",
    "n": 1,
    "open_median": 0.73,
    "closed_median": 0.813,
-   "gap_median": 0.083
+   "gap_median": 0.083,
+   "label": "Garcia-Carmona 2025"
   },
   {
    "study_id": "S010",
    "n": 1,
    "open_median": 0.776,
    "closed_median": 0.877,
-   "gap_median": 0.101
+   "gap_median": 0.101,
+   "label": "Hart 2026"
   },
   {
    "study_id": "S077",
    "n": 2,
    "open_median": 0.6275000000000001,
    "closed_median": 0.7324999999999999,
-   "gap_median": 0.105
+   "gap_median": 0.105,
+   "label": "Dalmia 2026"
   },
   {
    "study_id": "S003",
    "n": 2,
    "open_median": 0.4554,
    "closed_median": 0.56475,
-   "gap_median": 0.1094
+   "gap_median": 0.1094,
+   "label": "Tangchitnob 2026"
   },
   {
    "study_id": "S159",
    "n": 8,
    "open_median": 0.841,
    "closed_median": 0.96,
-   "gap_median": 0.1215
-  },
-  {
-   "study_id": "S135",
-   "n": 1,
-   "open_median": 0.79,
-   "closed_median": 0.93,
-   "gap_median": 0.14
+   "gap_median": 0.1215,
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S157",
    "n": 4,
    "open_median": 0.7125,
    "closed_median": 0.8505,
-   "gap_median": 0.147
+   "gap_median": 0.147,
+   "label": "Cheng 2024"
   },
   {
    "study_id": "S052",
    "n": 13,
    "open_median": 0.707,
-   "closed_median": 0.949,
-   "gap_median": 0.222
+   "closed_median": 0.964,
+   "gap_median": 0.222,
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S083",
    "n": 1,
    "open_median": 0.591,
    "closed_median": 0.866,
-   "gap_median": 0.275
+   "gap_median": 0.275,
+   "label": "Dogan 2026"
   },
   {
    "study_id": "S152",
    "n": 1,
    "open_median": 0.06,
    "closed_median": 0.51,
-   "gap_median": 0.45
+   "gap_median": 0.45,
+   "label": "Sushil 2024"
   },
   {
    "study_id": "S002",
    "n": 2,
    "open_median": 0.3883,
    "closed_median": 0.9154,
-   "gap_median": 0.5271
+   "gap_median": 0.5271,
+   "label": "Godoy 2026"
   }
  ],
  "comparisons": [
@@ -375,7 +382,8 @@
    "closed_value": 0.461,
    "gap": -0.414,
    "open_src": "p.7 Table 2",
-   "closed_src": "p.7 Table 2"
+   "closed_src": "p.7 Table 2",
+   "label": "Mittman 2026"
   },
   {
    "study_id": "S014",
@@ -389,7 +397,8 @@
    "closed_value": 0.685,
    "gap": -0.29,
    "open_src": "p.7 Table 2",
-   "closed_src": "p.7 Table 2"
+   "closed_src": "p.7 Table 2",
+   "label": "Mittman 2026"
   },
   {
    "study_id": "S151",
@@ -402,8 +411,9 @@
    "closed_model": "GPT-4 (ICL)",
    "closed_value": 0.617,
    "gap": -0.265,
-   "open_src": "p.2",
-   "closed_src": "p.11 Table 3"
+   "open_src": "p.11 Table 3",
+   "closed_src": "p.11 Table 3",
+   "label": "Fu 2024"
   },
   {
    "study_id": "S071",
@@ -417,7 +427,8 @@
    "closed_value": 0.684,
    "gap": -0.075,
    "open_src": "p.15 Table 3",
-   "closed_src": "p.14 Table 3"
+   "closed_src": "p.14 Table 3",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S075",
@@ -431,21 +442,8 @@
    "closed_value": 0.883,
    "gap": -0.055,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
-  },
-  {
-   "study_id": "S170",
-   "task": "HPO entity extraction and mapping",
-   "dataset": "BioLarkGSC+ validation dataset",
-   "metric": "F1",
-   "open_model": "Llama3.1-Nemo-70B",
-   "open_value": 0.72,
-   "open_strategy": "LoRA",
-   "closed_model": "GPT-4o",
-   "closed_value": 0.671,
-   "gap": -0.049,
-   "open_src": "p.4 Table III",
-   "closed_src": "p.4 Table III"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S075",
@@ -459,7 +457,8 @@
    "closed_value": 0.878,
    "gap": -0.048,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S033",
@@ -473,7 +472,8 @@
    "closed_value": 0.88,
    "gap": -0.04,
    "open_src": "p.1",
-   "closed_src": "p.12"
+   "closed_src": "p.12",
+   "label": "Wiyanti 2026"
   },
   {
    "study_id": "S145",
@@ -487,7 +487,8 @@
    "closed_value": 0.58,
    "gap": -0.04,
    "open_src": "p.7 Table I",
-   "closed_src": "p.7 Table I"
+   "closed_src": "p.7 Table I",
+   "label": "Wu 2025"
   },
   {
    "study_id": "S112",
@@ -501,7 +502,8 @@
    "closed_value": 0.861,
    "gap": -0.039,
    "open_src": "p.20 Table 3",
-   "closed_src": "p.20 Table 3"
+   "closed_src": "p.20 Table 3",
+   "label": "Liu 2025"
   },
   {
    "study_id": "S071",
@@ -515,21 +517,8 @@
    "closed_value": 0.891,
    "gap": -0.016,
    "open_src": "p.15 Table 3",
-   "closed_src": "p.14 Table 3"
-  },
-  {
-   "study_id": "S019",
-   "task": "event extraction",
-   "dataset": "BRIDGE task-type aggregate",
-   "metric": "F1",
-   "open_model": "DeepSeek-R1",
-   "open_value": 0.306,
-   "open_strategy": "zero-shot",
-   "closed_model": "gpt-4o",
-   "closed_value": 0.291,
-   "gap": -0.015,
-   "open_src": "p.56 Table S4",
-   "closed_src": "p.56 Table S4"
+   "closed_src": "p.14 Table 3",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S026",
@@ -543,7 +532,8 @@
    "closed_value": 0.826,
    "gap": -0.015,
    "open_src": "p.7",
-   "closed_src": "p.7"
+   "closed_src": "p.7",
+   "label": "Shrestha 2026"
   },
   {
    "study_id": "S014",
@@ -557,35 +547,8 @@
    "closed_value": 0.983,
    "gap": -0.013,
    "open_src": "p.7 Table 2",
-   "closed_src": "p.7 Table 2"
-  },
-  {
-   "study_id": "S057",
-   "task": "PCL feature extraction",
-   "dataset": "held-out set of 285 abdominal MRI or CT reports",
-   "metric": "accuracy",
-   "open_model": "DeepSeek",
-   "open_value": 0.98,
-   "open_strategy": "QLoRA",
-   "closed_model": "GPT-4o",
-   "closed_value": 0.97,
-   "gap": -0.01,
-   "open_src": "p.2",
-   "closed_src": "p.2"
-  },
-  {
-   "study_id": "S102",
-   "task": "stroke CT finding extraction",
-   "dataset": "Dataset B",
-   "metric": "precision",
-   "open_model": "Llama-3.3-70B-Instruct",
-   "open_value": 0.94,
-   "open_strategy": "few-shot",
-   "closed_model": "GPT-4o (gpt-4o-2024-08-06)",
-   "closed_value": 0.93,
-   "gap": -0.01,
-   "open_src": "p.6",
-   "closed_src": "p.6"
+   "closed_src": "p.7 Table 2",
+   "label": "Mittman 2026"
   },
   {
    "study_id": "S101",
@@ -599,7 +562,8 @@
    "closed_value": 0.97,
    "gap": -0.01,
    "open_src": "p.2",
-   "closed_src": "p.3"
+   "closed_src": "p.3 Table 1",
+   "label": "Lopez 2025"
   },
   {
    "study_id": "S085",
@@ -613,7 +577,8 @@
    "closed_value": 0.963,
    "gap": -0.007,
    "open_src": "p.3",
-   "closed_src": "p.3"
+   "closed_src": "p.3",
+   "label": "Gupta 2026"
   },
   {
    "study_id": "S085",
@@ -627,7 +592,8 @@
    "closed_value": 0.936,
    "gap": -0.002,
    "open_src": "p.3",
-   "closed_src": "p.3"
+   "closed_src": "p.3",
+   "label": "Gupta 2026"
   },
   {
    "study_id": "S071",
@@ -641,7 +607,8 @@
    "closed_value": 0.9,
    "gap": -0.001,
    "open_src": "p.14 Table 3",
-   "closed_src": "p.14 Table 2"
+   "closed_src": "p.14 Table 2",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S150",
@@ -655,7 +622,8 @@
    "closed_value": 0.847,
    "gap": 0.001,
    "open_src": "p.1",
-   "closed_src": "p.4 Table 2"
+   "closed_src": "p.4 Table 2",
+   "label": "Chen 2024"
   },
   {
    "study_id": "S071",
@@ -669,7 +637,8 @@
    "closed_value": 0.961,
    "gap": 0.004,
    "open_src": "p.14 Table 3",
-   "closed_src": "p.14 Table 3"
+   "closed_src": "p.14 Table 3",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S055",
@@ -683,7 +652,8 @@
    "closed_value": 0.993,
    "gap": 0.006,
    "open_src": "p.4 Table 2",
-   "closed_src": "p.4 Table 2"
+   "closed_src": "p.4 Table 2",
+   "label": "Nowroozi 2026"
   },
   {
    "study_id": "S075",
@@ -697,7 +667,8 @@
    "closed_value": 0.868,
    "gap": 0.007,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S071",
@@ -711,7 +682,38 @@
    "closed_value": 0.804,
    "gap": 0.01,
    "open_src": "p.14 Table 3",
-   "closed_src": "p.14 Table 3"
+   "closed_src": "p.14 Table 3",
+   "label": "Shao 2026"
+  },
+  {
+   "study_id": "S126",
+   "task": "entity classification",
+   "dataset": "i2b2/VA 2010",
+   "metric": "F1",
+   "open_model": "DeepSeek-R1",
+   "open_value": 0.94,
+   "open_strategy": "few-shot",
+   "closed_model": "GPT-4o",
+   "closed_value": 0.95,
+   "gap": 0.01,
+   "open_src": "p.5 Table V",
+   "closed_src": "p.5 Table V",
+   "label": "Islam 2025"
+  },
+  {
+   "study_id": "S019",
+   "task": "event extraction",
+   "dataset": "BRIDGE task-type aggregate",
+   "metric": "F1",
+   "open_model": "DeepSeek-R1",
+   "open_value": 0.306,
+   "open_strategy": "zero-shot",
+   "closed_model": "gemini-2.5-flash",
+   "closed_value": 0.318,
+   "gap": 0.012,
+   "open_src": "p.56 Table S4",
+   "closed_src": "p.56 Table S4",
+   "label": "Wu 2026"
   },
   {
    "study_id": "S026",
@@ -725,7 +727,8 @@
    "closed_value": 0.502,
    "gap": 0.012,
    "open_src": "p.7",
-   "closed_src": "p.7"
+   "closed_src": "p.7",
+   "label": "Shrestha 2026"
   },
   {
    "study_id": "S071",
@@ -739,7 +742,8 @@
    "closed_value": 0.866,
    "gap": 0.012,
    "open_src": "p.14 Table 3",
-   "closed_src": "p.14 Table 3"
+   "closed_src": "p.14 Table 3",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S075",
@@ -753,7 +757,8 @@
    "closed_value": 0.878,
    "gap": 0.012,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S043",
@@ -767,7 +772,8 @@
    "closed_value": 0.985,
    "gap": 0.014,
    "open_src": "p.27 Table 1",
-   "closed_src": "p.27 Table 1"
+   "closed_src": "p.27 Table 1",
+   "label": "Solages 2026"
   },
   {
    "study_id": "S123",
@@ -781,7 +787,8 @@
    "closed_value": 0.961,
    "gap": 0.014,
    "open_src": "p.3 Results",
-   "closed_src": "p.3 Results"
+   "closed_src": "p.3 Results",
+   "label": "Balasubramanian 2025"
   },
   {
    "study_id": "S085",
@@ -795,7 +802,8 @@
    "closed_value": 0.741,
    "gap": 0.017,
    "open_src": "p.5",
-   "closed_src": "p.5"
+   "closed_src": "p.5",
+   "label": "Gupta 2026"
   },
   {
    "study_id": "S043",
@@ -809,7 +817,8 @@
    "closed_value": 0.958,
    "gap": 0.018,
    "open_src": "p.28 Table 1",
-   "closed_src": "p.28 Table 1"
+   "closed_src": "p.28 Table 1",
+   "label": "Solages 2026"
   },
   {
    "study_id": "S055",
@@ -823,7 +832,8 @@
    "closed_value": 0.997,
    "gap": 0.02,
    "open_src": "p.4 Table 2",
-   "closed_src": "p.4 Table 2"
+   "closed_src": "p.4 Table 2",
+   "label": "Nowroozi 2026"
   },
   {
    "study_id": "S100",
@@ -837,21 +847,8 @@
    "closed_value": 0.87,
    "gap": 0.02,
    "open_src": "p.5",
-   "closed_src": "p.5"
-  },
-  {
-   "study_id": "S126",
-   "task": "entity classification",
-   "dataset": "in-house EHR notes",
-   "metric": "F1",
-   "open_model": "DeepSeek-R1",
-   "open_value": 0.93,
-   "open_strategy": "few-shot",
-   "closed_model": "GPT-4o",
-   "closed_value": 0.95,
-   "gap": 0.02,
-   "open_src": "p.5 Table V",
-   "closed_src": "p.5 Table V"
+   "closed_src": "p.5",
+   "label": "Saluja 2025"
   },
   {
    "study_id": "S141",
@@ -865,7 +862,8 @@
    "closed_value": 0.97,
    "gap": 0.02,
    "open_src": "p.2",
-   "closed_src": "p.2"
+   "closed_src": "p.2",
+   "label": "Pandita 2025"
   },
   {
    "study_id": "S075",
@@ -879,7 +877,8 @@
    "closed_value": 0.938,
    "gap": 0.026,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S043",
@@ -893,21 +892,8 @@
    "closed_value": 0.923,
    "gap": 0.029,
    "open_src": "p.27 Table 1",
-   "closed_src": "p.27 Table 1"
-  },
-  {
-   "study_id": "S057",
-   "task": "PCL risk categorization",
-   "dataset": "held-out set of 285 abdominal MRI or CT reports",
-   "metric": "F1",
-   "open_model": "DeepSeek",
-   "open_value": 0.94,
-   "open_strategy": "QLoRA",
-   "closed_model": "GPT-4o",
-   "closed_value": 0.97,
-   "gap": 0.03,
-   "open_src": "p.2",
-   "closed_src": "p.2"
+   "closed_src": "p.27 Table 1",
+   "label": "Solages 2026"
   },
   {
    "study_id": "S100",
@@ -921,7 +907,8 @@
    "closed_value": 0.99,
    "gap": 0.03,
    "open_src": "p.4",
-   "closed_src": "p.4"
+   "closed_src": "p.4",
+   "label": "Saluja 2025"
   },
   {
    "study_id": "S108",
@@ -935,7 +922,8 @@
    "closed_value": 0.96,
    "gap": 0.03,
    "open_src": "p.6 Table 1",
-   "closed_src": "p.6 Table 1"
+   "closed_src": "p.6 Table 1",
+   "label": "Sun 2025"
   },
   {
    "study_id": "S019",
@@ -949,7 +937,8 @@
    "closed_value": 0.494,
    "gap": 0.032,
    "open_src": "p.56 Table S4",
-   "closed_src": "p.56 Table S4"
+   "closed_src": "p.56 Table S4",
+   "label": "Wu 2026"
   },
   {
    "study_id": "S052",
@@ -963,7 +952,8 @@
    "closed_value": 0.83,
    "gap": 0.033,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S055",
@@ -977,7 +967,8 @@
    "closed_value": 0.997,
    "gap": 0.034,
    "open_src": "p.4 Table 2",
-   "closed_src": "p.4 Table 2"
+   "closed_src": "p.4 Table 2",
+   "label": "Nowroozi 2026"
   },
   {
    "study_id": "S071",
@@ -991,7 +982,8 @@
    "closed_value": 0.969,
    "gap": 0.038,
    "open_src": "p.16 Table 4",
-   "closed_src": "p.14 Table 2"
+   "closed_src": "p.14 Table 2",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S052",
@@ -1005,7 +997,8 @@
    "closed_value": 0.992,
    "gap": 0.045,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S043",
@@ -1019,7 +1012,8 @@
    "closed_value": 0.905,
    "gap": 0.05,
    "open_src": "p.27 Table 1",
-   "closed_src": "p.27 Table 1"
+   "closed_src": "p.27 Table 1",
+   "label": "Solages 2026"
   },
   {
    "study_id": "S071",
@@ -1033,7 +1027,8 @@
    "closed_value": 0.831,
    "gap": 0.05,
    "open_src": "p.15 Table 3",
-   "closed_src": "p.15 Table 4"
+   "closed_src": "p.15 Table 4",
+   "label": "Shao 2026"
   },
   {
    "study_id": "S125",
@@ -1047,7 +1042,8 @@
    "closed_value": 0.8579000000000001,
    "gap": 0.0511,
    "open_src": "p.2 Table 1",
-   "closed_src": "p.2 Table 1"
+   "closed_src": "p.2 Table 1",
+   "label": "Abeysinghe 2025"
   },
   {
    "study_id": "S003",
@@ -1061,7 +1057,8 @@
    "closed_value": 0.3967,
    "gap": 0.0552,
    "open_src": "p.6 Table 2",
-   "closed_src": "p.6 Table 2"
+   "closed_src": "p.6 Table 2",
+   "label": "Tangchitnob 2026"
   },
   {
    "study_id": "S075",
@@ -1075,7 +1072,8 @@
    "closed_value": 0.947,
    "gap": 0.056,
    "open_src": "p.3 Table 1",
-   "closed_src": "p.3 Table 1"
+   "closed_src": "p.3 Table 1",
+   "label": "Yao 2026"
   },
   {
    "study_id": "S159",
@@ -1089,7 +1087,8 @@
    "closed_value": 0.98,
    "gap": 0.059,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S005",
@@ -1103,7 +1102,8 @@
    "closed_value": 0.87,
    "gap": 0.06,
    "open_src": "p.3",
-   "closed_src": "p.3"
+   "closed_src": "p.3",
+   "label": "Fu 2026"
   },
   {
    "study_id": "S125",
@@ -1117,7 +1117,8 @@
    "closed_value": 0.9184,
    "gap": 0.0661,
    "open_src": "p.2 Table 2",
-   "closed_src": "p.2 Table 2"
+   "closed_src": "p.2 Table 2",
+   "label": "Abeysinghe 2025"
   },
   {
    "study_id": "S159",
@@ -1131,7 +1132,8 @@
    "closed_value": 0.968,
    "gap": 0.069,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S025",
@@ -1145,7 +1147,8 @@
    "closed_value": 0.87,
    "gap": 0.072,
    "open_src": "p.5",
-   "closed_src": "p.5"
+   "closed_src": "p.5",
+   "label": "Can 2026"
   },
   {
    "study_id": "S121",
@@ -1159,7 +1162,8 @@
    "closed_value": 0.813,
    "gap": 0.083,
    "open_src": "p.25 Results",
-   "closed_src": "p.25 Results"
+   "closed_src": "p.25 Results",
+   "label": "Garcia-Carmona 2025"
   },
   {
    "study_id": "S077",
@@ -1173,7 +1177,8 @@
    "closed_value": 0.895,
    "gap": 0.086,
    "open_src": "p.8 Table III",
-   "closed_src": "p.7"
+   "closed_src": "p.7",
+   "label": "Dalmia 2026"
   },
   {
    "study_id": "S159",
@@ -1187,7 +1192,8 @@
    "closed_value": 0.976,
    "gap": 0.086,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S010",
@@ -1201,7 +1207,8 @@
    "closed_value": 0.877,
    "gap": 0.101,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "Hart 2026"
   },
   {
    "study_id": "S159",
@@ -1215,7 +1222,8 @@
    "closed_value": 0.973,
    "gap": 0.109,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S052",
@@ -1229,7 +1237,8 @@
    "closed_value": 0.97,
    "gap": 0.123,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S077",
@@ -1243,7 +1252,8 @@
    "closed_value": 0.57,
    "gap": 0.124,
    "open_src": "p.8 Table IV",
-   "closed_src": "p.7"
+   "closed_src": "p.7",
+   "label": "Dalmia 2026"
   },
   {
    "study_id": "S157",
@@ -1257,12 +1267,13 @@
    "closed_value": 0.871,
    "gap": 0.126,
    "open_src": "p.10 Table 4",
-   "closed_src": "p.10 Table 4"
+   "closed_src": "p.10 Table 4",
+   "label": "Cheng 2024"
   },
   {
    "study_id": "S126",
    "task": "entity extraction",
-   "dataset": "in-house EHR notes",
+   "dataset": "i2b2/VA 2010",
    "metric": "accuracy",
    "open_model": "DeepSeek-R1",
    "open_value": 0.52,
@@ -1271,7 +1282,8 @@
    "closed_value": 0.65,
    "gap": 0.13,
    "open_src": "p.5 Table IV",
-   "closed_src": "p.5 Table IV"
+   "closed_src": "p.5 Table IV",
+   "label": "Islam 2025"
   },
   {
    "study_id": "S159",
@@ -1285,21 +1297,8 @@
    "closed_value": 0.952,
    "gap": 0.134,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
-  },
-  {
-   "study_id": "S135",
-   "task": "clinical finding event extraction",
-   "dataset": "sepsis-40",
-   "metric": "other",
-   "open_model": "DeepSeek-R1",
-   "open_value": 0.79,
-   "open_strategy": "other",
-   "closed_model": "GPT-5",
-   "closed_value": 0.93,
-   "gap": 0.14,
-   "open_src": "p.6 Table 2",
-   "closed_src": "p.6 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S157",
@@ -1313,7 +1312,8 @@
    "closed_value": 0.898,
    "gap": 0.144,
    "open_src": "p.10 Table 4",
-   "closed_src": "p.10 Table 4"
+   "closed_src": "p.10 Table 4",
+   "label": "Cheng 2024"
   },
   {
    "study_id": "S157",
@@ -1327,7 +1327,8 @@
    "closed_value": 0.83,
    "gap": 0.15,
    "open_src": "p.10 Table 4",
-   "closed_src": "p.10 Table 4"
+   "closed_src": "p.10 Table 4",
+   "label": "Cheng 2024"
   },
   {
    "study_id": "S003",
@@ -1341,7 +1342,8 @@
    "closed_value": 0.7328,
    "gap": 0.1635,
    "open_src": "p.6 Table 2",
-   "closed_src": "p.6 Table 2"
+   "closed_src": "p.6 Table 2",
+   "label": "Tangchitnob 2026"
   },
   {
    "study_id": "S157",
@@ -1355,7 +1357,8 @@
    "closed_value": 0.829,
    "gap": 0.165,
    "open_src": "p.10 Table 4",
-   "closed_src": "p.10 Table 4"
+   "closed_src": "p.10 Table 4",
+   "label": "Cheng 2024"
   },
   {
    "study_id": "S052",
@@ -1369,7 +1372,8 @@
    "closed_value": 0.949,
    "gap": 0.167,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S052",
@@ -1380,10 +1384,11 @@
    "open_value": 0.707,
    "open_strategy": "few-shot",
    "closed_model": "GPT-4o",
-   "closed_value": 0.896,
-   "gap": 0.189,
+   "closed_value": 0.897,
+   "gap": 0.19,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S052",
@@ -1397,7 +1402,8 @@
    "closed_value": 0.919,
    "gap": 0.21,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S052",
@@ -1411,7 +1417,8 @@
    "closed_value": 0.937,
    "gap": 0.222,
    "open_src": "p.5 Table 2",
-   "closed_src": "p.5 Table 2"
+   "closed_src": "p.5 Table 2",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S083",
@@ -1425,7 +1432,8 @@
    "closed_value": 0.866,
    "gap": 0.275,
    "open_src": "p.7",
-   "closed_src": "p.6"
+   "closed_src": "p.6",
+   "label": "Dogan 2026"
   },
   {
    "study_id": "S159",
@@ -1439,7 +1447,8 @@
    "closed_value": 0.902,
    "gap": 0.309,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S052",
@@ -1453,7 +1462,8 @@
    "closed_value": 0.978,
    "gap": 0.317,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S159",
@@ -1467,7 +1477,8 @@
    "closed_value": 0.902,
    "gap": 0.386,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S052",
@@ -1478,10 +1489,11 @@
    "open_value": 0.491,
    "open_strategy": "few-shot",
    "closed_model": "GPT-4o",
-   "closed_value": 0.901,
-   "gap": 0.41,
+   "closed_value": 0.905,
+   "gap": 0.414,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S002",
@@ -1495,7 +1507,8 @@
    "closed_value": 0.949,
    "gap": 0.4167,
    "open_src": "p.11 Table 5",
-   "closed_src": "p.11 Table 5"
+   "closed_src": "p.11 Table 5",
+   "label": "Godoy 2026"
   },
   {
    "study_id": "S152",
@@ -1509,7 +1522,8 @@
    "closed_value": 0.51,
    "gap": 0.45,
    "open_src": "p.13",
-   "closed_src": "p.13"
+   "closed_src": "p.13",
+   "label": "Sushil 2024"
   },
   {
    "study_id": "S052",
@@ -1523,7 +1537,8 @@
    "closed_value": 0.991,
    "gap": 0.475,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S052",
@@ -1537,7 +1552,8 @@
    "closed_value": 0.964,
    "gap": 0.537,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
   },
   {
    "study_id": "S002",
@@ -1551,21 +1567,8 @@
    "closed_value": 0.8818,
    "gap": 0.6375,
    "open_src": "p.12 Table 6",
-   "closed_src": "p.12 Table 6"
-  },
-  {
-   "study_id": "S052",
-   "task": "Tricuspid Sten. grade",
-   "dataset": "transthoracic echocardiography reports",
-   "metric": "F1",
-   "open_model": "Phi-4",
-   "open_value": 0.185,
-   "open_strategy": "few-shot",
-   "closed_model": "GPT-4o",
-   "closed_value": 0.831,
-   "gap": 0.646,
-   "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.12 Table 6",
+   "label": "Godoy 2026"
   },
   {
    "study_id": "S159",
@@ -1579,7 +1582,8 @@
    "closed_value": 0.947,
    "gap": 0.679,
    "open_src": "p.10 Table 2",
-   "closed_src": "p.10 Table 2"
+   "closed_src": "p.10 Table 2",
+   "label": "Zhang 2024"
   },
   {
    "study_id": "S052",
@@ -1593,7 +1597,209 @@
    "closed_value": 0.99,
    "gap": 0.73,
    "open_src": "p.6 Table 3",
-   "closed_src": "p.6 Table 3"
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
+  },
+  {
+   "study_id": "S052",
+   "task": "Tricuspid Sten. grade",
+   "dataset": "transthoracic echocardiography reports",
+   "metric": "F1",
+   "open_model": "Phi-4",
+   "open_value": 0.185,
+   "open_strategy": "few-shot",
+   "closed_model": "GPT-4o",
+   "closed_value": 0.977,
+   "gap": 0.792,
+   "open_src": "p.6 Table 3",
+   "closed_src": "p.6 Table 3",
+   "label": "van der Loo 2026"
+  }
+ ],
+ "text_types": {
+  "clinical note (mixed)": 20,
+  "radiology report": 11,
+  "pathology report": 5,
+  "other": 2,
+  "discharge summary": 2,
+  "progress note": 1
+ },
+ "task_types": {
+  "field extraction": 18,
+  "NER": 15,
+  "attribute": 15,
+  "other": 5,
+  "RE": 4
+ },
+ "params_bins": {
+  "1–10B": 26,
+  "10–40B": 19,
+  "40–100B": 18,
+  "> 100B": 3
+ },
+ "n_params_reported": 66,
+ "n_medical_model_studies": 10,
+ "n_prompting_comparisons": 67,
+ "gap_hist": [
+  {
+   "lo": -0.45,
+   "hi": -0.4,
+   "n": 1
+  },
+  {
+   "lo": -0.4,
+   "hi": -0.35,
+   "n": 0
+  },
+  {
+   "lo": -0.35,
+   "hi": -0.3,
+   "n": 0
+  },
+  {
+   "lo": -0.3,
+   "hi": -0.25,
+   "n": 2
+  },
+  {
+   "lo": -0.25,
+   "hi": -0.2,
+   "n": 0
+  },
+  {
+   "lo": -0.2,
+   "hi": -0.15,
+   "n": 0
+  },
+  {
+   "lo": -0.15,
+   "hi": -0.1,
+   "n": 0
+  },
+  {
+   "lo": -0.1,
+   "hi": -0.05,
+   "n": 2
+  },
+  {
+   "lo": -0.05,
+   "hi": 0.0,
+   "n": 11
+  },
+  {
+   "lo": 0.0,
+   "hi": 0.05,
+   "n": 26
+  },
+  {
+   "lo": 0.05,
+   "hi": 0.1,
+   "n": 13
+  },
+  {
+   "lo": 0.1,
+   "hi": 0.15,
+   "n": 8
+  },
+  {
+   "lo": 0.15,
+   "hi": 0.2,
+   "n": 5
+  },
+  {
+   "lo": 0.2,
+   "hi": 0.25,
+   "n": 2
+  },
+  {
+   "lo": 0.25,
+   "hi": 0.3,
+   "n": 1
+  },
+  {
+   "lo": 0.3,
+   "hi": 0.35,
+   "n": 2
+  },
+  {
+   "lo": 0.35,
+   "hi": 0.4,
+   "n": 1
+  },
+  {
+   "lo": 0.4,
+   "hi": 0.45,
+   "n": 2
+  },
+  {
+   "lo": 0.45,
+   "hi": 0.5,
+   "n": 2
+  },
+  {
+   "lo": 0.5,
+   "hi": 0.55,
+   "n": 1
+  },
+  {
+   "lo": 0.55,
+   "hi": 0.6,
+   "n": 0
+  },
+  {
+   "lo": 0.6,
+   "hi": 0.65,
+   "n": 1
+  },
+  {
+   "lo": 0.65,
+   "hi": 0.7,
+   "n": 1
+  },
+  {
+   "lo": 0.7,
+   "hi": 0.75,
+   "n": 1
+  },
+  {
+   "lo": 0.75,
+   "hi": 0.8,
+   "n": 1
+  },
+  {
+   "lo": 0.8,
+   "hi": 0.85,
+   "n": 0
+  }
+ ],
+ "unpaired": [
+  {
+   "study_id": "S001",
+   "label": "Wang 2027"
+  },
+  {
+   "study_id": "S022",
+   "label": "Yang 2026"
+  },
+  {
+   "study_id": "S030",
+   "label": "Roeschl 2026"
+  },
+  {
+   "study_id": "S102",
+   "label": "Wihl 2025"
+  },
+  {
+   "study_id": "S118",
+   "label": "McMurry 2025"
+  },
+  {
+   "study_id": "S119",
+   "label": "Guggilla 2025"
+  },
+  {
+   "study_id": "S164",
+   "label": "Atashzar 2024"
   }
  ]
 }

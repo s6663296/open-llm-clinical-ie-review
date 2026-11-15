@@ -1,11 +1,11 @@
 <section id="extraction" class="alt">
 <p class="eyebrow">方法 · 資料萃取</p>
-<h2>AI 預填、逐值對頁驗證、作者核對</h2>
+<h2>AI 預填、逐值對頁驗證、Agent 核對</h2>
 <div class="flow">
 <div class="card"><h3>1 預填</h3><p class="body">Codex 依萃取指引填模型、任務、效能；每個數值附原文頁碼</p></div>
 <div class="card"><h3>2 腳本驗證</h3><p class="body">檢查每個數值確實出現在所標頁碼，格式與允許值正確</p></div>
-<div class="card"><h3>3 審查與核對</h3><p class="body">Agent 審查最佳結果與疑問項；作者最後核對</p></div>
+<div class="card"><h3>3 審查與核對</h3><p class="body">Agent 審查最佳結果與疑問項，並依作者授權核對</p></div>
 </div>
 <p class="lead">效能取 F1 優先；每個模型取最佳設定；同任務取最佳閉源比較對象。</p>
-<aside>指引：extraction/d1_codex_brief.md；驗證：scripts/extraction/check_batch.py。部分全文為預印本版（數值以該版為準），需在限制說明。Agent 審查 62 篇：ok 24、fix 8（更正最佳模型或補漏列，逐筆記錄於 extraction/review/agent_edits.csv）、query 30（多為確認無閉源直接比較）。</aside>
+<aside>課堂版範圍與萃取核對由 AI Agent 依作者授權完成（交叉比對兩套 AI 萃取＋對原文核對 119 個最佳結果列），非作者逐篇人工核對。指引：extraction/d1_codex_brief.md；驗證：scripts/extraction/check_batch.py。部分全文為預印本版（數值以該版為準），需在限制說明。Agent 修正紀錄見 extraction/review/agent_edits.csv。</aside>
 </section>

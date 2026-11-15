@@ -11,6 +11,6 @@ LLaMA-3-8B-Instruct 0.46 0.59 0.50",,codex
 S150-R02,S150,breast ultrasound lesion concept extraction,attribute,NYU Langone breast ultrasound reports,120 reports,BURExtract-Llama,open LLM,Llama,8,no,QLoRA,epoch 4; LoRA attention dimension 64,NR,F1,macro,84.6,percent,0.846,field,NR,yes,no,p.1,our model achieves an average F1 score of 84.6%,Average F1 across 16 keys,codex
 S150-R03,S150,breast ultrasound lesion concept extraction,attribute,NYU Langone breast ultrasound reports,120 reports,GPT-4 (ICL),closed LLM,NA,NR,no,few-shot,in-context learning,NR,F1,macro,0.847,0-1,0.847,field,NR,no,yes,p.4 Table 2,"0.847
 for a subset of keys",Average F1 across 16 keys,codex
-S151-R01,S151,event extraction (EE),NER,CACER test set,"22,009 event labels",Llama 3 8B,open LLM,Llama,8,no,LoRA,fine-tuned on CACER train set,NR,F1,NR,88.2,percent,0.882,entity,relaxed,yes,no,p.2,fine-tuned BERT and Llama3 models achieved the highest performance at 88.2-88.0 F1,,codex
+S151-R01,S151,event extraction (EE),NER,CACER test set,"22,009 event labels",Llama 3 8B,open LLM,Llama,8,no,LoRA,fine-tuned on CACER train set,NR,F1,NR,88.2,percent,0.882,entity,relaxed,yes,no,p.11 Table 3,"Overall – 22,009 88.3 88.8 83.9 88.2 61.7",,codex
 S151-R02,S151,event extraction (EE),NER,CACER test set,"22,009 event labels",GPT-4 (ICL),closed LLM,NA,NR,no,NA,in-context learning,NR,F1,NR,61.7,percent,0.617,entity,relaxed,no,yes,p.11 Table 3,"61.7
 Table 3: Event extraction F1 performance.",,codex

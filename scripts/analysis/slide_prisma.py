@@ -16,9 +16,10 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 INK, SOFT, LINE, BG, OPEN = '#1B2A3A', '#4A5568', '#9AA5B4', '#F7F6F2', '#2a78d6'
-CODE = {'X1': '無開源 LLM', 'X3': '非臨床自由文本', 'X4': '只用閉源模型', 'X5': '無量化評估',
-        'X6': '非抽取任務', 'X7': '回顧／社論', 'X8': '同一研究的其他版本'}
-plt.rcParams['font.family'] = ['PingFang TC', 'Heiti TC', 'Arial Unicode MS', 'sans-serif']
+# Exclusion codes as defined in protocol/protocol.md 3.2 (and the screening prompts).
+CODE = {'X1': '發表類型不符', 'X2': '非英文', 'X3': '未使用符合定義的 LLM', 'X4': '只用閉源 LLM',
+        'X5': '非臨床自由文本', 'X6': '非抽取任務', 'X7': '無量化評估', 'X8': '同一研究的其他版本'}
+plt.rcParams['font.family'] = ['PingFang TC', 'Microsoft JhengHei', 'Heiti TC', 'Arial Unicode MS', 'sans-serif']
 
 
 def main():
@@ -41,7 +42,8 @@ def main():
         f'排除\nn = {c["title_abstract_excluded"]}',
         f'未取得全文\nn = {c["full_text_not_retrieved"]}',
         f'全文排除 n = {sum(v for _, v in ft)}：' + '、'.join(f'{CODE.get(k, k)} {v}' for k, v in ft[:3]) + '\n' + '、'.join(f'{CODE.get(k, k)} {v}' for k, v in ft[3:]),
-        f'課堂版收緊條件排除 n = {c["included"] - s["n_studies"]}\n預印本 {s["scope_excluded_r1_preprint"]}、無閉源直接比較 {s["scope_excluded_r2_no_closed"]}',
+        f'課堂版收緊條件排除 n = {c["included"] - s["n_studies"]}\n預印本 {s["scope_excluded_r1_preprint"]}、無閉源直接比較 {s["scope_excluded_r2_no_closed"]}'
+        + (f'、核對時發現不符原條件 {s["scope_excluded_other"]}' if s.get('scope_excluded_other') else ''),
     ]
     fig, ax = plt.subplots(figsize=(16.64, 7.4), dpi=100)
     fig.patch.set_facecolor(BG)

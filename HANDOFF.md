@@ -19,6 +19,7 @@ PRISMA 2020 系統性回顧：開源（權重可下載、≥1B）LLM 用於臨�
 | D1 編號分批 | 174 篇 | `scripts/extraction/make_batches.py [--scope …]` | `extraction/study_ids.csv`（S001–S174）、`extraction/batches/*.list` |
 | 課堂版範圍 | 174 篇 | `scripts/extraction/restrict_scope.py` | `extraction/scope_restriction.csv`（keep／check／exclude＋author_decision） |
 | D1 萃取 | 指引 `extraction/d1_codex_brief.md` | Codex（見 §4）＋`scripts/extraction/check_batch.py` | `extraction/codex/batch_NN_{studies,results}.csv` |
+| D1 交叉核對 | 課堂版 `extraction/codex/*`、174 版 `extraction/results.csv` | `scripts/extraction/crosscheck.py`（只讀；以 record_id 對應，模型名容許變體） | `extraction/review/crosscheck_62_vs_174.csv`、`_summary.json` |
 | D1 審查修正 | `extraction/review/agent_patches.json` | `scripts/extraction/agent_patch.py`（冪等；改動記入 `agent_edits.csv`） | 修改 `extraction/codex/batch_NN_*.csv` |
 | D1 合併 | 各批 CSV | `scripts/extraction/merge.py` | `extraction/extraction_scope62.xlsx`（含審查欄）、`extraction/extraction_scope62_summary.json` |
 | E1 圖表 | `extraction_scope62.xlsx`、`scope_restriction.csv` | `scripts/analysis/slide_figures.py`、`slide_prisma.py` | `figures/slides/*.png`、`analysis/slide_numbers.json` |
@@ -70,7 +71,28 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 3. `merge.py` → `extraction/extraction_scope62.xlsx`（62 篇、472 列）；`slide_figures.py` 新增研究層級兩欄啞鈴圖 `open_vs_closed_by_study.png` 與 `study_level`／`n_pair_studies` 等數字，直方圖範圍改為依資料決定。
 4. 簡報 31 張全部填入（數字只取自 `slide_numbers.json`、`prisma_counts.json`，標「暫定」），已發布到 artifact。
 
-## 7. 審查結果與待作者核對
+## 6b. 2026-11-15 追加
+
+- Codex 新增 `crosscheck.py`（62 vs 174 交叉核對；priority 1 = 暫定 38 篇中不一致或 agent fix，共 25 篇）與 `tests/test_crosscheck.py`。
+- `scripts/prisma_flow.py` 加 `--scope-numbers`，完整版流程圖含課堂版收緊一層；`author_decision` 有空白時標 provisional。174 方框改為 `results_numbers.json` 無值時退回 `prisma_counts.json` 的 `included`。
+
+## 6c. 課堂版定案（2026-11-15）
+
+- 使用者授權 Agent 處理 §7：`scope_restriction.csv` 已填 `author_decision`＋新欄 `decision_reason`（R1／R2／X…）；`slide_figures.py` 在全部填寫時依 `decision_reason` 開頭計排除原因（新增 `scope_excluded_other`），`slide_prisma.py`、`prisma_flow.py` 顯示第三類。
+- 對原文核對：`extraction/review/verify_report.csv`（Codex）；採用的修正在 `agent_patches.json`（reason 以 `[verify 2026-11-15]` 開頭）。
+- 陷阱：`check_batch.py` 要求每個任務恰一列 `is_best_open=yes`，並列最佳只能標一列；要讓某任務不配對，取消閉源列的 `is_best_comparator`。
+- 陷阱：`pdf_to_text.py` 會丟掉參考文獻之後的內容，PDF 附錄（如 S001 p.25）不在文字檔。
+- 陷阱：圖表字型在 Windows 用 Microsoft JhengHei（已加入字型清單）。
+- 簡報 artifact 改為 https://claude.ai/artifact/8F5RhJ4iBYFrGwgTjYBKt8 （原連結屬另一帳號）。
+
+## 6d. 學術版 PPTX（2026-11-15）
+
+- 重跑：`node slides/pptx/build_deck.js` → `.venv/Scripts/python.exe slides/pptx/finalize.py` → `powershell -File slides/pptx/render.ps1` → `finalize.py --sheets`（`qa/sheetN.png` 六張一頁供目視）。首次需 `cd slides/pptx && npm install`。
+- 陷阱：PowerPoint 匯出檔名為「投影片N.PNG」，`--sheets` 會改名為 `sNN.png`。build 內的 `must()` 斷言檢查標題措辭仍符合資料（例如 Llama 最常見），資料變了會中止，需改措辭。
+- 陷阱：`slide_prisma.py` 的排除代碼標籤曾與 protocol 3.2 不符，已修正；代碼定義以 protocol 3.2 為準。
+- 不要用 Codex 背景任務改 `slide_figures.py`：中途停止後其子程序仍在跑，曾把中文標籤寫成問號（已還原）。
+
+## 7. 審查結果與待作者核對（已於 6c 處理，保留供參考）
 
 **暫定範圍**：`author_decision` 全空，`slide_figures.py` 用暫定規則 → 38 篇（36 篇有配對、88 組任務比較）。作者定案後重跑 `slide_figures.py`、`slide_prisma.py`，並更新簡報數字與圖。
 
