@@ -1,6 +1,7 @@
 <section id="ft-vs-closed">
 <p class="eyebrow">RQ3 · 效能</p>
-<h2>微調後的開源模型，能追上閉源嗎？</h2>
-<div class="ph"><p class="ph-title">[圖：依策略分組的差距箱形圖]</p><p class="ph-desc">分組：開源 zero-/few-shot vs 開源微調（LoRA、全參數）；縱軸為與最佳閉源的 F1 差距。資料：results.strategy。</p></div><p class="src">資料：results 工作表</p>
-<aside>預期但未驗證：微調可縮小差距。以實際資料為準，結果不符就照實報告。</aside>
+<h2>微調後的開源模型，與閉源的差距更小</h2>
+<img class="fig" src="/_blob/e2180e1ee71d3e057b13feb057b34db1" alt="依策略分組的差距點圖：微調組 19 組比較、中位數 0.012；提示組 69 組比較、中位數 0.059" width="1664" height="560" style="height:560px">
+<p class="src">每點一組任務比較；黑線 = 中位數。微調 19 組（中位數 0.012）、提示 69 組（中位數 0.059）（暫定）</p>
+<aside>微調組的差距中位數 0.012，提示組 0.059。這是觀察性的跨研究比較：微調組樣本少（19 組），且微調研究的任務與資料可能本來就不同，不能解讀為「微調造成差距縮小」。</aside>
 </section>

@@ -2,6 +2,9 @@
 <p class="eyebrow">RQ1 · 模型</p>
 <h2>模型規模與醫療領域模型</h2>
 <div class="row">
-<div class="ph"><p class="ph-title">[圖：參數量分布]</p><p class="ph-desc">點圖或直方圖：1–10B、10–40B、40–100B、＞100B。資料：results.params_b。</p></div><div class="ph"><p class="ph-title">[圖：通用 vs 醫療領域模型]</p><p class="ph-desc">比例條：通用模型 vs Meditron、BioMistral、MedGemma 等。資料：studies.medical_domain_model。</p></div></div><p class="src">資料：results、studies 工作表</p>
-<aside></aside>
+<img class="fig" src="/_blob/ae13e03e1bba0583dee215fc9d98144f" alt="參數量分布長條圖，分為 1–10B、10–40B、40–100B、超過 100B" width="1100" height="560" style="width:1100px">
+<div class="card" style="flex:1"><p class="stat">24%</p><p class="body">研究用了醫療領域模型（如 MedGemma、Meditron、Med42）</p></div>
+</div>
+<p class="src">資料：results.params_b、studies.medical_domain_model（n = 38，暫定）</p>
+<aside>參數量以「研究 × 模型」計，只算原文有報告參數量者。醫療領域模型 24%（9 篇），其餘研究只用通用模型。</aside>
 </section>

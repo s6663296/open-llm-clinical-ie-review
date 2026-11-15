@@ -4,3 +4,60 @@ S002,fix,閉源比較列在 Table 5–6 標為 GPT-4o，已補入 closed_compara
 S003,ok,MedGemma F1 56.93 vs Gemini 2.5 Pro 73.28（strict，p.6 Table 2）欄位順序已對原文
 S005,fix,Qwen2-7B 為 LoRA 指令微調（p.10），strategy 改 LoRA；GPT-4o 於 Azure OpenAI 執行，deployment 改 private cloud；micro F1 0.81 vs 0.87 已對頁（p.3）；任務為句子分類到 41 類，屬邊界案例
 S010,ok,deepseek-r1-14b 77.6% vs gemini-2.5-pro 87.7%（p.5 Table 2）已對頁；文字為預印本版
+S014,ok,Llama-3.3-70B vs GPT-4o 各類別 F1（p.7 Table 2）已對頁；文件層級 VTE 分類（無整體 F1，取三類別各一對），任務屬 C2 已納入之邊界案例
+S016,query,同意 R2 not met：GPT-4/GPT-3.5 只在引言作為前人研究（p.3）；建議課堂版排除
+S019,ok,BRIDGE 任務類型彙總 DeepSeek-R1 vs GPT-4o／Gemini-2.5-flash（p.56 Table S4，位於 PDF 內附表）已對頁；文字為預印本版
+S022,query,同意 QUERY：開源與閉源直接比較只畫在 Figure 3，無正文數值；無法配對，建議課堂版排除或僅文字敘述
+S023,query,同意 R2 not met：未實測閉源 LLM（p.22; p.27）；建議課堂版排除
+S025,ok,Llama 3.1 70B 0.798 vs GPT-4o 0.870 已對頁（405B 為 0.773，較低）
+S026,ok,Llama-4-Maverick vs GPT-4.1 實體／關係 F1（p.7）已對頁；params 17B 依原文（活化參數）
+S030,query,閉源 GPT-4 Turbo／PaLM 2 有實測，但結果只在 Figure 3／補充表；萃取值為 RMSE（越低越好）無法與 F1 類指標合併；無配對，建議課堂版排除
+S032,query,同意 R2 not met：GPT 系列只在前人研究與寫作輔助（p.4; p.17）；建議課堂版排除
+S033,ok,Med42-8B LoRA 0.92 vs Gemini 2.0 Flash 0.88（macro F1）已對頁
+S035,query,同意 R2 not met：比較對象為 MediAlbertina 編碼器（p.35）；建議課堂版排除
+S039,query,同意 R2 not met：閉源 LLM 只在背景／未來研究提及；建議課堂版排除
+S043,fix,pub_type 改 journal（已刊於 Ophthalmology Science；萃取全文為 medRxiv 預印本，note 已註）；四項用藥抽取開源 vs 閉源配對（p.27-28 Table 1）已對頁
+S044,query,同意 R2 not met：比較對象為醫師與醫學生（p.7）；建議課堂版排除
+S052,ok,Phi-4 vs GPT-4o 13 項配對（p.5-6 Table 2-3）已對頁；GPT-4o F1=1.00 的 LV function／mitral stenosis 因檢查器拒收 1.0 未萃取，該兩項無配對；單篇貢獻 13 個比較，解讀時注意權重
+S055,query,同意 Codex QUERY：另含判斷型任務未萃取；三項數值抽取配對（p.4 Table 2）已對頁，可保留
+S057,query,R0382 只有中文翻譯摘要（待作者決定，見 ROADMAP 待決事項）；摘要數值已對頁
+S060,query,同意 QUERY：GPT-4o-mini 與 Qwen3-14B 評估樣本不同（3,200 vs 640，p.12 Table 4），非同一測試集；建議課堂版排除
+S066,query,同意 R2 not met：只比較開源模型（p.13）；建議課堂版排除
+S070,query,同意 R2 not met：GPT-5 只用於產生合成信件與 CoT 監督（p.6; p.10）；建議課堂版排除
+S071,ok,88 列逐表核對：每組最佳開源／GPT-4o 取自 Table 2-4 正確（腳本檢查各組 is_best 為最高值）
+S075,ok,微調 Qwen2.5-7B／LLaMA-3.1-8B vs GPT-4o-APO（p.3 Table 1）已對頁；任務為文件層級 SDoH 分類（C2 已納入）
+S077,fix,DeepSeek-V3.2 為開放權重，改列開源；Codex 把 MedGemma Binary F1 0.459 當 macro、把 GPT-5.2 的 Stage 2 0.570 誤植為 MedGemma。已依 p.8 Table III/IV 更正：最佳開源 DeepSeek-V3.2 0.809／0.446 vs GPT-5.2 0.895／0.570
+S083,ok,Llama-3.1-8B 0.591 vs o4-mini 0.866（SHAC）已對頁；MIMIC 子集只有閉源數值
+S085,ok,Llama 3.1 8B／3.3 70B vs ChatGPT-4o 三項 F1（p.3; p.5）已對頁
+S096,query,同意 R2 not met：GPT-4 只用於繪製示意圖（p.4-5）；建議課堂版排除
+S099,query,同意 R2 not met：只比較開源模型與規則法；建議課堂版排除
+S100,fix,癌別辨識的最佳閉源應為 Path-GPT-4o-mini-FT 99%（p.4），Codex 誤取 Mistral-Medium 90%（原文列為表現較差者）；已更正。Mistral-Large 依原文歸為閉源
+S101,ok,CheXpert 正文數值（p.2-3）已對頁；Table 1 其餘數值因表格欄位相鄰無法逐格驗證而未萃取
+S102,query,原文 p.6 內部不一致：同段先寫 dataset B 下 GPT-4o 0.95／Llama 0.74，後文又寫 Llama 升至 0.94、GPT-4o（temp 0）0.93；目前取同條件 0.94 vs 0.93。F1 只在 Figure 2。請作者決定採用哪組或不配對
+S108,fix,補入閉源列：GPT-4o 平均抽取正確率 0.96（p.6 Table 1，2024-11-22 原序）；開源最佳 Llama-2-13b 0.93（與 Llama-3.3-70b 同）
+S112,ok,Llama-3.1-8B LoRA 0.900 vs GPT-4 0.861（p.20 Table 3）已對頁
+S116,query,同意 R2 not met：開源模型以「與 GPT-4o 一致率」評估，非對參考標準的效能（p.4）；建議課堂版排除
+S118,query,同意 QUERY：開源模型數值只在補充表，正文無；無配對
+S119,query,同意 QUERY：Llama 3.1 數值只在補充表，正文僅給範圍；無配對
+S121,query,Qwen 2.5 avg F1 0.730 vs GPT-4o 0.813（p.24-25 Table 2）已對頁；但 Table 2 中 Gemma 2 的 AVG 列與其 N 列完全相同（疑為排版錯誤），其平均正確率 0.800 高於 Qwen 2.5；請作者確認最佳開源。S121-R02（names 類別）無閉源配對
+S123,ok,Llama 3.1 405B 94.7% vs GPT-4o 96.1%（p.3）已對頁
+S125,ok,Llama-2-70b 微調 vs GPT-4 微調（Azure OpenAI，p.2 Table 1-2）已對頁；GPT-4 strategy 記為 full FT，實為 OpenAI 微調服務（方法未揭露）
+S126,ok,DeepSeek-R1 vs GPT-4o（p.5 Table IV-V）已對頁
+S128,query,同意 R2 not met：GPT-4/ChatGPT 比較在其他資料集；DDI 為藥品說明／文獻文本；建議課堂版排除
+S135,fix,sepsis-40 最佳開源為 DeepSeek-R1 0.79（非 Llama 3.3 0.76），並補 GPT-5 0.93（p.6 Table 2）。另請作者判斷：資料為已發表病例報告（PMOA），是否算臨床病歷文本
+S141,ok,Yi-34B 微調 0.95 vs GPT-4 5-shot 0.97（p.2）已對頁；訓練用合成資料、測試為 MIMIC-III 真實報告
+S145,ok,LLaMA-3-70B 0.62 vs GPT-4 0.58（p.7 Table I）已對頁
+S150,ok,BURExtract-Llama 84.6 vs GPT-4 ICL 0.847（p.1; p.4 Table 2）已對頁
+S151,ok,Llama3-8B LoRA 88.2 vs GPT-4 ICL 61.7（relaxed，p.2; p.11 Table 3）已對頁
+S152,ok,FLAN-UL2 EM-F1 0.06 vs GPT-4 0.51（p.13）已對頁
+S154,query,同意 QUERY：PhenoGPT 數值未指明設定，其餘比較只在圖中；無閉源配對，建議課堂版排除
+S156,query,同意：ChatGPT 只用於產生子類型，未作比較；建議課堂版排除
+S157,ok,Llama-2-70b vs GPT-4 四組正確率（p.10 Table 4）已對頁
+S159,ok,Falcon-180B／Llama-2-70B vs GPT-4 exact match（p.10 Table 2）已對頁
+S161,query,同意 R2 not met：無閉源 LLM；建議課堂版排除
+S163,query,同意 R2 not met：GPT 只在合成測試集評估；建議課堂版排除
+S164,query,同意 QUERY：開源數值只在 Figure 3／補充表；無配對
+S167,query,同意 R2 not met：只測 Vicuna；建議課堂版排除
+S168,query,同意 R2 not met：只測 Llama 2；建議課堂版排除
+S170,fix,BC5CDR 為 PubMed 摘要、非臨床文本，10 列已刪；MIMIC-III 表型因 DUA 未跑 GPT-4o；剩 HPO（BiolarkGSC+，作者描述為臨床筆記，原 GSC 語料為文獻摘要）一組配對，請作者確認
+S173,query,同意 R2 not met：GPT-4 只產生合成資料；建議課堂版排除

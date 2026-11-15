@@ -1,0 +1,324 @@
+[
+ {
+  "batch": "06",
+  "kind": "studies",
+  "id": "S077",
+  "set": {
+   "open_models": "MedGemma-27B-it; DeepSeek-V3.2",
+   "closed_comparators": "GPT-5.2; Gemini-3-Flash; Claude Sonnet 3.5"
+  },
+  "reason": "DeepSeek-V3.2 weights are public -> open LLM, not closed comparator"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "id": "S077-R01",
+  "set": {
+   "task": "Stage 1 actionability filtering",
+   "f1_avg": "macro",
+   "value_reported": "0.684",
+   "value": "0.684",
+   "is_best_open": "no",
+   "value_src": "p.8 Table III",
+   "value_context": "Macro F1 0.661 0.668 0.642 0.748 0.684 0.909",
+   "note": "MedGemma macro F1 (Binary F1 0.459)"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "id": "S077-R02",
+  "set": {
+   "task": "Stage 1 actionability filtering"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "id": "S077-R03",
+  "set": {
+   "task": "Stage 1 actionability filtering"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "id": "S077-R04",
+  "set": {
+   "value_reported": "0.385",
+   "value": "0.385",
+   "is_best_open": "no",
+   "value_src": "p.8 Table IV",
+   "value_context": "Macro Average 0.631 0.668 0.373 0.422 0.385 0.611",
+   "note": "0.570 on p.7 is GPT-5.2, not MedGemma"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "add": {
+   "result_id": "S077-R07",
+   "study_id": "S077",
+   "task": "Stage 1 actionability filtering",
+   "task_type": "attribute",
+   "dataset": "CLIP dataset; 100-document test set",
+   "test_n": "100 discharge summaries",
+   "model": "DeepSeek-V3.2",
+   "model_class": "open LLM",
+   "model_family": "DeepSeek",
+   "params_b": "NR",
+   "medical_domain": "no",
+   "strategy": "other",
+   "strategy_detail": "prompt batch size k=15",
+   "quantized": "NR",
+   "metric": "F1",
+   "f1_avg": "macro",
+   "value_reported": "0.809",
+   "metric_scale_original": "0-1",
+   "value": "0.809",
+   "eval_level": "document",
+   "matching": "NR",
+   "is_best_open": "yes",
+   "is_best_comparator": "no",
+   "value_src": "p.8 Table III",
+   "value_context": "0.888 0.807 0.811 0.809 0.849 0.853 0.851",
+   "note": "",
+   "extractor": "agent"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "06",
+  "kind": "results",
+  "add": {
+   "result_id": "S077-R08",
+   "study_id": "S077",
+   "task": "Stage 2 action category classification",
+   "task_type": "attribute",
+   "dataset": "CLIP dataset; 100-document test set",
+   "test_n": "100 discharge summaries",
+   "model": "DeepSeek-V3.2",
+   "model_class": "open LLM",
+   "model_family": "DeepSeek",
+   "params_b": "NR",
+   "medical_domain": "no",
+   "strategy": "other",
+   "strategy_detail": "prompt batch size k=15",
+   "quantized": "NR",
+   "metric": "F1",
+   "f1_avg": "macro",
+   "value_reported": "0.446",
+   "metric_scale_original": "0-1",
+   "value": "0.446",
+   "eval_level": "document",
+   "matching": "NR",
+   "is_best_open": "yes",
+   "is_best_comparator": "no",
+   "value_src": "p.8 Table IV",
+   "value_context": "0.581 0.524 0.548 0.446 0.446 0.446 0.531",
+   "note": "",
+   "extractor": "agent"
+  },
+  "reason": "p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma"
+ },
+ {
+  "batch": "07",
+  "kind": "results",
+  "id": "S100-R03",
+  "set": {
+   "model": "Path-GPT-4o-mini-FT",
+   "strategy": "other",
+   "strategy_detail": "OpenAI fine-tuning on instruction-tuning set",
+   "value_reported": "99",
+   "value": "0.99",
+   "value_src": "p.4",
+   "value_context": "large language models, achieving a mean accuracy of 99%"
+  },
+  "reason": "p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+ },
+ {
+  "batch": "08",
+  "kind": "results",
+  "add": {
+   "result_id": "S108-R05",
+   "study_id": "S108",
+   "task": "overall clinical information extraction",
+   "task_type": "field extraction",
+   "dataset": "163 medical records",
+   "test_n": "163 medical records",
+   "model": "GPT-4o",
+   "model_class": "closed LLM",
+   "model_family": "NA",
+   "params_b": "NR",
+   "medical_domain": "NA",
+   "strategy": "other",
+   "strategy_detail": "standardized prompt",
+   "quantized": "NR",
+   "metric": "accuracy",
+   "f1_avg": "NA",
+   "value_reported": "0.96",
+   "metric_scale_original": "0-1",
+   "value": "0.96",
+   "eval_level": "field",
+   "matching": "NR",
+   "is_best_open": "no",
+   "is_best_comparator": "yes",
+   "value_src": "p.6 Table 1",
+   "value_context": "AVG 0.9 9 Excellent 0.96±0.00",
+   "note": "22 Nov 2024 run, original sequence",
+   "extractor": "agent"
+  },
+  "reason": "p.6 Table 1 reports GPT-4 Turbo (0.94) and GPT-4o (0.96) extraction accuracy; closed comparator row was missing"
+ },
+ {
+  "batch": "10",
+  "kind": "results",
+  "id": "S135-R01",
+  "set": {
+   "is_best_open": "no"
+  },
+  "reason": "p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93"
+ },
+ {
+  "batch": "10",
+  "kind": "results",
+  "add": {
+   "result_id": "S135-R02",
+   "study_id": "S135",
+   "task": "clinical finding event extraction",
+   "task_type": "field extraction",
+   "dataset": "sepsis-40",
+   "test_n": "40 case reports",
+   "model": "DeepSeek-R1",
+   "model_class": "open LLM",
+   "model_family": "DeepSeek",
+   "params_b": "NR",
+   "medical_domain": "no",
+   "strategy": "other",
+   "strategy_detail": "LLM annotation pipeline",
+   "quantized": "NR",
+   "metric": "other",
+   "f1_avg": "NA",
+   "value_reported": "0.79",
+   "metric_scale_original": "0-1",
+   "value": "0.79",
+   "eval_level": "entity",
+   "matching": "NR",
+   "is_best_open": "yes",
+   "is_best_comparator": "no",
+   "value_src": "p.6 Table 2",
+   "value_context": "DeepSeek-R1 0.31 0.755 13 0.786 0.79 0.892",
+   "note": "event match rate",
+   "extractor": "agent"
+  },
+  "reason": "p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93"
+ },
+ {
+  "batch": "10",
+  "kind": "results",
+  "add": {
+   "result_id": "S135-R03",
+   "study_id": "S135",
+   "task": "clinical finding event extraction",
+   "task_type": "field extraction",
+   "dataset": "sepsis-40",
+   "test_n": "40 case reports",
+   "model": "GPT-5",
+   "model_class": "closed LLM",
+   "model_family": "NA",
+   "params_b": "NR",
+   "medical_domain": "NA",
+   "strategy": "other",
+   "strategy_detail": "LLM annotation pipeline",
+   "quantized": "NR",
+   "metric": "other",
+   "f1_avg": "NA",
+   "value_reported": "0.93",
+   "metric_scale_original": "0-1",
+   "value": "0.93",
+   "eval_level": "entity",
+   "matching": "NR",
+   "is_best_open": "no",
+   "is_best_comparator": "yes",
+   "value_src": "p.6 Table 2",
+   "value_context": "GPT-5 – – – – 0.93 0.965 4 0.822",
+   "note": "event match rate",
+   "extractor": "agent"
+  },
+  "reason": "p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93"
+ },
+ {
+  "batch": "04",
+  "kind": "studies",
+  "id": "S043",
+  "set": {
+   "pub_type": "journal",
+   "note": "text: preprint version"
+  },
+  "reason": "scope_restriction: published in Ophthalmology Science; full text used is the medRxiv preprint"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R01",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R02",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R03",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R04",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R05",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R06",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R07",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R08",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R09",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ },
+ {
+  "batch": "13",
+  "kind": "results",
+  "delete": "S170-R10",
+  "reason": "BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+ }
+]

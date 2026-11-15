@@ -128,8 +128,8 @@ def check(lst, studies_csv, results_csv, text_dir):
         if not re.fullmatch(re.escape(sid) + r'-R\d{2}', rid) or rid in seen:
             errs.append(f'{where}: result_id must be unique {sid}-RNN')
         seen.add(rid)
-        if r['extractor'] != 'codex':
-            errs.append(f'{where}: extractor must be codex')
+        if r['extractor'] not in ('codex', 'agent'):  # agent = row added in review (agent_patch.py, logged)
+            errs.append(f'{where}: extractor must be codex or agent')
         for k, allowed in ALLOWED.items():
             if k in r and r[k] not in allowed:
                 errs.append(f'{where}: {k}={r[k]!r} not in {sorted(allowed)}')

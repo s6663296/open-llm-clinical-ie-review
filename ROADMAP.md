@@ -7,8 +7,8 @@
 
 ## 📍 目前位置
 
-- **階段**：D1 萃取兩套並存（2026-11-15）：① 174 篇 AI 預填完成 → 作者核對；② 課堂版 62 篇 Codex 萃取 13 批通過檢查，batch 01 已審查、02–13 待 Agent 審查
-- **步驟**：Agent 審查 62 篇（batch 02–13）→ 合併 `extraction/extraction_scope62.xlsx` → 出圖 → 填簡報；作者核對 `extraction/extraction.xlsx`（174 篇，`verified`）並判斷 `extraction/review_flags.csv` 15 篇
+- **階段**：課堂版 62 篇 Agent 審查完成、簡報已填入暫定結果（2026-11-15）；等作者定案範圍與核對萃取
+- **步驟**：作者 ① 在 `extraction/scope_restriction.csv` 填 `author_decision`；② 核對 `extraction/extraction_scope62.xlsx`（至少 `agent_review` 為 fix／query 者，填 `verified`）；③ 決定 HANDOFF §7 列出的個別問題。之後重跑 `slide_figures.py`、`slide_prisma.py`，重新上傳圖並更新簡報數字。174 篇版 `extraction/extraction.xlsx` 與 `review_flags.csv` 15 篇仍待作者核對
 - **專案性質（2026-11-14 改）**：課堂報告，產出為**簡報**、不投稿、不註冊 OSF；深度為「篩選完成＋部分欄位萃取（模型、任務、效能）」
 - **進行中**：Sonnet 重篩全部 1,389 筆已完成（56/56 批，合併為 `screening/ai_screen_sonnet.csv`：include 264／unsure 327／exclude 798，`screening/ai_screen_sonnet_summary.json`）；複核表 `screening/step2_verify.xlsx` 已產生（依 AI include → unsure → exclude 排序）。50 筆校準樣本為 Agent 初判（`screening/step1_blind50.xlsx`：include 9／unsure 18／exclude 23），使用者已看過並採用，改以「兩個 AI 一致性＋人工核對」報告；與 Sonnet 的 11 筆分歧已由使用者裁定（`screening/step1_blind50_disagreements.xlsx`；9/11 與 Sonnet 相同）；50 筆最終判斷 `screening/calibration50_final.csv`：include 13／unsure 12／exclude 25。判斷指引存於 `scripts/agent_screening/screening_prompt.md`（前 39 批原始指引未存檔，此檔依 protocol 3.1–3.2 重建，需於論文揭露）
 - **已完成**：protocol v0.2 定案、驗證集確認；六來源正式檢索（2026-11-14，2,132 筆）；去重 → 1,389 筆（`data/records_dedup.csv`）；驗證集 10/10 檢出；正式篩選表 `screening/title_abstract.xlsx`（1,389 筆、50 筆校準樣本、全部附 Agent 建議：include 205／unsure 421／exclude 763，僅供參考）；83 組疑似重複的判讀建議 `data/formal_2026-11-14/possible_duplicates_review.csv`（只有 EHRchitect 2 組需人工確認）；AI 建議 include／unsure 的 626 筆已先下載 OA 全文 298 篇（`fulltext/`，PDF 不進 git；取不到的 328 篇在 `fulltext/manual_retrieval.csv`，篩選後只對進全文階段者用機構權限逐篇取得）；PRISMA 流程圖（識別段）`figures/prisma_flow.*`；全部腳本與稿件 Methods／引言草稿
@@ -26,7 +26,8 @@
 - **簡報骨架（2026-11-14）**：31 張、30–40 分鐘，Slides artifact https://claude.ai/artifact/9PFD1Di4iUAFgQjnoJqn5A ，原始檔 `slides/project/`（deck.json、deck.css、slides/*.html）。已填入的數字只取自 `analysis/prisma_counts.json`；結果頁皆為圖表佔位框（標明圖型與資料欄位），`[__]` 待萃取與 E1 腳本產生後填入
 - **課堂版 62 篇萃取（2026-11-15）**：Codex 13 批全部通過 `check_batch.py`（修正檢查器兩個誤判：表格相鄰數字邊界、引文結尾連字號；Codex 非逐字引文以 `scripts/extraction/fix_context.py` 換成原文行，數值不變，記錄於 `extraction/review/agent_edits.csv`）。batch 01 已審查（`extraction/review/agent_review.csv`：ok 2、fix 2、query 1）。正文無開源 LLM 數值、標 QUERY 待作者判斷：S022（只有圖）、S118、S119、S164、S173
 - **兩套萃取並存**：174 篇 AI 預填（`scripts/agent_extraction/`、`extraction/ai_batches/`、`extraction/extraction.xlsx`）與課堂版 62 篇（`scripts/extraction/`、`extraction/codex/`、`extraction/extraction_scope62.xlsx`），可交叉核對
-- **下一步**：① Agent 審查 batch 02–13；② `merge.py` → 出圖（`scripts/analysis/slide_figures.py`）→ 填簡報；③ 作者確認 `scope_restriction.csv` 的 author_decision；④ E1 寫 `scripts/analysis/` 產生簡報圖表（年度、語言、文本類型、模型家族、策略、開源 vs 閉源啞鈴圖）；⑤ 更新 PRISMA 流程圖
+- **課堂版審查與簡報（2026-11-15）**：Agent 審查 62 篇（`extraction/review/agent_review.csv`：ok 24／fix 8／query 30）；修正以 `scripts/extraction/agent_patch.py` 套用（S043、S077、S100、S108、S135、S170，紀錄 `agent_edits.csv`），13 批再通過檢查。`merge.py` → `extraction/extraction_scope62.xlsx`（62 篇、472 列）。暫定範圍（author_decision 空白）38 篇，其中 36 篇有開源 vs 閉源配對、88 組任務比較：研究層級開源追平或較好 18／閉源領先 18（差距中位數 0.022）；任務層級 36／52（中位數 0.036）；微調組中位數 0.012（19 組）、提示組 0.059（69 組）（`analysis/slide_numbers.json`）。簡報 31 張已填入並發布，數字標「暫定」；圖對照 `slides/assets.json`
+- **下一步**：① 作者定案 `author_decision`、核對萃取、裁定 HANDOFF §7 問題；② 重跑出圖並更新簡報；③ `figures/prisma_flow.*`（完整版）加課堂版一層（簡報用 `figures/slides/prisma_slide.png` 已含）
 - **D1 AI 預填（2026-11-15）**：174 篇以完整全文（`fulltext_text_full/`，`pdf_to_text.py --cap 200000`；R0861、R1214、R1331 用 Europe PMC XML）萃取。指引 `scripts/agent_extraction/extraction_prompt.md`；18 批（每批 10 篇），Codex 完成 11 批後用量用盡，其餘 7 批由 Claude Sonnet 子代理完成；10 篇全文為同一研究的預印本／舊版（`title_match=version`）另批重萃取。每批皆通過 `scripts/agent_extraction/check_batch.py`（引句逐字、數值出現在引句、頁碼）。合併 `scripts/agent_extraction/merge_batches.py` → `extraction/extraction.xlsx`（＋`studies.csv`／`results.csv`）：174 研究、472 個結果列；13 篇最佳開源 LLM 數值只在圖或補充資料（value=NR）。Agent 抽查 8 筆數值與原文表格對應皆正確。需作者判斷的 15 篇列於 `extraction/review_flags.csv`（多為疑似 X6 文件層級分類、2 篇 GatorTron 系列權重是否公開）
 - **E1 草稿**：`scripts/analyze.py --include-unverified` 已產生 `analysis/*_UNVERIFIED.csv`、`figures/fig_*_UNVERIFIED.*`（未核對，僅供預覽；核對後去掉該旗標重跑）
 - **174 篇下一步**：作者核對萃取 → 重跑 `analyze.py`
@@ -48,12 +49,12 @@
 | B2 | 匯入與去重 | ✅ | `data/records_dedup.csv` |
 | C1 | 標題／摘要篩選 | ✅ | `screening/title_abstract_final.xlsx` |
 | C2 | 全文篩選 | ✅ | `screening/full_text.xlsx` |
-| D1 | 資料萃取（部分欄位：模型、任務、效能） | 🔄 174 篇 AI 預填待作者核對；課堂版 62 篇待 Agent 審查 | `extraction/extraction.xlsx`（174）、`extraction/extraction_scope62.xlsx`（62） |
+| D1 | 資料萃取（部分欄位：模型、任務、效能） | 🔄 174 篇 AI 預填待作者核對；課堂版 62 篇 Agent 審查完成、待作者核對 | `extraction/extraction.xlsx`（174）、`extraction/extraction_scope62.xlsx`（62） |
 | D2 | 偏倚風險／品質評估 | ⏸ 課堂版不做 | `extraction/risk_of_bias.xlsx` |
-| E1 | 綜合分析與圖表 | 🔄 | `analysis/`、`figures/` |
+| E1 | 綜合分析與圖表 | 🔄 課堂版圖表已產生（暫定範圍） | `analysis/`、`figures/` |
 | E2 | 報告偏誤與確信度 | ⏸ 課堂版不做 | `analysis/certainty.md` |
-| F1 | PRISMA 流程圖 | 🔄 | `figures/prisma_flow.*` |
-| F2 | 簡報製作（原為論文撰寫） | 🔄 | `slides/`（既有 `manuscript/` 草稿供取材） |
+| F1 | PRISMA 流程圖 | 🔄 簡報版含課堂版一層（暫定） | `figures/prisma_flow.*` |
+| F2 | 簡報製作（原為論文撰寫） | 🔄 31 張已填入暫定數字 | `slides/`（既有 `manuscript/` 草稿供取材） |
 | F3 | 投稿前檢查 | ⏸ 不投稿 | `manuscript/prisma_checklist.*` |
 
 ---
@@ -191,6 +192,7 @@
 | 全文評估 | 277 |
 | 全文排除（依原因） | 103：X4 28、X8 27、X6 21、X3 13、X5 10、X7 3、X1 1（`screening/full_text.xlsx`） |
 | 最終納入 | 174 篇報告＝174 篇研究（同一研究的其他版本已以 X8 排除） |
+| 課堂版收緊（暫定，作者未定案） | 174 → 38：排除預印本 51、無閉源直接比較 85（`analysis/slide_numbers.json`） |
 | Cohen's κ（C1／C2） | C1 全部 1,389 筆，Sonnet vs Opus：二元 0.90、三類 0.87（`analysis/sonnet_vs_opus.json`）；分歧 69 筆作者裁定。校準 50 筆，**兩個 AI 篩選者**（Agent 初判 vs Sonnet）：三類 0.66、二元 0.72（`analysis/blind50_agent_vs_sonnet.json`）；非人工盲測，不報告人工 κ／AI 敏感度 |
 
 ---
@@ -263,3 +265,5 @@
 - 2026-11-14｜A3｜使用者確認無專案經費、無贊助、無需揭露的利益衝突；採用三篇已查證的既有回顧，並要求隨機分配作者工作｜課堂報告；隨機分配僅為提議，實際貢獻於結案時確認。
 - 2026-11-15｜D1｜萃取改用完整全文（非篩選用精簡版）；欄位依課堂版範圍精簡為模型、任務、效能（`scripts/agent_extraction/extraction_prompt.md`）；Codex 用量用盡後其餘批次改由 Claude Sonnet 預填；全文為同一研究其他版本者照常萃取並標 `version`；文字檔未載年份者採書目年份｜Pilot 發現精簡版全文缺結果表；依既有「Codex 額度用盡改用 Sonnet」做法。簡報方法段說明「AI 預填（Codex＋Claude Sonnet）＋作者核對」
 - 2026-11-15｜D1｜兩套萃取並存：174 篇 AI 預填（`extraction/extraction.xlsx`）與課堂版 62 篇 Codex 萃取（`extraction/extraction_scope62.xlsx`）皆保留｜使用者決定（遠端與本地平行完成兩套，保留可交叉核對）
+- 2026-11-15｜D1｜使用者請 Agent 審查課堂版 batch 02–13 並修正萃取：Agent 以 `agent_patch.py` 記錄修正（更正最佳模型、補漏列、刪除非臨床文本 BC5CDR 列），補列標 `extractor=agent`，檢查器改為接受｜依既有「Agent 審查、作者核對」流程；所有改動逐筆記錄可回溯
+- 2026-11-15｜E1｜RQ3 主圖改為研究層級（每篇取各任務比較的中位數），任務層級分布另列｜Agent 判斷：一篇最多貢獻 13 組比較，任務層級會讓少數研究主導結果。屬分析呈現方式之補充，非方法變更；兩種數字都在 `slide_numbers.json`

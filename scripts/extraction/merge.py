@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
+from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
 from openpyxl.styles import Font
 from openpyxl.worksheet.datavalidation import DataValidation
 
@@ -66,7 +67,8 @@ def write(wb, name, fields, rows, key):
     ws.append(fields + REVIEW)
     for r in rows:
         prev = keep.get(r[key], {})
-        ws.append([r.get(f, '') for f in fields] + [prev.get(k) or '' for k in REVIEW])
+        # PDF text can carry control characters (e.g. form feed) that Excel rejects; drop them in the xlsx only
+        ws.append([ILLEGAL_CHARACTERS_RE.sub('', r.get(f, '') or '') for f in fields] + [prev.get(k) or '' for k in REVIEW])
     for c in ws[1]:
         c.font = Font(bold=True)
     ws.freeze_panes = 'C2'

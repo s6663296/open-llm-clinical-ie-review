@@ -1,7 +1,7 @@
 # HANDOFF：給接手的 AI（Claude、Codex 等）
 
 > 先讀 `AGENTS.md`（規則）與 `ROADMAP.md`（目前位置、決策紀錄、待決事項）。本檔補充**資料流、怎麼重跑、已知陷阱**，以及最近一次工作做了什麼。
-> 最後更新：2026-11-14（Claude Code，Opus 5.5）
+> 最後更新：2026-11-15（Claude Code，Opus 5.5）
 
 ## 1. 專案一句話
 
@@ -19,9 +19,10 @@ PRISMA 2020 系統性回顧：開源（權重可下載、≥1B）LLM 用於臨�
 | D1 編號分批 | 174 篇 | `scripts/extraction/make_batches.py [--scope …]` | `extraction/study_ids.csv`（S001–S174）、`extraction/batches/*.list` |
 | 課堂版範圍 | 174 篇 | `scripts/extraction/restrict_scope.py` | `extraction/scope_restriction.csv`（keep／check／exclude＋author_decision） |
 | D1 萃取 | 指引 `extraction/d1_codex_brief.md` | Codex（見 §4）＋`scripts/extraction/check_batch.py` | `extraction/codex/batch_NN_{studies,results}.csv` |
+| D1 審查修正 | `extraction/review/agent_patches.json` | `scripts/extraction/agent_patch.py`（冪等；改動記入 `agent_edits.csv`） | 修改 `extraction/codex/batch_NN_*.csv` |
 | D1 合併 | 各批 CSV | `scripts/extraction/merge.py` | `extraction/extraction_scope62.xlsx`（含審查欄）、`extraction/extraction_scope62_summary.json` |
-| E1 圖表 | `extraction_scope62.xlsx`、`scope_restriction.csv` | `scripts/analysis/slide_figures.py` | `figures/slides/*.png`、`analysis/slide_numbers.json` |
-| F2 簡報 | 上面全部 | 手動（Slides artifact） | `slides/project/`、artifact 見 ROADMAP |
+| E1 圖表 | `extraction_scope62.xlsx`、`scope_restriction.csv` | `scripts/analysis/slide_figures.py`、`slide_prisma.py` | `figures/slides/*.png`、`analysis/slide_numbers.json` |
+| F2 簡報 | 上面全部 | 手動（Slides artifact） | `slides/project/`、`slides/assets.json`（圖 → `/_blob/` 對照）、artifact 見 ROADMAP |
 
 欄位與允許值的單一來源：`scripts/extraction/fields.py`。
 
@@ -31,8 +32,10 @@ PRISMA 2020 系統性回顧：開源（權重可下載、≥1B）LLM 用於臨�
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/extraction/restore_fulltext.py        # 約 10 分鐘；medRxiv 會 429，腳本自動退避
 .venv/bin/python scripts/extraction/make_batches.py --scope extraction/scope_restriction.csv
+.venv/bin/python scripts/extraction/agent_patch.py           # 已套用者不會重複套用
 .venv/bin/python scripts/extraction/merge.py
 .venv/bin/python scripts/analysis/slide_figures.py
+.venv/bin/python scripts/analysis/slide_prisma.py
 .venv/bin/python -m unittest discover -s tests
 ```
 
@@ -47,6 +50,11 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
   `codex exec -m gpt-6-luna -s workspace-write "<依 extraction/d1_codex_brief.md 處理 batch_NN…>" < /dev/null`
   （不加 `< /dev/null` 會等 stdin。）不要改使用者的 Codex 設定檔。
 - **check_batch.py 的數值驗證**：`value_reported` 必須在 `value_src` 標的頁面出現（忽略空白）。從圖讀值、補充資料的數值一律不萃取。
+- **Agent 修正走 `agent_patch.py`**：在 `extraction/review/agent_patches.json` 加 set／add／delete 操作，跑腳本後再跑 `check_batch.py`。補列的 `extractor` 為 `agent`（檢查器已允許）。不要手改 CSV，否則 `agent_edits.csv` 沒有紀錄。
+- **Excel 不收控制字元**：PDF 文字可能帶換頁符號等；`merge.py` 只在寫 xlsx 時移除，CSV 保持原樣。
+- **檢查器拒收 value_reported = 1／0**：S052 的 GPT-4o F1 = 1.00（LV function、mitral stenosis）因此沒有萃取，那兩項不成配對。若要補，需放寬 `check_batch.py` 的 trivial-value 規則。
+- **多任務研究在比較中權重較大**：一篇可貢獻多組任務比較（S052 13 組、S071／S159 各 8 組）。簡報主圖用研究層級（每篇取中位數），任務層級數字只放在分布頁。
+- **簡報圖片要重新上傳**：重跑出圖後 PNG 會變，需用 upload_asset 重新上傳並改投影片中的 `/_blob/<id>`；目前對照在 `slides/assets.json`。
 - **重跑 merge.py 不會蓋掉審查欄**（`agent_review`、`agent_note`、`verified`、`verifier_note`），但改了 Codex CSV 後要重跑 merge 才會進 xlsx。
 
 ## 5. 判斷權（不要越界）
@@ -55,14 +63,35 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 - `scope_restriction.csv` 的 `author_decision` 只能由使用者填；空白時 `slide_figures.py` 用暫定規則（R1 同儕審查＋有閉源結果列＋note 無 `R2 not met`），並在 `slide_numbers.json` 記 `provisional_scope_rows`。
 - 簡報上的數字只能來自 `analysis/slide_numbers.json` 或 `analysis/prisma_counts.json`，不要手算或推估。
 
-## 6. 最近一次工作（2026-11-14）
+## 6. 最近一次工作（2026-11-15）
 
-見 ROADMAP「📍 目前位置」與決策紀錄最後幾條。重點：
-1. 還原 174 篇全文、編號分批、寫萃取指引與驗證腳本。
-2. 使用者決定課堂版收緊到「同儕審查＋與閉源 LLM 直接比較」，腳本建議 62 篇候選。
-3. Codex 萃取 62 篇（3 批）→ Agent 審查 → 合併 → 圖表 → 填入簡報。
-4. 審查結果與待作者核對事項寫在 §7。
+1. Agent 審查課堂版 batch 02–13（57 篇），連同 batch 01 共 62 篇：ok 24、fix 8、query 30（`extraction/review/agent_review.csv`）。
+2. 修正以 `agent_patch.py` 套用（`agent_patches.json`；42＋10 筆改動記於 `agent_edits.csv`），13 批再次全數通過 `check_batch.py`。
+3. `merge.py` → `extraction/extraction_scope62.xlsx`（62 篇、472 列）；`slide_figures.py` 新增研究層級兩欄啞鈴圖 `open_vs_closed_by_study.png` 與 `study_level`／`n_pair_studies` 等數字，直方圖範圍改為依資料決定。
+4. 簡報 31 張全部填入（數字只取自 `slide_numbers.json`、`prisma_counts.json`，標「暫定」），已發布到 artifact。
 
 ## 7. 審查結果與待作者核對
 
-（萃取完成後填寫）
+**暫定範圍**：`author_decision` 全空，`slide_figures.py` 用暫定規則 → 38 篇（36 篇有配對、88 組任務比較）。作者定案後重跑 `slide_figures.py`、`slide_prisma.py`，並更新簡報數字與圖。
+
+**Agent 修正（fix，8 篇）**
+| 研究 | 修正 |
+|---|---|
+| S002、S005 | batch 01，見 `agent_edits.csv` |
+| S043 | pub_type preprint → journal（已刊於 Ophthalmology Science，萃取文字為 medRxiv 版） |
+| S077 | DeepSeek-V3.2 為開放權重，改列開源；更正 Codex 混用 binary／macro F1 與誤植 GPT-5.2 數值（p.8 Table III/IV） |
+| S100 | 癌別辨識最佳閉源改為 Path-GPT-4o-mini-FT 99%（p.4），原誤取 Mistral-Medium 90% |
+| S108 | 補 GPT-4o 0.96 閉源列（p.6 Table 1） |
+| S135 | 最佳開源改為 DeepSeek-R1 0.79，補 GPT-5 0.93（p.6 Table 2） |
+| S170 | 刪除 BC5CDR（PubMed 摘要、非臨床文本）10 列 |
+
+**需要作者判斷（query 中非單純「R2 不符」者）**
+- S057（R0382）只有摘要：保留或排除（ROADMAP 待決事項）。
+- S102：原文 p.6 數值前後不一致（Llama 0.74 vs 0.94），目前取 0.94 vs 0.93。
+- S121：Table 2 中 Gemma 2 的 AVG 列疑似排版錯誤，最佳開源可能是 Gemma 2 而非 Qwen 2.5。
+- S135：資料為已發表病例報告，是否算臨床病歷文本。
+- S170：剩餘 HPO 配對用 BiolarkGSC+，作者稱為臨床筆記，原始語料為文獻摘要。
+- S001：閉源 Gemini 3 Flash 數值只在附錄 A.4（batch 01）。
+- S030、S060：有閉源實測但不能配對（只在圖／補充表；樣本不同）。
+- S022、S118、S119、S164：開源數值只在圖或補充資料。
+- 其餘 query 為「R2 不符：無閉源直接比較」，建議課堂版排除（S016、S023、S032、S035、S039、S044、S066、S070、S096、S099、S116、S128、S154、S156、S161、S163、S167、S168、S173）。

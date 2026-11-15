@@ -1,11 +1,12 @@
 <section id="gap-dist" class="alt">
 <p class="eyebrow">RQ3 · 效能</p>
-<h2>差距的分布</h2>
+<h2>差距的分布（88 組任務比較）</h2>
 <div class="grid3">
-<div class="card"><p class="stat">[__]</p><p class="body">開源 <b>優於或等於</b>閉源的比較數</p></div>
-<div class="card"><p class="stat closed">[__]</p><p class="body">閉源領先的比較數</p></div>
-<div class="card"><p class="stat">[__]</p><p class="body">F1 差距中位數（閉源 − 開源）</p></div>
+<div class="card"><p class="stat">36</p><p class="body">開源<b>追平或優於</b>閉源（差距 ≤ 0.02）</p></div>
+<div class="card"><p class="stat closed">52</p><p class="body">閉源領先的比較數</p></div>
+<div class="card"><p class="stat">0.036</p><p class="body">差距中位數（閉源 − 開源）</p></div>
 </div>
-<div class="ph"><p class="ph-title">[圖：差距直方圖]</p><p class="ph-desc">F1 差距（閉源 − 開源）的分布，0 的位置畫參考線。</p></div>
-<aside>「等於」的門檻要事先定（例如 |差距| ≤ 0.02）並寫在方法。</aside>
+<img class="fig" src="/_blob/60fb0fe1fc571758833150b201016cf0" alt="差距直方圖：多數比較落在 0 到 0.1 之間，右尾延伸到 0.7" width="1664" height="280" style="height:280px">
+<p class="src">資料：analysis/slide_numbers.json（comparisons；暫定）</p>
+<aside>以任務為單位算 88 組，一篇研究可貢獻多組，所以閉源領先的比例看起來較高；以研究為單位（上一張）是 18 比 18。右尾的大差距多來自 van der Loo 2026 的多個瓣膜分級任務。</aside>
 </section>

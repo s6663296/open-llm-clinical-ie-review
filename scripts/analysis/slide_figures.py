@@ -10,6 +10,7 @@ Final study set (classroom scope, decision 2026-11-14):
   author_decision == exclude         -> out
   author_decision empty (provisional) -> in iff peer reviewed (R1) AND the study has >= 1 closed-LLM result row
                                          AND its note does not contain 'R2 not met'
+Study level: median of each study's comparisons (open_vs_closed_by_study.png) so multi-task studies count once.
 Open vs closed comparison: per (study, task, dataset), best open row (is_best_open=yes) vs best closed row
 (model_class=closed LLM, is_best_comparator=yes), only when both use the same metric. gap = closed - open.
 'Comparable' = open >= closed - TIE (TIE = 0.02 F1), stated on the slide.
@@ -197,13 +198,46 @@ def main():
 
         gaps = [p['gap'] for p in P]
         fig, ax = plt.subplots(figsize=(16.64, 4.6), dpi=100)
-        edges = [x / 100 for x in range(-30, 32, 4)]
+        lo, hi = int(min(gaps) * 20 - 1), int(max(gaps) * 20 + 2)  # 0.05-wide bins covering every gap
+        edges = [x / 20 for x in range(lo, hi + 1)]
         ax.hist(gaps, bins=edges, color=OPEN, edgecolor=BG, linewidth=2)
         ax.axvline(0, color=INK, linewidth=2)
         ax.set_xlabel('效能差距（閉源 − 開源）；左側 = 開源較好')
         ax.set_ylabel('比較數')
         style(ax, 'y')
         save(fig, 'gap_hist.png')
+
+        # Study level: one row per study (median over its comparisons) so multi-task studies do not dominate.
+        by_study = {}
+        for p in P:
+            by_study.setdefault(p['study_id'], []).append(p)
+        SP = sorted(({'study_id': sid, 'n': len(g),
+                      'open_median': median(p['open_value'] for p in g),
+                      'closed_median': median(p['closed_value'] for p in g),
+                      'gap_median': round(median(p['gap'] for p in g), 4)} for sid, g in by_study.items()),
+                    key=lambda d: d['gap_median'])
+        # Two panels sized for one slide (1664 x 700 px): closed ahead | open comparable or better.
+        panels = [('閉源領先（差距 > %.2f）' % TIE, [d for d in SP if d['gap_median'] > TIE][::-1]),
+                  ('開源追平或較好（差距 ≤ %.2f）' % TIE, [d for d in SP if d['gap_median'] <= TIE])]
+        fig, axes = plt.subplots(1, 2, figsize=(16.64, 7.0), dpi=100, sharex=True)
+        for ax, (title, rows) in zip(axes, panels):
+            for i, d in enumerate(rows):
+                ax.plot([d['open_median'], d['closed_median']], [i, i], color=GRID, linewidth=3, zorder=1)
+            ax.scatter([d['open_median'] for d in rows], range(len(rows)), s=70, color=OPEN, zorder=2,
+                       edgecolors=BG, linewidths=1.5, label='最佳開源 LLM')
+            ax.scatter([d['closed_median'] for d in rows], range(len(rows)), s=70, color=CLOSED, zorder=3,
+                       edgecolors=BG, linewidths=1.5, label='最佳閉源 LLM')
+            ax.set_yticks(range(len(rows)))
+            ax.set_yticklabels([f"{author[d['study_id']]}（{d['n']}）" for d in rows], fontsize=13)
+            ax.set_ylim(-0.7, max(len(r) for _, r in panels) - 0.3)
+            ax.invert_yaxis()
+            ax.set_xlim(0, 1.02)
+            ax.tick_params(axis='x', labelsize=14)
+            ax.set_title(f'{title}：{len(rows)} 篇', fontsize=17, color=INK, loc='left')
+            style(ax, 'x')
+        axes[0].legend(loc='lower left', bbox_to_anchor=(0, 1.07), ncol=2, frameon=False, fontsize=15)
+        fig.supxlabel('效能（0–1）；每篇取其各比較的中位數，括號 = 比較數', fontsize=15, color=SOFT)
+        save(fig, 'open_vs_closed_by_study.png')
 
         groups = {'開源：提示（zero/few-shot、CoT、RAG）': [], '開源：微調（LoRA、QLoRA、全參數）': []}
         for p in P:
@@ -243,6 +277,11 @@ def main():
         median_gap_prompting=round(median(groups['開源：提示（zero/few-shot、CoT、RAG）']), 3) if P and groups['開源：提示（zero/few-shot、CoT、RAG）'] else None,
         median_gap_finetuned=round(median(groups['開源：微調（LoRA、QLoRA、全參數）']), 3) if P and groups['開源：微調（LoRA、QLoRA、全參數）'] else None,
         n_finetuned_comparisons=len(groups['開源：微調（LoRA、QLoRA、全參數）']) if P else 0,
+        n_pair_studies=len(SP) if P else 0,
+        n_studies_open_comparable_or_better=sum(d['gap_median'] <= TIE for d in SP) if P else 0,
+        n_studies_closed_ahead=sum(d['gap_median'] > TIE for d in SP) if P else 0,
+        median_study_gap=round(median(d['gap_median'] for d in SP), 3) if P else None,
+        study_level=SP if P else [],
         comparisons=P,
     )
     (ROOT / 'analysis/slide_numbers.json').write_text(json.dumps(numbers, ensure_ascii=False, indent=1), encoding='utf-8')

@@ -2,8 +2,9 @@
 <p class="eyebrow">RQ3 · 代表研究</p>
 <h2>兩個代表性研究</h2>
 <div class="grid2">
-<div class="card"><p class="tag open-t">開源追上閉源</p><h3>[第一作者, 年份]</h3><p class="body">[文本類型、任務、模型與策略]<br>[開源 F1 vs 閉源 F1，附頁碼]</p></div>
-<div class="card"><p class="tag closed-t">閉源明顯領先</p><h3>[第一作者, 年份]</h3><p class="body">[文本類型、任務、模型與策略]<br>[開源 F1 vs 閉源 F1，附頁碼]</p></div>
+<div class="card"><p class="tag open-t">開源追上閉源</p><h3>Wiyanti 等，2026</h3><p class="body">病理報告，肺癌組織型四分類抽取；Med42-8B 經 LoRA 微調、本地部署<br><span class="open-t">Med42-8B macro F1 0.92</span> vs <span class="closed-t">Gemini 2.0 Flash 0.88</span>（p.1；p.12）</p></div>
+<div class="card"><p class="tag closed-t">閉源明顯領先</p><h3>van der Loo 等，2026</h3><p class="body">荷蘭語心導管報告，罪犯血管（主要冠狀動脈層級）辨識；開源最佳為 Phi-4 few-shot<br><span class="open-t">Phi-4 F1 0.715</span> vs <span class="closed-t">GPT-4o 0.937</span>（p.5 Table 2）</p></div>
 </div>
-<aside>萃取完成後從 results 挑選；數字要附原文頁碼。</aside>
+<p class="prov">數值已由 Agent 對頁，待作者核對</p>
+<aside>Wiyanti：小模型加上任務微調，可以超過通用閉源模型。van der Loo：13 項任務中閉源全面領先，例如瓣膜分級中的肺動脈瓣狹窄，Phi-4 只有 0.260，GPT-4o 為 0.990（p.6 Table 3）。</aside>
 </section>

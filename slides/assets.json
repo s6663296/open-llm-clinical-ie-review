@@ -1,0 +1,111 @@
+{
+ "uploaded": "2026-11-15",
+ "artifact": "9PFD1Di4iUAFgQjnoJqn5A",
+ "note": "Re-upload after rerunning slide_figures.py; sha256 = figure uploaded",
+ "assets": {
+  "prisma_slide.png": {
+   "blob": "/_blob/d3ed538526cfd9a277c49e8f014f1de0",
+   "size": [
+    1664,
+    740
+   ],
+   "sha256": "c651e986816f69814688ecf7a0d51d27e1b28b7d62198e6999ccdf0908b6d87f"
+  },
+  "year.png": {
+   "blob": "/_blob/be5fca6326d1da4e0c1388b3a978026b",
+   "size": [
+    1664,
+    560
+   ],
+   "sha256": "528f1e1fe631914cfe21c7c8c5f525d4882150015ca6e8afaa7a49bf26fe04c4"
+  },
+  "language.png": {
+   "blob": "/_blob/fad99b051c7efe4d68fd6e9fed2ddf11",
+   "size": [
+    1664,
+    802
+   ],
+   "sha256": "3791c57234543035b30cb4237232f2eabdba843703361397a5e826f0802a51ce"
+  },
+  "text_type.png": {
+   "blob": "/_blob/b02c24770ea91daadfaee3357b4c9e1a",
+   "size": [
+    1664,
+    492
+   ],
+   "sha256": "85043066ce78749dfb202fca205b0bf0b54635f856efba01d74f8f0625d6b88f"
+  },
+  "task_type.png": {
+   "blob": "/_blob/309088225e5ab806f27f68f156e6f107",
+   "size": [
+    1664,
+    430
+   ],
+   "sha256": "e421d03167cd32e5125bc73a544edea70cdcaf847128d02211c34932b5b831ca"
+  },
+  "clinical_domain.png": {
+   "blob": "/_blob/8b358459525ee8e13a8346ea722f1476",
+   "size": [
+    1664,
+    678
+   ],
+   "sha256": "54b2abafb6b7ed7836831b3c7ce06d422540298077461fbb7afe5f6cdc4492b4"
+  },
+  "model_family.png": {
+   "blob": "/_blob/482798131e942bcafddec1ea64f97ae5",
+   "size": [
+    1664,
+    554
+   ],
+   "sha256": "9eef732863fa0114f31cb2b7d8348afb70fec7250dd4fab642ba07a515f7e2f3"
+  },
+  "params.png": {
+   "blob": "/_blob/ae13e03e1bba0583dee215fc9d98144f",
+   "size": [
+    1664,
+    560
+   ],
+   "sha256": "1e0f593b7717c0fa0794eb1f1e4cdd37842ddb2616429975ad569073befa54f1"
+  },
+  "strategies.png": {
+   "blob": "/_blob/bde805d2d87c88427c768e320d5e7d8e",
+   "size": [
+    1664,
+    802
+   ],
+   "sha256": "6d2be38cf28bbf2c3f571fef60e6b9cf2f42ad3f738e9f181d3a88cfa3e7eaa8"
+  },
+  "deployment.png": {
+   "blob": "/_blob/b1535ced59722a798653edeab9312c0c",
+   "size": [
+    1664,
+    430
+   ],
+   "sha256": "936d68b3ff3a113907e88f861a6e2acc6c58b810eadbb5d726bba827575e9115"
+  },
+  "open_vs_closed_by_study.png": {
+   "blob": "/_blob/808d2ca06bab93f3f55412796143281f",
+   "size": [
+    1664,
+    700
+   ],
+   "sha256": "85e610f540d9e05c504157a9a1ad26219feb3ad8bbc74c73340e2b87b43052e6"
+  },
+  "gap_hist.png": {
+   "blob": "/_blob/60fb0fe1fc571758833150b201016cf0",
+   "size": [
+    1664,
+    460
+   ],
+   "sha256": "895841d0952e601cad41ac25dd9743e80b890e562aec34ff4c5585171bee3f70"
+  },
+  "gap_by_strategy.png": {
+   "blob": "/_blob/e2180e1ee71d3e057b13feb057b34db1",
+   "size": [
+    1664,
+    460
+   ],
+   "sha256": "7b0c56e2df40cd119dadbd058c0db58ccad94f821119e11e1145a72b709ac247"
+  }
+ }
+}

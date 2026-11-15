@@ -161,24 +161,16 @@ S075-R35,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,GPT
 GPT-4o-mini 0.504 (0.496-0.512) p < 0.05 0.357 (0.331-0.383) p < 0.05 0.438 (0.4",,codex
 S075-R36,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.604,0-1,0.604,document,NR,no,yes,p.3 Table 1,"0.604 (0.443-0.765) p < 0.05 0.730 (0.627-0.833) p < 0.05
 SynthEHR-Eviction (Bio ClinicalBERT) 0.961 (0.956-0.966) p < 0.01 0.630 (0.612-0.6",,codex
-S077-R01,S077,Stage 1 actionable-class F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,NR,0.459,0-1,0.459,document,NR,yes,no,p.7,"0.459.
-B. Stage 2: Action Category Classification
-Table IV presents fine-grained classification results across
-seven clinical action categories. Here, the supervised
-BERT baselines",,codex
-S077-R02,S077,Stage 1 macro-F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.895,0-1,0.895,document,NR,no,yes,p.7,"0.895, representing a 23% relative improvement
+S077-R01,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.684,0-1,0.684,document,NR,no,no,p.8 Table III,Macro F1 0.661 0.668 0.642 0.748 0.684 0.909,MedGemma macro F1 (Binary F1 0.459),codex
+S077-R02,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.895,0-1,0.895,document,NR,no,yes,p.7,"0.895, representing a 23% relative improvement
 over TTP-BERT+Context (0.668). Gemini-3-Flash achieves
 the second-best LLM performance with Macro F1 of 0.888.
 Notably, the medical-s",,codex
-S077-R03,S077,Stage 1 macro-F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
+S077-R03,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
 the second-best LLM performance with Macro F1 of 0.888.
 Notably, the medical-specialized MedGemma-27B-it substan-
 tially underperforms with F1 of on",,codex
-S077-R04,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.570,0-1,0.570,document,NR,yes,no,p.7,"0.570, falling
-15% short of TTP-BERT+Context. GPT-5.2 shows category-
-specific strengths:
-• Appointment-related follow-up: F1 of 0.812, approaching
-but not exceeding TTP-BERT’s 0.8",,codex
+S077-R04,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.385,0-1,0.385,document,NR,no,no,p.8 Table IV,Macro Average 0.631 0.668 0.373 0.422 0.385 0.611,"0.570 on p.7 is GPT-5.2, not MedGemma",codex
 S077-R05,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.570,0-1,0.570,document,NR,no,yes,p.7,"0.570, falling
 15% short of TTP-BERT+Context. GPT-5.2 shows category-
 specific strengths:
@@ -188,6 +180,8 @@ S077-R06,S077,Stage 2 action category classification,attribute,CLIP dataset; 100
 the second-best LLM performance with Macro F1 of 0.888.
 Notably, the medical-specialized MedGemma-27B-it substan-
 tially underperforms with F1 of on",,codex
+S077-R07,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,DeepSeek-V3.2,open LLM,DeepSeek,NR,no,other,prompt batch size k=15,NR,F1,macro,0.809,0-1,0.809,document,NR,yes,no,p.8 Table III,0.888 0.807 0.811 0.809 0.849 0.853 0.851,,agent
+S077-R08,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,DeepSeek-V3.2,open LLM,DeepSeek,NR,no,other,prompt batch size k=15,NR,F1,macro,0.446,0-1,0.446,document,NR,yes,no,p.8 Table IV,0.581 0.524 0.548 0.446 0.446 0.446 0.531,,agent
 S083-R01,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,Llama-3.1-8B,open LLM,Llama,8,no,other,model-level score cited in Results; detailed configuration is in supplementary Table I,NR,F1,micro,0.591,0-1,0.591,entity,NR,yes,no,p.7,"an overall micro-F1 of 0.591, as shown in Supplementary Table I.",,codex
 S083-R02,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,50-shot examples; SHAC guidelines,NR,F1,micro,0.866,0-1,0.866,entity,NR,no,yes,p.6,"0.866 on the entire testing set. This
 ranks among the top performers of the n2c2/UW shared task. Also, Gemini 2.5 Flash achieved a micro-F1

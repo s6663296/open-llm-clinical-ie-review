@@ -62,3 +62,56 @@ date,batch,target,action,reason
 2026-11-15,11,S159-R19.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
 2026-11-15,11,S159-R20.value_context,"trailing "" -"" removed",trailing hyphen breaks verbatim check (read as line-break hyphen); text unchanged otherwise
 2026-11-15,02,S022.note,"changed 'text: preprint version; direct closed-LLM comparisons are reported, but exact scores are only plotted in Figure 3 and are not transcribed from figures (p.12–14)' -> 'text: preprint version; QUERY: direct closed-LLM comparisons are reported, but exact scores are only plotted in Figure 3 and are not transcribed from figures (p.12–14)'",flag figure-only results as QUERY for author decision
+2026-11-15,06,S077.open_models,changed 'MedGemma-27B-it' -> 'MedGemma-27B-it; DeepSeek-V3.2',"DeepSeek-V3.2 weights are public -> open LLM, not closed comparator"
+2026-11-15,06,S077.closed_comparators,changed 'GPT-5.2; Gemini-3-Flash; DeepSeek-V3.2; Claude Sonnet 3.5' -> 'GPT-5.2; Gemini-3-Flash; Claude Sonnet 3.5',"DeepSeek-V3.2 weights are public -> open LLM, not closed comparator"
+2026-11-15,06,S077-R01.task,changed 'Stage 1 actionable-class F1' -> 'Stage 1 actionability filtering',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.f1_avg,changed 'NR' -> 'macro',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.value_reported,changed '0.459' -> '0.684',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.value,changed '0.459' -> '0.684',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.is_best_open,changed 'yes' -> 'no',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.value_src,changed 'p.7' -> 'p.8 Table III',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.value_context,"changed '0.459.\nB. Stage 2: Action Category Classification\nTable IV presents fine-grained classification results across\nseven clinical action categories. Here, the supervised\nBERT baselines' -> 'Macro F1 0.661 0.668 0.642 0.748 0.684 0.909'",p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R01.note,changed '' -> 'MedGemma macro F1 (Binary F1 0.459)',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R02.task,changed 'Stage 1 macro-F1' -> 'Stage 1 actionability filtering',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R03.task,changed 'Stage 1 macro-F1' -> 'Stage 1 actionability filtering',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.value_reported,changed '0.570' -> '0.385',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.value,changed '0.570' -> '0.385',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.is_best_open,changed 'yes' -> 'no',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.value_src,changed 'p.7' -> 'p.8 Table IV',p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.value_context,"changed '0.570, falling\n15% short of TTP-BERT+Context. GPT-5.2 shows category-\nspecific strengths:\n• Appointment-related follow-up: F1 of 0.812, approaching\nbut not exceeding TTP-BERT’s 0.8' -> 'Macro Average 0.631 0.668 0.373 0.422 0.385 0.611'",p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R04.note,"changed '' -> '0.570 on p.7 is GPT-5.2, not MedGemma'",p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R07,added row,p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,06,S077-R08,added row,p.7-8 Table III/IV: DeepSeek-V3.2 is open-weight (open LLM); Codex mixed binary/macro F1 and attributed GPT-5.2 Stage 2 macro F1 to MedGemma
+2026-11-15,07,S100-R03.model,changed 'Mistral-Medium' -> 'Path-GPT-4o-mini-FT',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.strategy,changed 'zero-shot' -> 'other',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.strategy_detail,changed 'Standard inference' -> 'OpenAI fine-tuning on instruction-tuning set',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.value_reported,changed '90' -> '99',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.value,changed '0.90' -> '0.99',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.value_src,changed 'p.3' -> 'p.4',"p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,07,S100-R03.value_context,"changed 'Mistral-Medium achieved an accuracy of 90%' -> 'large language models, achieving a mean accuracy of 99%'","p.3-4: Mistral-Medium (90%) is one of the two weakest; best closed is Path-GPT-4o-mini-FT, mean accuracy 99% (p.4)"
+2026-11-15,08,S108-R05,added row,p.6 Table 1 reports GPT-4 Turbo (0.94) and GPT-4o (0.96) extraction accuracy; closed comparator row was missing
+2026-11-15,10,S135-R01.is_best_open,changed 'yes' -> 'no',p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93
+2026-11-15,10,S135-R02,added row,p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93
+2026-11-15,10,S135-R03,added row,p.6 Table 2 sepsis-40 event match rate: DeepSeek-R1 0.79 > Llama 3.3 0.76; GPT-5 0.93
+2026-11-15,04,S043.pub_type,changed 'preprint' -> 'journal',scope_restriction: published in Ophthalmology Science; full text used is the medRxiv preprint
+2026-11-15,04,S043.note,changed '' -> 'text: preprint version',scope_restriction: published in Ophthalmology Science; full text used is the medRxiv preprint
+2026-11-15,09,S121-R02.is_best_open,changed 'yes' -> 'no',single-category (names) row; not comparable to the average F1 pair
+2026-11-15,13,S170-R01.is_best_open,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R03.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R04.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R05.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R06.is_best_open,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R08.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R09.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,13,S170-R10.is_best_comparator,changed 'yes' -> 'no',"BC5CDR is PubMed abstracts (p.3), not clinical free text; kept as context, excluded from best-pair flags"
+2026-11-15,09,S121-R02.is_best_open,changed 'no' -> 'yes',revert: checker needs one best-open per task group; row stays unpaired
+2026-11-15,13,S170-R01,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R02,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R03,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R04,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R05,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R06,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R07,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R08,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R09,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"
+2026-11-15,13,S170-R10,deleted,"BC5CDR is PubMed abstracts (p.3), not clinical free text; protocol keeps real clinical text results only (cf. S010 synthetic rows, batch 01)"

@@ -1,10 +1,11 @@
 <section id="scope">
 <p class="eyebrow">方法 · 課堂版範圍</p>
-<h2>從 174 篇收緊到約 40 篇，聚焦「開源 vs 閉源」</h2>
+<h2>從 174 篇收緊到 38 篇，聚焦「開源 vs 閉源」</h2>
 <div class="grid2">
 <div class="card"><h3>R1 同儕審查</h3><p class="body">排除 arXiv、medRxiv 等預印本（174 篇中 51 篇）</p></div>
-<div class="card"><h3>R2 與閉源 LLM 直接比較</h3><p class="body">同一研究、同一任務中，開源 LLM 與 GPT、Claude、Gemini 等都有效能數字</p></div>
+<div class="card"><h3>R2 與閉源 LLM 直接比較</h3><p class="body">同一研究、同一任務中，開源 LLM 與 GPT、Claude、Gemini 等都有效能數字（另排除 85 篇）</p></div>
 </div>
-<p class="lead">最終納入 <b>[__] 篇</b>。此條件為事後設定，目的是讓 RQ3 的比較有足夠資料，並把萃取量控制在課堂報告可負擔的範圍。</p>
-<aside>R2 的判定：腳本先依全文關鍵字與篩選筆記建議（keep 30／check 32），再於萃取時確認是否真有閉源比較數值。最終數字待萃取完成後填入。檔案：extraction/scope_restriction.csv。</aside>
+<p class="lead">課堂版納入 <b>38 篇</b>（其中 36 篇有可配對的開源 vs 閉源數值）。此條件為事後設定，目的是讓 RQ3 的比較有足夠資料，並把萃取量控制在課堂報告可負擔的範圍。</p>
+<p class="prov">暫定：逐篇範圍尚待作者定案（scope_restriction.csv 的 author_decision）</p>
+<aside>R2 的判定：腳本先依全文關鍵字與篩選筆記建議 62 篇候選，萃取時確認是否真有閉源比較數值；萃取中確認無閉源比較或無同一測試集者不列入。數字來源：analysis/slide_numbers.json（provisional_scope_rows = 62，表示仍為暫定規則）。</aside>
 </section>
