@@ -1,0 +1,169 @@
+result_id,study_id,task,task_type,dataset,test_n,model,model_class,model_family,params_b,medical_domain,strategy,strategy_detail,quantized,metric,f1_avg,value_reported,metric_scale_original,value,eval_level,matching,is_best_open,is_best_comparator,value_src,value_context,note,extractor
+S035-R01,S035,Portuguese clinical NER,NER,Hospital de Santa Maria clinical reports,20 reports,Llama3.2 3B Instruct,open LLM,Llama,3,no,few-shot,two PT-PT examples; loose entity matching; relaxed evaluation,yes,F1,micro,0.123,0-1,0.123,entity,NR,yes,no,p.35 Table 4,"Llama3.2 3B 
+Instruct
+149 63 0.206
+[0.136-
+0.333] 0.087
+[0.037-
+0.203] 0.123
+[0.062-
+0.220] 4897",,codex
+S035-R02,S035,Portuguese clinical NER,NER,Hospital de Santa Maria clinical reports,20 reports,Llama3.1 8B,open LLM,Llama,8,no,few-shot,two PT-PT examples; loose entity matching; relaxed evaluation,no,F1,micro,0.097,0-1,0.097,entity,NR,no,no,p.35 Table 4,"Llama3.1 8B 149 119 0.109
+[0.057-
+0.181]
+0.087
+[0.037-
+0.191]
+0.097
+[0.045-
+0.178]
+7476",,codex
+S035-R03,S035,Portuguese clinical NER,NER,Hospital de Santa Maria clinical reports,20 reports,Llama3.1 8B Instruct,open LLM,Llama,8,no,few-shot,two PT-PT examples; loose entity matching; relaxed evaluation,yes,F1,micro,0.097,0-1,0.097,entity,NR,no,no,p.35 Table 4,"Llama3.1 8B 
+Instruct
+149 120 0.108
+[0.056-
+0.193] 0.087
+[0.036-
+0.198] 0.097
+[0.045-
+0.183] 6163",,codex
+S035-R04,S035,Portuguese clinical NER,NER,Hospital de Santa Maria clinical reports,20 reports,Llama3.2 3B,open LLM,Llama,3,no,few-shot,two PT-PT examples; loose entity matching; relaxed evaluation,no,F1,micro,0.096,0-1,0.096,entity,NR,no,no,p.35 Table 4,"Llama3.2 3B 
+Instruct
+149 63 0.206
+[0.136-
+0.333] 0.087
+[0.037-
+0.203] 0.123
+[0.062-
+0.220] 4897 0.04 3.75 3.74
+Llama3.1 8B 149 119 0.109
+[0.057-
+0.181]
+0.087
+[0.037-
+0.191]
+0.097
+[0.045-
+0.178]
+7476 0.06 5.73 5.72
+Llama3.1 8B 
+Instruct
+149 120 0.108
+[0.056-
+0.193] 0.087
+[0.036-
+0.198] 0.097
+[0.045-
+0.183] 6163 0.05 4.69 4.68
+Llama3.2 3B 149 80 0.138
+[0.069-
+0.250]
+0.074
+[0.029-
+0.178]
+0.096
+[0.041-
+0.189]
+1791",,codex
+S035-R05,S035,Portuguese clinical NER,NER,Hospital de Santa Maria clinical reports,20 reports,MediAlbertina-1.5B,BERT-type,NA,NR,NA,NA,NER-fine-tuned checkpoint,NA,F1,micro,0.430,0-1,0.430,entity,NR,no,yes,p.35 Table 4,"MediAlbertina 149 302 0.321
+[0.250-
+0.439]
+0.651
+[0.513-
+0.762]
+0.430
+[0.344-
+0.539]
+79 0",,codex
+S039-R01,S039,frailty index item extraction,field extraction,frailty index test dataset,100 notes,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,RAG,LangChain; BAAI/bge-m3; 3-shot; top-k=5,NR,F1,micro,97.08,percent,0.9708,field,NR,yes,no,p.1,"This configuration achieved F1 scores of 97.08% for frailty index extraction, 97.14% for malnutrition risk factor extraction, and 90.52% for agitation in dementia extraction.",,codex
+S039-R02,S039,malnutrition risk factor extraction,field extraction,malnutrition risk factors test dataset,300 notes,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,RAG,LangChain; BAAI/bge-m3; 3-shot; top-k=5,NR,F1,micro,97.14,percent,0.9714,field,NR,yes,no,p.1,"This configuration achieved F1 scores of 97.08% for frailty index extraction, 97.14% for malnutrition risk factor extraction, and 90.52% for agitation in dementia extraction.",,codex
+S039-R03,S039,agitation in dementia extraction,field extraction,agitation in dementia test dataset,200 notes,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,RAG,LangChain; BAAI/bge-m3; 3-shot; top-k=5,NR,F1,micro,90.52,percent,0.9052,field,NR,yes,no,p.1,"This configuration achieved F1 scores of 97.08% for frailty index extraction, 97.14% for malnutrition risk factor extraction, and 90.52% for agitation in dementia extraction.",,codex
+S043-R01,S043,current topical medications (CTM),attribute,glaucoma clinical notes,NR,DeepSeek-V3.2,open LLM,other,NR,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.971,0-1,0.971,document,NR,yes,no,p.27 Table 1,F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),,codex
+S043-R02,S043,current topical medications (CTM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.985,0-1,0.985,document,NR,no,yes,p.27 Table 1,F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),,codex
+S043-R03,S043,proposed topical medication changes (Δ TM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,NR,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.855,0-1,0.855,document,NR,yes,no,p.27 Table 1,F1 score 0.905 (0.883 - 0.925) 0.826 (0.797 - 0.855) 0.897 (0.875 - 0.919) 0.842 (0.815 – 0.868) 0.865 (0.837 - 0.889),,codex
+S043-R04,S043,proposed topical medication changes (Δ TM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.905,0-1,0.905,document,NR,no,yes,p.27 Table 1,F1 score 0.905 (0.883 - 0.925) 0.826 (0.797 - 0.855) 0.897 (0.875 - 0.919) 0.842 (0.815 – 0.868) 0.865 (0.837 - 0.889),,codex
+S043-R05,S043,current oral medications (COM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,NR,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.894,0-1,0.894,document,NR,yes,no,p.27 Table 1,F1 score 0.923 (0.860 – 0.972) 0.887 (0.812 – 0.947) 0.899 (0.825 – 0.956) 0.906 (0.837 – 0.966) 0.894 (0.824 – 0.954),,codex
+S043-R06,S043,current oral medications (COM),attribute,glaucoma clinical notes,NR,Grok 4.1,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.923,0-1,0.923,document,NR,no,yes,p.27 Table 1,F1 score 0.923 (0.860 – 0.972) 0.887 (0.812 – 0.947) 0.899 (0.825 – 0.956) 0.906 (0.837 – 0.966) 0.894 (0.824 – 0.954),,codex
+S043-R07,S043,proposed oral medication changes (Δ OM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,NR,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.940,0-1,0.940,document,NR,yes,no,p.28 Table 1,F1 score 0.958 (0.889 – 1.000) 0.815 (0.681 - 0.923) 0.937 (0.851 - 1.000) 0.835 (0.694 – 0.943) 0.940 (0.857 – 1.000),,codex
+S043-R08,S043,proposed oral medication changes (Δ OM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.958,0-1,0.958,document,NR,no,yes,p.28 Table 1,F1 score 0.958 (0.889 – 1.000) 0.815 (0.681 - 0.923) 0.937 (0.851 - 1.000) 0.835 (0.694 – 0.943) 0.940 (0.857 – 1.000),,codex
+S044-R01,S044,clinically grouped mRS outcome classification,field extraction,103 aneurysm-patient clinical letters,103 letters,Qwen3-32B,open LLM,Qwen,32,no,zero-shot,4-bit quantization; constrained JSON output,yes,F1,macro,0.93,0-1,0.93,field,NR,yes,no,p.9 Table 3,"Model 0.92 [0.86–0.97] 0.93 [0.88–0.97] 0.92 [0.86–0.97]
+https://doi.org/10.3390/make8080248",,codex
+S052-R01,S052,Main,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.715,0-1,0.715,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.522 (0.467–0.580) 0.510 (0.449–0.579) 0.715 (0.671–0.757)
+PE (GPT-4o) 0.761 (0.710–0.803) 0.768 (0.693–0.838) 0.881 (0.849–0.91)
+Sub (manual) 0.917 0.787 0.941
+FT (Int",,codex
+S052-R02,S052,Main,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.937,0-1,0.937,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.870 (0.830–0.907) 0.830 (0.774–0.888) 0.937 (0.914–0.958)
+PE (Phi-4) 0.522 (0.467–0.580) 0.510 (0.449–0.579) 0.715 (0.671–0.757)
+PE (GPT-4o) 0.761 (0.710–0.803) 0.768",,codex
+S052-R03,S052,Sub,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.797,0-1,0.797,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.460 (0.403–0.520) 0.611 (0.528–0.697) 0.797 (0.761–0.833)
+PE (GPT-4o) 0.634 (0.580–0.687) 0.795* (0.719–0.872) 0.830 (0.799–0.862)
+No CAD (manual) 0.974 0.964 0.945
+FT",,codex
+S052-R04,S052,Sub,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.830,0-1,0.830,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.634 (0.580–0.687) 0.795* (0.719–0.872) 0.830 (0.799–0.862)
+No CAD (manual) 0.974 0.964 0.945
+FT (Intfloat) 0.960* (0.937–0.980) 0.883 (0.820–0.939) 0.918* (0.867–0.95",,codex
+S052-R05,S052,No CAD,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.782,0-1,0.782,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.974* (0.953–0.990) 0.899 (0.865–0.928) 0.782 (0.727–0.838)
+PE (GPT-4o) 0.973* (0.953–0.990) 0.950* (0.904–0.985) 0.949* (0.913–0.979)
+Occlusion (manual) 0.926 0.933 0.",,codex
+S052-R06,S052,No CAD,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.949,0-1,0.949,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.973* (0.953–0.990) 0.950* (0.904–0.985) 0.949* (0.913–0.979)
+Occlusion (manual) 0.926 0.933 0.917
+FT (Intfloat) 0.793 (0.750–0.837) 0.752 (0.701–0.801) 0.761 (0.710–0",,codex
+S052-R07,S052,Occlusion,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.709,0-1,0.709,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.761 (0.713–0.81) 0.697 (0.646–0.752) 0.709 (0.654–0.767)
+PE (GPT-4o) 0.927* (0.897–0.953) 0.917* (0.881–0.949) 0.919* (0.884–0.949)
+Treatment strategy (manual) 0.976 0",,codex
+S052-R08,S052,Occlusion,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.919,0-1,0.919,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.927* (0.897–0.953) 0.917* (0.881–0.949) 0.919* (0.884–0.949)
+Treatment strategy (manual) 0.976 0.924 0.818
+FT (Intfloat) 0.953* (0.930–0.977) 0.895* (0.825–0.955) 0.8",,codex
+S052-R09,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.847,0-1,0.847,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.940 (0.910–0.967) 0.835 (0.748–0.917) 0.847* (0.762–0.919)
+PE (GPT-4o) 0.977* (0.957–0.993) 0.915* (0.841–0.976) 0.930* (0.868–0.977)
+Graft (manual) 0.987 0.940 0.957",,codex
+S052-R10,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.970,0-1,0.970,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.987* (0.973–0.997) 0.970* (0.926–0.998) 0.97* (0.931–0.997)
+PE (Phi-4) 0.940 (0.910–0.967) 0.835 (0.748–0.917) 0.847* (0.762–0.919)
+PE (GPT-4o) 0.977* (0.957–0.993) 0",,codex
+S052-R11,S052,Graft,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.947,0-1,0.947,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.993* (0.983–1.00) 0.924* (0.864–0.974) 0.947* (0.905–0.981)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.996* (0.990–1.00) 0.986* (0.965–1.00)
+Four LLM models and training method",,codex
+S052-R12,S052,Graft,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.992,0-1,0.992,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.996* (0.990–1.00) 0.998* (0.994–1.00) 0.992* (0.975–1.00)
+PE (Phi-4) 0.993* (0.983–1.00) 0.924* (0.864–0.974) 0.947* (0.905–0.981)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.9",,codex
+S052-R13,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.707,0-1,0.707,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.893 (0.860–0.927) 0.783 (0.688–0.869) 0.707 (0.532–0.853)
+PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993)
+Aortic Sten. grade (manual) 1.00 1.",,codex
+S052-R14,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.896,0-1,0.896,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.990* (0.977–1.00) 0.963* (0.900–1.00) 0.896* (0.738–1.00)
+PE (Phi-4) 0.893 (0.860–0.927) 0.783 (0.688–0.869) 0.707 (0.532–0.853)
+PE (GPT-4o) 0.980 (0.963–0.993) 0.946",,codex
+S052-R15,S052,Aortic Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.516,0-1,0.516,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.866 (0.823–0.903) 0.791 (0.721–0.850) 0.516 (0.377–0.665)
+PE (GPT-4o) 0.990* (0.977–1.00) 0.856* (0.753–1.00) 0.836* (0.712–1.00)
+Aortic Reg. grade (manual) 0.993 0.98",,codex
+S052-R16,S052,Aortic Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.991,0-1,0.991,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.997* (0.987–1.00) 0.999* (0.997–1.00) 0.991* (0.968–1.00)
+PE (Phi-4) 0.866 (0.823–0.903) 0.791 (0.721–0.850) 0.516 (0.377–0.665)
+PE (GPT-4o) 0.990* (0.977–1.00) 0.856",,codex
+S052-R17,S052,Aortic Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.661,0-1,0.661,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.876 (0.837–0.913) 0.795 (0.772–0.834) 0.661 (0.553–0.744)
+PE (GPT-4o) 0.973 (0.953–0.990) 0.885 (0.751–0.967) 0.904 (0.742–0.980)
+Tricuspid Sten. grade (manual) 0.993",,codex
+S052-R18,S052,Aortic Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.978,0-1,0.978,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.987* (0.973–0.997) 0.975* (0.948–0.999) 0.978* (0.952–0.996)
+PE (Phi-4) 0.876 (0.837–0.913) 0.795 (0.772–0.834) 0.661 (0.553–0.744)
+PE (GPT-4o) 0.973 (0.953–0.990) 0.",,codex
+S052-R19,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.185,0-1,0.185,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.838 (0.793–0.877) 0.435 (0.415–0.454) 0.185 (0.177–0.229)
+PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00)
+Tricuspid Reg.grade (manual) 0.993 0.",,codex
+S052-R20,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.831,0-1,0.831,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.967 (0.947–0.987) 0.983 (0.972–0.993) 0.831 (0.727–0.925)
+PE (Phi-4) 0.838 (0.793–0.877) 0.435 (0.415–0.454) 0.185 (0.177–0.229)
+PE (GPT-4o) 0.997* (0.990–1.00) 0.998",,codex
+S052-R21,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.491,0-1,0.491,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.853 (0.81–0.893) 0.797 (0.702–0.878) 0.491 (0.360–0.657)
+PE (GPT-4o) 0.980* (0.963–0.993) 0.961 (0.912–0.997) 0.901* (0.701–0.985)
+Pulmonary Sten. grade (manual) 0.997",,codex
+S052-R22,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.901,0-1,0.901,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.980* (0.963–0.993) 0.961 (0.912–0.997) 0.901* (0.701–0.985)
+Pulmonary Sten. grade (manual) 0.997 0.998 0.991
+FT (Intfloat) 0.987* (0.973–0.997) 0.950* (0.896–0.998) 0",,codex
+S052-R23,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.260,0-1,0.260,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.834 (0.790–0.877) 0.508 (0.459–0.568) 0.260 (0.191–0.384)
+PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00)
+Pulmonary Reg. grade (manual) 0.997 0",,codex
+S052-R24,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.990,0-1,0.990,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.993* (0.976–1.00)
+Mitral Sten. Grade (manual) 1.00 1.00 1.00
+FT (Intfloat) 0.969 (0.950–0.987) 0.555 (0.495–0.667) 0.578 (0.48",,codex
+S052-R25,S052,Pulmonary Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,NR,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.427,0-1,0.427,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.816 (0.770–0.860) 0.740 (0.684–0.800) 0.427 (0.349–0.507)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.950* (0.831–1.00) 0.964* (0.876–1.00)
+Four LLM models and training methods",,codex
+S052-R26,S052,Pulmonary Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.964,0-1,0.964,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.993* (0.983–1.00) 0.950* (0.831–1.00) 0.964* (0.876–1.00)
+Four LLM models and training methods are compared on nine labels extracted from TTE reports. Comparison is d",,codex

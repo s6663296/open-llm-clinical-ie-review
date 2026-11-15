@@ -1,0 +1,9 @@
+{
+  "batches_merged": [
+    "batch_01"
+  ],
+  "batches_skipped": [],
+  "studies": 5,
+  "results": 35,
+  "open_llm_results": 24
+}

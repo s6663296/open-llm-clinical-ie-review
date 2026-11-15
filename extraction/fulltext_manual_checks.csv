@@ -1,0 +1,16 @@
+record_id,verdict,checked_by,date,note
+R0092,same_study,agent,2026-11-14,line-numbered medRxiv PDF; title identical apart from spelling (Utilise)
+R0211,same_study,agent,2026-11-14,medRxiv preprint title: Development of an LLM Pipeline Surpassing Physicians in Cardiovascular Risk Score Calculation
+R0221,same_study,agent,2026-11-14,medRxiv preprint title: Automating the cancer registry (same authors Chou/Chang)
+R0224,same_study,agent,2026-11-14,preprint title: Fine-Tuned Large Language Models for Detecting Social Isolation from Unstructured Clinical Notes
+R0239,same_study,agent,2026-11-14,line-numbered PDF; title identical
+R0292,same_study,agent,2026-11-14,preprint title: Large Language Models for Psychiatric Phenotype Extraction from Electronic Health Records (Frydman-Gani)
+R0294,same_study,agent,2026-11-14,line-numbered PDF; title abbreviated (LLM-Powered)
+R0368,same_study,agent,2026-11-14,line-numbered PDF; title identical
+R0529,same_study,agent,2026-11-14,preprint title: SPELL-LLMs (Kleinlein; Kovacheva)
+R0573,same_study,agent,2026-11-14,preprint title: Consensus-based reasoning with locally deployed LLMs ... surgical pathology reports
+R0679,same_study,agent,2026-11-14,title identical; ligature (deidentiﬁcation) breaks automatic match
+R0847,same_study,agent,2026-11-14,preprint title: Thoracic Aorta Measurement Extraction from CT Radiology Reports Using Instruction Tuned LLMs
+R0873,same_study,agent,2026-11-14,preprint title: Large language models outperform traditional structured data-based approaches in identifying immunosuppressed patients
+R1032,same_study,agent,2026-11-14,preprint title: Development of a privacy preserving LLM for automated data extraction from thyroid cancer pathology reports
+R0382,abstract_only,agent,2026-11-14,OA file is the AJR Chinese-translated abstract only (~2k chars); no full text available; extract from abstract only and flag QUERY

@@ -1,0 +1,94 @@
+{
+ "v": 5,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-14T14:38:58Z"
+ },
+ "lists": "css",
+ "format": {
+  "v": 1,
+  "shared": [
+   "project/deck.css"
+  ]
+ },
+ "title": "開源 LLM 臨床病歷資訊抽取：系統性回顧",
+ "order": [
+  "cover",
+  "agenda",
+  "why-ehr",
+  "why-open",
+  "rq",
+  "pico",
+  "search",
+  "screening",
+  "scope",
+  "prisma",
+  "extraction",
+  "overview",
+  "trend",
+  "lang",
+  "task",
+  "rq1",
+  "models",
+  "params",
+  "rq2",
+  "strategy",
+  "deploy",
+  "rq3",
+  "gap",
+  "gap-dist",
+  "ft-vs-closed",
+  "cases",
+  "takeaways",
+  "limits",
+  "implications",
+  "conclusion",
+  "qa"
+ ],
+ "sections": {
+  "s1": {
+   "description": "開場與流程",
+   "start": "cover"
+  },
+  "s2": {
+   "description": "背景與研究問題",
+   "start": "why-ehr"
+  },
+  "s3": {
+   "description": "方法：條件、檢索、篩選、收緊範圍、萃取",
+   "start": "pico"
+  },
+  "s4": {
+   "description": "結果概覽：數量、語言、文本、任務",
+   "start": "overview"
+  },
+  "s5": {
+   "description": "RQ1 模型",
+   "start": "rq1"
+  },
+  "s6": {
+   "description": "RQ2 策略與部署",
+   "start": "rq2"
+  },
+  "s7": {
+   "description": "RQ3 開源 vs 閉源效能",
+   "start": "rq3"
+  },
+  "s8": {
+   "description": "討論、限制與結論",
+   "start": "takeaways"
+  }
+ },
+ "cover": "cover",
+ "faces": {
+  "noto-sans-tc": {
+   "family": "Noto Sans TC",
+   "href": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+  },
+  "noto-serif-tc": {
+   "family": "Noto Serif TC",
+   "href": "https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap"
+  }
+ },
+ "designSystems": []
+}

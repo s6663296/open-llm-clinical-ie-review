@@ -1,0 +1,9 @@
+date,batch,target,action,reason
+2026-11-14,01,S010-R01..R06,deleted,synthetic validation cases; protocol keeps only real-text results (Codex brief updated after batch 01)
+2026-11-14,01,S002.closed_comparators,changed 'GPT-4.1-mini; GPT-4o-mini' -> 'GPT-4.1-mini; GPT-4o-mini; GPT-4o',Tables 5-6 (p.11-12) label the RAG comparator GPT-4o
+2026-11-14,01,S002.comparators_src,changed 'p.11; p.12' -> 'p.8; p.11; p.12',add table pages for GPT-4o
+2026-11-14,01,S005-R01.strategy,changed 'few-shot' -> 'LoRA',"p.10: Qwen2-7B-Instruct supervised instruction tuning with LoRA, not few-shot"
+2026-11-14,01,S005.strategies,changed 'few-shot' -> 'few-shot; LoRA',p.10: GPT-4o in-context few-shot; Qwen2-7B LoRA instruction tuning
+2026-11-14,01,S005.deployment,changed 'public API' -> 'private cloud',p.10: GPT-4o run in Azure OpenAI environment; no public API stated
+2026-11-14,01,S005.deployment_src,changed 'p.3' -> 'p.10',deployment evidence on p.10
+2026-11-14,01,S002.comparators_src,changed 'p.8; p.11; p.12' -> 'p.11; p.12',revert: p.8 added without verification

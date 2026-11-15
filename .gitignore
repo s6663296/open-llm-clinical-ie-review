@@ -4,3 +4,5 @@ fulltext/*.pdf
 fulltext/*.xml
 fulltext/*_wrong_*.pdf
 fulltext_text/
+fulltext_text_ft/
+extraction/codex/logs/

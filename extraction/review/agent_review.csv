@@ -1,0 +1,6 @@
+id,agent_review,agent_note
+S001,query,R2 未在正文確認：Gemini 3 Flash 數值只在附錄 A.4（未萃取）；開源最佳 LLaMA3.3-70B F1 94.0（p.10 Table 2）已對頁；作者決定是否保留於課堂版
+S002,fix,閉源比較列在 Table 5–6 標為 GPT-4o，已補入 closed_comparators；主要結果只在圖中，數值取自 Table 5–6 clean（Option A）基準；開源最佳 LLaMA 3.2 F1 53.23 vs GPT-4o 94.90 已對頁
+S003,ok,MedGemma F1 56.93 vs Gemini 2.5 Pro 73.28（strict，p.6 Table 2）欄位順序已對原文
+S005,fix,Qwen2-7B 為 LoRA 指令微調（p.10），strategy 改 LoRA；GPT-4o 於 Azure OpenAI 執行，deployment 改 private cloud；micro F1 0.81 vs 0.87 已對頁（p.3）；任務為句子分類到 41 類，屬邊界案例
+S010,ok,deepseek-r1-14b 77.6% vs gemini-2.5-pro 87.7%（p.5 Table 2）已對頁；文字為預印本版

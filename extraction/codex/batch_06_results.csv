@@ -1,0 +1,259 @@
+result_id,study_id,task,task_type,dataset,test_n,model,model_class,model_family,params_b,medical_domain,strategy,strategy_detail,quantized,metric,f1_avg,value_reported,metric_scale_original,value,eval_level,matching,is_best_open,is_best_comparator,value_src,value_context,note,extractor
+S071-R01,S071,Medication Extraction,NER,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,47.3,percent,0.473,entity,NR,no,no,p.14 Table 3,47.3 ± 0.3 94.5 ± 0.2 89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R02,S071,Medication Extraction,NER,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,77.3,percent,0.773,entity,NR,no,no,p.14 Table 3,77.3 ± 0.8 95.7 ± 0.3 90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R03,S071,Medication Extraction,NER,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,41.5,percent,0.415,entity,NR,no,no,p.15 Table 3,41.5 ± 0.2 93.0 ± 0.3 86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R04,S071,Medication Extraction,NER,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,42.8,percent,0.428,entity,NR,no,no,p.15 Table 3,42.8 ± 0.7 91.1 ± 0.3 82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R05,S071,Medication Extraction,NER,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,micro,66.5,percent,0.665,entity,NR,no,no,p.14 Table 2,66.5 ± 1.1 86.9 ± 0.6 74.5 ± 0.8 76.0 88.6 ± 0.2 83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R06,S071,Medication Extraction,NER,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,CoT,chain-of-thought,NR,F1,micro,53.2,percent,0.532,entity,NR,no,no,p.15 Table 4,53.2 ± 0.5 82.2 ± 0.7 74.0 ± 0.6 69.8 75.8 ± 0.5 59.8 ± 1.0 51.0 ± 0.6 62.2 43.7 ± 0.7 58.2 ± 0.7 40.3 ± 0.3 47.4,,codex
+S071-R07,S071,Medication Extraction,NER,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,micro,52.5,percent,0.525,entity,NR,no,no,p.15 Table 4,52.5 ± 0.6 89.1 ± 0.8 83.2 ± 0.6 74.9 72.7 ± 0.7 79.6 ± 2.0 59.6 ± 0.7 70.6 43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R08,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,71.0,percent,0.71,entity,NR,no,no,p.15 Table 3,71.0 ± 0.9 94.6 ± 0.1 88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R09,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,88.5,percent,0.885,entity,NR,no,no,p.15 Table 3,88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R10,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,CoT,chain-of-thought,NR,F1,micro,93.1,percent,0.931,entity,NR,yes,no,p.16 Table 4,93.1 ± 0.6 91.6 ± 0.9 84.4 ± 0.3 89.7 83.2 ± 0.6 80.7 ± 0.9 66.8 ± 1.5 76.9 74.0 ± 0.6 73.5 ± 1.0 56.1 ± 1.2 67.9,,codex
+S071-R11,S071,Medication Extraction,NER,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,F1,micro,96.9,percent,0.969,entity,NR,no,yes,p.14 Table 2,96.9 ± 0.2 95.0 ± 0.2 90.0 ± 0.1 94.0 83.0 ± 0.4 86.0 ± 0.5 65.2 ± 0.7 78.1 82.6 ± 0.8 75.6 ± 0.7 60.0 ± 0.5 72.7,,codex
+S071-R12,S071,Medication Extraction,NER,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,94.5,percent,0.945,entity,NR,no,no,p.14 Table 3,94.5 ± 0.2 89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R13,S071,Medication Extraction,NER,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,95.7,percent,0.957,entity,NR,yes,no,p.14 Table 3,95.7 ± 0.3 90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R14,S071,Medication Extraction,NER,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,93.0,percent,0.93,entity,NR,no,no,p.15 Table 3,93.0 ± 0.3 86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R15,S071,Medication Extraction,NER,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,91.1,percent,0.911,entity,NR,no,no,p.15 Table 3,91.1 ± 0.3 82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R16,S071,Medication Extraction,NER,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,93.4,percent,0.934,entity,NR,no,no,p.15 Table 3,93.4 ± 0.2 87.3 ± 0.4 79.8 88.2 ± 0.6 67.7 ± 0.9 61.6 ± 1.4 72.5 52.1 ± 0.7 60.7 ± 1.8 54.0 ± 0.7 55.6,,codex
+S071-R17,S071,Medication Extraction,NER,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,micro,86.8,percent,0.868,entity,NR,no,no,p.15 Table 3,86.8 ± 0.5 85.3 ± 0.2 69.7 69.0 ± 0.8 70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R18,S071,Medication Extraction,NER,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,micro,93.3,percent,0.933,entity,NR,no,no,p.15 Table 3,93.3 ± 0.2 87.8 ± 0.2 75.9 79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R19,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,94.6,percent,0.946,entity,NR,no,no,p.15 Table 3,94.6 ± 0.1 88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R20,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,95.0,percent,0.95,entity,NR,no,no,p.15 Table 3,95.0 ± 0.1 88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R21,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,micro,95.3,percent,0.953,entity,NR,no,no,p.15 Table 3,95.3 ± 0.1 87.9 ± 0.0 84.5 87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R22,S071,Medication Extraction,NER,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,micro,96.1,percent,0.961,entity,NR,no,yes,p.14 Table 3,96.1 ± 0.3 90.0 ± 0.2 91.4 89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R23,S071,Medication Extraction,NER,MIV-Med,297 snippets,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,89.2,percent,0.892,entity,NR,no,no,p.14 Table 3,89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R24,S071,Medication Extraction,NER,MIV-Med,297 snippets,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,90.1,percent,0.901,entity,NR,yes,no,p.14 Table 3,90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R25,S071,Medication Extraction,NER,MIV-Med,297 snippets,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,86.4,percent,0.864,entity,NR,no,no,p.15 Table 3,86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R26,S071,Medication Extraction,NER,MIV-Med,297 snippets,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,82.7,percent,0.827,entity,NR,no,no,p.15 Table 3,82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R27,S071,Medication Extraction,NER,MIV-Med,297 snippets,MeLLaMA-70B-chat,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,87.3,percent,0.873,entity,NR,no,no,p.15 Table 3,87.3 ± 0.4 79.8 88.2 ± 0.6 67.7 ± 0.9 61.6 ± 1.4 72.5 52.1 ± 0.7 60.7 ± 1.8 54.0 ± 0.7 55.6,,codex
+S071-R28,S071,Medication Extraction,NER,MIV-Med,297 snippets,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,micro,85.3,percent,0.853,entity,NR,no,no,p.15 Table 3,85.3 ± 0.2 69.7 69.0 ± 0.8 70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R29,S071,Medication Extraction,NER,MIV-Med,297 snippets,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,micro,87.8,percent,0.878,entity,NR,no,no,p.15 Table 3,87.8 ± 0.2 75.9 79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R30,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,88.9,percent,0.889,entity,NR,no,no,p.15 Table 3,88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R31,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,88.5,percent,0.885,entity,NR,no,no,p.15 Table 3,88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R32,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,micro,87.9,percent,0.879,entity,NR,no,no,p.15 Table 3,87.9 ± 0.0 84.5 87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R33,S071,Medication Extraction,NER,MIV-Med,297 snippets,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,F1,micro,90.0,percent,0.9,entity,NR,no,yes,p.14 Table 2,90.0 ± 0.2 91.4 89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R34,S071,Medication Status Classification,attribute,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,zero-shot,zero-shot,NR,F1,macro,63.5,percent,0.635,entity,NR,no,no,p.14 Table 2,63.5 ± 1.3 61.7 ± 0.7 56.7 ± 1.5 60.6 26.8 ± 0.5 60.1 ± 1.6 49.4 ± 1.5 45.4,,codex
+S071-R35,S071,Medication Status Classification,attribute,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,88.4,percent,0.884,entity,NR,no,no,p.14 Table 3,88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R36,S071,Medication Status Classification,attribute,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,69.6,percent,0.696,entity,NR,no,no,p.15 Table 3,69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R37,S071,Medication Status Classification,attribute,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,64.7,percent,0.647,entity,NR,no,no,p.15 Table 3,64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R38,S071,Medication Status Classification,attribute,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,88.6,percent,0.886,entity,NR,no,no,p.14 Table 2,88.6 ± 0.2 83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R39,S071,Medication Status Classification,attribute,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,zero-shot,zero-shot,NR,F1,macro,75.8,percent,0.758,entity,NR,no,no,p.14 Table 2,75.8 ± 0.4 64.4 ± 0.4 50.2 ± 0.6 63.5 41.3 ± 0.3 55.0 ± 0.2 48.7 ± 0.2 48.3,,codex
+S071-R40,S071,Medication Status Classification,attribute,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,macro,79.2,percent,0.792,entity,NR,no,no,p.15 Table 3,79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R41,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,CoT,chain-of-thought,NR,F1,macro,87.7,percent,0.877,entity,NR,no,no,p.16 Table 4,87.7 ± 0.2 83.6 ± 1.2 66.8 ± 1.3 79.4 52.5 ± 1.2 69.7 ± 1.6 58.3 ± 0.6 60.2,,codex
+S071-R42,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,90.7,percent,0.907,entity,NR,yes,no,p.15 Table 3,90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R43,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,87.8,percent,0.878,entity,NR,no,no,p.15 Table 3,87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R44,S071,Medication Status Classification,attribute,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,89.1,percent,0.891,entity,NR,no,yes,p.14 Table 3,89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R45,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,68.4,percent,0.684,entity,NR,no,no,p.14 Table 3,68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R46,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,85.4,percent,0.854,entity,NR,yes,no,p.14 Table 3,85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R47,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,70.4,percent,0.704,entity,NR,no,no,p.14 Table 2,70.4 ± 0.6 58.8 ± 0.2 65.1 22.4 ± 0.7 59.3 ± 1.3 49.8 ± 1.9 43.8,,codex
+S071-R48,S071,Medication Status Classification,attribute,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,CoT,chain-of-thought,NR,F1,macro,62.1,percent,0.621,entity,NR,no,no,p.15 Table 4,62.1 ± 0.5 53.4 ± 0.7 45.9 17.5 ± 0.5 55.4 ± 0.9 40.7 ± 0.6 37.9,,codex
+S071-R49,S071,Medication Status Classification,attribute,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,83.2,percent,0.832,entity,NR,no,no,p.14 Table 2,83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R50,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,70.7,percent,0.707,entity,NR,no,no,p.15 Table 3,70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R51,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,macro,79.6,percent,0.796,entity,NR,no,no,p.15 Table 4,79.6 ± 2.0 59.6 ± 0.7 70.6 43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R52,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,CoT,chain-of-thought,NR,F1,macro,83.6,percent,0.836,entity,NR,no,no,p.16 Table 4,83.6 ± 1.2 66.8 ± 1.3 79.4 52.5 ± 1.2 69.7 ± 1.6 58.3 ± 0.6 60.2,,codex
+S071-R53,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,CoT,chain-of-thought,NR,F1,macro,83.6,percent,0.836,entity,NR,no,no,p.16 Table 4,83.6 ± 1.0 65.0 ± 0.4 77.9 72.2 ± 2.3 76.9 ± 0.9 54.0 ± 1.5 67.7,,codex
+S071-R54,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,84.7,percent,0.847,entity,NR,no,no,p.15 Table 3,84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R55,S071,Medication Status Classification,attribute,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,86.6,percent,0.866,entity,NR,no,yes,p.14 Table 3,86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R56,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,66.0,percent,0.66,entity,NR,no,no,p.14 Table 3,66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R57,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,73.7,percent,0.737,entity,NR,no,no,p.14 Table 3,73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R58,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,60.6,percent,0.606,entity,NR,no,no,p.15 Table 3,60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R59,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,58.3,percent,0.583,entity,NR,no,no,p.15 Table 3,58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R60,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,62.0,percent,0.62,entity,NR,no,no,p.14 Table 2,62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R61,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,69.7,percent,0.697,entity,NR,no,no,p.15 Table 3,69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R62,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,macro,75.8,percent,0.758,entity,NR,no,no,p.15 Table 3,75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R63,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,68.3,percent,0.683,entity,NR,no,no,p.15 Table 3,68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R64,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,68.9,percent,0.689,entity,NR,no,no,p.15 Table 3,68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R65,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,75.9,percent,0.759,entity,NR,yes,no,p.15 Table 3,75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R66,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,68.4,percent,0.684,entity,NR,no,yes,p.14 Table 3,68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R67,S071,End-to-End Classification,attribute,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,40.6,percent,0.406,entity,NR,no,no,p.14 Table 3,40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R68,S071,End-to-End Classification,attribute,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,67.9,percent,0.679,entity,NR,no,no,p.14 Table 3,67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R69,S071,End-to-End Classification,attribute,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,35.8,percent,0.358,entity,NR,no,no,p.15 Table 3,35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R70,S071,End-to-End Classification,attribute,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,30.8,percent,0.308,entity,NR,no,no,p.15 Table 3,30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R71,S071,End-to-End Classification,attribute,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,56.7,percent,0.567,entity,NR,no,no,p.14 Table 2,56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R72,S071,End-to-End Classification,attribute,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,CoT,chain-of-thought,NR,F1,macro,43.7,percent,0.437,entity,NR,no,no,p.15 Table 4,43.7 ± 0.7 58.2 ± 0.7 40.3 ± 0.3 47.4,,codex
+S071-R73,S071,End-to-End Classification,attribute,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,macro,43.6,percent,0.436,entity,NR,no,no,p.15 Table 4,43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R74,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,61.2,percent,0.612,entity,NR,no,no,p.15 Table 3,61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R75,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,78.1,percent,0.781,entity,NR,yes,no,p.15 Table 3,78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R76,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,CoT,chain-of-thought,NR,F1,macro,74.0,percent,0.74,entity,NR,no,no,p.16 Table 4,74.0 ± 0.6 73.5 ± 1.0 56.1 ± 1.2 67.9,,codex
+S071-R77,S071,End-to-End Classification,attribute,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought,NR,F1,macro,83.1,percent,0.831,entity,NR,no,yes,p.15 Table 4,83.1 ± 1.0 75.7 ± 1.0 60.8 ± 0.6 73.2,,codex
+S071-R78,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,zero-shot,zero-shot,NR,F1,macro,60.1,percent,0.601,entity,NR,no,no,p.14 Table 2,60.1 ± 1.6 49.4 ± 1.5 45.4,,codex
+S071-R79,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,79.4,percent,0.794,entity,NR,yes,no,p.14 Table 3,79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R80,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,59.3,percent,0.593,entity,NR,no,no,p.14 Table 2,59.3 ± 1.3 49.8 ± 1.9 43.8,,codex
+S071-R81,S071,End-to-End Classification,attribute,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,55.9,percent,0.559,entity,NR,no,no,p.15 Table 3,55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R82,S071,End-to-End Classification,attribute,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,CoT,chain-of-thought,NR,F1,macro,62.7,percent,0.627,entity,NR,no,no,p.15 Table 4,62.7 ± 0.7 53.3 ± 2.7 52.6,,codex
+S071-R83,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,59.3,percent,0.593,entity,NR,no,no,p.15 Table 3,59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R84,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,zero-shot,zero-shot,NR,F1,macro,71.6,percent,0.716,entity,NR,no,no,p.14 Table 2,71.6 ± 1.0 56.3 ± 1.1 55.1,,codex
+S071-R85,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,71.8,percent,0.718,entity,NR,no,no,p.15 Table 3,71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R86,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,CoT,chain-of-thought,NR,F1,macro,76.9,percent,0.769,entity,NR,no,no,p.16 Table 4,76.9 ± 0.9 54.0 ± 1.5 67.7,,codex
+S071-R87,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,77.8,percent,0.778,entity,NR,no,no,p.15 Table 3,77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R88,S071,End-to-End Classification,attribute,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,80.4,percent,0.804,entity,NR,no,yes,p.14 Table 3,80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S075-R01,S075,Eviction mention detection,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.866,0-1,0.866,document,NR,no,no,p.3 Table 1,"0.866 (0.850-0.882) p < 0.05 0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938)",,codex
+S075-R02,S075,Eviction mention detection,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.868,0-1,0.868,document,NR,no,no,p.3 Table 1,"0.868 (0.858-0.877) p < 0.05 0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p",,codex
+S075-R03,S075,Eviction mention detection,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.912,0-1,0.912,document,NR,yes,no,p.3 Table 1,"0.912 (0.904-0.920) p < 0.05 0.891 (0.882-0.900) p < 0.05 0.922 (0.918-0.926)
+SynthEHR-Eviction (Qwen2.5-3B) 0.987 (0.976-0.997) p < 0.001 0",,codex
+S075-R04,S075,Eviction mention detection,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.850,0-1,0.850,document,NR,no,no,p.3 Table 1,"0.850 (0.840-0.859) p < 0.05 0.834 (0.820-0.848) p < 0.05 0.890 (0.884-0.896) p < 0.05
+GPT-4o-APO (baseline) 0.939 (0.912-0.965) 0.938 (0.92",,codex
+S075-R05,S075,Eviction mention detection,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.938,0-1,0.938,document,NR,no,yes,p.3 Table 1,"0.938 (0.926-0.949) 0.947 (0.936-0.958) 0.941 (0.931-0.951)
+Performance Results of Various Models for Step 2: Eviction Multi-Class (Macro-F1",,codex
+S075-R06,S075,Eviction mention detection,attribute,MIMIC,120 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.916,0-1,0.916,document,NR,no,yes,p.3 Table 1,"0.916 (0.890-0.942) 0.892 (0.854-0.930) p < 0.05 0.931 (0.916-0.947)
+SynthEHR-Eviction (Bio ClinicalBERT) 0.978 (0.960-0.995) p < 0.01 0.756",,codex
+S075-R07,S075,Eviction mention detection,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.891,0-1,0.891,document,NR,yes,no,p.3 Table 1,"0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938) 0.868 (0.858-0.877) p < 0.05",,codex
+S075-R08,S075,Eviction mention detection,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p < 0.01 0.912 (0.904-0.920) p",,codex
+S075-R09,S075,Eviction mention detection,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.891,0-1,0.891,document,NR,no,no,p.3 Table 1,"0.891 (0.882-0.900) p < 0.05 0.922 (0.918-0.926)
+SynthEHR-Eviction (Qwen2.5-3B) 0.987 (0.976-0.997) p < 0.001 0.850 (0.840-0.859) p < 0.05 0",,codex
+S075-R10,S075,Eviction mention detection,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.834,0-1,0.834,document,NR,no,no,p.3 Table 1,"0.834 (0.820-0.848) p < 0.05 0.890 (0.884-0.896) p < 0.05
+GPT-4o-APO (baseline) 0.939 (0.912-0.965) 0.938 (0.926-0.949) 0.947 (0.936-0.958)",,codex
+S075-R11,S075,Eviction mention detection,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.947,0-1,0.947,document,NR,no,yes,p.3 Table 1,"0.947 (0.936-0.958) 0.941 (0.931-0.951)
+Performance Results of Various Models for Step 2: Eviction Multi-Class (Macro-F1 shown above, Micro-",,codex
+S075-R12,S075,Eviction mention detection,attribute,PMC,48 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.892,0-1,0.892,document,NR,no,yes,p.3 Table 1,"0.892 (0.854-0.930) p < 0.05 0.931 (0.916-0.947)
+SynthEHR-Eviction (Bio ClinicalBERT) 0.978 (0.960-0.995) p < 0.01 0.756 (0.706-0.806) p < 0",,codex
+S075-R13,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.925,0-1,0.925,document,NR,no,no,p.3 Table 1,"0.925 (0.909-0.941) p < 0.01 0.861 (0.834-0.888) 0.897 (0.882-0.913)
+SynthEHR-Eviction (LLama-3.2-3B) 0.908 (0.896-0.921) 0.882 (0.848-0.916",,codex
+S075-R14,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.882,0-1,0.882,document,NR,no,no,p.3 Table 1,"0.882 (0.848-0.916) 0.824 (0.796-0.853) 0.871 (0.849-0.893)
+SynthEHR-Eviction (Qwen2.5-7B) 0.921(0.905-0.938) 0.938(0.932-0.945) p < 0.001 0",,codex
+S075-R15,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.938,0-1,0.938,document,NR,yes,no,p.3 Table 1,"0.938) 0.939 (0.933-0.944) p < 0.001 0.804 (0.767-0.842) 0.888 (0.869-0.907)
+SynthEHR-Eviction (Qwen2.5-3B) 0.889 (0.824-0.954) 0.850 (0.827",,codex
+S075-R16,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.853,0-1,0.853,document,NR,no,no,p.3 Table 1,"0.853 (0.832-0.875) p < 0.05 0.857 (0.801-0.914) 0.874 (0.856-0.892)
+GPT-4o-APO (baseline) 0.909(0.886-0.931) 0.883(0.856-0.911) 0.868(0.806",,codex
+S075-R17,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.883,0-1,0.883,document,NR,no,yes,p.3 Table 1,"0.883(0.856-0.911) 0.868(0.806-0.929) 0.886(0.858-0.915)
+Performance Results of Various Models for Step 3: Non-Eviction Multi-Class (Macro-F",,codex
+S075-R18,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,BERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.880,0-1,0.880,document,NR,no,yes,p.3 Table 1,"0.880 (0.842-0.918) 0.444 (0.285-0.603) p < 0.05 0.711 (0.647-0.775) p < 0.05
+SynthEHR-Eviction (biobert-v1.1) 0.829 (0.790-0.868) p < 0.05",,codex
+S075-R19,S075,Eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.861,0-1,0.861,document,NR,yes,no,p.3 Table 1,"0.861 (0.834-0.888) 0.897 (0.882-0.913)
+SynthEHR-Eviction (LLama-3.2-3B) 0.908 (0.896-0.921) 0.882 (0.848-0.916) 0.824 (0.796-0.853) 0.871 (",,codex
+S075-R20,S075,Eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p < 0.01 0.912 (0.904-0.920) p",,codex
+S075-R21,S075,Eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.789-0.860) 0.895 (0.877-0.912)
+SynthEHR-Eviction (Qwen2.5-3B) 0.911 (0.901-0.921) 0.853 (0.832-0.875) p < 0.05 0.857 (0.801-0.914)",,codex
+S075-R22,S075,Eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.857,0-1,0.857,document,NR,no,no,p.3 Table 1,"0.857 (0.801-0.914) 0.874 (0.856-0.892)
+GPT-4o-APO (baseline) 0.909(0.886-0.931) 0.883(0.856-0.911) 0.868(0.806-0.929) 0.886(0.858-0.915)
+Pe",,codex
+S075-R23,S075,Eviction multi-class classification,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.868,0-1,0.868,document,NR,no,yes,p.3 Table 1,"0.868(0.806-0.929) 0.886(0.858-0.915)
+Performance Results of Various Models for Step 3: Non-Eviction Multi-Class (Macro-F1 shown above, Micr",,codex
+S075-R24,S075,Eviction multi-class classification,attribute,PMC,48 notes,BERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.444,0-1,0.444,document,NR,no,yes,p.3 Table 1,"0.444 (0.285-0.603) p < 0.05 0.711 (0.647-0.775) p < 0.05
+SynthEHR-Eviction (biobert-v1.1) 0.829 (0.790-0.868) p < 0.05 0.745 (0.700-0.790)",,codex
+S075-R25,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.850,0-1,0.850,document,NR,no,no,p.3 Table 1,"0.850-0.882) p < 0.05 0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938) 0.868 (",,codex
+S075-R26,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.817,0-1,0.817,document,NR,no,no,p.3 Table 1,"0.817 (0.787-0.847) p < 0.05 0.874 (0.844-0.904) 0.876 (0.856-0.897)
+SynthEHR-Eviction (Qwen2.5-7B) 0.965 (0.958-0.973) p < 0.01 0.866 (0.85",,codex
+S075-R27,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.866,0-1,0.866,document,NR,yes,no,p.3 Table 1,"0.866 (0.854-0.877) 0.907 (0.871-0.944) 0.913 (0.900-0.925) p < 0.05
+SynthEHR-Eviction (Qwen2.5-3B) 0.951 (0.944-0.959) p < 0.01 0.800 (0.76",,codex
+S075-R28,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.800,0-1,0.800,document,NR,no,no,p.3 Table 1,"0.800 (0.769-0.831) p < 0.05 0.837 (0.818-0.856) p < 0.05 0.863 (0.849-0.877) p < 0.05
+GPT-4o-APO (baseline) 0.910(0.877-0.943) 0.878(0.853-",,codex
+S075-R29,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.878,0-1,0.878,document,NR,no,yes,p.3 Table 1,"0.878 (0.846-0.911) 0.836 (0.750-0.923) 0.878 (0.842-0.914)
+GPT-4o-mini 0.504 (0.496-0.512) p < 0.05 0.357 (0.331-0.383) p < 0.05 0.438 (0.4",,codex
+S075-R30,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Bio ClinicalBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.630,0-1,0.630,document,NR,no,yes,p.3 Table 1,"0.630-0.686) p < 0.05 0.346 (0.321-0.371) p < 0.05 0.598 (0.584-0.611) p < 0.05
+SynthEHR-Eviction (LLama-3.1-8B) 0.881 (0.820-0.942) 0.935 (",,codex
+S075-R31,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.926,0-1,0.926,document,NR,yes,no,p.3 Table 1,"0.926 (0.910-0.942) p < 0.05 0.915(0.901-0.929)
+SynthEHR-Eviction (LLama-3.2-3B) 0.939 (0.917-0.960) 0.817 (0.787-0.847) p < 0.05 0.874 (0.8",,codex
+S075-R32,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.874,0-1,0.874,document,NR,no,no,p.3 Table 1,"0.874 (0.844-0.904) 0.876 (0.856-0.897)
+SynthEHR-Eviction (Qwen2.5-7B) 0.965 (0.958-0.973) p < 0.01 0.866 (0.854-0.877) 0.907 (0.871-0.944)",,codex
+S075-R33,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.907,0-1,0.907,document,NR,no,no,p.3 Table 1,"0.907)
+SynthEHR-Eviction (Qwen2.5-3B) 0.889 (0.824-0.954) 0.850 (0.827-0.873) 0.825 (0.745-0.905) 0.855 (0.824-0.886)
+GPT-4o-APO (baseline)",,codex
+S075-R34,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.837,0-1,0.837,document,NR,no,no,p.3 Table 1,"0.837 (0.818-0.856) p < 0.05 0.863 (0.849-0.877) p < 0.05
+GPT-4o-APO (baseline) 0.910(0.877-0.943) 0.878(0.853-0.904) 0.878(0.833-0.922) 0.8",,codex
+S075-R35,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.878,0-1,0.878,document,NR,no,yes,p.3 Table 1,"0.878 (0.846-0.911) 0.836 (0.750-0.923) 0.878 (0.842-0.914)
+GPT-4o-mini 0.504 (0.496-0.512) p < 0.05 0.357 (0.331-0.383) p < 0.05 0.438 (0.4",,codex
+S075-R36,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.604,0-1,0.604,document,NR,no,yes,p.3 Table 1,"0.604 (0.443-0.765) p < 0.05 0.730 (0.627-0.833) p < 0.05
+SynthEHR-Eviction (Bio ClinicalBERT) 0.961 (0.956-0.966) p < 0.01 0.630 (0.612-0.6",,codex
+S077-R01,S077,Stage 1 actionable-class F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,NR,0.459,0-1,0.459,document,NR,yes,no,p.7,"0.459.
+B. Stage 2: Action Category Classification
+Table IV presents fine-grained classification results across
+seven clinical action categories. Here, the supervised
+BERT baselines",,codex
+S077-R02,S077,Stage 1 macro-F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.895,0-1,0.895,document,NR,no,yes,p.7,"0.895, representing a 23% relative improvement
+over TTP-BERT+Context (0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-s",,codex
+S077-R03,S077,Stage 1 macro-F1,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-specialized MedGemma-27B-it substan-
+tially underperforms with F1 of on",,codex
+S077-R04,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.570,0-1,0.570,document,NR,yes,no,p.7,"0.570, falling
+15% short of TTP-BERT+Context. GPT-5.2 shows category-
+specific strengths:
+• Appointment-related follow-up: F1 of 0.812, approaching
+but not exceeding TTP-BERT’s 0.8",,codex
+S077-R05,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.570,0-1,0.570,document,NR,no,yes,p.7,"0.570, falling
+15% short of TTP-BERT+Context. GPT-5.2 shows category-
+specific strengths:
+• Appointment-related follow-up: F1 of 0.812, approaching
+but not exceeding TTP-BERT’s 0.8",,codex
+S077-R06,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-specialized MedGemma-27B-it substan-
+tially underperforms with F1 of on",,codex
+S083-R01,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,Llama-3.1-8B,open LLM,Llama,8,no,other,model-level score cited in Results; detailed configuration is in supplementary Table I,NR,F1,micro,0.591,0-1,0.591,entity,NR,yes,no,p.7,"an overall micro-F1 of 0.591, as shown in Supplementary Table I.",,codex
+S083-R02,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,50-shot examples; SHAC guidelines,NR,F1,micro,0.866,0-1,0.866,entity,NR,no,yes,p.6,"0.866 on the entire testing set. This
+ranks among the top performers of the n2c2/UW shared task. Also, Gemini 2.5 Flash achieved a micro-F1
+of 0.825, demonstrating comparable perfo",,codex
+S083-R03,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,Gemini 2.5 Flash,closed LLM,NA,NR,NA,few-shot,50-shot examples; SHAC guidelines,NR,F1,micro,0.825,0-1,0.825,entity,NR,no,no,p.6,"0.825, demonstrating comparable performance at substantially lower cost. These results showed that our
+method is capable of accurately annotating SDOH events without task-specific",,codex
+S083-R04,S083,SDOH event extraction,NER,MIMIC-III test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,single-prompt; full SHAC annotation guidelines,NR,F1,micro,0.806,0-1,0.806,entity,NR,no,no,p.8,"0.806, whereas the multi-prompt
+approach (asking for each SDOH type separately) achieved the highest recall of 0.810. In contrast, the
+approach that relies on LLM-summarized annota",,codex
+S083-R05,S083,SDOH event extraction,NER,MIMIC-III test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,50-shot,NR,F1,micro,0.881,0-1,0.881,entity,NR,no,no,p.9,"0.881, and 30-shot prompting achieved a lower but comparable score of 0.872. Additionally, 50-shot
+prompting significantly outperformed the 0-shot setting (micro-F1 = 0.786), highl",,codex
+S083-R06,S083,SDOH event extraction,NER,MIMIC-III and UW test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,few-shot + self-consistency + post-processing,NR,F1,micro,0.929,0-1,0.929,entity,NR,no,no,p.9,"0.929. Using self-consistency alone improved
+micro-F1 by 0.063, bringing it to 0.903. Post-processing further improved micro-F1 by 0.026, raising it
+from 0.903 to 0.929. Row 2 show",,codex
+S085-R01,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,ChatGPT-4o,closed LLM,NA,NR,NA,zero-shot,simple prompting,NR,F1,NR,96.3,percent,0.963,document,strict,no,yes,p.3,"96.3%) and Llama 3.3 70B (95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: ChatGPT-4o, 
+Original Research | Large",,codex
+S085-R02,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Llama 3.3 70B,open LLM,Llama,70,no,zero-shot,simple prompting,NR,F1,NR,95.5,percent,0.955,document,strict,no,no,p.3,"95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: ChatGPT-4o, 
+Original Research | Large Language Models for Clinic",,codex
+S085-R03,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Llama 3.1 8B,open LLM,Llama,8,no,zero-shot,simple prompting,NR,F1,NR,97.0,percent,0.97,document,strict,yes,no,p.3,"97.0%), fol -
+lowed by ChatGPT-4o (96.3%) and Llama 3.3 70B (95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: Chat",,codex
+S085-R04,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,75.8,percent,0.758,document,strict,no,yes,p.3,"75.8%.
+Bilateral PE (Yes/No)
+With simple prompting, ChatGPT-4o achieved the numer -
+ically highest F1 score (92.9%), followed by Llama 3.3 70B 
+(90.3%) and Llama 3.1 8B (84.5%). Wi",,codex
+S085-R05,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,ChatGPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought prompting,NR,F1,NR,93.6,percent,0.936,document,strict,no,yes,p.3,"93.6% and 93.8%, respec-
+tively), whereas Llama 3.1 8B showed no change (84.5%). 
+The rule-based NLP approach had an F1 score of 66.7%.
+127Kansas Journal of Medicine journals.ku.ed",,codex
+S085-R06,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Llama 3.3 70B,open LLM,Llama,70,no,CoT,chain-of-thought prompting,NR,F1,NR,93.8,percent,0.938,document,strict,yes,no,p.3,"93.8%, respec-
+tively), whereas Llama 3.1 8B showed no change (84.5%). 
+The rule-based NLP approach had an F1 score of 66.7%.
+127Kansas Journal of Medicine journals.ku.edu/kjm
+Tabl",,codex
+S085-R07,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Llama 3.1 8B,open LLM,Llama,8,no,CoT,chain-of-thought prompting,NR,F1,NR,84.5,percent,0.845,document,strict,no,no,p.3,"84.5%). With CoT prompting, 
+ChatGPT-4o and Llama 3.3 70B showed slight improve -
+ments in performance (F1 scores, 93.6% and 93.8%, respec-
+tively), whereas Llama 3.1 8B showed no",,codex
+S085-R08,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,66.7,percent,0.667,document,strict,no,yes,p.3,"66.7%.
+127Kansas Journal of Medicine journals.ku.edu/kjm
+Table 1. Prompts provided to the large language model for each report. 
+Task Simple Prompt Chain-of-Thought Prompt
+Acute PE",,codex
+S085-R09,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,ChatGPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought prompting,NR,F1,NR,74.1,percent,0.741,document,strict,no,yes,p.5,"74.1%; Llama 3.3 70B, 72.4%; Llama 
+3.1 8B, 62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.",,codex
+S085-R10,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Llama 3.3 70B,open LLM,Llama,70,no,CoT,chain-of-thought prompting,NR,F1,NR,72.4,percent,0.724,document,strict,yes,no,p.5,"72.4%; Llama 
+3.1 8B, 62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining",,codex
+S085-R11,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Llama 3.1 8B,open LLM,Llama,8,no,CoT,chain-of-thought prompting,NR,F1,NR,62.9,percent,0.629,document,strict,no,no,p.5,"62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining the outputs 
+of the t",,codex
+S085-R12,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,56.6,percent,0.566,document,strict,no,yes,p.5,"56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining the outputs 
+of the three LLMs in voting ensemble models resulted in 
+slight",,codex

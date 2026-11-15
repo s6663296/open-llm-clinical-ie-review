@@ -1,0 +1,138 @@
+{
+ "provisional_scope_rows": 5,
+ "scope_total": 174,
+ "scope_excluded_r1_preprint": 51,
+ "scope_excluded_r2_no_closed": 119,
+ "n_studies": 4,
+ "study_ids": [
+  "S002",
+  "S003",
+  "S005",
+  "S010"
+ ],
+ "n_distinct_open_models": 11,
+ "pct_non_english": 50,
+ "pct_finetune": 0,
+ "pct_medical_model": 25,
+ "pct_local": 0,
+ "years": {
+  "2026": 4
+ },
+ "model_family": {
+  "Gemma": 2,
+  "Qwen": 2,
+  "Llama": 2,
+  "Phi": 1,
+  "DeepSeek": 1
+ },
+ "strategies": {
+  "few-shot": 2,
+  "RAG": 2,
+  "quantization": 1,
+  "other": 1,
+  "zero-shot": 1
+ },
+ "deployment": {
+  "mixed": 3,
+  "public API": 1
+ },
+ "language": {
+  "English": 2,
+  "Spanish": 1,
+  "Thai": 1
+ },
+ "n_comparisons": 6,
+ "tie_threshold": 0.02,
+ "n_open_comparable_or_better": 0,
+ "n_closed_ahead": 6,
+ "median_gap": 0.132,
+ "median_gap_prompting": 0.132,
+ "median_gap_finetuned": null,
+ "n_finetuned_comparisons": 0,
+ "comparisons": [
+  {
+   "study_id": "S003",
+   "task": "NER + entity linking",
+   "dataset": "Thai clinical document test set (200 documents; 5,700 entities)",
+   "metric": "F1",
+   "open_model": "MedGemma",
+   "open_value": 0.3415,
+   "open_strategy": "RAG",
+   "closed_model": "GPT-4.1",
+   "closed_value": 0.3967,
+   "gap": 0.0552,
+   "open_src": "p.6 Table 2",
+   "closed_src": "p.6 Table 2"
+  },
+  {
+   "study_id": "S005",
+   "task": "geriatric clinical concept extraction",
+   "dataset": "four-site EHR notes (UTP, MHHS, HCPC, BIDMC)",
+   "metric": "F1",
+   "open_model": "Qwen2-7B-Instruct",
+   "open_value": 0.81,
+   "open_strategy": "few-shot",
+   "closed_model": "GPT-4o",
+   "closed_value": 0.87,
+   "gap": 0.06,
+   "open_src": "p.3",
+   "closed_src": "p.3"
+  },
+  {
+   "study_id": "S010",
+   "task": "real-world field extraction",
+   "dataset": "real-world pathology fields",
+   "metric": "accuracy",
+   "open_model": "deepseek-r1-14b",
+   "open_value": 0.776,
+   "open_strategy": "zero-shot",
+   "closed_model": "gemini-2.5-pro",
+   "closed_value": 0.877,
+   "gap": 0.101,
+   "open_src": "p.5 Table 2",
+   "closed_src": "p.5 Table 2"
+  },
+  {
+   "study_id": "S003",
+   "task": "NER",
+   "dataset": "Thai clinical document test set (200 documents; 5,700 entities)",
+   "metric": "F1",
+   "open_model": "MedGemma 27B",
+   "open_value": 0.5693,
+   "open_strategy": "zero-shot",
+   "closed_model": "Gemini 2.5 Pro",
+   "closed_value": 0.7328,
+   "gap": 0.1635,
+   "open_src": "p.6 Table 2",
+   "closed_src": "p.6 Table 2"
+  },
+  {
+   "study_id": "S002",
+   "task": "NER",
+   "dataset": "annotation-noise robustness dataset (Option A clean)",
+   "metric": "F1",
+   "open_model": "LLaMA 3.2",
+   "open_value": 0.5323,
+   "open_strategy": "RAG",
+   "closed_model": "GPT-4o RAG",
+   "closed_value": 0.949,
+   "gap": 0.4167,
+   "open_src": "p.11 Table 5",
+   "closed_src": "p.11 Table 5"
+  },
+  {
+   "study_id": "S002",
+   "task": "RE",
+   "dataset": "annotation-noise robustness dataset (Option A clean)",
+   "metric": "F1",
+   "open_model": "LLaMA 3.2",
+   "open_value": 0.2443,
+   "open_strategy": "RAG",
+   "closed_model": "GPT-4o RAG",
+   "closed_value": 0.8818,
+   "gap": 0.6375,
+   "open_src": "p.12 Table 6",
+   "closed_src": "p.12 Table 6"
+  }
+ ]
+}

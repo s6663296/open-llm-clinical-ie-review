@@ -7,7 +7,7 @@
 
 ## 📍 目前位置
 
-- **階段**：C2 完成 → D1 資料萃取（2026-11-14）
+- **階段**：D1 資料萃取：準備完成，待 Codex 預填；F2 簡報骨架完成（2026-11-14）
 - **步驟**：D1 部分欄位萃取（模型、任務、效能），由 Codex 預填、Agent 審查、作者核對
 - **專案性質（2026-11-14 改）**：課堂報告，產出為**簡報**、不投稿、不註冊 OSF；深度為「篩選完成＋部分欄位萃取（模型、任務、效能）」
 - **進行中**：Sonnet 重篩全部 1,389 筆已完成（56/56 批，合併為 `screening/ai_screen_sonnet.csv`：include 264／unsure 327／exclude 798，`screening/ai_screen_sonnet_summary.json`）；複核表 `screening/step2_verify.xlsx` 已產生（依 AI include → unsure → exclude 排序）。50 筆校準樣本為 Agent 初判（`screening/step1_blind50.xlsx`：include 9／unsure 18／exclude 23），使用者已看過並採用，改以「兩個 AI 一致性＋人工核對」報告；與 Sonnet 的 11 筆分歧已由使用者裁定（`screening/step1_blind50_disagreements.xlsx`；9/11 與 Sonnet 相同）；50 筆最終判斷 `screening/calibration50_final.csv`：include 13／unsure 12／exclude 25。判斷指引存於 `scripts/agent_screening/screening_prompt.md`（前 39 批原始指引未存檔，此檔依 protocol 3.1–3.2 重建，需於論文揭露）
@@ -15,7 +15,16 @@
 - **C1 完成（2026-11-14）**：雙 AI（Sonnet、Opus）獨立篩選 1,389 筆，二元 κ = 0.90；一致排除 759、一致進全文 511、分歧 69 筆由使用者裁定（53 排除／16 進全文）、校準 50 筆由使用者決定。最終排除 837、進全文 **552**（include 249／unsure 303）。結果 `screening/title_abstract_final.xlsx`／`.csv`，進全文清單 `screening/to_full_text.csv`；`screening/step2_verify.xlsx` 已被雙 AI 流程取代，不使用
 - **C2 AI 篩選（2026-11-14）**：277 篇取得全文（`fulltext_text/`，`scripts/pdf_to_text.py --condensed`；R0861、R1214、R1331 原下載檔為錯誤文件，改以 `scripts/pmc_xml_to_text.py` 取 Europe PMC 全文；R0891 無正確 OA 版，記為未取得）。Sonnet 判全部 277 篇（`screening/ft_sonnet/`），Opus 獨立複查 Sonnet 排除的 75 篇（`screening/ft_opus/`，73 篇同意排除）。同一研究多版本 33 組依 protocol 3.5 以同儕審查版為主、預印本給 X8（已因 X1–X7 排除者保留原代碼）。合併：`scripts/agent_screening/merge_ft.py` → `screening/ft_ai_merged.csv`（AI：include 173／exclude 102／分歧 2；`screening/ft_ai_merged_summary.json`）
 - **C2 完成（2026-11-14）**：分歧 11 列由使用者授權 Agent 裁定（`screening/step4_ft_disagreements.xlsx` my_* 欄，理由逐列記錄）；`scripts/agent_screening/finalize_ft.py` → `screening/full_text.xlsx`／`.csv`。全文評估 277：納入 **174**、排除 103（X4 28、X8 27、X6 21、X3 13、X5 10、X7 3、X1 1）；未取得 275。PRISMA 數字 `analysis/prisma_counts.json`、流程圖 `figures/prisma_flow.*` 已更新
-- **下一步**：Agent 寫 D1 brief 交 Codex 預填 174 篇萃取（每批 ≤ 25 篇＋驗證腳本），Agent 審查後交作者核對
+- **D1 準備完成（2026-11-14）**：174 篇編號 S001–S174（`extraction/study_ids.csv`，依 record_id 排序），分 7 批（`extraction/batches/batch_01–07.list`，每批 ≤ 25）。全文以 `scripts/extraction/restore_fulltext.py` 依 C2 下載紀錄重新取得並核對 sha256，轉成完整（非精簡）頁碼文字 `fulltext_text_ft/`（不進 git），紀錄 `extraction/fulltext_restore_log.csv`：174/174 取得（sha256 相符 142；medRxiv 等伺服器重產 PDF 致 sha256 不同但標題相符 17、標題為預印本版經 Agent 人工確認同一研究 14〔`extraction/fulltext_manual_checks.csv`〕；R0382 OA 檔僅為 AJR 中文翻譯摘要，只能從摘要萃取，待作者決定）。萃取文字中 105 篇為預印本版（`extraction/study_ids.csv` 的 `text_version`），與 C2 篩選所用版本相同；簡報須說明數值部分來自預印本版。萃取指引 `extraction/d1_codex_brief.md`（欄位子集見 `scripts/extraction/fields.py`），驗證 `scripts/extraction/check_batch.py`（數值須出現在所標頁碼），合併 `scripts/extraction/merge.py` → `extraction/extraction.xlsx`
+- **D1 流程**：
+  1. Codex 依 `extraction/d1_codex_brief.md` 逐批產出 `extraction/codex/batch_NN_studies.csv`、`batch_NN_results.csv`，`check_batch.py` 錯誤為 0 才算完成
+  2. `merge.py` 合併成 `extraction/extraction.xlsx`（重跑不會覆蓋審查欄）
+  3. Agent 審查：每篇核對開源模型清單與 `is_best_open` 列的數值／出處，處理 `QUERY:` 與 WARN，填 `agent_review`（ok／fix／query）與 `agent_note`
+  4. 作者核對：至少看 `agent_review` 為 fix／query 者與各篇最佳開源結果，填 `verified`；`QUERY:` 中疑似誤納入者由作者決定是否排除（排除則更新 PRISMA 數字）
+  5. E1：以 `results` 工作表做模型、任務、開源 vs 閉源等彙整圖表
+- **課堂版範圍收緊（2026-11-14）**：174 篇再限「同儕審查（R1）＋同一研究內與閉源 LLM 直接比較（R2）」，目標約 40 篇。`scripts/extraction/restrict_scope.py` → `extraction/scope_restriction.csv`：建議 keep 30、check 32、exclude 112（R1 預印本 51；R2 全文未提閉源 27、只順帶提及 34）。只對 keep＋check 62 篇萃取（`extraction/batches/` 3 批，`make_batches.py --scope`），萃取時確認 R2；作者於 `author_decision` 欄定案後，最終數字與 PRISMA 加一層「課堂版收緊條件排除」
+- **簡報骨架（2026-11-14）**：31 張、30–40 分鐘，Slides artifact https://claude.ai/artifact/9PFD1Di4iUAFgQjnoJqn5A ，原始檔 `slides/project/`（deck.json、deck.css、slides/*.html）。已填入的數字只取自 `analysis/prisma_counts.json`；結果頁皆為圖表佔位框（標明圖型與資料欄位），`[__]` 待萃取與 E1 腳本產生後填入
+- **下一步**：① 作者看一下簡報骨架結構；② batch_01 交 Codex 試萃取 → Agent 審查 → 修指引 → batch_02–03；③ 作者確認 `scope_restriction.csv` 的 author_decision；④ E1 寫 `scripts/analysis/` 產生簡報圖表（年度、語言、文本類型、模型家族、策略、開源 vs 閉源啞鈴圖）；⑤ 更新 PRISMA 流程圖
 - **卡住／待使用者決定**：見下方「待決事項」
 
 ---
@@ -33,12 +42,12 @@
 | B2 | 匯入與去重 | ✅ | `data/records_dedup.csv` |
 | C1 | 標題／摘要篩選 | ✅ | `screening/title_abstract_final.xlsx` |
 | C2 | 全文篩選 | ✅ | `screening/full_text.xlsx` |
-| D1 | 資料萃取（部分欄位：模型、任務、效能） | ⬜ | `extraction/extraction.xlsx` |
+| D1 | 資料萃取（部分欄位：模型、任務、效能） | 🔄 | `extraction/extraction.xlsx` |
 | D2 | 偏倚風險／品質評估 | ⏸ 課堂版不做 | `extraction/risk_of_bias.xlsx` |
 | E1 | 綜合分析與圖表 | 🔄 | `analysis/`、`figures/` |
 | E2 | 報告偏誤與確信度 | ⏸ 課堂版不做 | `analysis/certainty.md` |
 | F1 | PRISMA 流程圖 | 🔄 | `figures/prisma_flow.*` |
-| F2 | 簡報製作（原為論文撰寫） | ⬜ | `slides/`（既有 `manuscript/` 草稿供取材） |
+| F2 | 簡報製作（原為論文撰寫） | 🔄 | `slides/`（既有 `manuscript/` 草稿供取材） |
 | F3 | 投稿前檢查 | ⏸ 不投稿 | `manuscript/prisma_checklist.*` |
 
 ---
@@ -198,6 +207,8 @@
 - [x] 前向／後向引用追蹤：課堂版是否仍要做？→ 2026-11-14 暫不做（保留日後補做）
 - [x] 全文篩選方式 → 2026-11-14 定案：AI 讀重點段落；Sonnet 判全部、Opus 複查排除，分歧由作者裁定（protocol 3.5）
 - [x] 檢索式驗證集 → Agent 挑選 10 篇，使用者 2026-11-14 確認（`data/validation_set.csv`）
+- [ ] 課堂版收緊範圍逐篇定案：`extraction/scope_restriction.csv` 的 `author_decision`（keep／exclude），check 32 篇可待萃取確認 R2 後再決定
+- [ ] R0382（AJR 胰臟囊性病變，Rasromani 等）只取得中文翻譯摘要、無全文：只用摘要萃取並標註，或改記為「全文未取得」排除？（Agent 建議：保留並只萃取摘要數值，簡報註明；若排除，納入數改為 173）
 
 ---
 
@@ -240,3 +251,6 @@
 - 2026-11-14｜C2｜使用者決定 C2 依原流程完成（Sonnet 判全部、Opus 複查排除、作者裁定分歧）；D1 萃取改由 Codex 預填、Agent 審查、作者核對｜節省 Claude 用量
 - 2026-11-14｜C2｜Agent 處理：OA 下載檔為錯誤文件者（附錄、他篇論文、舊版預印本）改取 Europe PMC 正式版全文（R0861、R1214、R1331），取不到者記為未取得（R0891）；同一 PDF 對應兩筆紀錄的 33 組依 protocol 3.5 處理｜依既有規則執行，非方法變更；簡報可說明全文來源
 - 2026-11-14｜C2｜使用者授權 Agent 裁定全文篩選分歧 11 列（2 篇雙 AI 分歧、2 組同一全文判斷相反、6 篇排除代碼不同）：R1363 納入，其餘排除（章節辨識、住院層級 IHCA 判定屬 X6；代碼不同者取確定成立且順序在前的代碼）；C2 完成：納入 174、排除 103、未取得 275｜使用者決定授權。簡報須說明分歧由 Agent 裁定、非作者逐筆裁定
+- 2026-11-14｜D1｜使用者授權 Agent 自行規劃 D1：課堂版欄位子集（模型、任務、效能，另保留語言、文本類型、資料集、比較對象、策略、部署）；數值選取依 protocol 3.7（F1 優先、整體值、每模型最佳設定＋各類最佳比較對象）；新增 `value_reported` 欄由腳本對頁驗證；不從圖讀值、不萃取補充資料；疑似誤納入者標 `QUERY:` 由作者裁定｜減少萃取量、讓 Codex 預填可機器驗證。屬 codebook 修訂（見 `extraction/codebook.md` 修訂紀錄），簡報方法段說明萃取由 AI 預填、Agent 審查、作者核對
+- 2026-11-14｜A2、D1｜課堂版事後收緊納入條件：174 篇再限同儕審查（排除預印本）且同一研究內有開源與閉源 LLM 的直接效能比較，目標約 40 篇；PRISMA 加一層排除並於簡報限制頁說明｜使用者決定（30–40 分鐘報告，聚焦 RQ3）。屬與 protocol 之差異，原 174 篇結果保留
+- 2026-11-14｜F2｜簡報以 Slides artifact 製作，骨架 31 張（背景、方法、結果概覽、RQ1–RQ3、討論）；圖表留佔位待 E1 產生｜使用者請 Agent 先架骨架

@@ -95,3 +95,4 @@
 | 日期 | 修改 | 理由 |
 |---|---|---|
 | 2026-11-14 | 初版 | 依 protocol 3.6、3.7 |
+| 2026-11-14 | 課堂版 D1 只萃取子集（模型、任務、效能）：studies 保留語言、文本類型、資料集、任務、模型、比較對象、策略、部署；results 新增 `value_reported`（原文印出的數字，供腳本對頁驗證），`eval_level` 增 `patient`、`deployment` 增 `mixed`。子集定義見 `extraction/d1_codex_brief.md` 與 `scripts/extraction/fields.py`；本檔其餘欄位本次不做 | 使用者決定課堂版縮小範圍；Codex 預填需可機器驗證 |
