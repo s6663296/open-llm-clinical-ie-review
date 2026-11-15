@@ -1,0 +1,144 @@
+﻿study_id,task,dataset,metric,eval_level,model,model_class,value,reason
+S007,medical status sentence classification (6 conditions),"eHOP CDW (3-fold CV, iteration 2)",F1,NR,Mixtral-8x7B-v0.1,open LLM,NR,invalid or missing value
+S009,systemic therapy and clinical variable abstraction,in-house breast cancer cohort (100 patients),other,field,DeepSeek-R1,open LLM,NR,invalid or missing value
+S011,KG-based ADE relation extraction from clinical notes,n2c2 2018 ADE; BWH outpatient notes,F1,relation,MedGemma,open LLM,NR,invalid or missing value
+S019,named entity recognition (NER) across BRIDGE tasks,BRIDGE NER tasks (multilingual),F1,entity,"open LLMs (95 evaluated; e.g. DeepSeek-R1, Qwen3)",open LLM,NR,invalid or missing value
+S019,event extraction across BRIDGE tasks,BRIDGE event-extraction tasks (multilingual),F1,entity,"open LLMs (95 evaluated; e.g. DeepSeek-R1, Qwen3)",open LLM,NR,invalid or missing value
+S022,entity extraction,MIMIC-III; 4CE; CORAL,F1,entity,Llama-3.1-405B,open LLM,NR,invalid or missing value
+S047,VBAC eligibility evidence,in-house,other,field,Llama 3.3 70B Instruct,open LLM,NR,invalid or missing value
+S054,procedure classes,in-house,F1,field,NR,open LLM,NR,invalid or missing value
+S062,clinical entity and relation extraction,MLB MedRU,F1,entity,DeepSeekR1-0528-671B,open LLM,NR,invalid or missing value
+S069,mobility function,in-house,F1,document,MedGemma-27B,open LLM,NR,invalid or missing value
+S091,NER (agitation in dementia; malnutrition risk factors),in-house RACF nursing notes,F1,entity,Llama 3.1-8B-Instruct,open LLM,NR,invalid or missing value
+S118,respiratory symptoms,in-house,F1,document,Llama 2 70B Chat; Mixtral 8x7B Instruct,open LLM,NR,invalid or missing value
+S133,"de-identification NER (CoT, exact tag match)",in-house AMC discharge summaries (1000 rows),other,entity,Llama3-Open-Ko-8B,open LLM,NR,invalid or missing value
+S137,SDoH field extraction (9 aspects),MGB social history notes,accuracy,field,openchat_3.5,open LLM,NR,invalid or missing value
+S164,"NSCLC phenotype extraction (stage, treatment, recurrence, organs)",in-house NSCLC notes,F1,field,Flan-T5-xxl / Flan-T5-xl / Llama-3-8B-Instruct,open LLM,NR,invalid or missing value
+S004,PHI detection (recall-first stack),PhysioNet nursing notes (reporting half),recall,entity,Gemma 4 26B-A4B + detectors (recall first),open LLM,0.9888,missing comparator
+S004,PHI detection,PhysioNet nursing notes (reporting half),recall,entity,deid (with lists),rule-based,0.973,missing or ambiguous best open
+S004,PHI detection (recall-first stack),"MIMIC-IV-Note discharge summaries (semi-synthetic, reporting half)",recall,entity,Gemma 4 26B-A4B + detectors (recall first),open LLM,0.9528,missing comparator
+S004,PHI detection,"MIMIC-IV-Note discharge summaries (semi-synthetic, reporting half)",recall,entity,Philter,rule-based,0.9941,missing or ambiguous best open
+S006,SUD diagnosis extraction (annotated calibration set),VA expert-annotated calibration notes (923),F1,field,Llama-3.1-8B-Instruct (zero-shot CoT),open LLM,0.9004,missing comparator
+S007,medical status sentence classification (6 conditions),"eHOP CDW (3-fold CV, iteration 2)",F1,NR,CamemBERT-large (fine-tuned),BERT-type,0.94,missing or ambiguous best open
+S007,medical status classification: family history of cancer,"eHOP CDW (3-fold CV, iteration 2)",F1,NR,rule-based extractor,rule-based,0.94,missing or ambiguous best open
+S009,systemic therapy abstraction (drug-level Jaccard),in-house breast cancer cohort (100 patients),other,field,GPT-5 / Gemini 2.5 Pro (two best LLMs),closed LLM,0.91,missing or ambiguous best open
+S011,drug-ADE relation extraction from literature abstracts,PubMed abstracts (40 sampled),F1,relation,Qwen3-4B-Instruct-2507,open LLM,0.6757,missing comparator
+S011,drug-ADE relation extraction from clinical trial records,ClinicalTrials.gov (40 sampled),F1,relation,Qwen3-4B-Instruct-2507,open LLM,0.4348,missing comparator
+S012,"report structuring (findings + regions), histology",in-house histology reports,F1,field,Llama-3.3-70B-Instruct,open LLM,1.0,missing comparator
+S012,"report structuring (findings + regions), imaging",in-house imaging reports,F1,field,Llama-3.3-70B-Instruct,open LLM,0.82,missing comparator
+S014,VTE-positive report detection,Cleveland Clinic radiology reports (BERT test set),F1,document,ModernBERT,BERT-type,0.951,missing or ambiguous best open
+S014,nondiagnostic report detection,Cleveland Clinic radiology reports (BERT test set),F1,document,ModernBERT,BERT-type,0.538,missing or ambiguous best open
+S015,"seizure type, all-way multi-label",Penn epilepsy notes (309),F1,document,DeepSeek-R1-Distill-Llama-8B,open LLM,0.72,missing comparator
+S016,microbleed count extraction,Erasmus MC brain MRI reports (Dutch),accuracy,field,Llama-3.1-70B,open LLM,0.92,missing comparator
+S016,infarct count extraction,Erasmus MC brain MRI reports (Dutch),accuracy,field,Llama-3.1-70B,open LLM,0.81,missing comparator
+S016,lesion location free-text extraction,Erasmus MC brain MRI reports (Dutch),other,field,Llama-3.1-70B,open LLM,0.95,missing comparator
+S018,fine-grained medical entity recognition (18 types),"i2b2 discharge summaries (fine-grained re-annotation, test 120 docs)",F1,entity,"Llama-3-8B-Instruct (LoRA r=64, all 7 modules)",open LLM,0.8124,missing comparator
+S019,named entity recognition (NER) across BRIDGE tasks,BRIDGE NER tasks (multilingual),F1,entity,Gemini-2.5-Flash,closed LLM,0.494,missing or ambiguous best open
+S019,event extraction across BRIDGE tasks,BRIDGE event-extraction tasks (multilingual),F1,entity,Gemini-2.5-Flash,closed LLM,0.318,missing or ambiguous best open
+S021,Braak stage,in-house,accuracy,field,GPT-OSS 120B,open LLM,1.0,missing comparator
+S021,perfusion pattern,in-house,F1,entity,GPT-OSS 120B,open LLM,0.9,missing comparator
+S021,uptake positivity,in-house,accuracy,field,GPT-OSS 120B,open LLM,0.98,missing comparator
+S023,clinical feature extraction,APOLLO 11 IO cohort,F1,field,LLaMA 3.1 8B,open LLM,0.62,missing comparator
+S027,metastasis site status,in-house,accuracy,field,GPT-OSS 120B,open LLM,0.976,missing comparator
+S028,colorectal synoptic categorical variables,in-house,F1,field,Llama 3.3 70B,open LLM,0.9112,missing comparator
+S030,HAS-BLED score (extraction-based pipeline),in-house AF cohort,other,field,Qwen3-235B-A22B pipeline,open LLM,0.2,missing comparator
+S030,CHA2DS2-VASc score (extraction-based pipeline),in-house AF cohort,other,field,Qwen3-235B-A22B pipeline,open LLM,0.53,missing comparator
+S032,"registry field extraction, 10 organs",in-house CMUH pathology reports,accuracy,field,gpt-oss:20b,open LLM,0.943,missing comparator
+S032,surgical margin positivity,in-house CMUH pathology reports,accuracy,field,gpt-oss:20b,open LLM,0.912,missing comparator
+S032,breast ER positivity extraction,in-house CMUH breast reports (n=75),accuracy,field,gpt-oss:20b,open LLM,1.0,missing comparator
+S036,CRF filling,eCREAM SGB development,F1,field,MedGemma-27B,open LLM,0.702,missing comparator
+S038,clinical field extraction,in-house,F1,entity,Mistral 7B,open LLM,0.922,missing comparator
+S039,frailty index,aged care notes,F1,entity,Llama-3.1-8B-Instruct,open LLM,0.9708,missing comparator
+S039,malnutrition risk factors,aged care notes,F1,entity,Llama-3.1-8B-Instruct,open LLM,0.9714,missing comparator
+S039,agitation in dementia,aged care notes,F1,entity,Llama-3.1-8B-Instruct,open LLM,0.9052,missing comparator
+S040,structured clinical entity extraction,single-patient AMD dataset,F1,entity,DeepSeek-R1 7B + neuro-symbolic pipeline,open LLM,0.98,missing comparator
+S044,grouped mRS score,in-house,F1,document,Qwen3-32B,open LLM,0.93,missing comparator
+S045,grouped mRS score,in-house,accuracy,document,Qwen3-32B-Q3_K_XL,open LLM,0.962,missing comparator
+S046,mammography fields,in-house,accuracy,field,Rombos-LLM-V2.6-Qwen-14b,open LLM,0.853,missing comparator
+S049,stroke variables,in-house,accuracy,field,LLaMA3.3-70B,open LLM,0.948,missing comparator
+S051,kidney biopsy fields,in-house,accuracy,field,Llama3 70B,open LLM,0.933,missing comparator
+S053,morphological features,in-house HCC,F1,field,Gemma 4 31B,open LLM,0.993,missing comparator
+S053,IHC markers,in-house HCC,F1,field,Gemma 4 31B,open LLM,0.997,missing comparator
+S054,procedure classes,in-house,F1,field,GPT-o4-mini,closed LLM,0.624,missing or ambiguous best open
+S063,genomic alterations,LUCC-Lung,F1,field,Mistral-24B / lucc-ai-1,open LLM,0.96,missing comparator
+S064,oncology feature extraction,TNBC,F1,field,Phi-3-medium-instruct,open LLM,0.83,missing comparator
+S065,nodal involvement,in-house,accuracy,field,Llama-4-Scout-17B-16E-Instruct,open LLM,0.99,missing comparator
+S066,prognostic variables,in-house,F1,field,Llama-3.3-70B,open LLM,0.986,missing comparator
+S068,entity annotation,RadGraph,F1,entity,Qwen2.5-7B,open LLM,0.8747,missing comparator
+S070,"seizure frequency, pragmatic",Real(300),F1,field,MedGemma-4B-it,open LLM,0.86,missing comparator
+S072,dental NER (19 entity types),"in-house gold standard (1,000 notes)",F1,entity,Qwen2.5-14B-Instruct (QLoRA SFT + DPO),open LLM,0.864,missing comparator
+S074,ventricular tachycardia diagnosis identification,MT Samples,F1,document,Llama-3.1-8B-Instruct,open LLM,0.67,missing comparator
+S076,2012 i2b2 EVENT NER,2012 i2b2,F1,entity,Llama-3.1-70B-Instruct + amended synthesized guideline,open LLM,0.7974,missing comparator
+S076,2014 i2b2 de-identification NER,2014 i2b2,F1,entity,Llama-3.1-70B-Instruct + human-written guideline,open LLM,0.7593,missing comparator
+S076,2018 n2c2 ADE and medication NER,2018 n2c2 Track 2,F1,entity,Llama-3.1-70B-Instruct + human-written guideline,open LLM,0.7392,missing comparator
+S078,phenotype onset timestamp extraction,CUIMC 102 notes,accuracy,field,TimeX (Llama-3.1-8B-Instruct),open LLM,0.8407,missing comparator
+S078,temporal expression (verbatim time span) extraction,CUIMC 102 notes,F1,entity,TimeX (Llama-3.1-8B-Instruct),open LLM,0.75,missing comparator
+S078,family history sentence removal,CUIMC 102 notes,F1,entity,Llama-3.1-8B-Instruct (TimeX module),open LLM,0.96,missing comparator
+S080,target lesion extraction,Radboudumc 50 report pairs,accuracy,field,Qwen2.5-72B-Instruct (q4_K_M),open LLM,0.937,missing comparator
+S080,non-target lesion extraction,Radboudumc 50 report pairs,accuracy,field,Qwen2.5-72B-Instruct (q4_K_M),open LLM,0.949,missing comparator
+S080,new lesion extraction,Radboudumc 50 report pairs,accuracy,field,Qwen2.5-72B-Instruct (q4_K_M),open LLM,0.94,missing comparator
+S081,CMR fields,in-house,accuracy,field,CMR-EXTR (Llama-3.2-1B),open LLM,0.9965,missing comparator
+S082,TCGA six-variable extraction: histology (consensus),TCGA expert-reviewed subset (138 reports),accuracy,field,DeepSeek-R1:70B consensus of 11 open LLMs,open LLM,0.985,missing comparator
+S082,Moffitt six-variable extraction: histology (consensus),Moffitt in-house reports (expert-reviewed subset),accuracy,field,DeepSeek-R1:70B consensus of 11 open LLMs,open LLM,0.956,missing comparator
+S084,endometriosis fields,Sugo,accuracy,field,gpt-oss:20b,open LLM,0.8602,missing comparator
+S088,ROS entities,MTSamples,F1,entity,Gemma-3-27B,open LLM,0.906,missing comparator
+S088,negation detection,MTSamples,F1,entity,Gemma-3-27B,open LLM,0.894,missing comparator
+S088,body system,MTSamples,F1,entity,Gemma-3-27B,open LLM,0.856,missing comparator
+S090,T stage,TCGA,F1,field,Llama-3.1-70B,open LLM,0.6,missing comparator
+S090,N stage,TCGA,F1,field,Llama-3.1-70B,open LLM,0.86,missing comparator
+S090,M stage,TCGA,F1,field,Llama-3.1-70B,open LLM,0.74,missing comparator
+S092,organ-finding presence extraction,Hebrew Crohn radiology reports (462 test),F1,field,Llama 3.1 8B + Llama 3-70B agent (BayesPE),open LLM,0.3967,missing comparator
+S094,comorbidity classification vs regexp reference,"Humanitas EHR (8,223)",accuracy,field,Mistral 7B,open LLM,0.8267,missing comparator
+S095,clinical information extraction: LVEF >=50% (normal),GAVROCHE extraction test (100 notes),F1,document,Qwen2-7B,open LLM,0.937,missing comparator
+S096,chest radiograph report structuring (all top-level findings),MIMIC-CXR English (n=202),F1,field,Llama-2-70B-chat,open LLM,0.75,missing comparator
+S096,chest radiograph report structuring (all top-level findings),University Hospital German (n=197),F1,field,Llama-2-70B-chat,open LLM,0.68,missing comparator
+S097,sex extraction,Polish epicrises (Doctor 1),accuracy,field,Llama-3-8B-Instruct,open LLM,0.989,missing comparator
+S097,age extraction,Polish epicrises (Doctor 1),accuracy,field,Llama-3-8B-Instruct,open LLM,0.928,missing comparator
+S105,vaccine names,SynSurv,accuracy,field,Llama 3.2 3B,open LLM,0.865,missing comparator
+S106,CTPE concept extraction,MIMIC-IV; Duke,accuracy,field,Phi-4 14B,open LLM,0.98,missing comparator
+S107,liver tumour fields,Erasmus MC,other,field,Gemma 3 27B,open LLM,0.95,missing comparator
+S109,relation extraction,in-house,F1,relation,Llama-3-8B-Instruct,open LLM,0.222,missing comparator
+S110,OPQRST onset,in-house,F1,entity,Llama-2-13B-chat,open LLM,0.944,missing comparator
+S112,breast fields,breast,accuracy,document,Llama-3.1-8B-Instruct,open LLM,0.915,missing comparator
+S112,kidney fields,kidney,accuracy,document,Llama-3.1-8B-Instruct,open LLM,0.875,missing comparator
+S112,prostate fields,prostate,accuracy,document,Llama-3.1-8B-Instruct,open LLM,0.915,missing comparator
+S113,clinical features,in-house,accuracy,field,LLaMA-3-70B,open LLM,0.875,missing comparator
+S114,SSI snippets,in-house,F1,NR,Deepseek R1 distilled Qwen 32B,open LLM,0.18,missing comparator
+S118,respiratory symptoms,in-house,F1,document,GPT-4 turbo,closed LLM,0.918,missing or ambiguous best open
+S120,dysplasia,MVP IBD,F1,document,Gemma-2-9B-It-SPPO,open LLM,0.969,missing comparator
+S120,HGD/CRC,MVP IBD,F1,document,Gemma-2-9B-It-SPPO,open LLM,0.937,missing comparator
+S120,invasive CRC,MVP IBD,F1,document,Gemma-2-9B-It-SPPO,open LLM,0.98,missing comparator
+S128,"NER (i2b2), supervised",i2b2,F1,entity,LLaMA2-70B,open LLM,0.913,missing comparator
+S128,"relation extraction (DDI), supervised",DDI,F1,relation,Me-LLaMA-70B,open LLM,0.779,missing comparator
+S128,"NER (i2b2), zero-shot",i2b2,F1,entity,Me-LLaMA-70B-chat,open LLM,0.329,missing comparator
+S130,BT-RADS score extraction (radiology),"in-house radiology reports (n=7,294)",F1,field,openbiollm-llama-3 70B Q_4,open LLM,0.9096,missing comparator
+S130,IDH mutation status extraction (pathology),"in-house pathology reports (n=2,154)",F1,field,openbiollm-llama-3 70B Q_4,open LLM,0.8581,missing comparator
+S132,sensitive information tagging (names),in-house PUMCH EMR,precision,entity,Qwen2.5-72B-Instruct,open LLM,0.98,missing comparator
+S133,de-identification NER,in-house AMC discharge summaries,F1,entity,"KLUE BERT (fine-tuned, Base+AD)",BERT-type,0.9374,missing or ambiguous best open
+S134,"NER (dietary supplements, adverse events)",CDR dietary supplement notes,F1,entity,Llama-2-13B (RAMIE),open LLM,0.8739,missing comparator
+S134,"RE (dietary supplements, adverse events)",CDR dietary supplement notes,F1,relation,Llama-2-13B (RAMIE),open LLM,0.9374,missing comparator
+S137,SDoH field extraction (9 aspects),MGB social history notes,accuracy,field,pattern-matching baseline,rule-based,0.7733,missing or ambiguous best open
+S138,clinical concept extraction (NER),i2b2 2010,F1,entity,LLaMA-1B (centralized training),open LLM,0.902,missing comparator
+S140,apixaban trial criteria extraction (23 questions),MIMIC-IV apixaban (100 notes),F1,field,"Llama-3.1-8B-Instruct (8B-All, QLoRA)",open LLM,0.94,missing comparator
+S142,clinical NER,i2b2-2012,F1,entity,LLaMA-3.1-8B,open LLM,0.8192,missing comparator
+S142,clinical RE,i2b2-2010,F1,relation,LLaMA-2-7B,open LLM,0.937,missing comparator
+S143,temporal relation extraction,in-house,F1,relation,Mistral-small-2409,open LLM,0.55,missing comparator
+S144,thyroid pathology report question-based field extraction (12 questions),84 thyroid cancer pathology reports,other,field,FastChat-T5 3B,open LLM,0.8956,missing comparator
+S146,critical finding extraction,Mayo Clinic,F1,entity,BioMistral-7B,open LLM,0.57,missing comparator
+S147,visual acuity extraction: right BCVA,in-house,accuracy,field,LLaMA-3-70B,open LLM,0.9565,missing comparator
+S148,clinical feature extraction,in-house,accuracy,field,Qwen-14B-Chat INT4,open LLM,0.9728,missing comparator
+S153,Suicidality status extraction (binary),in-house admission notes,accuracy,document,"Llama-2 German fine-tuned (Emgerman), 3-example prompt",open LLM,0.875,missing comparator
+S154,Phenotype entity recognition + HPO normalization,BiolarkGSC+ (validation),accuracy,entity,PhenoGPT (GPT-J/Falcon/LLaMA-7B based; model not specified for this figure),open LLM,0.857,missing comparator
+S155,Free-text eCRF field extraction,in-house admission notes,accuracy,field,ChatGLM,open LLM,0.7713,missing comparator
+S156,Clinical NER (average over datasets/entity types),i2b2 2010; i2b2 2012; CLEF 2014; i2b2 2018,F1,entity,UniversalNER-7B + EDF (zero-shot),open LLM,0.4414,missing comparator
+S160,End-to-end concept extraction and normalization,SemEval-2015 Task 14,F1,entity,GatorTronGPT-20B,open LLM,0.791,missing comparator
+S164,NSCLC phenotype extraction: recurrence instances,in-house NSCLC notes,F1,field,GPT-4,closed LLM,0.96,missing or ambiguous best open
+S166,Structured field extraction from German medical reports,in-house 800 reports,accuracy,field,OSS-LLM pipeline with RAG (unspecified),open LLM,0.9,missing comparator
+S167,Headache presence in clinical context,CHU Lille emergency brain MRI reports (n=2398),F1,document,Vicuna-13B v1.3,open LLM,0.98,missing comparator
+S167,Contrast medium injection from protocol,CHU Lille emergency brain MRI reports (n=588),F1,document,Vicuna-13B v1.3,open LLM,0.996,missing comparator
+S167,Normal vs abnormal classification of conclusion,CHU Lille emergency brain MRI reports (n=595),F1,document,Vicuna-13B v1.3,open LLM,0.973,missing comparator
+S168,Liver cirrhosis presence,MIMIC-IV present medical histories (n=500),accuracy,document,Llama 2 70B (one-shot),open LLM,0.98,missing comparator
+S168,Confusion presence,MIMIC-IV present medical histories (n=500),accuracy,document,Llama 2 70B (zero-shot with definitions),open LLM,0.93,missing comparator
+S168,Abdominal pain presence,MIMIC-IV present medical histories (n=500),accuracy,document,Llama 2 70B (zero-shot with definitions),open LLM,0.95,missing comparator
+S169,De-identification (PII NER),i2b2 2014 test,F1,entity,Llama-3-70B-Instruct,open LLM,0.85,missing comparator
+S173,AD symptom category annotation,MIMIC-III silver sample,accuracy,NR,Llama 65B,open LLM,0.55,missing comparator

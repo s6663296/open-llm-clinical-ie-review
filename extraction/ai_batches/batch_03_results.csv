@@ -1,0 +1,24 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R0148,Braak stage,in-house,GPT-OSS 120B,open LLM,120,zero-shot,accuracy,NA,1,field,yes,no,p.5,Context Description+Conclusion 1.0 1.0 0.83 0.88 200-characters 1.0 1.0 0.63 0.87,Table 3; 0-shot ties 2-shot; task-specific sample.
+R0148,perfusion pattern,in-house,GPT-OSS 120B,open LLM,120,few-shot,F1,NR,0.90,entity,yes,no,p.5,Perfusion 2B  0.82 0.90 0.88 *0.53 0.31 0.31,Table 4; token-level; amyloid subset.
+R0148,uptake positivity,in-house,GPT-OSS 120B,open LLM,120,zero-shot,accuracy,NA,0.98,field,yes,no,p.5,Positivity 3B 0.98 0.98 0.96 0.88 0.90 0.86,Table 4; tau subset; ties 2-shot.
+R0157,entity extraction,MIMIC-III; 4CE; CORAL,Llama-3.1-405B,open LLM,405,zero-shot,F1,NR,NR,entity,yes,no,NR,,Figure 3 model-specific values are not readable in supplied text.
+R0166,clinical feature extraction,APOLLO 11 IO cohort,LLaMA 3.1 8B,open LLM,8,other,F1,macro,0.62,field,yes,no,p.14,"observed for F1-scores, with LlaMa 3.1 demonstrating superior average performance (Macro F1 
+score: 0.62), followed by Mistral (Macro F1 score: 0.54), Deepseek-coder (Macro F1 score:",Average across features and prompt strategies; next line reports value.
+R0171,maximum PI-RADS,VA-MAPP,Qwen3-14B,open LLM,14,few-shot,F1,macro,0.962,field,yes,no,p.12,1 Qwen3-14B 2 0.962 0.964 0.962 34.286 0.955,Table 1; pipeline 2.
+R0171,maximum PI-RADS,VA-MAPP,spaCy en_web_core_lg,other,NR,other,F1,macro,0.869,field,no,yes,p.12,7 spaCy (en_web_core_lg) 1 0.907 0.846 0.869 0.134 0.873,Table 1; trained NER comparator.
+R0171,maximum PI-RADS,VA-MAPP,Transformers en_web_core_trf,BERT-type,NR,other,F1,macro,0.841,field,no,yes,p.12,8 Transformers (en_web_core_trf) 1 0.876 0.819 0.841 0.131 0.860,Table 1; transformer NER comparator.
+R0172,binary clinical variables,in-house,Llama 3.1 70B,open LLM,70,other,accuracy,NA,0.798,field,yes,no,p.5,"achieved a mean score of 0.798 (SD = 0.218), while Llama",Mean across binary variables; includes interpretive tasks.
+R0172,binary clinical variables,in-house,GPT-4o,closed LLM,NR,other,accuracy,NA,0.870,field,no,yes,p.5,"achieved the highest mean accuracy (0.870, SD = 0.214),",Mean across binary variables; includes interpretive tasks.
+R0174,entity extraction,RadGraph,Llama-4-Maverick,open LLM,17,few-shot,F1,NR,0.841,entity,yes,no,p.8,Llama-4-Maverick 5-shot .865 .818 .841 .526 .458 .490,Table 3; 17B active per paper.
+R0174,entity extraction,RadGraph,GPT-4.1,closed LLM,NR,few-shot,F1,NR,0.826,entity,no,yes,p.8,GPT-4.1 5-shot .798 .856 .826 .484 .521 .502,Table 3.
+R0174,relation extraction,RadGraph,Llama-4-Maverick,open LLM,17,few-shot,F1,NR,0.490,relation,yes,no,p.8,Llama-4-Maverick 5-shot .865 .818 .841 .526 .458 .490,Table 3; relation F1.
+R0174,relation extraction,RadGraph,GPT-4.1,closed LLM,NR,few-shot,F1,NR,0.502,relation,no,yes,p.8,GPT-4.1 5-shot .798 .856 .826 .484 .521 .502,Table 3; relation F1.
+R0186,metastasis site status,in-house,GPT-OSS 120B,open LLM,120,other,accuracy,NA,0.976,field,yes,no,p.25,gpt-oss:120b 97.6% (96.9%–98.2%) -0.8 (-1.3 to -0.3) <0.001,"Table 2; direct output, not reflective reasoning."
+R0197,colorectal synoptic categorical variables,in-house,Llama 3.3 70B,open LLM,70,RAG,F1,NR,0.9112,field,yes,no,p.22,Reflection round 10 0.9112 0.8953 24,"Figure 4; average across eight variables, iterative reflection with RAG."
+R0209,nausea,in-house,gemma2:27b,open LLM,27.2,zero-shot,F1,NR,0.979,field,yes,no,p.5,F1-score LLM 0.979 (0.966–0.989) 0.985 (0.972–0.995) 0.814 (0.749–0.868) 0.824 (0.734–0.896),Table 2; symptom-specific validation.
+R0209,nausea,in-house,negation-aware rule,rule-based,NR,other,F1,NR,0.724,field,no,yes,p.5,Rule 0.724 (0.679–0.764) 0.913 (0.882–0.941) 0.853 (0.798–0.902) 0.705 (0.582–0.808),Table 2.
+R0209,vomiting,in-house,mistral-large:123b,open LLM,122.6,zero-shot,F1,NR,0.985,field,yes,no,p.5,F1-score LLM 0.979 (0.966–0.989) 0.985 (0.972–0.995) 0.814 (0.749–0.868) 0.824 (0.734–0.896),Table 2.
+R0209,vomiting,in-house,negation-aware rule,rule-based,NR,other,F1,NR,0.913,field,no,yes,p.5,Rule 0.724 (0.679–0.764) 0.913 (0.882–0.941) 0.853 (0.798–0.902) 0.705 (0.582–0.808),Table 2.
+R0209,diarrhea,in-house,llama3.3:70b,open LLM,70.6,zero-shot,F1,NR,0.814,field,yes,no,p.5,F1-score LLM 0.979 (0.966–0.989) 0.985 (0.972–0.995) 0.814 (0.749–0.868) 0.824 (0.734–0.896),"Table 2; dysuria also tested, see study note."
+R0209,diarrhea,in-house,negation-aware rule,rule-based,NR,other,F1,NR,0.853,field,no,yes,p.5,Rule 0.724 (0.679–0.764) 0.913 (0.882–0.941) 0.853 (0.798–0.902) 0.705 (0.582–0.808),Table 2.

@@ -1,0 +1,10 @@
+R0701	Clinical entity augmented retrieval for clinical information extraction.
+R0727	Data extraction from free-text stroke CT reports using GPT-4o and Llama-3.3-70B: the impact of annotation guidelines.
+R0743	Development of a machine learning model for automatic data extraction from breast cancer pathology reports.
+R0769	Enhancing Cross-Domain Generalizability in Social Determinants of Health Extraction with Prompt-Tuning Large Language Models.
+R0775	Enhancing Vaccine Safety Surveillance: Extracting Vaccine Mentions from Emergency Department Triage Notes Using Fine-Tuned Large Language Models.
+R0779	Evaluating Large Language Models for Automated Clinical Abstraction in Pulmonary Embolism Registries: Performance Across Model Sizes, Versions, and Parameters
+R0784	Evaluating Open-Weight Large Language Models for Structured Data Extraction from Narrative Medical Reports Across Multiple Use Cases and Languages
+R0785	Evaluating the reliability of large language models for clinical data extraction in bladder cancer prognosis.
+R0792	Exploring the limits of LLMs in low-resource information extraction: Case study in brain MRI reports for Epilepsy
+R0798	Extracting OPQRST in Electronic Health Records using Large Language Models with Reasoning

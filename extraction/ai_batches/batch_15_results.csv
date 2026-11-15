@@ -1,0 +1,19 @@
+record_id,task,dataset,model,model_class,params_b,strategy,metric,f1_avg,value,eval_level,is_best_open,is_best_comparator,value_src,value_quote,note
+R1004,TI-RADS field extraction,MIMIC-III,Yi-34B,open LLM,34,LoRA,F1,NR,0.95,field,yes,no,p.2,"GPT-4 5 shot was the best performing model, although it only showed
+marginal better performance than Yi-34B open model (0.97 vs 0.95, p =1)",Mean of field-name and field-value F1 across 50 nodules.
+R1004,TI-RADS field extraction,MIMIC-III,GPT-4,closed LLM,NR,few-shot,F1,NR,0.97,field,no,yes,p.2,"GPT-4 5 shot was the best performing model, although it only showed
+marginal better performance than Yi-34B open model (0.97 vs 0.95, p =1)",Mean of field-name and field-value F1 across 50 nodules.
+R1019,clinical NER,i2b2-2012,LLaMA-3.1-8B,open LLM,8,other,F1,NR,0.8192,entity,yes,no,Table 2 (p.7),LLaMA-3.1-8B 89.50 87.64 94.82 84.41 83.60 81.92 93.26 90.56,Instruction tuned; tied at 81.92 with other configurations.
+R1019,clinical RE,i2b2-2010,LLaMA-2-7B,open LLM,7,other,F1,NR,0.937,relation,yes,no,Table 2 (p.7),LLaMA-2-7B 88.37 86.48 94.12 82.70 82.77 81.62 93.70 90.57,Instruction tuned.
+R1031,temporal relation extraction,in-house,Mistral-small-2409,open LLM,22,few-shot,F1,NR,0.55,relation,yes,no,p.7,"Mistral (22B): Best overall performer with average F1 of 
+0.55 (binary classification)",Article calls this weighted performance; averaging method uncertain.
+R1031,temporal relation extraction: CONTAINS,in-house,OpenNRE,other,NR,other,F1,NR,0.35,relation,no,yes,Table 2 (p.6),OpenNRE21 0.32 0.45 0.35 0.31 0.22 0.46 0.25,Baseline model architecture unspecified; relation-specific score.
+R1038,disease entity extraction,in-house,LLaMA-3-70B-Instruct,open LLM,70,zero-shot,F1,NR,0.2649,entity,yes,no,Table II (p.7),LLM(Ours) 0.2120 0.3528 0.2649 0.1932 0.3215 0.2414 0.1606 0.2672 0.2006,Fuzzy threshold 60; approximate reference; threshold-specific result.
+R1038,disease entity extraction,in-house,BioEN,BERT-type,NR,other,F1,NR,0.1409,entity,no,yes,Table II (p.7),BioEN 0.2082 0.1065 0.1409 0.1469 0.0752 0.0994 0.1102 0.0564 0.0746,Fuzzy threshold 60; approximate reference.
+R1041,critical finding extraction,Mayo Clinic,BioMistral-7B,open LLM,7,LoRA,F1,NR,0.57,entity,yes,no,Table 2 (p.4),"BioMistral-WFT Zero-Shot 0.63 0.51 0.56
+Few-Shot 0.68 0.49 0.57",Few-shot used for weak label generation; term matching.
+R1048,visual acuity extraction: right BCVA,in-house,LLaMA-3-70B,open LLM,70,zero-shot,accuracy,NA,0.9565,field,yes,no,Table 5 (p.5),Best Corrected VA 95.65 (66/69) 90.91 (30/33) 92.75 (64/69) 90.32 (28/31),All notes; includes undocumented values.
+R1074,clinical feature extraction,in-house,Qwen-14B-Chat INT4,open LLM,14,CoT,accuracy,NA,0.9728,field,yes,no,p.26,"the average accuracy of
+QWEN(INT4) is 97.28%",Across concepts; 1500 annotated observations.
+R1097,breast lesion attribute extraction,in-house,BURExtract-Llama,open LLM,8,QLoRA,F1,NR,0.846,field,yes,no,Table 2 (p.4),Average 0.747 0.848 0.794 0.809 0.886 0.846 0.804 0.894 0.847,Average F1 over 16 keys.
+R1097,breast lesion attribute extraction,in-house,GPT-4,closed LLM,NR,few-shot,F1,NR,0.847,field,no,yes,Table 2 (p.4),Average 0.747 0.848 0.794 0.809 0.886 0.846 0.804 0.894 0.847,Average F1 over 16 keys.

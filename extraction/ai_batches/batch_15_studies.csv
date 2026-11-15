@@ -1,0 +1,41 @@
+record_id,title_match,first_author,year,country,note_language,text_type,clinical_domain,datasets,task_types,extraction_targets,open_models,medical_domain_model,closed_comparators,other_comparators,strategies,deployment,n_documents_test,note,evidence
+R1004,yes,Pandita,2025,USA,NR,radiology report,radiology,MIMIC-III,field extraction,thyroid nodule characteristics and TI-RADS fields,Starcoderbase-1B; Starcoderbase-3B; Mistral-7B; Llama-3-8B; Llama-2-13B; Yi-34B,no,GPT-3.5; GPT-4,none,LoRA,NR,50,Training data synthetic; evaluation on real reports.,"A training set of 3000 synthetic thyroid nodule dictations was generated to train six open-source
+models (Starcoderbase-1B, Starcoderbase-3B, Mistral-7B, Llama-3-8B, Llama-2-13B, and Yi-34B).
+ACR TI-RADS template was the target model output. The model performa (p.1)"
+R1019,yes,Rohanian,2025,Switzerland,English; German,clinical note (mixed); pathology report; discharge summary,oncology,i2b2-2012; i2b2-2010; TCGA; DUP-127; MIMIC-IV,NER; RE,disease entities and clinical relations,LLaMA-2-7B; LLaMA-3.1-8B; LLaMA-3.2-1B; LLaMA-3.2-3B,no,none,none,instruction tuning; RAG,NR,NR,Other biomedical and classification datasets are outside this extraction.,"Lightweight LLaMA variants (LLaMA-2-7B,
+LLaMA-3.1-8B, LLaMA-3.2-1B, and LLaMA-
+3.2-3B) combine these methods to balance effi-
+ciency and performance. The framework adapts
+to resource-limited clinical environments while
+maintaining high accuracy and flexibility (p.2)"
+R1031,yes,Andrew,2025,France,French,clinical note (mixed),pediatrics,in-house Necker Hospital,RE,temporal relations between phenotypes and time expressions,Llama3-8B; Gemma-7B; Mistral-small-2409-22B,no,none,OpenNRE,zero-shot; few-shot; quantization,local,25,OpenNRE described as including BERT-based architectures; architecture of evaluated baseline not specified.,"We use 3 LLMs for comparison: Llama319 with 8B 
+parameters, Gemma20 with 7B parameters trained on 8T 
+tokens, and Mistral21 small 2409, with 22B parameters. The 
+openai python library was used for the experiments as well as 
+an Ollama server to privately serve (p.5)"
+R1032,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,????? Development of a privacy preserving large language model for automated data extraction from thyroid cancer pathology reports??????????????????????,
+R1038,yes,Wu,2025,NR,NR,clinical note (mixed),general,in-house,NER,diseases and protected health information,LLaMA-3-70B-Instruct; LLaMA-3-8B-Instruct,no,GPT-3.5-turbo-0301; GPT-4-0613,PhysioNet; Stanza; BioEN,zero-shot,local,100,"Disease-entity reference is approximate fuzzy matching to Disease Ontology, not manual gold standard.","All three LLM-based agents are built upon the LLaMA-3-
+70B-Instruct model3, a SOTA model from Meta’s LLaMA
+series. These language models are deployed locally, ensuring
+that sensitive clinical data remains entirely on-premises. This
+setup effectively addresses (p.5)"
+R1041,yes,Das,2025,USA,NR,radiology report,radiology,in-house Mayo Clinic; MIMIC-III; MIMIC-IV,NER,critical imaging findings,Mistral-7B-Instruct; BioMistral-7B; LLaMa-13B,yes,none,none,zero-shot; few-shot; LoRA; instruction tuning,NR,NR,"Test sets: Mayo 80, MIMIC-III 123, MIMIC-IV 5000; GPT-4 is an evaluator, not a model comparator.","We evaluated both generic Mistral-7B and domain-speciﬁc
+BioMistral-7B weakly supervised ﬁne-tuned models with zero-shot and
+few-shot and compared the performance against baseline pre-trained
+models. We also perform an in-depth analysis of model performance usi (p.4)"
+R1048,yes,Satheakeerthy,2025,Australia,NR,clinical note (mixed),ophthalmology,in-house,field extraction,"visual acuity, intraocular pressure and measurement methods by eye",LLaMA-3-70B,no,none,none,zero-shot; quantization,local,69,Accuracy includes absent values; results differ by eye and field.,"The 70 billion parameter model of LLaMA-3 [16] with 
+activation-aware weight quantisation [17] was used with 
+the SGLang library [18] which is based on the vLLM 
+engine [19].
+JavaScript Object Notation (JSON) was selected as the 
+format to represent data outpu (p.3)"
+R1074,yes,Wang,2023,China,Chinese,other,obstetrics,in-house,field extraction,"pregnancy symptoms, medical history and clinical features",Qwen-14B-Chat; Baichuan2-13B-Chat,no,none,none,few-shot; CoT; quantization,local,1500,"Title is a minor wording variant; 1500 observations annotated for accuracy, 25709 total cases.","two low-parameter LLMs, Qwen-14B-Chat (QWEN) and Baichuan2-13B-Chat
+(BAICHUAN).
+Results: The approach achieved high precision in features extraction, with QWEN and BAICHUAN showing average accuracies
+of 95.52% and 95.86%, respectively. The models demonstrated (p.3)"
+R1083,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,???????????? Index Terms???????? Assertion Detection in Clinical Natural Language Processing using Large Language Models???????,
+R1097,yes,Chen,2024,USA,NR,radiology report,oncology,in-house NYU Langone,field extraction; attribute,"breast lesion location, characteristics and recommendations",Llama3-Instruct-8B; BURExtract-Llama (Llama3-8B),no,GPT-4-32K,none,few-shot; QLoRA; quantization,NR,120,Average across 16 keys; GPT-4 supplied training labels and was also evaluated.,"We first use GPT-4 to create a small labeled dataset, then
+fine-tune a Llama3-8B model on it. Evaluated on clinician-
+annotated reports, our model achieves an average F1 score
+of 84.6%, which is on par with GPT-4. Our findings demon-
+strate the feasibility of (p.1)"
