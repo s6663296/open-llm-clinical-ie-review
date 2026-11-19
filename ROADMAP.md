@@ -30,7 +30,11 @@
 - **交叉核對（2026-11-15）**：`scripts/extraction/crosscheck.py` 以 record_id 比對課堂版 62 篇與 174 篇 AI 預填的最佳開源／閉源結果 → `extraction/review/crosscheck_62_vs_174.csv`（＋`_summary.json`）：agree 33、differ_value 15、differ_model 5、differ_closed 3、missing_174 1、missing_62 5；priority 1（暫定 38 篇中不一致或 agent fix）25 篇，作者核對從這 25 篇開始。`agree` 只代表兩個 AI 一致，不等於已對原文。完整版 `figures/prisma_flow.*` 已加課堂版一層（`scripts/prisma_flow.py --scope-numbers analysis/slide_numbers.json`，暫定標 provisional）
 - **課堂版定案（2026-11-15，使用者授權 Agent 處理）**：① 範圍：`extraction/scope_restriction.csv` 全部填 `author_decision`＋`decision_reason`：keep 39／exclude 135（R1 預印本 51、R2 無閉源直接比較 81〔含萃取時確認的 19 篇與 S060 樣本不同〕、核對時發現不符原條件 3：S057 只有摘要、S135 已發表病例報告、S170 剩餘配對為文獻摘要語料）。閉源有實測但數值只在圖／補充資料者（S001、S022、S030、S118、S119、S164）視為符合 R2 而保留，只是不配對。② 核對：Codex 對原文核對 20 篇的 119 個最佳結果列（`extraction/review/verify_report.csv`，引文逐頁比對 0 失敗）：correct 94、fix 16、no_pair 2、unclear 7；修正以 `agent_patch.py` 套用（S019、S052、S101、S121、S126、S151；三個並列最佳因檢查器要求單一最佳而撤回；S102 原文前後矛盾 → 取消閉源最佳標記、不配對），13 批再通過 `check_batch.py`。S001 閉源 Gemini 3 Flash F1 93.8 在 PDF p.25 附錄（文字檔於參考文獻處截斷而未收），不配對。`verified` 欄仍空白（作者欄），Agent 核對結果在 `verify_report.csv`。③ 重跑：`merge.py`、`slide_figures.py`、`slide_prisma.py`、`prisma_flow.py --scope-numbers` → 39 篇、32 篇有配對、83 組任務比較；研究層級開源追平或較好 14／閉源領先 18（差距中位數 0.024）；任務層級 33／50（中位數 0.045）；微調組 0.016（16 組）、提示組 0.059。④ 簡報：Codex 依 `slide_numbers.json` 更新 19 張文字並移除「暫定」，揭露「範圍與核對由 Agent 依作者授權完成」；原 artifact 屬另一帳號無法存取，改發布到新連結 https://claude.ai/artifact/8F5RhJ4iBYFrGwgTjYBKt8 （圖片對照 `slides/assets.json`）。圖表字型加 Microsoft JhengHei（Windows）
 - **學術版 PPTX（2026-11-15）**：依 academic-pptx 規範重做 39 張（31 主＋7 附錄＋參考文獻）：每頁 action title、白底深藍、微軟正黑體、PowerPoint 原生圖表與表格、講者備註、頁底資料來源。產生器 `slides/pptx/build_deck.js`（所有數字執行時讀 `analysis/*.json`、`extraction/review/*`；措辭與資料不符會中止）→ `slides/pptx/open_llm_clinical_ie_review.pptx`；`finalize.py` 去除 ZIP 資料夾項目、`render.ps1` 用本機 PowerPoint 匯出 `qa/` 檢查。`slide_figures.py` 新增 `text_types`、`task_types`、`params_bins`、`n_medical_model_studies`、`n_prompting_comparisons`、`gap_hist`、`unpaired` 與研究標籤（既有鍵的值不變）。修正：`slide_prisma.py` 排除代碼中文標籤原與 protocol 3.2 不符（X1／X3／X5／X7 錯置），已改正並重新上傳 HTML 版 PRISMA 圖；S135／S170 的課堂版排除代碼由 X3 改為 X5、S057 標 X1
-- **下一步**：使用者填封面［課程名稱］［報告日期］與結論頁［聯絡方式］、演練（約 30–40 分鐘）
+- **簡報 v6（2026-11-16）**：依組員 Google Slides 版 v5（33 張：合併背景頁、新增改編 QUADAS-2 品質評估頁與附錄 E）改寫 `slides/pptx/build_deck.js` 重建，修正 v5 經 Google Slides 轉檔後圖表變圖片、類別標籤變 1、2、3、軸標題變方框的問題；版面改為卡片＋大數字、正文 18–22pt、標題自動單行。講稿取自 v5 存為 `slides/pptx/speaker_notes.json`；QUADAS-2 數字照 v5 存為 `slides/pptx/quadas_v5.json`（repo 無原始評估表 `extraction/rob/rob_39.csv`，逐篇表與彙總數字已由產生器互相核對一致）。v5 中「作者逐筆人工核對」篩選／萃取的描述與決策紀錄不符，已改回「雙 AI＋作者裁定分歧、Agent 依授權核對」。輸出 `slides/pptx/open_llm_clinical_ie_review.pptx`（另存下載資料夾 v6）
+- **講稿（2026-11-16）**：`slides/pptx/speaker_notes.json` 擴寫為 30 分鐘版（口說約 5,600 字，三位講者 A／B／C 分段，每頁標時間與累計時間、指圖提示；預備問答移到 Thank you 頁）
+- **簡報重建（2026-11-16 晚）**：上個 session 改完 `build_deck.js`／`speaker_notes.json` 後未重建，PPTX 是舊的；重建時發現 `bullets()` 的 `it.sub` 對純字串會取到 `String.prototype.sub` 函式而報錯（QUADAS-2 重點頁），已加型別判斷。重建後 32 張、32 份講稿、11 個原生圖表，PowerPoint 可開啟，`qa/` 已重新匯出檢查
+- **下一步**：組員確認 QUADAS-2 原始評估表並放入 repo（`extraction/rob/`）；結論頁［聯絡方式］已移除；演練（約 30–40 分鐘）
+- **資料集整理（2026-11-19，教授要看資料集）**：本地與 origin/main 已同步。`scripts/extraction/dataset_tools.py` 產生 `extraction/export/dataset_39_for_review.xlsx`（README／studies 39／results 355／best_results／data_quality／prisma／params_proposal／matching_candidates；另有 `studies_39.csv`、`results_39.csv`）。提案檔 `extraction/review/params_fill_proposal.csv`（開源 LLM 參數量空白 35 列：名稱可判斷 3、公開模型卡 21〔需作者確認〕、需查原文 11）與 `matching_candidates.csv`（matching=NR 的 F1 列涉及 9 篇）。原始萃取 `extraction/codex/*.csv` 未修改，提案待作者決定是否套用
 - **D1 AI 預填（2026-11-15）**：174 篇以完整全文（`fulltext_text_full/`，`pdf_to_text.py --cap 200000`；R0861、R1214、R1331 用 Europe PMC XML）萃取。指引 `scripts/agent_extraction/extraction_prompt.md`；18 批（每批 10 篇），Codex 完成 11 批後用量用盡，其餘 7 批由 Claude Sonnet 子代理完成；10 篇全文為同一研究的預印本／舊版（`title_match=version`）另批重萃取。每批皆通過 `scripts/agent_extraction/check_batch.py`（引句逐字、數值出現在引句、頁碼）。合併 `scripts/agent_extraction/merge_batches.py` → `extraction/extraction.xlsx`（＋`studies.csv`／`results.csv`）：174 研究、472 個結果列；13 篇最佳開源 LLM 數值只在圖或補充資料（value=NR）。Agent 抽查 8 筆數值與原文表格對應皆正確。需作者判斷的 15 篇列於 `extraction/review_flags.csv`（多為疑似 X6 文件層級分類、2 篇 GatorTron 系列權重是否公開）
 - **E1 草稿**：`scripts/analyze.py --include-unverified` 已產生 `analysis/*_UNVERIFIED.csv`、`figures/fig_*_UNVERIFIED.*`（未核對，僅供預覽；核對後去掉該旗標重跑）
 - **174 篇下一步**：作者核對萃取 → 重跑 `analyze.py`
@@ -53,11 +57,11 @@
 | C1 | 標題／摘要篩選 | ✅ | `screening/title_abstract_final.xlsx` |
 | C2 | 全文篩選 | ✅ | `screening/full_text.xlsx` |
 | D1 | 資料萃取（部分欄位：模型、任務、效能） | ✅ 課堂版 39 篇已核對（Agent 依授權）；174 篇 AI 預填未核對（課堂版不用） | `extraction/extraction.xlsx`（174）、`extraction/extraction_scope62.xlsx`（62） |
-| D2 | 偏倚風險／品質評估 | ⏸ 課堂版不做 | `extraction/risk_of_bias.xlsx` |
+| D2 | 偏倚風險／品質評估 | 🔄 組員已做改編 QUADAS-2（結果在簡報 v5），原始評估表未進 repo | `extraction/rob/`（待上傳）；簡報用 `slides/pptx/quadas_v5.json` |
 | E1 | 綜合分析與圖表 | ✅ 課堂版圖表（定案範圍） | `analysis/`、`figures/` |
 | E2 | 報告偏誤與確信度 | ⏸ 課堂版不做 | `analysis/certainty.md` |
 | F1 | PRISMA 流程圖 | ✅ 簡報版與完整版皆含課堂版一層 | `figures/prisma_flow.*` |
-| F2 | 簡報製作（原為論文撰寫） | 🔄 學術版 PPTX 39 張完成（`slides/pptx/`），待填佔位與演練 | `slides/`（既有 `manuscript/` 草稿供取材） |
+| F2 | 簡報製作（原為論文撰寫） | 🔄 v6 32 張完成（`slides/pptx/`），待演練 | `slides/`（既有 `manuscript/` 草稿供取材） |
 | F3 | 投稿前檢查 | ⏸ 不投稿 | `manuscript/prisma_checklist.*` |
 
 ---
@@ -272,3 +276,4 @@
 - 2026-11-15｜E1｜RQ3 主圖改為研究層級（每篇取各任務比較的中位數），任務層級分布另列｜Agent 判斷：一篇最多貢獻 13 組比較，任務層級會讓少數研究主導結果。屬分析呈現方式之補充，非方法變更；兩種數字都在 `slide_numbers.json`
 - 2026-11-15｜D1、E1、F2｜使用者授權 Agent 完成作者待辦（「你來處理」）：定案課堂版範圍 39 篇（規則見「📍 目前位置」）、以 Codex 對原文核對最佳結果並套用修正、裁定 HANDOFF §7 問題（S057 排除〔無全文〕、S102 不配對、S121 最佳開源維持 Qwen 2.5〔原文唯一報告的平均〕、S135／S170 排除〔X5 非臨床病歷文本〕、S001 等閉源只在圖／附錄者保留不配對）｜使用者決定授權。簡報方法段已揭露「範圍與核對由 AI Agent 依作者授權完成，非作者逐篇人工核對」；`verified` 欄保留給作者
 - 2026-11-15｜F2｜改以學術簡報規範產出 PPTX（action title、原生圖表、參考文獻與附錄），HTML 版保留｜使用者認為原簡報不夠專業且太精簡
+- 2026-11-16｜F2｜以組員 v5 的頁面結構重建簡報（產生器版 v6），改善排版（字放大、減少空白）；v5 的 QUADAS-2 結果照原文保留｜使用者決定。QUADAS-2 原始評估表不在 repo，數字無法由腳本重算；v5 對篩選與萃取「作者逐筆人工核對」的描述與 2026-11-14 決策不符，v6 改回如實描述

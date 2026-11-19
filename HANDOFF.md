@@ -92,6 +92,14 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 - 陷阱：`slide_prisma.py` 的排除代碼標籤曾與 protocol 3.2 不符，已修正；代碼定義以 protocol 3.2 為準。
 - 不要用 Codex 背景任務改 `slide_figures.py`：中途停止後其子程序仍在跑，曾把中文標籤寫成問號（已還原）。
 
+## 6e. 簡報 v6（2026-11-16）
+
+- 結構依組員 Google Slides 版 v5（33 張）。不要再把 PPTX 上傳 Google Slides 編輯後下載回來：原生圖表會被轉成圖片，類別標籤掉成 1、2、3，中文軸標題變方框；講稿會帶入 ``（垂直定位字元），PowerPoint 會拒開（`speaker_notes.json` 已清除）。要改內容請改 `build_deck.js`／`speaker_notes.json` 後重跑。
+- 資料：講稿 `slides/pptx/speaker_notes.json`（依頁面 key）；QUADAS-2 `slides/pptx/quadas_v5.json`（照 v5，無原始表；`build_deck.js` 會檢查逐篇表與彙總數字一致）；病歷語言分組讀 `extraction/codex/batch_*_studies.csv`；標題摘要排除代碼讀 `screening/title_abstract_final.csv`。
+- 陷阱：`build_deck.js` 的 `bullets()` 項目若是純字串，不可直接讀 `it.sub`（字串有內建 `sub()` 方法）；已用 `typeof it === 'object'` 防呆。
+- 陷阱：`render.ps1` 需 `powershell -ExecutionPolicy Bypass -File`；`finalize.py --sheets` 需 Pillow（用 `py`）。
+- 陷阱：`render.ps1` 用 COM 開啟中文路徑下的檔案偶爾失敗（"PowerPoint could not open the file"），先跑 `validate.py` 排除檔案損壞，再把檔案複製到英文路徑匯出。
+
 ## 7. 審查結果與待作者核對（已於 6c 處理，保留供參考）
 
 **暫定範圍**：`author_decision` 全空，`slide_figures.py` 用暫定規則 → 38 篇（36 篇有配對、88 組任務比較）。作者定案後重跑 `slide_figures.py`、`slide_prisma.py`，並更新簡報數字與圖。

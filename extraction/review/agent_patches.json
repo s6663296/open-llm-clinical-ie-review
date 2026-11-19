@@ -512,5 +512,230 @@
    "is_best_comparator": "no"
   },
   "reason": "[verify 2026-11-15] 原文 p.6 對同一條件（dataset B、temperature 0、含 guideline）前後報 Llama 0.74／0.94、GPT-4o 0.95／0.93，無法確定，不配對（Agent 依使用者授權決定，2026-11-15）"
+ },
+ {
+  "batch": "02",
+  "kind": "results",
+  "id": "S019-R01",
+  "set": {
+   "params_b": "671"
+  },
+  "reason": "params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "02",
+  "kind": "results",
+  "id": "S019-R03",
+  "set": {
+   "params_b": "671"
+  },
+  "reason": "params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S043-R03",
+  "set": {
+   "params_b": "35"
+  },
+  "reason": "params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S043-R05",
+  "set": {
+   "params_b": "35"
+  },
+  "reason": "params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S043-R07",
+  "set": {
+   "params_b": "35"
+  },
+  "reason": "params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R01",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R03",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R05",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R07",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R09",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R11",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R13",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R15",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R17",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R19",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R21",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R23",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "04",
+  "kind": "results",
+  "id": "S052-R25",
+  "set": {
+   "params_b": "14"
+  },
+  "reason": "params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "07",
+  "kind": "results",
+  "id": "S101-R01",
+  "set": {
+   "params_b": "11"
+  },
+  "reason": "params_b 取自公開模型卡（Flan-T5-XXL 11B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "07",
+  "kind": "results",
+  "id": "S101-R02",
+  "set": {
+   "params_b": "20"
+  },
+  "reason": "params_b 取自公開模型卡（Flan-UL2 20B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "07",
+  "kind": "results",
+  "id": "S101-R03",
+  "set": {
+   "params_b": "46.7"
+  },
+  "reason": "params_b 取自公開模型卡（Mixtral 8x7B 總參數約 46.7B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "09",
+  "kind": "results",
+  "id": "S126-R01",
+  "set": {
+   "params_b": "671"
+  },
+  "reason": "params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "09",
+  "kind": "results",
+  "id": "S126-R03",
+  "set": {
+   "params_b": "671"
+  },
+  "reason": "params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "11",
+  "kind": "results",
+  "id": "S152-R01",
+  "set": {
+   "params_b": "20"
+  },
+  "reason": "params_b 取自公開模型卡（Flan-UL2 20B）；作者 2026-11-19 採用"
+ },
+ {
+  "batch": "01",
+  "kind": "studies",
+  "id": "S001",
+  "set": {
+   "year": "2026"
+  },
+  "reason": "年份改為網路首發年 2026（期刊卷期年為 2027，DOI 10.1016/j.eswa.2026.134237）；作者 2026-11-19 決定"
  }
 ]
