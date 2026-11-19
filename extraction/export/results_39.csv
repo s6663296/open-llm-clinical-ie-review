@@ -1,0 +1,669 @@
+﻿result_id,study_id,task,task_type,dataset,test_n,model,model_class,model_family,params_b,medical_domain,strategy,strategy_detail,quantized,metric,f1_avg,value_reported,metric_scale_original,value,eval_level,matching,is_best_open,is_best_comparator,value_src,value_context,note,extractor
+S001-R01,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",MedGemma-27B,open LLM,Gemma,27,yes,zero-shot,greedy decoding,no,F1,NR,93.2,percent,0.932,document,NA,no,no,p.10 Table 2,"93.2 (10.5↑)
+MedResearcher-R1 32B 94.0 (3.8↑) 95.4 (3.1↓) 86.0 (14.8↑) 90.5 (7.8↑)
+Qwen2.5 32B 94.8 (4.6↑) 95.",,codex
+S001-R02,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",MedResearcher-R1-32B,open LLM,other,32,no,zero-shot,greedy decoding,no,F1,NR,90.5,percent,0.905,document,NA,no,no,p.10 Table 2,"90.5 (7.8↑)
+Qwen2.5 32B 94.8 (4.6↑) 95.1 (3.4↓) 88.8 (17.6↑) 91.8 (9.1↑)
+LLama3.3 70B 95.9 (5.7↑) 91.4 (7.1↓)",,codex
+S001-R03,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",Qwen2.5-32B,open LLM,Qwen,32,no,zero-shot,greedy decoding,no,F1,NR,91.8,percent,0.918,document,NA,no,no,p.10 Table 2,"91.8] 78.9 (0.4↑) [75.9, 81.7] 78.9 (1.8↑) [75.9, 81.7] 79.8 (2.3↓) [76.1, 83.2] 79.4 (2.8↑) [73.2, 84.3] 77.4",,codex
+S001-R04,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",LLaMA3.3-70B,open LLM,Llama,70,no,zero-shot,greedy decoding,no,F1,NR,94.0,percent,0.94,document,NA,yes,no,p.10 Table 2,"94.0 (11.3↑)
+Qwen2.5 72B 93.4 (3.2↑) 94.4 (4.1↓) 85.1 (13.9↑) 89.5 (6.8↑)
+Table 3
+Performance of LLMs on disea",,codex
+S001-R05,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",Qwen2.5-72B,open LLM,Qwen,72,no,zero-shot,greedy decoding,no,F1,NR,89.5,percent,0.895,document,NA,no,no,p.10 Table 2,"89.5 (6.8↑)
+Table 3
+Performance of LLMs on disease progression annotation. The micro-average metric is compute",,codex
+S001-R06,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",ImaGenome silver,rule-based,NA,NR,NA,NA,,NA,F1,NR,82.7,percent,0.827,document,NA,no,yes,p.10 Table 2,"82.7
+LLM-based
+methods
+MedGemma 27B 95.5 (5.3↑) 92.7 (5.8↓) 93.7 (22.5↑) 93.2 (10.5↑)
+MedResearcher-R1 32B 94.",,codex
+S001-R07,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",MedGemma-27B,open LLM,Gemma,27,yes,zero-shot,greedy decoding,no,F1,micro,93.2,percent,0.932,document,NA,no,no,p.10 Table 3,"93.2 (10.5↑)
+MedResearcher-R1 32B 94.0 (3.8↑) 95.4 (3.1↓) 86.0 (14.8↑) 90.5 (7.8↑)
+Qwen2.5 32B 94.8 (4.6↑) 95.",,codex
+S001-R08,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",MedResearcher-R1-32B,open LLM,other,32,no,zero-shot,greedy decoding,no,F1,micro,79.5,percent,0.795,document,NA,no,no,p.10 Table 3,"79.5 (1.0↑) [76.7, 82.4] 76.6 (0.5↓) [73.0, 80.0] 84.6 (2.5↑) [81.8, 87.6] 74.9 (1.7↓) [67.6, 81.3] 70.4 (2.1↓",,codex
+S001-R09,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",Qwen2.5-32B,open LLM,Qwen,32,no,zero-shot,greedy decoding,no,F1,micro,83.2,percent,0.832,document,NA,no,no,p.10 Table 3,"83.2] 79.4 (2.8↑) [73.2, 84.3] 77.4 (4.9↑) [73.0, 81.2]
+Qwen2.5 72B 91.2* (2.5↑) [89.9, 92.6] 83.8* (5.3↑) [81",,codex
+S001-R10,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",LLaMA3.3-70B,open LLM,Llama,70,no,zero-shot,greedy decoding,no,F1,micro,78.9,percent,0.789,document,NA,no,no,p.10 Table 3,"78.9%) on the disease progression task.
+3.1.3. Performance of zero-shot and few-shot
+prompting
+As shown in Tab",,codex
+S001-R11,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",Qwen2.5-72B,open LLM,Qwen,72,no,zero-shot,greedy decoding,no,F1,micro,83.8,percent,0.838,document,NA,yes,no,p.10 Table 3,"83.8* (5.3↑) [81.2, 86.2] 82.5* (5.4↑) [79.2, 85.3] 87.7* (5.6↑) [85.0, 90.1] 83.7 (7.1↑) [77.2, 88.7] 76.2 (3",,codex
+S001-R12,S001,disease progression annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",ImaGenome silver,rule-based,NA,NR,NA,NA,,NA,F1,micro,78.5,percent,0.785,document,NA,no,yes,p.10 Table 3,"78.5 [75.7, 81.1] 77.1 [73.8, 80.1] 82.1 [78.8, 85.0] 76.6 [69.1, 82.5] 72.5 [66.7, 77.8]
+MedGemma 27B 91.4* (",,codex
+S001-R13,S001,longitudinal annotation,other,"Chest ImaGenomeGold (1,975 sentences from 500 reports)","1,975 sentences",Qwen2.5-32B,open LLM,Qwen,32,no,few-shot,3 task examples,no,F1,NR,91.8,percent,0.918,document,NA,no,no,p.11 Table 4," 96.0 86.4
+4-shot 95.9 86.2
+achieved at 3 shots (94.8% accuracy, 91.8% F1",,codex
+S001-R14,S001,disease progression annotation,other,Chest ImaGenomeGold (ground-truth longitudinal sentences subset),NR,Qwen2.5-32B,open LLM,Qwen,32,no,few-shot,2 task examples,no,F1,micro,86.4,percent,0.864,document,NA,yes,no,p.11 Table 4,", with accuracy
+ranging from 95.9% to 96.0% and F1 from 86.2% to 86.4%.",,codex
+S002-R01,S002,NER,NER,annotation-noise robustness dataset (Option A clean),NR,LLaMA 3.2,open LLM,Llama,NR,no,RAG,few-shot RAG,yes,F1,weighted,53.23,percent,0.5323,entity,strict,yes,no,p.11 Table 5,"53.23 Baseline
+Option B (Light Noisy) 2.23 0.73 0.96 −52.27%
+Option C (Heavy Noisy) 0.67 0.43 0.44 −52.79%",,codex
+S002-R02,S002,NER,NER,annotation-noise robustness dataset (Option A clean),NR,GPT-4o RAG,closed LLM,NA,NR,NA,RAG,few-shot RAG,NA,F1,weighted,94.90,percent,0.949,entity,strict,no,yes,p.11 Table 5,"94.90 Baseline
+Option B (Light Noisy) 48.50 38.56 42.96 −51.94%
+Option C (Heavy Noisy) 55.47 43.01 48.45 −46.4",,codex
+S002-R03,S002,NER,NER,annotation-noise robustness dataset (Option A clean),NR,BETO,BERT-type,NA,NR,NA,full FT,supervised fine-tuning,NA,F1,weighted,92.52,percent,0.9252,entity,strict,no,yes,p.11 Table 5,"92.52±0.76 Baseline
+Option B (Light Noisy) 64.83±5.41 33.42±6.47 40.55±6.77 −51.97%
+Option C (Heavy Noisy) 63.",,codex
+S002-R04,S002,RE,RE,annotation-noise robustness dataset (Option A clean),NR,LLaMA 3.2,open LLM,Llama,NR,no,RAG,few-shot RAG,yes,F1,weighted,24.43,percent,0.2443,relation,strict,yes,no,p.12 Table 6,"24.43 Baseline
+Option B (Light Noisy) 15.06 17.67 16.26 −8.17%
+Option C (Heavy Noisy) 21.80 14.06 17.09 −7.34%",,codex
+S002-R05,S002,RE,RE,annotation-noise robustness dataset (Option A clean),NR,GPT-4o RAG,closed LLM,NA,NR,NA,RAG,few-shot RAG,NA,F1,weighted,88.18,percent,0.8818,relation,strict,no,yes,p.12 Table 6,"88.18 Baseline
+Option B (Light Noisy) 88.59 87.35 87.97 −0.21%
+Option C (Heavy Noisy) 88.77 84.44 86.55 −1.63%",,codex
+S002-R06,S002,RE,RE,annotation-noise robustness dataset (Option A clean),NR,BETO,BERT-type,NA,NR,NA,full FT,supervised fine-tuning,NA,F1,weighted,98.49,percent,0.9849,relation,strict,no,yes,p.12 Table 6,"98.49±0.29 Baseline
+Option B (Light Noisy) 97.38±0.76 92.48±2.35 94.82±1.43 −3.67%
+Option C (Heavy Noisy) 95.2",,codex
+S003-R01,S003,NER,NER,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",MedGemma 27B,open LLM,Gemma,27,yes,zero-shot,quantized; strict matching,yes,F1,NR,56.93,percent,0.5693,entity,strict,yes,no,p.6 Table 2,"56.93 (55.93 – 57.92)
+Loose criteria
+Precision, % (95% CI) 86.92 (86.01 – 87.83) 85.87 (84.92 – 86.82) 80.53 (",,codex
+S003-R02,S003,NER,NER,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",Qwen 3,open LLM,Qwen,NR,no,zero-shot,quantized; strict matching,yes,F1,NR,47.79,percent,0.4779,entity,strict,no,no,p.6 Table 2,"47.79 (46.84 – 48.74) 56.93 (55.93 – 57.92)
+Loose criteria
+Precision, % (95% CI) 86.92 (86.01 – 87.83) 85.87 (",,codex
+S003-R03,S003,NER,NER,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",Gemini 2.5 Pro,closed LLM,NA,NR,NA,zero-shot,strict matching,NA,F1,NR,73.28,percent,0.7328,entity,strict,no,yes,p.6 Table 2,"73.28 (72.46 – 74.11) 66.69 (65.80 – 67.57) 47.79 (46.84 – 48.74) 56.93 (55.93 – 57.92)
+Loose criteria
+Precisi",,codex
+S003-R04,S003,NER + entity linking,other,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",MedGemma,open LLM,Gemma,27,yes,RAG,quantized; strict matching,yes,F1,NR,34.15,percent,0.3415,entity,strict,yes,no,p.6 Table 2,"34.15 (33.20 – 35.11)
+Hierarchical-aware criteria
+Precision, % (95% CI) – 55.41 (54.06 – 56.77) 45.81 (44.42 –",,codex
+S003-R05,S003,NER + entity linking,other,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",Qwen,open LLM,Qwen,NR,no,RAG,quantized; strict matching,yes,F1,NR,28.28,percent,0.2828,entity,strict,no,no,p.6 Table 2,"28.28 (27.42 – 29.13) 34.15 (33.20 – 35.11)
+Hierarchical-aware criteria
+Precision, % (95% CI) – 55.41 (54.06 –",,codex
+S003-R06,S003,NER + entity linking,other,"Thai clinical document test set (200 documents; 5,700 entities)","5,700 entities",GPT-4.1,closed LLM,NA,NR,NA,zero-shot,strict matching,NA,F1,NR,39.67,percent,0.3967,entity,strict,no,yes,p.6 Table 2,"39.67 (38.75 – 40.58) 28.28 (27.42 – 29.13) 34.15 (33.20 – 35.11)
+Hierarchical-aware criteria
+Precision, % (95",,codex
+S005-R01,S005,geriatric clinical concept extraction,NER,"four-site EHR notes (UTP, MHHS, HCPC, BIDMC)","49,195 sentences from 400 clinical notes",Qwen2-7B-Instruct,open LLM,Qwen,7,no,LoRA,instruction-tuned,no,F1,micro,0.81,0-1,0.81,entity,NR,yes,no,p.3,"0.81 in micro F1-score. MedAgingIE
+yielded 0.75 in macro precision, 0.49 in macro recall, 0.55 in macro F1-sco",,codex
+S005-R02,S005,geriatric clinical concept extraction,NER,"four-site EHR notes (UTP, MHHS, HCPC, BIDMC)","49,195 sentences from 400 clinical notes",GPT-4o,closed LLM,NA,NR,NA,few-shot,in-context learning,NA,F1,micro,0.87,0-1,0.87,entity,NR,no,yes,p.3,"0.87 in micro F1-
+score. Qwen2-7B-Instruct yielded 0.26 in macro precision, 0.50 in macro
+recall, 0.30 in macr",,codex
+S005-R03,S005,geriatric clinical concept extraction,NER,"four-site EHR notes (UTP, MHHS, HCPC, BIDMC)","49,195 sentences from 400 clinical notes",MedAgingIE,other,NA,NR,NA,other,hybrid heuristic-LLM,NA,F1,micro,0.92,0-1,0.92,entity,NR,no,yes,p.3,"0.92 in micro F1-score.
+From the micro average perspective (Fig. 2a), across all concepts,
+MedAgingIE achieved",,codex
+S010-R07,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",deepseek-r1-14b,open LLM,DeepSeek,14,no,zero-shot,off-the-shelf,no,accuracy,NA,77.6,percent,0.776,field,NR,yes,no,p.5 Table 2,"77.6%
+gemma3-27b 6,651 5,144 1,507 77.3%
+deepseek-r1-70b 6,651 4,682 1,969 70.4%
+phi4-14b 6,651 4,473 2,178 67",,codex
+S010-R08,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",gemma3-27b,open LLM,Gemma,27,no,zero-shot,off-the-shelf,no,accuracy,NA,77.3,percent,0.773,field,NR,no,no,p.5 Table 2,"77.3%
+deepseek-r1-70b 6,651 4,682 1,969 70.4%
+phi4-14b 6,651 4,473 2,178 67.3%
+llama3.3-70b 6,651 4,111 2,540",,codex
+S010-R09,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",deepseek-r1-70b,open LLM,DeepSeek,70,no,zero-shot,off-the-shelf,no,accuracy,NA,70.4,percent,0.704,field,NR,no,no,p.5 Table 2,"70.4%
+phi4-14b 6,651 4,473 2,178 67.3%
+llama3.3-70b 6,651 4,111 2,540 61.8%
+4
+ . CC-BY 4.0 International licen",,codex
+S010-R10,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",phi4-14b,open LLM,Phi,14,no,zero-shot,off-the-shelf,no,accuracy,NA,67.3,percent,0.673,field,NR,no,no,p.5 Table 2,"67.3%
+llama3.3-70b 6,651 4,111 2,540 61.8%
+4
+ . CC-BY 4.0 International licenseIt is made available under a 
+p",,codex
+S010-R11,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",llama3.3-70b,open LLM,Llama,70,no,zero-shot,off-the-shelf,no,accuracy,NA,61.8,percent,0.618,field,NR,no,no,p.5 Table 2,"61.8%
+4
+ . CC-BY 4.0 International licenseIt is made available under a 
+perpetuity. 
+ is the author/funder, wh",,codex
+S010-R12,S010,real-world field extraction,field extraction,real-world pathology fields,"6,651 fields from 90 reports",gemini-2.5-pro,closed LLM,NA,NR,NA,zero-shot,off-the-shelf,NA,accuracy,NA,87.7,percent,0.877,field,NR,no,yes,p.5 Table 2,"87.7%
+gemini-2.0-flash-lite 6,651 5,566 1,085 83.7%
+deepseek-r1-14b 6,651 5,161 1,490 77.6%
+gemma3-27b 6,651 5",,codex
+S014-R01,S014,negative report,other,LLM evaluation set,NR,Llama-3.3-70B,open LLM,Llama,70,no,few-shot,CoT; temperature 0,NR,F1,NR,0.996,0-1,0.996,document,NA,yes,no,p.7 Table 2,"Llama-3.3-70B 0.959 (0.954–0.964) 0.910 (0.902–0.918) 0.938 0 0.995 0.997 0.996
+1 0.996 0.954 0.975
+Nondiagnostic 0.881 0.870 0.875",,codex
+S014-R02,S014,negative report,other,LLM evaluation set,NR,Llama-3.1-8B,open LLM,Llama,8,no,few-shot,CoT; temperature 0,NR,F1,NR,0.987,0-1,0.987,document,NA,no,no,p.7 Table 2,"Llama-3.1-8B 0.807 (0.800–0.814) 0.724 (0.713–0.734) 0.785 0 0.975 0.999 0.987
+1 0.969 0.925 0.946
+Nondiagnostic 0.924 0.266 0.414",,codex
+S014-R03,S014,negative report,other,LLM evaluation set,NR,Mistral,open LLM,Mistral,NR,no,few-shot,CoT; temperature 0,NR,F1,NR,0.990,0-1,0.990,document,NA,no,no,p.7 Table 2,"Mistral 0.846 (0.839–0.854) 0.733 (0.722–0.744) 0.801 0 0.982 0.997 0.990
+1 0.997 0.858 0.922
+Nondiagnostic 0.652 0.469 0.546",,codex
+S014-R04,S014,negative report,other,LLM evaluation set,NR,GPT-4o,closed LLM,NA,NR,NA,few-shot,CoT; temperature 0,NA,F1,NR,0.983,0-1,0.983,document,NA,no,yes,p.7 Table 2,"GPT-4o 0.840 (0.830–0.849) 0.578 (0.565–0.591) 0.658 0 0.988 0.978 0.983
+1 0.699 0.671 0.685
+Nondiagnostic 0.369 0.615 0.461",,codex
+S014-R05,S014,VTE-positive report,other,LLM evaluation set,NR,Llama-3.3-70B,open LLM,Llama,70,no,few-shot,CoT; temperature 0,NR,F1,NR,0.975,0-1,0.975,document,NA,yes,no,p.7 Table 2,"Llama-3.3-70B 0.959 (0.954–0.964) 0.910 (0.902–0.918) 0.938 0 0.995 0.997 0.996
+1 0.996 0.954 0.975
+Nondiagnostic 0.881 0.870 0.875",,codex
+S014-R06,S014,VTE-positive report,other,LLM evaluation set,NR,Llama-3.1-8B,open LLM,Llama,8,no,few-shot,CoT; temperature 0,NR,F1,NR,0.946,0-1,0.946,document,NA,no,no,p.7 Table 2,"Llama-3.1-8B 0.807 (0.800–0.814) 0.724 (0.713–0.734) 0.785 0 0.975 0.999 0.987
+1 0.969 0.925 0.946
+Nondiagnostic 0.924 0.266 0.414",,codex
+S014-R07,S014,VTE-positive report,other,LLM evaluation set,NR,Mistral,open LLM,Mistral,NR,no,few-shot,CoT; temperature 0,NR,F1,NR,0.922,0-1,0.922,document,NA,no,no,p.7 Table 2,"Mistral 0.846 (0.839–0.854) 0.733 (0.722–0.744) 0.801 0 0.982 0.997 0.990
+1 0.997 0.858 0.922
+Nondiagnostic 0.652 0.469 0.546",,codex
+S014-R08,S014,VTE-positive report,other,LLM evaluation set,NR,GPT-4o,closed LLM,NA,NR,NA,few-shot,CoT; temperature 0,NA,F1,NR,0.685,0-1,0.685,document,NA,no,yes,p.7 Table 2,"GPT-4o 0.840 (0.830–0.849) 0.578 (0.565–0.591) 0.658 0 0.988 0.978 0.983
+1 0.699 0.671 0.685
+Nondiagnostic 0.369 0.615 0.461",,codex
+S014-R09,S014,nondiagnostic report,other,LLM evaluation set,NR,Llama-3.3-70B,open LLM,Llama,70,no,few-shot,CoT; temperature 0,NR,F1,NR,0.875,0-1,0.875,document,NA,yes,no,p.7 Table 2,"Llama-3.3-70B 0.959 (0.954–0.964) 0.910 (0.902–0.918) 0.938 0 0.995 0.997 0.996
+1 0.996 0.954 0.975
+Nondiagnostic 0.881 0.870 0.875",,codex
+S014-R10,S014,nondiagnostic report,other,LLM evaluation set,NR,Llama-3.1-8B,open LLM,Llama,8,no,few-shot,CoT; temperature 0,NR,F1,NR,0.414,0-1,0.414,document,NA,no,no,p.7 Table 2,"Llama-3.1-8B 0.807 (0.800–0.814) 0.724 (0.713–0.734) 0.785 0 0.975 0.999 0.987
+1 0.969 0.925 0.946
+Nondiagnostic 0.924 0.266 0.414",,codex
+S014-R11,S014,nondiagnostic report,other,LLM evaluation set,NR,Mistral,open LLM,Mistral,NR,no,few-shot,CoT; temperature 0,NR,F1,NR,0.546,0-1,0.546,document,NA,no,no,p.7 Table 2,"Mistral 0.846 (0.839–0.854) 0.733 (0.722–0.744) 0.801 0 0.982 0.997 0.990
+1 0.997 0.858 0.922
+Nondiagnostic 0.652 0.469 0.546",,codex
+S014-R12,S014,nondiagnostic report,other,LLM evaluation set,NR,GPT-4o,closed LLM,NA,NR,NA,few-shot,CoT; temperature 0,NA,F1,NR,0.461,0-1,0.461,document,NA,no,yes,p.7 Table 2,"GPT-4o 0.840 (0.830–0.849) 0.578 (0.565–0.591) 0.658 0 0.988 0.978 0.983
+1 0.699 0.671 0.685
+Nondiagnostic 0.369 0.615 0.461",,codex
+S019-R01,S019,event extraction,other,BRIDGE task-type aggregate,NR,DeepSeek-R1,open LLM,DeepSeek,671,no,zero-shot,task-type aggregate,NR,F1,micro,30.6,percent,0.306,entity,strict,yes,no,p.56 Table S4,DeepSeek-R1 Open-Source General 41.1 68.4 30.6 46.2 87.6 9.9 16.1 35.9 33.8,,codex
+S019-R02,S019,event extraction,other,BRIDGE task-type aggregate,NR,gemini-2.5-flash,closed LLM,NA,NR,NA,zero-shot,task-type aggregate,NA,F1,micro,31.8,percent,0.318,entity,strict,no,yes,p.56 Table S4,gemini-2.5-flash Proprietary General 40.5 68.3 31.8 49.4 85.7 9.3 16.7 30.2 32.8,,codex
+S019-R03,S019,named entity recognition (NER),NER,BRIDGE task-type aggregate,NR,DeepSeek-R1,open LLM,DeepSeek,671,no,zero-shot,task-type aggregate,NR,F1,micro,46.2,percent,0.462,entity,strict,yes,no,p.56 Table S4,DeepSeek-R1 Open-Source General 41.1 68.4 30.6 46.2 87.6 9.9 16.1 35.9 33.8,,codex
+S019-R04,S019,named entity recognition (NER),NER,BRIDGE task-type aggregate,NR,gemini-2.5-flash,closed LLM,NA,NR,NA,zero-shot,task-type aggregate,NA,F1,micro,49.4,percent,0.494,entity,strict,no,yes,p.56 Table S4,gemini-2.5-flash Proprietary General 40.5 68.3 31.8 49.4 85.7 9.3 16.7 30.2 32.8,,codex
+S025-R01,S025,overall binary clinical variable extraction,attribute,in-house TACE reports,556 reports,Llama 3.1 70B,open LLM,Llama,70,no,zero-shot,standardized system prompt,NR,accuracy,NA,0.798,0-1,0.798,field,NR,yes,no,p.5,Llama 3.1 70B achieved a mean score of 0.798 (SD = 0.218),,codex
+S025-R02,S025,overall binary clinical variable extraction,attribute,in-house TACE reports,556 reports,GPT-4o,closed LLM,NA,NR,NA,zero-shot,standardized system prompt,NA,accuracy,NA,0.870,0-1,0.870,field,NR,no,yes,p.5,"GPT achieved the highest mean accuracy (0.870, SD = 0.214), followed closely by Gemini",,codex
+S026-R01,S026,RadGraph entity extraction,NER,MIMIC-CXR; RadGraph,100 reports,Llama-4-Maverick,open LLM,Llama,17,no,few-shot,5-shot,NR,F1,NR,0.841,0-1,0.841,entity,NR,yes,no,p.7,"Llama-4-Maverick achieves entity F1 of 0.841 (precision 0.865, recall 0.818)",,codex
+S026-R02,S026,RadGraph entity extraction,NER,MIMIC-CXR; RadGraph,100 reports,GPT-4.1,closed LLM,NA,NR,no,few-shot,5-shot,NA,F1,NR,0.826,0-1,0.826,entity,NR,no,yes,p.7,"GPT-4.1 achieves entity F1 of 0.826 (precision 0.798, recall 0.856)",,codex
+S026-R03,S026,RadGraph relation extraction,RE,MIMIC-CXR; RadGraph,100 reports,Llama-4-Maverick,open LLM,Llama,17,no,few-shot,5-shot,NR,F1,NR,0.490,0-1,0.490,relation,NR,yes,no,p.7,"Llama-4-Maverick achieves entity F1 of 0.841 (precision 0.865, recall 0.818) and relation F1 of 0.490",,codex
+S026-R04,S026,RadGraph relation extraction,RE,MIMIC-CXR; RadGraph,100 reports,GPT-4.1,closed LLM,NA,NR,no,few-shot,5-shot,NA,F1,NR,0.502,0-1,0.502,relation,NR,no,yes,p.7,"GPT-4.1 achieves entity F1 of 0.826 (precision 0.798, recall 0.856) and relation F1 of 0.502",,codex
+S030-R01,S030,HAS-BLED score computation,field extraction,in-house atrial fibrillation ablation cohort,179 patients,Qwen3-235B-A22B pipeline,open LLM,Qwen,235,no,zero-shot,LLM extraction plus deterministic scoring pipeline,NR,other,NA,0.20,0-1,0.20,patient,NA,yes,no,p.2,"The Qwen3-based pipeline, achieved the highest accuracy with lower RMSEs than clinicians for HAS-BLED (0.20 vs 0.87)",RMSE (lower is better),codex
+S030-R02,S030,CHA2DS2-VASc score computation,field extraction,in-house atrial fibrillation ablation cohort,179 patients,Qwen3-235B-A22B pipeline,open LLM,Qwen,235,no,zero-shot,LLM extraction plus deterministic scoring pipeline,NR,other,NA,0.53,0-1,0.53,patient,NA,yes,no,p.2,"VASc (0.53 vs 1.08), and EuroSCORE II (1.99 vs 2.05).",RMSE (lower is better),codex
+S033-R01,S033,four-class lung histology extraction,field extraction,TMUH expert-audited pathology reports,33 reports,Med42-8B,open LLM,other,8,yes,LoRA,instruction-based distillation; 1 epoch,yes,F1,macro,0.92,0-1,0.92,document,NR,yes,no,p.1,"Med42-8B model demonstrated a diagnostic accuracy of 90.91% and a macro F1-score of 0.92 (substantial agreement with experts, κ = 0.86)",,codex
+S033-R02,S033,four-class lung histology extraction,field extraction,TMUH expert-audited pathology reports,33 reports,Llama-3-8B,open LLM,Llama,8,no,zero-shot,generalist semantic-ablation baseline,yes,F1,macro,0.79,0-1,0.79,document,NR,no,no,p.1,"general-
+purpose Llama-3-8B student model (accuracy: 78.79%, macro F1-score: 0.79)",,codex
+S033-R03,S033,four-class lung histology extraction,field extraction,TMUH expert-audited pathology reports,33 reports,Gemini 2.0 Flash,closed LLM,NA,NR,no,other,teacher model,NA,F1,macro,0.88,0-1,0.88,document,NR,no,yes,p.12,higher numerical macro F1-score of Med42-8B (0.92 vs 0.88),,codex
+S043-R01,S043,current topical medications (CTM),attribute,glaucoma clinical notes,NR,DeepSeek-V3.2,open LLM,other,NR,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.971,0-1,0.971,document,NR,yes,no,p.27 Table 1,F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),,codex
+S043-R02,S043,current topical medications (CTM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.985,0-1,0.985,document,NR,no,yes,p.27 Table 1,F1 score 0.985 (0.980 - 0.989) 0.971 (0.964 - 0.977) 0.978 (0.973 - 0.984) 0.968 (0.961 - 0.975) 0.970 (0.963 - 0.976),,codex
+S043-R03,S043,proposed topical medication changes (Δ TM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,35,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.855,0-1,0.855,document,NR,yes,no,p.27 Table 1,F1 score 0.905 (0.883 - 0.925) 0.826 (0.797 - 0.855) 0.897 (0.875 - 0.919) 0.842 (0.815 – 0.868) 0.865 (0.837 - 0.889),,codex
+S043-R04,S043,proposed topical medication changes (Δ TM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.905,0-1,0.905,document,NR,no,yes,p.27 Table 1,F1 score 0.905 (0.883 - 0.925) 0.826 (0.797 - 0.855) 0.897 (0.875 - 0.919) 0.842 (0.815 – 0.868) 0.865 (0.837 - 0.889),,codex
+S043-R05,S043,current oral medications (COM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,35,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.894,0-1,0.894,document,NR,yes,no,p.27 Table 1,F1 score 0.923 (0.860 – 0.972) 0.887 (0.812 – 0.947) 0.899 (0.825 – 0.956) 0.906 (0.837 – 0.966) 0.894 (0.824 – 0.954),,codex
+S043-R06,S043,current oral medications (COM),attribute,glaucoma clinical notes,NR,Grok 4.1,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.923,0-1,0.923,document,NR,no,yes,p.27 Table 1,F1 score 0.923 (0.860 – 0.972) 0.887 (0.812 – 0.947) 0.899 (0.825 – 0.956) 0.906 (0.837 – 0.966) 0.894 (0.824 – 0.954),,codex
+S043-R07,S043,proposed oral medication changes (Δ OM),attribute,glaucoma clinical notes,NR,Qwen3.6-35B-A3B,open LLM,other,35,no,zero-shot,same prompt; Azure AI Foundry,NR,F1,micro,0.940,0-1,0.940,document,NR,yes,no,p.28 Table 1,F1 score 0.958 (0.889 – 1.000) 0.815 (0.681 - 0.923) 0.937 (0.851 - 1.000) 0.835 (0.694 – 0.943) 0.940 (0.857 – 1.000),,codex
+S043-R08,S043,proposed oral medication changes (Δ OM),attribute,glaucoma clinical notes,NR,Claude Opus 4.6,closed LLM,NA,NR,NA,NA,same prompt; Azure AI Foundry,NA,F1,micro,0.958,0-1,0.958,document,NR,no,yes,p.28 Table 1,F1 score 0.958 (0.889 – 1.000) 0.815 (0.681 - 0.923) 0.937 (0.851 - 1.000) 0.835 (0.694 – 0.943) 0.940 (0.857 – 1.000),,codex
+S052-R01,S052,Main,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.715,0-1,0.715,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.522 (0.467–0.580) 0.510 (0.449–0.579) 0.715 (0.671–0.757)
+PE (GPT-4o) 0.761 (0.710–0.803) 0.768 (0.693–0.838) 0.881 (0.849–0.91)
+Sub (manual) 0.917 0.787 0.941
+FT (Int",,codex
+S052-R02,S052,Main,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.937,0-1,0.937,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.870 (0.830–0.907) 0.830 (0.774–0.888) 0.937 (0.914–0.958)
+PE (Phi-4) 0.522 (0.467–0.580) 0.510 (0.449–0.579) 0.715 (0.671–0.757)
+PE (GPT-4o) 0.761 (0.710–0.803) 0.768",,codex
+S052-R03,S052,Sub,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.797,0-1,0.797,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.460 (0.403–0.520) 0.611 (0.528–0.697) 0.797 (0.761–0.833)
+PE (GPT-4o) 0.634 (0.580–0.687) 0.795* (0.719–0.872) 0.830 (0.799–0.862)
+No CAD (manual) 0.974 0.964 0.945
+FT",,codex
+S052-R04,S052,Sub,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.830,0-1,0.830,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.634 (0.580–0.687) 0.795* (0.719–0.872) 0.830 (0.799–0.862)
+No CAD (manual) 0.974 0.964 0.945
+FT (Intfloat) 0.960* (0.937–0.980) 0.883 (0.820–0.939) 0.918* (0.867–0.95",,codex
+S052-R05,S052,No CAD,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.782,0-1,0.782,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.974* (0.953–0.990) 0.899 (0.865–0.928) 0.782 (0.727–0.838)
+PE (GPT-4o) 0.973* (0.953–0.990) 0.950* (0.904–0.985) 0.949* (0.913–0.979)
+Occlusion (manual) 0.926 0.933 0.",,codex
+S052-R06,S052,No CAD,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.949,0-1,0.949,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.973* (0.953–0.990) 0.950* (0.904–0.985) 0.949* (0.913–0.979)
+Occlusion (manual) 0.926 0.933 0.917
+FT (Intfloat) 0.793 (0.750–0.837) 0.752 (0.701–0.801) 0.761 (0.710–0",,codex
+S052-R07,S052,Occlusion,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.709,0-1,0.709,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.761 (0.713–0.81) 0.697 (0.646–0.752) 0.709 (0.654–0.767)
+PE (GPT-4o) 0.927* (0.897–0.953) 0.917* (0.881–0.949) 0.919* (0.884–0.949)
+Treatment strategy (manual) 0.976 0",,codex
+S052-R08,S052,Occlusion,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.919,0-1,0.919,document,NR,no,yes,p.5 Table 2,"PE (GPT-4o) 0.927* (0.897–0.953) 0.917* (0.881–0.949) 0.919* (0.884–0.949)
+Treatment strategy (manual) 0.976 0.924 0.818
+FT (Intfloat) 0.953* (0.930–0.977) 0.895* (0.825–0.955) 0.8",,codex
+S052-R09,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.847,0-1,0.847,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.940 (0.910–0.967) 0.835 (0.748–0.917) 0.847* (0.762–0.919)
+PE (GPT-4o) 0.977* (0.957–0.993) 0.915* (0.841–0.976) 0.930* (0.868–0.977)
+Graft (manual) 0.987 0.940 0.957",,codex
+S052-R10,S052,Treatment strategy,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning; Azure OpenAI,NA,F1,micro,0.97,0-1,0.97,document,NR,no,yes,p.5 Table 2,FT (GPT-4o) 0.987* (0.973–0.997) 0.970* (0.926–0.998) 0.97* (0.931–0.997),,codex
+S052-R11,S052,Graft,attribute,invasive coronary angiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.947,0-1,0.947,document,NR,yes,no,p.5 Table 2,"PE (Phi-4) 0.993* (0.983–1.00) 0.924* (0.864–0.974) 0.947* (0.905–0.981)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.996* (0.990–1.00) 0.986* (0.965–1.00)
+Four LLM models and training method",,codex
+S052-R12,S052,Graft,attribute,invasive coronary angiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.992,0-1,0.992,document,NR,no,yes,p.5 Table 2,"FT (GPT-4o) 0.996* (0.990–1.00) 0.998* (0.994–1.00) 0.992* (0.975–1.00)
+PE (Phi-4) 0.993* (0.983–1.00) 0.924* (0.864–0.974) 0.947* (0.905–0.981)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.9",,codex
+S052-R13,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.707,0-1,0.707,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.893 (0.860–0.927) 0.783 (0.688–0.869) 0.707 (0.532–0.853)
+PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993)
+Aortic Sten. grade (manual) 1.00 1.",,codex
+S052-R14,S052,Mitral Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.897,0-1,0.897,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.980 (0.963–0.993) 0.946* (0.878–0.989) 0.897* (0.743–0.993),,codex
+S052-R15,S052,Aortic Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.516,0-1,0.516,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.866 (0.823–0.903) 0.791 (0.721–0.850) 0.516 (0.377–0.665)
+PE (GPT-4o) 0.990* (0.977–1.00) 0.856* (0.753–1.00) 0.836* (0.712–1.00)
+Aortic Reg. grade (manual) 0.993 0.98",,codex
+S052-R16,S052,Aortic Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.991,0-1,0.991,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.997* (0.987–1.00) 0.999* (0.997–1.00) 0.991* (0.968–1.00)
+PE (Phi-4) 0.866 (0.823–0.903) 0.791 (0.721–0.850) 0.516 (0.377–0.665)
+PE (GPT-4o) 0.990* (0.977–1.00) 0.856",,codex
+S052-R17,S052,Aortic Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.661,0-1,0.661,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.876 (0.837–0.913) 0.795 (0.772–0.834) 0.661 (0.553–0.744)
+PE (GPT-4o) 0.973 (0.953–0.990) 0.885 (0.751–0.967) 0.904 (0.742–0.980)
+Tricuspid Sten. grade (manual) 0.993",,codex
+S052-R18,S052,Aortic Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.978,0-1,0.978,document,NR,no,yes,p.6 Table 3,"FT (GPT-4o) 0.987* (0.973–0.997) 0.975* (0.948–0.999) 0.978* (0.952–0.996)
+PE (Phi-4) 0.876 (0.837–0.913) 0.795 (0.772–0.834) 0.661 (0.553–0.744)
+PE (GPT-4o) 0.973 (0.953–0.990) 0.",,codex
+S052-R19,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.185,0-1,0.185,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.838 (0.793–0.877) 0.435 (0.415–0.454) 0.185 (0.177–0.229)
+PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00)
+Tricuspid Reg.grade (manual) 0.993 0.",,codex
+S052-R20,S052,Tricuspid Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.977,0-1,0.977,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.997* (0.990–1.00) 0.998* (0.995–1.00) 0.977* (0.913–1.00),,codex
+S052-R21,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.491,0-1,0.491,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.853 (0.81–0.893) 0.797 (0.702–0.878) 0.491 (0.360–0.657)
+PE (GPT-4o) 0.980* (0.963–0.993) 0.961 (0.912–0.997) 0.901* (0.701–0.985)
+Pulmonary Sten. grade (manual) 0.997",,codex
+S052-R22,S052,Tricuspid Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning; Azure OpenAI,NA,F1,micro,0.905,0-1,0.905,document,NR,no,yes,p.6 Table 3,FT (GPT-4o) 0.963 (0.943–0.983) 0.978 (0.947–0.994) 0.905 (0.841–0.955),,codex
+S052-R23,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.260,0-1,0.260,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.834 (0.790–0.877) 0.508 (0.459–0.568) 0.260 (0.191–0.384)
+PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00)
+Pulmonary Reg. grade (manual) 0.997 0",,codex
+S052-R24,S052,Pulmonary Sten. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,prompt engineering; Azure OpenAI,NA,F1,micro,0.990,0-1,0.99,document,NR,no,yes,p.6 Table 3,PE (GPT-4o) 0.996* (0.987–1.00) 0.998* (0.993–1.00) 0.990* (0.967–1.00),,codex
+S052-R25,S052,Pulmonary Reg. grade,attribute,transthoracic echocardiography reports,300 reports,Phi-4,open LLM,Phi,14,no,few-shot,prompt engineering; HPC/available on-site model,NR,F1,micro,0.427,0-1,0.427,document,NR,yes,no,p.6 Table 3,"PE (Phi-4) 0.816 (0.770–0.860) 0.740 (0.684–0.800) 0.427 (0.349–0.507)
+PE (GPT-4o) 0.993* (0.983–1.00) 0.950* (0.831–1.00) 0.964* (0.876–1.00)
+Four LLM models and training methods",,codex
+S052-R26,S052,Pulmonary Reg. grade,attribute,transthoracic echocardiography reports,300 reports,GPT-4o,closed LLM,NA,NR,NA,other,fine-tuning or prompt engineering; Azure OpenAI,NA,F1,micro,0.964,0-1,0.964,document,NR,no,yes,p.6 Table 3,"PE (GPT-4o) 0.993* (0.983–1.00) 0.950* (0.831–1.00) 0.964* (0.876–1.00)
+Four LLM models and training methods are compared on nine labels extracted from TTE reports. Comparison is d",,codex
+S055-R01,S055,minimum T-score extraction,field extraction,institutional DEXA reports,300 reports,Llama 3.1 8b,open LLM,Llama,8,no,zero-shot,,NR,accuracy,NA,98.7,percent,0.987,field,NR,no,no,p.4 Table 2,Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 86.0% (81.4–89.6) 84.6% (79.4–88.6) 95.3% (92.1–97.3) 95.9% (92.8–97.8)*,,codex
+S055-R02,S055,minimum T-score extraction,field extraction,institutional DEXA reports,300 reports,DeepSeek R1 Distilled Llama 3.1 8b,open LLM,other,8,no,zero-shot,,NR,accuracy,NA,98.7,percent,0.987,field,NR,yes,no,p.4 Table 2,DeepSeek R1 Distilled Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 96.3% (93.3–98.1) 96.9% (93.8–98.6) 97.7% (95.0–99.0) 97.6% (95.0–99.0),,codex
+S055-R03,S055,minimum T-score extraction,field extraction,institutional DEXA reports,300 reports,OpenAI o1-mini,closed LLM,NA,NR,NA,zero-shot,,NR,accuracy,NA,99.3,percent,0.993,field,NR,no,yes,p.4 Table 2,OpenAI o1-mini 99.3% (97.3–99.9) 99.3% (97.3–99.9) 99.0% (96.9–99.7) 99.2% (96.9–99.9) 97.3% (94.6–98.8) 98.0% (95.4–99.2)*,,codex
+S055-R04,S055,maximum common bile duct diameter extraction,field extraction,MIMIC-III v1.4 ultrasound reports,300 reports,Llama 3.1 8b,open LLM,Llama,8,no,zero-shot,,NR,accuracy,NA,86.0,percent,0.86,field,NR,no,no,p.4 Table 2,Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 86.0% (81.4–89.6) 84.6% (79.4–88.6) 95.3% (92.1–97.3) 95.9% (92.8–97.8)*,,codex
+S055-R05,S055,maximum common bile duct diameter extraction,field extraction,MIMIC-III v1.4 ultrasound reports,300 reports,DeepSeek R1 Distilled Llama 3.1 8b,open LLM,other,8,no,zero-shot,,NR,accuracy,NA,96.3,percent,0.963,field,NR,yes,no,p.4 Table 2,DeepSeek R1 Distilled Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 96.3% (93.3–98.1) 96.9% (93.8–98.6) 97.7% (95.0–99.0) 97.6% (95.0–99.0),,codex
+S055-R06,S055,maximum common bile duct diameter extraction,field extraction,MIMIC-III v1.4 ultrasound reports,300 reports,OpenAI GPT-5-mini,closed LLM,NA,NR,NA,zero-shot,,NR,accuracy,NA,99.7,percent,0.997,field,NR,no,yes,p.4 Table 2,"and 99.3% (97.3–99.9), respectively), while the best performance of GPT-5-mini was in CBD diameter and nodule tasks (accuracy = 99.7% (97.9–100.0)).",,codex
+S055-R07,S055,maximum lung nodule size extraction,field extraction,institutional CT reports,300 reports,Llama 3.1 8b,open LLM,Llama,8,no,zero-shot,,NR,accuracy,NA,95.3,percent,0.953,field,NR,no,no,p.4 Table 2,Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 86.0% (81.4–89.6) 84.6% (79.4–88.6) 95.3% (92.1–97.3) 95.9% (92.8–97.8)*,,codex
+S055-R08,S055,maximum lung nodule size extraction,field extraction,institutional CT reports,300 reports,DeepSeek R1 Distilled Llama 3.1 8b,open LLM,other,8,no,zero-shot,,NR,accuracy,NA,97.7,percent,0.977,field,NR,yes,no,p.4 Table 2,DeepSeek R1 Distilled Llama 3.1 8b 98.7% (96.4–99.6) 98.6% (96.3–99.6) 96.3% (93.3–98.1) 96.9% (93.8–98.6) 97.7% (95.0–99.0) 97.6% (95.0–99.0),,codex
+S055-R09,S055,maximum lung nodule size extraction,field extraction,institutional CT reports,300 reports,OpenAI GPT-5-mini,closed LLM,NA,NR,NA,zero-shot,,NR,accuracy,NA,99.7,percent,0.997,field,NR,no,yes,p.4 Table 2,"and 99.3% (97.3–99.9), respectively), while the best performance of GPT-5-mini was in CBD diameter and nodule tasks (accuracy = 99.7% (97.9–100.0)).",,codex
+S071-R01,S071,Medication Extraction,NER,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,47.3,percent,0.473,entity,NR,no,no,p.14 Table 3,47.3 ± 0.3 94.5 ± 0.2 89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R02,S071,Medication Extraction,NER,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,77.3,percent,0.773,entity,NR,no,no,p.14 Table 3,77.3 ± 0.8 95.7 ± 0.3 90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R03,S071,Medication Extraction,NER,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,41.5,percent,0.415,entity,NR,no,no,p.15 Table 3,41.5 ± 0.2 93.0 ± 0.3 86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R04,S071,Medication Extraction,NER,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,42.8,percent,0.428,entity,NR,no,no,p.15 Table 3,42.8 ± 0.7 91.1 ± 0.3 82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R05,S071,Medication Extraction,NER,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,micro,66.5,percent,0.665,entity,NR,no,no,p.14 Table 2,66.5 ± 1.1 86.9 ± 0.6 74.5 ± 0.8 76.0 88.6 ± 0.2 83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R06,S071,Medication Extraction,NER,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,CoT,chain-of-thought,NR,F1,micro,53.2,percent,0.532,entity,NR,no,no,p.15 Table 4,53.2 ± 0.5 82.2 ± 0.7 74.0 ± 0.6 69.8 75.8 ± 0.5 59.8 ± 1.0 51.0 ± 0.6 62.2 43.7 ± 0.7 58.2 ± 0.7 40.3 ± 0.3 47.4,,codex
+S071-R07,S071,Medication Extraction,NER,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,micro,52.5,percent,0.525,entity,NR,no,no,p.15 Table 4,52.5 ± 0.6 89.1 ± 0.8 83.2 ± 0.6 74.9 72.7 ± 0.7 79.6 ± 2.0 59.6 ± 0.7 70.6 43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R08,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,71.0,percent,0.71,entity,NR,no,no,p.15 Table 3,71.0 ± 0.9 94.6 ± 0.1 88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R09,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,88.5,percent,0.885,entity,NR,no,no,p.15 Table 3,88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R10,S071,Medication Extraction,NER,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,CoT,chain-of-thought,NR,F1,micro,93.1,percent,0.931,entity,NR,yes,no,p.16 Table 4,93.1 ± 0.6 91.6 ± 0.9 84.4 ± 0.3 89.7 83.2 ± 0.6 80.7 ± 0.9 66.8 ± 1.5 76.9 74.0 ± 0.6 73.5 ± 1.0 56.1 ± 1.2 67.9,,codex
+S071-R11,S071,Medication Extraction,NER,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,F1,micro,96.9,percent,0.969,entity,NR,no,yes,p.14 Table 2,96.9 ± 0.2 95.0 ± 0.2 90.0 ± 0.1 94.0 83.0 ± 0.4 86.0 ± 0.5 65.2 ± 0.7 78.1 82.6 ± 0.8 75.6 ± 0.7 60.0 ± 0.5 72.7,,codex
+S071-R12,S071,Medication Extraction,NER,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,94.5,percent,0.945,entity,NR,no,no,p.14 Table 3,94.5 ± 0.2 89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R13,S071,Medication Extraction,NER,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,95.7,percent,0.957,entity,NR,yes,no,p.14 Table 3,95.7 ± 0.3 90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R14,S071,Medication Extraction,NER,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,93.0,percent,0.93,entity,NR,no,no,p.15 Table 3,93.0 ± 0.3 86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R15,S071,Medication Extraction,NER,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,91.1,percent,0.911,entity,NR,no,no,p.15 Table 3,91.1 ± 0.3 82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R16,S071,Medication Extraction,NER,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,93.4,percent,0.934,entity,NR,no,no,p.15 Table 3,93.4 ± 0.2 87.3 ± 0.4 79.8 88.2 ± 0.6 67.7 ± 0.9 61.6 ± 1.4 72.5 52.1 ± 0.7 60.7 ± 1.8 54.0 ± 0.7 55.6,,codex
+S071-R17,S071,Medication Extraction,NER,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,micro,86.8,percent,0.868,entity,NR,no,no,p.15 Table 3,86.8 ± 0.5 85.3 ± 0.2 69.7 69.0 ± 0.8 70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R18,S071,Medication Extraction,NER,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,micro,93.3,percent,0.933,entity,NR,no,no,p.15 Table 3,93.3 ± 0.2 87.8 ± 0.2 75.9 79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R19,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,94.6,percent,0.946,entity,NR,no,no,p.15 Table 3,94.6 ± 0.1 88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R20,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,95.0,percent,0.95,entity,NR,no,no,p.15 Table 3,95.0 ± 0.1 88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R21,S071,Medication Extraction,NER,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,micro,95.3,percent,0.953,entity,NR,no,no,p.15 Table 3,95.3 ± 0.1 87.9 ± 0.0 84.5 87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R22,S071,Medication Extraction,NER,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,micro,96.1,percent,0.961,entity,NR,no,yes,p.14 Table 3,96.1 ± 0.3 90.0 ± 0.2 91.4 89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R23,S071,Medication Extraction,NER,MIV-Med,297 snippets,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,micro,89.2,percent,0.892,entity,NR,no,no,p.14 Table 3,89.2 ± 0.1 77.0 59.2 ± 0.3 68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R24,S071,Medication Extraction,NER,MIV-Med,297 snippets,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,micro,90.1,percent,0.901,entity,NR,yes,no,p.14 Table 3,90.1 ± 0.1 87.7 88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R25,S071,Medication Extraction,NER,MIV-Med,297 snippets,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,86.4,percent,0.864,entity,NR,no,no,p.15 Table 3,86.4 ± 0.2 73.6 69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R26,S071,Medication Extraction,NER,MIV-Med,297 snippets,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,micro,82.7,percent,0.827,entity,NR,no,no,p.15 Table 3,82.7 ± 0.3 72.2 64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R27,S071,Medication Extraction,NER,MIV-Med,297 snippets,MeLLaMA-70B-chat,open LLM,other,70,yes,few-shot,5-shot,NR,F1,micro,87.3,percent,0.873,entity,NR,no,no,p.15 Table 3,87.3 ± 0.4 79.8 88.2 ± 0.6 67.7 ± 0.9 61.6 ± 1.4 72.5 52.1 ± 0.7 60.7 ± 1.8 54.0 ± 0.7 55.6,,codex
+S071-R28,S071,Medication Extraction,NER,MIV-Med,297 snippets,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,micro,85.3,percent,0.853,entity,NR,no,no,p.15 Table 3,85.3 ± 0.2 69.7 69.0 ± 0.8 70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R29,S071,Medication Extraction,NER,MIV-Med,297 snippets,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,micro,87.8,percent,0.878,entity,NR,no,no,p.15 Table 3,87.8 ± 0.2 75.9 79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R30,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,micro,88.9,percent,0.889,entity,NR,no,no,p.15 Table 3,88.9 ± 0.2 84.8 85.0 ± 0.4 78.9 ± 0.8 68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R31,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,micro,88.5,percent,0.885,entity,NR,no,no,p.15 Table 3,88.5 ± 0.1 90.7 90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R32,S071,Medication Extraction,NER,MIV-Med,297 snippets,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,micro,87.9,percent,0.879,entity,NR,no,no,p.15 Table 3,87.9 ± 0.0 84.5 87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R33,S071,Medication Extraction,NER,MIV-Med,297 snippets,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,F1,micro,90.0,percent,0.9,entity,NR,no,yes,p.14 Table 2,90.0 ± 0.2 91.4 89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R34,S071,Medication Status Classification,attribute,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,zero-shot,zero-shot,NR,F1,macro,63.5,percent,0.635,entity,NR,no,no,p.14 Table 2,63.5 ± 1.3 61.7 ± 0.7 56.7 ± 1.5 60.6 26.8 ± 0.5 60.1 ± 1.6 49.4 ± 1.5 45.4,,codex
+S071-R35,S071,Medication Status Classification,attribute,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,88.4,percent,0.884,entity,NR,no,no,p.14 Table 3,88.4 ± 0.4 85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R36,S071,Medication Status Classification,attribute,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,69.6,percent,0.696,entity,NR,no,no,p.15 Table 3,69.6 ± 1.0 60.1 ± 1.0 60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R37,S071,Medication Status Classification,attribute,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,64.7,percent,0.647,entity,NR,no,no,p.15 Table 3,64.7 ± 0.5 58.9 ± 0.9 58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R38,S071,Medication Status Classification,attribute,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,88.6,percent,0.886,entity,NR,no,no,p.14 Table 2,88.6 ± 0.2 83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R39,S071,Medication Status Classification,attribute,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,zero-shot,zero-shot,NR,F1,macro,75.8,percent,0.758,entity,NR,no,no,p.14 Table 2,75.8 ± 0.4 64.4 ± 0.4 50.2 ± 0.6 63.5 41.3 ± 0.3 55.0 ± 0.2 48.7 ± 0.2 48.3,,codex
+S071-R40,S071,Medication Status Classification,attribute,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,macro,79.2,percent,0.792,entity,NR,no,no,p.15 Table 3,79.2 ± 0.6 78.7 ± 0.8 75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R41,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,CoT,chain-of-thought,NR,F1,macro,87.7,percent,0.877,entity,NR,no,no,p.16 Table 4,87.7 ± 0.2 83.6 ± 1.2 66.8 ± 1.3 79.4 52.5 ± 1.2 69.7 ± 1.6 58.3 ± 0.6 60.2,,codex
+S071-R42,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,90.7,percent,0.907,entity,NR,yes,no,p.15 Table 3,90.7 ± 0.0 83.3 ± 0.2 68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R43,S071,Medication Status Classification,attribute,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,87.8,percent,0.878,entity,NR,no,no,p.15 Table 3,87.8 ± 0.1 84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R44,S071,Medication Status Classification,attribute,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,89.1,percent,0.891,entity,NR,no,yes,p.14 Table 3,89.1 ± 0.4 86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R45,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,68.4,percent,0.684,entity,NR,no,no,p.14 Table 3,68.4 ± 0.7 66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R46,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,85.4,percent,0.854,entity,NR,yes,no,p.14 Table 3,85.4 ± 1.0 73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R47,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,70.4,percent,0.704,entity,NR,no,no,p.14 Table 2,70.4 ± 0.6 58.8 ± 0.2 65.1 22.4 ± 0.7 59.3 ± 1.3 49.8 ± 1.9 43.8,,codex
+S071-R48,S071,Medication Status Classification,attribute,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,CoT,chain-of-thought,NR,F1,macro,62.1,percent,0.621,entity,NR,no,no,p.15 Table 4,62.1 ± 0.5 53.4 ± 0.7 45.9 17.5 ± 0.5 55.4 ± 0.9 40.7 ± 0.6 37.9,,codex
+S071-R49,S071,Medication Status Classification,attribute,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,83.2,percent,0.832,entity,NR,no,no,p.14 Table 2,83.2 ± 0.4 62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R50,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,70.7,percent,0.707,entity,NR,no,no,p.15 Table 3,70.7 ± 0.4 69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R51,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,macro,79.6,percent,0.796,entity,NR,no,no,p.15 Table 4,79.6 ± 2.0 59.6 ± 0.7 70.6 43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R52,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,CoT,chain-of-thought,NR,F1,macro,83.6,percent,0.836,entity,NR,no,no,p.16 Table 4,83.6 ± 1.2 66.8 ± 1.3 79.4 52.5 ± 1.2 69.7 ± 1.6 58.3 ± 0.6 60.2,,codex
+S071-R53,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,CoT,chain-of-thought,NR,F1,macro,83.6,percent,0.836,entity,NR,no,no,p.16 Table 4,83.6 ± 1.0 65.0 ± 0.4 77.9 72.2 ± 2.3 76.9 ± 0.9 54.0 ± 1.5 67.7,,codex
+S071-R54,S071,Medication Status Classification,attribute,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,84.7,percent,0.847,entity,NR,no,no,p.15 Table 3,84.7 ± 0.1 75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R55,S071,Medication Status Classification,attribute,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,86.6,percent,0.866,entity,NR,no,yes,p.14 Table 3,86.6 ± 0.6 68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R56,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,66.0,percent,0.66,entity,NR,no,no,p.14 Table 3,66.0 ± 1.1 64.5 40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R57,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,73.7,percent,0.737,entity,NR,no,no,p.14 Table 3,73.7 ± 1.7 82.5 67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R58,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,60.6,percent,0.606,entity,NR,no,no,p.15 Table 3,60.6 ± 1.9 63.4 35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R59,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,58.3,percent,0.583,entity,NR,no,no,p.15 Table 3,58.3 ± 0.3 60.6 30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R60,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,62.0,percent,0.62,entity,NR,no,no,p.14 Table 2,62.0 ± 0.6 77.9 56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R61,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,69.7,percent,0.697,entity,NR,no,no,p.15 Table 3,69.7 ± 0.9 69.8 31.8 ± 0.4 59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R62,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,few-shot,5-shot,NR,F1,macro,75.8,percent,0.758,entity,NR,no,no,p.15 Table 3,75.8 ± 0.5 77.9 41.1 ± 0.3 67.4 ± 0.4 62.5 ± 0.3 57.0,,codex
+S071-R63,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,68.3,percent,0.683,entity,NR,no,no,p.15 Table 3,68.3 ± 1.9 77.4 61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R64,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,68.9,percent,0.689,entity,NR,no,no,p.15 Table 3,68.9 ± 0.4 81.0 78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R65,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,75.9,percent,0.759,entity,NR,yes,no,p.15 Table 3,75.9 ± 0.7 82.8 61.1 ± 0.6 77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R66,S071,Medication Status Classification,attribute,MIV-Med,297 snippets,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,68.4,percent,0.684,entity,NR,no,yes,p.14 Table 3,68.4 ± 0.5 81.4 77.5 ± 1.1 80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S071-R67,S071,End-to-End Classification,attribute,MGB-Med,NR,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,few-shot,5-shot,NR,F1,macro,40.6,percent,0.406,entity,NR,no,no,p.14 Table 3,40.6 ± 0.4 58.2 ± 0.4 61.9 ± 2.8 53.6,,codex
+S071-R68,S071,End-to-End Classification,attribute,MGB-Med,NR,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,67.9,percent,0.679,entity,NR,no,no,p.14 Table 3,67.9 ± 1.1 79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R69,S071,End-to-End Classification,attribute,MGB-Med,NR,Meditron-70b,open LLM,other,70,yes,few-shot,5-shot,NR,F1,macro,35.8,percent,0.358,entity,NR,no,no,p.15 Table 3,35.8 ± 0.4 57.4 ± 0.4 55.0 ± 1.5 49.4,,codex
+S071-R70,S071,End-to-End Classification,attribute,MGB-Med,NR,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,30.8,percent,0.308,entity,NR,no,no,p.15 Table 3,30.8 ± 0.6 55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R71,S071,End-to-End Classification,attribute,MGB-Med,NR,MeLLaMA-70B-chat,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,56.7,percent,0.567,entity,NR,no,no,p.14 Table 2,56.7 ± 0.8 60.2 ± 1.2 48.9 ± 0.8 55.3,,codex
+S071-R72,S071,End-to-End Classification,attribute,MGB-Med,NR,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,CoT,chain-of-thought,NR,F1,macro,43.7,percent,0.437,entity,NR,no,no,p.15 Table 4,43.7 ± 0.7 58.2 ± 0.7 40.3 ± 0.3 47.4,,codex
+S071-R73,S071,End-to-End Classification,attribute,MGB-Med,NR,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,CoT,chain-of-thought,NR,F1,macro,43.6,percent,0.436,entity,NR,no,no,p.15 Table 4,43.6 ± 0.8 68.5 ± 1.7 52.7 ± 1.3 54.9,,codex
+S071-R74,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,61.2,percent,0.612,entity,NR,no,no,p.15 Table 3,61.2 ± 0.6 71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R75,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,few-shot,5-shot,NR,F1,macro,78.1,percent,0.781,entity,NR,yes,no,p.15 Table 3,78.1 ± 0.7 75.2 ± 0.3 65.1 ± 0.6 72.8,,codex
+S071-R76,S071,End-to-End Classification,attribute,MGB-Med,NR,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,CoT,chain-of-thought,NR,F1,macro,74.0,percent,0.74,entity,NR,no,no,p.16 Table 4,74.0 ± 0.6 73.5 ± 1.0 56.1 ± 1.2 67.9,,codex
+S071-R77,S071,End-to-End Classification,attribute,MGB-Med,NR,GPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought,NR,F1,macro,83.1,percent,0.831,entity,NR,no,yes,p.15 Table 4,83.1 ± 1.0 75.7 ± 1.0 60.8 ± 0.6 73.2,,codex
+S071-R78,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Llama-3.1-8B-Instruct,open LLM,Llama,8,no,zero-shot,zero-shot,NR,F1,macro,60.1,percent,0.601,entity,NR,no,no,p.14 Table 2,60.1 ± 1.6 49.4 ± 1.5 45.4,,codex
+S071-R79,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Llama-3.1-70B-Instruct,open LLM,Llama,70,no,few-shot,5-shot,NR,F1,macro,79.4,percent,0.794,entity,NR,yes,no,p.14 Table 3,79.4 ± 0.3 66.8 ± 0.5 71.4,,codex
+S071-R80,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Meditron-70b,open LLM,other,70,yes,zero-shot,zero-shot,NR,F1,macro,59.3,percent,0.593,entity,NR,no,no,p.14 Table 2,59.3 ± 1.3 49.8 ± 1.9 43.8,,codex
+S071-R81,S071,End-to-End Classification,attribute,Re-CASI,100 examples,MeLLaMA-13B-chat,open LLM,other,13,yes,few-shot,5-shot,NR,F1,macro,55.9,percent,0.559,entity,NR,no,no,p.15 Table 3,55.9 ± 0.3 48.8 ± 0.7 45.2,,codex
+S071-R82,S071,End-to-End Classification,attribute,Re-CASI,100 examples,MeLLaMA-70B-chat,open LLM,other,70,yes,CoT,chain-of-thought,NR,F1,macro,62.7,percent,0.627,entity,NR,no,no,p.15 Table 4,62.7 ± 0.7 53.3 ± 2.7 52.6,,codex
+S071-R83,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,few-shot,5-shot,NR,F1,macro,59.3,percent,0.593,entity,NR,no,no,p.15 Table 3,59.3 ± 0.5 52.5 ± 0.6 47.9,,codex
+S071-R84,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Mistral-Nemo-Instruct-2407,open LLM,Mistral,12,no,zero-shot,zero-shot,NR,F1,macro,71.6,percent,0.716,entity,NR,no,no,p.14 Table 2,71.6 ± 1.0 56.3 ± 1.1 55.1,,codex
+S071-R85,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-14B-Instruct,open LLM,Qwen,14,no,few-shot,5-shot,NR,F1,macro,71.8,percent,0.718,entity,NR,no,no,p.15 Table 3,71.8 ± 0.3 58.7 ± 0.5 63.9,,codex
+S071-R86,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-32B-Instruct,open LLM,Qwen,32,no,CoT,chain-of-thought,NR,F1,macro,76.9,percent,0.769,entity,NR,no,no,p.16 Table 4,76.9 ± 0.9 54.0 ± 1.5 67.7,,codex
+S071-R87,S071,End-to-End Classification,attribute,Re-CASI,100 examples,Qwen2.5-72B-Instruct,open LLM,Qwen,72,no,few-shot,5-shot,NR,F1,macro,77.8,percent,0.778,entity,NR,no,no,p.15 Table 3,77.8 ± 0.1 66.4 ± 0.3 68.4,,codex
+S071-R88,S071,End-to-End Classification,attribute,Re-CASI,100 examples,GPT-4o,closed LLM,NA,NR,NA,few-shot,5-shot,NR,F1,macro,80.4,percent,0.804,entity,NR,no,yes,p.14 Table 3,80.4 ± 1.3 64.1 ± 0.2 74.0,,codex
+S075-R01,S075,Eviction mention detection,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.866,0-1,0.866,document,NR,no,no,p.3 Table 1,"0.866 (0.850-0.882) p < 0.05 0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938)",,codex
+S075-R02,S075,Eviction mention detection,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.868,0-1,0.868,document,NR,no,no,p.3 Table 1,"0.868 (0.858-0.877) p < 0.05 0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p",,codex
+S075-R03,S075,Eviction mention detection,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.912,0-1,0.912,document,NR,yes,no,p.3 Table 1,"0.912 (0.904-0.920) p < 0.05 0.891 (0.882-0.900) p < 0.05 0.922 (0.918-0.926)
+SynthEHR-Eviction (Qwen2.5-3B) 0.987 (0.976-0.997) p < 0.001 0",,codex
+S075-R04,S075,Eviction mention detection,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.850,0-1,0.850,document,NR,no,no,p.3 Table 1,"0.850 (0.840-0.859) p < 0.05 0.834 (0.820-0.848) p < 0.05 0.890 (0.884-0.896) p < 0.05
+GPT-4o-APO (baseline) 0.939 (0.912-0.965) 0.938 (0.92",,codex
+S075-R05,S075,Eviction mention detection,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.938,0-1,0.938,document,NR,no,yes,p.3 Table 1,"0.938 (0.926-0.949) 0.947 (0.936-0.958) 0.941 (0.931-0.951)
+Performance Results of Various Models for Step 2: Eviction Multi-Class (Macro-F1",,codex
+S075-R06,S075,Eviction mention detection,attribute,MIMIC,120 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.916,0-1,0.916,document,NR,no,yes,p.3 Table 1,"0.916 (0.890-0.942) 0.892 (0.854-0.930) p < 0.05 0.931 (0.916-0.947)
+SynthEHR-Eviction (Bio ClinicalBERT) 0.978 (0.960-0.995) p < 0.01 0.756",,codex
+S075-R07,S075,Eviction mention detection,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.891,0-1,0.891,document,NR,yes,no,p.3 Table 1,"0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938) 0.868 (0.858-0.877) p < 0.05",,codex
+S075-R08,S075,Eviction mention detection,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p < 0.01 0.912 (0.904-0.920) p",,codex
+S075-R09,S075,Eviction mention detection,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.891,0-1,0.891,document,NR,no,no,p.3 Table 1,"0.891 (0.882-0.900) p < 0.05 0.922 (0.918-0.926)
+SynthEHR-Eviction (Qwen2.5-3B) 0.987 (0.976-0.997) p < 0.001 0.850 (0.840-0.859) p < 0.05 0",,codex
+S075-R10,S075,Eviction mention detection,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.834,0-1,0.834,document,NR,no,no,p.3 Table 1,"0.834 (0.820-0.848) p < 0.05 0.890 (0.884-0.896) p < 0.05
+GPT-4o-APO (baseline) 0.939 (0.912-0.965) 0.938 (0.926-0.949) 0.947 (0.936-0.958)",,codex
+S075-R11,S075,Eviction mention detection,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.947,0-1,0.947,document,NR,no,yes,p.3 Table 1,"0.947 (0.936-0.958) 0.941 (0.931-0.951)
+Performance Results of Various Models for Step 2: Eviction Multi-Class (Macro-F1 shown above, Micro-",,codex
+S075-R12,S075,Eviction mention detection,attribute,PMC,48 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.892,0-1,0.892,document,NR,no,yes,p.3 Table 1,"0.892 (0.854-0.930) p < 0.05 0.931 (0.916-0.947)
+SynthEHR-Eviction (Bio ClinicalBERT) 0.978 (0.960-0.995) p < 0.01 0.756 (0.706-0.806) p < 0",,codex
+S075-R13,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.925,0-1,0.925,document,NR,no,no,p.3 Table 1,"0.925 (0.909-0.941) p < 0.01 0.861 (0.834-0.888) 0.897 (0.882-0.913)
+SynthEHR-Eviction (LLama-3.2-3B) 0.908 (0.896-0.921) 0.882 (0.848-0.916",,codex
+S075-R14,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.882,0-1,0.882,document,NR,no,no,p.3 Table 1,"0.882 (0.848-0.916) 0.824 (0.796-0.853) 0.871 (0.849-0.893)
+SynthEHR-Eviction (Qwen2.5-7B) 0.921(0.905-0.938) 0.938(0.932-0.945) p < 0.001 0",,codex
+S075-R15,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.938,0-1,0.938,document,NR,yes,no,p.3 Table 1,"0.938) 0.939 (0.933-0.944) p < 0.001 0.804 (0.767-0.842) 0.888 (0.869-0.907)
+SynthEHR-Eviction (Qwen2.5-3B) 0.889 (0.824-0.954) 0.850 (0.827",,codex
+S075-R16,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.853,0-1,0.853,document,NR,no,no,p.3 Table 1,"0.853 (0.832-0.875) p < 0.05 0.857 (0.801-0.914) 0.874 (0.856-0.892)
+GPT-4o-APO (baseline) 0.909(0.886-0.931) 0.883(0.856-0.911) 0.868(0.806",,codex
+S075-R17,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.883,0-1,0.883,document,NR,no,yes,p.3 Table 1,"0.883(0.856-0.911) 0.868(0.806-0.929) 0.886(0.858-0.915)
+Performance Results of Various Models for Step 3: Non-Eviction Multi-Class (Macro-F",,codex
+S075-R18,S075,Eviction multi-class classification,attribute,MIMIC,120 notes,BERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.880,0-1,0.880,document,NR,no,yes,p.3 Table 1,"0.880 (0.842-0.918) 0.444 (0.285-0.603) p < 0.05 0.711 (0.647-0.775) p < 0.05
+SynthEHR-Eviction (biobert-v1.1) 0.829 (0.790-0.868) p < 0.05",,codex
+S075-R19,S075,Eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.861,0-1,0.861,document,NR,yes,no,p.3 Table 1,"0.861 (0.834-0.888) 0.897 (0.882-0.913)
+SynthEHR-Eviction (LLama-3.2-3B) 0.908 (0.896-0.921) 0.882 (0.848-0.916) 0.824 (0.796-0.853) 0.871 (",,codex
+S075-R20,S075,Eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.813-0.834) p < 0.05 0.875 (0.871-0.879) p < 0.05
+SynthEHR-Eviction (Qwen2.5-7B) 0.963 (0.955-0.981) p < 0.01 0.912 (0.904-0.920) p",,codex
+S075-R21,S075,Eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.824,0-1,0.824,document,NR,no,no,p.3 Table 1,"0.824 (0.789-0.860) 0.895 (0.877-0.912)
+SynthEHR-Eviction (Qwen2.5-3B) 0.911 (0.901-0.921) 0.853 (0.832-0.875) p < 0.05 0.857 (0.801-0.914)",,codex
+S075-R22,S075,Eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.857,0-1,0.857,document,NR,no,no,p.3 Table 1,"0.857 (0.801-0.914) 0.874 (0.856-0.892)
+GPT-4o-APO (baseline) 0.909(0.886-0.931) 0.883(0.856-0.911) 0.868(0.806-0.929) 0.886(0.858-0.915)
+Pe",,codex
+S075-R23,S075,Eviction multi-class classification,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.868,0-1,0.868,document,NR,no,yes,p.3 Table 1,"0.868(0.806-0.929) 0.886(0.858-0.915)
+Performance Results of Various Models for Step 3: Non-Eviction Multi-Class (Macro-F1 shown above, Micr",,codex
+S075-R24,S075,Eviction multi-class classification,attribute,PMC,48 notes,BERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.444,0-1,0.444,document,NR,no,yes,p.3 Table 1,"0.444 (0.285-0.603) p < 0.05 0.711 (0.647-0.775) p < 0.05
+SynthEHR-Eviction (biobert-v1.1) 0.829 (0.790-0.868) p < 0.05 0.745 (0.700-0.790)",,codex
+S075-R25,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.850,0-1,0.850,document,NR,no,no,p.3 Table 1,"0.850-0.882) p < 0.05 0.891 (0.875-0.907) p < 0.05 0.908 (0.897-0.919) p < 0.05
+SynthEHR-Eviction (LLama-3.2-3B) 0.934 (0.929-0.938) 0.868 (",,codex
+S075-R26,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.817,0-1,0.817,document,NR,no,no,p.3 Table 1,"0.817 (0.787-0.847) p < 0.05 0.874 (0.844-0.904) 0.876 (0.856-0.897)
+SynthEHR-Eviction (Qwen2.5-7B) 0.965 (0.958-0.973) p < 0.01 0.866 (0.85",,codex
+S075-R27,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.866,0-1,0.866,document,NR,yes,no,p.3 Table 1,"0.866 (0.854-0.877) 0.907 (0.871-0.944) 0.913 (0.900-0.925) p < 0.05
+SynthEHR-Eviction (Qwen2.5-3B) 0.951 (0.944-0.959) p < 0.01 0.800 (0.76",,codex
+S075-R28,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.800,0-1,0.800,document,NR,no,no,p.3 Table 1,"0.800 (0.769-0.831) p < 0.05 0.837 (0.818-0.856) p < 0.05 0.863 (0.849-0.877) p < 0.05
+GPT-4o-APO (baseline) 0.910(0.877-0.943) 0.878(0.853-",,codex
+S075-R29,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.878,0-1,0.878,document,NR,no,yes,p.3 Table 1,"0.878 (0.846-0.911) 0.836 (0.750-0.923) 0.878 (0.842-0.914)
+GPT-4o-mini 0.504 (0.496-0.512) p < 0.05 0.357 (0.331-0.383) p < 0.05 0.438 (0.4",,codex
+S075-R30,S075,Non-eviction multi-class classification,attribute,MIMIC,120 notes,Bio ClinicalBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.630,0-1,0.630,document,NR,no,yes,p.3 Table 1,"0.630-0.686) p < 0.05 0.346 (0.321-0.371) p < 0.05 0.598 (0.584-0.611) p < 0.05
+SynthEHR-Eviction (LLama-3.1-8B) 0.881 (0.820-0.942) 0.935 (",,codex
+S075-R31,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.1-8B-FT,open LLM,Llama,8,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.926,0-1,0.926,document,NR,yes,no,p.3 Table 1,"0.926 (0.910-0.942) p < 0.05 0.915(0.901-0.929)
+SynthEHR-Eviction (LLama-3.2-3B) 0.939 (0.917-0.960) 0.817 (0.787-0.847) p < 0.05 0.874 (0.8",,codex
+S075-R32,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,LLaMA-3.2-3B-FT,open LLM,Llama,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.874,0-1,0.874,document,NR,no,no,p.3 Table 1,"0.874 (0.844-0.904) 0.876 (0.856-0.897)
+SynthEHR-Eviction (Qwen2.5-7B) 0.965 (0.958-0.973) p < 0.01 0.866 (0.854-0.877) 0.907 (0.871-0.944)",,codex
+S075-R33,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-7B-FT,open LLM,Qwen,7,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.907,0-1,0.907,document,NR,no,no,p.3 Table 1,"0.907)
+SynthEHR-Eviction (Qwen2.5-3B) 0.889 (0.824-0.954) 0.850 (0.827-0.873) 0.825 (0.745-0.905) 0.855 (0.824-0.886)
+GPT-4o-APO (baseline)",,codex
+S075-R34,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,Qwen2.5-3B-FT,open LLM,Qwen,3,no,full FT,fine-tuned on SynthEHR-Eviction,NR,F1,micro,0.837,0-1,0.837,document,NR,no,no,p.3 Table 1,"0.837 (0.818-0.856) p < 0.05 0.863 (0.849-0.877) p < 0.05
+GPT-4o-APO (baseline) 0.910(0.877-0.943) 0.878(0.853-0.904) 0.878(0.833-0.922) 0.8",,codex
+S075-R35,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,GPT-4o-APO,closed LLM,NA,NR,NA,other,automated prompt optimization (APO),NR,F1,micro,0.878,0-1,0.878,document,NR,no,yes,p.3 Table 1,"0.878 (0.846-0.911) 0.836 (0.750-0.923) 0.878 (0.842-0.914)
+GPT-4o-mini 0.504 (0.496-0.512) p < 0.05 0.357 (0.331-0.383) p < 0.05 0.438 (0.4",,codex
+S075-R36,S075,Non-eviction multi-class classification,attribute,PMC,48 notes,BioBERT,BERT-type,NA,NR,NA,NA,non-generative fine-tuned baseline,NR,F1,micro,0.604,0-1,0.604,document,NR,no,yes,p.3 Table 1,"0.604 (0.443-0.765) p < 0.05 0.730 (0.627-0.833) p < 0.05
+SynthEHR-Eviction (Bio ClinicalBERT) 0.961 (0.956-0.966) p < 0.01 0.630 (0.612-0.6",,codex
+S077-R01,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.684,0-1,0.684,document,NR,no,no,p.8 Table III,Macro F1 0.661 0.668 0.642 0.748 0.684 0.909,MedGemma macro F1 (Binary F1 0.459),codex
+S077-R02,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.895,0-1,0.895,document,NR,no,yes,p.7,"0.895, representing a 23% relative improvement
+over TTP-BERT+Context (0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-s",,codex
+S077-R03,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-specialized MedGemma-27B-it substan-
+tially underperforms with F1 of on",,codex
+S077-R04,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,MedGemma-27B-it,open LLM,Gemma,27,yes,other,prompt batch size k=15,NR,F1,macro,0.385,0-1,0.385,document,NR,no,no,p.8 Table IV,Macro Average 0.631 0.668 0.373 0.422 0.385 0.611,"0.570 on p.7 is GPT-5.2, not MedGemma",codex
+S077-R05,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,GPT-5.2,closed LLM,NA,NR,NA,other,prompt batch size k=15,NR,F1,macro,0.570,0-1,0.570,document,NR,no,yes,p.7,"0.570, falling
+15% short of TTP-BERT+Context. GPT-5.2 shows category-
+specific strengths:
+• Appointment-related follow-up: F1 of 0.812, approaching
+but not exceeding TTP-BERT’s 0.8",,codex
+S077-R06,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,TTP-BERT+Context (250k),BERT-type,NA,NR,NA,NA,supervised baseline,NR,F1,macro,0.668,0-1,0.668,document,NR,no,yes,p.7,"0.668). Gemini-3-Flash achieves
+the second-best LLM performance with Macro F1 of 0.888.
+Notably, the medical-specialized MedGemma-27B-it substan-
+tially underperforms with F1 of on",,codex
+S077-R07,S077,Stage 1 actionability filtering,attribute,CLIP dataset; 100-document test set,100 discharge summaries,DeepSeek-V3.2,open LLM,DeepSeek,NR,no,other,prompt batch size k=15,NR,F1,macro,0.809,0-1,0.809,document,NR,yes,no,p.8 Table III,0.888 0.807 0.811 0.809 0.849 0.853 0.851,,agent
+S077-R08,S077,Stage 2 action category classification,attribute,CLIP dataset; 100-document test set,100 discharge summaries,DeepSeek-V3.2,open LLM,DeepSeek,NR,no,other,prompt batch size k=15,NR,F1,macro,0.446,0-1,0.446,document,NR,yes,no,p.8 Table IV,0.581 0.524 0.548 0.446 0.446 0.446 0.531,,agent
+S083-R01,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,Llama-3.1-8B,open LLM,Llama,8,no,other,model-level score cited in Results; detailed configuration is in supplementary Table I,NR,F1,micro,0.591,0-1,0.591,entity,NR,yes,no,p.7,"an overall micro-F1 of 0.591, as shown in Supplementary Table I.",,codex
+S083-R02,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,50-shot examples; SHAC guidelines,NR,F1,micro,0.866,0-1,0.866,entity,NR,no,yes,p.6,"0.866 on the entire testing set. This
+ranks among the top performers of the n2c2/UW shared task. Also, Gemini 2.5 Flash achieved a micro-F1
+of 0.825, demonstrating comparable perfo",,codex
+S083-R03,S083,SDOH event extraction,NER,SHAC 2022 n2c2/UW test set,NR,Gemini 2.5 Flash,closed LLM,NA,NR,NA,few-shot,50-shot examples; SHAC guidelines,NR,F1,micro,0.825,0-1,0.825,entity,NR,no,no,p.6,"0.825, demonstrating comparable performance at substantially lower cost. These results showed that our
+method is capable of accurately annotating SDOH events without task-specific",,codex
+S083-R04,S083,SDOH event extraction,NER,MIMIC-III test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,single-prompt; full SHAC annotation guidelines,NR,F1,micro,0.806,0-1,0.806,entity,NR,no,no,p.8,"0.806, whereas the multi-prompt
+approach (asking for each SDOH type separately) achieved the highest recall of 0.810. In contrast, the
+approach that relies on LLM-summarized annota",,codex
+S083-R05,S083,SDOH event extraction,NER,MIMIC-III test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,50-shot,NR,F1,micro,0.881,0-1,0.881,entity,NR,no,no,p.9,"0.881, and 30-shot prompting achieved a lower but comparable score of 0.872. Additionally, 50-shot
+prompting significantly outperformed the 0-shot setting (micro-F1 = 0.786), highl",,codex
+S083-R06,S083,SDOH event extraction,NER,MIMIC-III and UW test subset,30 notes,OpenAI o4-mini,closed LLM,NA,NR,NA,few-shot,few-shot + self-consistency + post-processing,NR,F1,micro,0.929,0-1,0.929,entity,NR,no,no,p.9,"0.929. Using self-consistency alone improved
+micro-F1 by 0.063, bringing it to 0.903. Post-processing further improved micro-F1 by 0.026, raising it
+from 0.903 to 0.929. Row 2 show",,codex
+S085-R01,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,ChatGPT-4o,closed LLM,NA,NR,NA,zero-shot,simple prompting,NR,F1,NR,96.3,percent,0.963,document,strict,no,yes,p.3,"96.3%) and Llama 3.3 70B (95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: ChatGPT-4o, 
+Original Research | Large",,codex
+S085-R02,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Llama 3.3 70B,open LLM,Llama,70,no,zero-shot,simple prompting,NR,F1,NR,95.5,percent,0.955,document,strict,no,no,p.3,"95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: ChatGPT-4o, 
+Original Research | Large Language Models for Clinic",,codex
+S085-R03,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Llama 3.1 8B,open LLM,Llama,8,no,zero-shot,simple prompting,NR,F1,NR,97.0,percent,0.97,document,strict,yes,no,p.3,"97.0%), fol -
+lowed by ChatGPT-4o (96.3%) and Llama 3.3 70B (95.5%) for 
+acute PE classification. With CoT prompting, performance 
+declined across all three models (F1 scores: Chat",,codex
+S085-R04,S085,Acute PE classification,attribute,institutional CTPA reports,1025 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,75.8,percent,0.758,document,strict,no,yes,p.3,"75.8%.
+Bilateral PE (Yes/No)
+With simple prompting, ChatGPT-4o achieved the numer -
+ically highest F1 score (92.9%), followed by Llama 3.3 70B 
+(90.3%) and Llama 3.1 8B (84.5%). Wi",,codex
+S085-R05,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,ChatGPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought prompting,NR,F1,NR,93.6,percent,0.936,document,strict,no,yes,p.3,"93.6% and 93.8%, respec-
+tively), whereas Llama 3.1 8B showed no change (84.5%). 
+The rule-based NLP approach had an F1 score of 66.7%.
+127Kansas Journal of Medicine journals.ku.ed",,codex
+S085-R06,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Llama 3.3 70B,open LLM,Llama,70,no,CoT,chain-of-thought prompting,NR,F1,NR,93.8,percent,0.938,document,strict,yes,no,p.3,"93.8%, respec-
+tively), whereas Llama 3.1 8B showed no change (84.5%). 
+The rule-based NLP approach had an F1 score of 66.7%.
+127Kansas Journal of Medicine journals.ku.edu/kjm
+Tabl",,codex
+S085-R07,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Llama 3.1 8B,open LLM,Llama,8,no,CoT,chain-of-thought prompting,NR,F1,NR,84.5,percent,0.845,document,strict,no,no,p.3,"84.5%). With CoT prompting, 
+ChatGPT-4o and Llama 3.3 70B showed slight improve -
+ments in performance (F1 scores, 93.6% and 93.8%, respec-
+tively), whereas Llama 3.1 8B showed no",,codex
+S085-R08,S085,Bilateral acute PE classification,attribute,institutional CTPA reports,642 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,66.7,percent,0.667,document,strict,no,yes,p.3,"66.7%.
+127Kansas Journal of Medicine journals.ku.edu/kjm
+Table 1. Prompts provided to the large language model for each report. 
+Task Simple Prompt Chain-of-Thought Prompt
+Acute PE",,codex
+S085-R09,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,ChatGPT-4o,closed LLM,NA,NR,NA,CoT,chain-of-thought prompting,NR,F1,NR,74.1,percent,0.741,document,strict,no,yes,p.5,"74.1%; Llama 3.3 70B, 72.4%; Llama 
+3.1 8B, 62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.",,codex
+S085-R10,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Llama 3.3 70B,open LLM,Llama,70,no,CoT,chain-of-thought prompting,NR,F1,NR,72.4,percent,0.724,document,strict,yes,no,p.5,"72.4%; Llama 
+3.1 8B, 62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining",,codex
+S085-R11,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Llama 3.1 8B,open LLM,Llama,8,no,CoT,chain-of-thought prompting,NR,F1,NR,62.9,percent,0.629,document,strict,no,no,p.5,"62.9%). The rule-based NLP approach had an F1 
+score of 56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining the outputs 
+of the t",,codex
+S085-R12,S085,Large PE classification,attribute,institutional CTPA reports,660 reports,Rule-based NLP,rule-based,NA,NR,NA,NA,NR,NR,F1,NR,56.6,percent,0.566,document,strict,no,yes,p.5,"56.6%.
+ As shown in Supplementary Tables 1 and 2 (available 
+online at journals.ku.edu/kjm), combining the outputs 
+of the three LLMs in voting ensemble models resulted in 
+slight",,codex
+S100-R01,S100,cancer type identification,field extraction,Custom pathology-report test set,952 pathology reports,Llama3-8B,open LLM,Llama,8,no,zero-shot,Base model; standard inference,NR,accuracy,NA,64,percent,0.64,field,strict,no,no,p.4,with a mean accuracy of 64%,,codex
+S100-R02,S100,cancer type identification,field extraction,Custom pathology-report test set,952 pathology reports,Path-llama3.1-8B,open LLM,Llama,8,no,LoRA,Instruction-tuned model,NR,accuracy,NA,96,percent,0.96,field,strict,yes,no,p.4,achieving a mean accuracy of 96%,,codex
+S100-R03,S100,cancer type identification,field extraction,Custom pathology-report test set,952 pathology reports,Path-GPT-4o-mini-FT,closed LLM,NA,NR,no,other,OpenAI fine-tuning on instruction-tuning set,NR,accuracy,NA,99,percent,0.99,field,strict,no,yes,p.4,"large language models, achieving a mean accuracy of 99%",,codex
+S100-R04,S100,AJCC stage identification,attribute,Custom pathology-report test set,594 pathology reports,Path-llama3.1-8B,open LLM,Llama,8,no,LoRA,Instruction-tuned model; no CoT,NR,accuracy,NA,85,percent,0.85,field,strict,yes,no,p.5,"The Path-GPT-4o-mini-FT model achieves a mean accuracy of 87%, while the Path-llama3.1-8B model attains a mean accuracy of 85%",,codex
+S100-R05,S100,AJCC stage identification,attribute,Custom pathology-report test set,594 pathology reports,Path-GPT-4o-mini-FT,closed LLM,NA,NR,no,other,Instruction-tuned proprietary model; no CoT,NR,accuracy,NA,87,percent,0.87,field,strict,no,yes,p.5,"The Path-GPT-4o-mini-FT model achieves a mean accuracy of 87%, while the Path-llama3.1-8B model attains a mean accuracy of 85%",,codex
+S102-R01,S102,stroke CT finding extraction,field extraction,Dataset B,100 reports,Llama-3.3-70B-Instruct,open LLM,Llama,70,no,few-shot,Annotation guideline supplied; temperature 0; Q4_K_M quantization,yes,precision,NA,0.94,0-1,0.94,field,NR,yes,no,p.6,in dataset A and from 0.87 to 0.94 in dataset B (p = 0.001).,,codex
+S102-R02,S102,stroke CT finding extraction,field extraction,Dataset B,100 reports,GPT-4o (gpt-4o-2024-08-06),closed LLM,NA,NR,no,few-shot,Annotation guideline supplied; temperature 0; API,NR,precision,NA,0.93,0-1,0.93,field,NR,no,no,p.6,"from 0.86 to 0.93 in dataset B, although the difference was not significant (p = 0.390)","Summary sentence on p.6 also reports GPT-4o precision 0.95 in dataset B; detailed temperature-specific statement gives 0.93, used here.",codex
+S101-R01,S101,clinical information extraction,field extraction,CheXpert,5 held-out test sets,Flan-T5-XXL,open LLM,other,11,no,RAG,CLEAR entity retrieval; average across variables,NR,F1,NR,0.98,0-1,0.98,field,NR,yes,no,p.2,"On the CheXpert Dataset, the average F1 score across all5testsetsforall6modelswas0.96, ranging from 0.91 (Flan-UL2) and 0.98 (Flan-T5 and Mixtral).",Only prose-verifiable values recorded; Table 1 average cells are adjacent whitespace-separated numbers in the extracted text and cannot be validated as standalone values.,codex
+S101-R02,S101,clinical information extraction,field extraction,CheXpert,5 held-out test sets,Flan-UL2,open LLM,other,20,no,RAG,CLEAR entity retrieval; average across variables,NR,F1,NR,0.91,0-1,0.91,field,NR,no,no,p.2,"On the CheXpert Dataset, the average F1 score across all5testsetsforall6modelswas0.96, ranging from 0.91 (Flan-UL2) and 0.98 (Flan-T5 and Mixtral).",Only prose-verifiable values recorded; Table 1 average cells are adjacent whitespace-separated numbers in the extracted text and cannot be validated as standalone values.,codex
+S101-R03,S101,clinical information extraction,field extraction,CheXpert,5 held-out test sets,Mixtral-8x7B-Instruct-v0.1,open LLM,Mistral,46.7,no,RAG,CLEAR entity retrieval; average across variables,NR,F1,NR,0.98,0-1,0.98,field,NR,no,no,p.2,"On the CheXpert Dataset, the average F1 score across all5testsetsforall6modelswas0.96, ranging from 0.91 (Flan-UL2) and 0.98 (Flan-T5 and Mixtral).",Only prose-verifiable values recorded; Table 1 average cells are adjacent whitespace-separated numbers in the extracted text and cannot be validated as standalone values.,codex
+S101-R04,S101,clinical information extraction,field extraction,CheXpert,5 held-out test sets,GPT-4,closed LLM,NA,NR,no,RAG,CLEAR entity retrieval; average across variables,NR,F1,NR,0.97,0-1,0.97,field,NR,no,yes,p.3 Table 1,Average 0.98 0.91 0.97 0.93 0.96 0.98 0.98–0.91 0.94,Only prose-verifiable values recorded; Table 1 average cells are adjacent whitespace-separated numbers in the extracted text and cannot be validated as standalone values.,codex
+S108-R01,S108,overall clinical information extraction,field extraction,163 medical records,163 medical records,Dolly-v2-12b,open LLM,other,12,no,other,standardized prompt,NR,accuracy,NA,0.84,0-1,0.84,field,NR,no,no,p.6 Table 1,AVG 0.8 5 Excellent 0.84±0.01,,codex
+S108-R02,S108,overall clinical information extraction,field extraction,163 medical records,163 medical records,Vicuna-v1.3-13b,open LLM,other,13,no,other,standardized prompt,NR,accuracy,NA,0.73,0-1,0.73,field,NR,no,no,p.6 Table 1,AVG 0.8 4 Excellent 0.73±0.01,,codex
+S108-R03,S108,overall clinical information extraction,field extraction,163 medical records,163 medical records,Llama-2.0-13b,open LLM,Llama,13,no,other,standardized prompt,NR,accuracy,NA,0.93,0-1,0.93,field,NR,yes,no,p.6 Table 1,AVG 0.9 6 Excellent 0.93±0.01,,codex
+S108-R04,S108,overall clinical information extraction,field extraction,163 medical records,163 medical records,Llama-3.3-70b,open LLM,Llama,70,no,other,standardized prompt,NR,accuracy,NA,0.93,0-1,0.93,field,NR,no,no,p.6 Table 1,AVG 0.9 4 Excellent 0.93±0.01,,codex
+S108-R05,S108,overall clinical information extraction,field extraction,163 medical records,163 medical records,GPT-4o,closed LLM,NA,NR,NA,other,standardized prompt,NR,accuracy,NA,0.96,0-1,0.96,field,NR,no,yes,p.6 Table 1,AVG 0.9 9 Excellent 0.96±0.00,"22 Nov 2024 run, original sequence",agent
+S112-R01,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,Llama-3-8B-UltraMedical,open LLM,Llama,8,no,zero-shot,,NR,accuracy,NA,39.1,percent,0.391,field,NR,no,no,p.20 Table 3,39.1 ± 24.4 16.7 ± 7.3 55.8 ± 20.7 48.6 ± 26.4 52.1 ± 26.7 56.8 ± 29.0 40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R02,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,PMC-LLaMA 13B,open LLM,other,13,no,zero-shot,,NR,accuracy,NA,16.7,percent,0.16699999999999998,field,NR,no,no,p.20 Table 3,16.7 ± 7.3 55.8 ± 20.7 48.6 ± 26.4 52.1 ± 26.7 56.8 ± 29.0 40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R03,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,Meta-Llama-3.1-8B-Instruct,open LLM,Llama,8,no,LoRA,dataset-specific training,NR,accuracy,NA,90.0,percent,0.9,field,NR,yes,no,p.20 Table 3,90.0 ± 1.7 85.5 ± 7.1 608 609 Note – Dataset-level exact match accuracies are followed by 95% confidence intervals in,,codex
+S112-R04,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,Mistral-7B-Instruct-v0.3,open LLM,Mistral,7,no,zero-shot,,NR,accuracy,NA,48.6,percent,0.486,field,NR,no,no,p.20 Table 3,48.6 ± 26.4 52.1 ± 26.7 56.8 ± 29.0 40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R05,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,gemma-2-9b-it,open LLM,Gemma,9,no,zero-shot,,NR,accuracy,NA,52.1,percent,0.521,field,NR,no,no,p.20 Table 3,52.1 ± 26.7 56.8 ± 29.0 40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R06,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,DeepSeek-R1-Distill-Llama-8B,open LLM,DeepSeek,8,no,zero-shot,,NR,accuracy,NA,56.8,percent,0.568,field,NR,no,no,p.20 Table 3,56.8 ± 29.0 40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R07,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,DeepSeek-R1-Distill-Qwen-7B,open LLM,DeepSeek,7,no,zero-shot,,NR,accuracy,NA,40.4,percent,0.40399999999999997,field,NR,no,no,p.20 Table 3,40.4 ± 10.1 86.8 ± 3.9 90.0 ± 1.7 85.5 ± 7.1,,codex
+S112-R08,S112,cancer subtyping exact match accuracy (average across four datasets),field extraction,"four datasets (breast, kidney, prostate, MDS)",four datasets,GPT-4,closed LLM,NA,NR,NA,zero-shot,,NA,accuracy,NA,86.1,percent,0.861,field,NR,no,yes,p.20 Table 3,86.1 ± 4.6 39.1 ± 24.4 16.7 ± 7.3,,codex
+S118-R01,S118,infectious respiratory symptom identification,NER,Site 1 test cohort,204 notes,GPT-4,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,91.8,percent,0.9179999999999999,patient,NR,no,yes,p.3,"GPT-4 accuracy was the highest, F1=91.8% compared to the ICD-10 based detection F1=45.1%.",,codex
+S118-R02,S118,infectious respiratory symptom identification,NER,Site 1 test cohort,204 notes,ICD-10,rule-based,NA,NR,NA,NA,,NA,F1,NR,45.1,percent,0.451,patient,NR,no,no,p.3,"GPT-4 accuracy was the highest, F1=91.8% compared to the ICD-10 based detection F1=45.1%.",,codex
+S118-R03,S118,infectious respiratory symptom identification,NER,Site 2 validation cohort,308 notes,GPT-4,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,94.0,percent,0.94,patient,NR,no,yes,p.3,Performance was improved in this validation cohort with F1=94.0%.,,codex
+S119-R01,S119,acute leukemia identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.99,0-1,0.99,patient,NR,no,yes,p.8,F1 Score: 0.99 Precision: 0.98 Recall: 1,,codex
+S119-R02,S119,immunoglobulin deficiency identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.51,0-1,0.51,patient,NR,no,yes,p.8,F1 Score: 0.51 Precision: 0.36 Recall: 0.88,,codex
+S119-R03,S119,lymphoma identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.96,0-1,0.96,patient,NR,no,yes,p.8,F1 Score: 0.96 Precision: 0.98 Recall: 0.94,,codex
+S119-R04,S119,multiple myeloma identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.97,0-1,0.97,patient,NR,no,yes,p.8,F1 Score: 0.97 Precision: 1 Recall: 0.94,,codex
+S119-R05,S119,solid organ transplant identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.97,0-1,0.97,patient,NR,no,yes,p.8,F1 Score: 0.97 Precision: 0.95 Recall: 1,,codex
+S119-R06,S119,stem cell transplant identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.99,0-1,0.99,patient,NR,no,yes,p.8,F1 Score: 0.99 Precision: 0.98 Recall: 1,,codex
+S119-R07,S119,cyclophosphamide use identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.89,0-1,0.89,patient,NR,no,yes,p.4,"F1 scores of 1 for azathioprine, 0.89 for cyclophosphamide, 0.9 for cyclosporine",,codex
+S119-R08,S119,cyclosporine use identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.9,0-1,0.9,patient,NR,no,yes,p.4,"F1 scores of 1 for azathioprine, 0.89 for cyclophosphamide, 0.9 for cyclosporine",,codex
+S119-R09,S119,mycophenolate use identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.92,0-1,0.92,patient,NR,no,yes,p.4,"0.92 for mycophenolate, 0.85 for rituximab, and 0.96 for tacrolimus",,codex
+S119-R10,S119,rituximab use identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.85,0-1,0.85,patient,NR,no,yes,p.4,"0.92 for mycophenolate, 0.85 for rituximab, and 0.96 for tacrolimus",,codex
+S119-R11,S119,tacrolimus use identification,field extraction,SCRIPT,827 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.96,0-1,0.96,patient,NR,no,yes,p.4,"0.92 for mycophenolate, 0.85 for rituximab, and 0.96 for tacrolimus",,codex
+S119-R12,S119,cyclophosphamide use identification,field extraction,MIMIC-III,200 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.86,0-1,0.86,patient,NR,no,yes,p.10,F1 Score: 0.86 Precision: 0.75 Recall: 1,,codex
+S119-R13,S119,cyclosporine use identification,field extraction,MIMIC-III,200 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.8,0-1,0.8,patient,NR,no,yes,p.10,F1 Score: 0.8 Precision: 1 Recall: 0.67,,codex
+S119-R14,S119,rituximab use identification,field extraction,MIMIC-III,200 admissions,GPT-4o,closed LLM,NA,NR,NA,zero-shot,,NA,F1,NR,0.86,0-1,0.86,patient,NR,no,yes,p.10,F1 Score: 0.86 Precision: 1 Recall: 0.75,,codex
+S121-R01,S121,patient information extraction,attribute,100 Spanish medical reports,100 reports,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot structured extraction,NR,F1,NR,0.813,0-1,0.813,field,NR,no,yes,p.25 Results,"0.813. However,
+it performs notably poorly in the",,codex
+S121-R02,S121,name extraction,attribute,100 Spanish medical reports,100 reports,Gemma 2,open LLM,Gemma,NR,no,zero-shot,zero-shot structured extraction,NR,F1,NR,0.286,0-1,0.286,field,NR,yes,no,p.24 Table 2,Gemma 2 N 0.800 0.167 1.000 0.286,,codex
+S121-R03,S121,patient information extraction,attribute,100 Spanish medical reports,100 reports,Qwen 2.5,open LLM,Qwen,7,no,zero-shot,zero-shot structured extraction,NR,F1,NR,0.730,0-1,0.730,field,NR,yes,no,p.25 Results,"0.730
+An  analysis  of  the  results  reveals  sig",,codex
+S123-R01,S123,structured information extraction,field extraction,BCN Generations Study,83 reports,Llama 3.1 8B,open LLM,Llama,8,no,zero-shot,task instructions only; prompt developed on separate training set,NR,accuracy,NA,75,percent,0.75,field,NR,no,no,p.19 Discussion,"75%,
+ 
+70B:
+ 
+91.6%,
+ 
+405B:
+ 
+94.7%
+ 
+agreement),",,codex
+S123-R02,S123,structured information extraction,field extraction,BCN Generations Study,83 reports,Llama 3.1 70B,open LLM,Llama,70,no,zero-shot,task instructions only; prompt developed on separate training set,NR,accuracy,NA,91.6,percent,0.9159999999999999,field,NR,no,no,p.3 Results,"91.6%)
+ 
+performed
+ 
+below
+ 
+human
+ 
+accuracy
+ 
+(p",,codex
+S123-R03,S123,structured information extraction,field extraction,BCN Generations Study,83 reports,Llama 3.1 405B,open LLM,Llama,405,no,zero-shot,task instructions only; prompt developed on separate training set,NR,accuracy,NA,94.7,percent,0.9470000000000001,field,NR,yes,no,p.3 Results,"94.7%
+ 
+accuracy)
+ 
+and
+ 
+GPT-4o
+ 
+(96.1%)
+ 
+achie",,codex
+S123-R04,S123,structured information extraction,field extraction,BCN Generations Study,83 reports,GPT-4o,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,accuracy,NA,96.1,percent,0.961,field,NR,no,yes,p.3 Results,"96.1%)
+ 
+achieved
+ 
+extraction
+ 
+accuracy
+ 
+compar",,codex
+S123-R05,S123,structured information extraction,field extraction,BCN Generations Study,83 reports,GPT-4o mini,closed LLM,NA,NR,NA,zero-shot,zero-shot,NR,accuracy,NA,87.9,percent,0.879,field,NR,no,no,p.18 Discussion,"87.9%),
+ 
+though
+ 
+this
+ 
+came
+ 
+with
+ 
+a
+ 
+signif",,codex
+S125-R01,S125,seizure frequency phrase extraction,NER,EMU evaluation report segments,200 instances,Llama-2-70b-hf,open LLM,Llama,70,no,full FT,instruction tuning and parameter-efficient fine-tuning,NR,F1,NR,80.68,percent,0.8068000000000001,entity,strict,yes,no,p.2 Table 1,"80.68 ± 3.58
+GPT-3.5 Turbo 84.53 ± 3.85 77.13 ± 4.",,codex
+S125-R02,S125,seizure frequency phrase extraction,NER,EMU evaluation report segments,200 instances,GPT-4,closed LLM,NA,NR,NA,full FT,fine-tuned via Azure OpenAI,NR,F1,NR,85.79,percent,0.8579000000000001,entity,strict,no,yes,p.2 Table 1,"85.79%). This higher mean F1-
+score of GPT-4 compa",,codex
+S125-R03,S125,seizure frequency phrase extraction,NER,EMU evaluation report segments,200 instances,bert-large-cased,BERT-type,NA,NR,NA,NA,,NR,F1,NR,74.51,percent,0.7451000000000001,entity,strict,no,yes,p.2 Table 1,"74.51 ± 4.2
+biobert-large-cased 78.83 ± 4.06 75.43",,codex
+S125-R04,S125,seizure frequency attribute extraction,attribute,EMU evaluation report segments,200 instances,Llama-2-70b-hf,open LLM,Llama,70,no,full FT,instruction tuning and parameter-efficient fine-tuning,NR,F1,NR,85.23,percent,0.8523000000000001,entity,strict,yes,no,p.2 Table 2,"85.23 ± 2.33
+GPT-3.5 Turbo 88.99 ± 1.62 90.23 ± 1.",,codex
+S125-R05,S125,seizure frequency attribute extraction,attribute,EMU evaluation report segments,200 instances,GPT-4,closed LLM,NA,NR,NA,full FT,fine-tuned via Azure OpenAI,NR,F1,NR,91.84,percent,0.9184,entity,strict,no,yes,p.2 Table 2,"91.84%). The
+higher mean F1-score of GPT-4 compare",,codex
+S125-R06,S125,seizure frequency attribute extraction,attribute,EMU evaluation report segments,200 instances,bert-large-cased,BERT-type,NA,NR,NA,NA,,NR,F1,NR,89,percent,0.89,entity,strict,no,yes,p.2 Table 2,"89 ± 1.43
+biobert-large-cased 87.45 ± 1.68 90.28 ±",,codex
+S126-R01,S126,entity extraction,NER,i2b2/VA 2010,190 entities,DeepSeek-R1,open LLM,DeepSeek,671,no,few-shot,Few-shot 2; 100 annotated sentences,NR,accuracy,NA,0.52,0-1,0.52,entity,NR,yes,no,p.5 Table IV,"0.52
+Few-shot 3 58 53 0 0.28
+Ensemble 49 42 3 0.22",,codex
+S126-R02,S126,entity extraction,NER,i2b2/VA 2010,190 entities,GPT-4o,closed LLM,NA,NR,NA,few-shot,Few-shot 3; all entities,NR,accuracy,NA,0.65,0-1,0.65,entity,NR,no,yes,p.5 Table IV,"0.65
+Ensemble 75 70 0 0.37
+DeepSeek-R1
+Zero-shot 5",,codex
+S126-R03,S126,entity classification,NER,i2b2/VA 2010,190 entities,DeepSeek-R1,open LLM,DeepSeek,671,no,few-shot,Few-shot 1; annotated clinical document,NR,F1,NR,0.94,0-1,0.94,entity,NR,yes,no,p.5 Table V,Few-shot 1 0.92 0.97 0.94,,codex
+S126-R04,S126,entity classification,NER,i2b2/VA 2010,190 entities,GPT-4o,closed LLM,NA,NR,NA,other,prompt ensemble,NR,F1,NR,0.95,0-1,0.95,entity,NR,no,yes,p.5 Table V,"0.95
+DeepSeek-R1
+Zero-shot 0.90 0.92 0.91
+Few-shot",,codex
+S141-R01,S141,free-text thyroid dictation to ACR TI-RADS structured data,field extraction,MIMIC-III thyroid nodule dictations,50 dictations,Yi-34B,open LLM,other,34,no,full FT,trained on 3000 synthetic dictations,NR,other,NA,0.95,0-1,0.95,field,NR,yes,no,p.2,"GPT-4 5 shot was the best performing model, although it only showed marginal better performance than Yi-34B open model (0.97 vs 0.95, p =1).",average score; test data are patient dictations,codex
+S141-R02,S141,free-text thyroid dictation to ACR TI-RADS structured data,field extraction,MIMIC-III thyroid nodule dictations,50 dictations,GPT-4 (5-shot),closed LLM,NA,NR,no,few-shot,5-shot,NR,other,NA,0.97,0-1,0.97,field,NR,no,yes,p.2,"GPT-4 5 shot was the best performing model, although it only showed marginal better performance than Yi-34B open model (0.97 vs 0.95, p =1).",average score,codex
+S145-R01,S145,PHI de-identification,NER,in-house clinical notes,NR,LLaMA-3-70B-Instruct (CLOZE),open LLM,Llama,70,no,zero-shot,De-identification Agent,NR,F1,NR,0.62,0-1,0.62,entity,NR,yes,no,p.7 Table I,"0.62
+TABLE II ENTITY-EXTRACTION AGENT EVALUATION RESULTS.",,codex
+S145-R02,S145,PHI de-identification,NER,in-house clinical notes,NR,GPT-4,closed LLM,NA,NR,no,zero-shot,De-identification baseline,NR,F1,NR,0.58,0-1,0.58,entity,NR,no,yes,p.7 Table I,"0.58
+LLaMA-3-8B-Instruct 0.46 0.59 0.50",,codex
+S150-R02,S150,breast ultrasound lesion concept extraction,attribute,NYU Langone breast ultrasound reports,120 reports,BURExtract-Llama,open LLM,Llama,8,no,QLoRA,epoch 4; LoRA attention dimension 64,NR,F1,macro,84.6,percent,0.846,field,NR,yes,no,p.1,our model achieves an average F1 score of 84.6%,Average F1 across 16 keys,codex
+S150-R03,S150,breast ultrasound lesion concept extraction,attribute,NYU Langone breast ultrasound reports,120 reports,GPT-4 (ICL),closed LLM,NA,NR,no,few-shot,in-context learning,NR,F1,macro,0.847,0-1,0.847,field,NR,no,yes,p.4 Table 2,"0.847
+for a subset of keys",Average F1 across 16 keys,codex
+S151-R01,S151,event extraction (EE),NER,CACER test set,"22,009 event labels",Llama 3 8B,open LLM,Llama,8,no,LoRA,fine-tuned on CACER train set,NR,F1,NR,88.2,percent,0.882,entity,relaxed,yes,no,p.11 Table 3,"Overall – 22,009 88.3 88.8 83.9 88.2 61.7",,codex
+S151-R02,S151,event extraction (EE),NER,CACER test set,"22,009 event labels",GPT-4 (ICL),closed LLM,NA,NR,no,NA,in-context learning,NR,F1,NR,61.7,percent,0.617,entity,relaxed,no,yes,p.11 Table 3,"61.7
+Table 3: Event extraction F1 performance.",,codex
+S152-R01,S152,overall oncological information extraction,other,UCSF breast and pancreatic cancer progress notes,40 notes,FLAN-UL2,open LLM,other,20,no,zero-shot,overall average; task-specific training not used,NR,F1,NR,0.06,0-1,0.06,entity,strict,yes,no,p.13,"and 0.53, 0.27, and 0.06 respectively for the FLAN-UL2 model",,codex
+S152-R02,S152,overall oncological information extraction,other,UCSF breast and pancreatic cancer progress notes,40 notes,GPT-4,closed LLM,NA,NR,no,zero-shot,overall average,NR,F1,NR,0.51,0-1,0.51,entity,strict,no,yes,p.13,"exact-match F1 (EM-F1) score of 0.51 compared to the average BLEU, ROUGE, and EM-F1 scores of",,codex
+S157-R01,S157,MMSE score and date,field extraction,"ADNI notes, all parsed JSON",710 notes,ChatGPT (GPT-4),closed LLM,NA,NR,no,zero-shot,overall accuracy,NR,accuracy,NA,82.9,percent,0.829,field,strict,no,yes,p.10 Table 4,Overall accuracy of MMSE (%) 82.9 66.4 83.0 68.0,,codex
+S157-R02,S157,MMSE score and date,field extraction,"ADNI notes, all parsed JSON",710 notes,Llama-2-70b-chat,open LLM,Llama,70,no,zero-shot,overall accuracy,NR,accuracy,NA,66.4,percent,0.664,field,strict,yes,no,p.10 Table 4,Overall accuracy of MMSE (%) 82.9 66.4 83.0 68.0,,codex
+S157-R03,S157,MMSE score and date,field extraction,"ADNI double-reviewed notes, parsed JSON",306 notes,ChatGPT (GPT-4),closed LLM,NA,NR,no,zero-shot,overall accuracy,NR,accuracy,NA,83.0,percent,0.830,field,strict,no,yes,p.10 Table 4,Overall accuracy of MMSE (%) 82.9 66.4 83.0 68.0,,codex
+S157-R04,S157,MMSE score and date,field extraction,"ADNI double-reviewed notes, parsed JSON",306 notes,Llama-2-70b-chat,open LLM,Llama,70,no,zero-shot,overall accuracy,NR,accuracy,NA,68.0,percent,0.680,field,strict,yes,no,p.10 Table 4,Overall accuracy of MMSE (%) 82.9 66.4 83.0 68.0,,codex
+S157-R05,S157,CDR score and date,field extraction,"ADNI notes, all parsed JSON",710 notes,ChatGPT (GPT-4),closed LLM,NA,NR,no,zero-shot,overall accuracy,NR,accuracy,NA,87.1,percent,0.871,field,strict,no,yes,p.10 Table 4,Overall accuracy of CDR (%) 87.1 74.5 89.8 75.4,,codex
+S157-R06,S157,CDR score and date,field extraction,"ADNI notes, all parsed JSON",710 notes,Llama-2-70b-chat,open LLM,Llama,70,no,zero-shot,overall accuracy,NR,accuracy,NA,74.5,percent,0.745,field,strict,yes,no,p.10 Table 4,Overall accuracy of CDR (%) 87.1 74.5 89.8 75.4,,codex
+S157-R07,S157,CDR score and date,field extraction,"ADNI double-reviewed notes, parsed JSON",306 notes,ChatGPT (GPT-4),closed LLM,NA,NR,no,zero-shot,overall accuracy,NR,accuracy,NA,89.8,percent,0.898,field,strict,no,yes,p.10 Table 4,Overall accuracy of CDR (%) 87.1 74.5 89.8 75.4,,codex
+S157-R08,S157,CDR score and date,field extraction,"ADNI double-reviewed notes, parsed JSON",306 notes,Llama-2-70b-chat,open LLM,Llama,70,no,zero-shot,overall accuracy,NR,accuracy,NA,75.4,percent,0.754,field,strict,yes,no,p.10 Table 4,Overall accuracy of CDR (%) 87.1 74.5 89.8 75.4,,codex
+S159-R01,S159,medicationCode,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.899,0-1,0.899,field,strict,yes,no,p.10 Table 2,medicationCode 0.968 0.899 0.859 0.862 0.963,Metric is exact match rate.,codex
+S159-R02,S159,medicationCode,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.968,0-1,0.968,field,strict,no,yes,p.10 Table 2,medicationCode 0.968 0.899 0.859 0.862 0.963,Metric is exact match rate.,codex
+S159-R03,S159,medicationCode,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Google Healthcare NL API,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.963,0-1,0.963,field,strict,no,yes,p.10 Table 2,medicationCode 0.968 0.899 0.859 0.862 0.963,Metric is exact match rate.,codex
+S159-R04,S159,doseForm,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.890,0-1,0.890,field,strict,yes,no,p.10 Table 2,doseForm 0.976 0.890 0.633 0.556,Metric is exact match rate.,codex
+S159-R05,S159,doseForm,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.976,0-1,0.976,field,strict,no,yes,p.10 Table 2,doseForm 0.976 0.890 0.633 0.556,Metric is exact match rate.,codex
+S159-R06,S159,doseForm,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",NLP2FHIR,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.556,0-1,0.556,field,strict,no,yes,p.10 Table 2,doseForm 0.976 0.890 0.633 0.556,Metric is exact match rate.,codex
+S159-R07,S159,ingredient.Strength,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.921,0-1,0.921,field,strict,yes,no,p.10 Table 2,ingredient.Strength 0.980 0.921 0.792,Metric is exact match rate.,codex
+S159-R08,S159,ingredient.Strength,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.980,0-1,0.980,field,strict,no,yes,p.10 Table 2,ingredient.Strength 0.980 0.921 0.792,Metric is exact match rate.,codex
+S159-R09,S159,reason,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.593,0-1,0.593,field,strict,yes,no,p.10 Table 2,reason 0.902 0.593 0.169 0.645,Metric is exact match rate.,codex
+S159-R10,S159,reason,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.902,0-1,0.902,field,strict,no,yes,p.10 Table 2,reason 0.902 0.593 0.169 0.645,Metric is exact match rate.,codex
+S159-R11,S159,reason,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",NLP2FHIR,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.645,0-1,0.645,field,strict,no,yes,p.10 Table 2,reason 0.902 0.593 0.169 0.645,Metric is exact match rate.,codex
+S159-R12,S159,route,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Llama-2-70B,open LLM,Llama,70,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.516,0-1,0.516,field,strict,yes,no,p.10 Table 2,route 0.902 0.457 0.516 - 0.871,Metric is exact match rate.,codex
+S159-R13,S159,route,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.902,0-1,0.902,field,strict,no,yes,p.10 Table 2,route 0.902 0.457 0.516 - 0.871,Metric is exact match rate.,codex
+S159-R14,S159,route,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Google Healthcare NL API,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.871,0-1,0.871,field,strict,no,yes,p.10 Table 2,route 0.902 0.457 0.516 - 0.871,Metric is exact match rate.,codex
+S159-R15,S159,timing.repeat,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.268,0-1,0.268,field,strict,yes,no,p.10 Table 2,timing.repeat 0.947 0.268 0.221 0.403,Metric is exact match rate.,codex
+S159-R16,S159,timing.repeat,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.947,0-1,0.947,field,strict,no,yes,p.10 Table 2,timing.repeat 0.947 0.268 0.221 0.403,Metric is exact match rate.,codex
+S159-R17,S159,timing.repeat,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",NLP2FHIR,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.403,0-1,0.403,field,strict,no,yes,p.10 Table 2,timing.repeat 0.947 0.268 0.221 0.403,Metric is exact match rate.,codex
+S159-R18,S159,timing.code,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.818,0-1,0.818,field,strict,yes,no,p.10 Table 2,timing.code 0.952 0.818 0.600 0.424,Metric is exact match rate.,codex
+S159-R19,S159,timing.code,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.952,0-1,0.952,field,strict,no,yes,p.10 Table 2,timing.code 0.952 0.818 0.600 0.424,Metric is exact match rate.,codex
+S159-R20,S159,timing.code,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",NLP2FHIR,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.424,0-1,0.424,field,strict,no,yes,p.10 Table 2,timing.code 0.952 0.818 0.600 0.424,Metric is exact match rate.,codex
+S159-R21,S159,doseQuantity/Range,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Falcon-180B,open LLM,other,180,no,zero-shot,FHIR-GPT prompt; GPTQ-quantized model,yes,other,NA,0.864,0-1,0.864,field,strict,yes,no,p.10 Table 2,doseQuantity/Range 0.973 0.864 0.823 0.724 0.854,Metric is exact match rate.,codex
+S159-R22,S159,doseQuantity/Range,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",GPT-4,closed LLM,NA,NR,no,zero-shot,FHIR-GPT,NR,other,NA,0.973,0-1,0.973,field,strict,no,yes,p.10 Table 2,doseQuantity/Range 0.973 0.864 0.823 0.724 0.854,Metric is exact match rate.,codex
+S159-R23,S159,doseQuantity/Range,field extraction,MIMIC-III/i2b2 discharge-summary medication text,"3,671 snippets",Google Healthcare NL API,rule-based,NA,NR,NA,NA,existing NLP pipeline,NA,other,NA,0.854,0-1,0.854,field,strict,no,yes,p.10 Table 2,doseQuantity/Range 0.973 0.864 0.823 0.724 0.854,Metric is exact match rate.,codex

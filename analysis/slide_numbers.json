@@ -54,8 +54,7 @@
  "years": {
   "2024": 6,
   "2025": 13,
-  "2026": 19,
-  "2027": 1
+  "2026": 20
  },
  "model_family": {
   "Llama": 23,
@@ -91,12 +90,12 @@
   "Spanish": 3,
   "German": 2,
   "Thai": 1,
-  "French": 1,
-  "Portuguese": 1,
-  "Russian": 1,
   "Chinese": 1,
-  "Norwegian": 1,
   "Japanese": 1,
+  "Russian": 1,
+  "French": 1,
+  "Norwegian": 1,
+  "Portuguese": 1,
   "Dutch": 1
  },
  "n_comparisons": 83,
@@ -1633,11 +1632,11 @@
  },
  "params_bins": {
   "1–10B": 26,
-  "10–40B": 19,
-  "40–100B": 18,
-  "> 100B": 3
+  "10–40B": 24,
+  "40–100B": 19,
+  "> 100B": 5
  },
- "n_params_reported": 66,
+ "n_params_reported": 74,
  "n_medical_model_studies": 10,
  "n_prompting_comparisons": 67,
  "gap_hist": [
@@ -1775,7 +1774,7 @@
  "unpaired": [
   {
    "study_id": "S001",
-   "label": "Wang 2027"
+   "label": "Wang 2026"
   },
   {
    "study_id": "S022",

@@ -166,3 +166,28 @@ date,batch,target,action,reason
 2026-11-15,07,S101-R03.is_best_open,changed 'yes' -> 'no',[verify 2026-11-15] p.3 Table 1：CheXpert 平均 Flan-T5 與 Mixtral 的 F1 並列 0.98。 — 撤回：check_batch 要求每任務恰一列 is_best_open；並列數值相同，維持原標記
 2026-11-15,07,S102-R01.is_best_open,changed 'no' -> 'yes',[verify 2026-11-15] 原文 p.6 對同一條件（dataset B、temperature 0、含 guideline）前後報 Llama 0.74／0.94、GPT-4o 0.95／0.93，無法確定，不配對（Agent 依使用者授權決定，2026-11-15） — 撤回開源標記（檢查器要求恰一列）；改以只取消閉源最佳標記達成不配對
 2026-11-15,05,S055-R01.is_best_open,changed 'yes' -> 'no',[verify 2026-11-15] p.4 Table 2：Llama 3.1 8b 與 DeepSeek R1 Distilled Llama 3.1 8b 的 T-score accuracy 均為 98.7%，依規則並列標記。 — 撤回：check_batch 要求每任務恰一列 is_best_open；並列數值相同，維持原標記
+2026-11-19,07,S101-R01.params_b,changed 'NR' -> '11',params_b 取自公開模型卡（Flan-T5-XXL 11B）；作者 2026-11-19 採用
+2026-11-19,07,S101-R02.params_b,changed 'NR' -> '20',params_b 取自公開模型卡（Flan-UL2 20B）；作者 2026-11-19 採用
+2026-11-19,07,S101-R03.params_b,changed 'NR' -> '46.7',params_b 取自公開模型卡（Mixtral 8x7B 總參數約 46.7B）；作者 2026-11-19 採用
+2026-11-19,02,S019-R01.params_b,changed 'NR' -> '671',params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用
+2026-11-19,02,S019-R03.params_b,changed 'NR' -> '671',params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用
+2026-11-19,09,S126-R01.params_b,changed 'NR' -> '671',params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用
+2026-11-19,09,S126-R03.params_b,changed 'NR' -> '671',params_b 取自公開模型卡（DeepSeek-R1 官方模型卡 671B（MoE 總參數））；作者 2026-11-19 採用
+2026-11-19,04,S043-R03.params_b,changed 'NR' -> '35',params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用
+2026-11-19,04,S043-R05.params_b,changed 'NR' -> '35',params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用
+2026-11-19,04,S043-R07.params_b,changed 'NR' -> '35',params_b 取自模型名稱（模型名稱含「35B」）；作者 2026-11-19 採用
+2026-11-19,04,S052-R01.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R03.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R05.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R07.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R09.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R11.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R13.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R15.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R17.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R19.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R21.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R23.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,04,S052-R25.params_b,changed 'NR' -> '14',params_b 取自公開模型卡（Phi-4 官方模型卡 14B）；作者 2026-11-19 採用
+2026-11-19,11,S152-R01.params_b,changed 'NR' -> '20',params_b 取自公開模型卡（Flan-UL2 20B）；作者 2026-11-19 採用
+2026-11-19,01,S001.year,changed '2027' -> '2026',年份改為網路首發年 2026（期刊卷期年為 2027，DOI 10.1016/j.eswa.2026.134237）；作者 2026-11-19 決定
